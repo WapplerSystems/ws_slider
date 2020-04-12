@@ -28,7 +28,7 @@ use TYPO3\CMS\Extbase\Object\ObjectManager;
  *
  * This is rendered for type=select, renderType=selectSingle
  */
-class SelectSingleWithTypoScriptDefaultValueElement extends AbstractFormElement
+class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
 {
     /**
      * Default field information enabled for this element.

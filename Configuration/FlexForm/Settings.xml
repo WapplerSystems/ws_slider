@@ -33,7 +33,7 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.autoplay</label>
                             <config>
                                 <type>select</type>
-                                <renderType>selectSingleWithTypoScriptDefaultValue</renderType>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.default.autoplay</typoscriptPath>
                                 <eval>null</eval>
                                 <items type="array">

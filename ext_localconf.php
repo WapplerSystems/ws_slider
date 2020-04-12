@@ -30,9 +30,9 @@ call_user_func(
 
 
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1586633307] = [
-            'nodeName' => 'selectSingleWithTypoScriptDefaultValue',
+            'nodeName' => 'selectSingleWithTypoScriptPlaceholder',
             'priority' => '70',
-            'class' => \WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptDefaultValueElement::class,
+            'class' => \WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptPlaceholderElement::class,
         ];
 
 
