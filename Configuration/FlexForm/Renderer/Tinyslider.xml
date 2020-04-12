@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+
+
+        <tinyslider>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tinySlider</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.lazyLoad>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.lazyLoad</label>
+                            <renderType>selectSingleWithTypoScriptDefaultValue</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.default.owl.lazyLoad</typoscriptPath>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.lazyLoad>
+
+                </el>
+            </ROOT>
+        </tinyslider>
+
+    </sheets>
+</T3DataStructure>

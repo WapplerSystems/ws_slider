@@ -1,0 +1,6 @@
+
+TCEFORM.tt_content {
+    tx_wsslider_renderer.addItems {
+        bxslider = bxSlider
+    }
+}

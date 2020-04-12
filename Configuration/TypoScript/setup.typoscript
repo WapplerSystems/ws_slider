@@ -1,0 +1,48 @@
+
+plugin.tx_wsslider {
+
+    view {
+        templateRootPaths {
+            0 = EXT:ws_slider/Resources/Private/Templates/
+            1 = {$plugin.tx_wsslider.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:ws_slider/Resources/Private/Partials/
+            1 = {$plugin.tx_wsslider.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:ws_slider/Resources/Private/Layouts/
+            1 = {$plugin.tx_wsslider.view.layoutRootPath}
+        }
+    }
+
+    settings {
+        default {
+            renderer = {$plugin.tx_wsslider.settings.defaultRenderer}
+            autoplay = {$plugin.tx_wsslider.settings.autoplay}
+
+            flexslider {
+
+            }
+
+            owl {
+                lazyLoad = {$plugin.tx_wsslider.settings.owl.lazyLoad}
+
+
+            }
+        }
+    }
+
+}
+
+[{$plugin.tx_wsslider.includejquerycore} == 1]
+    page.includeJSFooterlibs {
+        jquery = EXT:ws_slider/Resources/Public/JavaScript/jquery-3.5.0.min.js
+        jquery.forceOnTop = 1
+    }
+[global]
+
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ws_slider/Configuration/TypoScript/ContentElement/" extensions="typoscript">

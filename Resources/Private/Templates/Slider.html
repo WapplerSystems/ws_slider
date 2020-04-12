@@ -1,0 +1,139 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers">
+    <f:layout name="Default"/>
+
+
+    <f:section name="Main">
+
+        <f:debug>{sliderSettings}</f:debug>
+
+        <f:flashMessages/>
+
+
+        <f:switch expression="{sliderSettings.renderer}">
+            <f:case value="Owl">
+                <f:render section="Owl" arguments="{_all}" />
+            </f:case>
+            <f:case value="Flexslider">
+                <f:render section="Flexslider" arguments="{_all}" />
+            </f:case>
+        </f:switch>
+
+    </f:section>
+
+
+    <f:section name="Owl">
+
+        <div id="wsslider-{data.uid}" class=" owl-theme">
+
+            <div class="owl-carousel">
+                <f:for each="{items}" as="item" iteration="iterator">
+                    <f:render partial="Item/Owl" section="{sliderSettings.layout}"
+                              arguments="{item: item, settings: settings, iterator:iterator}"/>
+                </f:for>
+            </div>
+        </div>
+
+        <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
+
+            $(document).ready(function(){
+                $('#wsslider-{data.uid}').owlCarousel({
+                    loop:true,
+                    margin:20,
+                    nav:true,
+                    responsive : {
+                        0 : {
+                            items: 2
+                        },
+                        480 : {
+                            items: 2
+                        },
+                        768 : {
+                            items: 4
+                        }
+                    }
+                });
+            });
+
+        </wsslider:pageRenderer.addJsFooterInlineCode>
+
+
+    </f:section>
+
+    <f:section name="Flexslider">
+
+        <wsslider:pageRenderer.addJsFooterInlineCode name="flexslider-{uid}">
+
+            jQuery(document).ready(function()
+            <f:format.raw>{</f:format.raw>
+            jQuery('#flexslider-
+            <f:format.raw value="{uid}"/>
+            ').flexslider(
+            <f:format.raw>{</f:format.raw>
+            animation: "
+            <f:format.raw value="{settings.animation}"/>
+            ",
+            animationLoop: {settings.animationLoop},
+            itemMargin: "{settings.itemMargin}",
+            easing: "{settings.easing}",
+            direction: "{settings.direction}",
+            reverse: {settings.reverse},
+            smoothHeight: {settings.smoothHeight},
+            startAt: {settings.startAt},
+            slideshow: {settings.slideshow},
+            slideshowSpeed: {settings.slideshowSpeed},
+            animationSpeed: {settings.animationSpeed},
+            initDelay: {settings.initDelay},
+            randomize: {settings.randomize},
+
+            pauseOnAction: {settings.pauseOnAction},
+            pauseOnHover: {settings.pauseOnHover},
+            useCSS: {settings.useCSS},
+            touch: {settings.touch},
+            video: {settings.video},
+
+            controlNav: {settings.controlNav},
+            directionNav: {settings.directionNav},
+            prevText: "
+            <f:translate key="prevText">Previous</f:translate>
+            ",
+            nextText: "
+            <f:translate key="nextText">Next</f:translate>
+            ",
+
+            keyboard: {settings.keyboard},
+            multipleKeyboard: {settings.multipleKeyboard},
+            mousewheel: {settings.mousewheel},
+            pausePlay: {settings.pausePlay},
+            pauseText: "
+            <f:translate key="pauseText">Pause</f:translate>
+            ",
+            playText: "
+            <f:translate key="playText">Play</f:translate>
+            ",
+
+            controlsContainer: "{settings.controlsContainer}",
+            manualControls: "{settings.manualControls}",
+            sync: "{settings.sync}",
+            asNavFor: "{settings.asNavFor}",
+
+            itemWidth: {settings.itemWidth},
+            itemMargin: {settings.itemMargin},
+            minItems: {settings.minItems},
+            maxItems: {settings.maxItems},
+            move: {settings.move},
+
+            carousel: {settings.carousel},
+            start: function(slider)
+            <f:format.raw>{</f:format.raw>
+            jQuery('body').removeClass('loading');
+            }
+            });
+            });
+
+        </wsslider:pageRenderer.addJsFooterInlineCode>
+
+    </f:section>
+
+</div>

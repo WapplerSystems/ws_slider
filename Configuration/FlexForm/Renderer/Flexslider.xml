@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+
+
+
+        <flexslider>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.config</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+
+                    <settings.animation>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.animation</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptDefaultValue</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.default.animation</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.fade</numIndex>
+                                        <numIndex index="1">fade</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slide</numIndex>
+                                        <numIndex index="1">slide</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.animation>
+
+                    <settings.easing>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.easing</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.easing>
+
+                    <settings.direction>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.direction</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.vertical
+                                        </numIndex>
+                                        <numIndex index="1">vertical</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.horizontal
+                                        </numIndex>
+                                        <numIndex index="1">horizontal</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.direction>
+
+                    <settings.reverse>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.reverse</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.reverse>
+
+                    <settings.animationLoop>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.animationLoop
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.animationLoop>
+
+                    <settings.smoothHeight>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.smoothHeight
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.smoothHeight>
+
+                    <settings.startAt>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.startAt</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.startAt>
+
+                    <settings.slideshow>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slideshow</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.slideshow>
+
+                    <settings.slideshowSpeed>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slideshowSpeed
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.slideshowSpeed>
+
+                    <settings.animationSpeed>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.animationSpeed
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.animationSpeed>
+
+                    <settings.initDelay>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.initDelay</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.initDelay>
+
+                    <settings.randomize>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.randomize</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.randomize>
+
+                    <settings.pauseOnAction>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pauseOnAction
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.pauseOnAction>
+
+                    <settings.pauseOnHover>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pauseOnHover
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.pauseOnHover>
+
+                    <settings.useCSS>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.useCSS</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.useCSS>
+
+                    <settings.touch>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.touch</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.touch>
+
+                    <settings.video>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.video</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.video>
+
+                    <settings.textmode>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.textmode</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.textmode>
+
+
+                </el>
+            </ROOT>
+        </flexslider>
+
+
+        <primarycontrols>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.primarycontrols
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.controlNav>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.controlNav</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.controlNav>
+
+                    <settings.directionNav>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.directionNav
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.directionNav>
+
+                </el>
+            </ROOT>
+        </primarycontrols>
+
+
+        <secondarynavigation>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.secondarynavigation
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.keyboard>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.keyboard</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.keyboard>
+
+                    <settings.multipleKeyboard>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.multipleKeyboard
+                            </label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.multipleKeyboard>
+
+                    <settings.mousewheel>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.mousewheel</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.mousewheel>
+
+                    <settings.pausePlay>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pausePlay</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
+                                        </numIndex>
+                                        <numIndex index="1">ts</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                        </numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                        </numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.pausePlay>
+
+                </el>
+            </ROOT>
+        </secondarynavigation>
+
+        <specialproperties>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.specialproperties
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.controlsContainer>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.controlsContainer
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.controlsContainer>
+
+                    <settings.manualControls>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.manualControls
+                            </label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.manualControls>
+
+                    <settings.sync>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.sync</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.sync>
+
+                    <settings.asNavFor>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.asNavFor</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.asNavFor>
+
+                </el>
+            </ROOT>
+        </specialproperties>
+
+        <carousel>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.carousel</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.itemWidth>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.itemWidth</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.itemWidth>
+
+                    <settings.itemMargin>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.itemMargin</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.itemMargin>
+
+                    <settings.minItems>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.minItems</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.minItems>
+
+                    <settings.maxItems>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.maxItems</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.maxItems>
+
+                    <settings.move>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.move</label>
+                            <config>
+                                <type>input</type>
+                                <size>12</size>
+                                <eval>int</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.move>
+
+                </el>
+            </ROOT>
+        </carousel>
+
+    </sheets>
+</T3DataStructure>

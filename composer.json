@@ -1,0 +1,31 @@
+{
+	"name": "svewap/ws-slider",
+	"type": "typo3-cms-extension",
+	"description": "universal slider extension for owl, flexslider, ...",
+	"license": "GPL-2.0+",
+	"keywords": [
+		"typo3",
+		"TYPO3 CMS",
+		"Flexslider",
+		"owl"
+	],
+	"homepage": "https://github.com/svewap/ws_slider",
+	"authors": [
+		{
+			"name": "Sven Wappler",
+			"email": "typo3YYYY@wappler.systems"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/svewap/ws_slider/issues",
+		"source": "https://github.com/svewap/ws_slider"
+	},
+	"require": {
+		"typo3/cms-core": "^8.7 || ^9.5 || ^10.0 || 10.*@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"WapplerSystems\\WsSlider\\": "Classes/"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		ws-slider {
+			iconIdentifier = content-wsslider
+			title = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:title
+			description = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:description
+			tt_content_defValues {
+				CType = ws_slider
+			}
+		}
+	}
+	show := addToList(ws-slider)
+
+}

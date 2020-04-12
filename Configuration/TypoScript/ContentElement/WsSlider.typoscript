@@ -1,0 +1,47 @@
+
+tt_content.ws_slider >
+tt_content.ws_slider =< lib.contentElement
+tt_content.ws_slider {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Slider
+
+    templateRootPaths.43 = EXT:ws_slider/Resources/Private/Templates/
+    partialRootPaths.43 = EXT:ws_slider/Resources/Private/Partials/
+    layoutRootPaths.43 = EXT:ws_slider/Resources/Private/Layouts/
+
+    settings {
+        slider < plugin.tx_wsslider.settings
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        30 = WapplerSystems\WsSlider\DataProcessing\SliderProcessor
+
+        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        20 {
+            table = tx_wsslider_domain_model_item
+            as = items
+            pidInList.field = pid
+            where {
+                data = field:uid
+                intval = 1
+                wrap = content_uid=|
+            }
+            orderBy = sorting
+            dataProcessing {
+                20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                20 {
+                    references.fieldName = foreground_media
+                    as = foregroundMedia
+                }
+            }
+        }
+    }
+
+}
+

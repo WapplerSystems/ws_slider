@@ -1,0 +1,4 @@
+
+tx_wsslider.templateLayouts.default = Default
+tx_wsslider.templateLayouts.cards = Cards
+tx_wsslider.templateLayouts.bigDots = Big Dots
