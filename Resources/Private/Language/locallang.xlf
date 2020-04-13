@@ -49,6 +49,16 @@
 			<trans-unit id="settings.lazyLoad">
 				<source>Lazy load</source>
 			</trans-unit>
+			<trans-unit id="settings.items">
+				<source>Items</source>
+			</trans-unit>
+			<trans-unit id="settings.margin">
+				<source>Margin</source>
+			</trans-unit>
+			<trans-unit id="settings.loop">
+				<source>Loop</source>
+			</trans-unit>
+
 
 			<trans-unit id="tx_wsslider_domain_model_flexslider" xml:space="preserve">
 				<source>Flexslider</source>

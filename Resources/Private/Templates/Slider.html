@@ -6,8 +6,6 @@
 
     <f:section name="Main">
 
-        <f:debug>{sliderSettings}</f:debug>
-
         <f:flashMessages/>
 
 
@@ -38,7 +36,7 @@
         <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
 
             $(document).ready(function() <f:format.raw>{</f:format.raw>
-                $('#wsslider-{data.uid} .owl-carousel').owlCarousel();
+                $('#wsslider-{data.uid} .owl-carousel').owlCarousel({sliderSettings.json -> f:format.raw()});
             });
 
         </wsslider:pageRenderer.addJsFooterInlineCode>

@@ -5,7 +5,6 @@ namespace WapplerSystems\WsSlider\DataProcessing;
 
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
-use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
@@ -45,7 +44,6 @@ class SliderProcessor implements DataProcessorInterface
 
         $settings = $contentObjectConfiguration['settings.']['slider.'];
 
-
         $settings['renderer'] = $settings['defaultRenderer'];
         if ($processedData['data']['tx_wsslider_renderer'] !== null) $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
 
@@ -66,12 +64,14 @@ class SliderProcessor implements DataProcessorInterface
             $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
             ArrayUtility::mergeRecursiveWithOverrule(
                 $settings[$rendererKey],
-                $flexformData['settings']
+                $flexformData['settings'],
+                true,
+                false
             );
         }
 
         # convert integers in texts to integers
-        $settings[$rendererKey] = $this->convertStringToInteger($settings[$rendererKey]);
+        $settings[$rendererKey] = $this->convertStringToSimpleType($settings[$rendererKey]);
         $settings['json'] = json_encode($settings[$rendererKey]);
 
         if (!isset($settings['layout']) || empty($settings['layout'])) {
@@ -89,14 +89,20 @@ class SliderProcessor implements DataProcessorInterface
     }
 
 
-    private function convertStringToInteger(array $ts)
+    private function convertStringToSimpleType(array $ts)
     {
         $out = [];
         foreach ($ts as $key => $value) {
             if (is_array($value)) {
-                $out[$key] = $this->convertStringToInteger($value);
+                $out[$key] = $this->convertStringToSimpleType($value);
             } else if (is_numeric($value)) {
                 $out[$key] = (int)$value;
+            } else if ($value === 'true') {
+                $out[$key] = true;
+            } else if ($value === 'false') {
+                $out[$key] = false;
+            } else {
+                $out[$key] = $value;
             }
         }
         return $out;

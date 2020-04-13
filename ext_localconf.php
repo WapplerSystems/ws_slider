@@ -34,6 +34,11 @@ call_user_func(
             'priority' => '70',
             'class' => \WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptPlaceholderElement::class,
         ];
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1586633308] = [
+            'nodeName' => 'inputWithTypoScriptPlaceholder',
+            'priority' => '70',
+            'class' => \WapplerSystems\WsSlider\Backend\Form\Element\InputTextWithTypoScriptPlaceholderElement::class,
+        ];
 
 
     },
