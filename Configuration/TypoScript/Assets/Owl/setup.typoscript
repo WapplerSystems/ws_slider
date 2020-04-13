@@ -8,6 +8,3 @@ page.includeCSS {
 	owl = EXT:ws_slider/Resources/Public/CSS/Owl/owl.carousel.css
 	owl_theme_default = EXT:ws_slider/Resources/Public/CSS/Owl/owl.theme.default.css
 }
-
-
-

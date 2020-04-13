@@ -61,7 +61,7 @@ class FlexFormEnhancerHook
 
             $tsSettings = $this->getTypoScriptSettings();
             $defaultValue = null;
-            if (isset($tsSettings['default.']['renderer'])) $defaultValue = $tsSettings['default.']['renderer'];
+            if (isset($tsSettings['defaultRenderer'])) $defaultValue = $tsSettings['defaultRenderer'];
 
             $identifier['ext-wsslider-extendSheets'] = false;
             if ($defaultValue !== null) {

@@ -23,7 +23,7 @@
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.default.animation</typoscriptPath>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.animation</typoscriptPath>
                                 <eval>null</eval>
                                 <items type="array">
                                     <numIndex index="1" type="array">

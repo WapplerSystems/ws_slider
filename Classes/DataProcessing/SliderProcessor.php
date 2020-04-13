@@ -43,24 +43,36 @@ class SliderProcessor implements DataProcessorInterface
     public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData)
     {
 
-        $settings = $contentObjectConfiguration['settings.']['slider.']['default.'];
+        $settings = $contentObjectConfiguration['settings.']['slider.'];
 
+
+        $settings['renderer'] = $settings['defaultRenderer'];
+        if ($processedData['data']['tx_wsslider_renderer'] !== null) $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
+
+        $rendererKey = strtolower($settings['renderer']);
+
+        if (isset($settings['renderer.'][$rendererKey.'.'])) {
+            $settings[$rendererKey] = $settings['renderer.'][$rendererKey.'.'];
+            unset($settings['renderer.']);
+        } else {
+            $settings[$rendererKey] = [];
+        }
+
+        $settings = GeneralUtility::removeDotsFromTS($settings);
 
         // Process Flexform
-        $originalValue = $processedData['data']['pi_flexform'];
-        DebugUtility::debug($processedData);
-        if (is_string($originalValue)) {
-            $flexformData = $this->flexFormService->convertFlexFormContentToArray($originalValue);
-
-
-            DebugUtility::debug($flexformData['settings']);
-
+        $flexformData = $processedData['data']['pi_flexform'];
+        if (is_string($flexformData)) {
+            $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
             ArrayUtility::mergeRecursiveWithOverrule(
-                $settings,
+                $settings[$rendererKey],
                 $flexformData['settings']
             );
         }
 
+        # convert integers in texts to integers
+        $settings[$rendererKey] = $this->convertStringToInteger($settings[$rendererKey]);
+        $settings['json'] = json_encode($settings[$rendererKey]);
 
         if (!isset($settings['layout']) || empty($settings['layout'])) {
             $settings['layout'] = 'Default';
@@ -69,8 +81,25 @@ class SliderProcessor implements DataProcessorInterface
         $settings['layout'] = ucfirst($settings['layout']);
         $settings['renderer'] = ucfirst($settings['renderer']);
 
+        unset($settings['defaultRenderer']);
+
         $processedData['sliderSettings'] = $settings;
 
         return $processedData;
     }
+
+
+    private function convertStringToInteger(array $ts)
+    {
+        $out = [];
+        foreach ($ts as $key => $value) {
+            if (is_array($value)) {
+                $out[$key] = $this->convertStringToInteger($value);
+            } else if (is_numeric($value)) {
+                $out[$key] = (int)$value;
+            }
+        }
+        return $out;
+    }
+
 }

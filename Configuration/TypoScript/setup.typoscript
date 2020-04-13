@@ -19,19 +19,10 @@ plugin.tx_wsslider {
     }
 
     settings {
-        default {
-            renderer = {$plugin.tx_wsslider.settings.defaultRenderer}
-            autoplay = {$plugin.tx_wsslider.settings.autoplay}
+        defaultRenderer = {$plugin.tx_wsslider.settings.defaultRenderer}
 
-            flexslider {
+        renderer.owl {
 
-            }
-
-            owl {
-                lazyLoad = {$plugin.tx_wsslider.settings.owl.lazyLoad}
-
-
-            }
         }
     }
 

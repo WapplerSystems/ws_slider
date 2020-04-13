@@ -1,0 +1,66 @@
+
+
+page.includeJSFooter {
+	owl = EXT:ws_slider/Resources/Public/JavaScript/Owl/owl.carousel.min.js
+}
+
+page.includeCSS {
+	owl = EXT:ws_slider/Resources/Public/CSS/Owl/owl.carousel.css
+	owl_theme_default = EXT:ws_slider/Resources/Public/CSS/Owl/owl.theme.default.css
+}
+
+plugin.tx_wsslider.settings.renderer.owl {
+
+
+	items = {$plugin.tx_wsslider.settings.owl.items}
+	margin = {$plugin.tx_wsslider.settings.owl.margin}
+	loop = {$plugin.tx_wsslider.settings.owl.loop}
+	center = {$plugin.tx_wsslider.settings.owl.center}
+	mouseDrag = {$plugin.tx_wsslider.settings.owl.mouseDrag}
+	touchDrag = {$plugin.tx_wsslider.settings.owl.touchDrag}
+	pullDrag = {$plugin.tx_wsslider.settings.owl.pullDrag}
+	freeDrag = {$plugin.tx_wsslider.settings.owl.freeDrag}
+	stagePadding = {$plugin.tx_wsslider.settings.owl.stagePadding}
+	merge = {$plugin.tx_wsslider.settings.owl.merge}
+	mergeFit = {$plugin.tx_wsslider.settings.owl.mergeFit}
+	autoWidth = {$plugin.tx_wsslider.settings.owl.autoWidth}
+	startPosition = {$plugin.tx_wsslider.settings.owl.startPosition}
+	URLhashListener = {$plugin.tx_wsslider.settings.owl.URLhashListener}
+	nav = {$plugin.tx_wsslider.settings.owl.nav}
+	rewind = {$plugin.tx_wsslider.settings.owl.rewind}
+	navElement = {$plugin.tx_wsslider.settings.owl.navElement}
+	slideBy = {$plugin.tx_wsslider.settings.owl.slideBy}
+	slideTransition = {$plugin.tx_wsslider.settings.owl.slideTransition}
+	dots = {$plugin.tx_wsslider.settings.owl.dots}
+	dotsEach = {$plugin.tx_wsslider.settings.owl.dotsEach}
+	dotsData = {$plugin.tx_wsslider.settings.owl.dotsData}
+	lazyLoad = {$plugin.tx_wsslider.settings.owl.lazyLoad}
+	lazyLoadEager = {$plugin.tx_wsslider.settings.owl.lazyLoadEager}
+	autoplay = {$plugin.tx_wsslider.settings.owl.autoplay}
+	autoplayTimeout = {$plugin.tx_wsslider.settings.owl.autoplayTimeout}
+	autoplayHoverPause = {$plugin.tx_wsslider.settings.owl.autoplayHoverPause}
+	smartSpeed = {$plugin.tx_wsslider.settings.owl.smartSpeed}
+
+	responsive {
+		0 {
+			items = 1
+		}
+		576 {
+			items = 4
+		}
+		768 {
+			items = 4
+		}
+		992 {
+			items = 4
+		}
+		1200 {
+			items = 4
+		}
+
+	}
+
+
+}
+
+tt_content.ws_slider.settings.slider.renderer.owl < plugin.tx_wsslider.settings.renderer.owl

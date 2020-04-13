@@ -1,6 +1,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
-     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers">
+     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers"
     <f:layout name="Default"/>
 
 
@@ -37,23 +37,8 @@
 
         <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
 
-            $(document).ready(function(){
-                $('#wsslider-{data.uid}').owlCarousel({
-                    loop:true,
-                    margin:20,
-                    nav:true,
-                    responsive : {
-                        0 : {
-                            items: 2
-                        },
-                        480 : {
-                            items: 2
-                        },
-                        768 : {
-                            items: 4
-                        }
-                    }
-                });
+            $(document).ready(function() <f:format.raw>{</f:format.raw>
+                $('#wsslider-{data.uid} .owl-carousel').owlCarousel();
             });
 
         </wsslider:pageRenderer.addJsFooterInlineCode>

@@ -1,0 +1,56 @@
+
+
+page.includeJSFooter {
+	flexslider = EXT:ws_slider/Resources/Public/JavaScript/Flexslider/jquery.flexslider.min.js
+}
+
+page.includeCSS {
+	flexslider = EXT:ws_slider/Resources/Public/CSS/Flexslider/flexslider.css
+	flexslider_mods = EXT:ws_slider/Resources/Public/CSS/Flexslider/mods.css
+}
+
+
+plugin.tx_wsslider.settings.renderer.flexslider {
+
+	maxwidth = {$plugin.tx_wsslider.settings.flexslider.maxwidth}
+	maxheight = {$plugin.tx_wsslider.settings.flexslider.maxheight}
+	animation = {$plugin.tx_wsslider.settings.flexslider.animation}
+	easing = {$plugin.tx_wsslider.settings.flexslider.easing}
+	direction = {$plugin.tx_wsslider.settings.flexslider.direction}
+	reverse = {$plugin.tx_wsslider.settings.flexslider.reverse}
+	animationLoop = {$plugin.tx_wsslider.settings.flexslider.animationLoop}
+	smoothHeight = {$plugin.tx_wsslider.settings.flexslider.smoothHeight}
+	startAt = {$plugin.tx_wsslider.settings.flexslider.startAt}
+	slideshow = {$plugin.tx_wsslider.settings.flexslider.slideshow}
+	slideshowSpeed = {$plugin.tx_wsslider.settings.flexslider.slideshowSpeed}
+	animationSpeed = {$plugin.tx_wsslider.settings.flexslider.animationSpeed}
+	initDelay = {$plugin.tx_wsslider.settings.flexslider.initDelay}
+	randomize = {$plugin.tx_wsslider.settings.flexslider.randomize}
+	pauseOnAction = {$plugin.tx_wsslider.settings.flexslider.pauseOnAction}
+	pauseOnHover = {$plugin.tx_wsslider.settings.flexslider.pauseOnHover}
+	useCSS = {$plugin.tx_wsslider.settings.flexslider.useCSS}
+	touch = {$plugin.tx_wsslider.settings.flexslider.touch}
+	video = {$plugin.tx_wsslider.settings.flexslider.video}
+	controlNav = {$plugin.tx_wsslider.settings.flexslider.controlNav}
+	directionNav = {$plugin.tx_wsslider.settings.flexslider.directionNav}
+	keyboard = {$plugin.tx_wsslider.settings.flexslider.keyboard}
+	multipleKeyboard = {$plugin.tx_wsslider.settings.flexslider.multipleKeyboard}
+	mousewheel = {$plugin.tx_wsslider.settings.flexslider.mousewheel}
+	pausePlay = {$plugin.tx_wsslider.settings.flexslider.pausePlay}
+
+	controlsContainer = {$plugin.tx_wsslider.settings.flexslider.controlsContainer}
+	manualControls = {$plugin.tx_wsslider.settings.flexslider.manualControls}
+	sync = {$plugin.tx_wsslider.settings.flexslider.sync}
+	asNavFor = {$plugin.tx_wsslider.settings.flexslider.asNavFor}
+	itemWidth = {$plugin.tx_wsslider.settings.flexslider.itemWidth}
+	itemMargin = {$plugin.tx_wsslider.settings.flexslider.itemMargin}
+	minItems = {$plugin.tx_wsslider.settings.flexslider.minItems}
+	maxItems = {$plugin.tx_wsslider.settings.flexslider.maxItems}
+	move = {$plugin.tx_wsslider.settings.flexslider.move}
+
+	carousel = {$plugin.tx_wsslider.settings.flexslider.carousel}
+
+
+}
+
+tt_content.ws_slider.settings.slider.renderer.flexslider < plugin.tx_wsslider.settings.renderer.flexslider

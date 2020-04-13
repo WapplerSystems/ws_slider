@@ -121,7 +121,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingleWithTypoScriptPlaceholder',
-            'typoscriptPath' => 'plugin.tx_wsslider.settings.default.renderer',
+            'typoscriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'eval' => 'null',
             'items' => [
             ],
