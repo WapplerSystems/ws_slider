@@ -315,7 +315,6 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
 
     private function getTypoScriptValue($path)
     {
-
         $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
             ->get(ConfigurationManagerInterface::class)
             ->getConfiguration(

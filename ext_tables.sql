@@ -15,8 +15,8 @@ CREATE TABLE tx_wsslider_domain_model_item (
     foreground_media int(11) unsigned DEFAULT '0',
     background_media int(11) unsigned DEFAULT '0',
 	link text,
-	textposition varchar(10) DEFAULT 'left' NOT NULL,
-	styleclass varchar(10) DEFAULT 'style1' NOT NULL,
+	text_position varchar(10) DEFAULT NULL,
+	style_class varchar(10) DEFAULT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

@@ -19,28 +19,43 @@
 			</trans-unit>
 
 
-			<trans-unit id="tx_wsslider_domain_model_flexslider" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
 				<target>Flexslider</target>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_flexslider.images" xml:space="preserve">
-				<target>Bilder</target>
-			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image" xml:space="preserve">
-				<target>Bild</target>
-			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image.title" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
 				<target>Titel</target>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image.description" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
 				<target>Beschreibung</target>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image.image" xml:space="preserve">
-				<target>Bild</target>
+			<trans-unit id="tx_wsslider_domain_model_item.textPosition" xml:space="preserve">
+				<target>Textposition</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
+				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
+				<target>Rechts</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
+				<target>Text-Stilklasse</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve">
+				<target>Stil 1</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve">
+				<target>Stil 2</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve">
+				<target>Stil 3</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve">
+				<target>Stil 4</target>
+			</trans-unit>
+			<trans-unit id="addImage" xml:space="preserve">
+				<target>Bild hinzufügen</target>
 			</trans-unit>
 
-			<trans-unit id="list_title" xml:space="preserve">
-				<target>Flexslider</target>
-			</trans-unit>
 
 
 			<trans-unit id="settings.config" xml:space="preserve">
@@ -145,7 +160,7 @@
 			</trans-unit>
 
 			<!-- Secondary Navigation -->
-			<trans-unit id="settings.secondarynavigation" xml:space="preserve">
+			<trans-unit id="settings.secondaryNavigation" xml:space="preserve">
 				<target>Zweite Navigation</target>
 			</trans-unit>
 			<trans-unit id="settings.keyboard" xml:space="preserve">
@@ -162,7 +177,7 @@
 			</trans-unit>
 
 			<!-- Special Properties -->
-			<trans-unit id="settings.specialproperties" xml:space="preserve">
+			<trans-unit id="settings.specialProperties" xml:space="preserve">
 				<target>Sonderoptionen</target>
 			</trans-unit>
 			<trans-unit id="settings.controlsContainer" xml:space="preserve">

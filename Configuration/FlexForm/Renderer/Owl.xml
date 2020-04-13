@@ -9,7 +9,7 @@
         <owl>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:owl</sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.owl</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
@@ -21,26 +21,19 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.items</typoscriptPath>
-                                <eval>null</eval>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>1</lower>
+                                    <upper>12</upper>
+                                </range>
                             </config>
                         </TCEforms>
                     </settings.items>
 
-                    <settings.margin>
-                        <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.margin</label>
-                            <config>
-                                <type>input</type>
-                                <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.margin</typoscriptPath>
-                                <eval>null</eval>
-                            </config>
-                        </TCEforms>
-                    </settings.margin>
 
                     <settings.loop>
                         <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.loop</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -62,9 +55,143 @@
                         </TCEforms>
                     </settings.loop>
 
+
+                    <settings.merge>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.merge</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.merge</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.merge>
+
+                    <settings.mergeFit>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.mergeFit</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.mergeFit</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.mergeFit>
+
+                    <settings.autoWidth>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.autoWidth</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoWidth</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.autoWidth>
+
+                    <settings.startPosition>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.startPosition</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.startPosition</typoscriptPath>
+                                <eval>null,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.startPosition>
+
+                    <settings.rewind>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.rewind</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.rewind</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.rewind>
+
+                    <settings.slideBy>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.slideBy</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.slideBy</typoscriptPath>
+                                <eval>null,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.slideBy>
+
+                    <settings.slideTransition>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.slideTransition</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.slideTransition</typoscriptPath>
+                                <eval>null,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.slideTransition>
+
+
                     <settings.autoplay>
                         <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.autoplay</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -86,6 +213,404 @@
                         </TCEforms>
                     </settings.autoplay>
 
+                    <settings.autoplayTimeout>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.autoplayTimeout</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplayTimeout</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>10000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.autoplayTimeout>
+
+                    <settings.autoplayHoverPause>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.autoplayHoverPause</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplayHoverPause</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.autoplayHoverPause>
+
+                    <settings.smartSpeed>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.smartSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.smartSpeed</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>1000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.smartSpeed>
+
+                    <settings.autoplaySpeed>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplaySpeed</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplaySpeed</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>1000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.autoplaySpeed>
+
+
+
+                    <settings.responsiveRefreshRate>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.responsiveRefreshRate</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.responsiveRefreshRate</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>1000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.responsiveRefreshRate>
+
+                </el>
+            </ROOT>
+        </owl>
+
+        <navigation>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.navigation</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.nav>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.nav</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.nav</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.nav>
+
+                    <settings.dots>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.dots</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dots</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.dots>
+
+                    <settings.navSpeed>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.navSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.navSpeed</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>1000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.navSpeed>
+
+                    <settings.dotsSpeed>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.dotsSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dotsSpeed</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>1000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.dotsSpeed>
+
+
+                </el>
+            </ROOT>
+        </navigation>
+
+        <layout>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.layout</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.margin>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.margin</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.margin</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>300</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.margin>
+
+                    <settings.stagePadding>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.stagePadding</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.stagePadding</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>300</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.stagePadding>
+
+                    <settings.center>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.center</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.center</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.center>
+
+                </el>
+            </ROOT>
+        </layout>
+
+        <dragNdrop>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.dragNdrop</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.dragEndSpeed>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.dragEndSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dragEndSpeed</typoscriptPath>
+                                <eval>null,int,trim</eval>
+                                <range>
+                                    <lower>0</lower>
+                                    <upper>1000</upper>
+                                </range>
+                            </config>
+                        </TCEforms>
+                    </settings.dragEndSpeed>
+
+                    <settings.mouseDrag>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.mouseDrag</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.mouseDrag</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.mouseDrag>
+
+                    <settings.touchDrag>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.touchDrag</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.touchDrag</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.touchDrag>
+
+                    <settings.pullDrag>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pullDrag</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.pullDrag</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.pullDrag>
+
+                    <settings.freeDrag>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.freeDrag</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.freeDrag</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.freeDrag>
+
+                </el>
+            </ROOT>
+        </dragNdrop>
+
+        <animation>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.animation</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                </el>
+            </ROOT>
+        </animation>
+
+        <advanced>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.advanced</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
 
                     <settings.lazyLoad>
                         <TCEforms>
@@ -111,9 +636,45 @@
                         </TCEforms>
                     </settings.lazyLoad>
 
+                    <settings.lazyLoadEager>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.lazyLoadEager</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.lazyLoadEager</typoscriptPath>
+                                <eval>null,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.lazyLoadEager>
+
+                    <settings.URLhashListener>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.URLhashListener</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.URLhashListener</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.URLhashListener>
+
                 </el>
             </ROOT>
-        </owl>
+        </advanced>
 
     </sheets>
 </T3DataStructure>

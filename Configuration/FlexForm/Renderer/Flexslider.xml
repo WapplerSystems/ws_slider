@@ -10,7 +10,7 @@
         <flexslider>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.config</sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.flexslider</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
@@ -93,13 +93,13 @@
                                 <items type="array">
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -126,13 +126,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -159,13 +159,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -197,13 +197,13 @@
                                 <items type="array">
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -267,13 +267,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -300,13 +300,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -333,13 +333,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -365,13 +365,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -397,13 +397,13 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                         </numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -422,21 +422,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -461,7 +451,7 @@
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
+                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                         </numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
@@ -495,21 +485,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -528,21 +508,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -574,21 +544,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -607,21 +567,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -639,21 +589,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -671,21 +611,11 @@
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.typoscript
-                                        </numIndex>
-                                        <numIndex index="1">ts</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.yes
-                                        </numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.no
-                                        </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
                                 </items>
@@ -702,7 +632,7 @@
         <specialproperties>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.specialproperties
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.specialProperties
                     </sheetTitle>
                 </TCEforms>
                 <type>array</type>

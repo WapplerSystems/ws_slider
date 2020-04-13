@@ -12,9 +12,6 @@
 			</trans-unit>
 
 
-			<trans-unit id="images" xml:space="preserve">
-				<source>Images</source>
-			</trans-unit>
 			<trans-unit id="settings" xml:space="preserve">
 				<source>Settings</source>
 			</trans-unit>
@@ -31,68 +28,157 @@
 			<trans-unit id="no">
 				<source>No</source>
 			</trans-unit>
+
 			<trans-unit id="default">
 				<source>Default</source>
 			</trans-unit>
 
-			<trans-unit id="general">
+
+
+
+			<!-- sheets -->
+			<trans-unit id="sheet.owl">
+				<source>Owl</source>
+			</trans-unit>
+			<trans-unit id="sheet.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+			<trans-unit id="sheet.layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="sheet.dragNdrop">
+				<source>Drag and drop</source>
+			</trans-unit>
+			<trans-unit id="sheet.animation">
+				<source>Animation</source>
+			</trans-unit>
+			<trans-unit id="sheet.advanced">
+				<source>Advanced</source>
+			</trans-unit>
+			<trans-unit id="sheet.general">
 				<source>General</source>
 			</trans-unit>
 
 
-			<trans-unit id="settings.layout">
+			<!-- common setting labels -->
+
+			<trans-unit id="settings.common.layout">
 				<source>Layout</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay">
+			<trans-unit id="settings.common.autoplay">
 				<source>Autoplay</source>
 			</trans-unit>
-			<trans-unit id="settings.lazyLoad">
+			<trans-unit id="settings.common.lazyLoad">
 				<source>Lazy load</source>
 			</trans-unit>
-			<trans-unit id="settings.items">
-				<source>Items</source>
+			<trans-unit id="settings.common.loop">
+				<source>Loop / Carousel</source>
 			</trans-unit>
-			<trans-unit id="settings.margin">
-				<source>Margin</source>
-			</trans-unit>
-			<trans-unit id="settings.loop">
-				<source>Loop</source>
+			<trans-unit id="settings.common.autoplaySpeed">
+				<source>Autoplay speed.</source>
 			</trans-unit>
 
 
-			<trans-unit id="tx_wsslider_domain_model_flexslider" xml:space="preserve">
-				<source>Flexslider</source>
+			<!-- item labels -->
+
+			<trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
+				<source>Slider item</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_flexslider.images" xml:space="preserve">
-				<source>Images</source>
+			<trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
+				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image" xml:space="preserve">
-				<source>image</source>
+			<trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
+				<source>Description</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image.title" xml:space="preserve">
-				<source>title</source>
+			<trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" xml:space="preserve">
+				<source>Image or Video</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image.description" xml:space="preserve">
-				<source>description</source>
+			<trans-unit id="tx_wsslider_domain_model_item.textPosition">
+				<source>Text position</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_image.image" xml:space="preserve">
-				<source>image</source>
+			<trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
+				<source>Text style class</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve">
+				<source>Style 1</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve">
+				<source>Style 2</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve">
+				<source>Style 3</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve">
+				<source>Style 4</source>
+			</trans-unit>
+			<trans-unit id="addImage" xml:space="preserve">
+				<source>Add image</source>
 			</trans-unit>
 
 
-
+			<!-- Owl specific labels -->
 			<trans-unit id="owl">
 				<source>Owl</source>
+			</trans-unit>
+
+
+			<trans-unit id="settings.owl.items">
+				<source>Items</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.margin">
+				<source>Margin</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.center">
+				<source>Center item</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.merge">
+				<source>Merge items. Looking for data-merge='{number}' inside item..</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.mergeFit">
+				<source>Fit merged items if screen is smaller than items value.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.autoWidth">
+				<source>Set non grid content. Try using width style on divs.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.startPosition">
+				<source>Start position or URL Hash string like '#id'.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.rewind">
+				<source>Go backwards when the boundary has reached.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.slideBy">
+				<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.slideTransition">
+				<source>You can define the transition for the stage you want to use eg. linear.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.autoplayTimeout">
+				<source>Autoplay interval timeout.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.autoplayHoverPause">
+				<source>Pause on mouse hover.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.smartSpeed">
+				<source>Speed Calculate. More info to come..</source>
 			</trans-unit>
 
 
 			<trans-unit id="settings.config" xml:space="preserve">
 				<source>Configuration</source>
 			</trans-unit>
-			<trans-unit id="settings.maxwidth" xml:space="preserve">
+			<trans-unit id="settings.maxWidth" xml:space="preserve">
 				<source>Max width</source>
 			</trans-unit>
-			<trans-unit id="settings.maxheight" xml:space="preserve">
+			<trans-unit id="settings.maxHeight" xml:space="preserve">
 				<source>Max height</source>
 			</trans-unit>
 			<trans-unit id="settings.typoscript" xml:space="preserve">
@@ -122,12 +208,7 @@
 			<trans-unit id="settings.reverse" xml:space="preserve">
 				<source>Reverse order</source>
 			</trans-unit>
-			<trans-unit id="settings.yes" xml:space="preserve">
-				<source>Yes</source>
-			</trans-unit>
-			<trans-unit id="settings.no" xml:space="preserve">
-				<source>No</source>
-			</trans-unit>
+
 			<trans-unit id="settings.animationLoop" xml:space="preserve">
 				<source>Animation loop</source>
 			</trans-unit>
@@ -157,9 +238,6 @@
 			</trans-unit>
 			<trans-unit id="settings.primarysettings" xml:space="preserve">
 				<source>Primary Settings</source>
-			</trans-unit>
-			<trans-unit id="templateLayout" xml:space="preserve">
-				<source>Template Layout</source>
 			</trans-unit>
 
 			<!-- Usability Features -->

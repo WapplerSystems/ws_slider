@@ -5,6 +5,7 @@ namespace WapplerSystems\WsSlider\DataProcessing;
 
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
@@ -62,6 +63,7 @@ class SliderProcessor implements DataProcessorInterface
         $flexformData = $processedData['data']['pi_flexform'];
         if (is_string($flexformData)) {
             $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
+            DebugUtility::debug($flexformData,'FlexForm');
             ArrayUtility::mergeRecursiveWithOverrule(
                 $settings[$rendererKey],
                 $flexformData['settings'],
@@ -80,6 +82,7 @@ class SliderProcessor implements DataProcessorInterface
 
         $settings['layout'] = ucfirst($settings['layout']);
         $settings['renderer'] = ucfirst($settings['renderer']);
+
 
         unset($settings['defaultRenderer']);
 

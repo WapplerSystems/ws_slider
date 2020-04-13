@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 
 return [
     'ctrl' => [
-        'title'	=> 'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:tx_wsslider_domain_model_item.title',
+        'title'	=> 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.title',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -34,7 +34,7 @@ return [
         '1' => [
             'showitem' => 'hidden, title, sys_language_uid, foreground_media,
 				description,
-				textposition, styleclass, link,
+				text_position, style_class, link,
 		
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
         ],
@@ -154,23 +154,23 @@ return [
                 'enableRichtext' => true,
             ],
         ],
-        'textposition' => [
+        'text_position' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:tx_wsslider_domain_model_item.textposition',
+            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.textPosition',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:default',
+                        'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default',
                         ''
                     ]
                 ],
             ],
         ],
-        'styleclass' => [
+        'style_class' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:tx_wsslider_domain_model_item.styleclass',
+            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.styleClass',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -181,7 +181,7 @@ return [
         ],
         'link' => [
             'exclude' => 1,
-            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:tx_wsslider_domain_model_item.link',
+            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.link',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputLink',
@@ -190,14 +190,14 @@ return [
         'foreground_media' => [
             'exclude' => 0,
             'l10n_mode' => 'mergeIfNotBlank',
-            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:tx_wsslider_domain_model_item.foreground_media',
+            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.foregroundMedia',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'foreground_media',
                 [
                     'minitems' => 0,
                     'maxitems' => 1,
                     'appearance' => [
-                        'createNewRelationLinkTitle' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang_db.xlf:add_image',
+                        'createNewRelationLinkTitle' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:addImage',
                         'showAllLocalizationLink' => true,
                         'headerThumbnail' => [
                             'height' => '90c',
