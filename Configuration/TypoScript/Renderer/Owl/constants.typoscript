@@ -9,46 +9,46 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/b; type=int+; label=margin-right(px) on item.
     margin = 0
 
-    # cat=plugin.tx_wsslider.owl/owl/c; type=boolean; label=Infinity loop. Duplicate last and first items to get loop illusion.
+    # cat=plugin.tx_wsslider.owl/owl/c; type=options[true,false]; label=Infinity loop. Duplicate last and first items to get loop illusion.
     loop = false
 
-    # cat=plugin.tx_wsslider.owl/owl/d; type=boolean; label=Center item. Works well with even an odd number of items.
+    # cat=plugin.tx_wsslider.owl/owl/d; type=options[true,false]; label=Center item. Works well with even an odd number of items.
     center = false
 
-    # cat=plugin.tx_wsslider.owl/owl/e; type=boolean; label=Mouse drag enabled.
+    # cat=plugin.tx_wsslider.owl/owl/e; type=options[true,false]; label=Mouse drag enabled.
     mouseDrag = true
 
-    # cat=plugin.tx_wsslider.owl/owl/f; type=boolean; label=Touch drag enabled.
+    # cat=plugin.tx_wsslider.owl/owl/f; type=options[true,false]; label=Touch drag enabled.
     touchDrag = true
 
-    # cat=plugin.tx_wsslider.owl/owl/g; type=boolean; label=Stage pull to edge.
+    # cat=plugin.tx_wsslider.owl/owl/g; type=options[true,false]; label=Stage pull to edge.
     pullDrag = true
 
-    # cat=plugin.tx_wsslider.owl/owl/h; type=boolean; label=Item pull to edge.
+    # cat=plugin.tx_wsslider.owl/owl/h; type=options[true,false]; label=Item pull to edge.
     freeDrag = false
 
     # cat=plugin.tx_wsslider.owl/owl/i; type=int+; label=Padding left and right on stage (can see neighbours).
     stagePadding = 0
 
-    # cat=plugin.tx_wsslider.owl/owl/j; type=boolean; label=Merge items. Looking for data-merge='{number}' inside item.
+    # cat=plugin.tx_wsslider.owl/owl/j; type=options[true,false]; label=Merge items. Looking for data-merge='{number}' inside item.
     merge = false
 
-    # cat=plugin.tx_wsslider.owl/owl/k; type=boolean; label=Fit merged items if screen is smaller than items value.
+    # cat=plugin.tx_wsslider.owl/owl/k; type=options[true,false]; label=Fit merged items if screen is smaller than items value.
     mergeFit = true
 
-    # cat=plugin.tx_wsslider.owl/owl/l; type=boolean; label=Set non grid content. Try using width style on divs.
+    # cat=plugin.tx_wsslider.owl/owl/l; type=options[true,false]; label=Set non grid content. Try using width style on divs.
     autoWidth = false
 
     # cat=plugin.tx_wsslider.owl/owl/m; type=string; label=Start position or URL Hash string like '#id'.
     startPosition = 0
 
-    # cat=plugin.tx_wsslider.owl/owl/n; type=boolean; label=Listen to url hash changes. data-hash on items is required.
+    # cat=plugin.tx_wsslider.owl/owl/n; type=options[true,false]; label=Listen to url hash changes. data-hash on items is required.
     URLhashListener = false
 
-    # cat=plugin.tx_wsslider.owl/owl/o; type=boolean; label=Show next/prev buttons.
+    # cat=plugin.tx_wsslider.owl/owl/o; type=options[true,false]; label=Show next/prev buttons.
     nav = false
 
-    # cat=plugin.tx_wsslider.owl/owl/p; type=boolean; label=Go backwards when the boundary has reached.
+    # cat=plugin.tx_wsslider.owl/owl/p; type=options[true,false]; label=Go backwards when the boundary has reached.
     rewind = true
 
     # cat=plugin.tx_wsslider.owl/owl/q; type=string; label=DOM element type for a single directional navigation link.
@@ -60,28 +60,28 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/s; type=string; label=You can define the transition for the stage you want to use eg. linear.
     slideTransition =
 
-    # cat=plugin.tx_wsslider.owl/owl/t; type=boolean; label=Show dots navigation.
+    # cat=plugin.tx_wsslider.owl/owl/t; type=options[true,false]; label=Show dots navigation.
     dots = true
 
     # cat=plugin.tx_wsslider.owl/owl/u; type=string; label=Show dots each x item.
     dotsEach = false
 
-    # cat=plugin.tx_wsslider.owl/owl/v; type=boolean; label=Used by data-dot content.
+    # cat=plugin.tx_wsslider.owl/owl/v; type=options[true,false]; label=Used by data-dot content.
     dotsData = false
 
-    # cat=plugin.tx_wsslider.owl/owl/w; type=boolean; label=Use Lazy loading: data-src and data-src-retina for highres. Also load images into background inline style if element is not <img>
+    # cat=plugin.tx_wsslider.owl/owl/w; type=options[true,false]; label=Use Lazy loading: data-src and data-src-retina for highres. Also load images into background inline style if element is not <img>
     lazyLoad = false
 
     # cat=plugin.tx_wsslider.owl/owl/x; type=int+; label=Eagerly pre-loads images to the right (and left when loop is enabled) based on how many items you want to preload.
     lazyLoadEager = 0
 
-    # cat=plugin.tx_wsslider.owl/owl/x1; type=boolean; label=Autoplay.
+    # cat=plugin.tx_wsslider.owl/owl/x1; type=options[true,false]; label=Autoplay.
     autoplay = false
 
     # cat=plugin.tx_wsslider.owl/owl/x2; type=int+; label=Autoplay interval timeout.
     autoplayTimeout = 5000
 
-    # cat=plugin.tx_wsslider.owl/owl/x3; type=boolean; label=Pause on mouse hover.
+    # cat=plugin.tx_wsslider.owl/owl/x3; type=options[true,false]; label=Pause on mouse hover.
     autoplayHoverPause = false
 
     # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=Speed Calculate. More info to come..

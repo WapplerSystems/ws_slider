@@ -1,0 +1,45 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+    <f:section name="Default">
+
+        <div>
+
+            <f:if condition="{item.foregroundMedia.0}">
+                <f:image image="{item.foregroundMedia.0}" maxWidth="300" class="img-fluid mb-4"  />
+            </f:if>
+
+        </div>
+
+    </f:section>
+
+    <f:section name="Cards">
+
+
+        <div class="item" data-itemno="{iteration.index}">
+
+            <div class="card">
+
+                <f:if condition="{item.foregroundMedia.0}">
+                    <f:image image="{item.foregroundMedia.0}" maxWidth="300" class="card-img-top"  />
+                </f:if>
+
+                <div class="card-body">
+
+                    <f:link.typolink parameter="{item.data.link}">
+                        <h5 class="card-title">{item.data.title}</h5>
+                    </f:link.typolink>
+
+                    <f:format.html>{item.data.description}</f:format.html>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </f:section>
+
+</div>

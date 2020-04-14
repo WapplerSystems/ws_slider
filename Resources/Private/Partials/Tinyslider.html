@@ -4,20 +4,25 @@
 
     <f:section name="Default">
 
-        <div id="wsslider-{data.uid}" class="flexslider">
-            <ul class="slides">
+        <div id="wsslider-{data.uid}" class="">
+
                 <f:for each="{items}" as="item" iteration="iterator">
-                    <f:render partial="Item/Flexslider" section="{sliderSettings.layout}"
+                    <f:render partial="Item/Tinyslider" section="{sliderSettings.layout}"
                               arguments="{item: item, settings: settings, iterator:iterator}"/>
                 </f:for>
-            </ul>
+
         </div>
 
         <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
 
-            jQuery(document).ready(function() <f:format.raw>{</f:format.raw>
-                jQuery('#wsslider-{data.uid}').flexslider({sliderSettings.jsonParameters -> f:format.raw()});
+            var slider = tns(<f:format.raw>{</f:format.raw>
+                container: '#wsslider-{data.uid}',
+                loop: true,
+                gutter: 20,
+                mode: 'carousel',
+                nav: true
             });
+
 
         </wsslider:pageRenderer.addJsFooterInlineCode>
 

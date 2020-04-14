@@ -19,19 +19,19 @@ plugin.tx_wsslider.settings.flexslider {
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[vertical,horizontal]; label=sliding direction
     direction=horizontal
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Reverse the animation direction
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Reverse the animation direction
     reverse=false
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Animation loop: Should the animation loop? If false, directionNav will received "disable" classes at either end
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Animation loop: Should the animation loop? If false, directionNav will received "disable" classes at either end
     animationLoop=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Smooth height: Allow height of the slider to animate smoothly in horizontal mode
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Smooth height: Allow height of the slider to animate smoothly in horizontal mode
     smoothHeight=false
 
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=Start at: The slide that the slider should start on. Array notation (0 = first slide)
     startAt = 0
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Slideshow
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Slideshow
     slideshow = false
 
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=Set the speed of the slideshow cycling, in milliseconds
@@ -43,40 +43,40 @@ plugin.tx_wsslider.settings.flexslider {
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=Set an initialization delay, in milliseconds
     initDelay = 0
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Randomize slide order
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Randomize slide order
     randomize=false
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Pause on action:Pause the slideshow when interacting with control elements, highly recommended.
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Pause on action:Pause the slideshow when interacting with control elements, highly recommended.
     pauseOnAction=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Pause on hover:Pause the slideshow when hovering over slider, then resume when no longer hovering
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Pause on hover:Pause the slideshow when hovering over slider, then resume when no longer hovering
     pauseOnHover=false
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Use CSS3: Slider will use CSS3 transitions if available
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Use CSS3: Slider will use CSS3 transitions if available
     useCSS=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Touch support: Allow touch swipe navigation of the slider on touch-enabled devices
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Touch support: Allow touch swipe navigation of the slider on touch-enabled devices
     touch=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Video support: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Video support: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
     video=false
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Control navigation:Create navigation for paging control of each slide? Note: Leave true for manualControls usage
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Control navigation:Create navigation for paging control of each slide? Note: Leave true for manualControls usage
     controlNav=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Direction navigation:Create navigation for previous/next navigation? (true/false)
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Direction navigation:Create navigation for previous/next navigation? (true/false)
     directionNav=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Keyboard support:Allow slider navigating via keyboard left/right keys
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Keyboard support:Allow slider navigating via keyboard left/right keys
     keyboard=true
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Keyboard support:Allow slider navigating via keyboard left/right keys
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Keyboard support:Allow slider navigating via keyboard left/right keys
     multipleKeyboard = false
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Mousewheel support
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Mousewheel support
     mousewheel = false
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Pause play
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Pause play
     pausePlay = false
 
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=string; label=Controls container:jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".flexslider-container"). Property is ignored if given element is not found.
@@ -106,7 +106,7 @@ plugin.tx_wsslider.settings.flexslider {
     # cat=plugin.tx_wsslider.flexslider/; type=int+; label=Move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
     move=0
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=boolean; label=Is carousel
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=options[true,false]; label=Is carousel
     carousel=false
 
 	

@@ -59,19 +59,25 @@ class SliderProcessor implements DataProcessorInterface
             $settings['parameters'] = [];
         }
 
+
         $settings = GeneralUtility::removeDotsFromTS($settings);
+        $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+
+        //DebugUtility::debug($settings['parameters'],"TypoScript");
 
         // Process Flexform
         $flexformData = $processedData['data']['pi_flexform'];
         if (is_string($flexformData)) {
             $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
             //DebugUtility::debug($flexformData['settings']['js'],'FlexForm');
-            ArrayUtility::mergeRecursiveWithOverrule(
-                $settings['parameters'],
-                $flexformData['settings']['js'],
-                true,
-                false
-            );
+            if (is_array($flexformData['settings']['js'])) {
+                ArrayUtility::mergeRecursiveWithOverrule(
+                    $settings['parameters'],
+                    $flexformData['settings']['js'],
+                    true,
+                    false
+                );
+            }
         }
 
         # convert integers in texts to integers
@@ -84,7 +90,7 @@ class SliderProcessor implements DataProcessorInterface
 
         $processedData['sliderSettings'] = $settings;
 
-        DebugUtility::debug($processedData['sliderSettings'],'sliderSettings');
+        //DebugUtility::debug($processedData['sliderSettings'],'sliderSettings');
 
         return $processedData;
     }

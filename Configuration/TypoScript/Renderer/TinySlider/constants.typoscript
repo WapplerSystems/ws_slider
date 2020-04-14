@@ -19,10 +19,10 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=edgePadding:
     edgePadding = 0
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=boolean; label=fixedWidth:
+    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=fixedWidth:
     fixedWidth = false
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=boolean; label=autoWidth:
+    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=autoWidth:
     autoWidth = false
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=viewportMax:
@@ -31,10 +31,10 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=slideBy:
     slideBy = 1
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=boolean; label=Center:
+    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=Center:
     center = false
 
-    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=boolean; label=Controls:
+    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[true,false]; label=Controls:
     controls = true
 
     # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[top,bottom]; label=Controls position
@@ -43,25 +43,28 @@ plugin.tx_wsslider.settings.tinyslider {
 
     controlsContainer = false
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=boolean; label=Navigation:
+    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Navigation:
     nav = true
 
     # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=options[top,bottom]; label=Navigation position
     navPosition = top
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/c; type=boolean; label=Navigation as thumbnails:
+    # cat=plugin.tx_wsslider.tinyslider/navigation/c; type=options[true,false]; label=Navigation as thumbnails:
     navAsThumbnails = false
 
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=boolean; label=Arrow keys
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Arrow keys
     arrowKeys = false
 
 
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=boolean; label=Speed of slide animation
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Speed of slide animation
     speed = 300
 
     freezable = true
 
     startIndex = 0
+
+    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Loop:
+    loop = true
 
 
     useLocalStorage = true

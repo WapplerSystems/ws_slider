@@ -22,6 +22,7 @@ plugin.tx_wsslider.settings.renderer.tinyslider {
 	arrowKeys = {$plugin.tx_wsslider.settings.tinyslider.arrowKeys}
 	speed = {$plugin.tx_wsslider.settings.tinyslider.speed}
 
+	loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
 
 	responsive {
 		0 {
