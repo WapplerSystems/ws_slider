@@ -1,0 +1,27 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers">
+
+    <f:section name="Default">
+
+        <div id="wsslider-{data.uid}" class="flexslider">
+            <ul class="slides">
+                <f:for each="{items}" as="item" iteration="iterator">
+                    <f:render partial="Item/Flexslider" section="{sliderSettings.layout}"
+                              arguments="{item: item, settings: settings, iterator:iterator}"/>
+                </f:for>
+            </ul>
+        </div>
+
+        <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
+
+            jQuery(document).ready(function() <f:format.raw>{</f:format.raw>
+                jQuery('#wsslider-{data.uid}').flexslider({sliderSettings.json -> f:format.raw()});
+            });
+
+        </wsslider:pageRenderer.addJsFooterInlineCode>
+
+
+    </f:section>
+
+</div>

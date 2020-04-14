@@ -9,25 +9,27 @@
         <tinyslider>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tinySlider</sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.tinySlider</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
 
-                    <settings.lazyLoad>
+
+
+                    <settings.js.mode>
                         <TCEforms>
-                            <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.lazyLoad</label>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.default.owl.lazyLoad</typoscriptPath>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinyslider.mode</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.mode</typoscriptPath>
+                                <eval>null</eval>
                                 <items type="array">
-                                    <numIndex index="2" type="array">
+                                    <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
                                         <numIndex index="1">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="3" type="array">
+                                    <numIndex index="2" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
                                         <numIndex index="1">false</numIndex>
                                     </numIndex>
@@ -36,7 +38,7 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.lazyLoad>
+                    </settings.js.mode>
 
                 </el>
             </ROOT>

@@ -11,6 +11,10 @@
 				<source>Universal Slider / Carousel</source>
 			</trans-unit>
 
+			<trans-unit id="palette.wsslider">
+				<source>Slider</source>
+			</trans-unit>
+
 
 			<trans-unit id="settings" xml:space="preserve">
 				<source>Settings</source>
@@ -57,6 +61,9 @@
 			</trans-unit>
 			<trans-unit id="sheet.general">
 				<source>General</source>
+			</trans-unit>
+			<trans-unit id="sheet.tinySlider">
+				<source>Tiny Slider</source>
 			</trans-unit>
 
 
@@ -132,10 +139,13 @@
 
 
 			<trans-unit id="settings.owl.items">
-				<source>Items</source>
+				<source>The number of items you want to see on the screen.</source>
 			</trans-unit>
 			<trans-unit id="settings.owl.margin">
-				<source>Margin</source>
+				<source>Margin-right(px) on item.</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.stagePadding">
+				<source>Padding left and right on stage (can see neighbours).</source>
 			</trans-unit>
 			<trans-unit id="settings.owl.center">
 				<source>Center item</source>
@@ -167,8 +177,11 @@
 			<trans-unit id="settings.owl.autoplayHoverPause">
 				<source>Pause on mouse hover.</source>
 			</trans-unit>
-			<trans-unit id="settings.owl.smartSpeed">
-				<source>Speed Calculate. More info to come..</source>
+			<trans-unit id="settings.owl.dragEndSpeed">
+				<source>Drag end speed</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.mouseDrag">
+				<source>Mouse drag enabled</source>
 			</trans-unit>
 
 

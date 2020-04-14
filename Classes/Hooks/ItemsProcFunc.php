@@ -4,6 +4,7 @@ namespace WapplerSystems\WsSlider\Hooks;
 
 
 use TYPO3\CMS\Backend\Utility\BackendUtility as BackendUtilityCore;
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
 use WapplerSystems\WsSlider\Utility\TemplateLayout;
@@ -27,12 +28,10 @@ class ItemsProcFunc
      *
      * @param array &$config configuration array
      */
-    public function userTemplateLayout(array &$config)
+    public function userTemplateLayout(array $config, $pObj)
     {
-        $pageId = 0;
-
-        $currentColPos = $config['flexParentDatabaseRow']['colPos'];
-        $pageId = $this->getPageId($config['flexParentDatabaseRow']['pid']);
+        $currentColPos = $config['row']['colPos'];
+        $pageId = $this->getPageId($config['row']['pid']);
 
         if ($pageId > 0) {
             $templateLayouts = $this->templateLayoutsUtility->getAvailableTemplateLayouts($pageId);

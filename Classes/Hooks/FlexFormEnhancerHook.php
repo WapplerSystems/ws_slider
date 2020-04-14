@@ -68,7 +68,7 @@ class FlexFormEnhancerHook
                 $identifier['ext-wsslider-extendSheets'] = $defaultValue;
             }
             if (
-                isset($row['tx_wsslider_renderer']) && $row['tx_wsslider_renderer'] !== null
+                isset($row['tx_wsslider_renderer']) && $row['tx_wsslider_renderer'] !== '' && $row['tx_wsslider_renderer'] !== null
             ) {
                 $identifier['ext-wsslider-extendSheets'] = $row['tx_wsslider_renderer'];
             }

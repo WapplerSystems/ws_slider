@@ -14,7 +14,7 @@
                 <type>array</type>
                 <el>
 
-                    <settings.items>
+                    <settings.js.items>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.items</label>
                             <config>
@@ -28,10 +28,10 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.items>
+                    </settings.js.items>
 
 
-                    <settings.loop>
+                    <settings.js.loop>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
                             <config>
@@ -53,10 +53,10 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.loop>
+                    </settings.js.loop>
 
 
-                    <settings.merge>
+                    <settings.js.merge>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.merge</label>
                             <config>
@@ -78,9 +78,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.merge>
+                    </settings.js.merge>
 
-                    <settings.mergeFit>
+                    <settings.js.mergeFit>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.mergeFit</label>
                             <config>
@@ -102,9 +102,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.mergeFit>
+                    </settings.js.mergeFit>
 
-                    <settings.autoWidth>
+                    <settings.js.autoWidth>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.autoWidth</label>
                             <config>
@@ -126,9 +126,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.autoWidth>
+                    </settings.js.autoWidth>
 
-                    <settings.startPosition>
+                    <settings.js.startPosition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.startPosition</label>
                             <config>
@@ -138,9 +138,9 @@
                                 <eval>null,trim</eval>
                             </config>
                         </TCEforms>
-                    </settings.startPosition>
+                    </settings.js.startPosition>
 
-                    <settings.rewind>
+                    <settings.js.rewind>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.rewind</label>
                             <config>
@@ -162,9 +162,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.rewind>
+                    </settings.js.rewind>
 
-                    <settings.slideBy>
+                    <settings.js.slideBy>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.slideBy</label>
                             <config>
@@ -174,9 +174,9 @@
                                 <eval>null,trim</eval>
                             </config>
                         </TCEforms>
-                    </settings.slideBy>
+                    </settings.js.slideBy>
 
-                    <settings.slideTransition>
+                    <settings.js.slideTransition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.slideTransition</label>
                             <config>
@@ -186,10 +186,10 @@
                                 <eval>null,trim</eval>
                             </config>
                         </TCEforms>
-                    </settings.slideTransition>
+                    </settings.js.slideTransition>
 
 
-                    <settings.autoplay>
+                    <settings.js.autoplay>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay</label>
                             <config>
@@ -211,9 +211,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.autoplay>
+                    </settings.js.autoplay>
 
-                    <settings.autoplayTimeout>
+                    <settings.js.autoplayTimeout>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.autoplayTimeout</label>
                             <config>
@@ -227,9 +227,9 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.autoplayTimeout>
+                    </settings.js.autoplayTimeout>
 
-                    <settings.autoplayHoverPause>
+                    <settings.js.autoplayHoverPause>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.autoplayHoverPause</label>
                             <config>
@@ -251,25 +251,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.autoplayHoverPause>
+                    </settings.js.autoplayHoverPause>
 
-                    <settings.smartSpeed>
-                        <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.smartSpeed</label>
-                            <config>
-                                <type>input</type>
-                                <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.smartSpeed</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>1000</upper>
-                                </range>
-                            </config>
-                        </TCEforms>
-                    </settings.smartSpeed>
-
-                    <settings.autoplaySpeed>
+                    <settings.js.autoplaySpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplaySpeed</label>
                             <config>
@@ -283,11 +267,11 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.autoplaySpeed>
+                    </settings.js.autoplaySpeed>
 
 
 
-                    <settings.responsiveRefreshRate>
+                    <settings.js.responsiveRefreshRate>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.responsiveRefreshRate</label>
                             <config>
@@ -301,7 +285,7 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.responsiveRefreshRate>
+                    </settings.js.responsiveRefreshRate>
 
                 </el>
             </ROOT>
@@ -315,7 +299,7 @@
                 <type>array</type>
                 <el>
 
-                    <settings.nav>
+                    <settings.js.nav>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.nav</label>
                             <config>
@@ -337,9 +321,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.nav>
+                    </settings.js.nav>
 
-                    <settings.dots>
+                    <settings.js.dots>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.dots</label>
                             <config>
@@ -361,9 +345,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.dots>
+                    </settings.js.dots>
 
-                    <settings.navSpeed>
+                    <settings.js.navSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.navSpeed</label>
                             <config>
@@ -377,9 +361,9 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.navSpeed>
+                    </settings.js.navSpeed>
 
-                    <settings.dotsSpeed>
+                    <settings.js.dotsSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.dotsSpeed</label>
                             <config>
@@ -393,7 +377,7 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.dotsSpeed>
+                    </settings.js.dotsSpeed>
 
 
                 </el>
@@ -408,9 +392,9 @@
                 <type>array</type>
                 <el>
 
-                    <settings.margin>
+                    <settings.js.margin>
                         <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.margin</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.margin</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -422,9 +406,9 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.margin>
+                    </settings.js.margin>
 
-                    <settings.stagePadding>
+                    <settings.js.stagePadding>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.stagePadding</label>
                             <config>
@@ -438,9 +422,9 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.stagePadding>
+                    </settings.js.stagePadding>
 
-                    <settings.center>
+                    <settings.js.center>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.center</label>
                             <config>
@@ -462,7 +446,7 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.center>
+                    </settings.js.center>
 
                 </el>
             </ROOT>
@@ -476,9 +460,9 @@
                 <type>array</type>
                 <el>
 
-                    <settings.dragEndSpeed>
+                    <settings.js.dragEndSpeed>
                         <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.dragEndSpeed</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.dragEndSpeed</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -490,11 +474,11 @@
                                 </range>
                             </config>
                         </TCEforms>
-                    </settings.dragEndSpeed>
+                    </settings.js.dragEndSpeed>
 
-                    <settings.mouseDrag>
+                    <settings.js.mouseDrag>
                         <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.mouseDrag</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.owl.mouseDrag</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -514,9 +498,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.mouseDrag>
+                    </settings.js.mouseDrag>
 
-                    <settings.touchDrag>
+                    <settings.js.touchDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.touchDrag</label>
                             <config>
@@ -538,9 +522,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.touchDrag>
+                    </settings.js.touchDrag>
 
-                    <settings.pullDrag>
+                    <settings.js.pullDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pullDrag</label>
                             <config>
@@ -562,9 +546,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.pullDrag>
+                    </settings.js.pullDrag>
 
-                    <settings.freeDrag>
+                    <settings.js.freeDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.freeDrag</label>
                             <config>
@@ -586,7 +570,7 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.freeDrag>
+                    </settings.js.freeDrag>
 
                 </el>
             </ROOT>
@@ -612,7 +596,7 @@
                 <type>array</type>
                 <el>
 
-                    <settings.lazyLoad>
+                    <settings.js.lazyLoad>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.lazyLoad</label>
                             <config>
@@ -634,9 +618,9 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.lazyLoad>
+                    </settings.js.lazyLoad>
 
-                    <settings.lazyLoadEager>
+                    <settings.js.lazyLoadEager>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.lazyLoadEager</label>
                             <config>
@@ -646,9 +630,9 @@
                                 <eval>null,trim</eval>
                             </config>
                         </TCEforms>
-                    </settings.lazyLoadEager>
+                    </settings.js.lazyLoadEager>
 
-                    <settings.URLhashListener>
+                    <settings.js.URLhashListener>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.URLhashListener</label>
                             <config>
@@ -670,7 +654,7 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.URLhashListener>
+                    </settings.js.URLhashListener>
 
                 </el>
             </ROOT>

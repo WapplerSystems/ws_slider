@@ -48,13 +48,15 @@ class SliderProcessor implements DataProcessorInterface
         $settings['renderer'] = $settings['defaultRenderer'];
         if ($processedData['data']['tx_wsslider_renderer'] !== null) $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
 
+        $settings['layout'] = $processedData['data']['tx_wsslider_layout'] ?? 'Default';
+
         $rendererKey = strtolower($settings['renderer']);
 
         if (isset($settings['renderer.'][$rendererKey.'.'])) {
-            $settings[$rendererKey] = $settings['renderer.'][$rendererKey.'.'];
+            $settings['parameters'] = $settings['renderer.'][$rendererKey.'.'];
             unset($settings['renderer.']);
         } else {
-            $settings[$rendererKey] = [];
+            $settings['parameters'] = [];
         }
 
         $settings = GeneralUtility::removeDotsFromTS($settings);
@@ -63,30 +65,26 @@ class SliderProcessor implements DataProcessorInterface
         $flexformData = $processedData['data']['pi_flexform'];
         if (is_string($flexformData)) {
             $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-            DebugUtility::debug($flexformData,'FlexForm');
+            //DebugUtility::debug($flexformData['settings']['js'],'FlexForm');
             ArrayUtility::mergeRecursiveWithOverrule(
-                $settings[$rendererKey],
-                $flexformData['settings'],
+                $settings['parameters'],
+                $flexformData['settings']['js'],
                 true,
                 false
             );
         }
 
         # convert integers in texts to integers
-        $settings[$rendererKey] = $this->convertStringToSimpleType($settings[$rendererKey]);
-        $settings['json'] = json_encode($settings[$rendererKey]);
+        $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+        $settings['jsonParameters'] = json_encode($settings['parameters']);
 
-        if (!isset($settings['layout']) || empty($settings['layout'])) {
-            $settings['layout'] = 'Default';
-        }
-
-        $settings['layout'] = ucfirst($settings['layout']);
         $settings['renderer'] = ucfirst($settings['renderer']);
-
 
         unset($settings['defaultRenderer']);
 
         $processedData['sliderSettings'] = $settings;
+
+        DebugUtility::debug($processedData['sliderSettings'],'sliderSettings');
 
         return $processedData;
     }

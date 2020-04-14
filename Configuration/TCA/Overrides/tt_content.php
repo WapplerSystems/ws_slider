@@ -8,34 +8,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['ws_slider'])) {
     $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = [];
 }
 
-/***************
- * Add content element PageTSConfig
- */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/ContentElementWizard.tsconfig',
-    'Slider Element'
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/Flexslider.tsconfig',
-    'Flexslider'
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/Owl.tsconfig',
-    'Owl'
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/BxSlider.tsconfig',
-    'bxSlider'
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/Tinyslider.tsconfig',
-    'Tiny Slider 2'
-);
+
 
 /***************
  * Add content element to selector list
@@ -68,8 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
-                tx_wsslider_renderer,
-                tx_wsslider_items;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:items,
+                --palette--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:palette.wsslider;tx_wsslider,
             --div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings,
                 pi_flexform;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:advanced,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -93,7 +65,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_wsslider_items' => [
         'exclude' => 0,
-        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xml:tx_wsslider_domain_model_flexslider.items',
+        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_flexslider.items',
         'config' => [
             'type' => 'inline',
             'foreign_table' => 'tx_wsslider_domain_model_item',
@@ -116,18 +88,44 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
     ],
     'tx_wsslider_renderer' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xml:renderer',
+        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:renderer',
         'onChange' => 'reload',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingleWithTypoScriptPlaceholder',
             'typoscriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'eval' => 'null',
+        ]
+    ],
+    'tx_wsslider_layout' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.layout',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'itemsProcFunc' => WapplerSystems\WsSlider\Hooks\ItemsProcFunc::class.'->userTemplateLayout',
+            'default' => 'Default',
             'items' => [
-            ],
+                ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value','Default']
+            ]
         ]
     ]
 ]);
+
+
+$GLOBALS['TCA']['tt_content']['palettes'] = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['palettes'],[
+        'tx_wsslider' => [
+            'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:palette.wsslider',
+            'showitem' => '
+                tx_wsslider_renderer;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:renderer,
+                tx_wsslider_layout;LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.layout,
+                --linebreak--,
+                tx_wsslider_items;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:items,
+             ',
+        ],
+    ]
+);
 
 
 /***************
