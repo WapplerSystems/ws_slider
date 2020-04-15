@@ -19,6 +19,26 @@
 			</trans-unit>
 
 
+
+
+
+			<!-- Buttons and labels -->
+			<trans-unit id="label.next">
+				<target>Vorwärts</target>
+			</trans-unit>
+			<trans-unit id="label.previous">
+				<target>Zurück</target>
+			</trans-unit>
+			<trans-unit id="label.start">
+				<target>Start</target>
+			</trans-unit>
+			<trans-unit id="label.stop">
+				<target>Stop</target>
+			</trans-unit>
+
+
+
+
 			<trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
 				<target>Flexslider</target>
 			</trans-unit>

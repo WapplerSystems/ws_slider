@@ -45,6 +45,12 @@
 			<trans-unit id="label.previous">
 				<source>Previous</source>
 			</trans-unit>
+			<trans-unit id="label.start">
+				<source>Start</source>
+			</trans-unit>
+			<trans-unit id="label.stop">
+				<source>Stop</source>
+			</trans-unit>
 
 			<!-- sheets -->
 			<trans-unit id="sheet.owl">

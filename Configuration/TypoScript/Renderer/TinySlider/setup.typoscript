@@ -44,6 +44,20 @@ plugin.tx_wsslider.settings.renderer.tinyslider {
 	}
 
 
+	controlsText {
+		0 = TEXT
+		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+		1 = TEXT
+		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+	}
+
+	autoplayText {
+		0 = TEXT
+		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.start
+		1 = TEXT
+		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.stop
+	}
+
 }
 
 tt_content.ws_slider.settings.slider.renderer.tinyslider < plugin.tx_wsslider.settings.renderer.tinyslider

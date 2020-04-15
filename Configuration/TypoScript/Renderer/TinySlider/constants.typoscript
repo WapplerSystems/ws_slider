@@ -56,7 +56,7 @@ plugin.tx_wsslider.settings.tinyslider {
     arrowKeys = false
 
 
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Speed of slide animation
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Speed of slide animation
     speed = 300
 
     freezable = true
@@ -68,5 +68,6 @@ plugin.tx_wsslider.settings.tinyslider {
 
 
     useLocalStorage = true
+
 
 }
