@@ -5,64 +5,64 @@
     <body>
       <trans-unit id="title" xml:space="preserve">
 				<source>Slider</source>
-			<target state="needs-translation">Slider</target></trans-unit>
+			<target state="translated">Slider</target></trans-unit>
       <trans-unit id="description" xml:space="preserve">
 				<source>Universal Slider / Carousel</source>
 			<target state="needs-translation">Universal Slider / Carousel</target></trans-unit>
       <trans-unit id="palette.wsslider">
         <source>Slider</source>
-        <target state="needs-translation">Slider</target>
+        <target state="translated">Slider</target>
       </trans-unit>
       <trans-unit id="settings" xml:space="preserve">
 				<source>Settings</source>
-			<target state="needs-translation">Settings</target></trans-unit>
+			<target state="translated">Einstellungen</target></trans-unit>
       <trans-unit id="renderer" xml:space="preserve">
 				<source>Renderer</source>
-			<target state="needs-translation">Renderer</target></trans-unit>
+			<target state="translated">Renderer</target></trans-unit>
       <trans-unit id="items" xml:space="preserve">
 				<source>Items</source>
-			<target state="needs-translation">Items</target></trans-unit>
+			<target state="translated">Elemente</target></trans-unit>
       <trans-unit id="yes">
         <source>Yes</source>
-        <target state="needs-translation">Yes</target>
+        <target state="translated">Ja</target>
       </trans-unit>
       <trans-unit id="no">
         <source>No</source>
-        <target state="needs-translation">No</target>
+        <target state="translated">Nein</target>
       </trans-unit>
       <trans-unit id="default">
         <source>Default</source>
-        <target state="needs-translation">Default</target>
+        <target state="translated">Standard</target>
       </trans-unit>
       <!-- Buttons and labels -->
       <trans-unit id="label.next">
         <source>Next</source>
-        <target state="needs-translation">Next</target>
+        <target state="translated">Weiter</target>
       </trans-unit>
       <trans-unit id="label.previous">
         <source>Previous</source>
-        <target state="needs-translation">Previous</target>
+        <target state="translated">Zurück</target>
       </trans-unit>
       <trans-unit id="label.start">
         <source>Start</source>
-        <target state="needs-translation">Start</target>
+        <target state="translated">Start</target>
       </trans-unit>
       <trans-unit id="label.stop">
         <source>Stop</source>
-        <target state="needs-translation">Stop</target>
+        <target state="translated">Stop</target>
       </trans-unit>
       <!-- sheets -->
       <trans-unit id="sheet.owl">
         <source>Owl</source>
-        <target state="needs-translation">Owl</target>
+        <target state="translated">Owl</target>
       </trans-unit>
       <trans-unit id="sheet.navigation">
         <source>Navigation</source>
-        <target state="needs-translation">Navigation</target>
+        <target state="translated">Navigation</target>
       </trans-unit>
       <trans-unit id="sheet.layout">
         <source>Layout</source>
-        <target state="needs-translation">Layout</target>
+        <target state="translated">Darstellung</target>
       </trans-unit>
       <trans-unit id="sheet.dragNdrop">
         <source>Drag and drop</source>
@@ -74,15 +74,15 @@
       </trans-unit>
       <trans-unit id="sheet.advanced">
         <source>Advanced</source>
-        <target state="needs-translation">Advanced</target>
+        <target state="translated">Erweitert</target>
       </trans-unit>
       <trans-unit id="sheet.general">
         <source>General</source>
-        <target state="needs-translation">General</target>
+        <target state="translated">Allgemein</target>
       </trans-unit>
       <trans-unit id="sheet.tinySlider">
         <source>Tiny Slider</source>
-        <target state="needs-translation">Tiny Slider</target>
+        <target state="translated">Tiny Slider</target>
       </trans-unit>
       <!-- common setting labels -->
       <trans-unit id="settings.common.layout">
@@ -111,26 +111,26 @@
 			<target state="needs-translation">Slider item</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
 				<source>Title</source>
-			<target state="needs-translation">Title</target></trans-unit>
+			<target state="translated">Titel</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
 				<source>Description</source>
-			<target state="needs-translation">Description</target></trans-unit>
+			<target state="translated">Beschreibung</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" xml:space="preserve">
 				<source>Image or Video</source>
-			<target state="needs-translation">Image or Video</target></trans-unit>
+			<target state="translated">Bilder und Videos</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textPosition">
         <source>Text position</source>
-        <target state="needs-translation">Text position</target>
+        <target state="translated">Textposition</target>
       </trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve">
 				<source>Link</source>
-			<target state="needs-translation">Link</target></trans-unit>
+			<target state="translated">Link</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
 				<source>Left</source>
-			<target state="needs-translation">Left</target></trans-unit>
+			<target state="translated">Links</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
 				<source>Right</source>
-			<target state="needs-translation">Right</target></trans-unit>
+			<target state="translated">Rechts</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
 				<source>Text style class</source>
 			<target state="needs-translation">Text style class</target></trans-unit>
