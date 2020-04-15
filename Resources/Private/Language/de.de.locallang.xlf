@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="settings" xml:space="preserve">
+				<target>Einstellungen</target>
+			</trans-unit>
+      <trans-unit id="yes" xml:space="preserve">
+				<target>Ja</target>
+			</trans-unit>
+      <trans-unit id="no" xml:space="preserve">
+				<target>Nein</target>
+			</trans-unit>
+      <trans-unit id="images" xml:space="preserve">
+				<target>Bilder</target>
+			</trans-unit>
+      <!-- Buttons and labels -->
+      <trans-unit id="label.next">
+        <target>Vorwärts</target>
+      </trans-unit>
+      <trans-unit id="label.previous">
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="label.start">
+        <target>Start</target>
+      </trans-unit>
+      <trans-unit id="label.stop">
+        <target>Stop</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
+				<target>Flexslider</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
+				<target>Titel</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
+				<target>Beschreibung</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition" xml:space="preserve">
+				<target>Textposition</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
+				<target>Links</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
+				<target>Rechts</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
+				<target>Text-Stilklasse</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve">
+				<target>Stil 1</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve">
+				<target>Stil 2</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve">
+				<target>Stil 3</target>
+			</trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve">
+				<target>Stil 4</target>
+			</trans-unit>
+      <trans-unit id="addImage" xml:space="preserve">
+				<target>Bild hinzufügen</target>
+			</trans-unit>
+      <trans-unit id="settings.config" xml:space="preserve">
+				<target>Konfiguration</target>
+			</trans-unit>
+      <trans-unit id="settings.maxwidth" xml:space="preserve">
+				<target>Maximale Breite</target>
+			</trans-unit>
+      <trans-unit id="settings.maxheight" xml:space="preserve">
+				<target>Maximale Höhe</target>
+			</trans-unit>
+      <trans-unit id="settings.typoscript" xml:space="preserve">
+				<target>TypoScript</target>
+			</trans-unit>
+      <trans-unit id="settings.fade" xml:space="preserve">
+				<target>Überblenden</target>
+			</trans-unit>
+      <trans-unit id="settings.slide" xml:space="preserve">
+				<target>Gleiten</target>
+			</trans-unit>
+      <trans-unit id="settings.animation" xml:space="preserve">
+				<target>Animation</target>
+			</trans-unit>
+      <trans-unit id="settings.easing" xml:space="preserve">
+				<target>Easing Effekt</target>
+			</trans-unit>
+      <trans-unit id="settings.direction" xml:space="preserve">
+				<target>Richtung</target>
+			</trans-unit>
+      <trans-unit id="settings.vertical" xml:space="preserve">
+				<target>Vertikal</target>
+			</trans-unit>
+      <trans-unit id="settings.horizontal" xml:space="preserve">
+				<target>Horizontal</target>
+			</trans-unit>
+      <trans-unit id="settings.reverse" xml:space="preserve">
+				<target>Umgekehrte Anordnung</target>
+			</trans-unit>
+      <trans-unit id="settings.yes" xml:space="preserve">
+				<target>Ja</target>
+			</trans-unit>
+      <trans-unit id="settings.no" xml:space="preserve">
+				<target>Nein</target>
+			</trans-unit>
+      <trans-unit id="settings.animationLoop" xml:space="preserve">
+				<target>Animationsschleife</target>
+			</trans-unit>
+      <trans-unit id="settings.smoothHeight" xml:space="preserve">
+				<target>Geschmeidige Höhe</target>
+			</trans-unit>
+      <trans-unit id="settings.startAt" xml:space="preserve">
+				<target>Beginnen bei</target>
+			</trans-unit>
+      <trans-unit id="settings.slideshow" xml:space="preserve">
+				<target>Slideshow Modus</target>
+			</trans-unit>
+      <trans-unit id="settings.slideshowSpeed" xml:space="preserve">
+				<target>Geschwindigkeit der Slideshow (in Millisekunden)</target>
+			</trans-unit>
+      <trans-unit id="settings.animationSpeed" xml:space="preserve">
+				<target>Geschwindigkeit der Animation (in Millisekunden)</target>
+			</trans-unit>
+      <trans-unit id="settings.initDelay" xml:space="preserve">
+				<target>Startverzögerung in Millisekunden</target>
+			</trans-unit>
+      <trans-unit id="settings.randomize" xml:space="preserve">
+				<target>Zufallsmodus</target>
+			</trans-unit>
+      <trans-unit id="settings.textmode" xml:space="preserve">
+				<target>Textmodus</target>
+			</trans-unit>
+      <trans-unit id="settings.primarysettings" xml:space="preserve">
+				<target>Primäreinstellungen</target>
+			</trans-unit>
+      <!-- Usability Features -->
+      <trans-unit id="settings.primarycontrols" xml:space="preserve">
+				<target>Primäre Steuerung</target>
+			</trans-unit>
+      <trans-unit id="settings.pauseOnAction" xml:space="preserve">
+				<target>Pause bei Aktion</target>
+			</trans-unit>
+      <trans-unit id="settings.pauseOnHover" xml:space="preserve">
+				<target>Pause bei Mouse Over</target>
+			</trans-unit>
+      <trans-unit id="settings.useCSS" xml:space="preserve">
+				<target>Benutze CSS</target>
+			</trans-unit>
+      <trans-unit id="settings.touch" xml:space="preserve">
+				<target>Touch Modus</target>
+			</trans-unit>
+      <trans-unit id="settings.video" xml:space="preserve">
+				<target>Video Modus</target>
+			</trans-unit>
+      <!-- Primary Controls -->
+      <trans-unit id="settings.controlNav" xml:space="preserve">
+				<target>Kontrollnavigation an</target>
+			</trans-unit>
+      <trans-unit id="settings.directionNav" xml:space="preserve">
+				<target>Richtungsnavigation an</target>
+			</trans-unit>
+      <!-- Secondary Navigation -->
+      <trans-unit id="settings.secondaryNavigation" xml:space="preserve">
+				<target>Zweite Navigation</target>
+			</trans-unit>
+      <trans-unit id="settings.keyboard" xml:space="preserve">
+				<target>Tastaturunterstützung</target>
+			</trans-unit>
+      <trans-unit id="settings.multipleKeyboard" xml:space="preserve">
+				<target>Erlaub Navigation mittels Tastatur, um mehrere Slider zu unterstützen</target>
+			</trans-unit>
+      <trans-unit id="settings.mousewheel" xml:space="preserve">
+				<target>Mausrad-Unterstützung (benötigt jquery.mousewheel.js)</target>
+			</trans-unit>
+      <trans-unit id="settings.pausePlay" xml:space="preserve">
+				<target>Erstelle dynamisches Pause/Abspielen Element</target>
+			</trans-unit>
+      <!-- Special Properties -->
+      <trans-unit id="settings.specialProperties" xml:space="preserve">
+				<target>Sonderoptionen</target>
+			</trans-unit>
+      <trans-unit id="settings.controlsContainer" xml:space="preserve">
+				<target>controlsContainer jQuery Object/Selector</target>
+			</trans-unit>
+      <trans-unit id="settings.manualControls" xml:space="preserve">
+				<target>manualControls jQuery Object/Selector</target>
+			</trans-unit>
+      <trans-unit id="settings.sync" xml:space="preserve">
+				<target>sync Selector</target>
+			</trans-unit>
+      <trans-unit id="settings.asNavFor" xml:space="preserve">
+				<target>asNavFor Selector</target>
+			</trans-unit>
+      <!-- Carousel -->
+      <trans-unit id="settings.carousel" xml:space="preserve">
+				<target>Carousel Optionen</target>
+			</trans-unit>
+      <trans-unit id="settings.itemWidth" xml:space="preserve">
+				<target>Elementbreite in Pixel</target>
+			</trans-unit>
+      <trans-unit id="settings.itemMargin" xml:space="preserve">
+				<target>Elementrand (margin)</target>
+			</trans-unit>
+      <trans-unit id="settings.minItems" xml:space="preserve">
+				<target>Minimale Elementeanzahl</target>
+			</trans-unit>
+      <trans-unit id="settings.maxItems" xml:space="preserve">
+				<target>Maximale Elementeanzahl</target>
+			</trans-unit>
+      <trans-unit id="settings.move" xml:space="preserve">
+				<target>Anzahl an Elementen, die bei Animation verschoben werden sollen</target>
+			</trans-unit>
+      <!-- Labels -->
+      <trans-unit id="pauseText" xml:space="preserve">
+				<target>Pause</target>
+			</trans-unit>
+      <trans-unit id="playText" xml:space="preserve">
+				<target>Abspielen</target>
+			</trans-unit>
+      <trans-unit id="prevText" xml:space="preserve">
+				<target>Zurück</target>
+			</trans-unit>
+      <trans-unit id="nextText" xml:space="preserve">
+				<target>Weiter</target>
+			</trans-unit>
+      <trans-unit id="more" xml:space="preserve">
+				<target>Mehr</target>
+			</trans-unit>
+    </body>
+  </file>
+</xliff>
