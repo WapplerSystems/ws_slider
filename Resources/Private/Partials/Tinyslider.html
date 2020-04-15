@@ -13,18 +13,8 @@
 
         </div>
 
-        <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
+        <wsslider:addStartJavaScriptCode functionName="tns" variableName="slider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" overrideParameters="{container: '#wsslider-{data.uid}'}" />
 
-            var slider = tns(<f:format.raw>{</f:format.raw>
-                container: '#wsslider-{data.uid}',
-                loop: true,
-                gutter: 20,
-                mode: 'carousel',
-                nav: true
-            });
-
-
-        </wsslider:pageRenderer.addJsFooterInlineCode>
 
 
     </f:section>

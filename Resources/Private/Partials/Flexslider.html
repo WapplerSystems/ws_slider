@@ -13,13 +13,7 @@
             </ul>
         </div>
 
-        <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
-
-            jQuery(document).ready(function() <f:format.raw>{</f:format.raw>
-                jQuery('#wsslider-{data.uid}').flexslider({sliderSettings.jsonParameters -> f:format.raw()});
-            });
-
-        </wsslider:pageRenderer.addJsFooterInlineCode>
+        <wsslider:addStartJavaScriptCode functionName="flexslider" useJQuery="true" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" />
 
 
     </f:section>

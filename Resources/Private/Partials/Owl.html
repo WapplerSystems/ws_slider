@@ -14,13 +14,9 @@
             </div>
         </div>
 
-        <wsslider:pageRenderer.addJsFooterInlineCode name="wsslider-{data.uid}">
 
-            jQuery(document).ready(function() <f:format.raw>{</f:format.raw>
-                jQuery('#wsslider-{data.uid} .owl-carousel').owlCarousel({sliderSettings.jsonParameters -> f:format.raw()});
-            });
+        <wsslider:addStartJavaScriptCode functionName="owlCarousel" useJQuery="true" selector="#wsslider-{data.uid} .owl-carousel" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" />
 
-        </wsslider:pageRenderer.addJsFooterInlineCode>
 
 
     </f:section>
