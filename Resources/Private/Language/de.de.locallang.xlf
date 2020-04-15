@@ -3,232 +3,373 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
+      <trans-unit id="title" xml:space="preserve">
+				<source>Slider</source>
+			<target state="needs-translation">Slider</target></trans-unit>
+      <trans-unit id="description" xml:space="preserve">
+				<source>Universal Slider / Carousel</source>
+			<target state="needs-translation">Universal Slider / Carousel</target></trans-unit>
+      <trans-unit id="palette.wsslider">
+        <source>Slider</source>
+        <target state="needs-translation">Slider</target>
+      </trans-unit>
       <trans-unit id="settings" xml:space="preserve">
-				<target>Einstellungen</target>
-			</trans-unit>
-      <trans-unit id="yes" xml:space="preserve">
-				<target>Ja</target>
-			</trans-unit>
-      <trans-unit id="no" xml:space="preserve">
-				<target>Nein</target>
-			</trans-unit>
-      <trans-unit id="images" xml:space="preserve">
-				<target>Bilder</target>
-			</trans-unit>
+				<source>Settings</source>
+			<target state="needs-translation">Settings</target></trans-unit>
+      <trans-unit id="renderer" xml:space="preserve">
+				<source>Renderer</source>
+			<target state="needs-translation">Renderer</target></trans-unit>
+      <trans-unit id="items" xml:space="preserve">
+				<source>Items</source>
+			<target state="needs-translation">Items</target></trans-unit>
+      <trans-unit id="yes">
+        <source>Yes</source>
+        <target state="needs-translation">Yes</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source>No</source>
+        <target state="needs-translation">No</target>
+      </trans-unit>
+      <trans-unit id="default">
+        <source>Default</source>
+        <target state="needs-translation">Default</target>
+      </trans-unit>
       <!-- Buttons and labels -->
       <trans-unit id="label.next">
-        <target>Vorwärts</target>
+        <source>Next</source>
+        <target state="needs-translation">Next</target>
       </trans-unit>
       <trans-unit id="label.previous">
-        <target>Zurück</target>
+        <source>Previous</source>
+        <target state="needs-translation">Previous</target>
       </trans-unit>
       <trans-unit id="label.start">
-        <target>Start</target>
+        <source>Start</source>
+        <target state="needs-translation">Start</target>
       </trans-unit>
       <trans-unit id="label.stop">
-        <target>Stop</target>
+        <source>Stop</source>
+        <target state="needs-translation">Stop</target>
       </trans-unit>
+      <!-- sheets -->
+      <trans-unit id="sheet.owl">
+        <source>Owl</source>
+        <target state="needs-translation">Owl</target>
+      </trans-unit>
+      <trans-unit id="sheet.navigation">
+        <source>Navigation</source>
+        <target state="needs-translation">Navigation</target>
+      </trans-unit>
+      <trans-unit id="sheet.layout">
+        <source>Layout</source>
+        <target state="needs-translation">Layout</target>
+      </trans-unit>
+      <trans-unit id="sheet.dragNdrop">
+        <source>Drag and drop</source>
+        <target state="needs-translation">Drag and drop</target>
+      </trans-unit>
+      <trans-unit id="sheet.animation">
+        <source>Animation</source>
+        <target state="needs-translation">Animation</target>
+      </trans-unit>
+      <trans-unit id="sheet.advanced">
+        <source>Advanced</source>
+        <target state="needs-translation">Advanced</target>
+      </trans-unit>
+      <trans-unit id="sheet.general">
+        <source>General</source>
+        <target state="needs-translation">General</target>
+      </trans-unit>
+      <trans-unit id="sheet.tinySlider">
+        <source>Tiny Slider</source>
+        <target state="needs-translation">Tiny Slider</target>
+      </trans-unit>
+      <!-- common setting labels -->
+      <trans-unit id="settings.common.layout">
+        <source>Layout</source>
+        <target state="needs-translation">Layout</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoplay">
+        <source>Autoplay</source>
+        <target state="needs-translation">Autoplay</target>
+      </trans-unit>
+      <trans-unit id="settings.common.lazyLoad">
+        <source>Lazy load</source>
+        <target state="needs-translation">Lazy load</target>
+      </trans-unit>
+      <trans-unit id="settings.common.loop">
+        <source>Loop / Carousel</source>
+        <target state="needs-translation">Loop / Carousel</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoplaySpeed">
+        <source>Autoplay speed.</source>
+        <target state="needs-translation">Autoplay speed.</target>
+      </trans-unit>
+      <!-- item labels -->
       <trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
-				<target>Flexslider</target>
-			</trans-unit>
+				<source>Slider item</source>
+			<target state="needs-translation">Slider item</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
-				<target>Titel</target>
-			</trans-unit>
+				<source>Title</source>
+			<target state="needs-translation">Title</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
-				<target>Beschreibung</target>
-			</trans-unit>
-      <trans-unit id="tx_wsslider_domain_model_item.textPosition" xml:space="preserve">
-				<target>Textposition</target>
-			</trans-unit>
+				<source>Description</source>
+			<target state="needs-translation">Description</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" xml:space="preserve">
+				<source>Image or Video</source>
+			<target state="needs-translation">Image or Video</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition">
+        <source>Text position</source>
+        <target state="needs-translation">Text position</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve">
+				<source>Link</source>
+			<target state="needs-translation">Link</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
-				<target>Links</target>
-			</trans-unit>
+				<source>Left</source>
+			<target state="needs-translation">Left</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
-				<target>Rechts</target>
-			</trans-unit>
+				<source>Right</source>
+			<target state="needs-translation">Right</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
-				<target>Text-Stilklasse</target>
-			</trans-unit>
+				<source>Text style class</source>
+			<target state="needs-translation">Text style class</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve">
-				<target>Stil 1</target>
-			</trans-unit>
+				<source>Style 1</source>
+			<target state="needs-translation">Style 1</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve">
-				<target>Stil 2</target>
-			</trans-unit>
+				<source>Style 2</source>
+			<target state="needs-translation">Style 2</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve">
-				<target>Stil 3</target>
-			</trans-unit>
+				<source>Style 3</source>
+			<target state="needs-translation">Style 3</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve">
-				<target>Stil 4</target>
-			</trans-unit>
+				<source>Style 4</source>
+			<target state="needs-translation">Style 4</target></trans-unit>
       <trans-unit id="addImage" xml:space="preserve">
-				<target>Bild hinzufügen</target>
-			</trans-unit>
+				<source>Add image</source>
+			<target state="needs-translation">Add image</target></trans-unit>
+      <!-- Owl specific labels -->
+      <trans-unit id="owl">
+        <source>Owl</source>
+        <target state="needs-translation">Owl</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.items">
+        <source>The number of items you want to see on the screen.</source>
+        <target state="needs-translation">The number of items you want to see on the screen.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.margin">
+        <source>Margin-right(px) on item.</source>
+        <target state="needs-translation">Margin-right(px) on item.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.stagePadding">
+        <source>Padding left and right on stage (can see neighbours).</source>
+        <target state="needs-translation">Padding left and right on stage (can see neighbours).</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.center">
+        <source>Center item</source>
+        <target state="needs-translation">Center item</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.merge">
+        <source>Merge items. Looking for data-merge='{number}' inside item..</source>
+        <target state="needs-translation">Merge items. Looking for data-merge='{number}' inside item..</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.mergeFit">
+        <source>Fit merged items if screen is smaller than items value.</source>
+        <target state="needs-translation">Fit merged items if screen is smaller than items value.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.autoWidth">
+        <source>Set non grid content. Try using width style on divs.</source>
+        <target state="needs-translation">Set non grid content. Try using width style on divs.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.startPosition">
+        <source>Start position or URL Hash string like '#id'.</source>
+        <target state="needs-translation">Start position or URL Hash string like '#id'.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.rewind">
+        <source>Go backwards when the boundary has reached.</source>
+        <target state="needs-translation">Go backwards when the boundary has reached.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.slideBy">
+        <source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+        <target state="needs-translation">Navigation slide by x. 'page' string can be set to slide by page.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.slideTransition">
+        <source>You can define the transition for the stage you want to use eg. linear.</source>
+        <target state="needs-translation">You can define the transition for the stage you want to use eg. linear.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.autoplayTimeout">
+        <source>Autoplay interval timeout.</source>
+        <target state="needs-translation">Autoplay interval timeout.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.autoplayHoverPause">
+        <source>Pause on mouse hover.</source>
+        <target state="needs-translation">Pause on mouse hover.</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.dragEndSpeed">
+        <source>Drag end speed</source>
+        <target state="needs-translation">Drag end speed</target>
+      </trans-unit>
+      <trans-unit id="settings.owl.mouseDrag">
+        <source>Mouse drag enabled</source>
+        <target state="needs-translation">Mouse drag enabled</target>
+      </trans-unit>
       <trans-unit id="settings.config" xml:space="preserve">
-				<target>Konfiguration</target>
-			</trans-unit>
-      <trans-unit id="settings.maxwidth" xml:space="preserve">
-				<target>Maximale Breite</target>
-			</trans-unit>
-      <trans-unit id="settings.maxheight" xml:space="preserve">
-				<target>Maximale Höhe</target>
-			</trans-unit>
+				<source>Configuration</source>
+			<target state="needs-translation">Configuration</target></trans-unit>
+      <trans-unit id="settings.maxWidth" xml:space="preserve">
+				<source>Max width</source>
+			<target state="needs-translation">Max width</target></trans-unit>
+      <trans-unit id="settings.maxHeight" xml:space="preserve">
+				<source>Max height</source>
+			<target state="needs-translation">Max height</target></trans-unit>
       <trans-unit id="settings.typoscript" xml:space="preserve">
-				<target>TypoScript</target>
-			</trans-unit>
+				<source>TypoScript</source>
+			<target state="needs-translation">TypoScript</target></trans-unit>
       <trans-unit id="settings.fade" xml:space="preserve">
-				<target>Überblenden</target>
-			</trans-unit>
+				<source>Fade</source>
+			<target state="needs-translation">Fade</target></trans-unit>
       <trans-unit id="settings.slide" xml:space="preserve">
-				<target>Gleiten</target>
-			</trans-unit>
+				<source>Slide</source>
+			<target state="needs-translation">Slide</target></trans-unit>
       <trans-unit id="settings.animation" xml:space="preserve">
-				<target>Animation</target>
-			</trans-unit>
+				<source>Animation</source>
+			<target state="needs-translation">Animation</target></trans-unit>
       <trans-unit id="settings.easing" xml:space="preserve">
-				<target>Easing Effekt</target>
-			</trans-unit>
+				<source>Easing effect</source>
+			<target state="needs-translation">Easing effect</target></trans-unit>
       <trans-unit id="settings.direction" xml:space="preserve">
-				<target>Richtung</target>
-			</trans-unit>
+				<source>Direction</source>
+			<target state="needs-translation">Direction</target></trans-unit>
       <trans-unit id="settings.vertical" xml:space="preserve">
-				<target>Vertikal</target>
-			</trans-unit>
+				<source>Vertical</source>
+			<target state="needs-translation">Vertical</target></trans-unit>
       <trans-unit id="settings.horizontal" xml:space="preserve">
-				<target>Horizontal</target>
-			</trans-unit>
+				<source>Horizontal</source>
+			<target state="needs-translation">Horizontal</target></trans-unit>
       <trans-unit id="settings.reverse" xml:space="preserve">
-				<target>Umgekehrte Anordnung</target>
-			</trans-unit>
-      <trans-unit id="settings.yes" xml:space="preserve">
-				<target>Ja</target>
-			</trans-unit>
-      <trans-unit id="settings.no" xml:space="preserve">
-				<target>Nein</target>
-			</trans-unit>
+				<source>Reverse order</source>
+			<target state="needs-translation">Reverse order</target></trans-unit>
       <trans-unit id="settings.animationLoop" xml:space="preserve">
-				<target>Animationsschleife</target>
-			</trans-unit>
+				<source>Animation loop</source>
+			<target state="needs-translation">Animation loop</target></trans-unit>
       <trans-unit id="settings.smoothHeight" xml:space="preserve">
-				<target>Geschmeidige Höhe</target>
-			</trans-unit>
+				<source>Smooth height</source>
+			<target state="needs-translation">Smooth height</target></trans-unit>
       <trans-unit id="settings.startAt" xml:space="preserve">
-				<target>Beginnen bei</target>
-			</trans-unit>
+				<source>Start at</source>
+			<target state="needs-translation">Start at</target></trans-unit>
       <trans-unit id="settings.slideshow" xml:space="preserve">
-				<target>Slideshow Modus</target>
-			</trans-unit>
+				<source>Slideshow mode</source>
+			<target state="needs-translation">Slideshow mode</target></trans-unit>
       <trans-unit id="settings.slideshowSpeed" xml:space="preserve">
-				<target>Geschwindigkeit der Slideshow (in Millisekunden)</target>
-			</trans-unit>
+				<source>Slideshow speed (in milliseconds)</source>
+			<target state="needs-translation">Slideshow speed (in milliseconds)</target></trans-unit>
       <trans-unit id="settings.animationSpeed" xml:space="preserve">
-				<target>Geschwindigkeit der Animation (in Millisekunden)</target>
-			</trans-unit>
+				<source>Animation speed (in milliseconds)</source>
+			<target state="needs-translation">Animation speed (in milliseconds)</target></trans-unit>
       <trans-unit id="settings.initDelay" xml:space="preserve">
-				<target>Startverzögerung in Millisekunden</target>
-			</trans-unit>
+				<source>Init delay in milliseconds</source>
+			<target state="needs-translation">Init delay in milliseconds</target></trans-unit>
       <trans-unit id="settings.randomize" xml:space="preserve">
-				<target>Zufallsmodus</target>
-			</trans-unit>
+				<source>Random mode</source>
+			<target state="needs-translation">Random mode</target></trans-unit>
       <trans-unit id="settings.textmode" xml:space="preserve">
-				<target>Textmodus</target>
-			</trans-unit>
+				<source>Text mode</source>
+			<target state="needs-translation">Text mode</target></trans-unit>
       <trans-unit id="settings.primarysettings" xml:space="preserve">
-				<target>Primäreinstellungen</target>
-			</trans-unit>
+				<source>Primary Settings</source>
+			<target state="needs-translation">Primary Settings</target></trans-unit>
       <!-- Usability Features -->
       <trans-unit id="settings.primarycontrols" xml:space="preserve">
-				<target>Primäre Steuerung</target>
-			</trans-unit>
+				<source>Primary controls</source>
+			<target state="needs-translation">Primary controls</target></trans-unit>
       <trans-unit id="settings.pauseOnAction" xml:space="preserve">
-				<target>Pause bei Aktion</target>
-			</trans-unit>
+				<source>Pause on action</source>
+			<target state="needs-translation">Pause on action</target></trans-unit>
       <trans-unit id="settings.pauseOnHover" xml:space="preserve">
-				<target>Pause bei Mouse Over</target>
-			</trans-unit>
+				<source>Pause on hover</source>
+			<target state="needs-translation">Pause on hover</target></trans-unit>
       <trans-unit id="settings.useCSS" xml:space="preserve">
-				<target>Benutze CSS</target>
-			</trans-unit>
+				<source>User CSS</source>
+			<target state="needs-translation">User CSS</target></trans-unit>
       <trans-unit id="settings.touch" xml:space="preserve">
-				<target>Touch Modus</target>
-			</trans-unit>
+				<source>Touch mode</source>
+			<target state="needs-translation">Touch mode</target></trans-unit>
       <trans-unit id="settings.video" xml:space="preserve">
-				<target>Video Modus</target>
-			</trans-unit>
+				<source>Video mode</source>
+			<target state="needs-translation">Video mode</target></trans-unit>
       <!-- Primary Controls -->
       <trans-unit id="settings.controlNav" xml:space="preserve">
-				<target>Kontrollnavigation an</target>
-			</trans-unit>
+				<source>Control navigation on</source>
+			<target state="needs-translation">Control navigation on</target></trans-unit>
       <trans-unit id="settings.directionNav" xml:space="preserve">
-				<target>Richtungsnavigation an</target>
-			</trans-unit>
+				<source>Direction navigation on</source>
+			<target state="needs-translation">Direction navigation on</target></trans-unit>
       <!-- Secondary Navigation -->
-      <trans-unit id="settings.secondaryNavigation" xml:space="preserve">
-				<target>Zweite Navigation</target>
-			</trans-unit>
+      <trans-unit id="settings.secondarynavigation" xml:space="preserve">
+				<source>Secondary navigation</source>
+			<target state="needs-translation">Secondary navigation</target></trans-unit>
       <trans-unit id="settings.keyboard" xml:space="preserve">
-				<target>Tastaturunterstützung</target>
-			</trans-unit>
+				<source>Keyboard support</source>
+			<target state="needs-translation">Keyboard support</target></trans-unit>
       <trans-unit id="settings.multipleKeyboard" xml:space="preserve">
-				<target>Erlaub Navigation mittels Tastatur, um mehrere Slider zu unterstützen</target>
-			</trans-unit>
+				<source>Allow keyboard navigation to affect multiple sliders</source>
+			<target state="needs-translation">Allow keyboard navigation to affect multiple sliders</target></trans-unit>
       <trans-unit id="settings.mousewheel" xml:space="preserve">
-				<target>Mausrad-Unterstützung (benötigt jquery.mousewheel.js)</target>
-			</trans-unit>
+				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
+			<target state="needs-translation">Mousewheel support (requires jquery.mousewheel.js)</target></trans-unit>
       <trans-unit id="settings.pausePlay" xml:space="preserve">
-				<target>Erstelle dynamisches Pause/Abspielen Element</target>
-			</trans-unit>
+				<source>Create pause/play dynamic element</source>
+			<target state="needs-translation">Create pause/play dynamic element</target></trans-unit>
       <!-- Special Properties -->
-      <trans-unit id="settings.specialProperties" xml:space="preserve">
-				<target>Sonderoptionen</target>
-			</trans-unit>
+      <trans-unit id="settings.specialproperties" xml:space="preserve">
+				<source>Special properties</source>
+			<target state="needs-translation">Special properties</target></trans-unit>
       <trans-unit id="settings.controlsContainer" xml:space="preserve">
-				<target>controlsContainer jQuery Object/Selector</target>
-			</trans-unit>
+				<source>controlsContainer jQuery object/selector</source>
+			<target state="needs-translation">controlsContainer jQuery object/selector</target></trans-unit>
       <trans-unit id="settings.manualControls" xml:space="preserve">
-				<target>manualControls jQuery Object/Selector</target>
-			</trans-unit>
+				<source>manualControls jQuery object/selector</source>
+			<target state="needs-translation">manualControls jQuery object/selector</target></trans-unit>
       <trans-unit id="settings.sync" xml:space="preserve">
-				<target>sync Selector</target>
-			</trans-unit>
+				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
+			<target state="needs-translation">Sync selector: mirror the actions performed on this slider with another slider</target></trans-unit>
       <trans-unit id="settings.asNavFor" xml:space="preserve">
-				<target>asNavFor Selector</target>
-			</trans-unit>
-      <!-- Carousel -->
+				<source>asNavFor selector</source>
+			<target state="needs-translation">asNavFor selector</target></trans-unit>
+      <!-- Carousel-->
       <trans-unit id="settings.carousel" xml:space="preserve">
-				<target>Carousel Optionen</target>
-			</trans-unit>
+				<source>Carousel options</source>
+			<target state="needs-translation">Carousel options</target></trans-unit>
       <trans-unit id="settings.itemWidth" xml:space="preserve">
-				<target>Elementbreite in Pixel</target>
-			</trans-unit>
+				<source>Element width in pixels</source>
+			<target state="needs-translation">Element width in pixels</target></trans-unit>
       <trans-unit id="settings.itemMargin" xml:space="preserve">
-				<target>Elementrand (margin)</target>
-			</trans-unit>
+				<source>Element border (margin)</source>
+			<target state="needs-translation">Element border (margin)</target></trans-unit>
       <trans-unit id="settings.minItems" xml:space="preserve">
-				<target>Minimale Elementeanzahl</target>
-			</trans-unit>
+				<source>Min number of elements</source>
+			<target state="needs-translation">Min number of elements</target></trans-unit>
       <trans-unit id="settings.maxItems" xml:space="preserve">
-				<target>Maximale Elementeanzahl</target>
-			</trans-unit>
+				<source>Max number of elements</source>
+			<target state="needs-translation">Max number of elements</target></trans-unit>
       <trans-unit id="settings.move" xml:space="preserve">
-				<target>Anzahl an Elementen, die bei Animation verschoben werden sollen</target>
-			</trans-unit>
+				<source>Number of elements, which should be moved in animation</source>
+			<target state="needs-translation">Number of elements, which should be moved in animation</target></trans-unit>
       <!-- Labels -->
       <trans-unit id="pauseText" xml:space="preserve">
-				<target>Pause</target>
-			</trans-unit>
+				<source>Pause</source>
+			<target state="needs-translation">Pause</target></trans-unit>
       <trans-unit id="playText" xml:space="preserve">
-				<target>Abspielen</target>
-			</trans-unit>
+				<source>Play</source>
+			<target state="needs-translation">Play</target></trans-unit>
       <trans-unit id="prevText" xml:space="preserve">
-				<target>Zurück</target>
-			</trans-unit>
+				<source>Previous</source>
+			<target state="needs-translation">Previous</target></trans-unit>
       <trans-unit id="nextText" xml:space="preserve">
-				<target>Weiter</target>
-			</trans-unit>
-      <trans-unit id="more" xml:space="preserve">
-				<target>Mehr</target>
-			</trans-unit>
+				<source>Next</source>
+			<target state="needs-translation">Next</target></trans-unit>
     </body>
   </file>
 </xliff>
