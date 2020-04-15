@@ -32,6 +32,13 @@ plugin.tx_wsslider.settings.renderer.owl {
 	autoplayHoverPause = {$plugin.tx_wsslider.settings.owl.autoplayHoverPause}
 	smartSpeed = {$plugin.tx_wsslider.settings.owl.smartSpeed}
 
+	navText {
+		0 = TEXT
+		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+		1 = TEXT
+		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+	}
+
 	responsive {
 		0 {
 			items = 1

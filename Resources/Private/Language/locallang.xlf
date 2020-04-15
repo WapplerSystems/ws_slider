@@ -38,7 +38,13 @@
 			</trans-unit>
 
 
-
+			<!-- Buttons and labels -->
+			<trans-unit id="label.next">
+				<source>Next</source>
+			</trans-unit>
+			<trans-unit id="label.previous">
+				<source>Previous</source>
+			</trans-unit>
 
 			<!-- sheets -->
 			<trans-unit id="sheet.owl">

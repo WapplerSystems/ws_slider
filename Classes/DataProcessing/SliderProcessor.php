@@ -59,8 +59,11 @@ class SliderProcessor implements DataProcessorInterface
             $settings['parameters'] = [];
         }
 
+        //DebugUtility::debug($settings['parameters']);
+        $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj,$settings['parameters']);
+        //DebugUtility::debug($settings['parameters']);
 
-        $settings = GeneralUtility::removeDotsFromTS($settings);
+        $settings['parameters'] = GeneralUtility::removeDotsFromTS($settings['parameters']);
         $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
 
         //DebugUtility::debug($settings['parameters'],"TypoScript");
@@ -113,6 +116,26 @@ class SliderProcessor implements DataProcessorInterface
             }
         }
         return $out;
+    }
+
+
+    protected function resolveTypoScriptConfiguration(ContentObjectRenderer $cObj, array $configuration = []): array
+    {
+        foreach ($configuration as $key => $value) {
+            $keyWithoutDot = rtrim((string)$key, '.');
+            if (isset($configuration[$keyWithoutDot]) && isset($configuration[$keyWithoutDot . '.'])) {
+                $value = $cObj->cObjGetSingle(
+                    $configuration[$keyWithoutDot],
+                    $configuration[$keyWithoutDot . '.'],
+                    $keyWithoutDot
+                );
+                $configuration[$keyWithoutDot] = $value;
+            } elseif (!isset($configuration[$keyWithoutDot]) && isset($configuration[$keyWithoutDot . '.'])) {
+                $configuration[$keyWithoutDot] = $this->resolveTypoScriptConfiguration($cObj,$value);
+            }
+            unset($configuration[$keyWithoutDot . '.']);
+        }
+        return $configuration;
     }
 
 }
