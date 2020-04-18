@@ -32,11 +32,12 @@ class ItemsProcFunc
     {
         $currentColPos = $config['row']['colPos'];
         $pageId = $this->getPageId($config['row']['pid']);
+        $currentRenderer = $config['row']['tx_wsslider_renderer'][0] ?? '';
 
         if ($pageId > 0) {
             $templateLayouts = $this->templateLayoutsUtility->getAvailableTemplateLayouts($pageId);
 
-            $templateLayouts = $this->reduceTemplateLayouts($templateLayouts, $currentColPos);
+            $templateLayouts = $this->reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer);
             foreach ($templateLayouts as $layout) {
                 $additionalLayout = [
                     htmlspecialchars($this->getLanguageService()->sL($layout[0])),
@@ -48,13 +49,14 @@ class ItemsProcFunc
     }
 
     /**
-     * Reduce the template layouts by the ones that are not allowed in given colPos
+     * Reduce the template layouts by the ones that are not allowed in given colPos and renderer
      *
      * @param array $templateLayouts
      * @param int $currentColPos
+     * @param string $currentRenderer
      * @return array
      */
-    protected function reduceTemplateLayouts($templateLayouts, $currentColPos)
+    protected function reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer)
     {
         $currentColPos = (int)$currentColPos;
         $restrictions = [];
@@ -76,6 +78,15 @@ class ItemsProcFunc
                 }
             }
         }
+        /* renderer check */
+        foreach ($templateLayouts as $key => $layout) {
+            if (isset($layout[3]['renderers'])) {
+                if (strpos($layout[3]['renderers'],$currentRenderer) === false) {
+                    unset($allLayouts[$key]);
+                }
+            }
+        }
+
 
         return $allLayouts;
     }

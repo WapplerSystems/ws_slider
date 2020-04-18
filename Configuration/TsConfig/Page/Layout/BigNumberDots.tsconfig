@@ -1,0 +1,3 @@
+
+tx_wsslider.templateLayouts.BigDots = Big Number Dots
+tx_wsslider.templateLayouts.BigDots.renderers = owl

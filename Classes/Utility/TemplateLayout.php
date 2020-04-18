@@ -24,13 +24,16 @@ class TemplateLayout implements SingletonInterface
         $templateLayouts = [];
 
         // Add TsConfig values
-        foreach ($this->getTemplateLayoutsFromTsConfig($pageUid) as $templateKey => $title) {
-            if (GeneralUtility::isFirstPartOfStr($title, '--div--')) {
-                $optGroupParts = GeneralUtility::trimExplode(',', $title, true, 2);
+        foreach ($this->getTemplateLayoutsFromTsConfig($pageUid) as $template) {
+            if (GeneralUtility::isFirstPartOfStr($template[1], '--div--')) {
+                $optGroupParts = GeneralUtility::trimExplode(',', $template[1], true, 2);
                 $title = $optGroupParts[1];
                 $templateKey = $optGroupParts[0];
+                $templateLayouts[] = [$title, $templateKey];
+            } else {
+                $templateLayouts[] = $template;
             }
-            $templateLayouts[] = [$title, $templateKey];
+
         }
 
         return $templateLayouts;
@@ -47,7 +50,16 @@ class TemplateLayout implements SingletonInterface
         $templateLayouts = [];
         $pagesTsConfig = BackendUtility::getPagesTSconfig($pageUid);
         if (isset($pagesTsConfig['tx_wsslider.']['templateLayouts.']) && is_array($pagesTsConfig['tx_wsslider.']['templateLayouts.'])) {
-            $templateLayouts = $pagesTsConfig['tx_wsslider.']['templateLayouts.'];
+            $templateLayoutsTemp = $pagesTsConfig['tx_wsslider.']['templateLayouts.'];
+            foreach ($templateLayoutsTemp as $name => $value) {
+                if (is_string($value)) {
+                    $template = [$name, $value];
+                    if (isset($templateLayoutsTemp[$name.'.']) && is_array($templateLayoutsTemp[$name.'.'])) {
+                        $template[3] = $templateLayoutsTemp[$name.'.'];
+                    }
+                    $templateLayouts[] = $template;
+                }
+            }
         }
         return $templateLayouts;
     }
