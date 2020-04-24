@@ -16,8 +16,8 @@ namespace WapplerSystems\WsSlider\ViewHelpers\PageRenderer;
 
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
 
 /**
  *
