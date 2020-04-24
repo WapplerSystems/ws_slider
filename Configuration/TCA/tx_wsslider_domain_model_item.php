@@ -28,7 +28,6 @@ return [
         ],
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, foreground_media',
     ],
     'types' => [
         '1' => [
