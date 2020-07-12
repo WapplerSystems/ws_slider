@@ -25,7 +25,7 @@ plugin.tx_wsslider {
         layout = Default
 
         # cat=plugin.tx_wsslider/settings/d; type=boolean; label=Load jQuery script
-        loadJquery = false
+        loadJqueryCore = false
 
     }
 

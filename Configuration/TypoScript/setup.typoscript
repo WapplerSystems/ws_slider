@@ -28,10 +28,10 @@ plugin.tx_wsslider {
 
 }
 
-[{$plugin.tx_wsslider.includejquerycore} == 1]
+[{$plugin.tx_wsslider.settings.loadJqueryCore} == true]
     page.includeJSFooterlibs {
-        jquery = EXT:ws_slider/Resources/Public/JavaScript/jquery-3.5.0.min.js
-        jquery.forceOnTop = 1
+        jqueryCore = EXT:ws_slider/Resources/Public/JavaScript/jquery-3.5.0.min.js
+        jqueryCore.forceOnTop = 1
     }
 [global]
 
