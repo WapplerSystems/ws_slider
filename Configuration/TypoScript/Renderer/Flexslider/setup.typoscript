@@ -27,6 +27,7 @@ plugin.tx_wsslider.settings.renderer.flexslider {
 	multipleKeyboard = {$plugin.tx_wsslider.settings.flexslider.multipleKeyboard}
 	mousewheel = {$plugin.tx_wsslider.settings.flexslider.mousewheel}
 	pausePlay = {$plugin.tx_wsslider.settings.flexslider.pausePlay}
+	textmode = {$plugin.tx_wsslider.settings.flexslider.textmode}
 
 	controlsContainer = {$plugin.tx_wsslider.settings.flexslider.controlsContainer}
 	manualControls = {$plugin.tx_wsslider.settings.flexslider.manualControls}
