@@ -84,6 +84,12 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/x3; type=options[true,false]; label=Pause on mouse hover.
     autoplayHoverPause = false
 
+    # cat=plugin.tx_wsslider.owl/owl/x3; type=int+; label=Autoplay speed
+    autoplaySpeed = 1000
+
+    # cat=plugin.tx_wsslider.owl/owl/x3; type=int+; label=Responsive Refresh Rate
+    responsiveRefreshRate = 1000
+
     # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=Speed Calculate. More info to come..
     smartSpeed = 250
 

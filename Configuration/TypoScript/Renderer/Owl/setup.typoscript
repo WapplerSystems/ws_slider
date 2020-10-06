@@ -30,6 +30,8 @@ plugin.tx_wsslider.settings.renderer.owl {
 	autoplay = {$plugin.tx_wsslider.settings.owl.autoplay}
 	autoplayTimeout = {$plugin.tx_wsslider.settings.owl.autoplayTimeout}
 	autoplayHoverPause = {$plugin.tx_wsslider.settings.owl.autoplayHoverPause}
+	autoplaySpeed = {$plugin.tx_wsslider.settings.owl.autoplaySpeed}
+	responsiveRefreshRate = {$plugin.tx_wsslider.settings.owl.responsiveRefreshRate}
 	smartSpeed = {$plugin.tx_wsslider.settings.owl.smartSpeed}
 
 	navText {

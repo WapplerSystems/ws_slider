@@ -263,7 +263,7 @@
                                 <eval>null,int,trim</eval>
                                 <range>
                                     <lower>0</lower>
-                                    <upper>1000</upper>
+                                    <upper>5000</upper>
                                 </range>
                             </config>
                         </TCEforms>
