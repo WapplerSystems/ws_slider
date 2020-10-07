@@ -19,14 +19,14 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=edgePadding:
     edgePadding = 0
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=fixedWidth:
-    fixedWidth = false
+    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=fixedWidth: 0 equals false, otherwise Controls the width attribute of the slides.
+    fixedWidth = 0
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=autoWidth:
     autoWidth = false
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=viewportMax:
-    viewportMax =
+    viewportMax = 0
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=slideBy:
     slideBy = 1
@@ -40,8 +40,14 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[top,bottom]; label=Controls position
     controlsPosition = top
 
-
+    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Container element/selector around the control buttons
     controlsContainer = false
+
+    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Customized prev button
+    prevButton = false
+
+    #cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Customized next button
+    nextButton = false
 
     # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Navigation:
     nav = true
@@ -49,7 +55,10 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=options[top,bottom]; label=Navigation position
     navPosition = top
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/c; type=options[true,false]; label=Navigation as thumbnails:
+    # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=string; label=Nav Components Container
+    navContainer = false
+
+    # cat=plugin.tx_wsslider.tinyslider/navigation/c; type=options[true,false]; label=Navigation as thumbnails
     navAsThumbnails = false
 
     # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Arrow keys

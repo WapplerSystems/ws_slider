@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+
+            <!-- tinyslider -->
+			<trans-unit id="settings.js.mode" xml:space="preserve">
+				<source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
