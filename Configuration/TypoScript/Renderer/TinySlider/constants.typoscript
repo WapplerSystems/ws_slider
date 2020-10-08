@@ -20,13 +20,13 @@ plugin.tx_wsslider.settings.tinyslider {
     edgePadding = 0
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=fixedWidth: 0 equals false, otherwise Controls the width attribute of the slides.
-    fixedWidth = 0
+    fixedWidth = false
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=autoWidth:
     autoWidth = false
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=viewportMax:
-    viewportMax = 0
+    viewportMax = false
 
     # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=slideBy:
     slideBy = 1
@@ -67,6 +67,45 @@ plugin.tx_wsslider.settings.tinyslider {
 
     # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Speed of slide animation
     speed = 300
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay
+    autoplay = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[top,bottom]; label=Autoplay Position
+    autoplayPosition = top
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Autoplay Timeout
+    autoplayTimeout = 5000
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[forward,backward]; label=Autoplay Direction
+    autoplayDirection = forward
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay Hover Pause
+    autoplayHoverPause = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay Button Output
+    autoplayButtonOutput = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay pause when page is invisible
+    autoplayResetOnVisibility = true
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Intro Animation
+    animateIn = tns-fadeIn
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Outro Animation
+    animateOut = tns-fadeOut
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Animation Delay
+    animateDelay = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Loop
+    loop = true
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Rewind
+    rewind = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Auto Height
+    autoHeight = false
 
     freezable = true
 

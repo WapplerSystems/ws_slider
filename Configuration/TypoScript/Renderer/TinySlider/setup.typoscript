@@ -34,6 +34,20 @@ plugin.tx_wsslider.settings.renderer.tinyslider {
 	navAsThumbnails = {$plugin.tx_wsslider.settings.tinyslider.navAsThumbnails}
 	arrowKeys = {$plugin.tx_wsslider.settings.tinyslider.arrowKeys}
 	speed = {$plugin.tx_wsslider.settings.tinyslider.speed}
+	autoplay = {$plugin.tx_wsslider.settings.tinyslider.autoplay}
+	autoplayPosition = {$plugin.tx_wsslider.settings.tinyslider.autoplayPosition}
+	autoplayTimeout = {$plugin.tx_wsslider.settings.tinyslider.autoplayTimeout}
+	autoplayDirection = {$plugin.tx_wsslider.settings.tinyslider.autoplayDirection}
+	autoplayHoverPause = {$plugin.tx_wsslider.settings.tinyslider.autoplayHoverPause}
+	autoplayButtonOutput = {$plugin.tx_wsslider.settings.tinyslider.autoplayButtonOutput}
+	autoplayResetOnVisibility = {$plugin.tx_wsslider.settings.tinyslider.autoplayResetOnVisibility}
+	animateIn = {$plugin.tx_wsslider.settings.tinyslider.animateIn}
+	animateOut = {$plugin.tx_wsslider.settings.tinyslider.animateOut}
+	animateNormal = {$plugin.tx_wsslider.settings.tinyslider.animateNormal}
+	animateDelay = {$plugin.tx_wsslider.settings.tinyslider.animateDelay}
+	loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
+	rewind = {$plugin.tx_wsslider.settings.tinyslider.rewind}
+	autoHeight = {$plugin.tx_wsslider.settings.tinyslider.autoHeight}
 
 	loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
 

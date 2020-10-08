@@ -51,12 +51,6 @@
 			<trans-unit id="label.stop">
 				<source>Stop</source>
 			</trans-unit>
-			<trans-unit id="label.top">
-            	<source>Top</source>
-            </trans-unit>
-            <trans-unit id="label.bottom">
-            	<source>Bottom</source>
-            </trans-unit>
 
 			<!-- sheets -->
 			<trans-unit id="sheet.owl">
@@ -102,6 +96,18 @@
 			<trans-unit id="settings.common.autoplaySpeed">
 				<source>Autoplay speed</source>
 			</trans-unit>
+			<trans-unit id="settings.common.top">
+                <source>Top</source>
+            </trans-unit>
+            <trans-unit id="settings.common.bottom">
+               	<source>Bottom</source>
+            </trans-unit>
+            <trans-unit id="settings.common.forward">
+                <source>Forward</source>
+            </trans-unit>
+            <trans-unit id="settings.common.backward">
+               	<source>Backward</source>
+            </trans-unit>
 
 
 			<!-- item labels -->
@@ -428,6 +434,43 @@
             <trans-unit id="settings.tinySlider.arrowKeys" xml:space="preserve">
                	<source>Arrow Keys</source>
             </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayPosition" xml:space="preserve">
+               	<source>Autoplay Position</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayTimeout" xml:space="preserve">
+               	<source>Autoplay time between slide changes</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayDirection" xml:space="preserve">
+               	<source>Autoplay Direction</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayHoverPause" xml:space="preserve">
+               	<source>Pause autoplay on hover</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayButtonOutput" xml:space="preserve">
+               	<source>Autoplay Button Output</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayResetOnVisibility" xml:space="preserve">
+               	<source>Pause autoplay when page is invisible</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateIn" xml:space="preserve">
+               	<source>Intro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateOut" xml:space="preserve">
+               	<source>Outro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateNormal" xml:space="preserve">
+               	<source>Normal Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateDelay" xml:space="preserve">
+               	<source>Animation Delay</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.rewind" xml:space="preserve">
+               	<source>Rewind</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoHeight" xml:space="preserve">
+               	<source>Auto Height</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>
