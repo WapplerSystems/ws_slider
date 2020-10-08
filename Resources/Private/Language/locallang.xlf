@@ -32,6 +32,18 @@
 			<trans-unit id="no">
 				<source>No</source>
 			</trans-unit>
+			<trans-unit id="force">
+				<source>Force</source>
+			</trans-unit>
+			<trans-unit id="auto">
+				<source>Auto</source>
+			</trans-unit>
+			<trans-unit id="inner">
+				<source>Inner</source>
+			</trans-unit>
+			<trans-unit id="outer">
+				<source>Outer</source>
+			</trans-unit>
 
 			<trans-unit id="default">
 				<source>Default</source>
@@ -469,6 +481,42 @@
             </trans-unit>
             <trans-unit id="settings.tinySlider.autoHeight" xml:space="preserve">
                	<source>Auto Height</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.lazyloadSelector" xml:space="preserve">
+               	<source>CSS selector for lazyload images</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.mouseDrag" xml:space="preserve">
+               	<source>Mouse Drag</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.swipeAngle" xml:space="preserve">
+               	<source>Swipe Angle</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.preventActionWhenRunning" xml:space="preserve">
+               	<source>Prevent next transition while slider is transforming</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.preventScrollOnTouch" xml:space="preserve">
+               	<source>Prevent page from scrolling on touch</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.nested" xml:space="preserve">
+               	<source>Nested</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.freezable" xml:space="preserve">
+               	<source>Freezable</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.disable" xml:space="preserve">
+               	<source>Disable</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.startIndex" xml:space="preserve">
+               	<source>Start Index</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.onInit" xml:space="preserve">
+               	<source>Callback to be run on initialization</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.useLocalStorage" xml:space="preserve">
+               	<source>Use Local Storage</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.nonce" xml:space="preserve">
+               	<source>Nonce Attribute</source>
             </trans-unit>
 
 		</body>

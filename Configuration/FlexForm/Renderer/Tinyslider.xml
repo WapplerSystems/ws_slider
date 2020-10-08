@@ -654,6 +654,291 @@
                             </config>
                         </TCEforms>
                     </settings.js.autoHeight>
+
+                    <settings.js.lazyload>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.lazyload</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.lazyload>
+
+                    <settings.js.lazyloadSelector>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.lazyloadSelector</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.lazyloadSelector</typoscriptPath>
+                                <size>12</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.lazyloadSelector>
+
+                    <settings.js.touch>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.touch</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.touch</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.touch>
+
+                    <settings.js.mouseDrag>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.mouseDrag</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.mouseDrag</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.mouseDrag>
+
+                    <settings.js.swipeAngle>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.swipeAngle</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.swipeAngle</typoscriptPath>
+                                <size>1</size>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.swipeAngle>
+
+                    <settings.js.preventActionWhenRunning>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.preventActionWhenRunning</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.preventActionWhenRunning</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.preventActionWhenRunning>
+
+                    <settings.js.preventScrollOnTouch>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.preventScrollOnTouch</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.preventScrollOnTouch</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:force</numIndex>
+                                        <numIndex index="1">force</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:auto</numIndex>
+                                        <numIndex index="1">auto</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.preventScrollOnTouch>
+
+                    <settings.js.nested>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.nested</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.nested</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:inner</numIndex>
+                                        <numIndex index="1">inner</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:outer</numIndex>
+                                        <numIndex index="1">outer</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.nested>
+
+                    <settings.js.freezable>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.freezable</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.freezable</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.freezable>
+
+                    <settings.js.disable>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.disable</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.disable</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.disable>
+
+                    <settings.js.startIndex>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.startIndex</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.startIndex</typoscriptPath>
+                                <size>1</size>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.startIndex>
+
+                    <settings.js.onInit>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.onInit</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.onInit</typoscriptPath>
+                                <size>6</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.onInit>
+
+                    <settings.js.useLocalStorage>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.useLocalStorage</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.useLocalStorage</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.useLocalStorage>
+
+                    <settings.js.nonce>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.tinySlider.nonce</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.nonce</typoscriptPath>
+                                <size>6</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.nonce>
                 </el>
             </ROOT>
         </tinyslider>

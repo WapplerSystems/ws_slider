@@ -95,7 +95,7 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Outro Animation
     animateOut = tns-fadeOut
 
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Animation Delay
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Animation Delay
     animateDelay = false
 
     # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Loop
@@ -107,12 +107,47 @@ plugin.tx_wsslider.settings.tinyslider {
     # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Auto Height
     autoHeight = false
 
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Lazy Load
+    lazyload = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=CSS selector for lazyload images
+    lazyloadSelector = .tns-lazy-img
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Touch support
+    touch = true
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Mouse Drag
+    mouseDrag = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Angle in which swipe will be triggered
+    swipeAngle = 15
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Prevent next transition while slider is transforming
+    preventActionWhenRunning = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[force,auto,false]; label=Prevent page from scrolling on touch
+    preventScrollOnTouch = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[inner,outer,false]; label=Nested
+    nested = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Freezable
     freezable = true
 
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Disable
+    disable = false
+
+    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Start Index
     startIndex = 0
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Loop:
-    loop = true
+    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Callback to be run on initialization
+    onInit = false
+
+    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Use Local Storage
+    useLocalStorage = true
+
+    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Optional Nonce attribute
+    nonce = false
 
 
     useLocalStorage = true

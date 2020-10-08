@@ -48,8 +48,21 @@ plugin.tx_wsslider.settings.renderer.tinyslider {
 	loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
 	rewind = {$plugin.tx_wsslider.settings.tinyslider.rewind}
 	autoHeight = {$plugin.tx_wsslider.settings.tinyslider.autoHeight}
+	lazyload = {$plugin.tx_wsslider.settings.tinyslider.lazyload}
+	lazyloadSelector = {$plugin.tx_wsslider.settings.tinyslider.lazyloadSelector}
+	touch = {$plugin.tx_wsslider.settings.tinyslider.touch}
+	mouseDrag = {$plugin.tx_wsslider.settings.tinyslider.mouseDrag}
+	swipeAngle = {$plugin.tx_wsslider.settings.tinyslider.swipeAngle}
+	preventActionWhenRunning = {$plugin.tx_wsslider.settings.tinyslider.preventActionWhenRunning}
+	preventScrollOnTouch = {$plugin.tx_wsslider.settings.tinyslider.preventScrollOnTouch}
+	nested = {$plugin.tx_wsslider.settings.tinyslider.nested}
+	freezable = {$plugin.tx_wsslider.settings.tinyslider.freezable}
+	disable = {$plugin.tx_wsslider.settings.tinyslider.disable}
+	startIndex = {$plugin.tx_wsslider.settings.tinyslider.startIndex}
+	onInit = {$plugin.tx_wsslider.settings.tinyslider.onInit}
+	useLocalStorage = {$plugin.tx_wsslider.settings.tinyslider.useLocalStorage}
+	nonce = {$plugin.tx_wsslider.settings.tinyslider.nonce}
 
-	loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
 
 	responsive {
 		0 {
