@@ -32,6 +32,18 @@
 			<trans-unit id="no">
 				<source>No</source>
 			</trans-unit>
+			<trans-unit id="force">
+				<source>Force</source>
+			</trans-unit>
+			<trans-unit id="auto">
+				<source>Auto</source>
+			</trans-unit>
+			<trans-unit id="inner">
+				<source>Inner</source>
+			</trans-unit>
+			<trans-unit id="outer">
+				<source>Outer</source>
+			</trans-unit>
 
 			<trans-unit id="default">
 				<source>Default</source>
@@ -94,8 +106,20 @@
 				<source>Loop / Carousel</source>
 			</trans-unit>
 			<trans-unit id="settings.common.autoplaySpeed">
-				<source>Autoplay speed.</source>
+				<source>Autoplay speed</source>
 			</trans-unit>
+			<trans-unit id="settings.common.top">
+                <source>Top</source>
+            </trans-unit>
+            <trans-unit id="settings.common.bottom">
+               	<source>Bottom</source>
+            </trans-unit>
+            <trans-unit id="settings.common.forward">
+                <source>Forward</source>
+            </trans-unit>
+            <trans-unit id="settings.common.backward">
+               	<source>Backward</source>
+            </trans-unit>
 
 
 			<!-- item labels -->
@@ -360,6 +384,140 @@
 			<trans-unit id="nextText" xml:space="preserve">
 				<source>Next</source>
 			</trans-unit>
+
+            <!-- tinyslider specific settings -->
+            <trans-unit id="settings.tinySlider.mode" xml:space="preserve">
+                <source>Mode</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.axis" xml:space="preserve">
+                <source>Axis</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.items" xml:space="preserve">
+                <source>Items</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.gutter" xml:space="preserve">
+                <source>Gutter</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.edgePadding" xml:space="preserve">
+                <source>Edge Padding</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.fixedWidth" xml:space="preserve">
+                <source>Fixed Width</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoWidth" xml:space="preserve">
+                <source>Auto Width</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.viewportMax" xml:space="preserve">
+                <source>Viewport Maximum</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.slideBy" xml:space="preserve">
+                <source>Slide By</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.center" xml:space="preserve">
+                <source>Center</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.controls" xml:space="preserve">
+                <source>Control Buttons</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.controlsPosition" xml:space="preserve">
+                <source>Control Buttons Position</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.controlsContainer" xml:space="preserve">
+            	<source>Control Buttons Container</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.customPrevButton" xml:space="preserve">
+                <source>Custom Previous-Button</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.customNextButton" xml:space="preserve">
+               	<source>Custom Next-Button</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.nav" xml:space="preserve">
+               	<source>Nav Components</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.navPosition" xml:space="preserve">
+               	<source>Nav Components Position</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.navContainer" xml:space="preserve">
+               	<source>Nav Components Container</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.navAsThumbnails" xml:space="preserve">
+               	<source>Nav As Thumbnails</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.arrowKeys" xml:space="preserve">
+               	<source>Arrow Keys</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayPosition" xml:space="preserve">
+               	<source>Autoplay Position</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayTimeout" xml:space="preserve">
+               	<source>Autoplay time between slide changes</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayDirection" xml:space="preserve">
+               	<source>Autoplay Direction</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayHoverPause" xml:space="preserve">
+               	<source>Pause autoplay on hover</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayButtonOutput" xml:space="preserve">
+               	<source>Autoplay Button Output</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoplayResetOnVisibility" xml:space="preserve">
+               	<source>Pause autoplay when page is invisible</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateIn" xml:space="preserve">
+               	<source>Intro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateOut" xml:space="preserve">
+               	<source>Outro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateNormal" xml:space="preserve">
+               	<source>Normal Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.animateDelay" xml:space="preserve">
+               	<source>Animation Delay</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.rewind" xml:space="preserve">
+               	<source>Rewind</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.autoHeight" xml:space="preserve">
+               	<source>Auto Height</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.lazyloadSelector" xml:space="preserve">
+               	<source>CSS selector for lazyload images</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.mouseDrag" xml:space="preserve">
+               	<source>Mouse Drag</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.swipeAngle" xml:space="preserve">
+               	<source>Swipe Angle</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.preventActionWhenRunning" xml:space="preserve">
+               	<source>Prevent next transition while slider is transforming</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.preventScrollOnTouch" xml:space="preserve">
+               	<source>Prevent page from scrolling on touch</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.nested" xml:space="preserve">
+               	<source>Nested</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.freezable" xml:space="preserve">
+               	<source>Freezable</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.disable" xml:space="preserve">
+               	<source>Disable</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.startIndex" xml:space="preserve">
+               	<source>Start Index</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.onInit" xml:space="preserve">
+               	<source>Callback to be run on initialization</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.useLocalStorage" xml:space="preserve">
+               	<source>Use Local Storage</source>
+            </trans-unit>
+            <trans-unit id="settings.tinySlider.nonce" xml:space="preserve">
+               	<source>Nonce Attribute</source>
+            </trans-unit>
 
 		</body>
 	</file>
