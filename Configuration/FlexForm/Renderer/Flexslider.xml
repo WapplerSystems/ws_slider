@@ -5,19 +5,17 @@
     </meta>
     <sheets>
 
-
-
         <flexslider>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.flexslider</sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:sheet.flexslider</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.js.animation>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.animation</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animation</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -42,7 +40,7 @@
                     <settings.js.easing>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.easing</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.easing</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -55,7 +53,7 @@
                     <settings.js.direction>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.direction</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.direction</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -63,13 +61,13 @@
                                 <items type="array">
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.vertical
+                                            LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.vertical
                                         </numIndex>
                                         <numIndex index="1">vertical</numIndex>
                                     </numIndex>
                                     <numIndex index="3" type="array">
                                         <numIndex index="0">
-                                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.horizontal
+                                            LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.horizontal
                                         </numIndex>
                                         <numIndex index="1">horizontal</numIndex>
                                     </numIndex>
@@ -83,7 +81,7 @@
                     <settings.js.reverse>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.reverse</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.reverse</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -111,8 +109,7 @@
                     <settings.js.animationLoop>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.animationLoop
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animationLoop</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -140,8 +137,7 @@
                     <settings.js.smoothHeight>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.smoothHeight
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.smoothHeight</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -169,7 +165,7 @@
                     <settings.js.startAt>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.startAt</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.startAt</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -183,7 +179,7 @@
                     <settings.js.slideshow>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slideshow</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slideshow</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -211,7 +207,7 @@
                     <settings.js.slideshowSpeed>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slideshowSpeed</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slideshowSpeed</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -225,8 +221,7 @@
                     <settings.js.animationSpeed>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.animationSpeed
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animationSpeed</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -240,7 +235,7 @@
                     <settings.js.initDelay>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.initDelay</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.initDelay</label>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -254,7 +249,7 @@
                     <settings.js.randomize>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.randomize</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.randomize</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -282,8 +277,7 @@
                     <settings.js.pauseOnAction>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pauseOnAction
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseOnAction</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -311,8 +305,7 @@
                     <settings.js.pauseOnHover>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pauseOnHover
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseOnHover</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -340,7 +333,7 @@
                     <settings.js.useCSS>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.useCSS</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.useCSS</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -368,7 +361,7 @@
                     <settings.js.touch>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.touch</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.touch</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -396,7 +389,7 @@
                     <settings.js.video>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.video</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.video</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -420,7 +413,7 @@
                     <settings.js.textmode>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.textmode</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.textmode</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -448,8 +441,7 @@
         <primarycontrols>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.primarycontrols
-                    </sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.primarycontrols</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
@@ -457,9 +449,11 @@
                     <settings.js.controlNav>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.controlNav</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlNav</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.controlNav</typoscriptPath>
                                 <items type="array">
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -479,10 +473,11 @@
                     <settings.js.directionNav>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.directionNav
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.directionNav</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.directionNav</typoscriptPath>
                                 <items type="array">
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -507,8 +502,7 @@
         <secondarynavigation>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.secondarynavigation
-                    </sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.secondarynavigation</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
@@ -516,9 +510,11 @@
                     <settings.js.keyboard>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.keyboard</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.keyboard</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.keyboard</typoscriptPath>
                                 <items type="array">
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -538,10 +534,11 @@
                     <settings.js.multipleKeyboard>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.multipleKeyboard
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.multipleKeyboard</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.multipleKeyboard</typoscriptPath>
                                 <items type="array">
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -561,9 +558,11 @@
                     <settings.js.mousewheel>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.mousewheel</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.mousewheel</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.mousewheel</typoscriptPath>
                                 <items type="array">
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -583,9 +582,11 @@
                     <settings.js.pausePlay>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.pausePlay</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pausePlay</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.pausePlay</typoscriptPath>
                                 <items type="array">
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -609,8 +610,7 @@
         <specialproperties>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.specialProperties
-                    </sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:sheetTitle.specialProperties</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
@@ -618,8 +618,7 @@
                     <settings.js.controlsContainer>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.controlsContainer
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlsContainer</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -631,8 +630,7 @@
                     <settings.js.manualControls>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.manualControls
-                            </label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.manualControls</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -644,7 +642,7 @@
                     <settings.js.sync>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.sync</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.sync</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -656,7 +654,7 @@
                     <settings.js.asNavFor>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.asNavFor</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.asNavFor</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -672,7 +670,7 @@
         <carousel>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.carousel</sheetTitle>
+                    <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:sheetTitle.carousel</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
@@ -680,7 +678,7 @@
                     <settings.js.itemWidth>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.itemWidth</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemWidth</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -692,7 +690,7 @@
                     <settings.js.itemMargin>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.itemMargin</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemMargin</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -704,7 +702,7 @@
                     <settings.js.minItems>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.minItems</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.minItems</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -716,7 +714,7 @@
                     <settings.js.maxItems>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.maxItems</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.maxItems</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
@@ -728,7 +726,7 @@
                     <settings.js.move>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.move</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.move</label>
                             <config>
                                 <type>input</type>
                                 <size>12</size>
