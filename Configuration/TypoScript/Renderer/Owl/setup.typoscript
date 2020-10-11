@@ -4,6 +4,8 @@ plugin.tx_wsslider.settings.renderer.owl {
 
 
 	items = {$plugin.tx_wsslider.settings.owl.items}
+	animateIn = {$plugin.tx_wsslider.settings.owl.animateIn}
+    animateOut = {$plugin.tx_wsslider.settings.owl.animateOut}
 	margin = {$plugin.tx_wsslider.settings.owl.margin}
 	loop = {$plugin.tx_wsslider.settings.owl.loop}
 	center = {$plugin.tx_wsslider.settings.owl.center}
@@ -33,6 +35,16 @@ plugin.tx_wsslider.settings.renderer.owl {
 	autoplaySpeed = {$plugin.tx_wsslider.settings.owl.autoplaySpeed}
 	responsiveRefreshRate = {$plugin.tx_wsslider.settings.owl.responsiveRefreshRate}
 	smartSpeed = {$plugin.tx_wsslider.settings.owl.smartSpeed}
+	video = {$plugin.tx_wsslider.settings.owl.video}
+	videoHeight = {$plugin.tx_wsslider.settings.owl.videoHeight}
+	videoWidth = {$plugin.tx_wsslider.settings.owl.videoWidth}
+	fallbackEasing = {$plugin.tx_wsslider.settings.owl.fallbackEasing}
+	nestedItemSelector = {$plugin.tx_wsslider.settings.owl.nestedItemSelector}
+	itemElement = {$plugin.tx_wsslider.settings.owl.itemElement}
+	stageElement = {$plugin.tx_wsslider.settings.owl.stageElement}
+	navContainer = {$plugin.tx_wsslider.settings.owl.navContainer}
+	dotsContainer = {$plugin.tx_wsslider.settings.owl.dotsContainer}
+	checkVisible = {$plugin.tx_wsslider.settings.owl.checkVisible}
 
 	navText {
 		0 = TEXT

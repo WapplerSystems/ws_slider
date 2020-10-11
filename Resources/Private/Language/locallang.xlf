@@ -120,6 +120,12 @@
             <trans-unit id="settings.common.backward">
                	<source>Backward</source>
             </trans-unit>
+            <trans-unit id="settings.common.animateOut">
+               	<source>Outro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.common.animateIn">
+               	<source>Intro Animation</source>
+            </trans-unit>
 
 
 			<!-- item labels -->
@@ -186,6 +192,21 @@
 			<trans-unit id="settings.owl.center">
 				<source>Center item</source>
 			</trans-unit>
+			<trans-unit id="settings.owl.mouseDrag">
+				<source>Mouse Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.touchDrag">
+				<source>Touch Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.pullDrag">
+				<source>Pull Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.freeDrag">
+				<source>Free Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.stagePadding">
+				<source>Padding left and right on stage</source>
+			</trans-unit>
 			<trans-unit id="settings.owl.merge">
 				<source>Merge items. Looking for data-merge='{number}' inside item..</source>
 			</trans-unit>
@@ -218,6 +239,39 @@
 			</trans-unit>
 			<trans-unit id="settings.owl.mouseDrag">
 				<source>Mouse drag enabled</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.lazyLoadEager">
+				<source>Eager Lazy Load</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.smartSpeed">
+				<source>Smart Speed</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.videoHeight">
+				<source>Video Height</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.videoWidth">
+				<source>Video Width</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.fallbackEasing">
+				<source>Easing fallback animation for CSS2</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.nestedItemSelector">
+				<source>Nested Item Selector</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.itemElement">
+				<source>Item Element</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.stageElement">
+				<source>Stage Element</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.navContainer">
+				<source>Nav Container</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.dotsContainer">
+				<source>Dots Container</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.checkVisible">
+				<source>Check Visible</source>
 			</trans-unit>
 
 
@@ -463,12 +517,6 @@
             </trans-unit>
             <trans-unit id="settings.tinySlider.autoplayResetOnVisibility" xml:space="preserve">
                	<source>Pause autoplay when page is invisible</source>
-            </trans-unit>
-            <trans-unit id="settings.tinySlider.animateIn" xml:space="preserve">
-               	<source>Intro Animation</source>
-            </trans-unit>
-            <trans-unit id="settings.tinySlider.animateOut" xml:space="preserve">
-               	<source>Outro Animation</source>
             </trans-unit>
             <trans-unit id="settings.tinySlider.animateNormal" xml:space="preserve">
                	<source>Normal Animation</source>

@@ -93,7 +93,40 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=Speed Calculate. More info to come..
     smartSpeed = 250
 
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=options[true,false]; label=Video
+    video = false
 
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=Video Height
+    videoHeight = false
 
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=Video Width
+    videoWidth = false
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Outro Animation
+    animateOut = false
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Intro Animation
+    animateIn = false
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Fallback Easing Animation
+    fallbackEasing = swing
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Use if owl items are deep inside some generated content. Don't use dot before class name.
+    nestedItemSelector = false
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Item Element - DOM element type for owl-item
+    itemElement = div
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Stage Element - DOM element type for owl-stage
+    stageElement = div
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Set your own container for nav
+    navContainer = false
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=Set your own container for dots
+    dotsContainer = false
+
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=string; label=If you know the carousel will always be visible set this to false.
+    checkVisible = true
 
 }
