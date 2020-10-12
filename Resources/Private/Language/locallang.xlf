@@ -267,11 +267,29 @@
 			<trans-unit id="settings.owl.navContainer">
 				<source>Nav Container</source>
 			</trans-unit>
+			<trans-unit id="settings.owl.navSpeed">
+				<source>Nav Speed</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.nav">
+				<source>Show Nav Buttons</source>
+			</trans-unit>
 			<trans-unit id="settings.owl.dotsContainer">
 				<source>Dots Container</source>
 			</trans-unit>
+			<trans-unit id="settings.owl.dots">
+				<source>Show navigation dots</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.dotsEach">
+				<source>Show dots each x item</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.dotsSpeed">
+				<source>Dots Speed</source>
+			</trans-unit>
 			<trans-unit id="settings.owl.checkVisible">
 				<source>Check Visible</source>
+			</trans-unit>
+			<trans-unit id="settings.owl.responsiveRefreshRate">
+				<source>Responsive Refresh Rate</source>
 			</trans-unit>
 
 

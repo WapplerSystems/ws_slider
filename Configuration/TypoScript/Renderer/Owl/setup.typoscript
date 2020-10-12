@@ -9,6 +9,7 @@ plugin.tx_wsslider.settings.renderer.owl {
 	margin = {$plugin.tx_wsslider.settings.owl.margin}
 	loop = {$plugin.tx_wsslider.settings.owl.loop}
 	center = {$plugin.tx_wsslider.settings.owl.center}
+	dragEndSpeed = {$plugin.tx_wsslider.settings.owl.dragEndSpeed}
 	mouseDrag = {$plugin.tx_wsslider.settings.owl.mouseDrag}
 	touchDrag = {$plugin.tx_wsslider.settings.owl.touchDrag}
 	pullDrag = {$plugin.tx_wsslider.settings.owl.pullDrag}

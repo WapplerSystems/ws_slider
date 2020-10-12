@@ -15,6 +15,9 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/d; type=options[true,false]; label=Center item. Works well with even an odd number of items.
     center = false
 
+    # cat=plugin.tx_wsslider.owl/owl/b; type=int+; label=Drag End Speed
+    dragEndSpeed = false
+
     # cat=plugin.tx_wsslider.owl/owl/e; type=options[true,false]; label=Mouse drag enabled.
     mouseDrag = true
 
@@ -90,7 +93,7 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/x3; type=int+; label=Responsive Refresh Rate
     responsiveRefreshRate = 1000
 
-    # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=Speed Calculate. More info to come..
+    # cat=plugin.tx_wsslider.owl/owl/x4; type=int+; label=smartSpeed Calculate. More info to come..
     smartSpeed = 250
 
     # cat=plugin.tx_wsslider.owl/owl/x4; type=options[true,false]; label=Video
