@@ -21,6 +21,7 @@ plugin.tx_wsslider.settings.renderer.owl {
 	startPosition = {$plugin.tx_wsslider.settings.owl.startPosition}
 	URLhashListener = {$plugin.tx_wsslider.settings.owl.URLhashListener}
 	nav = {$plugin.tx_wsslider.settings.owl.nav}
+	navSpeed = {$plugin.tx_wsslider.settings.owl.navSpeed}
 	rewind = {$plugin.tx_wsslider.settings.owl.rewind}
 	navElement = {$plugin.tx_wsslider.settings.owl.navElement}
 	slideBy = {$plugin.tx_wsslider.settings.owl.slideBy}
@@ -28,6 +29,7 @@ plugin.tx_wsslider.settings.renderer.owl {
 	dots = {$plugin.tx_wsslider.settings.owl.dots}
 	dotsEach = {$plugin.tx_wsslider.settings.owl.dotsEach}
 	dotsData = {$plugin.tx_wsslider.settings.owl.dotsData}
+	dotsSpeed = {$plugin.tx_wsslider.settings.owl.dotsSpeed}
 	lazyLoad = {$plugin.tx_wsslider.settings.owl.lazyLoad}
 	lazyLoadEager = {$plugin.tx_wsslider.settings.owl.lazyLoadEager}
 	autoplay = {$plugin.tx_wsslider.settings.owl.autoplay}
