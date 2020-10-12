@@ -4,10 +4,142 @@
         <header/>
         <body>
             <trans-unit id="settings.js.items.description" xml:space="preserve">
-				<source>This is an example info text</source>
+				<source>The number of items you want to see on the screen.</source>
 			</trans-unit>
-            <trans-unit id="settings.js.loop.description">
-                <source>This is an example</source>
+            <trans-unit id="settings.js.margin.description">
+                <source>margin-right(px) on item.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.loop.description" xml:space="preserve">
+				<source>Infinity loop. Duplicate last and first items to get loop illusion.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.center.description">
+                <source>Center item. Works well with even an odd number of items.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.mouseDrag.description" xml:space="preserve">
+				<source>Mouse drag enabled.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.touchDrag.description">
+                <source>Touch drag enabled.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.pullDrag.description" xml:space="preserve">
+				<source>Stage pull to edge.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.freeDrag.description">
+                <source>Item pull to edge.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.stagePadding.description" xml:space="preserve">
+				<source>Padding left and right on stage (can see neighbours).</source>
+			</trans-unit>
+            <trans-unit id="settings.js.merge.description">
+                <source>Merge items. Looking for data-merge='{number}' inside item.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.mergeFit.description" xml:space="preserve">
+				<source>Fit merged items if screen is smaller than items value.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.autoWidth.description">
+                <source>Set non grid content. Try using width style on divs.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.startPosition.description" xml:space="preserve">
+				<source>Start position or URL Hash string like '#id'.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.URLhashListener.description">
+                <source>Listen to url hash changes. data-hash on items is required.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.nav.description" xml:space="preserve">
+				<source>Show next/prev buttons.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.rewind.description">
+                <source>Go backwards when the boundary has reached.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.navElement.description">
+                <source>DOM element type for a single directional navigation link.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.slideBy.description" xml:space="preserve">
+				<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.slideTransition.description">
+                <source>You can define the transition for the stage you want to use eg. linear.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.dots.description" xml:space="preserve">
+				<source>Show dots navigation.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.dotsEach.description">
+                <source>Show dots each x item.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.lazyLoad.description" xml:space="preserve">
+				<source>Lazy load images. data-src and data-src-retina for highres. Also load images into background inline style if element is not &lt;img&gt;</source>
+			</trans-unit>
+            <trans-unit id="settings.js.lazyLoadEager.description">
+                <source>Eagerly pre-loads images to the right (and left when loop is enabled) based on how many items you want to preload.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.autoplay.description" xml:space="preserve">
+				<source>Autoplay.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.autoplayTimeout.description">
+                <source>Autoplay interval timeout.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.autoplayHoverPause.description" xml:space="preserve">
+				<source>Pause on mouse hover.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.smartSpeed.description">
+                <source>Speed Calculate. More info to come.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.fluidSpeed.description" xml:space="preserve">
+				<source>Speed Calculate. More info to come.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.autoplaySpeed.description">
+                <source>autoplay speed.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.navSpeed.description" xml:space="preserve">
+				<source>Navigation speed.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.dotsSpeed.description">
+                <source>Pagination speed.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.dragEndSpeed.description" xml:space="preserve">
+				<source>Drag end speed.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.responsive.description">
+                <source>Object containing responsive options. Can be set to false to remove responsive capabilities.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.responsiveRefreshRate.description" xml:space="preserve">
+				<source>Responsive refresh rate.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.video.description">
+                <source>Enable fetching YouTube/Vimeo/Vzaar videos.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.videoHeight.description" xml:space="preserve">
+				<source>Set height for videos.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.videoWidth.description">
+                <source>Set width for videos.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.animateOut.description" xml:space="preserve">
+				<source>Class for CSS3 animation out.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.animateIn.description">
+                <source>Class for CSS3 animation in.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.fallbackEasing.description" xml:space="preserve">
+				<source>Easing for CSS2 $.animate.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.nestedItemSelector.description">
+                <source>Use it if owl items are deep nested inside some generated content. E.g 'youritem'. Dont use dot before class name.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.itemElement.description" xml:space="preserve">
+				<source>DOM element type for owl-item.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.stageElement.description">
+                <source>DOM element type for owl-stage.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.navContainer.description">
+                <source>Set your own container for nav.</source>
+            </trans-unit>
+            <trans-unit id="settings.js.dotsContainer.description" xml:space="preserve">
+				<source>Set your own container for nav.</source>
+			</trans-unit>
+            <trans-unit id="settings.js.checkVisible.description">
+                <source>If you know the carousel will always be visible you can set `checkVisibility` to `false` to prevent the expensive browser layout forced reflow the $element.is(':visible') does.</source>
             </trans-unit>
 
         </body>
