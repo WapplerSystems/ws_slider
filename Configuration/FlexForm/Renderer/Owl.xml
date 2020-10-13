@@ -22,10 +22,6 @@
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.items</typoscriptPath>
                                 <eval>num,trim</eval>
-                                <range>
-                                    <lower>1</lower>
-                                    <upper>12</upper>
-                                </range>
                             </config>
                         </TCEforms>
                     </settings.js.items>
@@ -182,11 +178,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplayTimeout</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>10000</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.autoplayTimeout>
@@ -222,11 +214,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplaySpeed</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>5000</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.autoplaySpeed>
@@ -238,11 +226,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.smartSpeed</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>5000</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.smartSpeed>
@@ -279,11 +263,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.responsiveRefreshRate</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>1000</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.responsiveRefreshRate>
@@ -379,11 +359,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.navSpeed</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>1000</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.navSpeed>
@@ -446,10 +422,6 @@
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dotsEach</typoscriptPath>
                                 <eval>num,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>1000</upper>
-                                </range>
                             </config>
                         </TCEforms>
                     </settings.js.dotsEach>
@@ -462,10 +434,6 @@
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dotsSpeed</typoscriptPath>
                                 <eval>num,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>1000</upper>
-                                </range>
                             </config>
                         </TCEforms>
                     </settings.js.dotsSpeed>
@@ -502,11 +470,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.margin</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>300</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.margin>
@@ -518,11 +482,7 @@
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.stagePadding</typoscriptPath>
-                                <eval>null,int,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>300</upper>
-                                </range>
+                                <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.stagePadding>
@@ -618,10 +578,6 @@
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dragEndSpeed</typoscriptPath>
                                 <eval>num,trim</eval>
-                                <range>
-                                    <lower>0</lower>
-                                    <upper>1000</upper>
-                                </range>
                             </config>
                         </TCEforms>
                     </settings.js.dragEndSpeed>
