@@ -1,0 +1,22 @@
+
+
+
+plugin.tx_wsslider.settings.renderer.slickslider {
+    accessibility = {$plugin.tx_wsslider.settings.slickslider.accessibility}
+    adaptiveHeight = {$plugin.tx_wsslider.settings.slickslider.adaptiveHeight}
+    autoplay = {$plugin.tx_wsslider.settings.slickslider.autoplay}
+    autoplaySpeed = {$plugin.tx_wsslider.settings.slickslider.autoplaySpeed}
+    arrows = {$plugin.tx_wsslider.settings.slickslider.arrows}
+    appendArrows = {$plugin.tx_wsslider.settings.slickslider.appendArrows}
+    appendDots = {$plugin.tx_wsslider.settings.slickslider.appendDots}
+    prevArrow = {$plugin.tx_wsslider.settings.slickslider.prevArrow}
+    nextArrow = {$plugin.tx_wsslider.settings.slickslider.nextArrow}
+    centerMode = {$plugin.tx_wsslider.settings.slickslider.centerMode}
+    centerPadding = {$plugin.tx_wsslider.settings.slickslider.centerPadding}
+    cssEase = {$plugin.tx_wsslider.settings.slickslider.cssEase}
+    customPaging = {$plugin.tx_wsslider.settings.slickslider.customPaging}
+    dots = {$plugin.tx_wsslider.settings.slickslider.dots}
+
+}
+
+tt_content.ws_slider.settings.slider.renderer.slickslider < plugin.tx_wsslider.settings.renderer.slickslider

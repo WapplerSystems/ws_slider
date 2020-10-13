@@ -89,6 +89,9 @@
 			<trans-unit id="sheet.tinySlider">
 				<source>Tiny Slider</source>
 			</trans-unit>
+			<trans-unit id="sheet.slick">
+				<source>Slick Slider</source>
+			</trans-unit>
 
 
 			<!-- common setting labels -->
@@ -125,6 +128,9 @@
             </trans-unit>
             <trans-unit id="settings.common.animateIn">
                	<source>Intro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.common.autoHeight" xml:space="preserve">
+                <source>Auto Height</source>
             </trans-unit>
 
 
@@ -545,9 +551,6 @@
             <trans-unit id="settings.tinySlider.rewind" xml:space="preserve">
                	<source>Rewind</source>
             </trans-unit>
-            <trans-unit id="settings.tinySlider.autoHeight" xml:space="preserve">
-               	<source>Auto Height</source>
-            </trans-unit>
             <trans-unit id="settings.tinySlider.lazyloadSelector" xml:space="preserve">
                	<source>CSS selector for lazyload images</source>
             </trans-unit>
@@ -583,6 +586,44 @@
             </trans-unit>
             <trans-unit id="settings.tinySlider.nonce" xml:space="preserve">
                	<source>Nonce Attribute</source>
+            </trans-unit>
+
+            <!-- slick slider -->
+            <trans-unit id="settings.slick.accessibility" xml:space="preserve">
+                <source>Accessibility</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.arrows" xml:space="preserve">
+                <source>Arrows</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.asNavFor" xml:space="preserve">
+                <source>As Nav For</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.appendArrows" xml:space="preserve">
+                <source>Append Arrows</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.appendDots" xml:space="preserve">
+                <source>Append Dots</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.prevArrow" xml:space="preserve">
+                <source>Prev Arrow</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.nextArrow" xml:space="preserve">
+                <source>Next Arrow</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.centerMode" xml:space="preserve">
+                <source>Center Mode</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.centerPadding" xml:space="preserve">
+                <source>Center Padding</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.cssEase" xml:space="preserve">
+                <source>CSS3 animation Easing</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.customPaging" xml:space="preserve">
+                <source>Custom Paging</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.dots" xml:space="preserve">
+                <source>Dots</source>
             </trans-unit>
 
 		</body>

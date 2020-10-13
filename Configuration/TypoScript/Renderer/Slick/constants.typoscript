@@ -1,0 +1,55 @@
+
+# customcategory=plugin.tx_wsslider.slickslider=WS Slider - Slick Slider
+
+plugin.tx_wsslider.settings.slickslider {
+
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=accessibility: Enables tabbing and arrow key navigation
+    accessibility = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=adaptiveHeight: Enables adaptive height for single slide horizontal carousels
+    adaptiveHeight = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=autoplay
+    autoplay = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=autoplaySpeed: Autoplay speed in milliseconds
+    autoplaySpeed = 3000
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=arrows: Prev/Next Arrows
+    arrows = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=asNavFor: Set the slider to be the navigation of other slider (Class or ID Name)
+    asNavFor = null
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=appendArrows: Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)
+    appendArrows = $(element) #todo: look into default $(element) here
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=appendDots: Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)
+    appendDots = $(element) #todo: look into default $(element) here
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=prevArrow: Allows you to select a node or customize the HTML for the "Previous" arrow.
+    prevArrow = <button type="button" class="slick-prev">Previous</button>
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=nextArrow: Allows you to select a node or customize the HTML for the "Next" arrow.
+    nextArrow = <button type="button" class="slick-next">Next</button>
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=centerMode: Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
+    centerMode = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=centerPadding: Side padding when in center mode (px or %)
+    centerPadding = 50px
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=cssEase: CSS3 animation easing
+    cssEase = ease
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=customPaging: Custom paging templates. See source for use example.
+    customPaging = #default n/a
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=dots: Show dot indicators
+    dots = false
+
+
+
+
+}
