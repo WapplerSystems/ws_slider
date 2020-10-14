@@ -41,11 +41,60 @@
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.autoplaySpeed</typoscriptPath>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.autoplaySpeed</typoscriptPath>
                                 <eval>num,trim</eval>
                             </config>
                         </TCEforms>
                     </settings.js.autoplaySpeed>
+
+                    <settings.js.infinite>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.infinite</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.infinite</typoscriptPath>
+                                <eval>null</eval>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.infinite>
+
+                    <settings.js.initialSlide>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.initialSlide</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.initialSlide</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.initialSlide>
+
+                    <settings.js.lazyLoad>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.lazyLoad</typoscriptPath>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.lazyLoad>
                 </el>
             </ROOT>
         </slickslider>
@@ -57,6 +106,87 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
+                    <settings.js.swipe>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.swipe</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.swipe</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.swipe>
+
+                    <settings.js.swipeToSlide>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.swipeToSlide</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.swipeToSlide</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.swipeToSlide>
+
+                    <settings.js.touchMove>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.touchMove</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.touchMove</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.touchMove>
+
+                    <settings.js.touchThreshold>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.touchThreshold</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.touchThreshold</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.touchThreshold>
+
                     <settings.js.accessibility>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.accessibility</label>
@@ -190,6 +320,110 @@
                             </config>
                         </TCEforms>
                     </settings.js.dots>
+
+                    <settings.js.dotsClass>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.dotsClass</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.dotsClass</typoscriptPath>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.dotsClass>
+
+                    <settings.js.draggable>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.draggable</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.draggable</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.draggable>
+
+                    <settings.js.pauseOnFocus>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.pauseOnFocus</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.pauseOnFocus</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.pauseOnFocus>
+
+                    <settings.js.pauseOnHover>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.pauseOnHover</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.pauseOnHover</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.pauseOnHover>
+
+                    <settings.js.pauseOnDotsHover>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.pauseOnDotsHover</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.pauseOnDotsHover</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.pauseOnDotsHover>
                 </el>
             </ROOT>
         </navigation>
@@ -201,6 +435,29 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
+                    <settings.js.mobileFirst>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.mobileFirst</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.mobileFirst</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.mobileFirst>
+
                     <settings.js.adaptiveHeight>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight</label>
@@ -259,7 +516,100 @@
                         </TCEforms>
                     </settings.js.centerPadding>
 
+                    <settings.js.focusOnSelect>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.focusOnSelect</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.focusOnSelect</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.focusOnSelect>
 
+                    <settings.js.edgeFriction>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.edgeFriction</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.edgeFriction</typoscriptPath>
+                                <eval>double2,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.edgeFriction>
+
+                    <settings.js.respondTo>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.respondTo</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.respondTo</typoscriptPath>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.respondTo>
+
+                    <settings.js.rows>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.rows</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.rows</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.rows>
+
+                    <settings.js.slidesPerRow>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.slidesPerRow</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesPerRow</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.slidesPerRow>
+
+                    <settings.js.slidesToShow>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.slidesToShow</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesToShow</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.slidesToShow>
+
+                    <settings.js.slidesToScroll>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.slidesToScroll</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesToScroll</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.slidesToScroll>
                 </el>
             </ROOT>
         </layout>
@@ -283,6 +633,18 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
+                    <settings.js.easing>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.easing</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.easing</typoscriptPath>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.easing>
+
                     <settings.js.cssEase>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.cssEase</label>
@@ -306,6 +668,52 @@
                             </config>
                         </TCEforms>
                     </settings.js.customPaging>
+
+                    <settings.js.fade>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.fade</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.fade</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.fade>
+
+                    <settings.js.speed>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slick.speed</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.speed</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.speed>
                 </el>
             </ROOT>
         </animation>

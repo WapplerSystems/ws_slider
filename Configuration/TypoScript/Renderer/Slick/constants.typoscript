@@ -49,6 +49,75 @@ plugin.tx_wsslider.settings.slickslider {
     # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=dots: Show dot indicators
     dots = false
 
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=dotsClass: Class for slide indicator dots container
+    dotsClass = slick-dots
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=draggable: Enable mouse dragging
+    draggable = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=fade: Enable fade
+    fade = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=focusOnSelect: Enable focus on selected element (click)
+    focusOnSelect = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=easing: Add easing for jQuery animate. Use with easing libraries or default easing methods
+    easing = linear
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=float; label=edgeFriction: Resistance when swiping edges of non-infinite carousels
+    edgeFriction = 0.15
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=infinite: Infinite loop sliding
+    infinite = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=initialSlide: Slide to start on
+    initialSlide = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=lazyLoad: Set lazy loading technique. Accepts 'ondemand' or 'progressive'
+    lazyLoad = ondemand
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=mobileFirst: Responsive settings use mobile first calculation
+    mobileFirst = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=pauseOnFocus: Pause Autoplay On Focus
+    pauseOnFocus = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=pauseOnHover: Pause Autoplay On Hover
+    pauseOnHover = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=pauseOnDotsHover: Pause Autoplay when a dot is hovered
+    pauseOnDotsHover = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=respondTo: Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)
+    respondTo = window
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=rows: Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.
+    rows = 1
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=slidesPerRow: With grid mode intialized via the rows option, this sets how many slides are in each grid row.
+    slidesPerRow = 1
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=slidesToShow: # of slides to show
+    slidesToShow = 1
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=slidesToScroll: # of slides to Scroll
+    slidesToScroll = 1
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=speed: Slide/Fade animation speed
+    speed = 300
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=swipe: Enables swiping
+    swipe = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=swipeToSlide: Allow users to drag or swipe directly to a slide irrespective of slidesToScroll
+    swipeToSlide = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=touchMove: Enable slide motion with touch
+    touchMove = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=touchThreshold: To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider
+    touchThreshold = 5
+
 
 
 

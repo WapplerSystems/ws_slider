@@ -625,6 +625,72 @@
             <trans-unit id="settings.slick.dots" xml:space="preserve">
                 <source>Dots</source>
             </trans-unit>
+            <trans-unit id="settings.slick.dotsClass" xml:space="preserve">
+                <source>Dots Class</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.draggable" xml:space="preserve">
+                <source>Draggable</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.fade" xml:space="preserve">
+                <source>Fade</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.focusOnSelect" xml:space="preserve">
+                <source>Focus On Select</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.easing" xml:space="preserve">
+                <source>Easing</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.edgeFriction" xml:space="preserve">
+                <source>Edge Friction</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.infinite" xml:space="preserve">
+                <source>Infinite</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.initialSlide" xml:space="preserve">
+                <source>Initial Slide</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.mobileFirst" xml:space="preserve">
+                <source>Mobile First</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.pauseOnFocus" xml:space="preserve">
+                <source>Pause on focus</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.pauseOnHover" xml:space="preserve">
+                <source>Pause on hover</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.pauseOnDotsHover" xml:space="preserve">
+                <source>Pause on Dots hover</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.respondTo" xml:space="preserve">
+                <source>Respond To</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.rows" xml:space="preserve">
+                <source>Rows</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.slidesPerRow" xml:space="preserve">
+                <source>Slides per row</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.slidesToShow" xml:space="preserve">
+                <source>Slides to show</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.slidesToScroll" xml:space="preserve">
+                <source>Slides to Scroll</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.speed" xml:space="preserve">
+                <source>Slide/Fade animation speed</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.swipe" xml:space="preserve">
+                <source>Enable swiping</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.swipeToSlide" xml:space="preserve">
+                <source>Swipe to slide</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.touchMove" xml:space="preserve">
+                <source>Touch Move</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.touchThreshold" xml:space="preserve">
+                <source>Touch Threshold</source>
+            </trans-unit>
 
 		</body>
 	</file>

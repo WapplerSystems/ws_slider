@@ -16,6 +16,48 @@ plugin.tx_wsslider.settings.renderer.slickslider {
     cssEase = {$plugin.tx_wsslider.settings.slickslider.cssEase}
     customPaging = {$plugin.tx_wsslider.settings.slickslider.customPaging}
     dots = {$plugin.tx_wsslider.settings.slickslider.dots}
+    dotsClass = {$plugin.tx_wsslider.settings.slickslider.dotsClass}
+    draggable = {$plugin.tx_wsslider.settings.slickslider.draggable}
+    fade = {$plugin.tx_wsslider.settings.slickslider.fade}
+    focusOnSelect = {$plugin.tx_wsslider.settings.slickslider.focusOnSelect}
+    easing = {$plugin.tx_wsslider.settings.slickslider.easing}
+    edgeFriction = {$plugin.tx_wsslider.settings.slickslider.edgeFriction}
+    infinite = {$plugin.tx_wsslider.settings.slickslider.infinite}
+    initialSlide = {$plugin.tx_wsslider.settings.slickslider.initialSlide}
+    lazyLoad = {$plugin.tx_wsslider.settings.slickslider.lazyLoad}
+    mobileFirst = {$plugin.tx_wsslider.settings.slickslider.mobileFirst}
+    pauseOnFocus = {$plugin.tx_wsslider.settings.slickslider.pauseOnFocus}
+    pauseOnHover = {$plugin.tx_wsslider.settings.slickslider.pauseOnHover}
+    pauseOnDotsHover = {$plugin.tx_wsslider.settings.slickslider.pauseOnDotsHover}
+    respondTo = {$plugin.tx_wsslider.settings.slickslider.respondTo}
+    rows = {$plugin.tx_wsslider.settings.slickslider.rows}
+    slidesPerRow = {$plugin.tx_wsslider.settings.slickslider.slidesPerRow}
+    slidesToShow = {$plugin.tx_wsslider.settings.slickslider.slidesToShow}
+    slidesToScroll = {$plugin.tx_wsslider.settings.slickslider.slidesToScroll}
+    speed = {$plugin.tx_wsslider.settings.slickslider.speed}
+    swipe = {$plugin.tx_wsslider.settings.slickslider.swipe}
+    swipeToSlide = {$plugin.tx_wsslider.settings.slickslider.swipeToSlide}
+    touchMove = {$plugin.tx_wsslider.settings.slickslider.touchMove}
+    touchThreshold = {$plugin.tx_wsslider.settings.slickslider.touchThreshold}
+
+    responsive {
+    		0 {
+    			items = 1
+    		}
+    		576 {
+    			items = 2
+    		}
+    		768 {
+    			items = 4
+    		}
+    		992 {
+    			items = 4
+    		}
+    		1200 {
+    			items = 4
+    		}
+
+    	}
 
 }
 
