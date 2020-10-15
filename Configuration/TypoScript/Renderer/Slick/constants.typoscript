@@ -118,7 +118,26 @@ plugin.tx_wsslider.settings.slickslider {
     # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=touchThreshold: To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider
     touchThreshold = 5
 
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=useCSS: Enable/Disable CSS Transitions
+    useCSS = true
 
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=useTransform: Enable/Disable CSS Transform
+    useTransform = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=variableWidth: Variable width slides
+    variableWidth = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=verticalSwiping: Vertical swipe mode
+    verticalSwiping = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=rtl: Change the slider's direction to become right-to-left
+    rtl = false
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=waitForAnimate: Ignores requests to advance the slide while animating
+    waitForAnimate = true
+
+    # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=zindex: Set the zIndex values for slides, useful for IE9 and lower
+    zindex = 1000
 
 
 }

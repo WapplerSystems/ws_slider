@@ -39,6 +39,13 @@ plugin.tx_wsslider.settings.renderer.slickslider {
     swipeToSlide = {$plugin.tx_wsslider.settings.slickslider.swipeToSlide}
     touchMove = {$plugin.tx_wsslider.settings.slickslider.touchMove}
     touchThreshold = {$plugin.tx_wsslider.settings.slickslider.touchThreshold}
+    useCSS = {$plugin.tx_wsslider.settings.slickslider.useCSS}
+    useTransform = {$plugin.tx_wsslider.settings.slickslider.useTransform}
+    variableWidth = {$plugin.tx_wsslider.settings.slickslider.variableWidth}
+    vertical = {$plugin.tx_wsslider.settings.slickslider.vertical}
+    verticalSwiping = {$plugin.tx_wsslider.settings.slickslider.verticalSwiping}
+    rtl = {$plugin.tx_wsslider.settings.slickslider.rtl}
+    waitForAnimate = {$plugin.tx_wsslider.settings.slickslider.waitForAnimate}
 
     responsive {
     		0 {
