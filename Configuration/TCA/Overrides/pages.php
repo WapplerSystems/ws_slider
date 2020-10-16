@@ -27,6 +27,11 @@
 */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ws_slider',
+    'Configuration/TsConfig/Page/Renderer/Slick.tsconfig',
+    'Slick'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    'ws_slider',
     'Configuration/TsConfig/Page/Renderer/TinySlider.tsconfig',
     'Tiny Slider 2'
 );
