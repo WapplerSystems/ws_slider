@@ -1,5 +1,5 @@
 
-mod.wizards.newContentElement.wizardItems.common {
+mod.wizards.newContentElement.wizardItems.plugins {
 	elements {
 		ws-slider {
 			iconIdentifier = content-wsslider
