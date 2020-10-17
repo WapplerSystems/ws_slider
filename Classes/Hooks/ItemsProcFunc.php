@@ -4,9 +4,11 @@ namespace WapplerSystems\WsSlider\Hooks;
 
 
 use TYPO3\CMS\Backend\Utility\BackendUtility as BackendUtilityCore;
-use TYPO3\CMS\Core\Utility\DebugUtility;
+use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Extbase\Object\ObjectManager;
 use WapplerSystems\WsSlider\Utility\TemplateLayout;
 
 /**
@@ -33,6 +35,11 @@ class ItemsProcFunc
         $currentColPos = $config['row']['colPos'];
         $pageId = $this->getPageId($config['row']['pid']);
         $currentRenderer = $config['row']['tx_wsslider_renderer'][0] ?? '';
+        $rendererTyposcriptPath = $config['config']['rendererTyposcriptPath'];
+        $defaultRenderer = $this->getTypoScriptValue($rendererTyposcriptPath);
+        if ($currentRenderer === '' && $defaultRenderer !== '') $currentRenderer = $defaultRenderer;
+
+        if ($currentRenderer === '') return;
 
         if ($pageId > 0) {
             $templateLayouts = $this->templateLayoutsUtility->getAvailableTemplateLayouts($pageId);
@@ -40,7 +47,7 @@ class ItemsProcFunc
             $templateLayouts = $this->reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer);
             foreach ($templateLayouts as $layout) {
                 $additionalLayout = [
-                    htmlspecialchars($this->getLanguageService()->sL($layout[0])),
+                    self::getLanguageService()->sL($layout[0]),
                     $layout[1]
                 ];
                 array_push($config['items'], $additionalLayout);
@@ -80,10 +87,8 @@ class ItemsProcFunc
         }
         /* renderer check */
         foreach ($templateLayouts as $key => $layout) {
-            if (isset($layout[3]['renderers'])) {
-                if (strpos($layout[3]['renderers'],$currentRenderer) === false) {
-                    unset($allLayouts[$key]);
-                }
+            if (isset($layout[3]['renderers']) && strpos($layout[3]['renderers'], $currentRenderer) === false) {
+                unset($allLayouts[$key]);
             }
         }
 
@@ -140,13 +145,38 @@ class ItemsProcFunc
         return $row['pid'];
     }
 
+
+    private function getTypoScriptValue($path)
+    {
+
+        $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
+            ->get(ConfigurationManagerInterface::class)
+            ->getConfiguration(
+                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+            );
+
+        $segments = GeneralUtility::trimExplode('.',$path);
+
+        $lastSegment = array_pop($segments);
+        foreach ($segments as $segment) {
+            if (isset($tsArray[$segment.'.'])) {
+                $tsArray = $tsArray[$segment.'.'];
+            } else {
+                return null;
+            }
+        }
+        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
+
+        return null;
+    }
+
+
     /**
-     * Returns LanguageService
-     *
-     * @return \TYPO3\CMS\Lang\LanguageService
+     * @return \TYPO3\CMS\Core\Localization\LanguageService
      */
-    protected function getLanguageService()
+    protected static function getLanguageService(): LanguageService
     {
         return $GLOBALS['LANG'];
     }
+
 }

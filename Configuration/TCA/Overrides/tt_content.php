@@ -104,6 +104,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
             'type' => 'select',
             'renderType' => 'selectSingle',
             'itemsProcFunc' => WapplerSystems\WsSlider\Hooks\ItemsProcFunc::class.'->userTemplateLayout',
+            'rendererTyposcriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'default' => 'Default',
             'items' => [
                 ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value','Default']
