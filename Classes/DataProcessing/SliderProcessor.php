@@ -58,20 +58,15 @@ class SliderProcessor implements DataProcessorInterface
             $settings['parameters'] = [];
         }
 
-        //DebugUtility::debug($settings['parameters']);
         $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj,$settings['parameters']);
-        //DebugUtility::debug($settings['parameters']);
-
         $settings['parameters'] = GeneralUtility::removeDotsFromTS($settings['parameters']);
         $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
 
-        //DebugUtility::debug($settings['parameters'],"TypoScript");
 
         // Process Flexform
         $flexformData = $processedData['data']['pi_flexform'];
         if (is_string($flexformData)) {
             $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-            //DebugUtility::debug($flexformData['settings']['js'],'FlexForm');
             if (is_array($flexformData['settings']['js'])) {
                 ArrayUtility::mergeRecursiveWithOverrule(
                     $settings['parameters'],
@@ -91,8 +86,6 @@ class SliderProcessor implements DataProcessorInterface
         unset($settings['defaultRenderer']);
 
         $processedData['sliderSettings'] = $settings;
-
-        //DebugUtility::debug($processedData['sliderSettings'],'sliderSettings');
 
         return $processedData;
     }
