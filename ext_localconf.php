@@ -14,6 +14,7 @@ call_user_func(
         if (TYPO3_MODE === 'BE') {
             $icons = [
                 'content-wsslider' => 'content-wsslider.svg',
+                'ext-wsslider-image' => 'image.svg'
             ];
             $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
             foreach ($icons as $identifier => $path) {
