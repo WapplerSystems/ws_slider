@@ -1,65 +1,52 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. every .rst file should include Includes.txt
+.. use correct path!
 
 .. include:: Includes.txt
 
+.. Every manual should have a start label for cross-referencing to
+.. start page. Do not remove this!
 
 .. _start:
 
+=============================================================
+WS Slider - Universal slider extension
+=============================================================
 
-====================
-Flexslider for TYPO3
-====================
+:Version:
+   |release|
 
-.. only:: html
+:Language:
+   en
 
-    :Extension key:
-          ws_slider
+:Authors:
+   Sven Wappler (`WapplerSystems TYPO3 Agentur <http://wappler.systems/>`_)
 
-    :Version:
-          |release|
+:Email:
+   typo3YYYY@wappler.systems
 
-    :Language:
-          en
+:License:
+   This extension documentation is published under the
+   `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
+   license
 
-    :Description:
-          This extension makes it possible to integrate the
-          `jQuery Flexslider script <http://www.woothemes.com/flexslider/>`_ and
-          manage it through the TYPO3 backend.
+Universal slider/carousel extension for TYPO3
 
-    :Keywords:
-          flexslider, jquery, frontend, javascript, slideshow
+**TYPO3**
 
-    :Author:
-          Sven Wappler (`WapplerSystems TYPO3 Agentur <http://wappler.systems/>`_)
+The content of this document is related to TYPO3 CMS,
+a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
-    :Email:
-          typo3YYYY@wapplersystems.de
+**Extension Manual**
 
-    :License:
-          GNU General Public License, either version 2 of the License or any
-          later version.
-
-    :Rendered:
-          |today|
-
-
-    This document is published under the Open Content License
-    available from http://www.opencontent.org/opl.shtml
-
-    The content of this document is related to TYPO3 - a GNU/GPL CMS/Framework
-    available from http://www.typo3.org
-
-
-    **Table of Contents**
+This documentation is for the TYPO3 extension ws_slider.
 
 .. toctree::
-   :maxdepth: 5
-   :titlesonly:
+   :maxdepth: 3
 
    Introduction/Index
-   Screenshots/Index
+   Editor/Index
    Installation/Index
-   Appendix/Index
+   Configuration/Index
+   Integrator/Index
+   KnownProblems/Index
+   Sitemap

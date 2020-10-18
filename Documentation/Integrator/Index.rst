@@ -5,13 +5,8 @@
 
 .. include:: ../Includes.txt
 
-.. _introduction:
+.. _integrator:
 
-Introduction
-============
-
-
-Online Demo:
-`https://demo10.t3bootstrap.de/de/extensions/ws-slider/ <https://demo10.t3bootstrap.de/de/extensions/ws-slider/>`_
-
+Integrator
+==========
 

@@ -23,6 +23,11 @@
 	"require": {
 		"typo3/cms-core": "^8.7 || ^9.5 || ^10.0 || 10.*@dev"
 	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ws_slider"
+		}
+	},
 	"autoload": {
 		"psr-4": {
 			"WapplerSystems\\WsSlider\\": "Classes/"

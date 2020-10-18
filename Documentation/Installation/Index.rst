@@ -4,7 +4,7 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: Images.txt
+.. include:: ../Images/Images.txt
 
 .. _installation:
 
@@ -19,7 +19,6 @@ Installation
 
 - Add a new content element to a page and select the **Flexslider** element
 
-|image05|
 
 
 Configuration

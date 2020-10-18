@@ -29,5 +29,5 @@ Credits
 Sven Wappler
 **WapplerSystems TYPO3 Agentur**
 
-WWW:   http://wappler.systems
+WWW:   https://wappler.systems
 Email: typo3YYYY@wappler.systems
