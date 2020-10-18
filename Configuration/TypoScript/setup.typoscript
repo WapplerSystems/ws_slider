@@ -21,9 +21,6 @@ plugin.tx_wsslider {
     settings {
         defaultRenderer = {$plugin.tx_wsslider.settings.defaultRenderer}
 
-        renderer.owl {
-
-        }
     }
 
 }

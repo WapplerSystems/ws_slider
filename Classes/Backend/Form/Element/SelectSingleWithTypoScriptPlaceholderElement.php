@@ -21,6 +21,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
+use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
 
 /**
  * Creates a widget where only one item can be selected.
@@ -234,7 +235,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
 
             $disabled = '';
             $fallbackValue = 0;
-            if (strlen($placeholder) > 0) {
+            if ($placeholder !== '') {
                 $shortenedPlaceholder = GeneralUtility::fixed_lgd_cs($placeholder, 20);
                 if ($placeholder !== $shortenedPlaceholder) {
                     $overrideLabel = sprintf(
@@ -336,11 +337,10 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
     {
 
         $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-                ->get(ConfigurationManagerInterface::class)
+                ->get(ConfigurationManager::class)
                 ->getConfiguration(
                     ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
                 );
-
         $segments = GeneralUtility::trimExplode('.',$path);
 
         $lastSegment = array_pop($segments);

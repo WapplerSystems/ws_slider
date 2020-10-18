@@ -13,6 +13,7 @@ use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\NoSuchFileException;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\ParseErrorException;
 use TYPO3\CMS\Form\Service\TranslationService;
+use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
 
 /**
  *
@@ -32,10 +33,10 @@ class FlexFormEnhancerHook
     private function getTypoScriptSettings()
     {
         return GeneralUtility::makeInstance(ObjectManager::class)
-                ->get(ConfigurationManagerInterface::class)
-                ->getConfiguration(
-                    ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-                )['plugin.']['tx_wsslider.']['settings.'] ?? [];
+            ->get(ConfigurationManager::class)
+            ->getConfiguration(
+                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+            )['plugin.']['tx_wsslider.']['settings.'] ?? [];
     }
 
     /**
