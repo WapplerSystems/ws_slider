@@ -131,7 +131,7 @@
 			<!-- item labels -->
 
 			<trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
-				<source>Slider item</source>
+				<source>Slider element</source>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
 				<source>Title</source>

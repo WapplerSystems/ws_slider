@@ -4,9 +4,8 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ws_slider',
     'Configuration/TsConfig/Page/ContentElementWizard.tsconfig',
-    'Slider Element'
+    'Enable ws_slider in wizard'
 );
-
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ws_slider',

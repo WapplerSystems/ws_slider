@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 
 return [
     'ctrl' => [
-        'title'	=> 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.title',
+        'title'	=> 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',

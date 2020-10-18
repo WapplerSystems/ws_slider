@@ -1,2 +1,3 @@
 
-
+# hide elements in list view
+mod.web_list.table.tx_wsslider_domain_model_item.hideTable = 1
