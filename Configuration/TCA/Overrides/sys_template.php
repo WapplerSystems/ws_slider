@@ -16,6 +16,9 @@ defined('TYPO3_MODE') || die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Assets/TinySlider/',
     'WS Slider Tiny Slider Assets');
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Assets/Slick/',
+    'WS Slider Slick Slider Assets');
+
 
 # TypoScript Settings
 
@@ -28,3 +31,5 @@ defined('TYPO3_MODE') || die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/TinySlider/',
     'WS Slider Tiny Slider Settings');
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/Slick/',
+    'WS Slider Slick Slider Settings');

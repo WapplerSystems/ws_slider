@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+        <header/>
+        <body>
+            <trans-unit id="settings.js.accessibility.description" xml:space="preserve">
+				<source>Enables tabbing and arrow key navigation</source>
+			</trans-unit>
+			<trans-unit id="settings.js.adaptiveHeight.description" xml:space="preserve">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.autoplay.description" xml:space="preserve">
+				<source>Enables Autoplay</source>
+			</trans-unit>
+			<trans-unit id="settings.js.autoplaySpeed.description" xml:space="preserve">
+				<source>Autoplay Speed in milliseconds</source>
+			</trans-unit>
+			<trans-unit id="settings.js.arrows.description" xml:space="preserve">
+				<source>Prev/Next Arrows</source>
+			</trans-unit>
+			<trans-unit id="settings.js.asNavFor.description" xml:space="preserve">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+			</trans-unit>
+			<trans-unit id="settings.js.appendArrows.description" xml:space="preserve">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			</trans-unit>
+			<trans-unit id="settings.js.appendDots.description" xml:space="preserve">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			</trans-unit>
+			<trans-unit id="settings.js.prevArrow.description" xml:space="preserve">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.nextArrow.description" xml:space="preserve">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.centerMode.description" xml:space="preserve">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.centerPadding.description" xml:space="preserve">
+				<source>Side padding when in center mode (px or %)</source>
+			</trans-unit>
+			<trans-unit id="settings.js.cssEase.description" xml:space="preserve">
+				<source>CSS3 Animation Easing</source>
+			</trans-unit>
+			<trans-unit id="settings.js.customPadding.description" xml:space="preserve">
+				<source>Custom paging templates. See source for use example.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.dots.description" xml:space="preserve">
+				<source>Show dot indicators</source>
+			</trans-unit>
+			<trans-unit id="settings.js.dotsClass.description" xml:space="preserve">
+				<source>Class for slide indicator dots container</source>
+			</trans-unit>
+			<trans-unit id="settings.js.draggable.description" xml:space="preserve">
+				<source>Enable mouse dragging</source>
+			</trans-unit>
+			<trans-unit id="settings.js.fade.description" xml:space="preserve">
+				<source>Enable fade</source>
+			</trans-unit>
+			<trans-unit id="settings.js.focusOnSelect.description" xml:space="preserve">
+				<source>Enable focus on selected element (click)</source>
+			</trans-unit>
+			<trans-unit id="settings.js.easing.description" xml:space="preserve">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+			</trans-unit>
+			<trans-unit id="settings.js.edgeFriction.description" xml:space="preserve">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+			</trans-unit>
+			<trans-unit id="settings.js.infinite.description" xml:space="preserve">
+				<source>Infinite loop sliding</source>
+			</trans-unit>
+			<trans-unit id="settings.js.initialSlide.description" xml:space="preserve">
+				<source>Slide to start on</source>
+			</trans-unit>
+			<trans-unit id="settings.js.lazyLoad.description" xml:space="preserve">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+			</trans-unit>
+			<trans-unit id="settings.js.mobileFirst.description" xml:space="preserve">
+				<source>Responsive settings use mobile first calculation</source>
+			</trans-unit>
+			<trans-unit id="settings.js.pauseOnFocus.description" xml:space="preserve">
+				<source>Pause Autoplay On Focus</source>
+			</trans-unit>
+			<trans-unit id="settings.js.pauseOnHover.description" xml:space="preserve">
+				<source>Pause Autoplay On Hover</source>
+			</trans-unit>
+			<trans-unit id="settings.js.pauseOnDotsHover.description" xml:space="preserve">
+				<source>Pause Autoplay when a dot is hovered</source>
+			</trans-unit>
+			<trans-unit id="settings.js.respondTo.description" xml:space="preserve">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+			</trans-unit>
+			<trans-unit id="settings.js.rows.description" xml:space="preserve">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.slidesPerRow.description" xml:space="preserve">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+			</trans-unit>
+			<trans-unit id="settings.js.slidesToShow.description" xml:space="preserve">
+				<source># of slides to show</source>
+			</trans-unit>
+			<trans-unit id="settings.js.slidesToScroll.description" xml:space="preserve">
+				<source># of slides to scroll</source>
+			</trans-unit>
+			<trans-unit id="settings.js.speed.description" xml:space="preserve">
+				<source>Slide/Fade animation speed</source>
+			</trans-unit>
+			<trans-unit id="settings.js.swipe.description" xml:space="preserve">
+				<source>Enable swiping</source>
+			</trans-unit>
+			<trans-unit id="settings.js.swipeToSlide.description" xml:space="preserve">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+			</trans-unit>
+			<trans-unit id="settings.js.touchMove.description" xml:space="preserve">
+				<source>Enable slide motion with touch</source>
+			</trans-unit>
+			<trans-unit id="settings.js.touchThreshold.description" xml:space="preserve">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+			</trans-unit>
+			<trans-unit id="settings.js.useCSS.description" xml:space="preserve">
+				<source>Enable/Disable CSS Transitions</source>
+			</trans-unit>
+			<trans-unit id="settings.js.useTransform.description" xml:space="preserve">
+				<source>Enable/Disable CSS Transforms</source>
+			</trans-unit>
+			<trans-unit id="settings.js.variableWidth.description" xml:space="preserve">
+				<source>Variable width slides</source>
+			</trans-unit>
+			<trans-unit id="settings.js.vertical.description" xml:space="preserve">
+				<source>Vertical slide mode</source>
+			</trans-unit>
+			<trans-unit id="settings.js.verticalSwiping.description" xml:space="preserve">
+				<source>Vertical swipe mode</source>
+			</trans-unit>
+			<trans-unit id="settings.js.rtl.description" xml:space="preserve">
+				<source>Change the slider's direction to become right-to-left</source>
+			</trans-unit>
+			<trans-unit id="settings.js.waitForAnimate.description" xml:space="preserve">
+				<source>Ignores requests to advance the slide while animating</source>
+			</trans-unit>
+			<trans-unit id="settings.js.zindex.description" xml:space="preserve">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+			</trans-unit>
+
+
+        </body>
+    </file>
+</xliff>

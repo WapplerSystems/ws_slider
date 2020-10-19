@@ -22,6 +22,10 @@ call_user_func(
             'tt_content.pi_flexform.ws_slider',
             'EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf'
         );
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+            'tt_content.pi_flexform.ws_slider',
+            'EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf'
+        );
 
     },
     'ws_slider'

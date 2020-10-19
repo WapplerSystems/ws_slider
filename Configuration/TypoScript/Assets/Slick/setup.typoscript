@@ -1,0 +1,10 @@
+
+
+page.includeJSFooter {
+	slick = EXT:ws_slider/Resources/Public/JavaScript/Slick/slick.min.js
+}
+
+page.includeCSS {
+	slick = EXT:ws_slider/Resources/Public/CSS/Slick/slick.css
+	slick_theme = EXT:ws_slider/Resources/Public/CSS/Slick/slick-theme.css
+}

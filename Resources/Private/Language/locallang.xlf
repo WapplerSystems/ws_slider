@@ -89,6 +89,9 @@
 			<trans-unit id="sheet.tinySlider">
 				<source>Tiny Slider</source>
 			</trans-unit>
+			<trans-unit id="sheet.slick">
+				<source>Slick Slider</source>
+			</trans-unit>
 
 
 			<!-- common setting labels -->
@@ -125,6 +128,9 @@
             </trans-unit>
             <trans-unit id="settings.common.animateIn">
                	<source>Intro Animation</source>
+            </trans-unit>
+            <trans-unit id="settings.common.autoHeight" xml:space="preserve">
+                <source>Auto Height</source>
             </trans-unit>
 
 
@@ -545,9 +551,6 @@
             <trans-unit id="settings.tinySlider.rewind" xml:space="preserve">
                	<source>Rewind</source>
             </trans-unit>
-            <trans-unit id="settings.tinySlider.autoHeight" xml:space="preserve">
-               	<source>Auto Height</source>
-            </trans-unit>
             <trans-unit id="settings.tinySlider.lazyloadSelector" xml:space="preserve">
                	<source>CSS selector for lazyload images</source>
             </trans-unit>
@@ -583,6 +586,134 @@
             </trans-unit>
             <trans-unit id="settings.tinySlider.nonce" xml:space="preserve">
                	<source>Nonce Attribute</source>
+            </trans-unit>
+
+            <!-- slick slider -->
+            <trans-unit id="settings.slick.accessibility" xml:space="preserve">
+                <source>Accessibility</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.arrows" xml:space="preserve">
+                <source>Arrows</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.asNavFor" xml:space="preserve">
+                <source>As Nav For</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.appendArrows" xml:space="preserve">
+                <source>Append Arrows</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.appendDots" xml:space="preserve">
+                <source>Append Dots</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.prevArrow" xml:space="preserve">
+                <source>Prev Arrow</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.nextArrow" xml:space="preserve">
+                <source>Next Arrow</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.centerMode" xml:space="preserve">
+                <source>Center Mode</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.centerPadding" xml:space="preserve">
+                <source>Center Padding</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.cssEase" xml:space="preserve">
+                <source>CSS3 animation Easing</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.customPaging" xml:space="preserve">
+                <source>Custom Paging</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.dots" xml:space="preserve">
+                <source>Dots</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.dotsClass" xml:space="preserve">
+                <source>Dots Class</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.draggable" xml:space="preserve">
+                <source>Draggable</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.fade" xml:space="preserve">
+                <source>Fade</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.focusOnSelect" xml:space="preserve">
+                <source>Focus On Select</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.easing" xml:space="preserve">
+                <source>Easing</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.edgeFriction" xml:space="preserve">
+                <source>Edge Friction</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.infinite" xml:space="preserve">
+                <source>Infinite</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.initialSlide" xml:space="preserve">
+                <source>Initial Slide</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.mobileFirst" xml:space="preserve">
+                <source>Mobile First</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.pauseOnFocus" xml:space="preserve">
+                <source>Pause on focus</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.pauseOnHover" xml:space="preserve">
+                <source>Pause on hover</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.pauseOnDotsHover" xml:space="preserve">
+                <source>Pause on Dots hover</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.respondTo" xml:space="preserve">
+                <source>Respond To</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.rows" xml:space="preserve">
+                <source>Rows</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.slidesPerRow" xml:space="preserve">
+                <source>Slides per row</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.slidesToShow" xml:space="preserve">
+                <source>Slides to show</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.slidesToScroll" xml:space="preserve">
+                <source>Slides to Scroll</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.speed" xml:space="preserve">
+                <source>Slide/Fade animation speed</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.swipe" xml:space="preserve">
+                <source>Enable swiping</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.swipeToSlide" xml:space="preserve">
+                <source>Swipe to slide</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.touchMove" xml:space="preserve">
+                <source>Touch Move</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.touchThreshold" xml:space="preserve">
+                <source>Touch Threshold</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.useCSS" xml:space="preserve">
+                <source>Enable CSS Transitions</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.useTransform" xml:space="preserve">
+                <source>Enable CSS Transform</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.variableWidth" xml:space="preserve">
+                <source>Variable Width</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.vertical" xml:space="preserve">
+                <source>Vertical slide mode</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.verticalSwiping" xml:space="preserve">
+                <source>Vertical swipe mode</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.rtl" xml:space="preserve">
+                <source>Right-to-left slider</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.waitForAnimate" xml:space="preserve">
+                <source>Wait for animate</source>
+            </trans-unit>
+            <trans-unit id="settings.slick.zindex" xml:space="preserve">
+                <source>Z-Index value for slides</source>
             </trans-unit>
 
 		</body>
