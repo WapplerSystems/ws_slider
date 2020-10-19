@@ -96,7 +96,7 @@ plugin.tx_wsslider.settings.flexslider {
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=string; label=manualControls: jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
     manualControls =
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=string; label=customDirectionNav: Custom Direction for navigation.
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=string; label=customDirectionNav: Type: jQuery Object/Selector. Container the custom navigation markup works with.
     customDirectionNav =
 
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=string; label=sync: Type: Selector. Mirror the actions performed on this slider with another slider. Use with care.
