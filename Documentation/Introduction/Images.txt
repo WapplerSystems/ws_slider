@@ -1,0 +1,9 @@
+﻿.. |OwlSettings|             image:: ../Images/OwlSettings.png
+.. :align: left
+.. :border: 0
+.. :name: Owl settings
+
+.. |Elements|             image:: ../Images/Elements.png
+.. :align: left
+.. :border: 0
+.. :name: Elements

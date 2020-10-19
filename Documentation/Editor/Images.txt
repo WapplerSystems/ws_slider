@@ -1,0 +1,4 @@
+﻿.. |ImageCreateNewSlider|             image:: ../Images/CreateNewSlider.png
+.. :align: left
+.. :border: 0
+.. :name: Create new slider

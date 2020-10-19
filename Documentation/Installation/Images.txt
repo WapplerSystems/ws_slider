@@ -1,0 +1,9 @@
+﻿.. |TSconfigIncludes|             image:: ../Images/TSconfigIncludes.png
+.. :align: left
+.. :border: 0
+.. :name: TSconfig
+
+.. |TemplateIncludes|             image:: ../Images/TemplateIncludes.png
+.. :align: left
+.. :border: 0
+.. :name: Template Includes

@@ -4,7 +4,7 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: ../Images/Images.txt
+.. include:: Images.txt
 
 .. _installation:
 
@@ -13,20 +13,15 @@ Installation
 
 - Login to the backend of TYPO3 as a user with Administrator privileges
 
-- Download and install the extension EXT:ws\_flexslider by the **Extension Manager**
-
-- Add the template of the extension to your main template
-
-- Add a new content element to a page and select the **Flexslider** element
-
-
+- Download and install the extension EXT:ws\_slider by the **Extension Manager**
 
 Configuration
 -------------
 
-You can edit the Flexslider settings by template constants, TypoScript or
-via the extension settings in the content element directly.
+To enable the sliders for editors, you have to add them to the page properties in the TSconfig settings. You can decide which slider or layout you want to add.
 
-.. important::
-    It is important that you set the size of the image file. To crop images,
-    add the letter “c” (crop) at the end of the number, e.g. “200c”.
+|TSconfigIncludes|
+
+Add the template of the extension to your main template.
+
+|TemplateIncludes|

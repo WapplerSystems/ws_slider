@@ -46,7 +46,5 @@ This documentation is for the TYPO3 extension ws_slider.
    Introduction/Index
    Editor/Index
    Installation/Index
-   Configuration/Index
-   Integrator/Index
    KnownProblems/Index
    Sitemap
