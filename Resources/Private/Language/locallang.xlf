@@ -63,6 +63,9 @@
 			<trans-unit id="label.stop">
 				<source>Stop</source>
 			</trans-unit>
+			<trans-unit id="settings.typoscript" xml:space="preserve">
+            	<source>TypoScript</source>
+            </trans-unit>
 
 			<!-- sheets -->
 			<trans-unit id="sheet.owl">
@@ -123,6 +126,12 @@
             <trans-unit id="settings.common.backward">
                	<source>Backward</source>
             </trans-unit>
+            <trans-unit id="settings.common.vertical" xml:space="preserve">
+            	<source>Vertical</source>
+            </trans-unit>
+            <trans-unit id="settings.common.horizontal" xml:space="preserve">
+            	<source>Horizontal</source>
+            </trans-unit>
             <trans-unit id="settings.common.animateOut">
                	<source>Outro Animation</source>
             </trans-unit>
@@ -132,6 +141,15 @@
             <trans-unit id="settings.common.autoHeight" xml:space="preserve">
                 <source>Auto Height</source>
             </trans-unit>
+
+            <!-- Labels -->
+            <trans-unit id="pauseText" xml:space="preserve">
+            	<source>Pause</source>
+            </trans-unit>
+            <trans-unit id="playText" xml:space="preserve">
+            	<source>Play</source>
+            </trans-unit>
+
 
 
 			<!-- item labels -->
@@ -296,171 +314,6 @@
 			</trans-unit>
 			<trans-unit id="settings.owl.responsiveRefreshRate">
 				<source>Responsive Refresh Rate</source>
-			</trans-unit>
-
-
-			<trans-unit id="settings.config" xml:space="preserve">
-				<source>Configuration</source>
-			</trans-unit>
-			<trans-unit id="settings.maxWidth" xml:space="preserve">
-				<source>Max width</source>
-			</trans-unit>
-			<trans-unit id="settings.maxHeight" xml:space="preserve">
-				<source>Max height</source>
-			</trans-unit>
-			<trans-unit id="settings.typoscript" xml:space="preserve">
-				<source>TypoScript</source>
-			</trans-unit>
-			<trans-unit id="settings.fade" xml:space="preserve">
-				<source>Fade</source>
-			</trans-unit>
-			<trans-unit id="settings.slide" xml:space="preserve">
-				<source>Slide</source>
-			</trans-unit>
-			<trans-unit id="settings.animation" xml:space="preserve">
-				<source>Animation</source>
-			</trans-unit>
-			<trans-unit id="settings.easing" xml:space="preserve">
-				<source>Easing effect</source>
-			</trans-unit>
-			<trans-unit id="settings.direction" xml:space="preserve">
-				<source>Direction</source>
-			</trans-unit>
-			<trans-unit id="settings.vertical" xml:space="preserve">
-				<source>Vertical</source>
-			</trans-unit>
-			<trans-unit id="settings.horizontal" xml:space="preserve">
-				<source>Horizontal</source>
-			</trans-unit>
-			<trans-unit id="settings.reverse" xml:space="preserve">
-				<source>Reverse order</source>
-			</trans-unit>
-
-			<trans-unit id="settings.animationLoop" xml:space="preserve">
-				<source>Animation loop</source>
-			</trans-unit>
-			<trans-unit id="settings.smoothHeight" xml:space="preserve">
-				<source>Smooth height</source>
-			</trans-unit>
-			<trans-unit id="settings.startAt" xml:space="preserve">
-				<source>Start at</source>
-			</trans-unit>
-			<trans-unit id="settings.slideshow" xml:space="preserve">
-				<source>Slideshow mode</source>
-			</trans-unit>
-			<trans-unit id="settings.slideshowSpeed" xml:space="preserve">
-				<source>Slideshow speed (in milliseconds)</source>
-			</trans-unit>
-			<trans-unit id="settings.animationSpeed" xml:space="preserve">
-				<source>Animation speed (in milliseconds)</source>
-			</trans-unit>
-			<trans-unit id="settings.initDelay" xml:space="preserve">
-				<source>Init delay in milliseconds</source>
-			</trans-unit>
-			<trans-unit id="settings.randomize" xml:space="preserve">
-				<source>Random mode</source>
-			</trans-unit>
-			<trans-unit id="settings.textmode" xml:space="preserve">
-				<source>Text mode</source>
-			</trans-unit>
-			<trans-unit id="settings.primarysettings" xml:space="preserve">
-				<source>Primary Settings</source>
-			</trans-unit>
-
-			<!-- Usability Features -->
-			<trans-unit id="settings.primarycontrols" xml:space="preserve">
-				<source>Primary controls</source>
-			</trans-unit>
-			<trans-unit id="settings.pauseOnAction" xml:space="preserve">
-				<source>Pause on action</source>
-			</trans-unit>
-			<trans-unit id="settings.pauseOnHover" xml:space="preserve">
-				<source>Pause on hover</source>
-			</trans-unit>
-			<trans-unit id="settings.useCSS" xml:space="preserve">
-				<source>User CSS</source>
-			</trans-unit>
-			<trans-unit id="settings.touch" xml:space="preserve">
-				<source>Touch mode</source>
-			</trans-unit>
-			<trans-unit id="settings.video" xml:space="preserve">
-				<source>Video mode</source>
-			</trans-unit>
-
-			<!-- Primary Controls -->
-			<trans-unit id="settings.controlNav" xml:space="preserve">
-				<source>Control navigation on</source>
-			</trans-unit>
-			<trans-unit id="settings.directionNav" xml:space="preserve">
-				<source>Direction navigation on</source>
-			</trans-unit>
-
-			<!-- Secondary Navigation -->
-			<trans-unit id="settings.secondarynavigation" xml:space="preserve">
-				<source>Secondary navigation</source>
-			</trans-unit>
-			<trans-unit id="settings.keyboard" xml:space="preserve">
-				<source>Keyboard support</source>
-			</trans-unit>
-			<trans-unit id="settings.multipleKeyboard" xml:space="preserve">
-				<source>Allow keyboard navigation to affect multiple sliders</source>
-			</trans-unit>
-			<trans-unit id="settings.mousewheel" xml:space="preserve">
-				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
-			</trans-unit>
-			<trans-unit id="settings.pausePlay" xml:space="preserve">
-				<source>Create pause/play dynamic element</source>
-			</trans-unit>
-
-			<!-- Special Properties -->
-			<trans-unit id="settings.specialproperties" xml:space="preserve">
-				<source>Special properties</source>
-			</trans-unit>
-			<trans-unit id="settings.controlsContainer" xml:space="preserve">
-				<source>controlsContainer jQuery object/selector</source>
-			</trans-unit>
-			<trans-unit id="settings.manualControls" xml:space="preserve">
-				<source>manualControls jQuery object/selector</source>
-			</trans-unit>
-			<trans-unit id="settings.sync" xml:space="preserve">
-				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
-			</trans-unit>
-			<trans-unit id="settings.asNavFor" xml:space="preserve">
-				<source>asNavFor selector</source>
-			</trans-unit>
-
-			<!-- Carousel-->
-			<trans-unit id="settings.carousel" xml:space="preserve">
-				<source>Carousel options</source>
-			</trans-unit>
-			<trans-unit id="settings.itemWidth" xml:space="preserve">
-				<source>Element width in pixels</source>
-			</trans-unit>
-			<trans-unit id="settings.itemMargin" xml:space="preserve">
-				<source>Element border (margin)</source>
-			</trans-unit>
-			<trans-unit id="settings.minItems" xml:space="preserve">
-				<source>Min number of elements</source>
-			</trans-unit>
-			<trans-unit id="settings.maxItems" xml:space="preserve">
-				<source>Max number of elements</source>
-			</trans-unit>
-			<trans-unit id="settings.move" xml:space="preserve">
-				<source>Number of elements, which should be moved in animation</source>
-			</trans-unit>
-
-			<!-- Labels -->
-			<trans-unit id="pauseText" xml:space="preserve">
-				<source>Pause</source>
-			</trans-unit>
-			<trans-unit id="playText" xml:space="preserve">
-				<source>Play</source>
-			</trans-unit>
-			<trans-unit id="prevText" xml:space="preserve">
-				<source>Previous</source>
-			</trans-unit>
-			<trans-unit id="nextText" xml:space="preserve">
-				<source>Next</source>
 			</trans-unit>
 
             <!-- tinyslider specific settings -->
