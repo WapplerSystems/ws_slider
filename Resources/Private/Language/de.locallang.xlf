@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
+    <header/>
+    <body>
+      <!-- Buttons and labels -->
+      <trans-unit id="label.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Weiter</target>
+      </trans-unit>
+      <trans-unit id="label.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Zurück</target>
+      </trans-unit>
+      <!-- sheets -->
+      <!-- common setting labels -->
+      <!-- Labels -->
+      <!-- item labels -->
+      <!-- Owl specific labels -->
+      <!-- tinyslider specific settings -->
+      <!-- slick slider -->
+    </body>
+  </file>
+</xliff>
