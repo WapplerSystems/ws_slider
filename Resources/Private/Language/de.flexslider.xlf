@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
+    <header/>
+    <body>
+      <!-- sheets -->
+      <trans-unit id="sheet.flexslider" approved="yes">
+        <source>Flex Slider</source>
+        <target state="final">Flex Slider</target>
+      </trans-unit>
+      <trans-unit id="sheet.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Karussell</target>
+      </trans-unit>
+      <!-- flexslider general settings -->
+      <trans-unit id="settings.selector" xml:space="preserve" approved="yes">
+                <source>Selector</source>
+            <target state="final">Selektor</target></trans-unit>
+      <trans-unit id="settings.animation" xml:space="preserve" approved="yes">
+                <source>Animation</source>
+            <target state="final">Animation</target></trans-unit>
+      <trans-unit id="settings.direction" xml:space="preserve" approved="yes">
+            	<source>Direction</source>
+            <target state="final">Richtung</target></trans-unit>
+      <trans-unit id="settings.reverse" xml:space="preserve" approved="yes">
+            	<source>Reverse order</source>
+            <target state="final">Umgekehrte Reihenfolge</target></trans-unit>
+      <trans-unit id="settings.animationLoop" xml:space="preserve" approved="yes">
+            	<source>Animation loop</source>
+            <target state="final">Animationsschleife</target></trans-unit>
+      <trans-unit id="settings.startAt" xml:space="preserve" approved="yes">
+            	<source>Start at</source>
+            <target state="final">Start bei</target></trans-unit>
+      <trans-unit id="settings.slideshow" xml:space="preserve" approved="yes">
+            	<source>Slideshow mode</source>
+            <target state="final">Diashow-Modus</target></trans-unit>
+      <trans-unit id="settings.slideshowSpeed" xml:space="preserve" approved="yes">
+            	<source>Slideshow speed (in milliseconds)</source>
+            <target state="final">Diashow-Geschwindigkeit (in Millisekunden)</target></trans-unit>
+      <trans-unit id="settings.animationSpeed" xml:space="preserve" approved="yes">
+            	<source>Animation speed (in milliseconds)</source>
+            <target state="final">Animationsgeschwindigkeit (in Millisekunden)</target></trans-unit>
+      <trans-unit id="settings.initDelay" xml:space="preserve" approved="yes">
+            	<source>Init delay in milliseconds</source>
+            <target state="final">Start-Verzögerung in Millisekunden</target></trans-unit>
+      <trans-unit id="settings.randomize" xml:space="preserve" approved="yes">
+            	<source>Random mode</source>
+            <target state="final">Zufallsmodus</target></trans-unit>
+      <trans-unit id="settings.fade" xml:space="preserve" approved="yes">
+				<source>Fade</source>
+			<target state="final">Überblenden</target></trans-unit>
+      <!-- Usability Features -->
+      <trans-unit id="settings.pauseOnAction" xml:space="preserve" approved="yes">
+				<source>Pause on action</source>
+			<target state="final">Bei Aktion pausieren</target></trans-unit>
+      <trans-unit id="settings.pauseOnHover" xml:space="preserve" approved="yes">
+				<source>Pause on hover</source>
+			<target state="final">Pausieren beim Darüberfahren</target></trans-unit>
+      <trans-unit id="settings.useCSS" xml:space="preserve" approved="yes">
+				<source>User CSS</source>
+			<target state="final">Benutzer-CSS</target></trans-unit>
+      <trans-unit id="settings.touch" xml:space="preserve" approved="yes">
+				<source>Touch mode</source>
+			<target state="final">Berührungsmodus</target></trans-unit>
+      <trans-unit id="settings.video" xml:space="preserve" approved="yes">
+				<source>Video mode</source>
+			<target state="final">Video-Modus</target></trans-unit>
+      <!-- Primary Controls -->
+      <!-- Secondary Navigation -->
+      <trans-unit id="settings.keyboard" xml:space="preserve" approved="yes">
+				<source>Keyboard support</source>
+			<target state="final">Tastaturunterstützung</target></trans-unit>
+      <!-- Special Properties -->
+      <!-- Carousel-->
+      <trans-unit id="settings.itemWidth" xml:space="preserve" approved="yes">
+				<source>Element width in pixels</source>
+			<target state="final">Elementbreite in Pixeln</target></trans-unit>
+      <trans-unit id="settings.itemMargin" xml:space="preserve" approved="yes">
+				<source>Element border (margin)</source>
+			<target state="final">Elementrahmen (Rand)</target></trans-unit>
+      <trans-unit id="settings.minItems" xml:space="preserve" approved="yes">
+				<source>Min number of elements</source>
+			<target state="final">Minimale Anzahl von Elementen</target></trans-unit>
+      <trans-unit id="settings.maxItems" xml:space="preserve" approved="yes">
+				<source>Max number of elements</source>
+			<target state="final">Maximale Anzahl von Elementen</target></trans-unit>
+      <trans-unit id="settings.move" xml:space="preserve" approved="yes">
+				<source>Number of elements, which should be moved in animation</source>
+			<target state="final">Anzahl der Elemente, die in der Animation verschoben werden sollen</target></trans-unit>
+    </body>
+  </file>
+</xliff>
