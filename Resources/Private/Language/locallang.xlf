@@ -81,7 +81,7 @@
 				<source>Layout</source>
 			</trans-unit>
 			<trans-unit id="sheet.dragNdrop">
-				<source>Drag and drop</source>
+				<source>Swipe/Drag support</source>
 			</trans-unit>
 			<trans-unit id="sheet.animation">
 				<source>Animation</source>

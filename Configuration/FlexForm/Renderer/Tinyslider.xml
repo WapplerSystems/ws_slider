@@ -816,29 +816,6 @@
                         </TCEforms>
                     </settings.js.swipeAngle>
 
-                    <settings.js.preventActionWhenRunning>
-                        <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventActionWhenRunning</label>
-                            <config>
-                                <type>select</type>
-                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.preventActionWhenRunning</typoscriptPath>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
-                                    </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
-                                    </numIndex>
-                                </items>
-                                <maxitems>1</maxitems>
-                                <size>1</size>
-                            </config>
-                        </TCEforms>
-                    </settings.js.preventActionWhenRunning>
-
                     <settings.js.preventScrollOnTouch>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventScrollOnTouch</label>
@@ -928,6 +905,29 @@
                             </config>
                         </TCEforms>
                     </settings.js.animateDelay>
+
+                    <settings.js.preventActionWhenRunning>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventActionWhenRunning</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.preventActionWhenRunning</typoscriptPath>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.preventActionWhenRunning>
                 </el>
             </ROOT>
         </animation>
