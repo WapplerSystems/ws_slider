@@ -2,5 +2,13 @@ commit_message: 'Fix: New translations %original_file_name% from Crowdin'
 files:
   - source: /Resources/Private/Language/flexslider*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
+  - source: /Resources/Private/Language/owlslider*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
+  - source: /Resources/Private/Language/tinyslider*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
+  - source: /Resources/Private/Language/slickslider*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
   - source: /Resources/Private/Language/locallang*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
+  - source: /Resources/Private/Language/*_csh_flexforms.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
