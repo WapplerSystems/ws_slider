@@ -71,6 +71,21 @@
 				<source>Keyboard support</source>
 			<target state="final">Tastaturunterstützung</target></trans-unit>
       <!-- Special Properties -->
+      <trans-unit id="settings.controlsContainer" xml:space="preserve" approved="yes">
+				<source>controlsContainer jQuery object/selector</source>
+			<target state="final">controlsContainer jQuery Objekt/Selektor</target></trans-unit>
+      <trans-unit id="settings.manualControls" xml:space="preserve" approved="yes">
+				<source>manualControls jQuery object/selector</source>
+			<target state="final">controlsContainer jQuery Objekt/Selektor</target></trans-unit>
+      <trans-unit id="settings.customDirectionNav" xml:space="preserve" approved="yes">
+				<source>customDirectionNav jQuery object/selector</source>
+			<target state="final">customDirectionNav jQuery Objekt/Selektor</target></trans-unit>
+      <trans-unit id="settings.sync" xml:space="preserve" approved="yes">
+				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
+			<target state="final">Sync-Selektor: Spiegeln Sie die auf diesem Slider durchgeführten Aktionen auf einem anderen Slider</target></trans-unit>
+      <trans-unit id="settings.asNavFor" xml:space="preserve" approved="yes">
+				<source>asNavFor selector</source>
+			<target state="final">asNavFor Selektor</target></trans-unit>
       <!-- Carousel-->
       <trans-unit id="settings.itemWidth" xml:space="preserve" approved="yes">
 				<source>Element width in pixels</source>
