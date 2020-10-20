@@ -40,7 +40,11 @@ call_user_func(
             'priority' => '70',
             'class' => \WapplerSystems\WsSlider\Backend\Form\Element\InputTextWithTypoScriptPlaceholderElement::class,
         ];
-
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1603197807] = [
+            'nodeName' => 'flexFormElementContainer',
+            'priority' => '70',
+            'class' => \WapplerSystems\WsSlider\Backend\Form\Container\FlexFormElementContainer::class,
+        ];
 
     },
     'ws_slider'

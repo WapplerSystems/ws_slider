@@ -27,6 +27,10 @@ call_user_func(
             'EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf'
         );
 
+        /* add backend css */
+        $GLOBALS['TBE_STYLES']['skins']['backend']['stylesheetDirectories'][$extKey] = 'EXT:'.$extKey.'/Resources/Public/CSS/Backend/';
+
+
     },
     'ws_slider'
 );
