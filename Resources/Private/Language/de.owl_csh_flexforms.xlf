@@ -3,53 +3,10 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2014-06-02T11:47:43Z" product-name="news" target-language="de">
     <header/>
     <body>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </body>
+      <trans-unit id="settings.js.margin.description" approved="yes">
+        <source>margin-right(px) on item.</source>
+        <target state="final">margin-right(px) von Element</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
