@@ -43,7 +43,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
                 --palette--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:palette.wsslider;tx_wsslider,
             --div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings,
-                pi_flexform;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:advanced,
+                pi_flexform;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:title,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,

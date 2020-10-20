@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+        <header/>
+        <body>
+            <!-- Owl specific labels -->
+			<trans-unit id="owl">
+				<source>Owl</source>
+			</trans-unit>
+
+			<trans-unit id="settings.items">
+				<source>The number of items you want to see on the screen.</source>
+			</trans-unit>
+			<trans-unit id="settings.margin">
+				<source>Margin-right(px) on item.</source>
+			</trans-unit>
+			<trans-unit id="settings.stagePadding">
+				<source>Padding left and right on stage (can see neighbours).</source>
+			</trans-unit>
+			<trans-unit id="settings.center">
+				<source>Center item</source>
+			</trans-unit>
+			<trans-unit id="settings.mouseDrag">
+				<source>Mouse Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.touchDrag">
+				<source>Touch Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.pullDrag">
+				<source>Pull Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.freeDrag">
+				<source>Free Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.stagePadding">
+				<source>Padding left and right on stage</source>
+			</trans-unit>
+			<trans-unit id="settings.merge">
+				<source>Merge items. Looking for data-merge='{number}' inside item..</source>
+			</trans-unit>
+			<trans-unit id="settings.mergeFit">
+				<source>Fit merged items if screen is smaller than items value.</source>
+			</trans-unit>
+			<trans-unit id="settings.autoWidth">
+				<source>Set non grid content. Try using width style on divs.</source>
+			</trans-unit>
+			<trans-unit id="settings.startPosition">
+				<source>Start position or URL Hash string like '#id'.</source>
+			</trans-unit>
+			<trans-unit id="settings.rewind">
+				<source>Go backwards when the boundary has reached.</source>
+			</trans-unit>
+			<trans-unit id="settings.slideBy">
+				<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+			</trans-unit>
+			<trans-unit id="settings.slideTransition">
+				<source>You can define the transition for the stage you want to use eg. linear.</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplayTimeout">
+				<source>Autoplay interval timeout.</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplayHoverPause">
+				<source>Pause on mouse hover.</source>
+			</trans-unit>
+			<trans-unit id="settings.dragEndSpeed">
+				<source>Drag end speed</source>
+			</trans-unit>
+			<trans-unit id="settings.mouseDrag">
+				<source>Mouse drag enabled</source>
+			</trans-unit>
+			<trans-unit id="settings.lazyLoadEager">
+				<source>Eager Lazy Load</source>
+			</trans-unit>
+			<trans-unit id="settings.smartSpeed">
+				<source>Smart Speed</source>
+			</trans-unit>
+			<trans-unit id="settings.videoHeight">
+				<source>Video Height</source>
+			</trans-unit>
+			<trans-unit id="settings.videoWidth">
+				<source>Video Width</source>
+			</trans-unit>
+			<trans-unit id="settings.fallbackEasing">
+				<source>Easing fallback animation for CSS2</source>
+			</trans-unit>
+			<trans-unit id="settings.nestedItemSelector">
+				<source>Nested Item Selector</source>
+			</trans-unit>
+			<trans-unit id="settings.itemElement">
+				<source>Item Element</source>
+			</trans-unit>
+			<trans-unit id="settings.stageElement">
+				<source>Stage Element</source>
+			</trans-unit>
+			<trans-unit id="settings.navContainer">
+				<source>Nav Container</source>
+			</trans-unit>
+			<trans-unit id="settings.navSpeed">
+				<source>Nav Speed</source>
+			</trans-unit>
+			<trans-unit id="settings.nav">
+				<source>Show Nav Buttons</source>
+			</trans-unit>
+			<trans-unit id="settings.dotsContainer">
+				<source>Dots Container</source>
+			</trans-unit>
+			<trans-unit id="settings.dots">
+				<source>Show navigation dots</source>
+			</trans-unit>
+			<trans-unit id="settings.dotsEach">
+				<source>Show dots each x item</source>
+			</trans-unit>
+			<trans-unit id="settings.dotsSpeed">
+				<source>Dots Speed</source>
+			</trans-unit>
+			<trans-unit id="settings.checkVisible">
+				<source>Check Visible</source>
+			</trans-unit>
+			<trans-unit id="settings.responsiveRefreshRate">
+				<source>Responsive Refresh Rate</source>
+			</trans-unit>
+			<trans-unit id="settings.URLhashListener">
+				<source>Listen to url hash changes</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>
