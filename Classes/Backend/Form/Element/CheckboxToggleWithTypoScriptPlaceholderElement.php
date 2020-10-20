@@ -21,6 +21,7 @@ use TYPO3\CMS\Core\Imaging\IconRegistry;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
+use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
 
 /**
  * Generation of TCEform elements of the type "check"
@@ -204,7 +205,7 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
     private function getTypoScriptValue($path)
     {
         $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManagerInterface::class)
+            ->get(ConfigurationManager::class)
             ->getConfiguration(
                 ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
             );

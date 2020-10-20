@@ -8,6 +8,7 @@ use TYPO3\CMS\Core\Utility\MathUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
+use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
 
 /**
  * General type=input element.
@@ -316,7 +317,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
     private function getTypoScriptValue($path)
     {
         $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManagerInterface::class)
+            ->get(ConfigurationManager::class)
             ->getConfiguration(
                 ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
             );
