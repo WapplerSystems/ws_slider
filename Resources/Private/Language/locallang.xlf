@@ -141,6 +141,9 @@
             <trans-unit id="settings.common.autoHeight" xml:space="preserve">
                 <source>Auto Height</source>
             </trans-unit>
+            <trans-unit id="settings.common.video" xml:space="preserve">
+                <source>Enable Video</source>
+            </trans-unit>
 
             <!-- Labels -->
             <trans-unit id="pauseText" xml:space="preserve">
