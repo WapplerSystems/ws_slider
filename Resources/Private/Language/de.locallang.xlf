@@ -12,8 +12,15 @@
         <source>Previous</source>
         <target state="final">Zurück</target>
       </trans-unit>
+      <trans-unit id="settings.typoscript" xml:space="preserve" approved="yes">
+            	<source>TypoScript</source>
+            <target state="final">TypoScript</target></trans-unit>
       <!-- sheets -->
       <!-- common setting labels -->
+      <trans-unit id="settings.common.animateOut" approved="yes">
+        <source>Outro Animation</source>
+        <target state="final">Outro Animation</target>
+      </trans-unit>
       <!-- Labels -->
       <!-- item labels -->
     </body>
