@@ -3,54 +3,18 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
-            
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-
-        </body>
+      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
+				<source>Enables Autoplay</source>
+			<target state="final">Aktiviert Autoplay</target></trans-unit>
+      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
+				<source>Enable/Disable CSS Transitions</source>
+			<target state="final">CSS-Übergänge aktivieren/deaktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
+				<source>Enable/Disable CSS Transforms</source>
+			<target state="final">CSS-Transformationen aktivieren/deaktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
+				<source>Vertical swipe mode</source>
+			<target state="final">Vertikaler Wischmodus</target></trans-unit>
+    </body>
   </file>
 </xliff>
