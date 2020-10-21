@@ -4,6 +4,9 @@
     <header/>
     <body>
       <!-- slick slider -->
+      <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
+                <source>Custom Paging</source>
+            </trans-unit> -->
     </body>
   </file>
 </xliff>
