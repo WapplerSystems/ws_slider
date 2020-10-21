@@ -5,10 +5,6 @@ if (!defined('TYPO3_MODE')) {
 
 call_user_func(
     function ($extKey) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-            'tt_content.pi_flexform.news_pi1.list',
-            'EXT:wsslider/Resources/Private/Language/tiny_csh_flexforms.xlf'
-        );
 
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_wsslider_domain_model_item');
@@ -25,6 +21,10 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
             'tt_content.pi_flexform.ws_slider',
             'EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf'
+        );
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+            'tt_content.pi_flexform.news_pi1.list',
+            'EXT:wsslider/Resources/Private/Language/tinyslider_csh_flexforms.xlf'
         );
 
         /* add backend css */
