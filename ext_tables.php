@@ -23,8 +23,8 @@ call_user_func(
             'EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf'
         );
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-            'tt_content.pi_flexform.news_pi1.list',
-            'EXT:wsslider/Resources/Private/Language/tinyslider_csh_flexforms.xlf'
+            'tt_content.pi_flexform.ws_slider',
+            'EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf'
         );
 
         /* add backend css */
