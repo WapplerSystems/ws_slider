@@ -16,9 +16,29 @@
 			<trans-unit id="settings.mergeFit">
 				<source>Merge Fit</source>
 			</trans-unit> -->
+      <trans-unit id="settings.autoplayTimeout" approved="yes">
+        <source>Autoplay interval timeout</source>
+        <target state="final">Timeout für Autoplay-Intervall</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayHoverPause" approved="yes">
+        <source>Autoplay pause on hover</source>
+        <target state="final">Autoplay pausieren bei Hover</target>
+      </trans-unit>
       <!-- <trans-unit id="settings.smartSpeed">
 				<source>Smart Speed</source>
 			</trans-unit> -->
+      <trans-unit id="settings.nestedItemSelector" approved="yes">
+        <source>Nested Item Selector</source>
+        <target state="final">Element-Selektor für verschachtelte Elemente</target>
+      </trans-unit>
+      <trans-unit id="settings.navSpeed" approved="yes">
+        <source>Nav Speed</source>
+        <target state="final">Navigatonsgeschwindigkeit</target>
+      </trans-unit>
+      <trans-unit id="settings.URLhashListener" approved="yes">
+        <source>Listen to url hash changes</source>
+        <target state="final">URL-Hash-Änderungen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
