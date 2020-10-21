@@ -4,6 +4,24 @@
     <header/>
     <body>
       <!-- tinyslider specific settings -->
+      <trans-unit id="settings.viewportMax" xml:space="preserve" approved="yes">
+                <source>Viewport Maximum</source>
+            <target state="final">Viewport-Maximum</target></trans-unit>
+      <trans-unit id="settings.autoplayDirection" xml:space="preserve" approved="yes">
+               	<source>Autoplay Direction</source>
+            <target state="final">Autoplay-Richtung</target></trans-unit>
+      <trans-unit id="settings.autoplayHoverPause" xml:space="preserve" approved="yes">
+               	<source>Pause autoplay on hover</source>
+            <target state="final">Autoplay beim Hover pausieren</target></trans-unit>
+      <trans-unit id="settings.lazyloadSelector" xml:space="preserve" approved="yes">
+               	<source>CSS selector for lazyload images</source>
+            <target state="final">CSS-Selektor für nachzuladende Bilder</target></trans-unit>
+      <trans-unit id="settings.freezable" xml:space="preserve" approved="yes">
+               	<source>Freezable</source>
+            <target state="final">Einfrierbar</target></trans-unit>
+      <trans-unit id="settings.disable" xml:space="preserve" approved="yes">
+               	<source>Disable</source>
+            <target state="final">Deaktivieren</target></trans-unit>
     </body>
   </file>
 </xliff>
