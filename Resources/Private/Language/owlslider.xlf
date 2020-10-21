@@ -26,12 +26,12 @@
 			<trans-unit id="settings.touchDrag">
 				<source>Touch Drag</source>
 			</trans-unit>
-			<trans-unit id="settings.pullDrag">
+			<!-- <trans-unit id="settings.pullDrag">
 				<source>Pull Drag</source>
 			</trans-unit>
 			<trans-unit id="settings.freeDrag">
 				<source>Free Drag</source>
-			</trans-unit>
+			</trans-unit> -->
 			<!-- <trans-unit id="settings.merge">
 				<source>Merge items</source>
 			</trans-unit>
@@ -42,7 +42,7 @@
 				<source>Auto Width</source>
 			</trans-unit>
 			<trans-unit id="settings.startPosition">
-				<source>Start position.</source>
+				<source>Start position</source>
 			</trans-unit>
 			<trans-unit id="settings.rewind">
 				<source>Rewind</source>
@@ -62,15 +62,12 @@
 			<trans-unit id="settings.dragEndSpeed">
 				<source>Drag end speed</source>
 			</trans-unit>
-			<trans-unit id="settings.mouseDrag">
-				<source>Mouse drag enabled</source>
-			</trans-unit>
 			<trans-unit id="settings.lazyLoadEager">
 				<source>Eager Lazy Load</source>
 			</trans-unit>
-			<trans-unit id="settings.smartSpeed">
+			<!-- <trans-unit id="settings.smartSpeed">
 				<source>Smart Speed</source>
-			</trans-unit>
+			</trans-unit> -->
 			<trans-unit id="settings.videoHeight">
 				<source>Video Height</source>
 			</trans-unit>
