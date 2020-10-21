@@ -99,9 +99,6 @@
             <trans-unit id="owl.settings.js.dragEndSpeed.description" xml:space="preserve">
 				<source>Drag end speed.</source>
 			</trans-unit>
-            <trans-unit id="owl.settings.js.responsive.description">
-                <source>Object containing responsive options. Can be set to false to remove responsive capabilities.</source>
-            </trans-unit>
             <trans-unit id="owl.settings.js.responsiveRefreshRate.description" xml:space="preserve">
 				<source>Responsive refresh rate.</source>
 			</trans-unit>

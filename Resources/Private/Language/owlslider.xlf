@@ -9,13 +9,13 @@
 			</trans-unit>
 
 			<trans-unit id="settings.items">
-				<source>The number of items you want to see on the screen.</source>
+				<source>Items</source>
 			</trans-unit>
 			<trans-unit id="settings.margin">
-				<source>Margin-right(px) on item.</source>
+				<source>Margin</source>
 			</trans-unit>
 			<trans-unit id="settings.stagePadding">
-				<source>Padding left and right on stage (can see neighbours).</source>
+				<source>Stage Padding</source>
 			</trans-unit>
 			<trans-unit id="settings.center">
 				<source>Center item</source>
@@ -32,35 +32,32 @@
 			<trans-unit id="settings.freeDrag">
 				<source>Free Drag</source>
 			</trans-unit>
-			<trans-unit id="settings.stagePadding">
-				<source>Padding left and right on stage</source>
-			</trans-unit>
-			<trans-unit id="settings.merge">
-				<source>Merge items. Looking for data-merge='{number}' inside item..</source>
+			<!-- <trans-unit id="settings.merge">
+				<source>Merge items</source>
 			</trans-unit>
 			<trans-unit id="settings.mergeFit">
-				<source>Fit merged items if screen is smaller than items value.</source>
-			</trans-unit>
+				<source>Merge Fit</source>
+			</trans-unit> -->
 			<trans-unit id="settings.autoWidth">
-				<source>Set non grid content. Try using width style on divs.</source>
+				<source>Auto Width</source>
 			</trans-unit>
 			<trans-unit id="settings.startPosition">
-				<source>Start position or URL Hash string like '#id'.</source>
+				<source>Start position.</source>
 			</trans-unit>
 			<trans-unit id="settings.rewind">
-				<source>Go backwards when the boundary has reached.</source>
+				<source>Rewind</source>
 			</trans-unit>
 			<trans-unit id="settings.slideBy">
-				<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+				<source>Slide By</source>
 			</trans-unit>
 			<trans-unit id="settings.slideTransition">
-				<source>You can define the transition for the stage you want to use eg. linear.</source>
+				<source>Slide Transition</source>
 			</trans-unit>
 			<trans-unit id="settings.autoplayTimeout">
-				<source>Autoplay interval timeout.</source>
+				<source>Autoplay interval timeout</source>
 			</trans-unit>
 			<trans-unit id="settings.autoplayHoverPause">
-				<source>Pause on mouse hover.</source>
+				<source>Autoplay pause on hover</source>
 			</trans-unit>
 			<trans-unit id="settings.dragEndSpeed">
 				<source>Drag end speed</source>
