@@ -33,9 +33,9 @@
             <trans-unit id="settings.cssEase" xml:space="preserve">
                 <source>CSS3 animation Easing</source>
             </trans-unit>
-            <trans-unit id="settings.customPaging" xml:space="preserve">
+            <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
                 <source>Custom Paging</source>
-            </trans-unit>
+            </trans-unit> -->
             <trans-unit id="settings.dots" xml:space="preserve">
                 <source>Dots</source>
             </trans-unit>

@@ -36,11 +36,11 @@
                                 <eval>null</eval>
                                 <items type="array">
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.fade</numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.fade</numIndex>
                                         <numIndex index="1">fade</numIndex>
                                     </numIndex>
                                     <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.slide</numIndex>
+                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slide</numIndex>
                                         <numIndex index="1">slide</numIndex>
                                     </numIndex>
                                 </items>

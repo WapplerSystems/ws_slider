@@ -795,7 +795,7 @@
                         </TCEforms>
                     </settings.js.cssEase>
 
-                    <settings.js.customPaging>
+                    <!--<settings.js.customPaging>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.customPaging</label>
                             <config>
@@ -805,7 +805,7 @@
                                 <size>12</size>
                             </config>
                         </TCEforms>
-                    </settings.js.customPaging>
+                    </settings.js.customPaging>-->
 
                     <settings.js.fade>
                         <TCEforms>

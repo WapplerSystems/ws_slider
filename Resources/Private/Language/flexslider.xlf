@@ -96,10 +96,10 @@
 
 			<!-- Primary Controls -->
 			<trans-unit id="settings.controlNav" xml:space="preserve">
-				<source>Control navigation on</source>
+				<source>Navigation Dots</source>
 			</trans-unit>
 			<trans-unit id="settings.directionNav" xml:space="preserve">
-				<source>Direction navigation on</source>
+				<source>Navigation Arrows</source>
 			</trans-unit>
 
             <!-- Secondary Navigation -->
