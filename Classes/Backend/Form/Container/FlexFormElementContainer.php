@@ -3,12 +3,8 @@ declare(strict_types = 1);
 namespace WapplerSystems\WsSlider\Backend\Form\Container;
 
 
-use TYPO3\CMS\Backend\Form\Container\AbstractContainer;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
-use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
-use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Type\Bitmask\JsConfirmation;
-use TYPO3\CMS\Core\Utility\DebugUtility;
 
 
 class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFormElementContainer
@@ -137,7 +133,11 @@ class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFor
                     switch ($options['renderType']) {
                         case 'selectSingleWithTypoScriptPlaceholder':
                         case 'inputWithTypoScriptPlaceholder':
-                            $helpTextArray = BackendUtility::helpTextArray($parameterArray['_cshKey'],$flexFormFieldName);
+
+                            $databaseRow = $this->data['databaseRow'];
+                            $sliderRenderer = $databaseRow['tx_wsslider_renderer'][0] ?? '';
+
+                            $helpTextArray = BackendUtility::helpTextArray($parameterArray['_cshKey'],$sliderRenderer.'.'.$flexFormFieldName);
                             if (isset($helpTextArray['description']) && $helpTextArray['description'] !== '') {
                                 $html[] =       '<label class="t3js-formengine-sublabel">'.$helpTextArray['description'].'</label>';
                             }
