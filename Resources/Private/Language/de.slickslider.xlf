@@ -4,9 +4,36 @@
     <header/>
     <body>
       <!-- slick slider -->
+      <trans-unit id="settings.centerMode" xml:space="preserve" approved="yes">
+                <source>Center Mode</source>
+            <target state="final">Zentrierungsmodus</target></trans-unit>
+      <trans-unit id="settings.centerPadding" xml:space="preserve" approved="yes">
+                <source>Center Padding</source>
+            <target state="final">Innerer Abstand im Zentrierungsmodus</target></trans-unit>
       <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
                 <source>Custom Paging</source>
             </trans-unit> -->
+      <trans-unit id="settings.dotsClass" xml:space="preserve" approved="yes">
+                <source>Dots Class</source>
+            <target state="final">CSS-Klasse der Punktenavigation</target></trans-unit>
+      <trans-unit id="settings.draggable" xml:space="preserve" approved="yes">
+                <source>Draggable</source>
+            <target state="final">Ziehbar</target></trans-unit>
+      <trans-unit id="settings.touchThreshold" xml:space="preserve" approved="yes">
+                <source>Touch Threshold</source>
+            <target state="final">Touch-Schwellenwert</target></trans-unit>
+      <trans-unit id="settings.useCSS" xml:space="preserve" approved="yes">
+                <source>Enable CSS Transitions</source>
+            <target state="final">CSS-Übergänge aktivieren</target></trans-unit>
+      <trans-unit id="settings.useTransform" xml:space="preserve" approved="yes">
+                <source>Enable CSS Transform</source>
+            <target state="final">CSS-Transformation aktivieren</target></trans-unit>
+      <trans-unit id="settings.vertical" xml:space="preserve" approved="yes">
+                <source>Vertical slide mode</source>
+            <target state="final">Vertikaler Slide-Modus</target></trans-unit>
+      <trans-unit id="settings.verticalSwiping" xml:space="preserve" approved="yes">
+                <source>Vertical swipe mode</source>
+            <target state="final">Vertikaler Wischmodus</target></trans-unit>
     </body>
   </file>
 </xliff>
