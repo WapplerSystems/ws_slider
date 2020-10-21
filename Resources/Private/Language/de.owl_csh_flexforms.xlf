@@ -3,24 +3,67 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
+      <trans-unit id="owl.settings.js.margin.description" approved="yes">
+        <source>margin-right(px) on item.</source>
+        <target state="final">margin-right(px) von Element.</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.loop.description" xml:space="preserve" approved="yes">
+				<source>Infinity loop. Duplicate last and first items to get loop illusion.</source>
+			<target state="final">Endlosschleife. Dupliziere die letzten und ersten Elemente, um eine Schleifen-Illusion zu erhalten.</target></trans-unit>
       <!-- <trans-unit id="owl.settings.js.pullDrag.description" xml:space="preserve">
 				<source>Stage pull to edge.</source>
 			</trans-unit> -->
       <!-- <trans-unit id="owl.settings.js.freeDrag.description">
                 <source>Item pull to edge.</source>
             </trans-unit> -->
+      <trans-unit id="owl.settings.js.stagePadding.description" xml:space="preserve" approved="yes">
+				<source>Padding left and right on stage (can see neighbours).</source>
+			<target state="final">Innerer Abstand links und rechts des Sliders.</target></trans-unit>
       <!-- <trans-unit id="owl.settings.js.merge.description">
                 <source>Merge items. Looking for data-merge='{number}' inside item.</source>
             </trans-unit>
             <trans-unit id="owl.settings.js.mergeFit.description" xml:space="preserve">
 				<source>Fit merged items if screen is smaller than items value.</source>
 			</trans-unit> -->
+      <trans-unit id="owl.settings.js.startPosition.description" xml:space="preserve" approved="yes">
+				<source>Start position or URL Hash string like '#id'.</source>
+			<target state="final">Start-Position oder URL-Hash String z.B. '#id'.</target></trans-unit>
+      <trans-unit id="owl.settings.js.slideTransition.description" approved="yes">
+        <source>You can define the transition for the stage you want to use eg. linear.</source>
+        <target state="final">Sie können die Übergänge des Sliders definieren. z.B. linear.</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.autoplay.description" xml:space="preserve" approved="yes">
+				<source>Autoplay.</source>
+			<target state="final">Autoplay.</target></trans-unit>
+      <trans-unit id="owl.settings.js.autoplayTimeout.description" approved="yes">
+        <source>Autoplay interval timeout.</source>
+        <target state="final">Timeout für Autoplay-Intervall.</target>
+      </trans-unit>
       <!-- <trans-unit id="owl.settings.js.smartSpeed.description">
                 <source>Speed Calculate. More info to come.</source>
             </trans-unit>
             <trans-unit id="owl.settings.js.fluidSpeed.description" xml:space="preserve">
 				<source>Speed Calculate. More info to come.</source>
 			</trans-unit> -->
+      <trans-unit id="owl.settings.js.autoplaySpeed.description" approved="yes">
+        <source>autoplay speed.</source>
+        <target state="final">Autoplay-Geschwindigkeit.</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.video.description" approved="yes">
+        <source>Enable fetching YouTube/Vimeo/Vzaar videos.</source>
+        <target state="final">Aktiviere das Abrufen von YouTube/Vimeo/Vzaar-Videos.</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.animateIn.description" approved="yes">
+        <source>Class for CSS3 animation in.</source>
+        <target state="final">Klasse für CSS3 Introanimation.</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.itemElement.description" xml:space="preserve" approved="yes">
+				<source>DOM element type for owl-item.</source>
+			<target state="final">DOM-Elementtyp für owl-Element.</target></trans-unit>
+      <trans-unit id="owl.settings.js.stageElement.description" approved="yes">
+        <source>DOM element type for owl-stage.</source>
+        <target state="final">DOM-Elementtyp für owl-Karussell.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
