@@ -12,6 +12,9 @@
       <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
 				<source>Enable/Disable CSS Transforms</source>
 			<target state="final">CSS-Transformationen aktivieren/deaktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
+				<source>Vertical slide mode</source>
+			<target state="final">Vertikaler Slide-Modus</target></trans-unit>
       <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
 				<source>Vertical swipe mode</source>
 			<target state="final">Vertikaler Wischmodus</target></trans-unit>
