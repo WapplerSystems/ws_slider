@@ -8,6 +8,22 @@
         <source>Flex Slider</source>
         <target state="final">Flex Slider</target>
       </trans-unit>
+      <trans-unit id="sheet.usability" approved="yes">
+        <source>Usability</source>
+        <target state="final">Benutzbarkeit</target>
+      </trans-unit>
+      <trans-unit id="sheet.primaryControls" approved="yes">
+        <source>Primary Controls</source>
+        <target state="final">Primäre Steuerelemente</target>
+      </trans-unit>
+      <trans-unit id="sheet.secondaryNavigation" approved="yes">
+        <source>Secondary Navigation</source>
+        <target state="final">Sekundäre Navigation</target>
+      </trans-unit>
+      <trans-unit id="sheet.specialProperties" approved="yes">
+        <source>Special Properties</source>
+        <target state="final">Besondere Eigenschaften</target>
+      </trans-unit>
       <trans-unit id="sheet.carousel" approved="yes">
         <source>Carousel</source>
         <target state="final">Karussell</target>
@@ -19,6 +35,9 @@
       <trans-unit id="settings.animation" xml:space="preserve" approved="yes">
                 <source>Animation</source>
             <target state="final">Animation</target></trans-unit>
+      <trans-unit id="settings.easing" xml:space="preserve" approved="yes">
+            	<source>Easing effect</source>
+            <target state="final">Easing Effekt</target></trans-unit>
       <trans-unit id="settings.direction" xml:space="preserve" approved="yes">
             	<source>Direction</source>
             <target state="final">Richtung</target></trans-unit>
@@ -28,6 +47,9 @@
       <trans-unit id="settings.animationLoop" xml:space="preserve" approved="yes">
             	<source>Animation loop</source>
             <target state="final">Animationsschleife</target></trans-unit>
+      <trans-unit id="settings.smoothHeight" xml:space="preserve" approved="yes">
+            	<source>Smooth height</source>
+            <target state="final">Glatte Höhenverstellung zwischen Elementen</target></trans-unit>
       <trans-unit id="settings.startAt" xml:space="preserve" approved="yes">
             	<source>Start at</source>
             <target state="final">Start bei</target></trans-unit>
@@ -46,9 +68,15 @@
       <trans-unit id="settings.randomize" xml:space="preserve" approved="yes">
             	<source>Random mode</source>
             <target state="final">Zufallsmodus</target></trans-unit>
+      <trans-unit id="settings.fadeFirstSlide" xml:space="preserve" approved="yes">
+            	<source>Fade in first slide</source>
+            <target state="final">Einblenden des ersten Elements</target></trans-unit>
       <trans-unit id="settings.fade" xml:space="preserve" approved="yes">
 				<source>Fade</source>
 			<target state="final">Überblenden</target></trans-unit>
+      <trans-unit id="settings.slide" xml:space="preserve" approved="yes">
+				<source>Slide</source>
+			<target state="final">Slide</target></trans-unit>
       <!-- Usability Features -->
       <trans-unit id="settings.pauseOnAction" xml:space="preserve" approved="yes">
 				<source>Pause on action</source>
@@ -56,6 +84,9 @@
       <trans-unit id="settings.pauseOnHover" xml:space="preserve" approved="yes">
 				<source>Pause on hover</source>
 			<target state="final">Pausieren beim Darüberfahren</target></trans-unit>
+      <trans-unit id="settings.pauseInvisible" xml:space="preserve" approved="yes">
+				<source>Pause Invisible</source>
+			<target state="final">Pausieren falls Fenster nicht sichtbar ist</target></trans-unit>
       <trans-unit id="settings.useCSS" xml:space="preserve" approved="yes">
 				<source>User CSS</source>
 			<target state="final">Benutzer-CSS</target></trans-unit>
@@ -70,6 +101,15 @@
       <trans-unit id="settings.keyboard" xml:space="preserve" approved="yes">
 				<source>Keyboard support</source>
 			<target state="final">Tastaturunterstützung</target></trans-unit>
+      <trans-unit id="settings.multipleKeyboard" xml:space="preserve" approved="yes">
+				<source>Allow keyboard navigation to affect multiple sliders</source>
+			<target state="final">Tastatursteuerung soll mehrere slider beeinflussen</target></trans-unit>
+      <trans-unit id="settings.mousewheel" xml:space="preserve" approved="yes">
+				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
+			<target state="final">Mausrad-Unterstützung (benötigt jquery.mousewheel.js)</target></trans-unit>
+      <trans-unit id="settings.pausePlay" xml:space="preserve" approved="yes">
+				<source>Create pause/play dynamic element</source>
+			<target state="final">Dynamisches Element für pausieren/abspielen</target></trans-unit>
       <!-- Special Properties -->
       <trans-unit id="settings.controlsContainer" xml:space="preserve" approved="yes">
 				<source>controlsContainer jQuery object/selector</source>
