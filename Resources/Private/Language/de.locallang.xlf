@@ -3,6 +3,57 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
+      <trans-unit id="title" xml:space="preserve" approved="yes">
+				<source>Slider</source>
+			<target state="final">Slider</target></trans-unit>
+      <trans-unit id="description" xml:space="preserve" approved="yes">
+				<source>Universal Slider / Carousel</source>
+			<target state="final">Universal Slider / Carousel</target></trans-unit>
+      <trans-unit id="palette.wsslider" approved="yes">
+        <source>Slider</source>
+        <target state="final">Slider</target>
+      </trans-unit>
+      <trans-unit id="title" approved="yes">
+        <source>WS Slider Settings</source>
+        <target state="final">Slider</target>
+      </trans-unit>
+      <trans-unit id="settings" xml:space="preserve" approved="yes">
+				<source>Settings</source>
+			<target state="final">Einstellungen</target></trans-unit>
+      <trans-unit id="renderer" xml:space="preserve" approved="yes">
+				<source>Renderer</source>
+			<target state="final">Renderer</target></trans-unit>
+      <trans-unit id="items" xml:space="preserve" approved="yes">
+				<source>Items</source>
+			<target state="final">Elemente</target></trans-unit>
+      <trans-unit id="yes" approved="yes">
+        <source>Yes</source>
+        <target state="final">Ja</target>
+      </trans-unit>
+      <trans-unit id="no" approved="yes">
+        <source>No</source>
+        <target state="final">Nein</target>
+      </trans-unit>
+      <trans-unit id="force" approved="yes">
+        <source>Force</source>
+        <target state="final">Erzwingen</target>
+      </trans-unit>
+      <trans-unit id="auto" approved="yes">
+        <source>Auto</source>
+        <target state="final">Auto</target>
+      </trans-unit>
+      <trans-unit id="inner" approved="yes">
+        <source>Inner</source>
+        <target state="final">Innen</target>
+      </trans-unit>
+      <trans-unit id="outer" approved="yes">
+        <source>Outer</source>
+        <target state="final">Außen</target>
+      </trans-unit>
+      <trans-unit id="default" approved="yes">
+        <source>Default</source>
+        <target state="final">Standard</target>
+      </trans-unit>
       <!-- Buttons and labels -->
       <trans-unit id="label.next" approved="yes">
         <source>Next</source>
@@ -12,17 +63,168 @@
         <source>Previous</source>
         <target state="final">Zurück</target>
       </trans-unit>
+      <trans-unit id="label.start" approved="yes">
+        <source>Start</source>
+        <target state="final">Start</target>
+      </trans-unit>
+      <trans-unit id="label.stop" approved="yes">
+        <source>Stop</source>
+        <target state="final">Stop</target>
+      </trans-unit>
       <trans-unit id="settings.typoscript" xml:space="preserve" approved="yes">
             	<source>TypoScript</source>
             <target state="final">TypoScript</target></trans-unit>
       <!-- sheets -->
+      <trans-unit id="sheet.owl" approved="yes">
+        <source>Owl</source>
+        <target state="final">Owl</target>
+      </trans-unit>
+      <trans-unit id="sheet.navigation" approved="yes">
+        <source>Navigation</source>
+        <target state="final">Navigation</target>
+      </trans-unit>
+      <trans-unit id="sheet.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Darstellung</target>
+      </trans-unit>
+      <trans-unit id="sheet.dragNdrop" approved="yes">
+        <source>Swipe/Drag support</source>
+        <target state="final">Wischen/Ziehen Unterstützung</target>
+      </trans-unit>
+      <trans-unit id="sheet.animation" approved="yes">
+        <source>Animation</source>
+        <target state="final">Animation</target>
+      </trans-unit>
+      <trans-unit id="sheet.advanced" approved="yes">
+        <source>Advanced</source>
+        <target state="final">Erweitert</target>
+      </trans-unit>
+      <trans-unit id="sheet.general" approved="yes">
+        <source>General</source>
+        <target state="final">Allgemein</target>
+      </trans-unit>
+      <trans-unit id="sheet.tinySlider" approved="yes">
+        <source>Tiny Slider</source>
+        <target state="final">Tiny Slider</target>
+      </trans-unit>
+      <trans-unit id="sheet.slick" approved="yes">
+        <source>Slick Slider</source>
+        <target state="final">Slick Slider</target>
+      </trans-unit>
       <!-- common setting labels -->
+      <trans-unit id="settings.common.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Layout</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoplay" approved="yes">
+        <source>Autoplay</source>
+        <target state="final">Automatische Wiedergabe</target>
+      </trans-unit>
+      <trans-unit id="settings.common.lazyLoad" approved="yes">
+        <source>Lazy load</source>
+        <target state="final">Lazy Load</target>
+      </trans-unit>
+      <trans-unit id="settings.common.loop" approved="yes">
+        <source>Loop / Carousel</source>
+        <target state="final">Schleife / Karussell</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoplaySpeed" approved="yes">
+        <source>Autoplay speed</source>
+        <target state="final">Automatische Wiedergabe Geschwindigkeit</target>
+      </trans-unit>
+      <trans-unit id="settings.common.top" approved="yes">
+        <source>Top</source>
+        <target state="final">Oben</target>
+      </trans-unit>
+      <trans-unit id="settings.common.bottom" approved="yes">
+        <source>Bottom</source>
+        <target state="final">Unten</target>
+      </trans-unit>
+      <trans-unit id="settings.common.forward" approved="yes">
+        <source>Forward</source>
+        <target state="final">Vorwärts</target>
+      </trans-unit>
+      <trans-unit id="settings.common.backward" approved="yes">
+        <source>Backward</source>
+        <target state="final">Rückwärts</target>
+      </trans-unit>
+      <trans-unit id="settings.common.vertical" xml:space="preserve" approved="yes">
+            	<source>Vertical</source>
+            <target state="final">Vertikal</target></trans-unit>
+      <trans-unit id="settings.common.horizontal" xml:space="preserve" approved="yes">
+            	<source>Horizontal</source>
+            <target state="final">Horizontal</target></trans-unit>
       <trans-unit id="settings.common.animateOut" approved="yes">
         <source>Outro Animation</source>
         <target state="final">Outro Animation</target>
       </trans-unit>
+      <trans-unit id="settings.common.animateIn" approved="yes">
+        <source>Intro Animation</source>
+        <target state="final">Intro Animation</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoHeight" xml:space="preserve" approved="yes">
+                <source>Auto Height</source>
+            <target state="final">Automatische Höhe</target></trans-unit>
+      <trans-unit id="settings.common.video" xml:space="preserve" approved="yes">
+                <source>Enable Video</source>
+            <target state="final">Video aktivieren</target></trans-unit>
+      <trans-unit id="settings.common.touch" xml:space="preserve" approved="yes">
+                <source>Enable Touch Support</source>
+            <target state="final">Touch-Support aktivieren</target></trans-unit>
+      <trans-unit id="settings.common.animationSpeed" xml:space="preserve" approved="yes">
+                <source>Animation Speed</source>
+            <target state="final">Animationsgeschwindigkeit</target></trans-unit>
       <!-- Labels -->
+      <trans-unit id="pauseText" xml:space="preserve" approved="yes">
+            	<source>Pause</source>
+            <target state="final">Pausieren</target></trans-unit>
+      <trans-unit id="playText" xml:space="preserve" approved="yes">
+            	<source>Play</source>
+            <target state="final">Abspielen</target></trans-unit>
       <!-- item labels -->
+      <trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve" approved="yes">
+				<source>Slider element</source>
+			<target state="final">Slider-Element</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve" approved="yes">
+				<source>Title</source>
+			<target state="final">Titel</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve" approved="yes">
+				<source>Description</source>
+			<target state="final">Beschreibung</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" xml:space="preserve" approved="yes">
+				<source>Image or Video</source>
+			<target state="final">Bilder und Videos</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition" approved="yes">
+        <source>Text position</source>
+        <target state="final">Textposition</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve" approved="yes">
+				<source>Link</source>
+			<target state="final">Link</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve" approved="yes">
+				<source>Left</source>
+			<target state="final">Links</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve" approved="yes">
+				<source>Right</source>
+			<target state="final">Rechts</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve" approved="yes">
+				<source>Text style class</source>
+			<target state="final">Text-Stil Klasse</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve" approved="yes">
+				<source>Style 1</source>
+			<target state="final">Stil 1</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve" approved="yes">
+				<source>Style 2</source>
+			<target state="final">Stil 2</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve" approved="yes">
+				<source>Style 3</source>
+			<target state="final">Stil 3</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve" approved="yes">
+				<source>Style 4</source>
+			<target state="final">Stil 4</target></trans-unit>
+      <trans-unit id="addImage" xml:space="preserve" approved="yes">
+				<source>Add image</source>
+			<target state="final">Bild hinzufügen</target></trans-unit>
     </body>
   </file>
 </xliff>
