@@ -4,9 +4,39 @@
     <header/>
     <body>
       <!-- tinyslider specific settings -->
+      <trans-unit id="settings.mode" xml:space="preserve" approved="yes">
+                <source>Mode</source>
+            <target state="final">Modus</target></trans-unit>
+      <trans-unit id="settings.axis" xml:space="preserve" approved="yes">
+                <source>Axis</source>
+            <target state="final">Ausrichtung</target></trans-unit>
+      <trans-unit id="settings.items" xml:space="preserve" approved="yes">
+                <source>Items</source>
+            <target state="final">Elemente</target></trans-unit>
+      <trans-unit id="settings.gutter" xml:space="preserve" approved="yes">
+                <source>Gutter</source>
+            <target state="final">Abstand</target></trans-unit>
+      <trans-unit id="settings.edgePadding" xml:space="preserve" approved="yes">
+                <source>Edge Padding</source>
+            <target state="final">Rand Padding</target></trans-unit>
+      <trans-unit id="settings.fixedWidth" xml:space="preserve" approved="yes">
+                <source>Fixed Width</source>
+            <target state="final">Feste Breite</target></trans-unit>
+      <trans-unit id="settings.autoWidth" xml:space="preserve" approved="yes">
+                <source>Auto Width</source>
+            <target state="final">Automatische Breite</target></trans-unit>
       <trans-unit id="settings.viewportMax" xml:space="preserve" approved="yes">
                 <source>Viewport Maximum</source>
             <target state="final">Viewport-Maximum</target></trans-unit>
+      <trans-unit id="settings.slideBy" xml:space="preserve" approved="yes">
+                <source>Slide By</source>
+            <target state="final">Um x Elemente verschieben</target></trans-unit>
+      <trans-unit id="settings.center" xml:space="preserve" approved="yes">
+                <source>Center</source>
+            <target state="final">Zentrierung</target></trans-unit>
+      <trans-unit id="settings.controls" xml:space="preserve" approved="yes">
+                <source>Control Buttons</source>
+            <target state="final">Kontrollelemente</target></trans-unit>
       <trans-unit id="settings.autoplayDirection" xml:space="preserve" approved="yes">
                	<source>Autoplay Direction</source>
             <target state="final">Autoplay-Richtung</target></trans-unit>
