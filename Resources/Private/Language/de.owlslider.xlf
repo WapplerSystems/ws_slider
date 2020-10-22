@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
+    <header/>
+    <body>
+      <!-- Owl specific labels -->
+      <trans-unit id="owl" approved="yes">
+        <source>Owl</source>
+        <target state="final">Owl</target>
+      </trans-unit>
+      <trans-unit id="settings.items" approved="yes">
+        <source>Items</source>
+        <target state="final">Elemente</target>
+      </trans-unit>
+      <trans-unit id="settings.margin" approved="yes">
+        <source>Margin</source>
+        <target state="final">Margin</target>
+      </trans-unit>
+      <trans-unit id="settings.stagePadding" approved="yes">
+        <source>Stage Padding</source>
+        <target state="final">Slider Padding</target>
+      </trans-unit>
+      <trans-unit id="settings.center" approved="yes">
+        <source>Center item</source>
+        <target state="final">Element zentrieren</target>
+      </trans-unit>
+      <trans-unit id="settings.mouseDrag" approved="yes">
+        <source>Mouse Drag</source>
+        <target state="final">Maus-Steuerung</target>
+      </trans-unit>
+      <trans-unit id="settings.touchDrag" approved="yes">
+        <source>Touch Drag</source>
+        <target state="final">Touch-Steuerung</target>
+      </trans-unit>
+      <!-- <trans-unit id="settings.pullDrag">
+				<source>Pull Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.freeDrag">
+				<source>Free Drag</source>
+			</trans-unit> -->
+      <!-- <trans-unit id="settings.merge">
+				<source>Merge items</source>
+			</trans-unit>
+			<trans-unit id="settings.mergeFit">
+				<source>Merge Fit</source>
+			</trans-unit> -->
+      <trans-unit id="settings.autoWidth" approved="yes">
+        <source>Auto Width</source>
+        <target state="final">Automatische Breite</target>
+      </trans-unit>
+      <trans-unit id="settings.rewind" approved="yes">
+        <source>Rewind</source>
+        <target state="final">Zurückspulen</target>
+      </trans-unit>
+      <trans-unit id="settings.slideBy" approved="yes">
+        <source>Slide By</source>
+        <target state="final">Um x Elemente verschieben</target>
+      </trans-unit>
+      <trans-unit id="settings.slideTransition" approved="yes">
+        <source>Slide Transition</source>
+        <target state="final">Elementübergang</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayTimeout" approved="yes">
+        <source>Autoplay interval timeout</source>
+        <target state="final">Timeout für Autoplay-Intervall</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayHoverPause" approved="yes">
+        <source>Autoplay pause on hover</source>
+        <target state="final">Autoplay pausieren bei Hover</target>
+      </trans-unit>
+      <trans-unit id="settings.dragEndSpeed" approved="yes">
+        <source>Drag end speed</source>
+        <target state="final">Zieh Endgeschwindigkeit</target>
+      </trans-unit>
+      <trans-unit id="settings.lazyLoadEager" approved="yes">
+        <source>Eager Lazy Load</source>
+        <target state="final">Eager Lazy Load</target>
+      </trans-unit>
+      <!-- <trans-unit id="settings.smartSpeed">
+				<source>Smart Speed</source>
+			</trans-unit> -->
+      <trans-unit id="settings.videoHeight" approved="yes">
+        <source>Video Height</source>
+        <target state="final">Video Höhe</target>
+      </trans-unit>
+      <trans-unit id="settings.videoWidth" approved="yes">
+        <source>Video Width</source>
+        <target state="final">Video-Breite</target>
+      </trans-unit>
+      <trans-unit id="settings.fallbackEasing" approved="yes">
+        <source>Easing fallback animation for CSS2</source>
+        <target state="final">Easing Fallback-Animation für CSS2</target>
+      </trans-unit>
+      <trans-unit id="settings.nestedItemSelector" approved="yes">
+        <source>Nested Item Selector</source>
+        <target state="final">Element-Selektor für verschachtelte Elemente</target>
+      </trans-unit>
+      <trans-unit id="settings.itemElement" approved="yes">
+        <source>Item Element</source>
+        <target state="final">Item Element</target>
+      </trans-unit>
+      <trans-unit id="settings.stageElement" approved="yes">
+        <source>Stage Element</source>
+        <target state="final">Karussell Element</target>
+      </trans-unit>
+      <trans-unit id="settings.navContainer" approved="yes">
+        <source>Nav Container</source>
+        <target state="final">Navigationscontainer</target>
+      </trans-unit>
+      <trans-unit id="settings.navSpeed" approved="yes">
+        <source>Nav Speed</source>
+        <target state="final">Navigatonsgeschwindigkeit</target>
+      </trans-unit>
+      <trans-unit id="settings.nav" approved="yes">
+        <source>Show Nav Buttons</source>
+        <target state="final">Navigations-Buttons anzeigen</target>
+      </trans-unit>
+      <trans-unit id="settings.dotsContainer" approved="yes">
+        <source>Dots Container</source>
+        <target state="final">Punktenavigation Container</target>
+      </trans-unit>
+      <trans-unit id="settings.dots" approved="yes">
+        <source>Show navigation dots</source>
+        <target state="final">Punktenavigation anzeigen</target>
+      </trans-unit>
+      <trans-unit id="settings.dotsEach" approved="yes">
+        <source>Show dots each x item</source>
+        <target state="final">Punkteaufteilung</target>
+      </trans-unit>
+      <trans-unit id="settings.dotsSpeed" approved="yes">
+        <source>Dots Speed</source>
+        <target state="final">Punktenavigationsgeschwindigkeit</target>
+      </trans-unit>
+      <trans-unit id="settings.checkVisible" approved="yes">
+        <source>Check Visible</source>
+        <target state="final">Sichtbarkeit Prüfen</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveRefreshRate" approved="yes">
+        <source>Responsive Refresh Rate</source>
+        <target state="final">Responsive Aktualisierungsrate</target>
+      </trans-unit>
+      <trans-unit id="settings.URLhashListener" approved="yes">
+        <source>Listen to url hash changes</source>
+        <target state="final">URL-Hash-Änderungen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
