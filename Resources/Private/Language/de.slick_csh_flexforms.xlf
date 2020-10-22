@@ -6,6 +6,12 @@
       <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
 				<source>Enables Autoplay</source>
 			<target state="final">Aktiviert Autoplay</target></trans-unit>
+      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
+				<source>Slide/Fade animation speed</source>
+			<target state="final">Slide/Fade Animationsgeschwindigkeit</target></trans-unit>
+      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
+				<source>Enable swiping</source>
+			<target state="final">Wischen aktivieren</target></trans-unit>
       <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
 				<source>Enable/Disable CSS Transitions</source>
 			<target state="final">CSS-Übergänge aktivieren/deaktivieren</target></trans-unit>
