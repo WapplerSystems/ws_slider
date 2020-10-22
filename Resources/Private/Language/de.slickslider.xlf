@@ -4,21 +4,105 @@
     <header/>
     <body>
       <!-- slick slider -->
+      <trans-unit id="settings.accessibility" xml:space="preserve" approved="yes">
+                <source>Accessibility</source>
+            <target state="final">Steuerungselemente aktivieren</target></trans-unit>
+      <trans-unit id="settings.arrows" xml:space="preserve" approved="yes">
+                <source>Arrows</source>
+            <target state="final">Pfeilsymbole</target></trans-unit>
+      <trans-unit id="settings.asNavFor" xml:space="preserve" approved="yes">
+                <source>As Nav For</source>
+            <target state="final">Als Navigation für anderen Slider benutzen</target></trans-unit>
+      <trans-unit id="settings.appendArrows" xml:space="preserve" approved="yes">
+                <source>Append Arrows</source>
+            <target state="final">Pfeile anhängen</target></trans-unit>
+      <trans-unit id="settings.appendDots" xml:space="preserve" approved="yes">
+                <source>Append Dots</source>
+            <target state="final">Punkte anhängen</target></trans-unit>
+      <trans-unit id="settings.prevArrow" xml:space="preserve" approved="yes">
+                <source>Prev Arrow</source>
+            <target state="final">"Vorherige"-Pfeil</target></trans-unit>
+      <trans-unit id="settings.nextArrow" xml:space="preserve" approved="yes">
+                <source>Next Arrow</source>
+            <target state="final">"Nächste"-Pfeil</target></trans-unit>
       <trans-unit id="settings.centerMode" xml:space="preserve" approved="yes">
                 <source>Center Mode</source>
             <target state="final">Zentrierungsmodus</target></trans-unit>
       <trans-unit id="settings.centerPadding" xml:space="preserve" approved="yes">
                 <source>Center Padding</source>
             <target state="final">Innerer Abstand im Zentrierungsmodus</target></trans-unit>
+      <trans-unit id="settings.cssEase" xml:space="preserve" approved="yes">
+                <source>CSS3 animation Easing</source>
+            <target state="final">CSS3 Animation Easing</target></trans-unit>
       <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
                 <source>Custom Paging</source>
             </trans-unit> -->
+      <trans-unit id="settings.dots" xml:space="preserve" approved="yes">
+                <source>Dots</source>
+            <target state="final">Punktenavigation</target></trans-unit>
       <trans-unit id="settings.dotsClass" xml:space="preserve" approved="yes">
                 <source>Dots Class</source>
             <target state="final">CSS-Klasse der Punktenavigation</target></trans-unit>
       <trans-unit id="settings.draggable" xml:space="preserve" approved="yes">
                 <source>Draggable</source>
             <target state="final">Ziehbar</target></trans-unit>
+      <trans-unit id="settings.fade" xml:space="preserve" approved="yes">
+                <source>Fade</source>
+            <target state="final">Überblenden</target></trans-unit>
+      <trans-unit id="settings.focusOnSelect" xml:space="preserve" approved="yes">
+                <source>Focus On Select</source>
+            <target state="final">Fokus auf Auswahl</target></trans-unit>
+      <trans-unit id="settings.easing" xml:space="preserve" approved="yes">
+                <source>Easing</source>
+            <target state="final">Easing</target></trans-unit>
+      <trans-unit id="settings.edgeFriction" xml:space="preserve" approved="yes">
+                <source>Edge Friction</source>
+            <target state="final">Kantenreibung</target></trans-unit>
+      <trans-unit id="settings.infinite" xml:space="preserve" approved="yes">
+                <source>Infinite</source>
+            <target state="final">Endlosschleife</target></trans-unit>
+      <trans-unit id="settings.initialSlide" xml:space="preserve" approved="yes">
+                <source>Initial Slide</source>
+            <target state="final">Startelement</target></trans-unit>
+      <trans-unit id="settings.mobileFirst" xml:space="preserve" approved="yes">
+                <source>Mobile First</source>
+            <target state="final">Priorität für Mobilgeräte</target></trans-unit>
+      <trans-unit id="settings.pauseOnFocus" xml:space="preserve" approved="yes">
+                <source>Pause on focus</source>
+            <target state="final">Pausieren bei Fokus</target></trans-unit>
+      <trans-unit id="settings.pauseOnHover" xml:space="preserve" approved="yes">
+                <source>Pause on hover</source>
+            <target state="final">Pausieren beim Darüberfahren</target></trans-unit>
+      <trans-unit id="settings.pauseOnDotsHover" xml:space="preserve" approved="yes">
+                <source>Pause on Dots hover</source>
+            <target state="final">Pausieren wenn Zeiger über Punktenavigation ist</target></trans-unit>
+      <trans-unit id="settings.respondTo" xml:space="preserve" approved="yes">
+                <source>Respond To</source>
+            <target state="final">Responsive Breite</target></trans-unit>
+      <trans-unit id="settings.rows" xml:space="preserve" approved="yes">
+                <source>Rows</source>
+            <target state="final">Zeilen</target></trans-unit>
+      <trans-unit id="settings.slidesPerRow" xml:space="preserve" approved="yes">
+                <source>Slides per row</source>
+            <target state="final">Elemente pro Reihe</target></trans-unit>
+      <trans-unit id="settings.slidesToShow" xml:space="preserve" approved="yes">
+                <source>Slides to show</source>
+            <target state="final">Anzahl Elemente die gezeigt werden</target></trans-unit>
+      <trans-unit id="settings.slidesToScroll" xml:space="preserve" approved="yes">
+                <source>Slides to Scroll</source>
+            <target state="final">Anzahl Elemente die verschoben werden bei Aktion</target></trans-unit>
+      <trans-unit id="settings.speed" xml:space="preserve" approved="yes">
+                <source>Slide/Fade animation speed</source>
+            <target state="final">Slide/Fade Animationsgeschwindigkeit</target></trans-unit>
+      <trans-unit id="settings.swipe" xml:space="preserve" approved="yes">
+                <source>Enable swiping</source>
+            <target state="final">Wischen aktivieren</target></trans-unit>
+      <trans-unit id="settings.swipeToSlide" xml:space="preserve" approved="yes">
+                <source>Swipe to slide</source>
+            <target state="final">Direkt zu Element wischen</target></trans-unit>
+      <trans-unit id="settings.touchMove" xml:space="preserve" approved="yes">
+                <source>Touch Move</source>
+            <target state="final">Touch Funktionalität aktivieren</target></trans-unit>
       <trans-unit id="settings.touchThreshold" xml:space="preserve" approved="yes">
                 <source>Touch Threshold</source>
             <target state="final">Touch-Schwellenwert</target></trans-unit>
@@ -28,12 +112,24 @@
       <trans-unit id="settings.useTransform" xml:space="preserve" approved="yes">
                 <source>Enable CSS Transform</source>
             <target state="final">CSS-Transformation aktivieren</target></trans-unit>
+      <trans-unit id="settings.variableWidth" xml:space="preserve" approved="yes">
+                <source>Variable Width</source>
+            <target state="final">Variable Breite</target></trans-unit>
       <trans-unit id="settings.vertical" xml:space="preserve" approved="yes">
                 <source>Vertical slide mode</source>
             <target state="final">Vertikaler Slide-Modus</target></trans-unit>
       <trans-unit id="settings.verticalSwiping" xml:space="preserve" approved="yes">
                 <source>Vertical swipe mode</source>
             <target state="final">Vertikaler Wischmodus</target></trans-unit>
+      <trans-unit id="settings.rtl" xml:space="preserve" approved="yes">
+                <source>Right-to-left slider</source>
+            <target state="final">Rechts nach links</target></trans-unit>
+      <trans-unit id="settings.waitForAnimate" xml:space="preserve" approved="yes">
+                <source>Wait for animate</source>
+            <target state="final">Warte auf Animation</target></trans-unit>
+      <trans-unit id="settings.zindex" xml:space="preserve" approved="yes">
+                <source>Z-Index value for slides</source>
+            <target state="final">Z-Indexwert für Elemente</target></trans-unit>
     </body>
   </file>
 </xliff>
