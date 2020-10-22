@@ -3,27 +3,141 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
+      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve" approved="yes">
+				<source>Enables tabbing and arrow key navigation</source>
+			<target state="final">Aktiviert Tabbing und Pfeiltasten Navigation</target></trans-unit>
+      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve" approved="yes">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+			<target state="final">Aktiviert adaptive Höheneinstellung für einzelne Elemente in horizontalen Karussellen.</target></trans-unit>
       <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
 				<source>Enables Autoplay</source>
 			<target state="final">Aktiviert Autoplay</target></trans-unit>
+      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve" approved="yes">
+				<source>Autoplay Speed in milliseconds</source>
+			<target state="final">Autoplay-Geschwindigkeit in Millisekunden</target></trans-unit>
+      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve" approved="yes">
+				<source>Prev/Next Arrows</source>
+			<target state="final">"Vorherige/Nächste" Pfeile</target></trans-unit>
+      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+			<target state="final">Diesen Slider als Navigation für einen anderen Slider verwenden (Klasse oder ID)</target></trans-unit>
+      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve" approved="yes">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			<target state="final">Ändere wo die Navigationspfeile eingebettet werden (Selektor, htmlString, Array, Element, jQuery object)</target></trans-unit>
+      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve" approved="yes">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			<target state="final">Ändere wo die Navigationspunkte eingebettet werden (Selektor, htmlString, Array, Element, jQuery object)</target></trans-unit>
+      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+			<target state="final">Erlaubt Ihnen, einen Knoten auszuwählen oder das HTML für den "Vorherige" Pfeil anzupassen.</target></trans-unit>
+      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+			<target state="final">Erlaubt Ihnen, einen Knoten auszuwählen oder das HTML für den "Weiter"-Pfeil anzupassen.</target></trans-unit>
+      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve" approved="yes">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+			<target state="final">Aktiviert die zentrierte Ansicht mit partiellen Vorherige/Nächste Elemente. Sollte mit einer ungerade Anzahl sichtbarer Elemente verwendet werden.</target></trans-unit>
+      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
+				<source>Side padding when in center mode (px or %)</source>
+			<target state="final">Seiten-Padding im zentrierten Modus (px oder %)</target></trans-unit>
+      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
+				<source>CSS3 Animation Easing</source>
+			<target state="final">CSS3 Animation Easing</target></trans-unit>
+      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
+				<source>Show dot indicators</source>
+			<target state="final">Zeige Punkte-Navigation</target></trans-unit>
+      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve" approved="yes">
+				<source>Class for slide indicator dots container</source>
+			<target state="final">Klasse für Punktenavigation</target></trans-unit>
+      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve" approved="yes">
+				<source>Enable mouse dragging</source>
+			<target state="final">Maus-Ziehen aktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve" approved="yes">
+				<source>Enable fade</source>
+			<target state="final">Überblenden aktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve" approved="yes">
+				<source>Enable focus on selected element (click)</source>
+			<target state="final">Aktiviere Fokus auf das ausgewählte Element (Klick)</target></trans-unit>
+      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve" approved="yes">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+			<target state="final">Easing für jQuery animate. Mit easing Bibliotheken benutzen oder standard easing methoden</target></trans-unit>
+      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve" approved="yes">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+			<target state="final">Widerstand beim Wischen von Kanten von endlichen Karussellen</target></trans-unit>
+      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
+				<source>Infinite loop sliding</source>
+			<target state="final">Karussell bildet eine Endlosschleife </target></trans-unit>
+      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
+				<source>Slide to start on</source>
+			<target state="final">Startelement</target></trans-unit>
+      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+			<target state="final">Aktiviert lazy loading. Akzeptiert 'ondemand' oder 'progressive'</target></trans-unit>
+      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve" approved="yes">
+				<source>Responsive slick.settings use mobile first calculation</source>
+			<target state="final">Responsive slick.settings priorisieren Einstellungen für Mobilgeräte</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve" approved="yes">
+				<source>Pause Autoplay On Focus</source>
+			<target state="final">Autoplay bei Fokus pausieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
+				<source>Pause Autoplay On Hover</source>
+			<target state="final">Autoplay bei Hover pausieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve" approved="yes">
+				<source>Pause Autoplay when a dot is hovered</source>
+			<target state="final">Autoplay pausieren, wenn der mauszeiger über einem der Punkte aus der Punktenavigation schwebt</target></trans-unit>
+      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve" approved="yes">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+			<target state="final">Breite auf die das responsive Objekt reagiert. Kann 'window', 'slider' oder 'min' sein</target></trans-unit>
+      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve" approved="yes">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+			<target state="final">Einstellung auf mehr als 1 initialisiert den Rastermodus. Verwenden Sie die Option 'Elemente pro Reihe', um festzulegen, wie viele Elemente in jeder Zeile angezeigt werden sollen.</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve" approved="yes">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+			<target state="final">Wenn der Rastermodus über die Zeilen-Option intialisiert wird, legt dies fest, wie viele Folien in jeder Zeile liegen.</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve" approved="yes">
+				<source># of slides to show</source>
+			<target state="final">Anzahl an angezeigten Elementen</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve" approved="yes">
+				<source># of slides to scroll</source>
+			<target state="final">Anzahl Elemente die verschoben werden bei Aktion</target></trans-unit>
       <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
 				<source>Slide/Fade animation speed</source>
 			<target state="final">Slide/Fade Animationsgeschwindigkeit</target></trans-unit>
       <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
 				<source>Enable swiping</source>
 			<target state="final">Wischen aktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve" approved="yes">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+			<target state="final">Benutzern erlauben, unabhängig von der festgelegten Anzahl der Elemente die bei einer Aktion verschoben werden direkt auf eine Folie zu ziehen oder zu wischen</target></trans-unit>
+      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve" approved="yes">
+				<source>Enable slide motion with touch</source>
+			<target state="final">Wischen durch touch-Eingaben aktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve" approved="yes">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+			<target state="final">Um Folien vorzuschieben, muss der Benutzer eine Länge von (1/touchThreshold) * der Breite des Schiebereglers wischen</target></trans-unit>
       <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
 				<source>Enable/Disable CSS Transitions</source>
 			<target state="final">CSS-Übergänge aktivieren/deaktivieren</target></trans-unit>
       <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
 				<source>Enable/Disable CSS Transforms</source>
 			<target state="final">CSS-Transformationen aktivieren/deaktivieren</target></trans-unit>
+      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve" approved="yes">
+				<source>Variable width slides</source>
+			<target state="final">Elemente haben variable Breite</target></trans-unit>
       <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
 				<source>Vertical slide mode</source>
 			<target state="final">Vertikaler Slide-Modus</target></trans-unit>
       <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
 				<source>Vertical swipe mode</source>
 			<target state="final">Vertikaler Wischmodus</target></trans-unit>
+      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve" approved="yes">
+				<source>Change the slider's direction to become right-to-left</source>
+			<target state="final">Ändert die Richtung des Schiebereglers auf rechts nach links</target></trans-unit>
+      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve" approved="yes">
+				<source>Ignores requests to advance the slide while animating</source>
+			<target state="final">Ignoriert Anfragen, um die Elemente während der Animation voranzutreiben</target></trans-unit>
+      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve" approved="yes">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+			<target state="final">ZIndex-Werte für Elemente einstellen, nützlich für IE9 und niedriger</target></trans-unit>
     </body>
   </file>
 </xliff>
