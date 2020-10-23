@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
+    <header/>
+    <body>
+      <!-- tinyslider specific settings -->
+      <trans-unit id="settings.mode" xml:space="preserve" approved="yes">
+                <source>Mode</source>
+            <target state="final">Modus</target></trans-unit>
+      <trans-unit id="settings.axis" xml:space="preserve" approved="yes">
+                <source>Axis</source>
+            <target state="final">Ausrichtung</target></trans-unit>
+      <trans-unit id="settings.items" xml:space="preserve" approved="yes">
+                <source>Items</source>
+            <target state="final">Elemente</target></trans-unit>
+      <trans-unit id="settings.gutter" xml:space="preserve" approved="yes">
+                <source>Gutter</source>
+            <target state="final">Abstand</target></trans-unit>
+      <trans-unit id="settings.edgePadding" xml:space="preserve" approved="yes">
+                <source>Edge Padding</source>
+            <target state="final">Rand Padding</target></trans-unit>
+      <trans-unit id="settings.fixedWidth" xml:space="preserve" approved="yes">
+                <source>Fixed Width</source>
+            <target state="final">Feste Breite</target></trans-unit>
+      <trans-unit id="settings.autoWidth" xml:space="preserve" approved="yes">
+                <source>Auto Width</source>
+            <target state="final">Automatische Breite</target></trans-unit>
+      <trans-unit id="settings.viewportMax" xml:space="preserve" approved="yes">
+                <source>Viewport Maximum</source>
+            <target state="final">Viewport-Maximum</target></trans-unit>
+      <trans-unit id="settings.slideBy" xml:space="preserve" approved="yes">
+                <source>Slide By</source>
+            <target state="final">Um x Elemente verschieben</target></trans-unit>
+      <trans-unit id="settings.center" xml:space="preserve" approved="yes">
+                <source>Center</source>
+            <target state="final">Zentrierung</target></trans-unit>
+      <trans-unit id="settings.controls" xml:space="preserve" approved="yes">
+                <source>Control Buttons</source>
+            <target state="final">Kontrollelemente</target></trans-unit>
+      <trans-unit id="settings.controlsPosition" xml:space="preserve" approved="yes">
+                <source>Control Buttons Position</source>
+            <target state="final">Positionen der Kontrollelemente</target></trans-unit>
+      <trans-unit id="settings.controlsContainer" xml:space="preserve" approved="yes">
+            	<source>Control Buttons Container</source>
+            <target state="final">Container der Kontrollelemente</target></trans-unit>
+      <trans-unit id="settings.customPrevButton" xml:space="preserve" approved="yes">
+                <source>Custom Previous-Button</source>
+            <target state="final">Benutzerdefinierter "Vorherige"-Button</target></trans-unit>
+      <trans-unit id="settings.customNextButton" xml:space="preserve" approved="yes">
+               	<source>Custom Next-Button</source>
+            <target state="final">Benutzerdefinierter "Vorwärts"-Button</target></trans-unit>
+      <trans-unit id="settings.nav" xml:space="preserve" approved="yes">
+               	<source>Nav Components</source>
+            <target state="final">Navigationspunkte</target></trans-unit>
+      <trans-unit id="settings.navPosition" xml:space="preserve" approved="yes">
+               	<source>Nav Components Position</source>
+            <target state="final">Position der Navigationspunkte</target></trans-unit>
+      <trans-unit id="settings.navContainer" xml:space="preserve" approved="yes">
+               	<source>Nav Components Container</source>
+            <target state="final">Container der Navigationspunkte</target></trans-unit>
+      <trans-unit id="settings.navAsThumbnails" xml:space="preserve" approved="yes">
+               	<source>Nav As Thumbnails</source>
+            <target state="final">Navigationspunkte als Thumbnails</target></trans-unit>
+      <trans-unit id="settings.arrowKeys" xml:space="preserve" approved="yes">
+               	<source>Arrow Keys</source>
+            <target state="final">Pfeiltasten</target></trans-unit>
+      <trans-unit id="settings.autoplayPosition" xml:space="preserve" approved="yes">
+               	<source>Autoplay Position</source>
+            <target state="final">Autoplay-Position</target></trans-unit>
+      <trans-unit id="settings.autoplayTimeout" xml:space="preserve" approved="yes">
+               	<source>Autoplay time between slide changes</source>
+            <target state="final">Autoplay Geschwindigkeit</target></trans-unit>
+      <trans-unit id="settings.autoplayDirection" xml:space="preserve" approved="yes">
+               	<source>Autoplay Direction</source>
+            <target state="final">Autoplay-Richtung</target></trans-unit>
+      <trans-unit id="settings.autoplayHoverPause" xml:space="preserve" approved="yes">
+               	<source>Pause autoplay on hover</source>
+            <target state="final">Autoplay beim Hover pausieren</target></trans-unit>
+      <trans-unit id="settings.autoplayResetOnVisibility" xml:space="preserve" approved="yes">
+               	<source>Pause autoplay when page is invisible</source>
+            <target state="final">Autoplay pausieren, wenn Seite nicht sichtbar ist</target></trans-unit>
+      <trans-unit id="settings.animateNormal" xml:space="preserve" approved="yes">
+               	<source>Normal Animation</source>
+            <target state="final">Standard Animation</target></trans-unit>
+      <trans-unit id="settings.animateDelay" xml:space="preserve" approved="yes">
+               	<source>Animation Delay</source>
+            <target state="final">Animationsverzögerung</target></trans-unit>
+      <trans-unit id="settings.rewind" xml:space="preserve" approved="yes">
+               	<source>Rewind</source>
+            <target state="final">Ans andere Ende laufen</target></trans-unit>
+      <trans-unit id="settings.lazyloadSelector" xml:space="preserve" approved="yes">
+               	<source>CSS selector for lazyload images</source>
+            <target state="final">CSS-Selektor für nachzuladende Bilder</target></trans-unit>
+      <trans-unit id="settings.mouseDrag" xml:space="preserve" approved="yes">
+               	<source>Mouse Drag</source>
+            <target state="final">Maus-Steuerung</target></trans-unit>
+      <trans-unit id="settings.swipeAngle" xml:space="preserve" approved="yes">
+               	<source>Swipe Angle</source>
+            <target state="final">Wischwinkel</target></trans-unit>
+      <trans-unit id="settings.preventActionWhenRunning" xml:space="preserve" approved="yes">
+               	<source>Prevent next transition while slider is transforming</source>
+            <target state="final">Laufende Aktion blockiert</target></trans-unit>
+      <trans-unit id="settings.preventScrollOnTouch" xml:space="preserve" approved="yes">
+               	<source>Prevent page from scrolling on touch</source>
+            <target state="final">Verhindert das Scrollen der Seite bei touch-Eingabe</target></trans-unit>
+      <trans-unit id="settings.nested" xml:space="preserve" approved="yes">
+               	<source>Nested</source>
+            <target state="final">Verschachtelt</target></trans-unit>
+      <trans-unit id="settings.freezable" xml:space="preserve" approved="yes">
+               	<source>Freezable</source>
+            <target state="final">Einfrierbar</target></trans-unit>
+      <trans-unit id="settings.disable" xml:space="preserve" approved="yes">
+               	<source>Disable</source>
+            <target state="final">Deaktivieren</target></trans-unit>
+      <trans-unit id="settings.startIndex" xml:space="preserve" approved="yes">
+               	<source>Start Index</source>
+            <target state="final">Start-Index</target></trans-unit>
+      <trans-unit id="settings.useLocalStorage" xml:space="preserve" approved="yes">
+               	<source>Use Local Storage</source>
+            <target state="final">Lokalen Speicher verwenden</target></trans-unit>
+    </body>
+  </file>
+</xliff>
