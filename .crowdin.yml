@@ -11,4 +11,6 @@ files:
   - source: /Resources/Private/Language/locallang*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
   - source: /Resources/Private/Language/*_csh_flexforms.xlf
+    ignore:
+      - /Resources/Private/Language/de.*_csh_flexforms.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
