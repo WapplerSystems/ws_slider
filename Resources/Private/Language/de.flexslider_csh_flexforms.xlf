@@ -4,119 +4,11 @@
     <header/>
     <body>
       <!-- general Flexslider options -->
-      <trans-unit id="flexslider.settings.js.selector.description" xml:space="preserve" approved="yes">
-				<source>Must match a simple pattern. '{container} &gt; {slide}'.</source>
-			<target state="final">Muss mit einem einfachen Muster übereinstimmen. '{container} &gt; {slide}'.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.animation.description" xml:space="preserve" approved="yes">
-				<source>Controls the animation type, "fade" or "slide".</source>
-			<target state="final">Steuert den Animationstyp, "fade" oder "slide".</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.easing.description" xml:space="preserve" approved="yes">
-				<source>Determines the easing method used in jQuery transitions.</source>
-			<target state="final">Bestimmt die easing Methode, die bei jQuery Übergängen verwendet wird.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.direction.description" xml:space="preserve" approved="yes">
-				<source>Controls the animation direction, "horizontal" or "vertical"</source>
-			<target state="final">Steuert die Animationsrichtung, "horizontal" oder "vertikal".</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.reverse.description" xml:space="preserve" approved="yes">
-				<source>Reverse the animation direction.</source>
-			<target state="final">Navigationsrichtung umkehren.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.animationLoop.description" xml:space="preserve" approved="yes">
-				<source>Gives the slider a seamless infinite loop.</source>
-			<target state="final">Slider bildet eine Endlosschleife.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.smoothHeight.description" xml:space="preserve" approved="yes">
-				<source>Animate the height of the slider smoothly for slides of varying height.</source>
-			<target state="final">Animiert die Höhe des Sliders dynamisch je nach Höhe der einzelnen Elemente.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.startAt.description" xml:space="preserve" approved="yes">
-				<source>The starting slide for the slider, in array notation.</source>
-			<target state="final">Startelement in Array-Notation (erstes Element hat index 0).</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.slideshow.description" xml:space="preserve" approved="yes">
-				<source>Setup a slideshow for the slider to animate automatically.</source>
-			<target state="final">Richten Sie eine Slideshow ein, damit der Slider automatisch animiert wird.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.slideshowSpeed.description" xml:space="preserve" approved="yes">
-				<source>Set the speed of the slideshow cycling, in milliseconds.</source>
-			<target state="final">Legen Sie die Geschwindigkeit für das Fortlaufen der Slideshow in Millisekunden fest.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.animationSpeed.description" xml:space="preserve" approved="yes">
-				<source>Set the speed of animations, in milliseconds.</source>
-			<target state="final">Legen Sie die Geschwindigkeit von Animationen in Millisekunden fest.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.initDelay.description" xml:space="preserve" approved="yes">
-				<source>Set an initialization delay, in milliseconds.</source>
-			<target state="final">Setzen Sie eine Initialisierungsverzögerung in Millisekunden.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.randomize.description" xml:space="preserve" approved="yes">
-				<source>Randomize slide order, on load.</source>
-			<target state="final">Zufällige Folienreihenfolge, wird beim Laden festgelegt.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.fadeFirstSlide.description" xml:space="preserve" approved="yes">
-				<source>Fade in animation on the first slide.</source>
-			<target state="final">Einblendeanimation auf dem ersten Element.</target></trans-unit>
       <!-- Usability Features -->
-      <trans-unit id="flexslider.settings.js.pauseOnAction.description" xml:space="preserve" approved="yes">
-				<source>Pause the slideshow when interacting with control elements.</source>
-			<target state="final">Pausiert die Slideshow bei Interaktion mit Steuerelementen.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
-				<source>Pause the slideshow when hovering over slider, then resume when no longer hovering.</source>
-			<target state="final">Pausiert die Slideshow wenn der Mauszeiger über dem Slider schwebt.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.pauseInvisible.description" xml:space="preserve" approved="yes">
-				<source>Pause Invisible</source>
-			<target state="final">Pausieren falls Fenster nicht sichtbar ist.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.useCSS.description" xml:space="preserve" approved="yes">
-				<source>Slider will use CSS3 transitions, if available.</source>
-			<target state="final">Slider verwendet CSS3-Übergänge, falls verfügbar.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.touch.description" xml:space="preserve" approved="yes">
-				<source>Allow touch swipe navigation of the slider on enabled devices.</source>
-			<target state="final">Ermöglicht Touch-Steuerung.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.video.description" xml:space="preserve" approved="yes">
-				<source>Will prevent use of CSS3 3D Transforms, avoiding graphical glitches when there is video in the slider.</source>
-			<target state="final">Verhindert die Verwendung von CSS3 3D Transformationen, um graphische Störungen zu vermeiden, wenn es Video im Slider gibt.</target></trans-unit>
       <!-- Primary Controls -->
-      <trans-unit id="flexslider.settings.js.controlNav.description" xml:space="preserve" approved="yes">
-				<source>Create navigation for paging control of each slide.</source>
-			<target state="final">Erstelle Navigation zur Seitensteuerung jeder Folie.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.directionNav.description" xml:space="preserve" approved="yes">
-				<source>Create previous/next arrow navigation.</source>
-			<target state="final">"Vorherige/Nächste" Pfeilnavigation aktivieren.</target></trans-unit>
       <!-- Secondary Navigation -->
-      <trans-unit id="flexslider.settings.js.keyboard.description" xml:space="preserve" approved="yes">
-				<source>Allow slider navigating via keyboard left/right keys.</source>
-			<target state="final">Erlaube das Navigieren des Sliders über die Pfeiltasten links/rechts.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.multipleKeyboard.description" xml:space="preserve" approved="yes">
-				<source>Allow keyboard navigation to affect multiple sliders.</source>
-			<target state="final">Tastatursteuerung soll mehrere Slider gleichzeitig beeinflussen.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.mousewheel.description" xml:space="preserve" approved="yes">
-				<source>(Dependency) Allows slider navigating via mousewheel</source>
-			<target state="final">(Dependency) Erlaubt Mausradsteuerung</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.pausePlay.description" xml:space="preserve" approved="yes">
-				<source>Create pause/play element to control slider slideshow.</source>
-			<target state="final">Erstelle Pause/Play-Element zur Steuerung der Slider-Diashow.</target></trans-unit>
       <!-- Special Properties -->
-      <trans-unit id="flexslider.settings.js.controlsContainer.description" xml:space="preserve" approved="yes">
-				<source>jQuery Object/Selector. Container the navigation elements should be appended to.</source>
-			<target state="final">jQuery Objekt/Selektor. Container in die die Navigationselemente eingebettet werden.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.manualControls.description" xml:space="preserve" approved="yes">
-				<source>jQuery Object/Selector. Define element to be used in lieu of dynamic controlNav.</source>
-			<target state="final">jQuery Objekt/Selektor. Definieren Sie das zu verwendende Element anstelle von dynamischer Steuerung.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.customDirectionNav.description" xml:space="preserve">
-				<source>jQuery Object/Selector. Container the custom navigation markup works with.</source>
-			<target state="needs-translation">jQuery Object/Selector. Container the custom navigation markup works with.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.sync.description" xml:space="preserve" approved="yes">
-				<source>Selector. Mirror the actions performed on this slider with another slider.</source>
-			<target state="final">Sync-Selektor: Spiegeln Sie die auf diesem Slider durchgeführten Aktionen auf einem anderen Slider.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
-				<source>Selector. Turn the slider into a thumbnail navigation for another slider.</source>
-			<target state="final">Selektor. Benutzen Sie diesen Schieberegler als eine Miniaturansicht für einen anderen Schieberegler.</target></trans-unit>
       <!-- Carousel Options -->
-      <trans-unit id="flexslider.settings.js.itemWidth.description" xml:space="preserve" approved="yes">
-				<source>Box-model width of individual carousel items, including horizontal borders and padding.</source>
-			<target state="final">Box-Modell Breite der einzelnen Elemente, einschließlich horizontaler border und padding.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.itemMargin.description" xml:space="preserve" approved="yes">
-				<source>Margin between carousel items.</source>
-			<target state="final">Abstand zwischen Elementen.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.minItems.description" xml:space="preserve" approved="yes">
-				<source>Minimum number of carousel items that should be visible.</source>
-			<target state="final">Mindestanzahl der Elemente, die sichtbar sein sollen.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.maxItems.description" xml:space="preserve" approved="yes">
-				<source>Maximum number of carousel items that should be visible.</source>
-			<target state="final">Maximale Anzahl der Elemente, die sichtbar sein sollen.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.move.description" xml:space="preserve" approved="yes">
-				<source>Number of carousel items that should move on animation.</source>
-			<target state="final">Anzahl der Elemente die sich verschieben sollten bei Animation.</target></trans-unit>
     </body>
   </file>
 </xliff>
