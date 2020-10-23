@@ -107,18 +107,18 @@ plugin.tx_wsslider.settings.flexslider {
 
     # Carousel Options
 
-    # cat=plugin.tx_wsslider.flexslider/; type=int+; label=itemWidth: Box-model width of individual carousel items, including horizontal borders and padding.
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=itemWidth: Box-model width of individual carousel items, including horizontal borders and padding.
     itemWidth = 0
 
-    # cat=plugin.tx_wsslider.flexslider/; type=int+; label=itemMargin: Margin between carousel items.
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=itemMargin: Margin between carousel items.
     itemMargin = 0
 
-    # cat=plugin.tx_wsslider.flexslider/; type=int+; label=minItems: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=minItems: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
     minItems = 0
 
-    # cat=plugin.tx_wsslider.flexslider/; type=int+; label=maxItems: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
-    maxItems = 0
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int; label=maxItems: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
+    maxItems = 100
 
-    # cat=plugin.tx_wsslider.flexslider/; type=int+; label=move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
     move = 0
 }
