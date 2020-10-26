@@ -7,3 +7,13 @@
 .. :align: left
 .. :border: 0
 .. :name: Template Includes
+
+.. |Elements|             image:: ../Images/Elements.png
+.. :align: left
+.. :border: 0
+.. :name: Elements
+
+.. |OwlSettings|             image:: ../Images/OwlSettings.png
+.. :align: left
+.. :border: 0
+.. :name: OwlSettings
