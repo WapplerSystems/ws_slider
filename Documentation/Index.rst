@@ -31,6 +31,9 @@ WS Slider - Universal slider extension
 
 Universal slider/carousel extension for TYPO3
 
+**How to support**
+If you can contribute with translations, please contact me.
+
 **TYPO3**
 
 The content of this document is related to TYPO3 CMS,
