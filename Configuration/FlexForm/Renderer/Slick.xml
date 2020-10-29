@@ -233,20 +233,7 @@
                         </TCEforms>
                     </settings.js.arrows>
 
-                    <settings.js.asNavFor>
-                        <TCEforms>
-                            <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.asNavFor</label>
-                            <config>
-                                <type>input</type>
-                                <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.asNavFor</typoscriptPath>
-                                <size>12</size>
-                            </config>
-                        </TCEforms>
-                    </settings.js.asNavFor>
-
-                    <settings.js.appendArrows>
+                    <!--<settings.js.appendArrows>
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.appendArrows</label>
@@ -296,7 +283,7 @@
                                 <size>12</size>
                             </config>
                         </TCEforms>
-                    </settings.js.nextArrow>
+                    </settings.js.nextArrow>-->
 
                     <settings.js.dots>
                         <TCEforms>
@@ -470,6 +457,19 @@
                             </config>
                         </TCEforms>
                     </settings.js.rtl>
+
+                    <settings.js.asNavFor>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.asNavFor</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.asNavFor</typoscriptPath>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.asNavFor>
                 </el>
             </ROOT>
         </navigation>
@@ -481,6 +481,30 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
+                    <settings.js.slidesToShow>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.slidesToShow</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesToShow</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.slidesToShow>
+
+                    <settings.js.slidesToScroll>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.slidesToScroll</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesToScroll</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.slidesToScroll>
+`
                     <settings.js.mobileFirst>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.mobileFirst</label>
@@ -678,30 +702,6 @@
                             </config>
                         </TCEforms>
                     </settings.js.slidesPerRow>
-
-                    <settings.js.slidesToShow>
-                        <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.slidesToShow</label>
-                            <config>
-                                <type>input</type>
-                                <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesToShow</typoscriptPath>
-                                <eval>num,trim</eval>
-                            </config>
-                        </TCEforms>
-                    </settings.js.slidesToShow>
-
-                    <settings.js.slidesToScroll>
-                        <TCEforms>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slickslider.xlf:settings.slidesToScroll</label>
-                            <config>
-                                <type>input</type>
-                                <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.slickslider.slidesToScroll</typoscriptPath>
-                                <eval>num,trim</eval>
-                            </config>
-                        </TCEforms>
-                    </settings.js.slidesToScroll>
                 </el>
             </ROOT>
         </layout>

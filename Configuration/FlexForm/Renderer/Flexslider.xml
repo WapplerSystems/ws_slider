@@ -12,19 +12,6 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
-                    <settings.js.selector>
-                        <TCEforms>
-                            <exclude>1</exclude>
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.selector</label>
-                            <config>
-                                <type>input</type>
-                                <renderType>inputWithTypoScriptPlaceholder</renderType>
-                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.selector</typoscriptPath>
-                                <size>12</size>
-                            </config>
-                        </TCEforms>
-                    </settings.js.selector>
-
                     <settings.js.animation>
                         <TCEforms>
                             <exclude>1</exclude>
@@ -617,12 +604,27 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
+                    <settings.js.selector>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.selector</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.selector</typoscriptPath>
+                                <size>12</size>
+                            </config>
+                        </TCEforms>
+                    </settings.js.selector>
+
                     <settings.js.controlsContainer>
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlsContainer</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.controlsContainer</typoscriptPath>
                                 <size>12</size>
                                 <eval>trim</eval>
                             </config>
@@ -635,6 +637,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.manualControls</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.manualControls</typoscriptPath>
                                 <size>12</size>
                                 <eval>trim</eval>
                             </config>
@@ -647,6 +651,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.customDirectionNav</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.customDirectionNav</typoscriptPath>
                                 <size>12</size>
                                 <eval>trim</eval>
                             </config>
@@ -659,6 +665,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.sync</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.sync</typoscriptPath>
                                 <size>12</size>
                                 <eval>trim</eval>
                             </config>
@@ -671,6 +679,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.asNavFor</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.asNavFor</typoscriptPath>
                                 <size>12</size>
                                 <eval>trim</eval>
                             </config>
@@ -693,6 +703,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemWidth</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.itemWidth</typoscriptPath>
                                 <size>12</size>
                                 <eval>num,trim</eval>
                             </config>
@@ -705,6 +717,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemMargin</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.itemMargin</typoscriptPath>
                                 <size>12</size>
                                 <eval>num,trim</eval>
                             </config>
@@ -717,6 +731,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.minItems</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.minItems</typoscriptPath>
                                 <size>12</size>
                                 <eval>num,trim</eval>
                             </config>
@@ -729,6 +745,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.maxItems</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.maxItems</typoscriptPath>
                                 <size>12</size>
                                 <eval>num,trim</eval>
                             </config>
@@ -741,6 +759,8 @@
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.move</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.move</typoscriptPath>
                                 <size>12</size>
                                 <eval>num,trim</eval>
                             </config>

@@ -114,10 +114,10 @@ plugin.tx_wsslider.settings.flexslider {
     itemMargin = 0
 
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=minItems: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
-    minItems = 0
+    minItems = 3
 
-    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int; label=maxItems: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
-    maxItems = 100
+    # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=maxItems: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
+    maxItems = 6
 
     # cat=plugin.tx_wsslider.flexslider/flexslider/a; type=int+; label=move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
     move = 0
