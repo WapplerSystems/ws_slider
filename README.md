@@ -12,6 +12,9 @@ Currently the following slider scripts are provided:
 * [TinySlider 2](https://ganlanyuan.github.io/tiny-slider/)
 * [Slick](https://kenwheeler.github.io/slick/)
 
+## Video Tutorial
+A german video tutorial on how to install and configure the extension can be found [here](https://youtu.be/Kvfwmei7PWc)
+
 ## Highlight
 
 Each slider comes with its own backend settings and template constants. The template constants can be set globally, which can make the editor's work easier when using many sliders. However, the editor has the possibility to override these settings via the element settings. In each setting the editor can see how the constants have been set.
