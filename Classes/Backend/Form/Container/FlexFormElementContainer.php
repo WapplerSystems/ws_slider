@@ -53,7 +53,7 @@ class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFor
                 // Set up options for single element
                 $fakeParameterArray = [
                     'fieldConf' => [
-                        'label' => $languageService->sL(trim($flexFormFieldArray['label'])),
+                        'label' => $languageService->sL(trim($flexFormFieldArray['label'] ?? '')),
                         'config' => $flexFormFieldArray['config'],
                         'children' => $flexFormFieldArray['children'],
                         'onChange' => $flexFormFieldArray['onChange'],
