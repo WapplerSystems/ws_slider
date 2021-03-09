@@ -11,6 +11,21 @@
 			<trans-unit id="settings.items">
 				<source>Items</source>
 			</trans-unit>
+            <trans-unit id="settings.responsiveItemCount0">
+                <source>Items below 576px display width</source>
+            </trans-unit>
+            <trans-unit id="settings.responsiveItemCount576">
+                <source>Items above 576px display width</source>
+            </trans-unit>
+            <trans-unit id="settings.responsiveItemCount768">
+                <source>Items above 768px display width</source>
+            </trans-unit>
+            <trans-unit id="settings.responsiveItemCount992">
+                <source>Items above 992px display width</source>
+            </trans-unit>
+            <trans-unit id="settings.responsiveItemCount1200">
+                <source>Items above 1200px display width</source>
+            </trans-unit>
 			<trans-unit id="settings.margin">
 				<source>Margin</source>
 			</trans-unit>

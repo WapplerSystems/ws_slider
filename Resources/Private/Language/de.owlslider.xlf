@@ -12,6 +12,26 @@
         <source>Items</source>
         <target state="final">Elemente</target>
       </trans-unit>
+      <trans-unit id="settings.responsiveItemCount0">
+        <source>Items below 576px display width</source>
+        <target state="final">Elemente unterhalb 576px Displaybreite</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount576">
+        <source>Items above 576px display width</source>
+        <target state="final">Elemente oberhalb 576px Displaybreite</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount768">
+        <source>Items above 768px display width</source>
+        <target state="final">Elemente oberhalb 768px Displaybreite</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount992">
+        <source>Items above 992px display width</source>
+        <target state="final">Elemente oberhalb 992px Displaybreite</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1200">
+        <source>Items above 1200px display width</source>
+        <target state="final">Elemente oberhalb 1200px Displaybreite</target>
+      </trans-unit>
       <trans-unit id="settings.margin" approved="yes">
         <source>Margin</source>
         <target state="final">Margin</target>

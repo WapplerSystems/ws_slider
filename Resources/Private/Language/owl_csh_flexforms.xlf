@@ -6,6 +6,21 @@
             <trans-unit id="owl.settings.js.items.description" xml:space="preserve">
 				<source>The number of items you want to see on the screen.</source>
 			</trans-unit>
+            <trans-unit id="owl.settings.js.responsive.0.items.description" xml:space="preserve">
+				<source>Items below 576px display width</source>
+			</trans-unit>
+            <trans-unit id="owl.settings.js.responsive.576.items.description" xml:space="preserve">
+				<source>Items above 576px display width</source>
+			</trans-unit>
+            <trans-unit id="owl.settings.js.responsive.768.items.description" xml:space="preserve">
+				<source>Items above 768px display width</source>
+			</trans-unit>
+            <trans-unit id="owl.settings.js.responsive.992.items.description" xml:space="preserve">
+				<source>Items above 992px display width</source>
+			</trans-unit>
+            <trans-unit id="owl.settings.js.responsive.1200px.items.description" xml:space="preserve">
+				<source>Items above 1200px display width</source>
+			</trans-unit>
             <trans-unit id="owl.settings.js.margin.description">
                 <source>margin-right(px) on item.</source>
             </trans-unit>

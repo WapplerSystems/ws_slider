@@ -6,6 +6,21 @@ plugin.tx_wsslider.settings.owl {
     # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see on the screen.
     items = 3
 
+    # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see below 576px display width.
+    responsive.0.items = 1
+
+    # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see above 576px display width.
+    responsive.576.items = 2
+
+    # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see above 768px display width.
+    responsive.768.items = 3
+
+    # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see above 992px display width.
+    responsive.992.items = 3
+
+    # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see above 1200px display width.
+    responsive.1200.items = 3
+
     # cat=plugin.tx_wsslider.owl/owl/b; type=int+; label=margin-right(px) on item.
     margin = 0
 

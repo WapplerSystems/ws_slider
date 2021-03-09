@@ -58,22 +58,23 @@ plugin.tx_wsslider.settings.renderer.owl {
 
 	responsive {
 		0 {
-			items = 1
+			items = {$plugin.tx_wsslider.settings.owl.responsive.0.items}
 		}
 		576 {
-			items = 2
+			items = {$plugin.tx_wsslider.settings.owl.responsive.576.items}
 		}
 		768 {
-			items = 4
+			items = {$plugin.tx_wsslider.settings.owl.responsive.768.items}
 		}
 		992 {
-			items = 4
+			items = {$plugin.tx_wsslider.settings.owl.responsive.992.items}
 		}
 		1200 {
-			items = 4
+			items = {$plugin.tx_wsslider.settings.owl.responsive.1200.items}
 		}
 
 	}
+
 
 
 }
