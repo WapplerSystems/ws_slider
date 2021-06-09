@@ -152,5 +152,8 @@ plugin.tx_wsslider.settings.tinyslider {
 
     useLocalStorage = true
 
+    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Name of default animation class
+    animateNormal = tns-normal
+
 
 }
