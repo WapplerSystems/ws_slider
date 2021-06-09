@@ -8,9 +8,21 @@ tt_content.ws_slider {
     ################
     templateName = Slider
 
-    templateRootPaths.43 = EXT:ws_slider/Resources/Private/Templates/
-    partialRootPaths.43 = EXT:ws_slider/Resources/Private/Partials/
-    layoutRootPaths.43 = EXT:ws_slider/Resources/Private/Layouts/
+    templateRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Templates/
+        10 = EXT:ws_slider/Resources/Private/Templates/
+        20 = {$plugin.tx_wsslider.view.templateRootPath}
+    }
+    partialRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Partials/
+        10 = EXT:ws_slider/Resources/Private/Partials/
+        20 = {$plugin.tx_wsslider.view.partialRootPath}
+    }
+    layoutRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Layouts/
+        10 = EXT:ws_slider/Resources/Private/Layouts/
+        20 = {$plugin.tx_wsslider.view.layoutRootPath}
+    }
 
     settings {
         slider < plugin.tx_wsslider.settings
