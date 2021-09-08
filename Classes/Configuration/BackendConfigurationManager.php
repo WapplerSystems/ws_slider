@@ -13,7 +13,9 @@ class BackendConfigurationManager extends \TYPO3\CMS\Extbase\Configuration\Backe
 
     public function __construct(ObjectManagerInterface $objectManager, TypoScriptService $typoScriptService, EnvironmentService $environmentService)
     {
-        if (version_compare(TYPO3_version, '10.0.0', '>=')) {
+        if (version_compare(TYPO3_version, '11.0.0', '>=')) {
+            parent::__construct($typoScriptService);
+        } else if (version_compare(TYPO3_version, '10.0.0', '>=')) {
             parent::__construct($objectManager, $typoScriptService, $environmentService);
         }
 
