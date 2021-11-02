@@ -92,7 +92,11 @@ class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFor
                     // change the originalFieldName in TBE_EDITOR_fieldChanged. This is
                     // especially relevant for wizards writing their content back to hidden fields
                     if (!empty($fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged'])) {
-                        $fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged'] = str_replace($originalFieldName, $fakeParameterArray['itemFormElName'], $fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged']);
+                        if (is_string($fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged'])) {
+                            $fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged'] = str_replace($originalFieldName, $fakeParameterArray['itemFormElName'], $fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged']);
+                        } elseif (is_array($fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged'])) {
+                            $fakeParameterArray['fieldChangeFunc']['TBE_EDITOR_fieldChanged']['elementName'] = $fakeParameterArray['itemFormElName'];
+                        }
                     }
                 }
                 $fakeParameterArray['itemFormElID'] = $parameterArray['itemFormElID'] . '_' . preg_replace('/[^a-zA-Z0-9_-]/', '_', $flexFormFieldName) . '_' . md5($fakeParameterArray['itemFormElName']);
