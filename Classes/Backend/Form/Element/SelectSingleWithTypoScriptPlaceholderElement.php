@@ -204,7 +204,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
             'id' => $selectId,
             'name' => $parameterArray['itemFormElName'],
             'data-formengine-validation-rules' => $this->getValidationDataAsJsonString($config),
-            'class' => 'form-control form-control-adapt',
+            'class' => 'form-control form-select form-control-adapt',
         ];
         if ($size) {
             $selectAttributes['size'] = $size;
