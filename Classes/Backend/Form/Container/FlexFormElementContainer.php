@@ -35,7 +35,7 @@ class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFor
                 continue;
             }
 
-            if ($flexFormFieldArray['type'] === 'array') {
+            if (($flexFormFieldArray['type'] ?? '') === 'array') {
                 // Section
                 if (empty($flexFormFieldArray['section'])) {
                     $resultArray['html'] = LF . 'Section expected at ' . $flexFormFieldName . ' but not found';
