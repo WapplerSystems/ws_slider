@@ -4,7 +4,7 @@ defined('TYPO3_MODE') || die();
 /***************
  * Add Content Element
  */
-if (!isset($GLOBALS['TCA']['tt_content']['types']['ws_slider'])) {
+if (!is_array($GLOBALS['TCA']['tt_content']['types']['ws_slider'] ?? null)) {
     $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = [];
 }
 
