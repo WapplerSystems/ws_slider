@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
+
 namespace WapplerSystems\WsSlider\Backend\Form\Container;
 
 
@@ -129,11 +130,11 @@ class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFor
                     $processedTitle = str_replace('\\n', '<br />', htmlspecialchars($fakeParameterArray['fieldConf']['label']));
                     $html = [];
                     $html[] = '<div class="form-section">';
-                    $html[] =   '<div class="form-group t3js-formengine-palette-field t3js-formengine-validation-marker">';
-                    $html[] =       '<label class="t3js-formengine-label">';
-                    $html[] =           BackendUtility::wrapInHelp($parameterArray['_cshKey'], $flexFormFieldName, $processedTitle);
-                    $html[] =           $showFieldName ? ('<code>[' . htmlspecialchars($flexFormFieldName) . ']</code>') : '';
-                    $html[] =       '</label>';
+                    $html[] = '<div class="form-group t3js-formengine-palette-field t3js-formengine-validation-marker">';
+                    $html[] = '<label class="t3js-formengine-label">';
+                    $html[] = BackendUtility::wrapInHelp($parameterArray['_cshKey'], $flexFormFieldName, $processedTitle);
+                    $html[] = $showFieldName ? ('<code>[' . htmlspecialchars($flexFormFieldName) . ']</code>') : '';
+                    $html[] = '</label>';
                     switch ($options['renderType']) {
                         case 'selectSingleWithTypoScriptPlaceholder':
                         case 'inputWithTypoScriptPlaceholder':
@@ -141,15 +142,15 @@ class FlexFormElementContainer extends \TYPO3\CMS\Backend\Form\Container\FlexFor
                             $databaseRow = $this->data['databaseRow'];
                             $sliderRenderer = $databaseRow['tx_wsslider_renderer'][0] ?? '';
 
-                            $helpTextArray = BackendUtility::helpTextArray($parameterArray['_cshKey'],$sliderRenderer.'.'.$flexFormFieldName);
+                            $helpTextArray = BackendUtility::helpTextArray($parameterArray['_cshKey'], $sliderRenderer . '.' . $flexFormFieldName);
                             if (isset($helpTextArray['description']) && $helpTextArray['description'] !== '') {
-                                $html[] =       '<label class="t3js-formengine-sublabel">'.$helpTextArray['description'].'</label>';
+                                $html[] = '<label class="t3js-formengine-sublabel">' . $helpTextArray['description'] . '</label>';
                             }
                     }
-                    $html[] =       '<div class="formengine-field-item t3js-formengine-field-item">';
-                    $html[] =           $childResult['html'];
-                    $html[] =       '</div>';
-                    $html[] =   '</div>';
+                    $html[] = '<div class="formengine-field-item t3js-formengine-field-item">';
+                    $html[] = $childResult['html'];
+                    $html[] = '</div>';
+                    $html[] = '</div>';
                     $html[] = '</div>';
                     $resultArray['html'] .= implode(LF, $html);
                     $resultArray = $this->mergeChildReturnIntoExistingResult($resultArray, $childResult, false);

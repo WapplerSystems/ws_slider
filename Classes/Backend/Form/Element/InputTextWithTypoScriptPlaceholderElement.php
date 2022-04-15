@@ -1,4 +1,5 @@
 <?php
+
 namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
@@ -74,7 +75,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         $width = (int)$this->formMaxWidth($size);
 
         # fix for flexform
-        $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'],4);
+        $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'], 4);
 
         $fieldInformationResult = $this->renderFieldInformation();
         $fieldInformationHtml = $fieldInformationResult['html'];
@@ -87,14 +88,14 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
             }
             $html = [];
             $html[] = '<div class="formengine-field-item t3js-formengine-field-item">';
-            $html[] =   $fieldInformationHtml;
-            $html[] =   '<div class="form-wizards-wrap">';
-            $html[] =       '<div class="form-wizards-element">';
-            $html[] =           '<div class="form-control-wrap" style="max-width: ' . $width . 'px">';
-            $html[] =               '<input class="form-control" value="' . htmlspecialchars($itemValue) . '" type="text" disabled>';
-            $html[] =           '</div>';
-            $html[] =       '</div>';
-            $html[] =   '</div>';
+            $html[] = $fieldInformationHtml;
+            $html[] = '<div class="form-wizards-wrap">';
+            $html[] = '<div class="form-wizards-element">';
+            $html[] = '<div class="form-control-wrap" style="max-width: ' . $width . 'px">';
+            $html[] = '<input class="form-control" value="' . htmlspecialchars($itemValue) . '" type="text" disabled>';
+            $html[] = '</div>';
+            $html[] = '</div>';
+            $html[] = '</div>';
             $html[] = '</div>';
             $resultArray['html'] = implode(LF, $html);
             return $resultArray;
@@ -166,8 +167,8 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                     . '.value=this.options[this.selectedIndex].value';
             }
             $valuePickerHtml[] = '<select';
-            $valuePickerHtml[] =  ' class="form-control tceforms-select tceforms-wizardselect"';
-            $valuePickerHtml[] =  ' onchange="' . htmlspecialchars($assignValue . ';this.blur();this.selectedIndex=0;' . implode('', $fieldChangeFunc)) . '"';
+            $valuePickerHtml[] = ' class="form-control tceforms-select tceforms-wizardselect"';
+            $valuePickerHtml[] = ' onchange="' . htmlspecialchars($assignValue . ';this.blur();this.selectedIndex=0;' . implode('', $fieldChangeFunc)) . '"';
             $valuePickerHtml[] = '>';
             $valuePickerHtml[] = '<option></option>';
             foreach ($config['valuePicker']['items'] as $item) {
@@ -191,19 +192,19 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                 $valueType = 'double';
                 $itemValue = (double)$itemValue;
             }
-            $callbackParams = [ $table, $row['uid'], $fieldName, $parameterArray['itemFormElName'] ];
+            $callbackParams = [$table, $row['uid'], $fieldName, $parameterArray['itemFormElName']];
             $id = 'slider-' . md5($parameterArray['itemFormElName']);
             $valueSliderHtml[] = '<div';
-            $valueSliderHtml[] =    ' id="' . $id . '"';
-            $valueSliderHtml[] =    ' data-slider-id="' . $id . '"';
-            $valueSliderHtml[] =    ' data-slider-min="' . (int)$min . '"';
-            $valueSliderHtml[] =    ' data-slider-max="' . (int)$max . '"';
-            $valueSliderHtml[] =    ' data-slider-step="' . htmlspecialchars($step) . '"';
-            $valueSliderHtml[] =    ' data-slider-value="' . htmlspecialchars($itemValue) . '"';
-            $valueSliderHtml[] =    ' data-slider-value-type="' . htmlspecialchars($valueType) . '"';
-            $valueSliderHtml[] =    ' data-slider-item-name="' . htmlspecialchars($parameterArray['itemFormElName']) . '"';
-            $valueSliderHtml[] =    ' data-slider-callback-params="' . htmlspecialchars(json_encode($callbackParams)) . '"';
-            $valueSliderHtml[] =    ' style="width: ' . $width . 'px;"';
+            $valueSliderHtml[] = ' id="' . $id . '"';
+            $valueSliderHtml[] = ' data-slider-id="' . $id . '"';
+            $valueSliderHtml[] = ' data-slider-min="' . (int)$min . '"';
+            $valueSliderHtml[] = ' data-slider-max="' . (int)$max . '"';
+            $valueSliderHtml[] = ' data-slider-step="' . htmlspecialchars($step) . '"';
+            $valueSliderHtml[] = ' data-slider-value="' . htmlspecialchars($itemValue) . '"';
+            $valueSliderHtml[] = ' data-slider-value-type="' . htmlspecialchars($valueType) . '"';
+            $valueSliderHtml[] = ' data-slider-item-name="' . htmlspecialchars($parameterArray['itemFormElName']) . '"';
+            $valueSliderHtml[] = ' data-slider-callback-params="' . htmlspecialchars(json_encode($callbackParams)) . '"';
+            $valueSliderHtml[] = ' style="width: ' . $width . 'px;"';
             $valueSliderHtml[] = '>';
             $valueSliderHtml[] = '</div>';
         }
@@ -232,26 +233,26 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
 
         $mainFieldHtml = [];
         $mainFieldHtml[] = '<div class="form-control-wrap" style="max-width: ' . $width . 'px">';
-        $mainFieldHtml[] =  '<div class="form-wizards-wrap">';
-        $mainFieldHtml[] =      '<div class="form-wizards-element">';
-        $mainFieldHtml[] =          '<input type="' . $inputType . '"' . GeneralUtility::implodeAttributes($attributes, true) . ' />';
-        $mainFieldHtml[] =          '<input type="hidden" name="' . $parameterArray['itemFormElName'] . '" value="' . htmlspecialchars($itemValue) . '" />';
-        $mainFieldHtml[] =      '</div>';
+        $mainFieldHtml[] = '<div class="form-wizards-wrap">';
+        $mainFieldHtml[] = '<div class="form-wizards-element">';
+        $mainFieldHtml[] = '<input type="' . $inputType . '"' . GeneralUtility::implodeAttributes($attributes, true) . ' />';
+        $mainFieldHtml[] = '<input type="hidden" name="' . $parameterArray['itemFormElName'] . '" value="' . htmlspecialchars($itemValue) . '" />';
+        $mainFieldHtml[] = '</div>';
         if (!empty($valuePickerHtml) || !empty($valueSliderHtml) || !empty($fieldControlHtml)) {
-            $mainFieldHtml[] =      '<div class="form-wizards-items-aside">';
-            $mainFieldHtml[] =          '<div class="btn-group">';
-            $mainFieldHtml[] =              implode(LF, $valuePickerHtml);
-            $mainFieldHtml[] =              implode(LF, $valueSliderHtml);
-            $mainFieldHtml[] =              $fieldControlHtml;
-            $mainFieldHtml[] =          '</div>';
-            $mainFieldHtml[] =      '</div>';
+            $mainFieldHtml[] = '<div class="form-wizards-items-aside">';
+            $mainFieldHtml[] = '<div class="btn-group">';
+            $mainFieldHtml[] = implode(LF, $valuePickerHtml);
+            $mainFieldHtml[] = implode(LF, $valueSliderHtml);
+            $mainFieldHtml[] = $fieldControlHtml;
+            $mainFieldHtml[] = '</div>';
+            $mainFieldHtml[] = '</div>';
         }
         if (!empty($fieldWizardHtml)) {
             $mainFieldHtml[] = '<div class="form-wizards-items-bottom">';
             $mainFieldHtml[] = $fieldWizardHtml;
             $mainFieldHtml[] = '</div>';
         }
-        $mainFieldHtml[] =  '</div>';
+        $mainFieldHtml[] = '</div>';
         $mainFieldHtml[] = '</div>';
         $mainFieldHtml = implode(LF, $mainFieldHtml);
 
@@ -284,19 +285,19 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
             }
             $fullElement = [];
             $fullElement[] = '<div class="checkbox t3js-form-field-eval-null-placeholder-checkbox">';
-            $fullElement[] =     '<label for="' . $nullControlNameEscaped . '">';
-            $fullElement[] =         '<input type="hidden" name="' . $nullControlNameEscaped . '" value="' . $fallbackValue . '" />';
-            $fullElement[] =         '<input type="checkbox" name="' . $nullControlNameEscaped . '" id="' . $nullControlNameEscaped . '" value="1"' . $checked . $disabled . ' />';
-            $fullElement[] =         $overrideLabel;
-            $fullElement[] =     '</label>';
+            $fullElement[] = '<label for="' . $nullControlNameEscaped . '">';
+            $fullElement[] = '<input type="hidden" name="' . $nullControlNameEscaped . '" value="' . $fallbackValue . '" />';
+            $fullElement[] = '<input type="checkbox" name="' . $nullControlNameEscaped . '" id="' . $nullControlNameEscaped . '" value="1"' . $checked . $disabled . ' />';
+            $fullElement[] = $overrideLabel;
+            $fullElement[] = '</label>';
             $fullElement[] = '</div>';
             $fullElement[] = '<div class="t3js-formengine-placeholder-placeholder">';
-            $fullElement[] =    '<div class="form-control-wrap" style="max-width:' . $width . 'px">';
-            $fullElement[] =        '<input type="text" class="form-control" disabled="disabled" value="' . $shortenedPlaceholder . '" />';
-            $fullElement[] =    '</div>';
+            $fullElement[] = '<div class="form-control-wrap" style="max-width:' . $width . 'px">';
+            $fullElement[] = '<input type="text" class="form-control" disabled="disabled" value="' . $shortenedPlaceholder . '" />';
+            $fullElement[] = '</div>';
             $fullElement[] = '</div>';
             $fullElement[] = '<div class="t3js-formengine-placeholder-formfield">';
-            $fullElement[] =    $mainFieldHtml;
+            $fullElement[] = $mainFieldHtml;
             $fullElement[] = '</div>';
             $fullElement = implode(LF, $fullElement);
         }
@@ -322,12 +323,12 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                 ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
             );
 
-        $segments = GeneralUtility::trimExplode('.',$path);
+        $segments = GeneralUtility::trimExplode('.', $path);
 
         $lastSegment = array_pop($segments);
         foreach ($segments as $segment) {
-            if (isset($tsArray[$segment.'.'])) {
-                $tsArray = $tsArray[$segment.'.'];
+            if (isset($tsArray[$segment . '.'])) {
+                $tsArray = $tsArray[$segment . '.'];
             } else {
                 return null;
             }

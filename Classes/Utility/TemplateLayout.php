@@ -54,8 +54,8 @@ class TemplateLayout implements SingletonInterface
             foreach ($templateLayoutsTemp as $name => $value) {
                 if (is_string($value)) {
                     $template = [$name, $value];
-                    if (isset($templateLayoutsTemp[$name.'.']) && is_array($templateLayoutsTemp[$name.'.'])) {
-                        $template[3] = $templateLayoutsTemp[$name.'.'];
+                    if (isset($templateLayoutsTemp[$name . '.']) && is_array($templateLayoutsTemp[$name . '.'])) {
+                        $template[3] = $templateLayoutsTemp[$name . '.'];
                     }
                     $templateLayouts[] = $template;
                 }

@@ -97,7 +97,6 @@ class ItemsProcFunc
     }
 
 
-
     /**
      * Remove not valid fields from ordering
      *
@@ -155,12 +154,12 @@ class ItemsProcFunc
                 ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
             );
 
-        $segments = GeneralUtility::trimExplode('.',$path);
+        $segments = GeneralUtility::trimExplode('.', $path);
 
         $lastSegment = array_pop($segments);
         foreach ($segments as $segment) {
-            if (isset($tsArray[$segment.'.'])) {
-                $tsArray = $tsArray[$segment.'.'];
+            if (isset($tsArray[$segment . '.'])) {
+                $tsArray = $tsArray[$segment . '.'];
             } else {
                 return null;
             }

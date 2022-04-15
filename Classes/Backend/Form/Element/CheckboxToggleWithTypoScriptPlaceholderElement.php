@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
+
 namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 /*
@@ -145,16 +146,16 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $html = [];
         $html[] = '<div class="formengine-field-item t3js-formengine-field-item">';
         $html[] = $fieldInformationHtml;
-        $html[] =   '<div class="form-wizards-wrap">';
-        $html[] =       '<div class="form-wizards-element">';
-        $html[] =           $elementHtml;
-        $html[] =       '</div>';
+        $html[] = '<div class="form-wizards-wrap">';
+        $html[] = '<div class="form-wizards-element">';
+        $html[] = $elementHtml;
+        $html[] = '</div>';
         if (!$disabled && !empty($fieldWizardHtml)) {
-            $html[] =   '<div class="form-wizards-items-bottom">';
-            $html[] =       $fieldWizardHtml;
-            $html[] =   '</div>';
+            $html[] = '<div class="form-wizards-items-bottom">';
+            $html[] = $fieldWizardHtml;
+            $html[] = '</div>';
         }
-        $html[] =   '</div>';
+        $html[] = '</div>';
         $html[] = '</div>';
 
         $resultArray['html'] = implode(LF, $html);
@@ -201,7 +202,6 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
     }
 
 
-
     private function getTypoScriptValue($path)
     {
         $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
@@ -210,12 +210,12 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
                 ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
             );
 
-        $segments = GeneralUtility::trimExplode('.',$path);
+        $segments = GeneralUtility::trimExplode('.', $path);
 
         $lastSegment = array_pop($segments);
         foreach ($segments as $segment) {
-            if (isset($tsArray[$segment.'.'])) {
-                $tsArray = $tsArray[$segment.'.'];
+            if (isset($tsArray[$segment . '.'])) {
+                $tsArray = $tsArray[$segment . '.'];
             } else {
                 return null;
             }

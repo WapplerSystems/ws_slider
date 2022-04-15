@@ -1,4 +1,5 @@
 <?php
+
 namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 /*
@@ -60,11 +61,11 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         ],
         'otherLanguageContent' => [
             'renderType' => 'otherLanguageContent',
-            'after' => [ 'localizationStateSelector' ],
+            'after' => ['localizationStateSelector'],
         ],
         'defaultLanguageDifferences' => [
             'renderType' => 'defaultLanguageDifferences',
-            'after' => [ 'otherLanguageContent' ],
+            'after' => ['otherLanguageContent'],
         ],
     ];
 
@@ -87,7 +88,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $selectItems = $parameterArray['fieldConf']['config']['items'];
 
         # fix for flexform
-        $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'],4);
+        $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'], 4);
 
         // Check against inline uniqueness
         /** @var InlineStackProcessor $inlineStackProcessor */
@@ -258,29 +259,29 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
 
 
         $mainFieldHtml = [];
-        $mainFieldHtml[] =   '<div class="form-control-wrap">';
-        $mainFieldHtml[] =       '<div class="form-wizards-wrap">';
-        $mainFieldHtml[] =           '<div class="form-wizards-element">';
+        $mainFieldHtml[] = '<div class="form-control-wrap">';
+        $mainFieldHtml[] = '<div class="form-wizards-wrap">';
+        $mainFieldHtml[] = '<div class="form-wizards-element">';
         if ($hasIcons) {
-            $mainFieldHtml[] =           '<div class="input-group">';
-            $mainFieldHtml[] =               '<span class="input-group-addon input-group-icon">';
-            $mainFieldHtml[] =                   $selectedIcon;
-            $mainFieldHtml[] =               '</span>';
+            $mainFieldHtml[] = '<div class="input-group">';
+            $mainFieldHtml[] = '<span class="input-group-addon input-group-icon">';
+            $mainFieldHtml[] = $selectedIcon;
+            $mainFieldHtml[] = '</span>';
         }
-        $mainFieldHtml[] =                   '<select ' . GeneralUtility::implodeAttributes($selectAttributes, true) . '>';
-        $mainFieldHtml[] =                       $options;
-        $mainFieldHtml[] =                   '</select>';
+        $mainFieldHtml[] = '<select ' . GeneralUtility::implodeAttributes($selectAttributes, true) . '>';
+        $mainFieldHtml[] = $options;
+        $mainFieldHtml[] = '</select>';
         if ($hasIcons) {
-            $mainFieldHtml[] =           '</div>';
+            $mainFieldHtml[] = '</div>';
         }
-        $mainFieldHtml[] =           '</div>';
+        $mainFieldHtml[] = '</div>';
         if (!$disabled && !empty($fieldWizardHtml)) {
-            $mainFieldHtml[] =       '<div class="form-wizards-items-bottom">';
-            $mainFieldHtml[] =           $fieldWizardHtml;
-            $mainFieldHtml[] =       '</div>';
+            $mainFieldHtml[] = '<div class="form-wizards-items-bottom">';
+            $mainFieldHtml[] = $fieldWizardHtml;
+            $mainFieldHtml[] = '</div>';
         }
-        $mainFieldHtml[] =       '</div>';
-        $mainFieldHtml[] =   '</div>';
+        $mainFieldHtml[] = '</div>';
+        $mainFieldHtml[] = '</div>';
         $mainFieldHtml = implode(LF, $mainFieldHtml);
 
         $fullElement = $mainFieldHtml;
@@ -288,24 +289,24 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         if ($defaultValue !== null) {
             $fullElement = [];
             $fullElement[] = '<div class="checkbox t3js-form-field-eval-null-placeholder-checkbox">';
-            $fullElement[] =     '<label for="' . $nullControlNameEscaped . '">';
-            $fullElement[] =         '<input type="hidden" name="' . $nullControlNameEscaped . '" value="' . $fallbackValue . '" />';
-            $fullElement[] =         '<input type="checkbox" name="' . $nullControlNameEscaped . '" id="' . $nullControlNameEscaped . '" value="1"' . $checked . $disabled . ' />';
-            $fullElement[] =         $overrideLabel;
-            $fullElement[] =     '</label>';
+            $fullElement[] = '<label for="' . $nullControlNameEscaped . '">';
+            $fullElement[] = '<input type="hidden" name="' . $nullControlNameEscaped . '" value="' . $fallbackValue . '" />';
+            $fullElement[] = '<input type="checkbox" name="' . $nullControlNameEscaped . '" id="' . $nullControlNameEscaped . '" value="1"' . $checked . $disabled . ' />';
+            $fullElement[] = $overrideLabel;
+            $fullElement[] = '</label>';
             $fullElement[] = '</div>';
             $fullElement[] = '<div class="t3js-formengine-placeholder-placeholder">';
-            $fullElement[] =    '<div class="form-control-wrap" >';
-            $fullElement[] =        '<select';
-            $fullElement[] =            ' class="form-control-adapt form-control"';
-            $fullElement[] =            ' disabled="disabled"';
-            $fullElement[] =        '>';
-            $fullElement[] =            '<option>'.htmlspecialchars($shortenedPlaceholder).'</option>';
-            $fullElement[] =        '</select>';
-            $fullElement[] =    '</div>';
+            $fullElement[] = '<div class="form-control-wrap" >';
+            $fullElement[] = '<select';
+            $fullElement[] = ' class="form-control-adapt form-control"';
+            $fullElement[] = ' disabled="disabled"';
+            $fullElement[] = '>';
+            $fullElement[] = '<option>' . htmlspecialchars($shortenedPlaceholder) . '</option>';
+            $fullElement[] = '</select>';
+            $fullElement[] = '</div>';
             $fullElement[] = '</div>';
             $fullElement[] = '<div class="t3js-formengine-placeholder-formfield">';
-            $fullElement[] =    $mainFieldHtml;
+            $fullElement[] = $mainFieldHtml;
             $fullElement[] = '</div>';
             $fullElement = implode(LF, $fullElement);
         }
@@ -313,18 +314,18 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
 
         $resultArray['requireJsModules'][] = ['TYPO3/CMS/Backend/FormEngine/Element/SelectSingleElement' => implode(LF, [
             'function(SelectSingleElement) {',
-                'require([\'jquery\'], function($) {',
-                    '$(function() {',
-                        'SelectSingleElement.initialize(',
-                            GeneralUtility::quoteJSvalue('#' . $selectId) . ',',
-                            '{',
-                                'onChange: function() {',
-                                    implode('', $parameterArray['fieldChangeFunc']),
-                                '}',
-                            '}',
-                        ');',
-                    '});',
-                '});',
+            'require([\'jquery\'], function($) {',
+            '$(function() {',
+            'SelectSingleElement.initialize(',
+            GeneralUtility::quoteJSvalue('#' . $selectId) . ',',
+            '{',
+            'onChange: function() {',
+            implode('', $parameterArray['fieldChangeFunc']),
+            '}',
+            '}',
+            ');',
+            '});',
+            '});',
             '}',
         ])];
 
@@ -337,16 +338,16 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
     {
 
         $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-                ->get(ConfigurationManager::class)
-                ->getConfiguration(
-                    ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-                );
-        $segments = GeneralUtility::trimExplode('.',$path);
+            ->get(ConfigurationManager::class)
+            ->getConfiguration(
+                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+            );
+        $segments = GeneralUtility::trimExplode('.', $path);
 
         $lastSegment = array_pop($segments);
         foreach ($segments as $segment) {
-            if (isset($tsArray[$segment.'.'])) {
-                $tsArray = $tsArray[$segment.'.'];
+            if (isset($tsArray[$segment . '.'])) {
+                $tsArray = $tsArray[$segment . '.'];
             } else {
                 return null;
             }

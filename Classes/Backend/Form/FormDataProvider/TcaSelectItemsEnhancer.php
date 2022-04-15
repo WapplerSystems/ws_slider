@@ -21,7 +21,6 @@ class TcaSelectItemsEnhancer implements FormDataProviderInterface
         $table = $result['tableName'];
 
 
-
         foreach ($result['processedTca']['columns'] as $fieldName => $fieldConfig) {
             if (empty($fieldConfig['config']['type']) || $fieldConfig['config']['type'] !== 'select') {
                 continue;

@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
+
 namespace WapplerSystems\WsSlider\Hooks;
 
 use TYPO3\CMS\Core\Localization\LanguageService;
@@ -33,10 +34,10 @@ class FlexFormEnhancerHook
     private function getTypoScriptSettings()
     {
         return GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManager::class)
-            ->getConfiguration(
-                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-            )['plugin.']['tx_wsslider.']['settings.'] ?? [];
+                ->get(ConfigurationManager::class)
+                ->getConfiguration(
+                    ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+                )['plugin.']['tx_wsslider.']['settings.'] ?? [];
     }
 
     /**
@@ -52,12 +53,13 @@ class FlexFormEnhancerHook
      * @return array Modified identifier
      */
     public function getDataStructureIdentifierPostProcess(
-        array $fieldTca,
+        array  $fieldTca,
         string $tableName,
         string $fieldName,
-        array $row,
-        array $identifier
-    ): array {
+        array  $row,
+        array  $identifier
+    ): array
+    {
         if ($tableName === 'tt_content' && $fieldName === 'pi_flexform' && $row['CType'] === 'ws_slider') {
 
             $tsSettings = $this->getTypoScriptSettings();
@@ -117,14 +119,13 @@ class FlexFormEnhancerHook
      */
     protected function getAdditionalFinisherSheets(string $renderer): array
     {
-        $file = GeneralUtility::getFileAbsFileName('EXT:ws_slider/Configuration/FlexForm/Renderer/'.ucfirst($renderer).'.xml');
+        $file = GeneralUtility::getFileAbsFileName('EXT:ws_slider/Configuration/FlexForm/Renderer/' . ucfirst($renderer) . '.xml');
         if (file_exists($file)) {
             $xml = file_get_contents($file);
             return GeneralUtility::xml2array($xml);
         }
         return [];
     }
-
 
 
     /**
@@ -163,7 +164,8 @@ class FlexFormEnhancerHook
         string $prototypeName,
         string $formIdentifier,
         string $finisherIdentifier
-    ): string {
+    ): string
+    {
         return md5(
             implode('', [
                 $persistenceIdentifier,
@@ -182,9 +184,10 @@ class FlexFormEnhancerHook
      */
     protected function translateFinisherDefinitionByIdentifier(
         string $finisherIdentifier,
-        array $finishersDefinition,
-        array $prototypeConfiguration
-    ): array {
+        array  $finishersDefinition,
+        array  $prototypeConfiguration
+    ): array
+    {
         if (isset($finishersDefinition[$finisherIdentifier]['FormEngine']['translationFile'])) {
             $translationFile = $finishersDefinition[$finisherIdentifier]['FormEngine']['translationFile'];
         } else {

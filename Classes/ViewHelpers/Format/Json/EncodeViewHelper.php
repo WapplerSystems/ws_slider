@@ -1,4 +1,5 @@
 <?php
+
 namespace WapplerSystems\WsSlider\ViewHelpers\Format\Json;
 
 /*
@@ -93,8 +94,8 @@ class EncodeViewHelper extends AbstractViewHelper
     public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext)
     {
         $value = $renderChildrenClosure();
-        $useTraversableKeys = (boolean) $arguments['useTraversableKeys'];
-        $preventRecursion = (boolean) $arguments['preventRecursion'];
+        $useTraversableKeys = (boolean)$arguments['useTraversableKeys'];
+        $preventRecursion = (boolean)$arguments['preventRecursion'];
         $recursionMarker = $arguments['recursionMarker'];
         $dateTimeFormat = $arguments['dateTimeFormat'];
         static::$encounteredClasses = [];
@@ -222,9 +223,10 @@ class EncodeViewHelper extends AbstractViewHelper
      */
     protected static function recursiveDomainObjectToArray(
         DomainObjectInterface $domainObject,
-        $preventRecursion,
-        $recursionMarker
-    ) {
+                              $preventRecursion,
+                              $recursionMarker
+    )
+    {
         $hash = spl_object_hash($domainObject);
         if (true === $preventRecursion && true === in_array($hash, static::$encounteredClasses)) {
             return $recursionMarker;

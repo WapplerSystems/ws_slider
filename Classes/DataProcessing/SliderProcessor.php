@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\DataProcessing;
 
@@ -51,14 +51,14 @@ class SliderProcessor implements DataProcessorInterface
 
         $rendererKey = strtolower($settings['renderer']);
 
-        if (isset($settings['renderer.'][$rendererKey.'.'])) {
-            $settings['parameters'] = $settings['renderer.'][$rendererKey.'.'];
+        if (isset($settings['renderer.'][$rendererKey . '.'])) {
+            $settings['parameters'] = $settings['renderer.'][$rendererKey . '.'];
             unset($settings['renderer.']);
         } else {
             $settings['parameters'] = [];
         }
 
-        $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj,$settings['parameters']);
+        $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
         $settings['parameters'] = GeneralUtility::removeDotsFromTS($settings['parameters']);
         $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
 
@@ -123,7 +123,7 @@ class SliderProcessor implements DataProcessorInterface
                 );
                 $configuration[$keyWithoutDot] = $value;
             } elseif (!isset($configuration[$keyWithoutDot]) && isset($configuration[$keyWithoutDot . '.'])) {
-                $configuration[$keyWithoutDot] = $this->resolveTypoScriptConfiguration($cObj,$value);
+                $configuration[$keyWithoutDot] = $this->resolveTypoScriptConfiguration($cObj, $value);
             }
             unset($configuration[$keyWithoutDot . '.']);
         }
