@@ -124,7 +124,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         // Initialization:
         $selectId = StringUtility::getUniqueId('tceforms-select-');
         $selectedIcon = '';
-        $size = (int)$config['size'];
+        $size = (int)($config['size'] ?? 0);
 
         // Style set on <select/>
         $options = '';
@@ -186,7 +186,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
                 continue;
             }
 
-            $optionGroup = is_array($selectItemGroup['header']);
+            $optionGroup = is_array($selectItemGroup['header'] ?? '');
             $options .= ($optionGroup ? '<optgroup label="' . htmlspecialchars($selectItemGroup['header']['title'], ENT_COMPAT, 'UTF-8', false) . '">' : '');
 
             if (is_array($selectItemGroup['items'])) {
