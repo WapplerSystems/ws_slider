@@ -46,6 +46,10 @@ call_user_func(
             'class' => \WapplerSystems\WsSlider\Backend\Form\Container\FlexFormElementContainer::class,
         ];
 
+
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['wssliderWsflexsliderImport']
+            = \WapplerSystems\WsSlider\Updates\WsFlexsliderMigration::class;
+
     },
     'ws_slider'
 );
