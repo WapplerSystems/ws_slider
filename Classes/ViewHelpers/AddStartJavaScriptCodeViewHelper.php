@@ -91,13 +91,20 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
         }
 
         $block = [];
+        if ($this->arguments['variableName'] !== null) {
+            $block[] = 'var ' . str_replace('-', '', $this->arguments['variableName']) . ';';
+        }
+
         if ($this->arguments['useJQuery']) {
             $block[] = 'jQuery(document).ready(function() {';
+            if ($this->arguments['variableName'] !== null) {
+                $block[] = str_replace('-', '', $this->arguments['variableName']) . ' = ';
+            }
             $block[] = 'jQuery("' . $this->arguments['selector'] . '").' . $this->arguments['functionName'] . '(' . json_encode($parameters) . ');';
             $block[] = '});';
         } else {
             if ($this->arguments['variableName'] !== null) {
-                $block[] = 'var $' . str_replace('-', '', $this->arguments['variableName']) . ' = ';
+                $block[] = str_replace('-', '', $this->arguments['variableName']) . ' = ';
             }
             $block[] = $this->arguments['functionName'] . '(';
             $block[] = json_encode($parameters);
