@@ -22,6 +22,9 @@ defined('TYPO3_MODE') || die();
 
 # TypoScript Settings
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/Bootstrap/',
+    'WS Slider Bootstrap Settings');
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/Owl/',
     'WS Slider Owl Settings');
 

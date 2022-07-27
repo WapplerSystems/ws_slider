@@ -1,0 +1,19 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers">
+
+    <f:section name="Default">
+
+        <div id="wsslider-{data.uid}" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <f:for each="{items}" as="item" iteration="iterator">
+                    <f:render partial="Item/Bootstrap" section="{sliderSettings.layout}"
+                              arguments="{item: item, settings: settings, iterator:iterator}"/>
+                </f:for>
+            </div>
+        </div>
+
+
+    </f:section>
+
+</div>

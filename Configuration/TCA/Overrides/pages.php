@@ -9,6 +9,11 @@
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'ws_slider',
+    'Configuration/TsConfig/Page/Renderer/Bootstrap.tsconfig',
+    'Bootstrap'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    'ws_slider',
     'Configuration/TsConfig/Page/Renderer/Flexslider.tsconfig',
     'Flexslider'
 );
