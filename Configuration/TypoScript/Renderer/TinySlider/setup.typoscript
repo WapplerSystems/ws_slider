@@ -1,102 +1,103 @@
-
-
-
 plugin.tx_wsslider.settings.renderer.tinyslider {
 
 
-	mode = {$plugin.tx_wsslider.settings.tinyslider.mode}
-	axis = {$plugin.tx_wsslider.settings.tinyslider.axis}
-	items = {$plugin.tx_wsslider.settings.tinyslider.items}
-	gutter = {$plugin.tx_wsslider.settings.tinyslider.gutter}
-	edgePadding = {$plugin.tx_wsslider.settings.tinyslider.edgePadding}
-	fixedWidth = {$plugin.tx_wsslider.settings.tinyslider.fixedWidth}
-	autoWidth = {$plugin.tx_wsslider.settings.tinyslider.autoWidth}
-	viewportMax = {$plugin.tx_wsslider.settings.tinyslider.viewportMax}
-	slideBy = {$plugin.tx_wsslider.settings.tinyslider.slideBy}
-	center = {$plugin.tx_wsslider.settings.tinyslider.center}
-	controls = {$plugin.tx_wsslider.settings.tinyslider.controls}
-	controlsPosition = {$plugin.tx_wsslider.settings.tinyslider.controlsPosition}
+  mode = {$plugin.tx_wsslider.settings.tinyslider.mode}
+  axis = {$plugin.tx_wsslider.settings.tinyslider.axis}
+  items = {$plugin.tx_wsslider.settings.tinyslider.items}
+  gutter = {$plugin.tx_wsslider.settings.tinyslider.gutter}
+  edgePadding = {$plugin.tx_wsslider.settings.tinyslider.edgePadding}
+  fixedWidth = {$plugin.tx_wsslider.settings.tinyslider.fixedWidth}
+  autoWidth = {$plugin.tx_wsslider.settings.tinyslider.autoWidth}
+  viewportMax = {$plugin.tx_wsslider.settings.tinyslider.viewportMax}
+  slideBy = {$plugin.tx_wsslider.settings.tinyslider.slideBy}
+  center = {$plugin.tx_wsslider.settings.tinyslider.center}
+  controls = {$plugin.tx_wsslider.settings.tinyslider.controls}
+  controlsPosition = {$plugin.tx_wsslider.settings.tinyslider.controlsPosition}
 
-	controlsText {
-    		0 = TEXT
-    		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
-    		1 = TEXT
-    		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+  controlsText {
+    0 = TEXT
+    0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+    1 = TEXT
+    1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+  }
+
+  controlsContainer = {$plugin.tx_wsslider.settings.tinyslider.controlsContainer}
+  prevButton = {$plugin.tx_wsslider.settings.tinyslider.prevButton}
+  nextButton = {$plugin.tx_wsslider.settings.tinyslider.nextButton}
+
+  nav = {$plugin.tx_wsslider.settings.tinyslider.nav}
+  navPosition = {$plugin.tx_wsslider.settings.tinyslider.navPosition}
+  navContainer = {$plugin.tx_wsslider.settings.tinyslider.navContainer}
+  navAsThumbnails = {$plugin.tx_wsslider.settings.tinyslider.navAsThumbnails}
+  arrowKeys = {$plugin.tx_wsslider.settings.tinyslider.arrowKeys}
+  speed = {$plugin.tx_wsslider.settings.tinyslider.speed}
+  autoplay = {$plugin.tx_wsslider.settings.tinyslider.autoplay}
+  autoplayPosition = {$plugin.tx_wsslider.settings.tinyslider.autoplayPosition}
+  autoplayTimeout = {$plugin.tx_wsslider.settings.tinyslider.autoplayTimeout}
+  autoplayDirection = {$plugin.tx_wsslider.settings.tinyslider.autoplayDirection}
+  autoplayHoverPause = {$plugin.tx_wsslider.settings.tinyslider.autoplayHoverPause}
+  autoplayButtonOutput = {$plugin.tx_wsslider.settings.tinyslider.autoplayButtonOutput}
+  autoplayResetOnVisibility = {$plugin.tx_wsslider.settings.tinyslider.autoplayResetOnVisibility}
+  animateIn = {$plugin.tx_wsslider.settings.tinyslider.animateIn}
+  animateOut = {$plugin.tx_wsslider.settings.tinyslider.animateOut}
+  animateNormal = {$plugin.tx_wsslider.settings.tinyslider.animateNormal}
+  animateDelay = {$plugin.tx_wsslider.settings.tinyslider.animateDelay}
+  loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
+  rewind = {$plugin.tx_wsslider.settings.tinyslider.rewind}
+  autoHeight = {$plugin.tx_wsslider.settings.tinyslider.autoHeight}
+  lazyload = {$plugin.tx_wsslider.settings.tinyslider.lazyload}
+  lazyloadSelector = {$plugin.tx_wsslider.settings.tinyslider.lazyloadSelector}
+  touch = {$plugin.tx_wsslider.settings.tinyslider.touch}
+  mouseDrag = {$plugin.tx_wsslider.settings.tinyslider.mouseDrag}
+  swipeAngle = {$plugin.tx_wsslider.settings.tinyslider.swipeAngle}
+  preventActionWhenRunning = {$plugin.tx_wsslider.settings.tinyslider.preventActionWhenRunning}
+  preventScrollOnTouch = {$plugin.tx_wsslider.settings.tinyslider.preventScrollOnTouch}
+  nested = {$plugin.tx_wsslider.settings.tinyslider.nested}
+  freezable = {$plugin.tx_wsslider.settings.tinyslider.freezable}
+  disable = {$plugin.tx_wsslider.settings.tinyslider.disable}
+  startIndex = {$plugin.tx_wsslider.settings.tinyslider.startIndex}
+  onInit = {$plugin.tx_wsslider.settings.tinyslider.onInit}
+  useLocalStorage = {$plugin.tx_wsslider.settings.tinyslider.useLocalStorage}
+  nonce = {$plugin.tx_wsslider.settings.tinyslider.nonce}
+
+
+  responsive {
+    0 {
+      items = 1
     }
 
-    controlsContainer = {$plugin.tx_wsslider.settings.tinyslider.controlsContainer}
-    prevButton = {$plugin.tx_wsslider.settings.tinyslider.prevButton}
-    nextButton = {$plugin.tx_wsslider.settings.tinyslider.nextButton}
+    576 {
+      items = 2
+    }
 
-	nav = {$plugin.tx_wsslider.settings.tinyslider.nav}
-	navPosition = {$plugin.tx_wsslider.settings.tinyslider.navPosition}
-	navContainer = {$plugin.tx_wsslider.settings.tinyslider.navContainer}
-	navAsThumbnails = {$plugin.tx_wsslider.settings.tinyslider.navAsThumbnails}
-	arrowKeys = {$plugin.tx_wsslider.settings.tinyslider.arrowKeys}
-	speed = {$plugin.tx_wsslider.settings.tinyslider.speed}
-	autoplay = {$plugin.tx_wsslider.settings.tinyslider.autoplay}
-	autoplayPosition = {$plugin.tx_wsslider.settings.tinyslider.autoplayPosition}
-	autoplayTimeout = {$plugin.tx_wsslider.settings.tinyslider.autoplayTimeout}
-	autoplayDirection = {$plugin.tx_wsslider.settings.tinyslider.autoplayDirection}
-	autoplayHoverPause = {$plugin.tx_wsslider.settings.tinyslider.autoplayHoverPause}
-	autoplayButtonOutput = {$plugin.tx_wsslider.settings.tinyslider.autoplayButtonOutput}
-	autoplayResetOnVisibility = {$plugin.tx_wsslider.settings.tinyslider.autoplayResetOnVisibility}
-	animateIn = {$plugin.tx_wsslider.settings.tinyslider.animateIn}
-	animateOut = {$plugin.tx_wsslider.settings.tinyslider.animateOut}
-	animateNormal = {$plugin.tx_wsslider.settings.tinyslider.animateNormal}
-	animateDelay = {$plugin.tx_wsslider.settings.tinyslider.animateDelay}
-	loop = {$plugin.tx_wsslider.settings.tinyslider.loop}
-	rewind = {$plugin.tx_wsslider.settings.tinyslider.rewind}
-	autoHeight = {$plugin.tx_wsslider.settings.tinyslider.autoHeight}
-	lazyload = {$plugin.tx_wsslider.settings.tinyslider.lazyload}
-	lazyloadSelector = {$plugin.tx_wsslider.settings.tinyslider.lazyloadSelector}
-	touch = {$plugin.tx_wsslider.settings.tinyslider.touch}
-	mouseDrag = {$plugin.tx_wsslider.settings.tinyslider.mouseDrag}
-	swipeAngle = {$plugin.tx_wsslider.settings.tinyslider.swipeAngle}
-	preventActionWhenRunning = {$plugin.tx_wsslider.settings.tinyslider.preventActionWhenRunning}
-	preventScrollOnTouch = {$plugin.tx_wsslider.settings.tinyslider.preventScrollOnTouch}
-	nested = {$plugin.tx_wsslider.settings.tinyslider.nested}
-	freezable = {$plugin.tx_wsslider.settings.tinyslider.freezable}
-	disable = {$plugin.tx_wsslider.settings.tinyslider.disable}
-	startIndex = {$plugin.tx_wsslider.settings.tinyslider.startIndex}
-	onInit = {$plugin.tx_wsslider.settings.tinyslider.onInit}
-	useLocalStorage = {$plugin.tx_wsslider.settings.tinyslider.useLocalStorage}
-	nonce = {$plugin.tx_wsslider.settings.tinyslider.nonce}
+    768 {
+      items = 4
+    }
+
+    992 {
+      items = 4
+    }
+
+    1200 {
+      items = 4
+    }
+
+  }
 
 
-	responsive {
-		0 {
-			items = 1
-		}
-		576 {
-			items = 2
-		}
-		768 {
-			items = 4
-		}
-		992 {
-			items = 4
-		}
-		1200 {
-			items = 4
-		}
+  controlsText {
+    0 = TEXT
+    0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+    1 = TEXT
+    1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+  }
 
-	}
-
-
-	controlsText {
-		0 = TEXT
-		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
-		1 = TEXT
-		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
-	}
-
-	autoplayText {
-		0 = TEXT
-		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.start
-		1 = TEXT
-		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.stop
-	}
+  autoplayText {
+    0 = TEXT
+    0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.start
+    1 = TEXT
+    1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.stop
+  }
 
 }
 

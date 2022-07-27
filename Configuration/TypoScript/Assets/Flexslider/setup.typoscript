@@ -1,9 +1,8 @@
-
 page.includeJSFooter {
-	flexslider = EXT:ws_slider/Resources/Public/JavaScript/Flexslider/jquery.flexslider.min.js
+  flexslider = EXT:ws_slider/Resources/Public/JavaScript/Flexslider/jquery.flexslider.min.js
 }
 
 page.includeCSS {
-	flexslider = EXT:ws_slider/Resources/Public/CSS/Flexslider/flexslider.css
-	flexslider_mods = EXT:ws_slider/Resources/Public/CSS/Flexslider/mods.css
+  flexslider = EXT:ws_slider/Resources/Public/CSS/Flexslider/flexslider.css
+  flexslider_mods = EXT:ws_slider/Resources/Public/CSS/Flexslider/mods.css
 }

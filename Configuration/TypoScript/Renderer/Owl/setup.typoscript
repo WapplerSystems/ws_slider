@@ -1,80 +1,81 @@
-
-
 plugin.tx_wsslider.settings.renderer.owl {
 
 
-	items = {$plugin.tx_wsslider.settings.owl.items}
-	animateIn = {$plugin.tx_wsslider.settings.owl.animateIn}
-    animateOut = {$plugin.tx_wsslider.settings.owl.animateOut}
-	margin = {$plugin.tx_wsslider.settings.owl.margin}
-	loop = {$plugin.tx_wsslider.settings.owl.loop}
-	center = {$plugin.tx_wsslider.settings.owl.center}
-	dragEndSpeed = {$plugin.tx_wsslider.settings.owl.dragEndSpeed}
-	mouseDrag = {$plugin.tx_wsslider.settings.owl.mouseDrag}
-	touchDrag = {$plugin.tx_wsslider.settings.owl.touchDrag}
-	pullDrag = {$plugin.tx_wsslider.settings.owl.pullDrag}
-	freeDrag = {$plugin.tx_wsslider.settings.owl.freeDrag}
-	stagePadding = {$plugin.tx_wsslider.settings.owl.stagePadding}
-	merge = {$plugin.tx_wsslider.settings.owl.merge}
-	mergeFit = {$plugin.tx_wsslider.settings.owl.mergeFit}
-	autoWidth = {$plugin.tx_wsslider.settings.owl.autoWidth}
-	startPosition = {$plugin.tx_wsslider.settings.owl.startPosition}
-	URLhashListener = {$plugin.tx_wsslider.settings.owl.URLhashListener}
-	nav = {$plugin.tx_wsslider.settings.owl.nav}
-	navSpeed = {$plugin.tx_wsslider.settings.owl.navSpeed}
-	rewind = {$plugin.tx_wsslider.settings.owl.rewind}
-	navElement = {$plugin.tx_wsslider.settings.owl.navElement}
-	slideBy = {$plugin.tx_wsslider.settings.owl.slideBy}
-	slideTransition = {$plugin.tx_wsslider.settings.owl.slideTransition}
-	dots = {$plugin.tx_wsslider.settings.owl.dots}
-	dotsEach = {$plugin.tx_wsslider.settings.owl.dotsEach}
-	dotsData = {$plugin.tx_wsslider.settings.owl.dotsData}
-	dotsSpeed = {$plugin.tx_wsslider.settings.owl.dotsSpeed}
-	lazyLoad = {$plugin.tx_wsslider.settings.owl.lazyLoad}
-	lazyLoadEager = {$plugin.tx_wsslider.settings.owl.lazyLoadEager}
-	autoplay = {$plugin.tx_wsslider.settings.owl.autoplay}
-	autoplayTimeout = {$plugin.tx_wsslider.settings.owl.autoplayTimeout}
-	autoplayHoverPause = {$plugin.tx_wsslider.settings.owl.autoplayHoverPause}
-	autoplaySpeed = {$plugin.tx_wsslider.settings.owl.autoplaySpeed}
-	responsiveRefreshRate = {$plugin.tx_wsslider.settings.owl.responsiveRefreshRate}
-	smartSpeed = {$plugin.tx_wsslider.settings.owl.smartSpeed}
-	video = {$plugin.tx_wsslider.settings.owl.video}
-	videoHeight = {$plugin.tx_wsslider.settings.owl.videoHeight}
-	videoWidth = {$plugin.tx_wsslider.settings.owl.videoWidth}
-	fallbackEasing = {$plugin.tx_wsslider.settings.owl.fallbackEasing}
-	nestedItemSelector = {$plugin.tx_wsslider.settings.owl.nestedItemSelector}
-	itemElement = {$plugin.tx_wsslider.settings.owl.itemElement}
-	stageElement = {$plugin.tx_wsslider.settings.owl.stageElement}
-	navContainer = {$plugin.tx_wsslider.settings.owl.navContainer}
-	dotsContainer = {$plugin.tx_wsslider.settings.owl.dotsContainer}
-	checkVisible = {$plugin.tx_wsslider.settings.owl.checkVisible}
+  items = {$plugin.tx_wsslider.settings.owl.items}
+  animateIn = {$plugin.tx_wsslider.settings.owl.animateIn}
+  animateOut = {$plugin.tx_wsslider.settings.owl.animateOut}
+  margin = {$plugin.tx_wsslider.settings.owl.margin}
+  loop = {$plugin.tx_wsslider.settings.owl.loop}
+  center = {$plugin.tx_wsslider.settings.owl.center}
+  dragEndSpeed = {$plugin.tx_wsslider.settings.owl.dragEndSpeed}
+  mouseDrag = {$plugin.tx_wsslider.settings.owl.mouseDrag}
+  touchDrag = {$plugin.tx_wsslider.settings.owl.touchDrag}
+  pullDrag = {$plugin.tx_wsslider.settings.owl.pullDrag}
+  freeDrag = {$plugin.tx_wsslider.settings.owl.freeDrag}
+  stagePadding = {$plugin.tx_wsslider.settings.owl.stagePadding}
+  merge = {$plugin.tx_wsslider.settings.owl.merge}
+  mergeFit = {$plugin.tx_wsslider.settings.owl.mergeFit}
+  autoWidth = {$plugin.tx_wsslider.settings.owl.autoWidth}
+  startPosition = {$plugin.tx_wsslider.settings.owl.startPosition}
+  URLhashListener = {$plugin.tx_wsslider.settings.owl.URLhashListener}
+  nav = {$plugin.tx_wsslider.settings.owl.nav}
+  navSpeed = {$plugin.tx_wsslider.settings.owl.navSpeed}
+  rewind = {$plugin.tx_wsslider.settings.owl.rewind}
+  navElement = {$plugin.tx_wsslider.settings.owl.navElement}
+  slideBy = {$plugin.tx_wsslider.settings.owl.slideBy}
+  slideTransition = {$plugin.tx_wsslider.settings.owl.slideTransition}
+  dots = {$plugin.tx_wsslider.settings.owl.dots}
+  dotsEach = {$plugin.tx_wsslider.settings.owl.dotsEach}
+  dotsData = {$plugin.tx_wsslider.settings.owl.dotsData}
+  dotsSpeed = {$plugin.tx_wsslider.settings.owl.dotsSpeed}
+  lazyLoad = {$plugin.tx_wsslider.settings.owl.lazyLoad}
+  lazyLoadEager = {$plugin.tx_wsslider.settings.owl.lazyLoadEager}
+  autoplay = {$plugin.tx_wsslider.settings.owl.autoplay}
+  autoplayTimeout = {$plugin.tx_wsslider.settings.owl.autoplayTimeout}
+  autoplayHoverPause = {$plugin.tx_wsslider.settings.owl.autoplayHoverPause}
+  autoplaySpeed = {$plugin.tx_wsslider.settings.owl.autoplaySpeed}
+  responsiveRefreshRate = {$plugin.tx_wsslider.settings.owl.responsiveRefreshRate}
+  smartSpeed = {$plugin.tx_wsslider.settings.owl.smartSpeed}
+  video = {$plugin.tx_wsslider.settings.owl.video}
+  videoHeight = {$plugin.tx_wsslider.settings.owl.videoHeight}
+  videoWidth = {$plugin.tx_wsslider.settings.owl.videoWidth}
+  fallbackEasing = {$plugin.tx_wsslider.settings.owl.fallbackEasing}
+  nestedItemSelector = {$plugin.tx_wsslider.settings.owl.nestedItemSelector}
+  itemElement = {$plugin.tx_wsslider.settings.owl.itemElement}
+  stageElement = {$plugin.tx_wsslider.settings.owl.stageElement}
+  navContainer = {$plugin.tx_wsslider.settings.owl.navContainer}
+  dotsContainer = {$plugin.tx_wsslider.settings.owl.dotsContainer}
+  checkVisible = {$plugin.tx_wsslider.settings.owl.checkVisible}
 
-	navText {
-		0 = TEXT
-		0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
-		1 = TEXT
-		1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
-	}
+  navText {
+    0 = TEXT
+    0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+    1 = TEXT
+    1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+  }
 
-	responsive {
-		0 {
-			items = {$plugin.tx_wsslider.settings.owl.responsive.0.items}
-		}
-		576 {
-			items = {$plugin.tx_wsslider.settings.owl.responsive.576.items}
-		}
-		768 {
-			items = {$plugin.tx_wsslider.settings.owl.responsive.768.items}
-		}
-		992 {
-			items = {$plugin.tx_wsslider.settings.owl.responsive.992.items}
-		}
-		1200 {
-			items = {$plugin.tx_wsslider.settings.owl.responsive.1200.items}
-		}
+  responsive {
+    0 {
+      items = {$plugin.tx_wsslider.settings.owl.responsive.0.items}
+    }
 
-	}
+    576 {
+      items = {$plugin.tx_wsslider.settings.owl.responsive.576.items}
+    }
 
+    768 {
+      items = {$plugin.tx_wsslider.settings.owl.responsive.768.items}
+    }
+
+    992 {
+      items = {$plugin.tx_wsslider.settings.owl.responsive.992.items}
+    }
+
+    1200 {
+      items = {$plugin.tx_wsslider.settings.owl.responsive.1200.items}
+    }
+
+  }
 
 
 }

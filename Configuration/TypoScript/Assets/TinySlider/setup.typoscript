@@ -1,9 +1,7 @@
-
-
 page.includeJSFooter {
-	tinyslider = EXT:ws_slider/Resources/Public/JavaScript/TinySlider/tiny-slider.min.js
+  tinyslider = EXT:ws_slider/Resources/Public/JavaScript/TinySlider/tiny-slider.min.js
 }
 
 page.includeCSS {
-	tinyslider = EXT:ws_slider/Resources/Public/CSS/TinySlider/tiny-slider.css
+  tinyslider = EXT:ws_slider/Resources/Public/CSS/TinySlider/tiny-slider.css
 }

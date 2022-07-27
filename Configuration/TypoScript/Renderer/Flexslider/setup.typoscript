@@ -1,54 +1,52 @@
-
-
 plugin.tx_wsslider.settings.renderer.flexslider {
 
-	#General Flexslide Options
-	selector = {$plugin.tx_wsslider.settings.flexslider.selector}
-	animation = {$plugin.tx_wsslider.settings.flexslider.animation}
-	easing = {$plugin.tx_wsslider.settings.flexslider.easing}
-	direction = {$plugin.tx_wsslider.settings.flexslider.direction}
-	reverse = {$plugin.tx_wsslider.settings.flexslider.reverse}
-	animationLoop = {$plugin.tx_wsslider.settings.flexslider.animationLoop}
-	smoothHeight = {$plugin.tx_wsslider.settings.flexslider.smoothHeight}
-	startAt = {$plugin.tx_wsslider.settings.flexslider.startAt}
-	slideshow = {$plugin.tx_wsslider.settings.flexslider.slideshow}
-	slideshowSpeed = {$plugin.tx_wsslider.settings.flexslider.slideshowSpeed}
-	animationSpeed = {$plugin.tx_wsslider.settings.flexslider.animationSpeed}
-	initDelay = {$plugin.tx_wsslider.settings.flexslider.initDelay}
-	randomize = {$plugin.tx_wsslider.settings.flexslider.randomize}
-	fadeFirstSlide = {$plugin.tx_wsslider.settings.flexslider.fadeFirstSlide}
+  #General Flexslider Options
+  selector = {$plugin.tx_wsslider.settings.flexslider.selector}
+  animation = {$plugin.tx_wsslider.settings.flexslider.animation}
+  easing = {$plugin.tx_wsslider.settings.flexslider.easing}
+  direction = {$plugin.tx_wsslider.settings.flexslider.direction}
+  reverse = {$plugin.tx_wsslider.settings.flexslider.reverse}
+  animationLoop = {$plugin.tx_wsslider.settings.flexslider.animationLoop}
+  smoothHeight = {$plugin.tx_wsslider.settings.flexslider.smoothHeight}
+  startAt = {$plugin.tx_wsslider.settings.flexslider.startAt}
+  slideshow = {$plugin.tx_wsslider.settings.flexslider.slideshow}
+  slideshowSpeed = {$plugin.tx_wsslider.settings.flexslider.slideshowSpeed}
+  animationSpeed = {$plugin.tx_wsslider.settings.flexslider.animationSpeed}
+  initDelay = {$plugin.tx_wsslider.settings.flexslider.initDelay}
+  randomize = {$plugin.tx_wsslider.settings.flexslider.randomize}
+  fadeFirstSlide = {$plugin.tx_wsslider.settings.flexslider.fadeFirstSlide}
 
-	#Usability Features
-	pauseOnAction = {$plugin.tx_wsslider.settings.flexslider.pauseOnAction}
-	pauseOnHover = {$plugin.tx_wsslider.settings.flexslider.pauseOnHover}
-	pauseInvisible = {$plugin.tx_wsslider.settings.flexslider.pauseInvisible}
-	useCSS = {$plugin.tx_wsslider.settings.flexslider.useCSS}
-	touch = {$plugin.tx_wsslider.settings.flexslider.touch}
-	video = {$plugin.tx_wsslider.settings.flexslider.video}
+  #Usability Features
+  pauseOnAction = {$plugin.tx_wsslider.settings.flexslider.pauseOnAction}
+  pauseOnHover = {$plugin.tx_wsslider.settings.flexslider.pauseOnHover}
+  pauseInvisible = {$plugin.tx_wsslider.settings.flexslider.pauseInvisible}
+  useCSS = {$plugin.tx_wsslider.settings.flexslider.useCSS}
+  touch = {$plugin.tx_wsslider.settings.flexslider.touch}
+  video = {$plugin.tx_wsslider.settings.flexslider.video}
 
-	#Primary Controls
-	controlNav = {$plugin.tx_wsslider.settings.flexslider.controlNav}
-	directionNav = {$plugin.tx_wsslider.settings.flexslider.directionNav}
+  #Primary Controls
+  controlNav = {$plugin.tx_wsslider.settings.flexslider.controlNav}
+  directionNav = {$plugin.tx_wsslider.settings.flexslider.directionNav}
 
-	#Secondary Navigation
-	keyboard = {$plugin.tx_wsslider.settings.flexslider.keyboard}
-	multipleKeyboard = {$plugin.tx_wsslider.settings.flexslider.multipleKeyboard}
-	mousewheel = {$plugin.tx_wsslider.settings.flexslider.mousewheel}
-	pausePlay = {$plugin.tx_wsslider.settings.flexslider.pausePlay}
+  #Secondary Navigation
+  keyboard = {$plugin.tx_wsslider.settings.flexslider.keyboard}
+  multipleKeyboard = {$plugin.tx_wsslider.settings.flexslider.multipleKeyboard}
+  mousewheel = {$plugin.tx_wsslider.settings.flexslider.mousewheel}
+  pausePlay = {$plugin.tx_wsslider.settings.flexslider.pausePlay}
 
-	#Special Properties
-	controlsContainer = {$plugin.tx_wsslider.settings.flexslider.controlsContainer}
-	manualControls = {$plugin.tx_wsslider.settings.flexslider.manualControls}
-	customDirectionNav = {$plugin.tx_wsslider.settings.flexslider.customDirectionNav}
-	sync = {$plugin.tx_wsslider.settings.flexslider.sync}
-	asNavFor = {$plugin.tx_wsslider.settings.flexslider.asNavFor}
+  #Special Properties
+  controlsContainer = {$plugin.tx_wsslider.settings.flexslider.controlsContainer}
+  manualControls = {$plugin.tx_wsslider.settings.flexslider.manualControls}
+  customDirectionNav = {$plugin.tx_wsslider.settings.flexslider.customDirectionNav}
+  sync = {$plugin.tx_wsslider.settings.flexslider.sync}
+  asNavFor = {$plugin.tx_wsslider.settings.flexslider.asNavFor}
 
-	# Carousel Options
-	itemWidth = {$plugin.tx_wsslider.settings.flexslider.itemWidth}
-	itemMargin = {$plugin.tx_wsslider.settings.flexslider.itemMargin}
-	minItems = {$plugin.tx_wsslider.settings.flexslider.minItems}
-	maxItems = {$plugin.tx_wsslider.settings.flexslider.maxItems}
-	move = {$plugin.tx_wsslider.settings.flexslider.move}
+  # Carousel Options
+  itemWidth = {$plugin.tx_wsslider.settings.flexslider.itemWidth}
+  itemMargin = {$plugin.tx_wsslider.settings.flexslider.itemMargin}
+  minItems = {$plugin.tx_wsslider.settings.flexslider.minItems}
+  maxItems = {$plugin.tx_wsslider.settings.flexslider.maxItems}
+  move = {$plugin.tx_wsslider.settings.flexslider.move}
 }
 
 tt_content.ws_slider.settings.slider.renderer.flexslider < plugin.tx_wsslider.settings.renderer.flexslider

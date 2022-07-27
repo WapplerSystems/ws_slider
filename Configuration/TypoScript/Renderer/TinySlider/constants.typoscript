@@ -1,159 +1,158 @@
-
 # customcategory=plugin.tx_wsslider.tinyslider=WS Slider - Tiny Slider
 
 plugin.tx_wsslider.settings.tinyslider {
 
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[carousel,gallery]; label=Mode:Controls animation behaviour
-    mode = carousel
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[carousel,gallery]; label=Mode:Controls animation behaviour
+  mode = carousel
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[horizontal,vertical]; label=Axis:The axis of the slider
-    axis = horizontal
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[horizontal,vertical]; label=Axis:The axis of the slider
+  axis = horizontal
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=Items:The number of items you want to see on the screen.
-    items = 1
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=Items:The number of items you want to see on the screen.
+  items = 1
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=Gutter:Space between slides (in "px")
-    gutter = 0
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=Gutter:Space between slides (in "px")
+  gutter = 0
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=edgePadding:
-    edgePadding = 0
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=edgePadding:
+  edgePadding = 0
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=fixedWidth: 0 equals false, otherwise Controls the width attribute of the slides.
-    fixedWidth = false
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=fixedWidth: 0 equals false, otherwise Controls the width attribute of the slides.
+  fixedWidth = false
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=autoWidth:
-    autoWidth = false
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=autoWidth:
+  autoWidth = false
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=viewportMax:
-    viewportMax = false
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=viewportMax:
+  viewportMax = false
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=slideBy:
-    slideBy = 1
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int; label=slideBy:
+  slideBy = 1
 
-    # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=Center:
-    center = false
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=options[true,false]; label=Center:
+  center = false
 
-    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[true,false]; label=Controls:
-    controls = true
+  # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[true,false]; label=Controls:
+  controls = true
 
-    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[top,bottom]; label=Controls position
-    controlsPosition = top
+  # cat=plugin.tx_wsslider.tinyslider/controls/a; type=options[top,bottom]; label=Controls position
+  controlsPosition = top
 
-    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Container element/selector around the control buttons
-    controlsContainer = false
+  # cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Container element/selector around the control buttons
+  controlsContainer = false
 
-    # cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Customized prev button
-    prevButton = false
+  # cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Customized prev button
+  prevButton = false
 
-    #cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Customized next button
-    nextButton = false
+  #cat=plugin.tx_wsslider.tinyslider/controls/a; type=string; label=Customized next button
+  nextButton = false
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Navigation:
-    nav = true
+  # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Navigation:
+  nav = true
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=options[top,bottom]; label=Navigation position
-    navPosition = top
+  # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=options[top,bottom]; label=Navigation position
+  navPosition = top
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=string; label=Nav Components Container
-    navContainer = false
+  # cat=plugin.tx_wsslider.tinyslider/navigation/b; type=string; label=Nav Components Container
+  navContainer = false
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/c; type=options[true,false]; label=Navigation as thumbnails
-    navAsThumbnails = false
+  # cat=plugin.tx_wsslider.tinyslider/navigation/c; type=options[true,false]; label=Navigation as thumbnails
+  navAsThumbnails = false
 
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Arrow keys
-    arrowKeys = false
-
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Speed of slide animation
-    speed = 300
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay
-    autoplay = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[top,bottom]; label=Autoplay Position
-    autoplayPosition = top
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Autoplay Timeout
-    autoplayTimeout = 5000
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[forward,backward]; label=Autoplay Direction
-    autoplayDirection = forward
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay Hover Pause
-    autoplayHoverPause = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay Button Output
-    autoplayButtonOutput = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay pause when page is invisible
-    autoplayResetOnVisibility = true
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Intro Animation
-    animateIn = tns-fadeIn
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Outro Animation
-    animateOut = tns-fadeOut
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Animation Delay
-    animateDelay = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Loop
-    loop = true
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Rewind
-    rewind = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Auto Height
-    autoHeight = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Lazy Load
-    lazyload = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=CSS selector for lazyload images
-    lazyloadSelector = .tns-lazy-img
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Touch support
-    touch = true
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Mouse Drag
-    mouseDrag = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Angle in which swipe will be triggered
-    swipeAngle = 15
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Prevent next transition while slider is transforming
-    preventActionWhenRunning = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[force,auto,false]; label=Prevent page from scrolling on touch
-    preventScrollOnTouch = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[inner,outer,false]; label=Nested
-    nested = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Freezable
-    freezable = true
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Disable
-    disable = false
-
-    # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Start Index
-    startIndex = 0
-
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Callback to be run on initialization
-    onInit = false
-
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Use Local Storage
-    useLocalStorage = true
-
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Optional Nonce attribute
-    nonce = false
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Arrow keys
+  arrowKeys = false
 
 
-    useLocalStorage = true
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Speed of slide animation
+  speed = 300
 
-    # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Name of default animation class
-    animateNormal = tns-normal
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay
+  autoplay = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[top,bottom]; label=Autoplay Position
+  autoplayPosition = top
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Autoplay Timeout
+  autoplayTimeout = 5000
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[forward,backward]; label=Autoplay Direction
+  autoplayDirection = forward
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay Hover Pause
+  autoplayHoverPause = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay Button Output
+  autoplayButtonOutput = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Autoplay pause when page is invisible
+  autoplayResetOnVisibility = true
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Intro Animation
+  animateIn = tns-fadeIn
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=Outro Animation
+  animateOut = tns-fadeOut
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Animation Delay
+  animateDelay = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Loop
+  loop = true
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Rewind
+  rewind = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Auto Height
+  autoHeight = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Lazy Load
+  lazyload = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=string; label=CSS selector for lazyload images
+  lazyloadSelector = .tns-lazy-img
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Touch support
+  touch = true
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Mouse Drag
+  mouseDrag = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Angle in which swipe will be triggered
+  swipeAngle = 15
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Prevent next transition while slider is transforming
+  preventActionWhenRunning = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[force,auto,false]; label=Prevent page from scrolling on touch
+  preventScrollOnTouch = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[inner,outer,false]; label=Nested
+  nested = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Freezable
+  freezable = true
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=options[true,false]; label=Disable
+  disable = false
+
+  # cat=plugin.tx_wsslider.tinyslider/other/c; type=int+; label=Start Index
+  startIndex = 0
+
+  # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Callback to be run on initialization
+  onInit = false
+
+  # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=options[true,false]; label=Use Local Storage
+  useLocalStorage = true
+
+  # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Optional Nonce attribute
+  nonce = false
+
+
+  useLocalStorage = true
+
+  # cat=plugin.tx_wsslider.tinyslider/navigation/a; type=string; label=Name of default animation class
+  animateNormal = tns-normal
 
 
 }
