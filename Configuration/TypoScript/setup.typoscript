@@ -9,7 +9,7 @@ plugin.tx_wsslider {
 
 [{$plugin.tx_wsslider.settings.loadJqueryCore} == 1]
     page.includeJSFooterlibs {
-        jqueryCore = EXT:ws_slider/Resources/Public/JavaScript/jquery-3.5.0.min.js
+        jqueryCore = EXT:ws_slider/Resources/Public/JavaScript/jquery-3.6.0.min.js
         jqueryCore.forceOnTop = 1
     }
 [global]
