@@ -13,6 +13,26 @@
             <trans-unit id="settings.items" xml:space="preserve">
                 <source>Items</source>
             </trans-unit>
+
+      <trans-unit id="settings.responsiveItemCount0">
+        <source>Items below 576px display width</source>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount576">
+        <source>Items above 576px display width</source>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount768">
+        <source>Items above 768px display width</source>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount992">
+        <source>Items above 992px display width</source>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1200">
+        <source>Items above 1200px display width</source>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1400">
+        <source>Items above 1400px display width</source>
+      </trans-unit>
+
             <trans-unit id="settings.gutter" xml:space="preserve">
                 <source>Gutter</source>
             </trans-unit>

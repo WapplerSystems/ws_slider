@@ -26,6 +26,9 @@
             <trans-unit id="settings.responsiveItemCount1200">
                 <source>Items above 1200px display width</source>
             </trans-unit>
+            <trans-unit id="settings.responsiveItemCount1400">
+                <source>Items above 1400px display width</source>
+            </trans-unit>
 			<trans-unit id="settings.margin">
 				<source>Margin</source>
 			</trans-unit>

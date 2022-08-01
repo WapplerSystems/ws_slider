@@ -27,6 +27,10 @@
         <source>Items above 1200px display width</source>
         <target state="final">Elemente oberhalb 1200px Displaybreite</target>
       </trans-unit>
+      <trans-unit id="owl.settings.js.responsive.1400.items.description">
+        <source>Items above 1400px display width</source>
+        <target state="final">Elemente oberhalb 1400px Displaybreite</target>
+      </trans-unit>
       <trans-unit id="owl.settings.js.margin.description" approved="yes">
         <source>margin-right(px) on item.</source>
         <target state="final">margin-right(px) von Element.</target>

@@ -20,6 +20,9 @@ plugin.tx_wsslider.settings.owl {
   # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see above 1200px display width.
   responsive.1200.items = 3
 
+  # cat=plugin.tx_wsslider.owl/owl/a; type=int+; label=The number of items you want to see above 1400px display width.
+  responsive.1400.items = 3
+
   # cat=plugin.tx_wsslider.owl/owl/b; type=int+; label=margin-right(px) on item.
   margin = 0
 

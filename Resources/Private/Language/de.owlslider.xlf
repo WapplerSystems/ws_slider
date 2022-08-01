@@ -32,6 +32,10 @@
         <source>Items above 1200px display width</source>
         <target state="final">Elemente oberhalb 1200px Displaybreite</target>
       </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1400">
+        <source>Items above 1400px display width</source>
+        <target state="final">Elemente oberhalb 1400px Displaybreite</target>
+      </trans-unit>
       <trans-unit id="settings.margin" approved="yes">
         <source>Margin</source>
         <target state="final">Margin</target>

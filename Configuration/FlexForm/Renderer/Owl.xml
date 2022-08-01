@@ -84,6 +84,18 @@
                         </TCEforms>
                     </settings.js.responsive.1200.items>
 
+                    <settings.js.responsive.1400.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.responsiveItemCount1400</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.responsive.1400.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.1400.items>
+
                     <settings.js.loop>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>

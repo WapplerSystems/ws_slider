@@ -21,6 +21,9 @@
             <trans-unit id="owl.settings.js.responsive.1200px.items.description" xml:space="preserve">
 				<source>Items above 1200px display width</source>
 			</trans-unit>
+            <trans-unit id="owl.settings.js.responsive.1400px.items.description" xml:space="preserve">
+				<source>Items above 1400px display width</source>
+			</trans-unit>
             <trans-unit id="owl.settings.js.margin.description">
                 <source>margin-right(px) on item.</source>
             </trans-unit>

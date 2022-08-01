@@ -12,6 +12,24 @@ plugin.tx_wsslider.settings.tinyslider {
   # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=Items:The number of items you want to see on the screen.
   items = 1
 
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=The number of items you want to see below 576px display width.
+  responsive.0.items = 1
+
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=The number of items you want to see above 576px display width.
+  responsive.576.items = 2
+
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=The number of items you want to see above 768px display width.
+  responsive.768.items = 3
+
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=The number of items you want to see above 992px display width.
+  responsive.992.items = 3
+
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=The number of items you want to see above 1200px display width.
+  responsive.1200.items = 3
+
+  # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=The number of items you want to see above 1400px display width.
+  responsive.1400.items = 3
+
   # cat=plugin.tx_wsslider.tinyslider/tinyslider/a; type=int+; label=Gutter:Space between slides (in "px")
   gutter = 0
 

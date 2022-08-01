@@ -71,6 +71,78 @@
                         </TCEforms>
                     </settings.js.items>
 
+                    <settings.js.responsive.0.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.responsiveItemCount0</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.0.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.0.items>
+
+                    <settings.js.responsive.576.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.responsiveItemCount576</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.576.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.576.items>
+
+                    <settings.js.responsive.768.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.responsiveItemCount768</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.768.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.768.items>
+
+                    <settings.js.responsive.992.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.responsiveItemCount992</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.992.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.992.items>
+
+                    <settings.js.responsive.1200.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.responsiveItemCount1200</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.1200.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.1200.items>
+
+                    <settings.js.responsive.1400.items>
+                        <TCEforms>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.responsiveItemCount1400</label>
+                            <config>
+                                <type>input</type>
+                                <renderType>inputWithTypoScriptPlaceholder</renderType>
+                                <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.1400.items</typoscriptPath>
+                                <eval>num,trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.js.responsive.1400.items>
+
                     <settings.js.slideBy>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.slideBy</label>

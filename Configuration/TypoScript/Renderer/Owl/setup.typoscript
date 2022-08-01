@@ -75,6 +75,10 @@ plugin.tx_wsslider.settings.renderer.owl {
       items = {$plugin.tx_wsslider.settings.owl.responsive.1200.items}
     }
 
+    1400 {
+      items = {$plugin.tx_wsslider.settings.owl.responsive.1400.items}
+    }
+
   }
 
 
