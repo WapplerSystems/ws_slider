@@ -101,7 +101,18 @@
 
 
 			<!-- common setting labels -->
-
+			<trans-unit id="settings.carousel">
+				<source>Carousel</source>
+			</trans-unit>
+			<trans-unit id="settings.gallery">
+				<source>Gallery</source>
+			</trans-unit>
+			<trans-unit id="settings.horizontal">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="settings.vertical">
+				<source>Vertical</source>
+			</trans-unit>
 			<trans-unit id="settings.common.layout">
 				<source>Layout</source>
 			</trans-unit>
