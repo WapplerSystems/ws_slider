@@ -1,21 +1,22 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
-     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
-    <f:section name="Default">
+<f:section name="Default">
 
-        <div id="wsslider-{data.uid}" class="flexslider">
-            <ul class="slides">
-                <f:for each="{items}" as="item" iteration="iterator">
-                    <f:render partial="Item/Flexslider" section="{sliderSettings.layout}"
-                              arguments="{item: item, settings: settings, iterator:iterator}"/>
-                </f:for>
-            </ul>
-        </div>
+    <div id="wsslider-{data.uid}" class="flexslider">
+        <ul class="slides">
+            <f:for each="{items}" as="item" iteration="iterator">
+                <f:render partial="Item/Flexslider" section="{sliderSettings.layout}"
+                          arguments="{item: item, settings: settings, iterator:iterator}"/>
+            </f:for>
+        </ul>
+    </div>
 
-        <wsslider:addStartJavaScriptCode functionName="flexslider" useJQuery="true" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" />
+    <wsslider:addStartJavaScriptCode functionName="flexslider" useJQuery="true" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}"/>
 
 
-    </f:section>
+</f:section>
 
-</div>
+</html>

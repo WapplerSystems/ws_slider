@@ -1,31 +1,36 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
-    <f:section name="Default">
+<f:section name="Default">
 
-            <div class="carousel-item carousel-item-{item.data.style_class}{f:if(condition:iterator.isFirst,then:' active')}">
-                <f:if condition="{item.foregroundMedia.0}">
+    <div class="carousel-item carousel-item-{item.data.style_class}{f:if(condition:iterator.isFirst,then:' active')}">
+        <f:if condition="{item.foregroundMedia.0}">
 
-                    <f:image image="{item.foregroundMedia.0}" />
+            <f:image image="{item.foregroundMedia.0}"/>
 
-                </f:if>
-                <div class="caption-wrapper caption-align-{item.text_position}">
-                    <f:if condition="{item.data.title}||{item.data.description}">
-                    <div class="caption-text">
-                        <p class="caption-title">{item.data.title}</p>
-                        <f:if condition="{item.data.description}">
-                            <div class="caption-body"><f:format.html>{item.data.description}</f:format.html></div>
-                        </f:if>
-                    </div>
-                    </f:if>
-                    <f:if condition="{item.data.link}">
-                        <div class="caption-link">
-                            <f:link.typolink parameter="{item.data.link}"><f:translate key="more">More</f:translate></f:link.typolink>
+        </f:if>
+        <div class="caption-wrapper caption-align-{item.text_position}">
+            <f:if condition="{item.data.title}||{item.data.description}">
+                <div class="caption-text">
+                    <p class="caption-title">{item.data.title}</p>
+                    <f:if condition="{item.data.description}">
+                        <div class="caption-body">
+                            <f:format.html>{item.data.description}</f:format.html>
                         </div>
                     </f:if>
                 </div>
-            </div>
+            </f:if>
+            <f:if condition="{item.data.link}">
+                <div class="caption-link">
+                    <f:link.typolink parameter="{item.data.link}">
+                        <f:translate key="more">More</f:translate>
+                    </f:link.typolink>
+                </div>
+            </f:if>
+        </div>
+    </div>
 
-    </f:section>
+</f:section>
 
-</div>
+</html>

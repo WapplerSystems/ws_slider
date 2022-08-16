@@ -1,22 +1,23 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
-    <f:section name="Default">
+<f:section name="Default">
 
-        <div>
+    <div>
 
-            <f:if condition="{item.foregroundMedia.0}">
-                <f:image image="{item.foregroundMedia.0}" class="img-fluid mb-4"  />
-            </f:if>
+        <f:if condition="{item.foregroundMedia.0}">
+            <f:image image="{item.foregroundMedia.0}" class="img-fluid mb-4"/>
+        </f:if>
 
-        </div>
+    </div>
 
-    </f:section>
+</f:section>
 
-    <f:section name="Cards">
+<f:section name="Cards">
 
-        <f:render partial="Item/Layout/Card" arguments="{_all}" />
+    <f:render partial="Item/Layout/Card" arguments="{_all}"/>
 
-    </f:section>
+</f:section>
 
-</div>
+</html>

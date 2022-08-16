@@ -1,29 +1,29 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
+<div class="item" data-itemno="{iterator.index}">
 
-    <div class="item" data-itemno="{iteration.index}">
+    <div class="card">
 
-        <div class="card">
+        <f:if condition="{item.foregroundMedia.0}">
+            <f:image image="{item.foregroundMedia.0}" maxWidth="600" class="card-img-top"/>
+        </f:if>
 
-            <f:if condition="{item.foregroundMedia.0}">
-                <f:image image="{item.foregroundMedia.0}" class="card-img-top"/>
-            </f:if>
+        <div class="card-body">
 
-            <div class="card-body">
+            <f:link.typolink parameter="{item.data.link}">
+                <h5 class="card-title">{item.data.title}</h5>
+            </f:link.typolink>
 
-                <f:link.typolink parameter="{item.data.link}">
-                    <h5 class="card-title">{item.data.title}</h5>
-                </f:link.typolink>
-
-                <f:format.html>{item.data.description}</f:format.html>
-
-            </div>
+            <f:format.html>{item.data.description}</f:format.html>
 
         </div>
-
 
     </div>
 
 
 </div>
+
+
+</html>

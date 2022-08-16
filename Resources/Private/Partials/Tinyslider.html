@@ -1,22 +1,22 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
-     xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
-    <f:section name="Default">
+<f:section name="Default">
 
-        <div id="wsslider-{data.uid}" class="">
+    <div id="wsslider-{data.uid}" class="">
 
-                <f:for each="{items}" as="item" iteration="iterator">
-                    <f:render partial="Item/Tinyslider" section="{sliderSettings.layout}"
-                              arguments="{item: item, settings: settings, iterator:iterator}"/>
-                </f:for>
+        <f:for each="{items}" as="item" iteration="iterator">
+            <f:render partial="Item/Tinyslider" section="{sliderSettings.layout}"
+                      arguments="{item: item, settings: settings, iterator:iterator}"/>
+        </f:for>
 
-        </div>
+    </div>
 
-        <wsslider:addStartJavaScriptCode functionName="tns" variableName="slider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" overrideParameters="{container: '#wsslider-{data.uid}'}" />
+    <wsslider:addStartJavaScriptCode functionName="tns" variableName="slider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" overrideParameters="{container: '#wsslider-{data.uid}'}"/>
 
 
+</f:section>
 
-    </f:section>
-
-</div>
+</html>
