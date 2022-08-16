@@ -13,7 +13,9 @@
         <div class="caption-wrapper caption-align-{item.data.text_position}">
             <f:if condition="{item.data.title}||{item.data.description}">
                 <div class="caption-text">
-                    <p class="caption-title">{item.data.title}</p>
+                    <f:if condition="{item.data.title}">
+                        <p class="caption-title">{item.data.title}</p>
+                    </f:if>
                     <f:if condition="{item.data.description}">
                         <div class="caption-body">
                             <f:format.html>{item.data.description}</f:format.html>
