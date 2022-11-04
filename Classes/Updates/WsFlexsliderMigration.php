@@ -33,8 +33,8 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
             $this->getDescription(),
             false,
             'Yes, I understand!',
-            '',
-            true
+            'No thanks',
+            false
         );
     }
 
