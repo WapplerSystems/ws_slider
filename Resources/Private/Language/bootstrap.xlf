@@ -4,8 +4,8 @@
         <header/>
         <body>
             <!-- sheets -->
-            <trans-unit id="sheet.flexslider">
-            	<source>Flex Slider</source>
+            <trans-unit id="sheet.bootstrap">
+            	<source>Bootstrap Slider</source>
             </trans-unit>
             <trans-unit id="sheet.usability">
             	<source>Usability</source>
