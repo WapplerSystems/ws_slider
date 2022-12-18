@@ -7,7 +7,7 @@
     <div class="carousel-item carousel-item-{item.data.style_class}{f:if(condition:iterator.isFirst,then:' active')}">
         <f:if condition="{item.foregroundMedia.0}">
 
-            <f:image image="{item.foregroundMedia.0}"/>
+            <f:image class="img-fluid" image="{item.foregroundMedia.0}"/>
 
         </f:if>
         <div class="caption-wrapper caption-align-{item.data.text_position}">
