@@ -4,80 +4,67 @@
     <header/>
     <body>
       <trans-unit id="owl.settings.js.items.description" xml:space="preserve" approved="yes">
-		<source>The number of items you want to see on the screen.</source>
-		<target state="final">Die Anzahl der Elemente, die Sie auf dem Bildschirm sehen möchten.</target>
-	  </trans-unit>
-      <trans-unit id="owl.settings.js.responsive.0.items.description">
-        <source>Items below 576px display width</source>
-        <target state="final">Elemente unterhalb 576px Displaybreite</target>
-      </trans-unit>
-      <trans-unit id="owl.settings.js.responsive.576.items.description">
-        <source>Items above 576px display width</source>
-        <target state="final">Elemente oberhalb 576px Displaybreite</target>
-      </trans-unit>
-      <trans-unit id="owl.settings.js.responsive.768.items.description">
-        <source>Items above 768px display width</source>
-        <target state="final">Elemente oberhalb 768px Displaybreite</target>
-      </trans-unit>
-      <trans-unit id="owl.settings.js.responsive.992.items.description">
-        <source>Items above 992px display width</source>
-        <target state="final">Elemente oberhalb 992px Displaybreite</target>
-      </trans-unit>
-      <trans-unit id="owl.settings.js.responsive.1200.items.description">
-        <source>Items above 1200px display width</source>
-        <target state="final">Elemente oberhalb 1200px Displaybreite</target>
-      </trans-unit>
-      <trans-unit id="owl.settings.js.responsive.1400.items.description">
-        <source>Items above 1400px display width</source>
-        <target state="final">Elemente oberhalb 1400px Displaybreite</target>
-      </trans-unit>
+				<source>The number of items you want to see on the screen.</source>
+			<target state="final">Die Anzahl der Elemente, die Sie auf dem Bildschirm sehen möchten.</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.0.items.description" xml:space="preserve" approved="yes">
+				<source>Items below 576px display width</source>
+			<target state="final">Elemente unterhalb 576px Displaybreite</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.576.items.description" xml:space="preserve" approved="yes">
+				<source>Items above 576px display width</source>
+			<target state="final">Elemente oberhalb 576px Displaybreite</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.768.items.description" xml:space="preserve" approved="yes">
+				<source>Items above 768px display width</source>
+			<target state="final">Elemente oberhalb 768px Displaybreite</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.992.items.description" xml:space="preserve" approved="yes">
+				<source>Items above 992px display width</source>
+			<target state="final">Elemente oberhalb 992px Displaybreite</target></trans-unit>
       <trans-unit id="owl.settings.js.margin.description" approved="yes">
         <source>margin-right(px) on item.</source>
         <target state="final">margin-right(px) von Element.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.loop.description" xml:space="preserve" approved="yes">
-		<source>Infinity loop. Duplicate last and first items to get loop illusion.</source>
-		<target state="final">Endlosschleife. Dupliziere die letzten und ersten Elemente, um eine Schleifen-Illusion zu erhalten.</target></trans-unit>
+				<source>Infinity loop. Duplicate last and first items to get loop illusion.</source>
+			<target state="final">Endlosschleife. Dupliziere die letzten und ersten Elemente, um eine Schleifen-Illusion zu erhalten.</target></trans-unit>
       <trans-unit id="owl.settings.js.center.description" approved="yes">
         <source>Center item. Works well with even an odd number of items.</source>
         <target state="final">Element zentrieren. Funktioniert auch mit einer ungeraden Elementanzahl gut.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.mouseDrag.description" xml:space="preserve" approved="yes">
-		<source>Mouse drag enabled.</source>
-		<target state="final">Maus Steuerung aktivieren.</target></trans-unit>
+				<source>Mouse drag enabled.</source>
+			<target state="final">Maus Steuerung aktivieren.</target></trans-unit>
       <trans-unit id="owl.settings.js.touchDrag.description" approved="yes">
         <source>Touch drag enabled.</source>
         <target state="final">Touch Steuerung aktivieren.</target>
       </trans-unit>
       <!-- <trans-unit id="owl.settings.js.pullDrag.description" xml:space="preserve">
-        <source>Stage pull to edge.</source>
-      </trans-unit> -->
+				<source>Stage pull to edge.</source>
+			</trans-unit> -->
       <!-- <trans-unit id="owl.settings.js.freeDrag.description">
-        <source>Item pull to edge.</source>
-      </trans-unit> -->
+                <source>Item pull to edge.</source>
+            </trans-unit> -->
       <trans-unit id="owl.settings.js.stagePadding.description" xml:space="preserve" approved="yes">
-		<source>Padding left and right on stage (can see neighbours).</source>
-		<target state="final">Innerer Abstand links und rechts des Sliders.</target></trans-unit>
+				<source>Padding left and right on stage (can see neighbours).</source>
+			<target state="final">Innerer Abstand links und rechts des Sliders.</target></trans-unit>
       <!-- <trans-unit id="owl.settings.js.merge.description">
-        <source>Merge items. Looking for data-merge='{number}' inside item.</source>
-      </trans-unit>
-      <trans-unit id="owl.settings.js.mergeFit.description" xml:space="preserve">
-        <source>Fit merged items if screen is smaller than items value.</source>
-      </trans-unit> -->
+                <source>Merge items. Looking for data-merge='{number}' inside item.</source>
+            </trans-unit>
+            <trans-unit id="owl.settings.js.mergeFit.description" xml:space="preserve">
+				<source>Fit merged items if screen is smaller than items value.</source>
+			</trans-unit> -->
       <trans-unit id="owl.settings.js.autoWidth.description" approved="yes">
         <source>Set non grid content. Try using width style on divs.</source>
         <target state="final">Automatische Breite. Andernfalls versuchen sie width Attribute auf divs.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.startPosition.description" xml:space="preserve" approved="yes">
-		<source>Start position or URL Hash string like '#id'.</source>
-		<target state="final">Start-Position oder URL-Hash String z.B. '#id'.</target></trans-unit>
+				<source>Start position or URL Hash string like '#id'.</source>
+			<target state="final">Start-Position oder URL-Hash String z.B. '#id'.</target></trans-unit>
       <trans-unit id="owl.settings.js.URLhashListener.description" approved="yes">
         <source>Listen to url hash changes. data-hash on items is required.</source>
         <target state="final">Auf URL-Hash Änderungen achten. data-hash auf Elementen ist erforderlich.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.nav.description" xml:space="preserve" approved="yes">
-		<source>Show next/prev buttons.</source>
-		<target state="final">"Nächste/Vorherige" Steuerungs-Buttons anzeigen.</target></trans-unit>
+				<source>Show next/prev buttons.</source>
+			<target state="final">"Nächste/Vorherige" Steuerungs-Buttons anzeigen.</target></trans-unit>
       <trans-unit id="owl.settings.js.rewind.description" approved="yes">
         <source>Go backwards when the boundary has reached.</source>
         <target state="final">Gehe rückwärts, wenn das Ende erreicht wurde.</target>
@@ -87,87 +74,87 @@
         <target state="final">DOM-Element-Typ für einen einzigen direktionalen Navigationslink.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.slideBy.description" xml:space="preserve" approved="yes">
-		<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
-		<target state="final">Navigation verschiebt um x Elemente. Der String 'page' kann gesetzt werden wenn um eine komplette Seite verschoben werden soll.</target></trans-unit>
+				<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+			<target state="final">Navigation verschiebt um x Elemente. Der String 'page' kann gesetzt werden wenn um eine komplette Seite verschoben werden soll.</target></trans-unit>
       <trans-unit id="owl.settings.js.slideTransition.description" approved="yes">
         <source>You can define the transition for the stage you want to use eg. linear.</source>
         <target state="final">Sie können die Übergänge des Sliders definieren. z.B. linear.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.dots.description" xml:space="preserve" approved="yes">
-		<source>Show dots navigation.</source>
-		<target state="final">Zeige Navigationspunkte.</target></trans-unit>
+				<source>Show dots navigation.</source>
+			<target state="final">Zeige Navigationspunkte.</target></trans-unit>
       <trans-unit id="owl.settings.js.dotsEach.description" approved="yes">
         <source>Show dots each x item.</source>
         <target state="final">Zeige einen Punkt für alle x Elemente.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
-        <source>Lazy load images. data-src and data-src-retina for highres. Also load images into background inline style if element is not &lt;img&gt;</source>
-        <target state="final">Lazy loading der Bilder.</target></trans-unit>
+				<source>Lazy load images. data-src and data-src-retina for highres. Also load images into background inline style if element is not &lt;img&gt;</source>
+			<target state="final">Lazy loading der Bilder.</target></trans-unit>
       <trans-unit id="owl.settings.js.lazyLoadEager.description" approved="yes">
         <source>Eagerly pre-loads images to the right (and left when loop is enabled) based on how many items you want to preload.</source>
         <target state="final">Bilder nach rechts vorladen (und nach links, falls Schleife aktiviert ist), basierend auf der Anzahl der Elemente die Sie hier angeben.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.autoplay.description" xml:space="preserve" approved="yes">
-        <source>Autoplay.</source>
-        <target state="final">Autoplay.</target></trans-unit>
+				<source>Autoplay.</source>
+			<target state="final">Autoplay.</target></trans-unit>
       <trans-unit id="owl.settings.js.autoplayTimeout.description" approved="yes">
         <source>Autoplay interval timeout.</source>
         <target state="final">Timeout für Autoplay-Intervall.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.autoplayHoverPause.description" xml:space="preserve" approved="yes">
-        <source>Pause on mouse hover.</source>
-        <target state="final">Pause beim Mouse-Hover.</target></trans-unit>
+				<source>Pause on mouse hover.</source>
+			<target state="final">Pause beim Mouse-Hover.</target></trans-unit>
       <!-- <trans-unit id="owl.settings.js.smartSpeed.description">
                 <source>Speed Calculate. More info to come.</source>
             </trans-unit>
             <trans-unit id="owl.settings.js.fluidSpeed.description" xml:space="preserve">
-        <source>Speed Calculate. More info to come.</source>
-      </trans-unit> -->
+				<source>Speed Calculate. More info to come.</source>
+			</trans-unit> -->
       <trans-unit id="owl.settings.js.autoplaySpeed.description" approved="yes">
         <source>autoplay speed.</source>
         <target state="final">Autoplay-Geschwindigkeit.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.navSpeed.description" xml:space="preserve" approved="yes">
-        <source>Navigation speed.</source>
-        <target state="final">Navigationsgeschwindigkeit.</target></trans-unit>
+				<source>Navigation speed.</source>
+			<target state="final">Navigationsgeschwindigkeit.</target></trans-unit>
       <trans-unit id="owl.settings.js.dotsSpeed.description" approved="yes">
         <source>Pagination speed.</source>
         <target state="final">Geschwindigkeit der Punktenavigation.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.dragEndSpeed.description" xml:space="preserve" approved="yes">
-        <source>Drag end speed.</source>
-        <target state="final">Geschwindigkeit in der der slider zum Stillstand kommt nachdem er gezogen wurde.</target></trans-unit>
+				<source>Drag end speed.</source>
+			<target state="final">Geschwindigkeit in der der slider zum Stillstand kommt nachdem er gezogen wurde.</target></trans-unit>
       <trans-unit id="owl.settings.js.responsiveRefreshRate.description" xml:space="preserve" approved="yes">
-        <source>Responsive refresh rate.</source>
-        <target state="final">Responsive Aktualisierungsrate. (Zeit bis der slider sich anpasst in ms)</target></trans-unit>
+				<source>Responsive refresh rate.</source>
+			<target state="final">Responsive Aktualisierungsrate. (Zeit bis der slider sich anpasst in ms)</target></trans-unit>
       <trans-unit id="owl.settings.js.video.description" approved="yes">
         <source>Enable fetching YouTube/Vimeo/Vzaar videos.</source>
         <target state="final">Aktiviere das Abrufen von YouTube/Vimeo/Vzaar-Videos.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.videoHeight.description" xml:space="preserve" approved="yes">
-        <source>Set height for videos.</source>
-        <target state="final">Höhe für Videos festlegen.</target></trans-unit>
+				<source>Set height for videos.</source>
+			<target state="final">Höhe für Videos festlegen.</target></trans-unit>
       <trans-unit id="owl.settings.js.videoWidth.description" approved="yes">
         <source>Set width for videos.</source>
         <target state="final">Breite für Videos festlegen.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.animateOut.description" xml:space="preserve" approved="yes">
-        <source>Class for CSS3 animation out.</source>
-        <target state="final">Klasse für CSS3 Ausgangsanimation.</target></trans-unit>
+				<source>Class for CSS3 animation out.</source>
+			<target state="final">Klasse für CSS3 Ausgangsanimation.</target></trans-unit>
       <trans-unit id="owl.settings.js.animateIn.description" approved="yes">
         <source>Class for CSS3 animation in.</source>
         <target state="final">Klasse für CSS3 Introanimation.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.fallbackEasing.description" xml:space="preserve" approved="yes">
-        <source>Easing for CSS2 $.animate.</source>
-        <target state="final">Easing für CSS2 $.animate.</target></trans-unit>
+				<source>Easing for CSS2 $.animate.</source>
+			<target state="final">Easing für CSS2 $.animate.</target></trans-unit>
       <trans-unit id="owl.settings.js.nestedItemSelector.description" approved="yes">
         <source>Use it if owl items are deep nested inside some generated content. E.g 'youritem'. Dont use dot before class name.</source>
         <target state="final">Benutzen Sie diese Option falls OWL Elemente tief in generierten Inhalten eingebettet ist. Z.B. 'youritem'. Keinen Punkt vor den Klassennamen setzen.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.itemElement.description" xml:space="preserve" approved="yes">
-        <source>DOM element type for owl-item.</source>
-        <target state="final">DOM-Elementtyp für owl-Element.</target></trans-unit>
+				<source>DOM element type for owl-item.</source>
+			<target state="final">DOM-Elementtyp für owl-Element.</target></trans-unit>
       <trans-unit id="owl.settings.js.stageElement.description" approved="yes">
         <source>DOM element type for owl-stage.</source>
         <target state="final">DOM-Elementtyp für owl-Karussell.</target>
@@ -177,8 +164,8 @@
         <target state="final">Setzen Sie einen eigenen container für nav Elemente.</target>
       </trans-unit>
       <trans-unit id="owl.settings.js.dotsContainer.description" xml:space="preserve" approved="yes">
-        <source>Set your own container for nav.</source>
-        <target state="final">Setzen Sie einen eigenen container für die Punktenavigation.</target></trans-unit>
+				<source>Set your own container for nav.</source>
+			<target state="final">Setzen Sie einen eigenen container für die Punktenavigation.</target></trans-unit>
       <trans-unit id="owl.settings.js.checkVisible.description" approved="yes">
         <source>If you know the carousel will always be visible you can set `checkVisibility` to `false` to prevent the expensive browser layout forced reflow the $element.is(':visible') does.</source>
         <target state="final">Wenn du weißt, dass das Karussell immer sichtbar sein wird, kannst du diese Option auf `false` setzen, um die teure $element.is(':visible') Methode zu verhindern.</target>
