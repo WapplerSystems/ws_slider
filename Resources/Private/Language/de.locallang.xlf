@@ -112,22 +112,6 @@
         <target state="final">Slick Slider</target>
       </trans-unit>
       <!-- common setting labels -->
-		<trans-unit id="settings.carousel">
-			<source>Carousel</source>
-			<target>Karussel</target>
-		</trans-unit>
-		<trans-unit id="settings.gallery">
-			<source>Gallery</source>
-			<target>Galerie</target>
-		</trans-unit>
-		<trans-unit id="settings.horizontal">
-			<source>Horizontal</source>
-			<target>Horizontal</target>
-		</trans-unit>
-		<trans-unit id="settings.vertical">
-			<source>Vertical</source>
-			<target>Vertikal</target>
-		</trans-unit>
       <trans-unit id="settings.common.layout" approved="yes">
         <source>Layout</source>
         <target state="final">Layout</target>
