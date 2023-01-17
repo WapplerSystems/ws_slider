@@ -67,7 +67,7 @@ class SliderProcessor implements DataProcessorInterface
         $flexformData = $processedData['data']['pi_flexform'];
         if (is_string($flexformData)) {
             $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-            if (is_array($flexformData['settings']['js'])) {
+            if (is_array($flexformData['settings']['js'] ?? null)) {
                 ArrayUtility::mergeRecursiveWithOverrule(
                     $settings['parameters'],
                     $flexformData['settings']['js'],
