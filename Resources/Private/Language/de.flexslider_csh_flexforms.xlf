@@ -92,9 +92,6 @@
       <trans-unit id="flexslider.settings.js.manualControls.description" xml:space="preserve" approved="yes">
 				<source>jQuery Object/Selector. Define element to be used in lieu of dynamic controlNav.</source>
 			<target state="final">jQuery Objekt/Selektor. Definieren Sie das zu verwendende Element anstelle von dynamischer Steuerung.</target></trans-unit>
-      <trans-unit id="flexslider.settings.js.customDirectionNav.description" xml:space="preserve">
-				<source>jQuery Object/Selector. Container the custom navigation markup works with.</source>
-			<target state="needs-translation">jQuery Object/Selector. Container the custom navigation markup works with.</target></trans-unit>
       <trans-unit id="flexslider.settings.js.sync.description" xml:space="preserve" approved="yes">
 				<source>Selector. Mirror the actions performed on this slider with another slider.</source>
 			<target state="final">Sync-Selektor: Spiegeln Sie die auf diesem Slider durchgeführten Aktionen auf einem anderen Slider.</target></trans-unit>
