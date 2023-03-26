@@ -1,3 +1,12 @@
 
 # hide elements in list view
 mod.web_list.table.tx_wsslider_domain_model_item.hideTable = 1
+
+tx_wsslider.responsiveBreakpoints {
+  0 = xs
+  576 = sm
+  768 = md
+  992 = lg
+  1200 = xl
+  1400 = xxl
+}

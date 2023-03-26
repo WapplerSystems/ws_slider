@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\Hooks;
 
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
@@ -10,7 +11,6 @@ use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\NoSuchFileException;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\ParseErrorException;
 use TYPO3\CMS\Form\Service\TranslationService;
@@ -33,11 +33,10 @@ class FlexFormEnhancerHook
 
     private function getTypoScriptSettings()
     {
-        return GeneralUtility::makeInstance(ObjectManager::class)
-                ->get(ConfigurationManager::class)
-                ->getConfiguration(
-                    ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-                )['plugin.']['tx_wsslider.']['settings.'] ?? [];
+        return GeneralUtility::makeInstance(ConfigurationManager::class)
+            ->getConfiguration(
+                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+            )['plugin.']['tx_wsslider.']['settings.'] ?? [];
     }
 
     /**
@@ -61,6 +60,9 @@ class FlexFormEnhancerHook
     ): array
     {
         if ($tableName === 'tt_content' && $fieldName === 'pi_flexform' && $row['CType'] === 'ws_slider') {
+            $pageTs = BackendUtility::getPagesTSconfig($row['pid']);
+
+            $identifier['pageTs'] = $pageTs['tx_wsslider.'] ?? [];
 
             $tsSettings = $this->getTypoScriptSettings();
             $defaultValue = null;
@@ -100,6 +102,27 @@ class FlexFormEnhancerHook
                     $dataStructure,
                     $newSheets
                 );
+                $dataStructureCopy = $dataStructure;
+
+                if (isset($dataStructure['sheets']['responsive.dummy'])) {
+
+                    foreach ($identifier['pageTs']['responsiveBreakpoints.'] ?? [] as $bpPixel => $bpName) {
+
+                        $newSheet = $dataStructure['sheets']['responsive.dummy'];
+                        $newSheet['ROOT']['TCEforms']['sheetTitle'] = 'Responsive > '.$bpPixel;
+
+                        foreach ($newSheet['ROOT']['el'] as $fieldName => $field) {
+
+                            $field['TCEforms']['config']['typoscriptPath'] = str_replace('dummy',(string)$bpPixel,$field['TCEforms']['config']['typoscriptPath']);
+                            $newSheet['ROOT']['el'][str_replace('dummy',(string)$bpPixel,$fieldName)] = $field;
+                            unset($newSheet['ROOT']['el'][$fieldName]);
+                        }
+                        $dataStructureCopy['sheets']['responsive.'.$bpPixel] = $newSheet;
+                    }
+                    unset($dataStructureCopy['sheets']['responsive.dummy']);
+                }
+
+                $dataStructure = $dataStructureCopy;
 
             } catch (NoSuchFileException $e) {
                 $this->addInvalidFrameworkConfigurationFlashMessage($e);
@@ -113,8 +136,7 @@ class FlexFormEnhancerHook
     /**
      * Returns additional flexform sheets with finisher fields
      *
-     * @param string $persistenceIdentifier Current persistence identifier
-     * @param array $formDefinition The form definition
+     * @param string $renderer
      * @return array
      */
     protected function getAdditionalFinisherSheets(string $renderer): array
@@ -138,8 +160,7 @@ class FlexFormEnhancerHook
             $e->getMessage()
         );
 
-        GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(FlashMessageService::class)
+        GeneralUtility::makeInstance(FlashMessageService::class)
             ->getMessageQueueByIdentifier('core.template.flashMessages')
             ->enqueue(
                 GeneralUtility::makeInstance(

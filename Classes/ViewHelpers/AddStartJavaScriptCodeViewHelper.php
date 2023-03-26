@@ -90,6 +90,8 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
             ArrayUtility::mergeRecursiveWithOverrule($parameters, $this->arguments['overrideParameters'], true, false);
         }
 
+        $parameters = $this->prepareParameters($parameters);
+
         $block = [];
         if ($this->arguments['variableName'] !== null) {
             $block[] = 'var ' . str_replace('-', '', $this->arguments['variableName']) . ';';
@@ -124,6 +126,26 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
             // additionalFooterData not possible in USER_INT
             $GLOBALS['TSFE']->additionalFooterData[md5($this->arguments['name'])] = GeneralUtility::wrapJS($html);
         }
+    }
+
+
+    private function prepareParameters($parameters)
+    {
+        $a = [];
+        $removeKeys = (($parameters['_removeArrayKeys'] ?? false) && $parameters['_removeArrayKeys'] === True);
+        unset($parameters['_removeArrayKeys']);
+        foreach ($parameters as $key => $param) {
+            if (is_array($param)) {
+                $param = $this->prepareParameters($param);
+            }
+            if ($removeKeys) {
+                $a[] = $param;
+            } else {
+                $a[$key] = $param;
+            }
+        }
+
+        return $a;
     }
 
 }

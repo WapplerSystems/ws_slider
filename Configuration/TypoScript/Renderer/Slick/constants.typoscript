@@ -1,143 +1,143 @@
-# customcategory=plugin.tx_wsslider.slickslider=WS Slider - Slick Slider
+# customcategory=plugin.tx_wsslider.slick=WS Slider - Slick Slider
 
-plugin.tx_wsslider.settings.slickslider {
+plugin.tx_wsslider.settings.slick {
 
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=accessibility: Enables tabbing and arrow key navigation
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=accessibility: Enables tabbing and arrow key navigation
   accessibility = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=adaptiveHeight: Enables adaptive height for single slide horizontal carousels
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=adaptiveHeight: Enables adaptive height for single slide horizontal carousels
   adaptiveHeight = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=autoplay
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=autoplay
   autoplay = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=autoplaySpeed: Autoplay speed in milliseconds
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=autoplaySpeed: Autoplay speed in milliseconds
   autoplaySpeed = 3000
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=arrows: Prev/Next Arrows
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=arrows: Prev/Next Arrows
   arrows = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=asNavFor: Set the slider to be the navigation of other slider (Class or ID Name)
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=asNavFor: Set the slider to be the navigation of other slider (Class or ID Name)
   asNavFor = null
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=appendArrows: Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)
-  appendArrows = $(element) #todo: look into default $(element) here
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=appendArrows: Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)
+  appendArrows = $(element)
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=appendDots: Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)
-  appendDots = $(element) #todo: look into default $(element) here
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=appendDots: Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)
+  appendDots = $(element)
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=prevArrow: Allows you to select a node or customize the HTML for the "Previous" arrow.
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=prevArrow: Allows you to select a node or customize the HTML for the "Previous" arrow.
   prevArrow = <button type="button" class="slick-prev">Previous</button>
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=nextArrow: Allows you to select a node or customize the HTML for the "Next" arrow.
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=nextArrow: Allows you to select a node or customize the HTML for the "Next" arrow.
   nextArrow = <button type="button" class="slick-next">Next</button>
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=centerMode: Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=centerMode: Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
   centerMode = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=centerPadding: Side padding when in center mode (px or %)
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=centerPadding: Side padding when in center mode (px or %)
   centerPadding = 50px
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=cssEase: CSS3 animation easing
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=cssEase: CSS3 animation easing
   cssEase = ease
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=customPaging: Custom paging templates. See source for use example.
-  customPaging = #default n/a
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=customPaging: Custom paging templates. See source for use example.
+  #customPaging = #default n/a
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=dots: Show dot indicators
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=dots: Show dot indicators
   dots = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=dotsClass: Class for slide indicator dots container
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=dotsClass: Class for slide indicator dots container
   dotsClass = slick-dots
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=draggable: Enable mouse dragging
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=draggable: Enable mouse dragging
   draggable = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=fade: Enable fade
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=fade: Enable fade
   fade = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=focusOnSelect: Enable focus on selected element (click)
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=focusOnSelect: Enable focus on selected element (click)
   focusOnSelect = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=easing: Add easing for jQuery animate. Use with easing libraries or default easing methods
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=easing: Add easing for jQuery animate. Use with easing libraries or default easing methods
   easing = linear
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=float; label=edgeFriction: Resistance when swiping edges of non-infinite carousels
+  # cat=plugin.tx_wsslider.slick/slick/a; type=float; label=edgeFriction: Resistance when swiping edges of non-infinite carousels
   edgeFriction = 0.15
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=infinite: Infinite loop sliding
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=infinite: Infinite loop sliding
   infinite = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=initialSlide: Slide to start on
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=initialSlide: Slide to start on
   initialSlide = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=lazyLoad: Set lazy loading technique. Accepts 'ondemand' or 'progressive'
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=lazyLoad: Set lazy loading technique. Accepts 'ondemand' or 'progressive'
   lazyLoad = ondemand
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=mobileFirst: Responsive settings use mobile first calculation
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=mobileFirst: Responsive settings use mobile first calculation
   mobileFirst = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=pauseOnFocus: Pause Autoplay On Focus
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=pauseOnFocus: Pause Autoplay On Focus
   pauseOnFocus = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=pauseOnHover: Pause Autoplay On Hover
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=pauseOnHover: Pause Autoplay On Hover
   pauseOnHover = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=pauseOnDotsHover: Pause Autoplay when a dot is hovered
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=pauseOnDotsHover: Pause Autoplay when a dot is hovered
   pauseOnDotsHover = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=string; label=respondTo: Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)
+  # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=respondTo: Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)
   respondTo = window
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=rows: Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=rows: Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.
   rows = 1
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=slidesPerRow: With grid mode intialized via the rows option, this sets how many slides are in each grid row.
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=slidesPerRow: With grid mode intialized via the rows option, this sets how many slides are in each grid row.
   slidesPerRow = 1
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=slidesToShow: # of slides to show
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=slidesToShow: # of slides to show
   slidesToShow = 1
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=slidesToScroll: # of slides to Scroll
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=slidesToScroll: # of slides to Scroll
   slidesToScroll = 1
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=speed: Slide/Fade animation speed
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=speed: Slide/Fade animation speed
   speed = 300
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=swipe: Enables swiping
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=swipe: Enables swiping
   swipe = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=swipeToSlide: Allow users to drag or swipe directly to a slide irrespective of slidesToScroll
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=swipeToSlide: Allow users to drag or swipe directly to a slide irrespective of slidesToScroll
   swipeToSlide = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=touchMove: Enable slide motion with touch
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=touchMove: Enable slide motion with touch
   touchMove = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=touchThreshold: To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=touchThreshold: To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider
   touchThreshold = 5
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=useCSS: Enable/Disable CSS Transitions
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=useCSS: Enable/Disable CSS Transitions
   useCSS = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=useTransform: Enable/Disable CSS Transform
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=useTransform: Enable/Disable CSS Transform
   useTransform = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=variableWidth: Variable width slides
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=variableWidth: Variable width slides
   variableWidth = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=verticalSwiping: Vertical swipe mode
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=verticalSwiping: Vertical swipe mode
   verticalSwiping = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=rtl: Change the slider's direction to become right-to-left
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=rtl: Change the slider's direction to become right-to-left
   rtl = false
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=waitForAnimate: Ignores requests to advance the slide while animating
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=waitForAnimate: Ignores requests to advance the slide while animating
   waitForAnimate = true
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=int+; label=zindex: Set the zIndex values for slides, useful for IE9 and lower
+  # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=zindex: Set the zIndex values for slides, useful for IE9 and lower
   zindex = 1000
 
-  # cat=plugin.tx_wsslider.slickslider/slickslider/a; type=options[true,false]; label=vertical: Vertical slide mode
+  # cat=plugin.tx_wsslider.slick/slick/a; type=options[true,false]; label=vertical: Vertical slide mode
   vertical = false
 }

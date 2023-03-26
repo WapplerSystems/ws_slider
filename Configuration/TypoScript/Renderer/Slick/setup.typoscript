@@ -1,72 +1,95 @@
-plugin.tx_wsslider.settings.renderer.slickslider {
-  accessibility = {$plugin.tx_wsslider.settings.slickslider.accessibility}
-  adaptiveHeight = {$plugin.tx_wsslider.settings.slickslider.adaptiveHeight}
-  autoplay = {$plugin.tx_wsslider.settings.slickslider.autoplay}
-  autoplaySpeed = {$plugin.tx_wsslider.settings.slickslider.autoplaySpeed}
-  arrows = {$plugin.tx_wsslider.settings.slickslider.arrows}
-  appendArrows = {$plugin.tx_wsslider.settings.slickslider.appendArrows}
-  appendDots = {$plugin.tx_wsslider.settings.slickslider.appendDots}
-  prevArrow = {$plugin.tx_wsslider.settings.slickslider.prevArrow}
-  nextArrow = {$plugin.tx_wsslider.settings.slickslider.nextArrow}
-  centerMode = {$plugin.tx_wsslider.settings.slickslider.centerMode}
-  centerPadding = {$plugin.tx_wsslider.settings.slickslider.centerPadding}
-  cssEase = {$plugin.tx_wsslider.settings.slickslider.cssEase}
-  customPaging = {$plugin.tx_wsslider.settings.slickslider.customPaging}
-  dots = {$plugin.tx_wsslider.settings.slickslider.dots}
-  dotsClass = {$plugin.tx_wsslider.settings.slickslider.dotsClass}
-  draggable = {$plugin.tx_wsslider.settings.slickslider.draggable}
-  fade = {$plugin.tx_wsslider.settings.slickslider.fade}
-  focusOnSelect = {$plugin.tx_wsslider.settings.slickslider.focusOnSelect}
-  easing = {$plugin.tx_wsslider.settings.slickslider.easing}
-  edgeFriction = {$plugin.tx_wsslider.settings.slickslider.edgeFriction}
-  infinite = {$plugin.tx_wsslider.settings.slickslider.infinite}
-  initialSlide = {$plugin.tx_wsslider.settings.slickslider.initialSlide}
-  lazyLoad = {$plugin.tx_wsslider.settings.slickslider.lazyLoad}
-  mobileFirst = {$plugin.tx_wsslider.settings.slickslider.mobileFirst}
-  pauseOnFocus = {$plugin.tx_wsslider.settings.slickslider.pauseOnFocus}
-  pauseOnHover = {$plugin.tx_wsslider.settings.slickslider.pauseOnHover}
-  pauseOnDotsHover = {$plugin.tx_wsslider.settings.slickslider.pauseOnDotsHover}
-  respondTo = {$plugin.tx_wsslider.settings.slickslider.respondTo}
-  rows = {$plugin.tx_wsslider.settings.slickslider.rows}
-  slidesPerRow = {$plugin.tx_wsslider.settings.slickslider.slidesPerRow}
-  slidesToShow = {$plugin.tx_wsslider.settings.slickslider.slidesToShow}
-  slidesToScroll = {$plugin.tx_wsslider.settings.slickslider.slidesToScroll}
-  speed = {$plugin.tx_wsslider.settings.slickslider.speed}
-  swipe = {$plugin.tx_wsslider.settings.slickslider.swipe}
-  swipeToSlide = {$plugin.tx_wsslider.settings.slickslider.swipeToSlide}
-  touchMove = {$plugin.tx_wsslider.settings.slickslider.touchMove}
-  touchThreshold = {$plugin.tx_wsslider.settings.slickslider.touchThreshold}
-  useCSS = {$plugin.tx_wsslider.settings.slickslider.useCSS}
-  useTransform = {$plugin.tx_wsslider.settings.slickslider.useTransform}
-  variableWidth = {$plugin.tx_wsslider.settings.slickslider.variableWidth}
-  vertical = {$plugin.tx_wsslider.settings.slickslider.vertical}
-  verticalSwiping = {$plugin.tx_wsslider.settings.slickslider.verticalSwiping}
-  rtl = {$plugin.tx_wsslider.settings.slickslider.rtl}
-  waitForAnimate = {$plugin.tx_wsslider.settings.slickslider.waitForAnimate}
+plugin.tx_wsslider.settings.renderer.slick {
+  accessibility = {$plugin.tx_wsslider.settings.slick.accessibility}
+  adaptiveHeight = {$plugin.tx_wsslider.settings.slick.adaptiveHeight}
+  autoplay = {$plugin.tx_wsslider.settings.slick.autoplay}
+  autoplaySpeed = {$plugin.tx_wsslider.settings.slick.autoplaySpeed}
+  arrows = {$plugin.tx_wsslider.settings.slick.arrows}
+  //appendArrows = {$plugin.tx_wsslider.settings.slick.appendArrows}
+  //appendDots = {$plugin.tx_wsslider.settings.slick.appendDots}
+  prevArrow = {$plugin.tx_wsslider.settings.slick.prevArrow}
+  nextArrow = {$plugin.tx_wsslider.settings.slick.nextArrow}
+  centerMode = {$plugin.tx_wsslider.settings.slick.centerMode}
+  centerPadding = {$plugin.tx_wsslider.settings.slick.centerPadding}
+  cssEase = {$plugin.tx_wsslider.settings.slick.cssEase}
+  //customPaging = {$plugin.tx_wsslider.settings.slick.customPaging}
+  dots = {$plugin.tx_wsslider.settings.slick.dots}
+  dotsClass = {$plugin.tx_wsslider.settings.slick.dotsClass}
+  draggable = {$plugin.tx_wsslider.settings.slick.draggable}
+  fade = {$plugin.tx_wsslider.settings.slick.fade}
+  focusOnSelect = {$plugin.tx_wsslider.settings.slick.focusOnSelect}
+  easing = {$plugin.tx_wsslider.settings.slick.easing}
+  edgeFriction = {$plugin.tx_wsslider.settings.slick.edgeFriction}
+  infinite = {$plugin.tx_wsslider.settings.slick.infinite}
+  initialSlide = {$plugin.tx_wsslider.settings.slick.initialSlide}
+  lazyLoad = {$plugin.tx_wsslider.settings.slick.lazyLoad}
+  mobileFirst = {$plugin.tx_wsslider.settings.slick.mobileFirst}
+  pauseOnFocus = {$plugin.tx_wsslider.settings.slick.pauseOnFocus}
+  pauseOnHover = {$plugin.tx_wsslider.settings.slick.pauseOnHover}
+  pauseOnDotsHover = {$plugin.tx_wsslider.settings.slick.pauseOnDotsHover}
+  respondTo = {$plugin.tx_wsslider.settings.slick.respondTo}
+  rows = {$plugin.tx_wsslider.settings.slick.rows}
+  slidesPerRow = {$plugin.tx_wsslider.settings.slick.slidesPerRow}
+  slidesToShow = {$plugin.tx_wsslider.settings.slick.slidesToShow}
+  slidesToScroll = {$plugin.tx_wsslider.settings.slick.slidesToScroll}
+  speed = {$plugin.tx_wsslider.settings.slick.speed}
+  swipe = {$plugin.tx_wsslider.settings.slick.swipe}
+  swipeToSlide = {$plugin.tx_wsslider.settings.slick.swipeToSlide}
+  touchMove = {$plugin.tx_wsslider.settings.slick.touchMove}
+  touchThreshold = {$plugin.tx_wsslider.settings.slick.touchThreshold}
+  useCSS = {$plugin.tx_wsslider.settings.slick.useCSS}
+  useTransform = {$plugin.tx_wsslider.settings.slick.useTransform}
+  variableWidth = {$plugin.tx_wsslider.settings.slick.variableWidth}
+  vertical = {$plugin.tx_wsslider.settings.slick.vertical}
+  verticalSwiping = {$plugin.tx_wsslider.settings.slick.verticalSwiping}
+  rtl = {$plugin.tx_wsslider.settings.slick.rtl}
+  waitForAnimate = {$plugin.tx_wsslider.settings.slick.waitForAnimate}
 
   responsive {
+    _removeArrayKeys = true
     0 {
-      items = 1
+      breakpoint = 0
+      settings {
+        slidesToShow = 1
+      }
     }
 
     576 {
-      items = 2
+      breakpoint = 576
+      settings {
+        slidesToShow = 2
+      }
     }
 
     768 {
-      items = 4
+      breakpoint = 768
+      settings {
+        slidesToShow = 4
+      }
     }
 
     992 {
-      items = 4
+      breakpoint = 992
+      settings {
+        slidesToShow = 4
+      }
     }
 
     1200 {
-      items = 4
+      breakpoint = 1200
+      settings {
+        slidesToShow = 4
+      }
+    }
+
+    1400 {
+      breakpoint = 1400
+      settings {
+        slidesToShow = 4
+      }
     }
 
   }
 
 }
 
-tt_content.ws_slider.settings.slider.renderer.slickslider < plugin.tx_wsslider.settings.renderer.slickslider
+tt_content.ws_slider.settings.slider.renderer.slick < plugin.tx_wsslider.settings.renderer.slick
