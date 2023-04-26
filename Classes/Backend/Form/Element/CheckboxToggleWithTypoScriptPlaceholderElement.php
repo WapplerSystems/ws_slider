@@ -29,6 +29,7 @@ use WapplerSystems\WsSlider\Service\TypoScriptService;
  */
 class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
 {
+    private IconRegistry $iconRegistry;
 
     /**
      * Default field information enabled for this element.

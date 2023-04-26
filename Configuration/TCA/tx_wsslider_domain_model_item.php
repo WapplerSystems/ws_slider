@@ -1,6 +1,9 @@
 <?php
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Resource\File;
+if (!defined('TYPO3')) {
+    die ('Access denied.');
+}
 
 return [
     'ctrl' => [
@@ -27,8 +30,6 @@ return [
         'security' => [
             'ignorePageTypeRestriction' => true,
         ]
-    ],
-    'interface' => [
     ],
     'types' => [
         '1' => [
@@ -265,4 +266,3 @@ return [
         ],
     ],
 ];
-

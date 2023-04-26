@@ -7,6 +7,9 @@ use WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptPlace
 use WapplerSystems\WsSlider\Backend\Form\Element\InputTextWithTypoScriptPlaceholderElement;
 use WapplerSystems\WsSlider\Updates\WsFlexsliderMigration;
 
+if (!defined('TYPO3_MODE')) {
+    die ('Access denied.');
+}
 call_user_func(
     function ($extKey) {
 
@@ -17,12 +20,16 @@ call_user_func(
             ExtensionManagementUtility::addPageTSConfig('@import "EXT:my_sitepackage/Configuration/page.tsconfig"');
         }
 
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1586633307] = [
+
+        ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ws_slider/Configuration/TsConfig/Page/General.tsconfig">');
+
+
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1_586_633_307] = [
             'nodeName' => 'selectSingleWithTypoScriptPlaceholder',
             'priority' => '70',
             'class' => SelectSingleWithTypoScriptPlaceholderElement::class,
         ];
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1586633308] = [
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1_586_633_308] = [
             'nodeName' => 'inputWithTypoScriptPlaceholder',
             'priority' => '70',
             'class' => InputTextWithTypoScriptPlaceholderElement::class,
