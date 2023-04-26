@@ -13,11 +13,23 @@ if (!defined('TYPO3_MODE')) {
 call_user_func(
     function ($extKey) {
 
-        $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
-        // Only include page.tsconfig if TYPO3 version is below 12 so that it is not imported twice.
-        // TODO: Drop this when dropping TYPO3 v11 support
-        if ($versionInformation->getMajorVersion() < 12) {
-            ExtensionManagementUtility::addPageTSConfig('@import "EXT:my_sitepackage/Configuration/page.tsconfig"');
+
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS'][FlexFormTools::class]['flexParsing'][FlexFormEnhancerHook::class] = FlexFormEnhancerHook::class;
+
+
+        if (TYPO3_MODE === 'BE') {
+            $icons = [
+                'content-wsslider' => 'content-wsslider.svg',
+                'ext-wsslider-image' => 'image.svg'
+            ];
+            $iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
+            foreach ($icons as $identifier => $path) {
+                $iconRegistry->registerIcon(
+                    $identifier,
+                    SvgIconProvider::class,
+                    ['source' => 'EXT:' . $extKey . '/Resources/Public/Icons/' . $path]
+                );
+            }
         }
 
 
