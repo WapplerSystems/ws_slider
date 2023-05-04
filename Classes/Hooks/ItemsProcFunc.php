@@ -7,6 +7,8 @@ use TYPO3\CMS\Backend\Utility\BackendUtility as BackendUtilityCore;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use WapplerSystems\WsSlider\Service\TypoScriptService;
+use TYPO3\CMS\Core\Utility\StringUtility;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use WapplerSystems\WsSlider\Utility\TemplateLayout;
 
 /**
@@ -142,6 +144,30 @@ class ItemsProcFunc
 
         $row = BackendUtilityCore::getRecord('tt_content', abs($pid), 'uid,pid');
         return $row['pid'];
+    }
+
+
+    private function getTypoScriptValue($path)
+    {
+
+        $tsArray = GeneralUtility::makeInstance(ConfigurationManagerInterface::class)
+            ->getConfiguration(
+                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+            );
+
+        $segments = GeneralUtility::trimExplode('.', $path);
+
+        $lastSegment = array_pop($segments);
+        foreach ($segments as $segment) {
+            if (isset($tsArray[$segment . '.'])) {
+                $tsArray = $tsArray[$segment . '.'];
+            } else {
+                return null;
+            }
+        }
+        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
+
+        return null;
     }
 
 

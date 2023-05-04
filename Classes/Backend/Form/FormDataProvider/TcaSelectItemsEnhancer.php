@@ -7,7 +7,6 @@ namespace WapplerSystems\WsSlider\Backend\Form\FormDataProvider;
 use TYPO3\CMS\Backend\Form\FormDataProviderInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 
 class TcaSelectItemsEnhancer implements FormDataProviderInterface
 {
@@ -38,8 +37,7 @@ class TcaSelectItemsEnhancer implements FormDataProviderInterface
 
     private function getTypoScriptSettings()
     {
-        return GeneralUtility::makeInstance(ObjectManager::class)
-                ->get(ConfigurationManagerInterface::class)
+        return GeneralUtility::makeInstance(ConfigurationManagerInterface::class)
                 ->getConfiguration(
                     ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
                 )['plugin.']['tx_gomapsext.']['settings.'] ?? [];
