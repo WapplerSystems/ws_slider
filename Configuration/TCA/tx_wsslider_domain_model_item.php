@@ -190,23 +190,14 @@ return [
                             'width' => 90
                         ]
                     ],
-                    'foreign_match_fields' => [
-                        'fieldname' => 'foreground_media',
-                        'tablenames' => 'tx_wsslider_domain_model_item',
-                        'table_local' => 'sys_file',
-                    ],
                     'overrideChildTca' => [
                         'types' => [
                             File::FILETYPE_IMAGE => [
                                 'showitem' => '
                                     --palette--;;imageoverlayPalette,
                                     --palette--;;filePalette'
-                            ], '0' => [
-                                'showitem' => '
-                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                                --palette--;;imageoverlayPalette,
-                                --palette--;;filePalette'
-                            ], File::FILETYPE_IMAGE => [
+                            ],
+                            '0' => [
                                 'showitem' => '
                                 --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
                                 --palette--;;imageoverlayPalette,
@@ -265,4 +256,3 @@ return [
         ],
     ],
 ];
-
