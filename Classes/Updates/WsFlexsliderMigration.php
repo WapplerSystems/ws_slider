@@ -78,7 +78,7 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
         $count = $queryBuilder->count('uid')
             ->from('tt_content')
             ->where($queryBuilder->expr()->eq('list_type', $queryBuilder->createNamedParameter('wsflexslider_pi1')))
-            ->execute()->fetchColumn(0);
+            ->executeQuery()->fetchOne();
         return $count > 0;
     }
 
@@ -117,7 +117,7 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
 
 
         $flexsliderStatement = $this->loadFlexsliderRecords();
-        while ($row = $flexsliderStatement->fetch()) {
+        while ($row = $flexsliderStatement->execute()->fetchOne()) {
 
 
             $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_wsslider_domain_model_item');
@@ -190,7 +190,7 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
         $queryBuilder->getRestrictions()->removeByType(FrontendGroupRestriction::class);
         $queryBuilder->getRestrictions()->removeByType(FrontendWorkspaceRestriction::class);
         $queryBuilder->select('*')->from('tx_wsflexslider_domain_model_image');
-        return $queryBuilder->execute();
+        return $queryBuilder->executeQuery();
     }
 
 

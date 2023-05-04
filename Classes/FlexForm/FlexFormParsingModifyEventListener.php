@@ -1,70 +1,53 @@
 <?php
 declare(strict_types=1);
 
-namespace WapplerSystems\WsSlider\Hooks;
+namespace WapplerSystems\WsSlider\FlexForm;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureIdentifierInitializedEvent;
+use TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureParsedEvent;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\NoSuchFileException;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\ParseErrorException;
 use TYPO3\CMS\Form\Service\TranslationService;
 use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
+use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
  *
  *
- * Scope: backend
  * @internal
  */
-class FlexFormEnhancerHook
+final class FlexFormParsingModifyEventListener
 {
 
     /**
      * Localisation prefix
      */
-    const L10N_PREFIX = 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:';
+    public const L10N_PREFIX = 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:';
 
 
-    private function getTypoScriptSettings()
+    public function setDataStructureIdentifier(
+        BeforeFlexFormDataStructureIdentifierInitializedEvent $event
+    ): void
     {
-        return GeneralUtility::makeInstance(ConfigurationManager::class)
-            ->getConfiguration(
-                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-            )['plugin.']['tx_wsslider.']['settings.'] ?? [];
-    }
+        $row = $event->getRow();
 
-    /**
-     * The data structure depends on a current form selection (persistenceIdentifier)
-     * and if the field "overrideFinishers" is active. Add both to the identifier to
-     * hand these information over to parseDataStructureByIdentifierPostProcess() hook.
-     *
-     * @param array $fieldTca Incoming field TCA
-     * @param string $tableName Handled table
-     * @param string $fieldName Handled field
-     * @param array $row Current data row
-     * @param array $identifier Already calculated identifier
-     * @return array Modified identifier
-     */
-    public function getDataStructureIdentifierPostProcess(
-        array  $fieldTca,
-        string $tableName,
-        string $fieldName,
-        array  $row,
-        array  $identifier
-    ): array
-    {
-        if ($tableName === 'tt_content' && $fieldName === 'pi_flexform' && $row['CType'] === 'ws_slider') {
+        if ($event->getTableName() === 'tt_content' && $event->getFieldName() === 'pi_flexform' && $row['CType'] === 'ws_slider') {
             $pageTs = BackendUtility::getPagesTSconfig($row['pid']);
 
             $identifier['pageTs'] = $pageTs['tx_wsslider.'] ?? [];
 
-            $tsSettings = $this->getTypoScriptSettings();
+            $typoscript = TypoScriptService::getTypoScript($row['pid']);
+
+            $tsSettings = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),'plugin.tx_wsslider.settings');
             $defaultValue = null;
             if (isset($tsSettings['defaultRenderer'])) $defaultValue = $tsSettings['defaultRenderer'];
 
@@ -77,25 +60,20 @@ class FlexFormEnhancerHook
             ) {
                 $identifier['ext-wsslider-extendSheets'] = $row['tx_wsslider_renderer'];
             }
+
+            $event->setIdentifier($identifier);
         }
-        return $identifier;
     }
 
-    /**
-     * Returns a modified flexform data array.
-     *
-     * This adds the list of existing form definitions to the form selection drop down
-     * and adds sheets to override finisher settings if requested.
-     *
-     * @param array $dataStructure
-     * @param array $identifier
-     * @return array
-     */
-    public function parseDataStructureByIdentifierPostProcess(array $dataStructure, array $identifier): array
+
+    public function setDataStructure(BeforeFlexFormDataStructureParsedEvent $event): void
     {
+        $identifier = $event->getIdentifier();
+        $dataStructure = $event->getDataStructure();
 
         if (isset($identifier['ext-wsslider-extendSheets']) && $identifier['ext-wsslider-extendSheets'] !== false) {
             try {
+                if ($dataStructure === null) $dataStructure = [];
 
                 $newSheets = $this->getAdditionalFinisherSheets($identifier['ext-wsslider-extendSheets']);
                 ArrayUtility::mergeRecursiveWithOverrule(
@@ -124,13 +102,11 @@ class FlexFormEnhancerHook
 
                 $dataStructure = $dataStructureCopy;
 
-            } catch (NoSuchFileException $e) {
-                $this->addInvalidFrameworkConfigurationFlashMessage($e);
-            } catch (ParseErrorException $e) {
+            } catch (NoSuchFileException|ParseErrorException $e) {
                 $this->addInvalidFrameworkConfigurationFlashMessage($e);
             }
+            $event->setDataStructure($dataStructure);
         }
-        return $dataStructure;
     }
 
     /**
@@ -215,7 +191,7 @@ class FlexFormEnhancerHook
             $translationFile = $prototypeConfiguration['formEngine']['translationFile'];
         }
 
-        $finishersDefinition[$finisherIdentifier]['FormEngine'] = TranslationService::getInstance()->translateValuesRecursive(
+        $finishersDefinition[$finisherIdentifier]['FormEngine'] = GeneralUtility::makeInstance(TranslationService::class)->translateValuesRecursive(
             $finishersDefinition[$finisherIdentifier]['FormEngine'],
             $translationFile
         );

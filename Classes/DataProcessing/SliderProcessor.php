@@ -5,6 +5,7 @@ namespace WapplerSystems\WsSlider\DataProcessing;
 
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
@@ -59,7 +60,7 @@ class SliderProcessor implements DataProcessorInterface
         }
 
         $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
-        $settings['parameters'] = GeneralUtility::removeDotsFromTS($settings['parameters']);
+        $settings['parameters'] = self::removeDotsFromTS($settings['parameters']);
         $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
 
 
@@ -79,7 +80,7 @@ class SliderProcessor implements DataProcessorInterface
 
         # convert integers in texts to integers
         $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
-        $settings['jsonParameters'] = json_encode($settings['parameters']);
+        $settings['jsonParameters'] = json_encode($settings['parameters'], JSON_THROW_ON_ERROR);
 
         $settings['renderer'] = ucfirst($settings['renderer']);
 
@@ -128,6 +129,27 @@ class SliderProcessor implements DataProcessorInterface
             unset($configuration[$keyWithoutDot . '.']);
         }
         return $configuration;
+    }
+
+    /**
+     * Removes dots "." from end of a key identifier of TypoScript styled array.
+     * array('key.' => array('property.' => 'value')) --> array('key' => array('property' => 'value'))
+     *
+     * @param array $ts TypoScript configuration array
+     * @return array TypoScript configuration array without dots at the end of all keys
+     */
+    public static function removeDotsFromTS(array $ts): array
+    {
+        $out = [];
+        foreach ($ts as $key => $value) {
+            if (is_array($value)) {
+                $key = rtrim((string)$key, '.');
+                $out[$key] = self::removeDotsFromTS($value);
+            } else {
+                $out[$key] = $value;
+            }
+        }
+        return $out;
     }
 
 }

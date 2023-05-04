@@ -6,9 +6,7 @@ namespace WapplerSystems\WsSlider\Hooks;
 use TYPO3\CMS\Backend\Utility\BackendUtility as BackendUtilityCore;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\StringUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
+use WapplerSystems\WsSlider\Service\TypoScriptService;
 use WapplerSystems\WsSlider\Utility\TemplateLayout;
 
 /**
@@ -36,7 +34,9 @@ class ItemsProcFunc
         $pageId = $this->getPageId($config['row']['pid']);
         $currentRenderer = $config['row']['tx_wsslider_renderer'][0] ?? '';
         $rendererTyposcriptPath = $config['config']['rendererTyposcriptPath'];
-        $defaultRenderer = $this->getTypoScriptValue($rendererTyposcriptPath);
+
+        $typoscript = TypoScriptService::getTypoScript($pageId);
+        $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$rendererTyposcriptPath);
         if ($currentRenderer === '' && $defaultRenderer !== '') $currentRenderer = $defaultRenderer;
 
         if ($currentRenderer === '') return;
@@ -70,7 +70,7 @@ class ItemsProcFunc
         $allLayouts = [];
         foreach ($templateLayouts as $key => $layout) {
             if (is_array($layout[0])) {
-                if (isset($layout[0]['allowedColPos']) && StringUtility::endsWith($layout[1], '.')) {
+                if (isset($layout[0]['allowedColPos']) && \str_ends_with($layout[1], '.')) {
                     $layoutKey = substr($layout[1], 0, -1);
                     $restrictions[$layoutKey] = GeneralUtility::intExplode(',', $layout[0]['allowedColPos'], true);
                 }
@@ -145,33 +145,8 @@ class ItemsProcFunc
     }
 
 
-    private function getTypoScriptValue($path)
-    {
-
-        $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManagerInterface::class)
-            ->getConfiguration(
-                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-            );
-
-        $segments = GeneralUtility::trimExplode('.', $path);
-
-        $lastSegment = array_pop($segments);
-        foreach ($segments as $segment) {
-            if (isset($tsArray[$segment . '.'])) {
-                $tsArray = $tsArray[$segment . '.'];
-            } else {
-                return null;
-            }
-        }
-        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
-
-        return null;
-    }
-
-
     /**
-     * @return \TYPO3\CMS\Core\Localization\LanguageService
+     * @return LanguageService
      */
     protected static function getLanguageService(): LanguageService
     {

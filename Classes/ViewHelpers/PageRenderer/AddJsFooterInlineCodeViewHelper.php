@@ -14,8 +14,8 @@ namespace WapplerSystems\WsSlider\ViewHelpers\PageRenderer;
  *
  * The TYPO3 project - inspiring people to share!
  */
-
-
+use TYPO3\CMS\Core\Page\PageRenderer;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
@@ -42,28 +42,28 @@ class AddJsFooterInlineCodeViewHelper extends AbstractTagBasedViewHelper
     }
 
     /**
-     * @var \TYPO3\CMS\Core\Page\PageRenderer
+     * @var PageRenderer
      */
     protected $pageRenderer;
 
     /**
-     * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface
+     * @var ConfigurationManagerInterface
      */
     protected $configurationManager;
 
     /**
-     * @param \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer
+     * @param PageRenderer $pageRenderer
      */
-    public function injectPageRenderer(\TYPO3\CMS\Core\Page\PageRenderer $pageRenderer)
+    public function injectPageRenderer(PageRenderer $pageRenderer)
     {
         $this->pageRenderer = $pageRenderer;
     }
 
     /**
-     * @param \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface $configurationManager
+     * @param ConfigurationManagerInterface $configurationManager
      * @return void
      */
-    public function injectConfigurationManager(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface $configurationManager)
+    public function injectConfigurationManager(ConfigurationManagerInterface $configurationManager)
     {
         $this->configurationManager = $configurationManager;
     }

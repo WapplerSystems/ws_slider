@@ -1,7 +1,6 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-    die ('Access denied.');
-}
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Resource\File;
 
 return [
     'ctrl' => [
@@ -10,7 +9,6 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'dividers2tabs' => TRUE,
         'sortby' => 'sorting',
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
@@ -26,6 +24,9 @@ return [
         'typeicon_classes' => [
             'default' => 'ext-wsslider-image'
         ],
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ]
     ],
     'interface' => [
     ],
@@ -34,7 +35,7 @@ return [
             'showitem' => 'hidden, title, sys_language_uid, foreground_media,
 				description,
 				text_position, style_class, link,
-		
+
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
         ],
     ],
@@ -45,22 +46,9 @@ return [
         'sys_language_uid' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'special' => 'languages',
-                'items' => [
-                    [
-                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                        -1,
-                        'flags-multiple'
-                    ],
-                ],
-                'default' => 0,
-            ]
+            'config' => ['type' => 'language']
         ],
         'l10n_parent' => [
-            'exclude' => true,
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
@@ -83,7 +71,7 @@ return [
             ],
         ],
         't3ver_label' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.versionLabel',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.versionLabel',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -188,9 +176,8 @@ return [
         ],
         'foreground_media' => [
             'exclude' => 0,
-            'l10n_mode' => 'mergeIfNotBlank',
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.foregroundMedia',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+            'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
                 'foreground_media',
                 [
                     'minitems' => 0,
@@ -208,26 +195,22 @@ return [
                         'tablenames' => 'tx_wsslider_domain_model_item',
                         'table_local' => 'sys_file',
                     ],
-                    'foreign_types' => [
-                        '0' => [
-                            'showitem' => '
-                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                                --palette--;;imageoverlayPalette,
-                                --palette--;;filePalette'
-                        ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                            'showitem' => '
-                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                                --palette--;;imageoverlayPalette,
-                                --palette--;;filePalette'
-                        ],
-                    ],
                     'overrideChildTca' => [
                         'types' => [
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                            File::FILETYPE_IMAGE => [
                                 'showitem' => '
                                     --palette--;;imageoverlayPalette,
                                     --palette--;;filePalette'
+                            ], '0' => [
+                                'showitem' => '
+                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
+                            ], File::FILETYPE_IMAGE => [
+                                'showitem' => '
+                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette'
                             ],
                         ],
                         'columns' => [

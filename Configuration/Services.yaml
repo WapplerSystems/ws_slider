@@ -6,3 +6,21 @@ services:
 
   WapplerSystems\WsSlider\:
     resource: '../Classes/*'
+
+  WapplerSystems\WsSlider\Configuration\BackendConfigurationManager:
+    public: true
+    arguments:
+      $typoScriptCache: '@cache.typoscript'
+      $runtimeCache: '@cache.runtime'
+
+
+  WapplerSystems\WsSlider\FlexForm\FlexFormParsingModifyEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'ws-slider/set-data-structure'
+        method: 'setDataStructure'
+        event: TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureParsedEvent
+      - name: event.listener
+        identifier: 'ws-slider/set-data-structure-identifier'
+        method: 'setDataStructureIdentifier'
+        event: TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureIdentifierInitializedEvent

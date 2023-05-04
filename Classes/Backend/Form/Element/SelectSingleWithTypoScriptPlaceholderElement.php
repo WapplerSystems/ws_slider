@@ -18,11 +18,11 @@ namespace WapplerSystems\WsSlider\Backend\Form\Element;
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 use TYPO3\CMS\Backend\Form\InlineStackProcessor;
 use TYPO3\CMS\Backend\Form\Utility\FormEngineUtility;
+use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
-use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
+use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
  * Creates a widget where only one item can be selected.
@@ -79,6 +79,8 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $resultArray = $this->initializeResultArray();
         $languageService = $this->getLanguageService();
 
+        $typoscript = TypoScriptService::getTypoScript($this->data['parentPageRow']['uid'], 0, $this->data['rootline'], $this->data['site']);
+
         $table = $this->data['tableName'];
         $field = $this->data['fieldName'];
         $row = $this->data['databaseRow'];
@@ -86,6 +88,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $config = $parameterArray['fieldConf']['config'];
 
         $selectItems = $parameterArray['fieldConf']['config']['items'];
+        $classList = ['form-select', 'form-control-adapt'];
 
         # fix for flexform
         $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'], 4);
@@ -94,31 +97,27 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         /** @var InlineStackProcessor $inlineStackProcessor */
         $inlineStackProcessor = GeneralUtility::makeInstance(InlineStackProcessor::class);
         $inlineStackProcessor->initializeByGivenStructure($this->data['inlineStructure']);
-        $uniqueIds = null;
-        if ($this->data['isInlineChild'] && $this->data['inlineParentUid']) {
-            // @todo: At least parts of this if is dead and/or broken: $uniqueIds is filled but never used.
-            // See InlineControlContainer where 'inlineData' 'unique' 'used' is set. What exactly is
-            // this if supposed to do and when should it kick in and what for?
+        $uniqueIds = [];
+        if (($this->data['isInlineChild'] ?? false) && ($this->data['inlineParentUid'] ?? false)) {
+            // If config[foreign_unique] is set for the parent inline field, all
+            // already used unique ids must be excluded from the select items.
             $inlineObjectName = $inlineStackProcessor->getCurrentStructureDomObjectIdPrefix($this->data['inlineFirstPid']);
-            $inlineFormName = $inlineStackProcessor->getCurrentStructureFormPrefix();
-            if ($this->data['inlineParentConfig']['foreign_table'] === $table
-                && $this->data['inlineParentConfig']['foreign_unique'] === $field
+            if (($this->data['inlineParentConfig']['foreign_table'] ?? false) === $table
+                && ($this->data['inlineParentConfig']['foreign_unique'] ?? false) === $field
             ) {
-                $uniqueIds = $this->data['inlineData']['unique'][$inlineObjectName . '-' . $table]['used'];
-                $parameterArray['fieldChangeFunc']['inlineUnique'] = 'inline.updateUnique(this,'
-                    . GeneralUtility::quoteJSvalue($inlineObjectName . '-' . $table) . ','
-                    . GeneralUtility::quoteJSvalue($inlineFormName) . ','
-                    . GeneralUtility::quoteJSvalue($row['uid']) . ');';
+                $classList[] = 't3js-inline-unique';
+                $uniqueIds = $this->data['inlineData']['unique'][$inlineObjectName . '-' . $table]['used'] ?? [];
             }
             // hide uid of parent record for symmetric relations
-            if ($this->data['inlineParentConfig']['foreign_table'] === $table
+            if (($this->data['inlineParentConfig']['foreign_table'] ?? false) === $table
                 && (
-                    $this->data['inlineParentConfig']['foreign_field'] === $field
-                    || $this->data['inlineParentConfig']['symmetric_field'] === $field
+                    ($this->data['inlineParentConfig']['foreign_field'] ?? false) === $field
+                    || ($this->data['inlineParentConfig']['symmetric_field'] ?? false) === $field
                 )
             ) {
                 $uniqueIds[] = $this->data['inlineParentUid'];
             }
+            $uniqueIds = array_map(static fn ($item) => (int)$item, $uniqueIds);
         }
 
         // Initialization:
@@ -137,35 +136,39 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $selectItemCounter = 0;
         $selectItemGroupCount = 0;
         $selectItemGroups = [];
-        $selectedValue = null;
+        $selectedValue = '';
         $hasIcons = false;
 
+        // In case e.g. "l10n_display" is set to "defaultAsReadonly" only one value (as string) could be handed in
         if (!empty($parameterArray['itemFormElValue'])) {
-            $selectedValue = (string)$parameterArray['itemFormElValue'][0];
+            if (is_array($parameterArray['itemFormElValue'])) {
+                $selectedValue = (string)$parameterArray['itemFormElValue'][0];
+            } else {
+                $selectedValue = (string)$parameterArray['itemFormElValue'];
+            }
         }
 
-
         foreach ($selectItems as $item) {
-            if ($item[1] === '--div--') {
+            $selected = $selectedValue === (string)$item['value'];
+
+            if ($item['value'] === '--div--') {
                 // IS OPTGROUP
                 if ($selectItemCounter !== 0) {
                     $selectItemGroupCount++;
                 }
                 $selectItemGroups[$selectItemGroupCount]['header'] = [
-                    'title' => $item[0],
+                    'title' => $item['label'],
                 ];
-            } else {
-                // IS ITEM
-                $icon = !empty($item[2]) ? FormEngineUtility::getIconHtml($item[2], $item[0], $item[0]) : '';
-                $selected = $selectedValue === (string)$item[1];
+            } elseif ($selected || !in_array((int)$item['value'], $uniqueIds, true)) {
+                $icon = !empty($item['icon']) ? FormEngineUtility::getIconHtml($item['icon'], $item['label'], $item['label']) : '';
 
                 if ($selected) {
                     $selectedIcon = $icon;
                 }
 
                 $selectItemGroups[$selectItemGroupCount]['items'][] = [
-                    'title' => $this->appendValueToLabelInDebugMode($item[0], $item[1]),
-                    'value' => $item[1],
+                    'title' => $this->appendValueToLabelInDebugMode($item['label'], $item['value']),
+                    'value' => $item['value'],
                     'icon' => $icon,
                     'selected' => $selected,
                 ];
@@ -223,7 +226,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $resultArray = $this->mergeChildReturnIntoExistingResult($resultArray, $fieldWizardResult, false);
 
 
-        $defaultValue = $this->getTypoScriptValue($config['typoscriptPath']);
+        $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$config['typoscriptPath']);
 
         if ($defaultValue !== null) {
 
@@ -231,7 +234,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
             $placeholder = $shortenedPlaceholder = $defaultValue ?? '';
 
             foreach ($selectItems as $selectItem) {
-                if ($selectItem[1] === $defaultValue) $placeholder = $selectItem[0];
+                if ($selectItem['value'] === $defaultValue) $placeholder = $selectItem['label'];
             }
 
             $disabled = '';
@@ -312,49 +315,14 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         }
 
 
-        $resultArray['requireJsModules'][] = ['TYPO3/CMS/Backend/FormEngine/Element/SelectSingleElement' => implode(LF, [
-            'function(SelectSingleElement) {',
-            'require([\'jquery\'], function($) {',
-            '$(function() {',
-            'SelectSingleElement.initialize(',
-            GeneralUtility::quoteJSvalue('#' . $selectId) . ',',
-            '{',
-            'onChange: function() {',
-            implode('', $parameterArray['fieldChangeFunc']),
-            '}',
-            '}',
-            ');',
-            '});',
-            '});',
-            '}',
-        ])];
+        $onFieldChangeItems = $this->getOnFieldChangeItems($parameterArray['fieldChangeFunc'] ?? []);
+        $resultArray['javaScriptModules']['selectSingleElement'] = JavaScriptModuleInstruction::create(
+            '@typo3/backend/form-engine/element/select-single-element.js'
+        )->invoke('initializeOnReady', '#' . $selectId, ['onChange' => $onFieldChangeItems]);
+
 
         $resultArray['html'] = '<div class="formengine-field-item t3js-formengine-field-item">' . $fieldInformationHtml . $fullElement . '</div>';
         return $resultArray;
-    }
-
-
-    private function getTypoScriptValue($path)
-    {
-
-        $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManager::class)
-            ->getConfiguration(
-                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-            );
-        $segments = GeneralUtility::trimExplode('.', $path);
-
-        $lastSegment = array_pop($segments);
-        foreach ($segments as $segment) {
-            if (isset($tsArray[$segment . '.'])) {
-                $tsArray = $tsArray[$segment . '.'];
-            } else {
-                return null;
-            }
-        }
-        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
-
-        return null;
     }
 
 }

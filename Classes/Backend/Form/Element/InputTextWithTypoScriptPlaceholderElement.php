@@ -7,9 +7,7 @@ use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
-use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
+use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
  * General type=input element.
@@ -62,6 +60,8 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
     {
         $languageService = $this->getLanguageService();
 
+        $typoscript = TypoScriptService::getTypoScript($this->data['parentPageRow']['uid'], 0, $this->data['rootline'], $this->data['site']);
+
         $table = $this->data['tableName'];
         $fieldName = $this->data['fieldName'];
         $row = $this->data['databaseRow'];
@@ -72,7 +72,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         $config = $parameterArray['fieldConf']['config'];
         $evalList = GeneralUtility::trimExplode(',', $config['eval'] ?? '', true);
         $size = MathUtility::forceIntegerInRange($config['size'] ?? $this->defaultInputWidth, $this->minimumInputWidth, $this->maxInputWidth);
-        $width = (int)$this->formMaxWidth($size);
+        $width = $this->formMaxWidth($size);
 
         # fix for flexform
         $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'], 4);
@@ -136,7 +136,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                 'field' => $parameterArray['itemFormElName'] ?? '',
                 'evalList' => implode(',', $evalList),
                 'is_in' => trim($config['is_in'] ?? '')
-            ]),
+            ], JSON_THROW_ON_ERROR),
             'data-formengine-input-name' => $parameterArray['itemFormElName'],
         ];
 
@@ -203,7 +203,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
             $valueSliderHtml[] = ' data-slider-value="' . htmlspecialchars($itemValue) . '"';
             $valueSliderHtml[] = ' data-slider-value-type="' . htmlspecialchars($valueType) . '"';
             $valueSliderHtml[] = ' data-slider-item-name="' . htmlspecialchars($parameterArray['itemFormElName']) . '"';
-            $valueSliderHtml[] = ' data-slider-callback-params="' . htmlspecialchars(json_encode($callbackParams)) . '"';
+            $valueSliderHtml[] = ' data-slider-callback-params="' . htmlspecialchars(json_encode($callbackParams, JSON_THROW_ON_ERROR)) . '"';
             $valueSliderHtml[] = ' style="width: ' . $width . 'px;"';
             $valueSliderHtml[] = '>';
             $valueSliderHtml[] = '</div>';
@@ -258,7 +258,8 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
 
         $fullElement = $mainFieldHtml;
 
-        $defaultValue = $this->getTypoScriptValue($config['typoscriptPath']);
+
+        $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$config['typoscriptPath']);
 
         if ($defaultValue !== null) {
             $checked = ($itemValue !== '' && $itemValue !== null) ? ' checked="checked"' : '';
@@ -309,32 +310,9 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
     /**
      * @return LanguageService
      */
-    protected function getLanguageService()
+    protected function getLanguageService(): LanguageService
     {
         return $GLOBALS['LANG'];
     }
 
-
-    private function getTypoScriptValue($path)
-    {
-        $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManager::class)
-            ->getConfiguration(
-                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-            );
-
-        $segments = GeneralUtility::trimExplode('.', $path);
-
-        $lastSegment = array_pop($segments);
-        foreach ($segments as $segment) {
-            if (isset($tsArray[$segment . '.'])) {
-                $tsArray = $tsArray[$segment . '.'];
-            } else {
-                return null;
-            }
-        }
-        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
-
-        return null;
-    }
 }

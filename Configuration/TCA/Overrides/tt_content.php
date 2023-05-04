@@ -1,5 +1,7 @@
 <?php
-defined('TYPO3_MODE') || die();
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use WapplerSystems\WsSlider\Hooks\ItemsProcFunc;
+defined('TYPO3') || die();
 
 /***************
  * Add Content Element
@@ -13,7 +15,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['ws_slider'] ?? null)) {
 /***************
  * Add content element to selector list
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
@@ -62,7 +64,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
 );
 
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_wsslider_items' => [
         'exclude' => 0,
         'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_flexslider.items',
@@ -103,7 +105,7 @@ $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = array_replace_recursive(
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
-            'itemsProcFunc' => WapplerSystems\WsSlider\Hooks\ItemsProcFunc::class.'->userTemplateLayout',
+            'itemsProcFunc' => ItemsProcFunc::class.'->userTemplateLayout',
             'rendererTyposcriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'default' => 'Default',
             'items' => [
@@ -132,7 +134,7 @@ $GLOBALS['TCA']['tt_content']['palettes'] = array_replace_recursive(
 /***************
  * Add flexForms for content element configuration
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:ws_slider/Configuration/FlexForm/Settings.xml',
     'ws_slider'

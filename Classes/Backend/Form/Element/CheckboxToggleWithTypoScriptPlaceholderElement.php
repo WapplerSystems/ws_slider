@@ -21,18 +21,14 @@ use TYPO3\CMS\Backend\Form\NodeFactory;
 use TYPO3\CMS\Core\Imaging\IconRegistry;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
+use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
  * Generation of TCEform elements of the type "check"
  */
 class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
 {
-    /**
-     * @var IconRegistry
-     */
-    private $iconRegistry;
 
     /**
      * Default field information enabled for this element.
@@ -87,6 +83,9 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
     {
         $resultArray = $this->initializeResultArray();
 
+        $typoscript = TypoScriptService::getTypoScript($this->data['parentPageRow']['uid'], 0, $this->data['rootline'], $this->data['site']);
+
+
         $elementHtml = '';
         $disabled = false;
         if ($this->data['parameterArray']['fieldConf']['config']['readOnly']) {
@@ -95,7 +94,7 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
         // Traversing the array of items
         $items = $this->data['parameterArray']['fieldConf']['config']['items'];
 
-        $numberOfItems = count($items);
+        $numberOfItems = is_countable($items) ? count($items) : 0;
         if ($numberOfItems === 0) {
             $items[] = ['', ''];
             $numberOfItems = 1;
