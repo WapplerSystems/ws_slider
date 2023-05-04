@@ -203,8 +203,7 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
 
     private function getTypoScriptValue($path)
     {
-        $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManager::class)
+        $tsArray = GeneralUtility::makeInstance(ConfigurationManager::class)
             ->getConfiguration(
                 ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
             );

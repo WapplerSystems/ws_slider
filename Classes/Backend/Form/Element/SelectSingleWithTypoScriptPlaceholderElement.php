@@ -22,6 +22,8 @@ use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
 use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
 use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
@@ -323,6 +325,29 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
 
         $resultArray['html'] = '<div class="formengine-field-item t3js-formengine-field-item">' . $fieldInformationHtml . $fullElement . '</div>';
         return $resultArray;
+    }
+
+
+    private function getTypoScriptValue($path)
+    {
+
+        $tsArray = GeneralUtility::makeInstance(ConfigurationManager::class)
+            ->getConfiguration(
+                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
+            );
+        $segments = GeneralUtility::trimExplode('.', $path);
+
+        $lastSegment = array_pop($segments);
+        foreach ($segments as $segment) {
+            if (isset($tsArray[$segment . '.'])) {
+                $tsArray = $tsArray[$segment . '.'];
+            } else {
+                return null;
+            }
+        }
+        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
+
+        return null;
     }
 
 }
