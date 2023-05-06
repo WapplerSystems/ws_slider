@@ -15,6 +15,7 @@
                     <settings.js.items>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.items</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.items.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -27,6 +28,7 @@
                     <settings.js.loop>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.loop.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -51,6 +53,7 @@
                     <!--<settings.js.merge>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.merge</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.merge.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -75,6 +78,7 @@
                     <settings.js.mergeFit>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.mergeFit</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.mergeFit.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -99,6 +103,7 @@
                     <settings.js.startPosition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.startPosition</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.startPosition.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -111,6 +116,7 @@
                     <settings.js.rewind>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.rewind</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.rewind.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -135,6 +141,7 @@
                     <settings.js.autoplay>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.autoplay.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -159,6 +166,7 @@
                     <settings.js.autoplayTimeout>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.autoplayTimeout</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.autoplayTimeout.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -171,6 +179,7 @@
                     <settings.js.autoplayHoverPause>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.autoplayHoverPause</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.autoplayHoverPause.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -195,6 +204,7 @@
                     <settings.js.autoplaySpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplaySpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.autoplaySpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -207,6 +217,7 @@
                     <!--<settings.js.smartSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.smartSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.smartSpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -220,6 +231,7 @@
                     <!--<settings.js.fluidSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.fluidSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.fluidSpeed.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -244,6 +256,7 @@
                     <settings.js.responsiveRefreshRate>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.responsiveRefreshRate</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.responsiveRefreshRate.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -256,6 +269,7 @@
                     <settings.js.video>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.video</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.video.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -280,6 +294,7 @@
                     <settings.js.checkVisible>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.checkVisible</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.checkVisible.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -316,6 +331,7 @@
                     <settings.js.nav>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.nav</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.nav.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -341,6 +357,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.navContainer</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.navContainer.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -354,6 +371,7 @@
                     <settings.js.slideBy>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.slideBy</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.slideBy.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -366,6 +384,7 @@
                     <settings.js.dots>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.dots</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.dots.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -390,6 +409,7 @@
                     <settings.js.dotsEach>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.dotsEach</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.dotsEach.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -405,6 +425,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.dotsContainer</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.dotsContainer.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -429,6 +450,7 @@
                     <settings.js.margin>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.margin</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.margin.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -441,6 +463,7 @@
                     <settings.js.stagePadding>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.stagePadding</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.stagePadding.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -453,6 +476,7 @@
                     <settings.js.autoWidth>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.autoWidth</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.autoWidth.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -477,6 +501,7 @@
                     <settings.js.center>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.center</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.center.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -501,6 +526,7 @@
                     <settings.js.videoHeight>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.videoHeight</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.videoHeight.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -513,6 +539,7 @@
                     <settings.js.videoWidth>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.videoWidth</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.videoWidth.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -536,6 +563,7 @@
                     <settings.js.dragEndSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.dragEndSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.dragEndSpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -548,6 +576,7 @@
                     <settings.js.mouseDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.mouseDrag</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.mouseDrag.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -572,6 +601,7 @@
                     <settings.js.touchDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.touchDrag</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.touchDrag.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -596,6 +626,7 @@
                     <!--<settings.js.pullDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.pullDrag</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.pullDrag.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -620,6 +651,7 @@
                     <!--<settings.js.freeDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.freeDrag</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.freeDrag.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -655,6 +687,7 @@
                     <settings.js.slideTransition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.slideTransition</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.slideTransition.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -668,6 +701,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateIn</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.animateIn.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -681,6 +715,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateOut</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.animateOut.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -693,6 +728,7 @@
                     <settings.js.dotsSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.dotsSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.dotsSpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -705,6 +741,7 @@
                     <settings.js.navSpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.navSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.navSpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -728,6 +765,7 @@
                     <settings.js.lazyLoad>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.lazyLoad.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -752,6 +790,7 @@
                     <settings.js.lazyLoadEager>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.lazyLoadEager</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.lazyLoadEager.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -764,6 +803,7 @@
                     <settings.js.URLhashListener>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.URLhashListener</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.URLhashListener.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -789,6 +829,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.fallbackEasing</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.fallbackEasing.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -802,6 +843,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.nestedItemSelector</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.nestedItemSelector.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -815,6 +857,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.itemElement</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.itemElement.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -828,6 +871,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/owlslider.xlf:settings.stageElement</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/owl_csh_flexforms.xlf:owl.settings.js.stageElement.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
