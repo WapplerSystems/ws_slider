@@ -1,13 +1,10 @@
 <?php
 
-use TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools;
 use TYPO3\CMS\Core\Information\Typo3Version;
-use WapplerSystems\WsSlider\Hooks\FlexFormEnhancerHook;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptPlaceholderElement;
 use WapplerSystems\WsSlider\Backend\Form\Element\InputTextWithTypoScriptPlaceholderElement;
-use WapplerSystems\WsSlider\Backend\Form\Container\FlexFormElementContainer;
 use WapplerSystems\WsSlider\Updates\WsFlexsliderMigration;
 
 call_user_func(
@@ -30,12 +27,6 @@ call_user_func(
             'priority' => '70',
             'class' => InputTextWithTypoScriptPlaceholderElement::class,
         ];
-        /*
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1603197807] = [
-            'nodeName' => 'flexFormElementContainer',
-            'priority' => '70',
-            'class' => FlexFormElementContainer::class,
-        ];*/
 
 
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['wssliderWsflexsliderImport']

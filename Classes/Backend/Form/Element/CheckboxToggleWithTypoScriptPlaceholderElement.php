@@ -64,15 +64,6 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
         ],
     ];
 
-    /**
-     * @param NodeFactory $nodeFactory
-     * @param array $data
-     */
-    public function __construct(NodeFactory $nodeFactory, array $data)
-    {
-        parent::__construct($nodeFactory, $data);
-        $this->iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
-    }
 
     /**
      * This will render a checkbox or an array of checkboxes
@@ -103,13 +94,13 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $cols = (int)$this->data['parameterArray']['fieldConf']['config']['cols'];
         if ($cols > 1) {
             [$colClass, $colClear] = $this->calculateColumnMarkup($cols);
-            $elementHtml .= '<div class="checkbox-row row">';
+            $elementHtml .= '<div class="row">';
             $counter = 0;
             // $itemKey is important here, because items could have been removed via TSConfig
             foreach ($items as $itemKey => $itemDefinition) {
-                $label = $itemDefinition[0];
+                $label = $itemDefinition['label'];
                 $elementHtml .=
-                    '<div class="checkbox-column ' . $colClass . '">'
+                    '<div class="' . $colClass . '">'
                     . $this->renderSingleCheckboxElement($label, $itemKey, $formElementValue, $numberOfItems, $this->data['parameterArray'], $disabled) .
                     '</div>';
                 ++$counter;
@@ -124,8 +115,8 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
             $elementHtml .= '</div>';
         } else {
             $counter = 0;
-            foreach ($items as $itemKey => $itemDefinition) {
-                $label = $itemDefinition[0];
+            foreach ($items as $itemDefinition) {
+                $label = $itemDefinition['label'];
                 $elementHtml .= $this->renderSingleCheckboxElement($label, $counter, $formElementValue, $numberOfItems, $this->data['parameterArray'], $disabled);
                 ++$counter;
             }
@@ -186,7 +177,7 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
         );
         $checkboxId = $additionalInformation['itemFormElID'] . '_' . $itemCounter;
         return '
-            <div class="checkbox checkbox-type-toggle' . ($invert ? ' checkbox-invert' : '') . ($inline ? ' checkbox-inline' : '') . (!$disabled ? '' : ' disabled') . '">
+            <div class="form-check form-switch' . (!$disabled ? '' : ' disabled') . '">
                 <input type="checkbox"
                     class="checkbox-input"
                     value="1"
@@ -194,33 +185,10 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
                     ' . $checkboxParameters . '
                     ' . (!$disabled ?: ' disabled="disabled"') . '
                     id="' . $checkboxId . '" />
-                <label class="checkbox-label" for="' . $checkboxId . '">
-                    <span class="checkbox-label-text">' . $this->appendValueToLabelInDebugMode(($label ? htmlspecialchars($label) : '&nbsp;'), $formElementValue) . '</span>
+                <label class="form-check-label" for="' . $checkboxId . '">
+                    ' . $this->appendValueToLabelInDebugMode(($label ? htmlspecialchars($label) : ''), $formElementValue) . '
                 </label>
             </div>';
     }
 
-
-    private function getTypoScriptValue($path)
-    {
-        $tsArray = GeneralUtility::makeInstance(ObjectManager::class)
-            ->get(ConfigurationManager::class)
-            ->getConfiguration(
-                ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
-            );
-
-        $segments = GeneralUtility::trimExplode('.', $path);
-
-        $lastSegment = array_pop($segments);
-        foreach ($segments as $segment) {
-            if (isset($tsArray[$segment . '.'])) {
-                $tsArray = $tsArray[$segment . '.'];
-            } else {
-                return null;
-            }
-        }
-        if (isset($tsArray[$lastSegment])) return $tsArray[$lastSegment];
-
-        return null;
-    }
 }

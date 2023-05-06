@@ -13,7 +13,6 @@ services:
       $typoScriptCache: '@cache.typoscript'
       $runtimeCache: '@cache.runtime'
 
-
   WapplerSystems\WsSlider\FlexForm\FlexFormParsingModifyEventListener:
     tags:
       - name: event.listener
