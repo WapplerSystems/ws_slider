@@ -16,7 +16,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animation</label>
-                            <desciption>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animation.description</desciption>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animation.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -42,6 +42,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.easing</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.easing.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -55,6 +56,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.direction</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.direction.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -79,6 +81,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.reverse</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.reverse.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -103,6 +106,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animationLoop</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animationLoop.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -127,6 +131,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.smoothHeight</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.smoothHeight.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -151,6 +156,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.startAt</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.startAt.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -165,6 +171,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slideshow</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.slideshow.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -189,6 +196,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slideshowSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.slideshowSpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -203,6 +211,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animationSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animationSpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -217,6 +226,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.initDelay</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.initDelay.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -231,6 +241,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.randomize</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.randomize.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -255,6 +266,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.randomize</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.fadeFirstSlide.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -289,6 +301,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseOnAction</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pauseOnAction.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -313,6 +326,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseOnHover</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pauseOnHover.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -337,6 +351,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseInvisible</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pauseInvisible.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -361,6 +376,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.useCSS</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.useCSS.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -385,6 +401,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.touch</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.touch.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -409,6 +426,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.video</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.video.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -444,6 +462,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlNav</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.controlNav.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -468,6 +487,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.directionNav</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.directionNav.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -503,6 +523,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.keyboard</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.keyboard.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -527,6 +548,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.multipleKeyboard</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.multipleKeyboard.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -551,6 +573,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.mousewheel</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.mousewheel.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -575,6 +598,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pausePlay</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pausePlay.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -609,6 +633,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.selector</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.selector.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -622,6 +647,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlsContainer</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.controlsContainer.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -636,6 +662,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.manualControls</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.manualControls.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -650,6 +677,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.customDirectionNav</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.customDirectionNav.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -664,6 +692,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.sync</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.sync.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -678,6 +707,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.asNavFor</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.asNavFor.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -702,6 +732,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemWidth</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.itemWidth.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -716,6 +747,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemMargin</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.itemMargin.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -730,6 +762,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.minItems</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.minItems.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -744,6 +777,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.maxItems</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.maxItems.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -758,6 +792,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.move</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.move.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
