@@ -16,6 +16,7 @@
                     <settings.js.mode>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.mode</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.mode.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -39,6 +40,7 @@
                     <settings.js.axis>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.axis</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.axis.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -62,6 +64,7 @@
                     <settings.js.items>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.items</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.items.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -74,6 +77,7 @@
                     <settings.js.slideBy>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.slideBy</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.slideBy.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -86,6 +90,7 @@
                     <settings.js.center>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.center</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.center.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -110,6 +115,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animationSpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.speed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -123,6 +129,7 @@
                     <settings.js.autoplay>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplay.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -146,6 +153,7 @@
                     <settings.js.autoplayPosition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayPosition</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayPosition.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -170,6 +178,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayTimeout</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayTimeout.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -183,6 +192,7 @@
                     <settings.js.autoplayDirection>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayDirection</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayDirection.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -206,6 +216,7 @@
                     <settings.js.autoplayHoverPause>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayHoverPause</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayHoverPause.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -229,6 +240,7 @@
                     <settings.js.autoplayButtonOutput>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayButtonOutput</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayButtonOutput.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -252,6 +264,7 @@
                     <settings.js.autoplayResetOnVisibility>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayResetOnVisibility</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayResetOnVisibility.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -275,6 +288,7 @@
                     <settings.js.loop>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.loop.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -298,6 +312,7 @@
                     <settings.js.rewind>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.rewind</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.rewind.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -321,6 +336,7 @@
                     <settings.js.lazyload>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.lazyload.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -345,6 +361,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.lazyloadSelector</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.lazyloadSelector.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -358,6 +375,7 @@
                     <settings.js.freezable>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.freezable</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.freezable.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -381,6 +399,7 @@
                     <settings.js.disable>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.disable</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.disable.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -405,6 +424,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.startIndex</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.startIndex.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -428,6 +448,7 @@
                     <settings.js.nav>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.nav</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nav.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -451,6 +472,7 @@
                     <settings.js.navPosition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.navPosition</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.navPosition.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -475,6 +497,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.navContainer</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.navContainer.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -487,6 +510,7 @@
                     <settings.js.navAsThumbnails>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.navAsThumbnails</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.navAsThumbnails.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -510,6 +534,7 @@
                     <settings.js.controls>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controls</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.controls.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -533,6 +558,7 @@
                     <settings.js.controlsPosition>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controlsPosition</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.controlsPosition.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -557,6 +583,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controlsContainer</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.controlsContainer.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -570,6 +597,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.customPrevButton</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.prevButton.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -583,6 +611,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.customNextButton</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nextButton.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -595,6 +624,7 @@
                     <settings.js.arrowKeys>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.arrowKeys</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.arrowKeys.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -628,6 +658,7 @@
                     <settings.js.autoHeight>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoHeight.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -651,6 +682,7 @@
                     <settings.js.gutter>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.gutter</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.gutter.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -663,6 +695,7 @@
                     <settings.js.edgePadding>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.edgePadding</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.edgePadding.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -675,6 +708,7 @@
                     <settings.js.fixedWidth>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.fixedWidth</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.fixedWidth.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -687,6 +721,7 @@
                     <settings.js.autoWidth>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoWidth</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoWidth.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -710,6 +745,7 @@
                     <settings.js.viewportMax>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.viewportMax</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.viewportMax.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -722,6 +758,7 @@
                     <settings.js.nested>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.nested</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nested.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -759,6 +796,7 @@
                     <settings.js.touch>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.touch</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.touch.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -782,6 +820,7 @@
                     <settings.js.mouseDrag>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.mouseDrag</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.mouseDrag.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -806,6 +845,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.swipeAngle</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.swipeAngle.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -819,6 +859,7 @@
                     <settings.js.preventScrollOnTouch>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventScrollOnTouch</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.preventScrollOnTouch.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -857,6 +898,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateIn</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateIn.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -870,6 +912,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateOut</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateOut.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -883,6 +926,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.animateNormal</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateNormal.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -896,6 +940,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.animateDelay</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateDelay.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -909,6 +954,7 @@
                     <settings.js.preventActionWhenRunning>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventActionWhenRunning</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.preventActionWhenRunning.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -943,6 +989,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.onInit</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.onInit.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -956,6 +1003,7 @@
                     <settings.js.useLocalStorage>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.useLocalStorage</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.useLocalStorage.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -980,6 +1028,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.nonce</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nonce.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
