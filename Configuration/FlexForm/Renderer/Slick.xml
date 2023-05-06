@@ -14,6 +14,7 @@
                     <settings.js.autoplay>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.autoplay.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -38,6 +39,7 @@
                     <settings.js.autoplaySpeed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplaySpeed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.autoplaySpeed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -50,6 +52,7 @@
                     <settings.js.infinite>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.infinite.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -74,6 +77,7 @@
                     <settings.js.initialSlide>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.initialSlide</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.initialSlide.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -87,6 +91,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.lazyLoad.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -109,6 +114,7 @@
                     <settings.js.swipe>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.swipe</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.swipe.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -132,6 +138,7 @@
                     <settings.js.swipeToSlide>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.swipeToSlide</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.swipeToSlide.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -155,6 +162,7 @@
                     <settings.js.touchMove>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.touchMove</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.touchMove.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -178,6 +186,7 @@
                     <settings.js.touchThreshold>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.touchThreshold</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.touchThreshold.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -190,6 +199,7 @@
                     <settings.js.accessibility>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.accessibility</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.accessibility.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -213,6 +223,7 @@
                     <settings.js.arrows>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.arrows</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.arrows.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -237,6 +248,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.appendArrows</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.appendArrows.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -250,6 +262,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.appendDots</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.appendDots.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -263,6 +276,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.prevArrow</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.prevArrow.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -276,6 +290,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.nextArrow</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.nextArrow.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -288,6 +303,7 @@
                     <settings.js.dots>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.dots</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.dots.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -311,6 +327,7 @@
                     <settings.js.dotsClass>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.dotsClass</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.dotsClass.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -323,6 +340,7 @@
                     <settings.js.draggable>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.draggable</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.draggable.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -346,6 +364,7 @@
                     <settings.js.pauseOnFocus>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.pauseOnFocus</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.pauseOnFocus.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -369,6 +388,7 @@
                     <settings.js.pauseOnHover>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.pauseOnHover</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.pauseOnHover.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -392,6 +412,7 @@
                     <settings.js.pauseOnDotsHover>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.pauseOnDotsHover</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.pauseOnDotsHover.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -415,6 +436,7 @@
                     <settings.js.verticalSwiping>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.verticalSwiping</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.verticalSwiping.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -438,6 +460,7 @@
                     <settings.js.rtl>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.rtl</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.rtl.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -462,6 +485,7 @@
                         <TCEforms>
                             <exclude>1</exclude>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.asNavFor</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.asNavFor.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -484,6 +508,7 @@
                     <settings.js.slidesToShow>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesToShow</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesToShow.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -507,6 +532,7 @@
                     <settings.js.slidesToScroll>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesToScroll</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesToScroll.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -519,6 +545,7 @@
                     <settings.js.mobileFirst>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.mobileFirst</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.mobileFirst.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -542,6 +569,7 @@
                     <settings.js.adaptiveHeight>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.adaptiveHeight.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -565,6 +593,7 @@
                     <settings.js.variableWidth>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.variableWidth</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.variableWidth.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -588,6 +617,7 @@
                     <settings.js.vertical>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.vertical</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.vertical.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -611,6 +641,7 @@
                     <settings.js.centerMode>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.centerMode</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.centerMode.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -634,6 +665,7 @@
                     <settings.js.centerPadding>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.centerPadding</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.centerPadding.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -646,6 +678,7 @@
                     <settings.js.focusOnSelect>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.focusOnSelect</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.focusOnSelect.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -669,6 +702,7 @@
                     <settings.js.edgeFriction>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.edgeFriction</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.edgeFriction.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -681,6 +715,7 @@
                     <settings.js.respondTo>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.respondTo</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.respondTo.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -693,6 +728,7 @@
                     <settings.js.rows>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.rows</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.rows.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -705,6 +741,7 @@
                     <settings.js.slidesPerRow>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesPerRow</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesPerRow.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -739,6 +776,7 @@
                     <settings.js.useCSS>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.useCSS</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.useCSS.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -762,6 +800,7 @@
                     <settings.js.useTransform>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.useTransform</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.useTransform.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -785,6 +824,7 @@
                     <settings.js.easing>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.easing</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.easing.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -797,6 +837,7 @@
                     <settings.js.cssEase>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.cssEase</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.cssEase.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -809,6 +850,7 @@
                     <!--<settings.js.customPaging>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.customPaging</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.customPaging.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -821,6 +863,7 @@
                     <settings.js.fade>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.fade</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.fade.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -844,6 +887,7 @@
                     <settings.js.speed>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.speed</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.speed.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -856,6 +900,7 @@
                     <settings.js.waitForAnimate>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.waitForAnimate</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.waitForAnimate.description</description>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -889,6 +934,7 @@
                     <settings.js.zindex>
                         <TCEforms>
                             <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.zindex</label>
+                            <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.zindex.description</description>
                             <config>
                                 <type>input</type>
                                 <renderType>inputWithTypoScriptPlaceholder</renderType>
