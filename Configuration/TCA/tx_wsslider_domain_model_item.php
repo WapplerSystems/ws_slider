@@ -34,7 +34,7 @@ return [
             'showitem' => 'hidden, title, sys_language_uid, foreground_media,
 				description,
 				text_position, style_class, link,
-		
+
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
         ],
     ],
@@ -237,6 +237,10 @@ return [
                                         'default' => [
                                             'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.crop_variant.default',
                                             'allowedAspectRatios' => [
+                                                'NaN' => [
+                                                    'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                                    'value' => 0
+                                                ],
                                                 '16:9' => [
                                                     'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
                                                     'value' => 16 / 9
@@ -250,7 +254,7 @@ return [
                                                     'value' => 4 / 3
                                                 ],
                                             ],
-                                            'selectedRatio' => '16:9',
+                                            'selectedRatio' => 'NaN',
                                             'cropArea' => [
                                                 'x' => 0.0,
                                                 'y' => 0.0,
@@ -282,4 +286,3 @@ return [
         ],
     ],
 ];
-
