@@ -4,3 +4,10 @@ TCEFORM.tt_content {
         bootstrap = Bootstrap
     }
 }
+
+TCEFORM.tx_wsslider_domain_model_item {
+  text_position.addItems {
+    left = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:text_position.left
+    right = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:text_position.right
+  }
+}
