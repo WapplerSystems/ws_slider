@@ -220,6 +220,13 @@
 				<source>Add image</source>
 			</trans-unit>
 
+			<trans-unit id="text_position.left" xml:space="preserve">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="text_position.right" xml:space="preserve">
+				<source>Right</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
