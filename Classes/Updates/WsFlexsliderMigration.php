@@ -4,21 +4,17 @@ declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\Updates;
 
-use Doctrine\DBAL\Driver\Statement;
+use Doctrine\DBAL\Exception;
+use Doctrine\DBAL\Result;
 use TYPO3\CMS\Core\Database\ConnectionPool;
-use TYPO3\CMS\Core\Database\Query\Restriction\BackendWorkspaceRestriction;
-use TYPO3\CMS\Core\Database\Query\Restriction\EndTimeRestriction;
-use TYPO3\CMS\Core\Database\Query\Restriction\FrontendGroupRestriction;
-use TYPO3\CMS\Core\Database\Query\Restriction\FrontendWorkspaceRestriction;
-use TYPO3\CMS\Core\Database\Query\Restriction\HiddenRestriction;
-use TYPO3\CMS\Core\Database\Query\Restriction\StartTimeRestriction;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Install\Attribute\UpgradeWizard;
 use TYPO3\CMS\Install\Updates\ConfirmableInterface;
 use TYPO3\CMS\Install\Updates\Confirmation;
 use TYPO3\CMS\Install\Updates\DatabaseUpdatedPrerequisite;
 use TYPO3\CMS\Install\Updates\UpgradeWizardInterface;
 
-
+#[UpgradeWizard('wsFlexsliderMigration')]
 class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterface
 {
     /**
@@ -65,19 +61,24 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
     /**
      *
      * @return bool Whether an update is required (TRUE) or not (FALSE)
+     * @throws Exception
      */
     public function updateNecessary(): bool
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
-        $queryBuilder->getRestrictions()->removeByType(HiddenRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(StartTimeRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(EndTimeRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(BackendWorkspaceRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(FrontendGroupRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(FrontendWorkspaceRestriction::class);
+        $queryBuilder->getRestrictions()->removeAll();
         $count = $queryBuilder->count('uid')
             ->from('tt_content')
             ->where($queryBuilder->expr()->eq('list_type', $queryBuilder->createNamedParameter('wsflexslider_pi1')))
+            ->executeQuery()->fetchOne();
+        if ($count > 0) {
+            return true;
+        }
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('sys_file_reference');
+        $queryBuilder->getRestrictions()->removeAll();
+        $count = $queryBuilder->count('uid')
+            ->from('sys_file_reference')
+            ->where($queryBuilder->expr()->eq('tablenames', $queryBuilder->createNamedParameter('tx_wsflexslider_domain_model_image')))
             ->executeQuery()->fetchOne();
         return $count > 0;
     }
@@ -117,11 +118,10 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
 
 
         $flexsliderStatement = $this->loadFlexsliderRecords();
-        while ($row = $flexsliderStatement->execute()->fetchOne()) {
-
+        while ($row = $flexsliderStatement->fetchAssociative()) {
 
             $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_wsslider_domain_model_item');
-            $affectedRows = $queryBuilder
+            $queryBuilder
                 ->insert('tx_wsslider_domain_model_item')
                 ->values([
                     'uid' => $row['uid'],
@@ -134,7 +134,6 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
                     'content_uid' => $row['content_uid'],
                     'tstamp' => $row['tstamp'],
                     'crdate' => $row['crdate'],
-                    'cruser_id' => $row['cruser_id'],
                     'deleted' => $row['deleted'],
                     'hidden' => $row['hidden'],
                     'starttime' => $row['starttime'],
@@ -180,15 +179,10 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
 
 
 
-    protected function loadFlexsliderRecords(): Statement
+    protected function loadFlexsliderRecords(): Result
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_wsflexslider_domain_model_image');
-        $queryBuilder->getRestrictions()->removeByType(HiddenRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(StartTimeRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(EndTimeRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(BackendWorkspaceRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(FrontendGroupRestriction::class);
-        $queryBuilder->getRestrictions()->removeByType(FrontendWorkspaceRestriction::class);
+        $queryBuilder->getRestrictions()->removeAll();
         $queryBuilder->select('*')->from('tx_wsflexslider_domain_model_image');
         return $queryBuilder->executeQuery();
     }

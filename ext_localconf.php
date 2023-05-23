@@ -28,10 +28,6 @@ call_user_func(
             'class' => InputTextWithTypoScriptPlaceholderElement::class,
         ];
 
-
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['wssliderWsflexsliderImport']
-            = WsFlexsliderMigration::class;
-
     },
     'ws_slider'
 );
