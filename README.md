@@ -43,6 +43,7 @@ Download and install the [extension][3] with the extension manager module.
 
 * [Sven](https://github.com/svewap)
 * [Felix](https://github.com/FUTC-Coding)
+* Contributors
 
 
 [1]: https://docs.typo3.org/typo3cms/extensions/ws_slider/
