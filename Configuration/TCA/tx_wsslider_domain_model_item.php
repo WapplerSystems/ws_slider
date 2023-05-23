@@ -1,10 +1,8 @@
 <?php
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-use TYPO3\CMS\Core\Resource\File;
 
 return [
     'ctrl' => [
-        'title'	=> 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item',
+        'title' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -177,69 +175,49 @@ return [
         'foreground_media' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.foregroundMedia',
-            'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
-                'foreground_media',
-                [
-                    'minitems' => 0,
-                    'maxitems' => 1,
-                    'appearance' => [
-                        'createNewRelationLinkTitle' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:addImage',
-                        'showAllLocalizationLink' => true,
-                        'headerThumbnail' => [
-                            'height' => '90c',
-                            'width' => 90
-                        ]
-                    ],
-                    'foreign_match_fields' => [
-                        'fieldname' => 'foreground_media',
-                        'tablenames' => 'tx_wsslider_domain_model_item',
-                        'table_local' => 'sys_file',
-                    ],
-                    'overrideChildTca' => [
-                        'types' => [
-                            File::FILETYPE_IMAGE => [
-                                'showitem' => '
-                                    --palette--;;imageoverlayPalette,
-                                    --palette--;;filePalette'
-                            ], '0' => [
-                                'showitem' => '
-                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                                --palette--;;imageoverlayPalette,
-                                --palette--;;filePalette'
-                            ], File::FILETYPE_IMAGE => [
-                                'showitem' => '
-                                --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                                --palette--;;imageoverlayPalette,
-                                --palette--;;filePalette'
-                            ],
-                        ],
-                        'columns' => [
-                            'crop' => [
-                                'config' => [
-                                    'cropVariants' => [
-                                        'default' => [
-                                            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.crop_variant.default',
-                                            'allowedAspectRatios' => [
-                                                '16:9' => [
-                                                    'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
-                                                    'value' => 16 / 9
-                                                ],
-                                                '3:2' => [
-                                                    'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.3_2',
-                                                    'value' => 3 / 2
-                                                ],
-                                                '4:3' => [
-                                                    'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
-                                                    'value' => 4 / 3
-                                                ],
+            'config' => [
+                'type' => 'file',
+                'allowed' => 'common-image-types',
+                'minitems' => 0,
+                'maxitems' => 1,
+                'appearance' => [
+                    'showAllLocalizationLink' => true,
+                    'headerThumbnail' => [
+                        'height' => '90c',
+                        'width' => 90
+                    ]
+                ],
+                'overrideChildTca' => [
+                    'columns' => [
+                        'crop' => [
+                            'config' => [
+                                'cropVariants' => [
+                                    'default' => [
+                                        'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.crop_variant.default',
+                                        'allowedAspectRatios' => [
+                                            'NaN' => [
+                                                'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                                'value' => 0
                                             ],
-                                            'selectedRatio' => '16:9',
-                                            'cropArea' => [
-                                                'x' => 0.0,
-                                                'y' => 0.0,
-                                                'width' => 1.0,
-                                                'height' => 1.0,
+                                            '16:9' => [
+                                                'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                                'value' => 16 / 9
                                             ],
+                                            '3:2' => [
+                                                'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.3_2',
+                                                'value' => 3 / 2
+                                            ],
+                                            '4:3' => [
+                                                'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                                'value' => 4 / 3
+                                            ],
+                                        ],
+                                        'selectedRatio' => 'NaN',
+                                        'cropArea' => [
+                                            'x' => 0.0,
+                                            'y' => 0.0,
+                                            'width' => 1.0,
+                                            'height' => 1.0,
                                         ],
                                     ],
                                 ],
@@ -247,8 +225,8 @@ return [
                         ],
                     ],
                 ],
-                'gif,jpg,jpeg,png,svg'
-            )
+            ],
+
 
         ],
         'content_uid' => [
