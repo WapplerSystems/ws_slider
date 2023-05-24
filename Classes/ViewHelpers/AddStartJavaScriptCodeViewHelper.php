@@ -141,13 +141,21 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
                 $param = $this->prepareParameters($param);
             }
             if ($removeKeys) {
-                $a[] = $param;
+                $a[] = $this->clearParameter($param);
             } else {
-                $a[$key] = $param;
+                $a[$key] = $this->clearParameter($param);
             }
         }
 
         return $a;
+    }
+
+    private function clearParameter($param) : mixed {
+        return match ($param) {
+            'FALSE', 'false' => false,
+            'TRUE', 'true' => true,
+            default => $param,
+        };
     }
 
 }
