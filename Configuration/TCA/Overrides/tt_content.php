@@ -1,6 +1,8 @@
 <?php
+
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use WapplerSystems\WsSlider\Hooks\ItemsProcFunc;
+
 defined('TYPO3') || die();
 
 /***************
@@ -9,7 +11,6 @@ defined('TYPO3') || die();
 if (!is_array($GLOBALS['TCA']['tt_content']['types']['ws_slider'] ?? null)) {
     $GLOBALS['TCA']['tt_content']['types']['ws_slider'] = [];
 }
-
 
 
 /***************
@@ -86,6 +87,13 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             'behaviour' => [
                 'localizationMode' => 'select',
             ],
+            'overrideChildTca' => [
+                'types' => [
+                    '1' => [
+                        'showitem' => 'title, sys_language_uid, foreground_media, description, text_position, style_class, link, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
+                    ],
+                ]
+            ]
         ]
     ],
     'tx_wsslider_renderer' => [
@@ -105,11 +113,11 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
-            'itemsProcFunc' => ItemsProcFunc::class.'->userTemplateLayout',
+            'itemsProcFunc' => ItemsProcFunc::class . '->userTemplateLayout',
             'rendererTyposcriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'default' => 'Default',
             'items' => [
-                ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value','Default']
+                ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 'Default']
             ]
         ]
     ]
@@ -117,7 +125,7 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
 
 
 $GLOBALS['TCA']['tt_content']['palettes'] = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['palettes'],[
+    $GLOBALS['TCA']['tt_content']['palettes'], [
         'tx_wsslider' => [
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:palette.wsslider',
             'showitem' => '

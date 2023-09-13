@@ -30,11 +30,7 @@ return [
     ],
     'types' => [
         '1' => [
-            'showitem' => 'hidden, title, sys_language_uid, foreground_media,
-				description,
-				text_position, style_class, link,
-
-				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
+            'showitem' => 'hidden, title, sys_language_uid, foreground_media, description, text_position, style_class, link, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
         ],
     ],
     'palettes' => [
