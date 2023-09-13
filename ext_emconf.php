@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['ws_slider'] = [
     'title' => 'WS Slider - Universal slider extension',
     'description' => 'Universal slider carousel for Owl slider, flexslider, ... ',
     'category' => 'plugin',
@@ -8,7 +8,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'typo3YYYY@wappler.systems',
     'author_company' => 'WapplerSystems',
     'state' => 'stable',
-    'version' => '12.0.1',
+    'version' => '12.0.2',
     'constraints' => [
         'depends' => [
             'typo3' => '12.0.0-12.4.99',
