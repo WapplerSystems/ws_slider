@@ -6,12 +6,30 @@
 <f:section name="Default">
 
     <div id="wsslider-{data.uid}" class="carousel slide" data-bs-ride="carousel">
+        <f:if condition="{sliderSettings.parameters.controlNav} && {items -> f:count()} > 1">
+            <ol class="carousel-indicators">
+                <f:for each="{items}" as="item" iteration="iterator">
+                    <li data-target="#wsslider-{data.uid}" data-slide-to="{iterator.index}"
+                        class="{f:if(condition:iterator.isFirst,then:'active')}"></li>
+                </f:for>
+            </ol>
+        </f:if>
         <div class="carousel-inner">
             <f:for each="{items}" as="item" iteration="iterator">
                 <f:render partial="Item/Bootstrap" section="{sliderSettings.layout}"
                           arguments="{item: item, settings: settings, iterator:iterator}"/>
             </f:for>
         </div>
+        <f:if condition="{sliderSettings.parameters.directionNav} && {items -> f:count()} > 1">
+            <button class="carousel-control-prev" type="button" data-target="#wsslider-{data.uid}" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#wsslider-{data.uid}" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </f:if>
     </div>
 
 
