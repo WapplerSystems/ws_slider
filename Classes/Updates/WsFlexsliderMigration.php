@@ -65,6 +65,9 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
      */
     public function updateNecessary(): bool
     {
+        if (!$this->checkIfTableExists('tx_wsflexslider_domain_model_image')) {
+            return false;
+        }
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
         $queryBuilder->getRestrictions()->removeAll();
         $count = $queryBuilder->count('uid')
@@ -185,6 +188,24 @@ class WsFlexsliderMigration implements UpgradeWizardInterface, ConfirmableInterf
         $queryBuilder->getRestrictions()->removeAll();
         $queryBuilder->select('*')->from('tx_wsflexslider_domain_model_image');
         return $queryBuilder->executeQuery();
+    }
+
+
+    /**
+     * Check if given table exists
+     *
+     * @param string $table
+     * @return bool
+     * @throws Exception
+     */
+    protected function checkIfTableExists($table): bool
+    {
+        $tableExists = GeneralUtility::makeInstance(ConnectionPool::class)
+            ->getConnectionForTable($table)
+            ->createSchemaManager()
+            ->tablesExist([$table]);
+
+        return $tableExists;
     }
 
 
