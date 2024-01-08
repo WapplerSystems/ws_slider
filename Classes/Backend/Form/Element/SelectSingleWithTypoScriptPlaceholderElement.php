@@ -136,7 +136,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $selectItemCounter = 0;
         $selectItemGroupCount = 0;
         $selectItemGroups = [];
-        $selectedValue = '';
+        $selectedValue = null;
         $hasIcons = false;
 
         // In case e.g. "l10n_display" is set to "defaultAsReadonly" only one value (as string) could be handed in
