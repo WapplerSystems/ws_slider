@@ -70,7 +70,7 @@ plugin.tx_wsslider.settings.slick {
   infinite = true
 
   # cat=plugin.tx_wsslider.slick/slick/a; type=int+; label=initialSlide: Slide to start on
-  initialSlide = true
+  initialSlide = 0
 
   # cat=plugin.tx_wsslider.slick/slick/a; type=string; label=lazyLoad: Set lazy loading technique. Accepts 'ondemand' or 'progressive'
   lazyLoad = ondemand

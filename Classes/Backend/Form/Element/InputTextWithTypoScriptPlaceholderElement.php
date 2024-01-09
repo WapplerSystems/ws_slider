@@ -4,6 +4,7 @@ namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 use TYPO3\CMS\Core\Localization\LanguageService;
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
@@ -69,6 +70,9 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         $resultArray = $this->initializeResultArray();
 
         $itemValue = $parameterArray['itemFormElValue'];
+        if (is_array($itemValue) && count($itemValue) === 0) {
+            $itemValue = '';
+        }
         $config = $parameterArray['fieldConf']['config'];
         $evalList = GeneralUtility::trimExplode(',', $config['eval'] ?? '', true);
         $size = MathUtility::forceIntegerInRange($config['size'] ?? $this->defaultInputWidth, $this->minimumInputWidth, $this->maxInputWidth);

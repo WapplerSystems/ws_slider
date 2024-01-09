@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+
+        <preset>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle></sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <preset>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label></label>
+                            <config>
+                                <type>user</type>
+                                <renderType>infoTextRenderType</renderType>
+                                <parameters>
+                                    <text>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:preset_is_set</text>
+                                </parameters>
+                            </config>
+                        </TCEforms>
+                    </preset>
+
+
+                </el>
+            </ROOT>
+        </preset>
+
+    </sheets>
+</T3DataStructure>

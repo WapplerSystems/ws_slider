@@ -4,10 +4,10 @@
 		<header/>
 		<body>
 
-			<trans-unit id="title" xml:space="preserve">
+			<trans-unit id="title">
 				<source>Slider</source>
 			</trans-unit>
-			<trans-unit id="description" xml:space="preserve">
+			<trans-unit id="description">
 				<source>Universal Slider / Carousel</source>
 			</trans-unit>
 
@@ -19,14 +19,17 @@
 				<source>WS Slider Settings</source>
 			</trans-unit>
 
-			<trans-unit id="settings" xml:space="preserve">
+			<trans-unit id="settings">
 				<source>Settings</source>
 			</trans-unit>
-			<trans-unit id="renderer" xml:space="preserve">
+			<trans-unit id="renderer">
 				<source>Renderer</source>
 			</trans-unit>
-			<trans-unit id="items" xml:space="preserve">
+			<trans-unit id="items">
 				<source>Items</source>
+			</trans-unit>
+			<trans-unit id="preset">
+				<source>Preset</source>
 			</trans-unit>
 
 			<trans-unit id="yes">
@@ -47,9 +50,16 @@
 			<trans-unit id="outer">
 				<source>Outer</source>
 			</trans-unit>
+			<trans-unit id="hover">
+				<source>Hover</source>
+			</trans-unit>
 
 			<trans-unit id="default">
 				<source>Default</source>
+			</trans-unit>
+
+			<trans-unit id="preset_is_set">
+				<source>A preset has been selected</source>
 			</trans-unit>
 
 
@@ -66,9 +76,9 @@
 			<trans-unit id="label.stop">
 				<source>Stop</source>
 			</trans-unit>
-			<trans-unit id="settings.typoscript" xml:space="preserve">
-            	<source>TypoScript</source>
-            </trans-unit>
+			<trans-unit id="settings.typoscript">
+				<source>TypoScript</source>
+			</trans-unit>
 
 			<!-- sheets -->
 			<trans-unit id="sheet.owl">
@@ -129,95 +139,120 @@
 				<source>Autoplay speed</source>
 			</trans-unit>
 			<trans-unit id="settings.common.top">
-                <source>Top</source>
-            </trans-unit>
-            <trans-unit id="settings.common.bottom">
-               	<source>Bottom</source>
-            </trans-unit>
-            <trans-unit id="settings.common.forward">
-                <source>Forward</source>
-            </trans-unit>
-            <trans-unit id="settings.common.backward">
-               	<source>Backward</source>
-            </trans-unit>
-            <trans-unit id="settings.common.vertical" xml:space="preserve">
-            	<source>Vertical</source>
-            </trans-unit>
-            <trans-unit id="settings.common.horizontal" xml:space="preserve">
-            	<source>Horizontal</source>
-            </trans-unit>
-            <trans-unit id="settings.common.animateOut">
-               	<source>Outro Animation</source>
-            </trans-unit>
-            <trans-unit id="settings.common.animateIn">
-               	<source>Intro Animation</source>
-            </trans-unit>
-            <trans-unit id="settings.common.autoHeight" xml:space="preserve">
-                <source>Auto Height</source>
-            </trans-unit>
-            <trans-unit id="settings.common.video" xml:space="preserve">
-                <source>Enable Video</source>
-            </trans-unit>
-            <trans-unit id="settings.common.touch" xml:space="preserve">
-                <source>Enable Touch Support</source>
-            </trans-unit>
-            <trans-unit id="settings.common.animationSpeed" xml:space="preserve">
-                <source>Animation Speed</source>
-            </trans-unit>
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="settings.common.bottom">
+				<source>Bottom</source>
+			</trans-unit>
+			<trans-unit id="settings.common.forward">
+				<source>Forward</source>
+			</trans-unit>
+			<trans-unit id="settings.common.backward">
+				<source>Backward</source>
+			</trans-unit>
+			<trans-unit id="settings.common.vertical">
+				<source>Vertical</source>
+			</trans-unit>
+			<trans-unit id="settings.common.horizontal">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="settings.common.animateOut">
+				<source>Outro Animation</source>
+			</trans-unit>
+			<trans-unit id="settings.common.animateIn">
+				<source>Intro Animation</source>
+			</trans-unit>
+			<trans-unit id="settings.common.autoHeight">
+				<source>Auto Height</source>
+			</trans-unit>
+			<trans-unit id="settings.common.video">
+				<source>Enable Video</source>
+			</trans-unit>
+			<trans-unit id="settings.common.touch">
+				<source>Enable Touch Support</source>
+			</trans-unit>
+			<trans-unit id="settings.common.animationSpeed">
+				<source>Animation Speed</source>
+			</trans-unit>
 
-            <!-- Labels -->
-            <trans-unit id="pauseText" xml:space="preserve">
-            	<source>Pause</source>
-            </trans-unit>
-            <trans-unit id="playText" xml:space="preserve">
-            	<source>Play</source>
-            </trans-unit>
-
+			<!-- Labels -->
+			<trans-unit id="pauseText">
+				<source>Pause</source>
+			</trans-unit>
+			<trans-unit id="playText">
+				<source>Play</source>
+			</trans-unit>
 
 
 			<!-- item labels -->
 
-			<trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item">
 				<source>Slider element</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.title">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.description">
 				<source>Description</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.foregroundMedia">
 				<source>Image or Video</source>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_item.textPosition">
 				<source>Text position</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.link">
 				<source>Link</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_left">
 				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_right">
 				<source>Right</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.styleClass">
 				<source>Text style class</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style1">
 				<source>Style 1</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style2">
 				<source>Style 2</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style3">
 				<source>Style 3</source>
 			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve">
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style4">
 				<source>Style 4</source>
 			</trans-unit>
-			<trans-unit id="addImage" xml:space="preserve">
+			<trans-unit id="addImage">
 				<source>Add image</source>
+			</trans-unit>
+
+
+			<trans-unit id="tx_wsslider_domain_model_preset">
+				<source>WS slider preset</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.bootstrap">
+				<source>Bootstrap</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.flexslider">
+				<source>Flexslider</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.owl">
+				<source>Owl slider</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.slick">
+				<source>Slick slider</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.tinyslider">
+				<source>Tiny Slider</source>
 			</trans-unit>
 
 		</body>

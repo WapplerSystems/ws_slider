@@ -1,154 +1,154 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
-        <header/>
-        <body>
-            <!-- sheets -->
-            <trans-unit id="sheet.flexslider">
-            	<source>Flex Slider</source>
-            </trans-unit>
-            <trans-unit id="sheet.usability">
-            	<source>Usability</source>
-            </trans-unit>
-            <trans-unit id="sheet.primaryControls">
-            	<source>Primary Controls</source>
-            </trans-unit>
-            <trans-unit id="sheet.secondaryNavigation">
-            	<source>Secondary Navigation</source>
-            </trans-unit>
-            <trans-unit id="sheet.specialProperties">
-            	<source>Special Properties</source>
-            </trans-unit>
-            <trans-unit id="sheet.carousel">
-                <source>Carousel</source>
-            </trans-unit>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+			<!-- sheets -->
+			<trans-unit id="sheet.flexslider">
+				<source>Flex Slider</source>
+			</trans-unit>
+			<trans-unit id="sheet.usability">
+				<source>Usability</source>
+			</trans-unit>
+			<trans-unit id="sheet.primaryControls">
+				<source>Primary Controls</source>
+			</trans-unit>
+			<trans-unit id="sheet.secondaryNavigation">
+				<source>Secondary Navigation</source>
+			</trans-unit>
+			<trans-unit id="sheet.specialProperties">
+				<source>Special Properties</source>
+			</trans-unit>
+			<trans-unit id="sheet.carousel">
+				<source>Carousel</source>
+			</trans-unit>
 
-            <!-- flexslider general settings -->
-            <trans-unit id="settings.selector" xml:space="preserve">
-                <source>Selector</source>
-            </trans-unit>
-            <trans-unit id="settings.animation" xml:space="preserve">
-                <source>Animation</source>
-            </trans-unit>
-            <trans-unit id="settings.easing" xml:space="preserve">
-            	<source>Easing effect</source>
-            </trans-unit>
-            <trans-unit id="settings.direction" xml:space="preserve">
-            	<source>Direction</source>
-            </trans-unit>
-            <trans-unit id="settings.reverse" xml:space="preserve">
-            	<source>Reverse order</source>
-            </trans-unit>
-            <trans-unit id="settings.animationLoop" xml:space="preserve">
-            	<source>Animation loop</source>
-            </trans-unit>
-            <trans-unit id="settings.smoothHeight" xml:space="preserve">
-            	<source>Smooth height</source>
-            </trans-unit>
-            <trans-unit id="settings.startAt" xml:space="preserve">
-            	<source>Start at</source>
-            </trans-unit>
-            <trans-unit id="settings.slideshow" xml:space="preserve">
-            	<source>Slideshow mode</source>
-            </trans-unit>
-            <trans-unit id="settings.slideshowSpeed" xml:space="preserve">
-            	<source>Slideshow speed (in milliseconds)</source>
-            </trans-unit>
-            <trans-unit id="settings.animationSpeed" xml:space="preserve">
-            	<source>Animation speed (in milliseconds)</source>
-            </trans-unit>
-            <trans-unit id="settings.initDelay" xml:space="preserve">
-            	<source>Init delay in milliseconds</source>
-            </trans-unit>
-            <trans-unit id="settings.randomize" xml:space="preserve">
-            	<source>Random mode</source>
-            </trans-unit>
-            <trans-unit id="settings.fadeFirstSlide" xml:space="preserve">
-            	<source>Fade in first slide</source>
-            </trans-unit>
+			<!-- flexslider general settings -->
+			<trans-unit id="settings.selector">
+				<source>Selector</source>
+			</trans-unit>
+			<trans-unit id="settings.animation">
+				<source>Animation</source>
+			</trans-unit>
+			<trans-unit id="settings.easing">
+				<source>Easing effect</source>
+			</trans-unit>
+			<trans-unit id="settings.direction">
+				<source>Direction</source>
+			</trans-unit>
+			<trans-unit id="settings.reverse">
+				<source>Reverse order</source>
+			</trans-unit>
+			<trans-unit id="settings.animationLoop">
+				<source>Animation loop</source>
+			</trans-unit>
+			<trans-unit id="settings.smoothHeight">
+				<source>Smooth height</source>
+			</trans-unit>
+			<trans-unit id="settings.startAt">
+				<source>Start at</source>
+			</trans-unit>
+			<trans-unit id="settings.slideshow">
+				<source>Slideshow mode</source>
+			</trans-unit>
+			<trans-unit id="settings.slideshowSpeed">
+				<source>Slideshow speed (in milliseconds)</source>
+			</trans-unit>
+			<trans-unit id="settings.animationSpeed">
+				<source>Animation speed (in milliseconds)</source>
+			</trans-unit>
+			<trans-unit id="settings.initDelay">
+				<source>Init delay in milliseconds</source>
+			</trans-unit>
+			<trans-unit id="settings.randomize">
+				<source>Random mode</source>
+			</trans-unit>
+			<trans-unit id="settings.fadeFirstSlide">
+				<source>Fade in first slide</source>
+			</trans-unit>
 
-			<trans-unit id="settings.fade" xml:space="preserve">
+			<trans-unit id="settings.fade">
 				<source>Fade</source>
 			</trans-unit>
-			<trans-unit id="settings.slide" xml:space="preserve">
+			<trans-unit id="settings.slide">
 				<source>Slide</source>
 			</trans-unit>
 
 			<!-- Usability Features -->
-			<trans-unit id="settings.pauseOnAction" xml:space="preserve">
+			<trans-unit id="settings.pauseOnAction">
 				<source>Pause on action</source>
 			</trans-unit>
-			<trans-unit id="settings.pauseOnHover" xml:space="preserve">
+			<trans-unit id="settings.pauseOnHover">
 				<source>Pause on hover</source>
 			</trans-unit>
-			<trans-unit id="settings.pauseInvisible" xml:space="preserve">
+			<trans-unit id="settings.pauseInvisible">
 				<source>Pause Invisible</source>
 			</trans-unit>
-			<trans-unit id="settings.useCSS" xml:space="preserve">
+			<trans-unit id="settings.useCSS">
 				<source>User CSS</source>
 			</trans-unit>
-			<trans-unit id="settings.touch" xml:space="preserve">
+			<trans-unit id="settings.touch">
 				<source>Touch mode</source>
 			</trans-unit>
-			<trans-unit id="settings.video" xml:space="preserve">
+			<trans-unit id="settings.video">
 				<source>Video mode</source>
 			</trans-unit>
 
 			<!-- Primary Controls -->
-			<trans-unit id="settings.controlNav" xml:space="preserve">
+			<trans-unit id="settings.controlNav">
 				<source>Navigation Dots</source>
 			</trans-unit>
-			<trans-unit id="settings.directionNav" xml:space="preserve">
+			<trans-unit id="settings.directionNav">
 				<source>Navigation Arrows</source>
 			</trans-unit>
 
-            <!-- Secondary Navigation -->
-			<trans-unit id="settings.keyboard" xml:space="preserve">
+			<!-- Secondary Navigation -->
+			<trans-unit id="settings.keyboard">
 				<source>Keyboard support</source>
 			</trans-unit>
-			<trans-unit id="settings.multipleKeyboard" xml:space="preserve">
+			<trans-unit id="settings.multipleKeyboard">
 				<source>Allow keyboard navigation to affect multiple sliders</source>
 			</trans-unit>
-			<trans-unit id="settings.mousewheel" xml:space="preserve">
+			<trans-unit id="settings.mousewheel">
 				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
 			</trans-unit>
-			<trans-unit id="settings.pausePlay" xml:space="preserve">
+			<trans-unit id="settings.pausePlay">
 				<source>Create pause/play dynamic element</source>
 			</trans-unit>
 
-            <!-- Special Properties -->
-			<trans-unit id="settings.controlsContainer" xml:space="preserve">
+			<!-- Special Properties -->
+			<trans-unit id="settings.controlsContainer">
 				<source>controlsContainer jQuery object/selector</source>
 			</trans-unit>
-			<trans-unit id="settings.manualControls" xml:space="preserve">
+			<trans-unit id="settings.manualControls">
 				<source>manualControls jQuery object/selector</source>
 			</trans-unit>
-			<trans-unit id="settings.customDirectionNav" xml:space="preserve">
+			<trans-unit id="settings.customDirectionNav">
 				<source>customDirectionNav jQuery object/selector</source>
 			</trans-unit>
-			<trans-unit id="settings.sync" xml:space="preserve">
+			<trans-unit id="settings.sync">
 				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
 			</trans-unit>
-			<trans-unit id="settings.asNavFor" xml:space="preserve">
+			<trans-unit id="settings.asNavFor">
 				<source>asNavFor selector</source>
 			</trans-unit>
 
 			<!-- Carousel-->
-			<trans-unit id="settings.itemWidth" xml:space="preserve">
+			<trans-unit id="settings.itemWidth">
 				<source>Element width in pixels</source>
 			</trans-unit>
-			<trans-unit id="settings.itemMargin" xml:space="preserve">
+			<trans-unit id="settings.itemMargin">
 				<source>Element border (margin)</source>
 			</trans-unit>
-			<trans-unit id="settings.minItems" xml:space="preserve">
+			<trans-unit id="settings.minItems">
 				<source>Min number of elements</source>
 			</trans-unit>
-			<trans-unit id="settings.maxItems" xml:space="preserve">
+			<trans-unit id="settings.maxItems">
 				<source>Max number of elements</source>
 			</trans-unit>
-			<trans-unit id="settings.move" xml:space="preserve">
+			<trans-unit id="settings.move">
 				<source>Number of elements, which should be moved in animation</source>
 			</trans-unit>
-        </body>
-    </file>
+		</body>
+	</file>
 </xliff>

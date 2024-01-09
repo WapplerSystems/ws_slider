@@ -1,52 +1,18 @@
 plugin.tx_wsslider.settings.renderer.bootstrap {
 
-  #General Bootstrap Options
-  selector = {$plugin.tx_wsslider.settings.bootstrap.selector}
-  animation = {$plugin.tx_wsslider.settings.bootstrap.animation}
-  easing = {$plugin.tx_wsslider.settings.bootstrap.easing}
-  direction = {$plugin.tx_wsslider.settings.bootstrap.direction}
-  reverse = {$plugin.tx_wsslider.settings.bootstrap.reverse}
-  animationLoop = {$plugin.tx_wsslider.settings.bootstrap.animationLoop}
-  smoothHeight = {$plugin.tx_wsslider.settings.bootstrap.smoothHeight}
-  startAt = {$plugin.tx_wsslider.settings.bootstrap.startAt}
-  slideshow = {$plugin.tx_wsslider.settings.bootstrap.slideshow}
-  slideshowSpeed = {$plugin.tx_wsslider.settings.bootstrap.slideshowSpeed}
-  animationSpeed = {$plugin.tx_wsslider.settings.bootstrap.animationSpeed}
-  initDelay = {$plugin.tx_wsslider.settings.bootstrap.initDelay}
-  randomize = {$plugin.tx_wsslider.settings.bootstrap.randomize}
-  fadeFirstSlide = {$plugin.tx_wsslider.settings.bootstrap.fadeFirstSlide}
-
-  #Usability Features
-  pauseOnAction = {$plugin.tx_wsslider.settings.bootstrap.pauseOnAction}
-  pauseOnHover = {$plugin.tx_wsslider.settings.bootstrap.pauseOnHover}
-  pauseInvisible = {$plugin.tx_wsslider.settings.bootstrap.pauseInvisible}
-  useCSS = {$plugin.tx_wsslider.settings.bootstrap.useCSS}
-  touch = {$plugin.tx_wsslider.settings.bootstrap.touch}
-  video = {$plugin.tx_wsslider.settings.bootstrap.video}
-
-  #Primary Controls
-  controlNav = {$plugin.tx_wsslider.settings.bootstrap.controlNav}
-  directionNav = {$plugin.tx_wsslider.settings.bootstrap.directionNav}
-
-  #Secondary Navigation
+  # General Bootstrap Options
+  interval = {$plugin.tx_wsslider.settings.bootstrap.interval}
   keyboard = {$plugin.tx_wsslider.settings.bootstrap.keyboard}
-  multipleKeyboard = {$plugin.tx_wsslider.settings.bootstrap.multipleKeyboard}
-  mousewheel = {$plugin.tx_wsslider.settings.bootstrap.mousewheel}
-  pausePlay = {$plugin.tx_wsslider.settings.bootstrap.pausePlay}
+  pause = {$plugin.tx_wsslider.settings.bootstrap.pause}
+  ride = {$plugin.tx_wsslider.settings.bootstrap.ride}
+  touch = {$plugin.tx_wsslider.settings.bootstrap.touch}
+  wrap = {$plugin.tx_wsslider.settings.bootstrap.wrap}
+  control = {$plugin.tx_wsslider.settings.bootstrap.control}
+  indicators = {$plugin.tx_wsslider.settings.bootstrap.indicators}
+  title = {$plugin.tx_wsslider.settings.bootstrap.title}
+  description = {$plugin.tx_wsslider.settings.bootstrap.description}
+  startAt = {$plugin.tx_wsslider.settings.bootstrap.startAt}
 
-  #Special Properties
-  controlsContainer = {$plugin.tx_wsslider.settings.bootstrap.controlsContainer}
-  manualControls = {$plugin.tx_wsslider.settings.bootstrap.manualControls}
-  customDirectionNav = {$plugin.tx_wsslider.settings.bootstrap.customDirectionNav}
-  sync = {$plugin.tx_wsslider.settings.bootstrap.sync}
-  asNavFor = {$plugin.tx_wsslider.settings.bootstrap.asNavFor}
-
-  # Carousel Options
-  itemWidth = {$plugin.tx_wsslider.settings.bootstrap.itemWidth}
-  itemMargin = {$plugin.tx_wsslider.settings.bootstrap.itemMargin}
-  minItems = {$plugin.tx_wsslider.settings.bootstrap.minItems}
-  maxItems = {$plugin.tx_wsslider.settings.bootstrap.maxItems}
-  move = {$plugin.tx_wsslider.settings.bootstrap.move}
 }
 
 tt_content.ws_slider.settings.slider.renderer.bootstrap < plugin.tx_wsslider.settings.renderer.bootstrap

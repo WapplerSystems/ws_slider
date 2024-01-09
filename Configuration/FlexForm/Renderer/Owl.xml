@@ -34,14 +34,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.loop</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -59,14 +59,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.merge</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -84,14 +84,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.mergeFit</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -122,14 +122,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.rewind</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -147,14 +147,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplay</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -185,14 +185,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoplayHoverPause</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -237,14 +237,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.fluidSpeed</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -275,14 +275,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.video</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -300,14 +300,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.checkVisible</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -337,14 +337,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.nav</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -390,14 +390,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.dots</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -482,14 +482,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.autoWidth</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -507,14 +507,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.center</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -582,14 +582,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.mouseDrag</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -607,14 +607,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.touchDrag</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -632,14 +632,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.pullDrag</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -657,14 +657,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.freeDrag</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -771,14 +771,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.lazyLoad</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -809,14 +809,14 @@
                                 <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                                 <typoscriptPath>plugin.tx_wsslider.settings.renderer.owl.URLhashListener</typoscriptPath>
                                 <eval>null</eval>
-                                <items type="array">
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
-                                        <numIndex index="1">true</numIndex>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                        <numIndex index="value">true</numIndex>
                                     </numIndex>
-                                    <numIndex index="2" type="array">
-                                        <numIndex index="0">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
-                                        <numIndex index="1">false</numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                        <numIndex index="value">false</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>

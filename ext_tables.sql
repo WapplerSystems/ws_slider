@@ -4,43 +4,36 @@
 CREATE TABLE tx_wsslider_domain_model_item
 (
 
-    uid              int(11) unsigned                NOT NULL auto_increment,
-    pid              int(11) unsigned    DEFAULT '0' NOT NULL,
+	content_uid      int(11) unsigned DEFAULT '0' NOT NULL,
 
-    content_uid      int(11) unsigned    DEFAULT '0' NOT NULL,
-
-    title            varchar(255)        DEFAULT ''  NOT NULL,
-    description      text                            NOT NULL,
-    foreground_media int(11) unsigned    DEFAULT '0',
-    background_media int(11) unsigned    DEFAULT '0',
-    link             text,
-    text_position    varchar(10)         DEFAULT NULL,
-    style_class      varchar(10)         DEFAULT NULL,
-
-    tstamp           int(11) unsigned    DEFAULT '0' NOT NULL,
-    crdate           int(11) unsigned    DEFAULT '0' NOT NULL,
-    cruser_id        int(11) unsigned    DEFAULT '0' NOT NULL,
-    deleted          tinyint(4) unsigned DEFAULT '0' NOT NULL,
-    hidden           tinyint(4) unsigned DEFAULT '0' NOT NULL,
-    starttime        int(11) unsigned    DEFAULT '0' NOT NULL,
-    endtime          int(11) unsigned    DEFAULT '0' NOT NULL,
-
-    sorting          int(11)             DEFAULT '0' NOT NULL,
-    t3_origuid       int(11) unsigned    DEFAULT '0' NOT NULL,
-    sys_language_uid int(11)             DEFAULT '0' NOT NULL,
-    l10n_parent      int(11) unsigned    DEFAULT '0' NOT NULL,
-    l10n_diffsource  mediumblob,
-
-    PRIMARY KEY (uid),
-    KEY parent (pid),
-    KEY language (l10n_parent, sys_language_uid)
+	title            varchar(255)     DEFAULT ''  NOT NULL,
+	description      text                         NOT NULL,
+	foreground_media int(11) unsigned DEFAULT '0',
+	background_media int(11) unsigned DEFAULT '0',
+	link             text,
+	text_position    varchar(10)      DEFAULT NULL,
+	style_class      varchar(10)      DEFAULT NULL
 
 );
 
-
 CREATE TABLE tt_content
 (
-    tx_wsslider_items    int(11)     DEFAULT '0' NOT NULL,
-    tx_wsslider_renderer varchar(40) DEFAULT NULL,
-    tx_wsslider_layout   varchar(40) DEFAULT NULL
+	tx_wsslider_preset   int(11)     DEFAULT '0' NOT NULL,
+	tx_wsslider_items    int(11)     DEFAULT '0' NOT NULL,
+	tx_wsslider_renderer varchar(40) DEFAULT NULL,
+	tx_wsslider_layout   varchar(40) DEFAULT NULL
+);
+
+CREATE TABLE tx_wsslider_domain_model_preset
+(
+
+	name       varchar(255)         DEFAULT '' NOT NULL,
+	type       varchar(20) NOT NULL DEFAULT '',
+
+	flexslider text                 DEFAULT NULL,
+	bootstrap  text                 DEFAULT NULL,
+	owl        text                 DEFAULT NULL,
+	slick      text                 DEFAULT NULL,
+	tinyslider text                 DEFAULT NULL
+
 );

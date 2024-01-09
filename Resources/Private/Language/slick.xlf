@@ -1,134 +1,134 @@
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
-        <header/>
-        <body>
-            <!-- slick slider -->
-            <trans-unit id="settings.accessibility" xml:space="preserve">
-                <source>Accessibility</source>
-            </trans-unit>
-            <trans-unit id="settings.arrows" xml:space="preserve">
-                <source>Arrows</source>
-            </trans-unit>
-            <trans-unit id="settings.asNavFor" xml:space="preserve">
-                <source>As Nav For</source>
-            </trans-unit>
-            <trans-unit id="settings.appendArrows" xml:space="preserve">
-                <source>Append Arrows</source>
-            </trans-unit>
-            <trans-unit id="settings.appendDots" xml:space="preserve">
-                <source>Append Dots</source>
-            </trans-unit>
-            <trans-unit id="settings.prevArrow" xml:space="preserve">
-                <source>Prev Arrow</source>
-            </trans-unit>
-            <trans-unit id="settings.nextArrow" xml:space="preserve">
-                <source>Next Arrow</source>
-            </trans-unit>
-            <trans-unit id="settings.centerMode" xml:space="preserve">
-                <source>Center Mode</source>
-            </trans-unit>
-            <trans-unit id="settings.centerPadding" xml:space="preserve">
-                <source>Center Padding</source>
-            </trans-unit>
-            <trans-unit id="settings.cssEase" xml:space="preserve">
-                <source>CSS3 animation Easing</source>
-            </trans-unit>
-            <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
-                <source>Custom Paging</source>
-            </trans-unit> -->
-            <trans-unit id="settings.dots" xml:space="preserve">
-                <source>Dots</source>
-            </trans-unit>
-            <trans-unit id="settings.dotsClass" xml:space="preserve">
-                <source>Dots Class</source>
-            </trans-unit>
-            <trans-unit id="settings.draggable" xml:space="preserve">
-                <source>Draggable</source>
-            </trans-unit>
-            <trans-unit id="settings.fade" xml:space="preserve">
-                <source>Fade</source>
-            </trans-unit>
-            <trans-unit id="settings.focusOnSelect" xml:space="preserve">
-                <source>Focus On Select</source>
-            </trans-unit>
-            <trans-unit id="settings.easing" xml:space="preserve">
-                <source>Easing</source>
-            </trans-unit>
-            <trans-unit id="settings.edgeFriction" xml:space="preserve">
-                <source>Edge Friction</source>
-            </trans-unit>
-            <trans-unit id="settings.infinite" xml:space="preserve">
-                <source>Infinite</source>
-            </trans-unit>
-            <trans-unit id="settings.initialSlide" xml:space="preserve">
-                <source>Initial Slide</source>
-            </trans-unit>
-            <trans-unit id="settings.mobileFirst" xml:space="preserve">
-                <source>Mobile First</source>
-            </trans-unit>
-            <trans-unit id="settings.pauseOnFocus" xml:space="preserve">
-                <source>Pause on focus</source>
-            </trans-unit>
-            <trans-unit id="settings.pauseOnHover" xml:space="preserve">
-                <source>Pause on hover</source>
-            </trans-unit>
-            <trans-unit id="settings.pauseOnDotsHover" xml:space="preserve">
-                <source>Pause on Dots hover</source>
-            </trans-unit>
-            <trans-unit id="settings.respondTo" xml:space="preserve">
-                <source>Respond To</source>
-            </trans-unit>
-            <trans-unit id="settings.rows" xml:space="preserve">
-                <source>Rows</source>
-            </trans-unit>
-            <trans-unit id="settings.slidesPerRow" xml:space="preserve">
-                <source>Slides per row</source>
-            </trans-unit>
-            <trans-unit id="settings.slidesToShow" xml:space="preserve">
-                <source>Slides to show</source>
-            </trans-unit>
-            <trans-unit id="settings.slidesToScroll" xml:space="preserve">
-                <source>Slides to Scroll</source>
-            </trans-unit>
-            <trans-unit id="settings.speed" xml:space="preserve">
-                <source>Slide/Fade animation speed</source>
-            </trans-unit>
-            <trans-unit id="settings.swipe" xml:space="preserve">
-                <source>Enable swiping</source>
-            </trans-unit>
-            <trans-unit id="settings.swipeToSlide" xml:space="preserve">
-                <source>Swipe to slide</source>
-            </trans-unit>
-            <trans-unit id="settings.touchMove" xml:space="preserve">
-                <source>Touch Move</source>
-            </trans-unit>
-            <trans-unit id="settings.touchThreshold" xml:space="preserve">
-                <source>Touch Threshold</source>
-            </trans-unit>
-            <trans-unit id="settings.useCSS" xml:space="preserve">
-                <source>Enable CSS Transitions</source>
-            </trans-unit>
-            <trans-unit id="settings.useTransform" xml:space="preserve">
-                <source>Enable CSS Transform</source>
-            </trans-unit>
-            <trans-unit id="settings.variableWidth" xml:space="preserve">
-                <source>Variable Width</source>
-            </trans-unit>
-            <trans-unit id="settings.vertical" xml:space="preserve">
-                <source>Vertical slide mode</source>
-            </trans-unit>
-            <trans-unit id="settings.verticalSwiping" xml:space="preserve">
-                <source>Vertical swipe mode</source>
-            </trans-unit>
-            <trans-unit id="settings.rtl" xml:space="preserve">
-                <source>Right-to-left slider</source>
-            </trans-unit>
-            <trans-unit id="settings.waitForAnimate" xml:space="preserve">
-                <source>Wait for animate</source>
-            </trans-unit>
-            <trans-unit id="settings.zindex" xml:space="preserve">
-                <source>Z-Index value for slides</source>
-            </trans-unit>
-        </body>
-    </file>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+			<!-- slick slider -->
+			<trans-unit id="settings.accessibility">
+				<source>Accessibility</source>
+			</trans-unit>
+			<trans-unit id="settings.arrows">
+				<source>Arrows</source>
+			</trans-unit>
+			<trans-unit id="settings.asNavFor">
+				<source>As Nav For</source>
+			</trans-unit>
+			<trans-unit id="settings.appendArrows">
+				<source>Append Arrows</source>
+			</trans-unit>
+			<trans-unit id="settings.appendDots">
+				<source>Append Dots</source>
+			</trans-unit>
+			<trans-unit id="settings.prevArrow">
+				<source>Prev Arrow</source>
+			</trans-unit>
+			<trans-unit id="settings.nextArrow">
+				<source>Next Arrow</source>
+			</trans-unit>
+			<trans-unit id="settings.centerMode">
+				<source>Center Mode</source>
+			</trans-unit>
+			<trans-unit id="settings.centerPadding">
+				<source>Center Padding</source>
+			</trans-unit>
+			<trans-unit id="settings.cssEase">
+				<source>CSS3 animation Easing</source>
+			</trans-unit>
+			<!-- <trans-unit id="settings.customPaging">
+				<source>Custom Paging</source>
+			</trans-unit> -->
+			<trans-unit id="settings.dots">
+				<source>Dots</source>
+			</trans-unit>
+			<trans-unit id="settings.dotsClass">
+				<source>Dots Class</source>
+			</trans-unit>
+			<trans-unit id="settings.draggable">
+				<source>Draggable</source>
+			</trans-unit>
+			<trans-unit id="settings.fade">
+				<source>Fade</source>
+			</trans-unit>
+			<trans-unit id="settings.focusOnSelect">
+				<source>Focus On Select</source>
+			</trans-unit>
+			<trans-unit id="settings.easing">
+				<source>Easing</source>
+			</trans-unit>
+			<trans-unit id="settings.edgeFriction">
+				<source>Edge Friction</source>
+			</trans-unit>
+			<trans-unit id="settings.infinite">
+				<source>Infinite</source>
+			</trans-unit>
+			<trans-unit id="settings.initialSlide">
+				<source>Initial Slide</source>
+			</trans-unit>
+			<trans-unit id="settings.mobileFirst">
+				<source>Mobile First</source>
+			</trans-unit>
+			<trans-unit id="settings.pauseOnFocus">
+				<source>Pause on focus</source>
+			</trans-unit>
+			<trans-unit id="settings.pauseOnHover">
+				<source>Pause on hover</source>
+			</trans-unit>
+			<trans-unit id="settings.pauseOnDotsHover">
+				<source>Pause on Dots hover</source>
+			</trans-unit>
+			<trans-unit id="settings.respondTo">
+				<source>Respond To</source>
+			</trans-unit>
+			<trans-unit id="settings.rows">
+				<source>Rows</source>
+			</trans-unit>
+			<trans-unit id="settings.slidesPerRow">
+				<source>Slides per row</source>
+			</trans-unit>
+			<trans-unit id="settings.slidesToShow">
+				<source>Slides to show</source>
+			</trans-unit>
+			<trans-unit id="settings.slidesToScroll">
+				<source>Slides to Scroll</source>
+			</trans-unit>
+			<trans-unit id="settings.speed">
+				<source>Slide/Fade animation speed</source>
+			</trans-unit>
+			<trans-unit id="settings.swipe">
+				<source>Enable swiping</source>
+			</trans-unit>
+			<trans-unit id="settings.swipeToSlide">
+				<source>Swipe to slide</source>
+			</trans-unit>
+			<trans-unit id="settings.touchMove">
+				<source>Touch Move</source>
+			</trans-unit>
+			<trans-unit id="settings.touchThreshold">
+				<source>Touch Threshold</source>
+			</trans-unit>
+			<trans-unit id="settings.useCSS">
+				<source>Enable CSS Transitions</source>
+			</trans-unit>
+			<trans-unit id="settings.useTransform">
+				<source>Enable CSS Transform</source>
+			</trans-unit>
+			<trans-unit id="settings.variableWidth">
+				<source>Variable Width</source>
+			</trans-unit>
+			<trans-unit id="settings.vertical">
+				<source>Vertical slide mode</source>
+			</trans-unit>
+			<trans-unit id="settings.verticalSwiping">
+				<source>Vertical swipe mode</source>
+			</trans-unit>
+			<trans-unit id="settings.rtl">
+				<source>Right-to-left slider</source>
+			</trans-unit>
+			<trans-unit id="settings.waitForAnimate">
+				<source>Wait for animate</source>
+			</trans-unit>
+			<trans-unit id="settings.zindex">
+				<source>Z-Index value for slides</source>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

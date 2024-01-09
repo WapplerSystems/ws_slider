@@ -124,6 +124,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $selectId = StringUtility::getUniqueId('tceforms-select-');
         $selectedIcon = '';
         $size = (int)($config['size'] ?? 0);
+        $fallbackValue = 0;
 
         // Style set on <select/>
         $options = '';
@@ -148,10 +149,15 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
             }
         }
 
-        foreach ($selectItems as $item) {
-            $selected = $selectedValue === (string)$item['value'];
+        $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$config['typoscriptPath']);
+        if ($selectedValue === null) {
+            $selectedValue = $defaultValue;
+        }
 
-            if ($item['value'] === '--div--') {
+        foreach ($selectItems as $item) {
+            $selected = $selectedValue === (string)($item['value'] ?? '');
+
+            if (($item['value'] ?? '') === '--div--') {
                 // IS OPTGROUP
                 if ($selectItemCounter !== 0) {
                     $selectItemGroupCount++;
@@ -226,19 +232,16 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $resultArray = $this->mergeChildReturnIntoExistingResult($resultArray, $fieldWizardResult, false);
 
 
-        $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$config['typoscriptPath']);
 
         if ($defaultValue !== null) {
 
-            $checked = $selectedValue !== null ? ' checked="checked"' : '';
+            $checked = !empty($parameterArray['itemFormElValue']) ? ' checked="checked"' : '';
             $placeholder = $shortenedPlaceholder = $defaultValue ?? '';
 
             foreach ($selectItems as $selectItem) {
                 if ($selectItem['value'] === $defaultValue) $placeholder = $selectItem['label'];
             }
 
-            $disabled = '';
-            $fallbackValue = 0;
             if ($placeholder !== '') {
                 $shortenedPlaceholder = GeneralUtility::fixed_lgd_cs($placeholder, 20);
                 if ($placeholder !== $shortenedPlaceholder) {
@@ -294,7 +297,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
             $fullElement[] = '<div class="checkbox t3js-form-field-eval-null-placeholder-checkbox">';
             $fullElement[] = '<label for="' . $nullControlNameEscaped . '">';
             $fullElement[] = '<input type="hidden" name="' . $nullControlNameEscaped . '" value="' . $fallbackValue . '" />';
-            $fullElement[] = '<input type="checkbox" name="' . $nullControlNameEscaped . '" id="' . $nullControlNameEscaped . '" value="1"' . $checked . $disabled . ' />';
+            $fullElement[] = '<input type="checkbox" name="' . $nullControlNameEscaped . '" id="' . $nullControlNameEscaped . '" value="1"' . $checked . ($disabled ? ' disabled' : '') . ' />';
             $fullElement[] = $overrideLabel;
             $fullElement[] = '</label>';
             $fullElement[] = '</div>';

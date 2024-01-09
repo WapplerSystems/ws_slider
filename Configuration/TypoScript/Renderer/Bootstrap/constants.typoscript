@@ -3,121 +3,38 @@
 plugin.tx_wsslider.settings.bootstrap {
   # General bootstrap options
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=selector: Must match simple pattern. '{container} > {slide}'.
-  selector = .slides > li
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=interval
+  interval = 5000
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[slide,fade]; label=animation: Controls the animation type, "fade" or "slide".
-  animation = fade
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=Easing: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported
-  easing = swing
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[vertical,horizontal]; label=dierection: Controls the animation direction, "horizontal" or "vertical"
-  direction = horizontal
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=reverse: Reverse the animation direction
-  reverse = false
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=animationLoop: Gives the slider a seamless infinite loop.
-  animationLoop = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=smoothHeight: Animate the height of the slider smoothly for slides of varying height.
-  smoothHeight = false
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=startAt: The slide that the slider should start on. Array notation (0 = first slide)
-  startAt = 0
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=slideshow: Setup a slideshow for the slider to animate automatically.
-  slideshow = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=slideshowSpeed: Set the speed of the slideshow cycling, in milliseconds
-  slideshowSpeed = 7000
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=animationSpeed: Set the speed of animations, in milliseconds
-  animationSpeed = 600
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=initDelay: Set an initialization delay, in milliseconds
-  initDelay = 0
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=randomize: Randomize slide order, on load
-  randomize = false
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=fadeFirstSlide: Fade in the first slide
-  fadeFirstSlide = true
-
-  # Usability Features
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=pauseOnAction: Pause the slideshow when interacting with control elements, highly recommended.
-  pauseOnAction = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=pauseOnHover: Pause the slideshow when hovering over slider, then resume when no longer hovering.
-  pauseOnHover = false
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=pauseInvisible: Pause Invisible.
-  pauseInvisible = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=useCSS: Slider will use CSS3 transitions if available
-  useCSS = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=touch: Allow touch swipe navigation of the slider on touch-enabled devices
-  touch = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=video: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches.
-  video = false
-
-  # Primary Controls
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=controlNav: Create navigation for paging control of each slide? Note: Leave true for manualControls usage.
-  controlNav = true
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=directionNav: Create navigation for previous/next navigation? (true/false).
-  directionNav = true
-
-  # Secondary Navigation
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=keyboard: Allow slider navigating via keyboard left/right keys.
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/b; type=options[true,false]; label=keyboard
   keyboard = true
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=multipleKeyboard: Allow keyboard navigation to affect multiple sliders.
-  multipleKeyboard = false
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/c; type=options[hover,false]; label=pause
+  pause = hover
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=mousewheel: (Dependency) Allows slider navigating via mousewheel
-  mousewheel = false
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/d; type=options[false,true,carousel]; label=ride
+  ride = false
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=options[true,false]; label=pausePlay: Create pause/play element to control slider slideshow.
-  pausePlay = false
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/e; type=options[true,false]; label=touch
+  touch = true
 
-  # Special Properties
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/f; type=options[true,false]; label=wrap
+  wrap = true
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=controlsContainer: jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".bootstrap-container"). Property is ignored if given element is not found.
-  controlsContainer =
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/g; type=options[true,false]; label=Show control
+  control = true
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=manualControls: jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
-  manualControls =
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/h; type=options[true,false]; label=Show indicators
+  indicators = true
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=customDirectionNav: Type: jQuery Object/Selector. Container the custom navigation markup works with.
-  customDirectionNav =
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/i; type=options[true,false]; label=Show title
+  title = true
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=sync: Type: Selector. Mirror the actions performed on this slider with another slider. Use with care.
-  sync =
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/j; type=options[true,false]; label=Show description
+  description = true
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=string; label=asNavFor: Type: Selector. Turn the slider into a thumbnail navigation for another slider.
-  asNavFor =
+  # cat=plugin.tx_wsslider.bootstrap/bootstrap/k; type=int+; label=startAt: The slide that the slider should start on. Array notation (0 = first slide)
+  startAt = 0
 
-  # Carousel Options
 
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=itemWidth: Box-model width of individual carousel items, including horizontal borders and padding.
-  itemWidth = 0
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=itemMargin: Margin between carousel items.
-  itemMargin = 0
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=minItems: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
-  minItems = 3
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=maxItems: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
-  maxItems = 6
-
-  # cat=plugin.tx_wsslider.bootstrap/bootstrap/a; type=int+; label=move: Number of carousel items that should move on animation. If 0, slider will move all visible items.
-  move = 0
 }

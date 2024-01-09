@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
-        <header/>
-        <body>
-            <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+			<trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve">
 				<source>Enables tabbing and arrow key navigation</source>
 			</trans-unit>
 			<trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve">
@@ -143,6 +143,6 @@
 			</trans-unit>
 
 
-        </body>
-    </file>
+		</body>
+	</file>
 </xliff>

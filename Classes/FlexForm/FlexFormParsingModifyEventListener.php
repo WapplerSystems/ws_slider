@@ -11,13 +11,10 @@ use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
-use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\NoSuchFileException;
 use TYPO3\CMS\Form\Mvc\Configuration\Exception\ParseErrorException;
 use TYPO3\CMS\Form\Service\TranslationService;
-use WapplerSystems\WsSlider\Configuration\ConfigurationManager;
 use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
@@ -39,9 +36,22 @@ final class FlexFormParsingModifyEventListener
     ): void
     {
         $row = $event->getRow();
+        $identifier = $event->getIdentifier();
 
         if ($event->getTableName() === 'tt_content' && $event->getFieldName() === 'pi_flexform' && $row['CType'] === 'ws_slider') {
             $pageTs = BackendUtility::getPagesTSconfig($row['pid']);
+
+            if ((int)$row['tx_wsslider_preset'] !== 0 && $row['tx_wsslider_preset'] !== '') {
+                $identifier['ext-wsslider-extendSheets'] = 'Preset';
+                $event->setIdentifier($identifier);
+                return;
+            }
+
+            if ($row['pid'] < 0) {
+                $identifier['ext-wsslider-extendSheets'] = 'SaveNeeded';
+                $event->setIdentifier($identifier);
+                return;
+            }
 
             $identifier['pageTs'] = $pageTs['tx_wsslider.'] ?? [];
 
@@ -56,10 +66,23 @@ final class FlexFormParsingModifyEventListener
                 $identifier['ext-wsslider-extendSheets'] = $defaultValue;
             }
             if (
-                isset($row['tx_wsslider_renderer']) && $row['tx_wsslider_renderer'] !== '' && $row['tx_wsslider_renderer'] !== null
+                isset($row['tx_wsslider_renderer']) && $row['tx_wsslider_renderer'] !== ''
             ) {
                 $identifier['ext-wsslider-extendSheets'] = $row['tx_wsslider_renderer'];
             }
+
+            $event->setIdentifier($identifier);
+        }
+        if ($event->getTableName() === 'tx_wsslider_domain_model_preset' && $row['type'] !== '') {
+
+            $pageTs = BackendUtility::getPagesTSconfig($row['pid']);
+            $identifier = [
+                'type' => 'tca',
+                'tableName' => 'tx_wsslider_domain_model_preset',
+                'fieldName' => $row['type'],
+                'dataStructureKey' => 'default',
+                'pageTs' => ($pageTs['tx_wsslider.'] ?? []),
+            ];
 
             $event->setIdentifier($identifier);
         }
@@ -71,11 +94,23 @@ final class FlexFormParsingModifyEventListener
         $identifier = $event->getIdentifier();
         $dataStructure = $event->getDataStructure();
 
-        if (isset($identifier['ext-wsslider-extendSheets']) && $identifier['ext-wsslider-extendSheets'] !== false) {
-            try {
-                if ($dataStructure === null) $dataStructure = [];
+        $rendererKey = null;
 
-                $newSheets = $this->getAdditionalFinisherSheets($identifier['ext-wsslider-extendSheets']);
+        if (isset($identifier['ext-wsslider-extendSheets']) && $identifier['ext-wsslider-extendSheets'] !== false) {
+            $rendererKey = $identifier['ext-wsslider-extendSheets'];
+        }
+        if (($identifier['tableName'] ?? '') === 'tx_wsslider_domain_model_preset') {
+            $rendererKey = $identifier['fieldName'];
+        }
+
+        if ($rendererKey !== null) {
+            try {
+
+                if ($dataStructure === null) {
+                    $dataStructure = [];
+                }
+
+                $newSheets = $this->getRendererSheets($rendererKey);
                 ArrayUtility::mergeRecursiveWithOverrule(
                     $dataStructure,
                     $newSheets
@@ -115,7 +150,7 @@ final class FlexFormParsingModifyEventListener
      * @param string $renderer
      * @return array
      */
-    protected function getAdditionalFinisherSheets(string $renderer): array
+    protected function getRendererSheets(string $renderer): array
     {
         $file = GeneralUtility::getFileAbsFileName('EXT:ws_slider/Configuration/FlexForm/Renderer/' . ucfirst($renderer) . '.xml');
         if (file_exists($file)) {

@@ -96,6 +96,23 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             ]
         ]
     ],
+    'tx_wsslider_preset' => [
+        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:preset',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tx_wsslider_domain_model_preset',
+            'size' => 1,
+            'items' => [
+                [
+                    'label' => '',
+                    'value' => 0,
+                ],
+            ],
+            'default' => 0,
+        ],
+        'onChange' => 'reload',
+    ],
     'tx_wsslider_renderer' => [
         'exclude' => true,
         'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:renderer',
@@ -105,7 +122,8 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             'renderType' => 'selectSingleWithTypoScriptPlaceholder',
             'typoscriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'eval' => 'null',
-        ]
+        ],
+        'displayCond' => 'FIELD:tx_wsslider_preset:=:0',
     ],
     'tx_wsslider_layout' => [
         'exclude' => true,
@@ -129,6 +147,7 @@ $GLOBALS['TCA']['tt_content']['palettes'] = array_replace_recursive(
         'tx_wsslider' => [
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:palette.wsslider',
             'showitem' => '
+                tx_wsslider_preset;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:preset,--linebreak--,
                 tx_wsslider_renderer;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:renderer,
                 tx_wsslider_layout;LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.layout,
                 --linebreak--,

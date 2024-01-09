@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+
+			<trans-unit id="bootstrap.settings.js.startAt.description">
+				<source>The starting slide for the slider, in array notation.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

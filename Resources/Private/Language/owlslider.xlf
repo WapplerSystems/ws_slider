@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
-        <header/>
-        <body>
-            <!-- Owl specific labels -->
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+			<!-- Owl specific labels -->
 			<trans-unit id="owl">
 				<source>Owl</source>
 			</trans-unit>
@@ -11,24 +11,24 @@
 			<trans-unit id="settings.items">
 				<source>Items</source>
 			</trans-unit>
-            <trans-unit id="settings.responsiveItemCount0">
-                <source>Items below 576px display width</source>
-            </trans-unit>
-            <trans-unit id="settings.responsiveItemCount576">
-                <source>Items above 576px display width</source>
-            </trans-unit>
-            <trans-unit id="settings.responsiveItemCount768">
-                <source>Items above 768px display width</source>
-            </trans-unit>
-            <trans-unit id="settings.responsiveItemCount992">
-                <source>Items above 992px display width</source>
-            </trans-unit>
-            <trans-unit id="settings.responsiveItemCount1200">
-                <source>Items above 1200px display width</source>
-            </trans-unit>
-            <trans-unit id="settings.responsiveItemCount1400">
-                <source>Items above 1400px display width</source>
-            </trans-unit>
+			<trans-unit id="settings.responsiveItemCount0">
+				<source>Items below 576px display width</source>
+			</trans-unit>
+			<trans-unit id="settings.responsiveItemCount576">
+				<source>Items above 576px display width</source>
+			</trans-unit>
+			<trans-unit id="settings.responsiveItemCount768">
+				<source>Items above 768px display width</source>
+			</trans-unit>
+			<trans-unit id="settings.responsiveItemCount992">
+				<source>Items above 992px display width</source>
+			</trans-unit>
+			<trans-unit id="settings.responsiveItemCount1200">
+				<source>Items above 1200px display width</source>
+			</trans-unit>
+			<trans-unit id="settings.responsiveItemCount1400">
+				<source>Items above 1400px display width</source>
+			</trans-unit>
 			<trans-unit id="settings.margin">
 				<source>Margin</source>
 			</trans-unit>
@@ -134,6 +134,6 @@
 			<trans-unit id="settings.URLhashListener">
 				<source>Listen to url hash changes</source>
 			</trans-unit>
-        </body>
-    </file>
+		</body>
+	</file>
 </xliff>

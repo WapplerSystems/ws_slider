@@ -10,10 +10,10 @@
             <f:image class="img-fluid" image="{item.foregroundMedia.0}"/>
 
         </f:if>
-        <div class="caption-wrapper caption-align-{item.data.text_position}">
+        <div class="carousel-caption d-none d-md-block">
             <f:if condition="{item.data.title}||{item.data.description}">
                 <div class="caption-text">
-                    <p class="caption-title">{item.data.title}</p>
+                    <h5>{item.data.title}</h5>
                     <f:if condition="{item.data.description}">
                         <div class="caption-body">
                             <f:format.html>{item.data.description}</f:format.html>

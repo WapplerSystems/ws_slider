@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\DataProcessing;
 
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
-use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
@@ -44,37 +44,65 @@ class SliderProcessor implements DataProcessorInterface
     {
 
         $settings = $contentObjectConfiguration['settings.']['slider.'];
-
-        $settings['renderer'] = $settings['defaultRenderer'];
-        if ($processedData['data']['tx_wsslider_renderer'] !== null) $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
-
+        $settings['parameters'] = [];
         $settings['layout'] = $processedData['data']['tx_wsslider_layout'] ?? 'Default';
 
-        $rendererKey = strtolower($settings['renderer']);
+        if (($processedData['data']['tx_wsslider_preset'] ?? 0) > 0) {
 
-        if (isset($settings['renderer.'][$rendererKey . '.'])) {
-            $settings['parameters'] = $settings['renderer.'][$rendererKey . '.'];
-            unset($settings['renderer.']);
-        } else {
-            $settings['parameters'] = [];
-        }
+            $preset = BackendUtility::getRecord('tx_wsslider_domain_model_preset', $processedData['data']['tx_wsslider_preset']);
 
-        $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
-        $settings['parameters'] = self::removeDotsFromTS($settings['parameters']);
-        $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+            $rendererKey = $settings['renderer'] = $preset['type'];
+            if (isset($settings['renderer.'][$rendererKey . '.'])) {
+                $settings['parameters'] = $settings['renderer.'][$rendererKey . '.'];
+                unset($settings['renderer.']);
+            }
 
+            $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
+            $settings['parameters'] = self::removeDotsFromTS($settings['parameters']);
+            $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
 
-        // Process Flexform
-        $flexformData = $processedData['data']['pi_flexform'];
-        if (is_string($flexformData)) {
-            $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-            if (is_array($flexformData['settings']['js'] ?? null)) {
+            $presetValues = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
+            if (is_array($presetValues['settings']['js'] ?? null)) {
                 ArrayUtility::mergeRecursiveWithOverrule(
                     $settings['parameters'],
-                    $flexformData['settings']['js'],
+                    $presetValues['settings']['js'],
                     true,
                     false
                 );
+            }
+
+            $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+
+        } else {
+
+            $settings['renderer'] = $settings['defaultRenderer'];
+            if ($processedData['data']['tx_wsslider_renderer'] !== null) $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
+
+            $rendererKey = strtolower($settings['renderer']);
+
+            if (isset($settings['renderer.'][$rendererKey . '.'])) {
+                $settings['parameters'] = $settings['renderer.'][$rendererKey . '.'];
+                unset($settings['renderer.']);
+            }
+
+
+            $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
+            $settings['parameters'] = self::removeDotsFromTS($settings['parameters']);
+            $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+
+
+            // Process Flexform
+            $flexformData = $processedData['data']['pi_flexform'];
+            if (is_string($flexformData)) {
+                $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
+                if (is_array($flexformData['settings']['js'] ?? null)) {
+                    ArrayUtility::mergeRecursiveWithOverrule(
+                        $settings['parameters'],
+                        $flexformData['settings']['js'],
+                        true,
+                        false
+                    );
+                }
             }
         }
 
@@ -112,7 +140,7 @@ class SliderProcessor implements DataProcessorInterface
     }
 
 
-    protected function resolveTypoScriptConfiguration(ContentObjectRenderer $cObj, array $configuration = []): array
+    private function resolveTypoScriptConfiguration(ContentObjectRenderer $cObj, array $configuration = []): array
     {
         foreach ($configuration as $key => $value) {
             $keyWithoutDot = rtrim((string)$key, '.');
