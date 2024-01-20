@@ -11,6 +11,7 @@ Currently the following slider scripts are provided:
 * [Owl](https://owlcarousel2.github.io/OwlCarousel2/)
 * [TinySlider 2](https://ganlanyuan.github.io/tiny-slider/)
 * [Slick](https://kenwheeler.github.io/slick/)
+* [Bootstrap](https://getbootstrap.com/docs/5.3/components/carousel/)
 
 ## Video Tutorial
 A german video tutorial on how to install and configure the extension can be found [here](https://youtu.be/Kvfwmei7PWc)
