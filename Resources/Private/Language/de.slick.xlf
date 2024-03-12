@@ -52,9 +52,6 @@
       <trans-unit id="settings.focusOnSelect" xml:space="preserve" approved="yes">
                 <source>Focus On Select</source>
             <target state="final">Fokus auf Auswahl</target></trans-unit>
-      <trans-unit id="settings.easing" xml:space="preserve" approved="yes">
-                <source>Easing</source>
-            <target state="final">Easing</target></trans-unit>
       <trans-unit id="settings.edgeFriction" xml:space="preserve" approved="yes">
                 <source>Edge Friction</source>
             <target state="final">Kantenreibung</target></trans-unit>
