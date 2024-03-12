@@ -39,9 +39,6 @@
       <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
 				<source>Side padding when in center mode (px or %)</source>
 			<target state="final">Seiten-Padding im zentrierten Modus (px oder %)</target></trans-unit>
-      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
-				<source>CSS3 Animation Easing</source>
-			<target state="final">CSS3 Animation Easing</target></trans-unit>
       <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
 				<source>Show dot indicators</source>
 			<target state="final">Zeige Punkte-Navigation</target></trans-unit>
