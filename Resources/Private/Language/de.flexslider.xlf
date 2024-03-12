@@ -4,10 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="sheet.flexslider" approved="yes">
-        <source>Flex Slider</source>
-        <target state="final">Flex Slider</target>
-      </trans-unit>
       <trans-unit id="sheet.usability" approved="yes">
         <source>Usability</source>
         <target state="final">Benutzbarkeit</target>
@@ -32,9 +28,6 @@
       <trans-unit id="settings.selector" xml:space="preserve" approved="yes">
                 <source>Selector</source>
             <target state="final">Selektor</target></trans-unit>
-      <trans-unit id="settings.animation" xml:space="preserve" approved="yes">
-                <source>Animation</source>
-            <target state="final">Animation</target></trans-unit>
       <trans-unit id="settings.easing" xml:space="preserve" approved="yes">
             	<source>Easing effect</source>
             <target state="final">Easing Effekt</target></trans-unit>
@@ -74,9 +67,6 @@
       <trans-unit id="settings.fade" xml:space="preserve" approved="yes">
 				<source>Fade</source>
 			<target state="final">Überblenden</target></trans-unit>
-      <trans-unit id="settings.slide" xml:space="preserve" approved="yes">
-				<source>Slide</source>
-			<target state="final">Slide</target></trans-unit>
       <!-- Usability Features -->
       <trans-unit id="settings.pauseOnAction" xml:space="preserve" approved="yes">
 				<source>Pause on action</source>
