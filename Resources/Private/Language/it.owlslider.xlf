@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="it">
+    <header/>
+    <body>
+      <!-- Owl specific labels -->
+      <!-- <trans-unit id="settings.pullDrag">
+				<source>Pull Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.freeDrag">
+				<source>Free Drag</source>
+			</trans-unit> -->
+      <!-- <trans-unit id="settings.merge">
+				<source>Merge items</source>
+			</trans-unit>
+			<trans-unit id="settings.mergeFit">
+				<source>Merge Fit</source>
+			</trans-unit> -->
+      <!-- <trans-unit id="settings.smartSpeed">
+				<source>Smart Speed</source>
+			</trans-unit> -->
+    </body>
+  </file>
+</xliff>
