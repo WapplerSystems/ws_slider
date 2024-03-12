@@ -4,10 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="sheet.flexslider" approved="yes">
-        <source>Flex Slider</source>
-        <target state="final">Flex Slider</target>
-      </trans-unit>
       <trans-unit id="sheet.usability" approved="yes">
         <source>Usability</source>
         <target state="final">Benutzbarkeit</target>
@@ -29,119 +25,147 @@
         <target state="final">Karussell</target>
       </trans-unit>
       <!-- flexslider general settings -->
-      <trans-unit id="settings.selector" xml:space="preserve" approved="yes">
-                <source>Selector</source>
-            <target state="final">Selektor</target></trans-unit>
-      <trans-unit id="settings.animation" xml:space="preserve" approved="yes">
-                <source>Animation</source>
-            <target state="final">Animation</target></trans-unit>
-      <trans-unit id="settings.easing" xml:space="preserve" approved="yes">
-            	<source>Easing effect</source>
-            <target state="final">Easing Effekt</target></trans-unit>
-      <trans-unit id="settings.direction" xml:space="preserve" approved="yes">
-            	<source>Direction</source>
-            <target state="final">Richtung</target></trans-unit>
-      <trans-unit id="settings.reverse" xml:space="preserve" approved="yes">
-            	<source>Reverse order</source>
-            <target state="final">Umgekehrte Reihenfolge</target></trans-unit>
-      <trans-unit id="settings.animationLoop" xml:space="preserve" approved="yes">
-            	<source>Animation loop</source>
-            <target state="final">Animationsschleife</target></trans-unit>
-      <trans-unit id="settings.smoothHeight" xml:space="preserve" approved="yes">
-            	<source>Smooth height</source>
-            <target state="final">Glatte Höhenverstellung zwischen Elementen</target></trans-unit>
-      <trans-unit id="settings.startAt" xml:space="preserve" approved="yes">
-            	<source>Start at</source>
-            <target state="final">Start bei</target></trans-unit>
-      <trans-unit id="settings.slideshow" xml:space="preserve" approved="yes">
-            	<source>Slideshow mode</source>
-            <target state="final">Diashow-Modus</target></trans-unit>
-      <trans-unit id="settings.slideshowSpeed" xml:space="preserve" approved="yes">
-            	<source>Slideshow speed (in milliseconds)</source>
-            <target state="final">Diashow-Geschwindigkeit (in Millisekunden)</target></trans-unit>
-      <trans-unit id="settings.animationSpeed" xml:space="preserve" approved="yes">
-            	<source>Animation speed (in milliseconds)</source>
-            <target state="final">Animationsgeschwindigkeit (in Millisekunden)</target></trans-unit>
-      <trans-unit id="settings.initDelay" xml:space="preserve" approved="yes">
-            	<source>Init delay in milliseconds</source>
-            <target state="final">Start-Verzögerung in Millisekunden</target></trans-unit>
-      <trans-unit id="settings.randomize" xml:space="preserve" approved="yes">
-            	<source>Random mode</source>
-            <target state="final">Zufallsmodus</target></trans-unit>
-      <trans-unit id="settings.fadeFirstSlide" xml:space="preserve" approved="yes">
-            	<source>Fade in first slide</source>
-            <target state="final">Einblenden des ersten Elements</target></trans-unit>
-      <trans-unit id="settings.fade" xml:space="preserve" approved="yes">
-				<source>Fade</source>
-			<target state="final">Überblenden</target></trans-unit>
-      <trans-unit id="settings.slide" xml:space="preserve" approved="yes">
-				<source>Slide</source>
-			<target state="final">Slide</target></trans-unit>
+      <trans-unit id="settings.selector" approved="yes">
+        <source>Selector</source>
+        <target state="final">Selektor</target>
+      </trans-unit>
+      <trans-unit id="settings.easing" approved="yes">
+        <source>Easing effect</source>
+        <target state="final">Easing Effekt</target>
+      </trans-unit>
+      <trans-unit id="settings.direction" approved="yes">
+        <source>Direction</source>
+        <target state="final">Richtung</target>
+      </trans-unit>
+      <trans-unit id="settings.reverse" approved="yes">
+        <source>Reverse order</source>
+        <target state="final">Umgekehrte Reihenfolge</target>
+      </trans-unit>
+      <trans-unit id="settings.animationLoop" approved="yes">
+        <source>Animation loop</source>
+        <target state="final">Animationsschleife</target>
+      </trans-unit>
+      <trans-unit id="settings.smoothHeight" approved="yes">
+        <source>Smooth height</source>
+        <target state="final">Glatte Höhenverstellung zwischen Elementen</target>
+      </trans-unit>
+      <trans-unit id="settings.startAt" approved="yes">
+        <source>Start at</source>
+        <target state="final">Start bei</target>
+      </trans-unit>
+      <trans-unit id="settings.slideshow" approved="yes">
+        <source>Slideshow mode</source>
+        <target state="final">Diashow-Modus</target>
+      </trans-unit>
+      <trans-unit id="settings.slideshowSpeed" approved="yes">
+        <source>Slideshow speed (in milliseconds)</source>
+        <target state="final">Diashow-Geschwindigkeit (in Millisekunden)</target>
+      </trans-unit>
+      <trans-unit id="settings.animationSpeed" approved="yes">
+        <source>Animation speed (in milliseconds)</source>
+        <target state="final">Animationsgeschwindigkeit (in Millisekunden)</target>
+      </trans-unit>
+      <trans-unit id="settings.initDelay" approved="yes">
+        <source>Init delay in milliseconds</source>
+        <target state="final">Start-Verzögerung in Millisekunden</target>
+      </trans-unit>
+      <trans-unit id="settings.randomize" approved="yes">
+        <source>Random mode</source>
+        <target state="final">Zufallsmodus</target>
+      </trans-unit>
+      <trans-unit id="settings.fadeFirstSlide" approved="yes">
+        <source>Fade in first slide</source>
+        <target state="final">Einblenden des ersten Elements</target>
+      </trans-unit>
+      <trans-unit id="settings.fade" approved="yes">
+        <source>Fade</source>
+        <target state="final">Überblenden</target>
+      </trans-unit>
       <!-- Usability Features -->
-      <trans-unit id="settings.pauseOnAction" xml:space="preserve" approved="yes">
-				<source>Pause on action</source>
-			<target state="final">Bei Aktion pausieren</target></trans-unit>
-      <trans-unit id="settings.pauseOnHover" xml:space="preserve" approved="yes">
-				<source>Pause on hover</source>
-			<target state="final">Pausieren beim Darüberfahren</target></trans-unit>
-      <trans-unit id="settings.pauseInvisible" xml:space="preserve" approved="yes">
-				<source>Pause Invisible</source>
-			<target state="final">Pausieren falls Fenster nicht sichtbar ist</target></trans-unit>
-      <trans-unit id="settings.useCSS" xml:space="preserve" approved="yes">
-				<source>User CSS</source>
-			<target state="final">Benutzer-CSS</target></trans-unit>
-      <trans-unit id="settings.touch" xml:space="preserve" approved="yes">
-				<source>Touch mode</source>
-			<target state="final">Berührungsmodus</target></trans-unit>
-      <trans-unit id="settings.video" xml:space="preserve" approved="yes">
-				<source>Video mode</source>
-			<target state="final">Video-Modus</target></trans-unit>
+      <trans-unit id="settings.pauseOnAction" approved="yes">
+        <source>Pause on action</source>
+        <target state="final">Bei Aktion pausieren</target>
+      </trans-unit>
+      <trans-unit id="settings.pauseOnHover" approved="yes">
+        <source>Pause on hover</source>
+        <target state="final">Pausieren beim Darüberfahren</target>
+      </trans-unit>
+      <trans-unit id="settings.pauseInvisible" approved="yes">
+        <source>Pause Invisible</source>
+        <target state="final">Pausieren falls Fenster nicht sichtbar ist</target>
+      </trans-unit>
+      <trans-unit id="settings.useCSS" approved="yes">
+        <source>User CSS</source>
+        <target state="final">Benutzer-CSS</target>
+      </trans-unit>
+      <trans-unit id="settings.touch" approved="yes">
+        <source>Touch mode</source>
+        <target state="final">Berührungsmodus</target>
+      </trans-unit>
+      <trans-unit id="settings.video" approved="yes">
+        <source>Video mode</source>
+        <target state="final">Video-Modus</target>
+      </trans-unit>
       <!-- Primary Controls -->
       <!-- Secondary Navigation -->
-      <trans-unit id="settings.keyboard" xml:space="preserve" approved="yes">
-				<source>Keyboard support</source>
-			<target state="final">Tastaturunterstützung</target></trans-unit>
-      <trans-unit id="settings.multipleKeyboard" xml:space="preserve" approved="yes">
-				<source>Allow keyboard navigation to affect multiple sliders</source>
-			<target state="final">Tastatursteuerung soll mehrere slider beeinflussen</target></trans-unit>
-      <trans-unit id="settings.mousewheel" xml:space="preserve" approved="yes">
-				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
-			<target state="final">Mausrad-Unterstützung (benötigt jquery.mousewheel.js)</target></trans-unit>
-      <trans-unit id="settings.pausePlay" xml:space="preserve" approved="yes">
-				<source>Create pause/play dynamic element</source>
-			<target state="final">Dynamisches Element für pausieren/abspielen</target></trans-unit>
+      <trans-unit id="settings.keyboard" approved="yes">
+        <source>Keyboard support</source>
+        <target state="final">Tastaturunterstützung</target>
+      </trans-unit>
+      <trans-unit id="settings.multipleKeyboard" approved="yes">
+        <source>Allow keyboard navigation to affect multiple sliders</source>
+        <target state="final">Tastatursteuerung soll mehrere slider beeinflussen</target>
+      </trans-unit>
+      <trans-unit id="settings.mousewheel" approved="yes">
+        <source>Mousewheel support (requires jquery.mousewheel.js)</source>
+        <target state="final">Mausrad-Unterstützung (benötigt jquery.mousewheel.js)</target>
+      </trans-unit>
+      <trans-unit id="settings.pausePlay" approved="yes">
+        <source>Create pause/play dynamic element</source>
+        <target state="final">Dynamisches Element für pausieren/abspielen</target>
+      </trans-unit>
       <!-- Special Properties -->
-      <trans-unit id="settings.controlsContainer" xml:space="preserve" approved="yes">
-				<source>controlsContainer jQuery object/selector</source>
-			<target state="final">controlsContainer jQuery Objekt/Selektor</target></trans-unit>
-      <trans-unit id="settings.manualControls" xml:space="preserve" approved="yes">
-				<source>manualControls jQuery object/selector</source>
-			<target state="final">controlsContainer jQuery Objekt/Selektor</target></trans-unit>
-      <trans-unit id="settings.customDirectionNav" xml:space="preserve" approved="yes">
-				<source>customDirectionNav jQuery object/selector</source>
-			<target state="final">customDirectionNav jQuery Objekt/Selektor</target></trans-unit>
-      <trans-unit id="settings.sync" xml:space="preserve" approved="yes">
-				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
-			<target state="final">Sync-Selektor: Spiegeln Sie die auf diesem Slider durchgeführten Aktionen auf einem anderen Slider</target></trans-unit>
-      <trans-unit id="settings.asNavFor" xml:space="preserve" approved="yes">
-				<source>asNavFor selector</source>
-			<target state="final">asNavFor Selektor</target></trans-unit>
+      <trans-unit id="settings.controlsContainer" approved="yes">
+        <source>controlsContainer jQuery object/selector</source>
+        <target state="final">controlsContainer jQuery Objekt/Selektor</target>
+      </trans-unit>
+      <trans-unit id="settings.manualControls" approved="yes">
+        <source>manualControls jQuery object/selector</source>
+        <target state="final">controlsContainer jQuery Objekt/Selektor</target>
+      </trans-unit>
+      <trans-unit id="settings.customDirectionNav" approved="yes">
+        <source>customDirectionNav jQuery object/selector</source>
+        <target state="final">customDirectionNav jQuery Objekt/Selektor</target>
+      </trans-unit>
+      <trans-unit id="settings.sync" approved="yes">
+        <source>Sync selector: mirror the actions performed on this slider with another slider</source>
+        <target state="final">Sync-Selektor: Spiegeln Sie die auf diesem Slider durchgeführten Aktionen auf einem anderen Slider</target>
+      </trans-unit>
+      <trans-unit id="settings.asNavFor" approved="yes">
+        <source>asNavFor selector</source>
+        <target state="final">asNavFor Selektor</target>
+      </trans-unit>
       <!-- Carousel-->
-      <trans-unit id="settings.itemWidth" xml:space="preserve" approved="yes">
-				<source>Element width in pixels</source>
-			<target state="final">Elementbreite in Pixeln</target></trans-unit>
-      <trans-unit id="settings.itemMargin" xml:space="preserve" approved="yes">
-				<source>Element border (margin)</source>
-			<target state="final">Elementrahmen (Rand)</target></trans-unit>
-      <trans-unit id="settings.minItems" xml:space="preserve" approved="yes">
-				<source>Min number of elements</source>
-			<target state="final">Minimale Anzahl von Elementen</target></trans-unit>
-      <trans-unit id="settings.maxItems" xml:space="preserve" approved="yes">
-				<source>Max number of elements</source>
-			<target state="final">Maximale Anzahl von Elementen</target></trans-unit>
-      <trans-unit id="settings.move" xml:space="preserve" approved="yes">
-				<source>Number of elements, which should be moved in animation</source>
-			<target state="final">Anzahl der Elemente, die in der Animation verschoben werden sollen</target></trans-unit>
+      <trans-unit id="settings.itemWidth" approved="yes">
+        <source>Element width in pixels</source>
+        <target state="final">Elementbreite in Pixeln</target>
+      </trans-unit>
+      <trans-unit id="settings.itemMargin" approved="yes">
+        <source>Element border (margin)</source>
+        <target state="final">Elementrahmen (Rand)</target>
+      </trans-unit>
+      <trans-unit id="settings.minItems" approved="yes">
+        <source>Min number of elements</source>
+        <target state="final">Minimale Anzahl von Elementen</target>
+      </trans-unit>
+      <trans-unit id="settings.maxItems" approved="yes">
+        <source>Max number of elements</source>
+        <target state="final">Maximale Anzahl von Elementen</target>
+      </trans-unit>
+      <trans-unit id="settings.move" approved="yes">
+        <source>Number of elements, which should be moved in animation</source>
+        <target state="final">Anzahl der Elemente, die in der Animation verschoben werden sollen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
