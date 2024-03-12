@@ -3,26 +3,9 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
-      <trans-unit id="title" xml:space="preserve" approved="yes">
-				<source>Slider</source>
-			<target state="final">Slider</target></trans-unit>
-      <trans-unit id="description" xml:space="preserve" approved="yes">
-				<source>Universal Slider / Carousel</source>
-			<target state="final">Universal Slider / Carousel</target></trans-unit>
-      <trans-unit id="palette.wsslider" approved="yes">
-        <source>Slider</source>
-        <target state="final">Slider</target>
-      </trans-unit>
-      <trans-unit id="title" approved="yes">
-        <source>WS Slider Settings</source>
-        <target state="final">Slider</target>
-      </trans-unit>
       <trans-unit id="settings" xml:space="preserve" approved="yes">
 				<source>Settings</source>
 			<target state="final">Einstellungen</target></trans-unit>
-      <trans-unit id="renderer" xml:space="preserve" approved="yes">
-				<source>Renderer</source>
-			<target state="final">Renderer</target></trans-unit>
       <trans-unit id="items" xml:space="preserve" approved="yes">
 				<source>Items</source>
 			<target state="final">Elemente</target></trans-unit>
@@ -37,10 +20,6 @@
       <trans-unit id="force" approved="yes">
         <source>Force</source>
         <target state="final">Erzwingen</target>
-      </trans-unit>
-      <trans-unit id="auto" approved="yes">
-        <source>Auto</source>
-        <target state="final">Auto</target>
       </trans-unit>
       <trans-unit id="inner" approved="yes">
         <source>Inner</source>
@@ -63,26 +42,7 @@
         <source>Previous</source>
         <target state="final">Zurück</target>
       </trans-unit>
-      <trans-unit id="label.start" approved="yes">
-        <source>Start</source>
-        <target state="final">Start</target>
-      </trans-unit>
-      <trans-unit id="label.stop" approved="yes">
-        <source>Stop</source>
-        <target state="final">Stop</target>
-      </trans-unit>
-      <trans-unit id="settings.typoscript" xml:space="preserve" approved="yes">
-            	<source>TypoScript</source>
-            <target state="final">TypoScript</target></trans-unit>
       <!-- sheets -->
-      <trans-unit id="sheet.owl" approved="yes">
-        <source>Owl</source>
-        <target state="final">Owl</target>
-      </trans-unit>
-      <trans-unit id="sheet.navigation" approved="yes">
-        <source>Navigation</source>
-        <target state="final">Navigation</target>
-      </trans-unit>
       <trans-unit id="sheet.layout" approved="yes">
         <source>Layout</source>
         <target state="final">Darstellung</target>
@@ -90,10 +50,6 @@
       <trans-unit id="sheet.dragNdrop" approved="yes">
         <source>Swipe/Drag support</source>
         <target state="final">Wischen/Ziehen Unterstützung</target>
-      </trans-unit>
-      <trans-unit id="sheet.animation" approved="yes">
-        <source>Animation</source>
-        <target state="final">Animation</target>
       </trans-unit>
       <trans-unit id="sheet.advanced" approved="yes">
         <source>Advanced</source>
@@ -103,35 +59,7 @@
         <source>General</source>
         <target state="final">Allgemein</target>
       </trans-unit>
-      <trans-unit id="sheet.tinySlider" approved="yes">
-        <source>Tiny Slider</source>
-        <target state="final">Tiny Slider</target>
-      </trans-unit>
-      <trans-unit id="sheet.slick" approved="yes">
-        <source>Slick Slider</source>
-        <target state="final">Slick Slider</target>
-      </trans-unit>
       <!-- common setting labels -->
-		<trans-unit id="settings.carousel">
-			<source>Carousel</source>
-			<target>Karussel</target>
-		</trans-unit>
-		<trans-unit id="settings.gallery">
-			<source>Gallery</source>
-			<target>Galerie</target>
-		</trans-unit>
-		<trans-unit id="settings.horizontal">
-			<source>Horizontal</source>
-			<target>Horizontal</target>
-		</trans-unit>
-		<trans-unit id="settings.vertical">
-			<source>Vertical</source>
-			<target>Vertikal</target>
-		</trans-unit>
-      <trans-unit id="settings.common.layout" approved="yes">
-        <source>Layout</source>
-        <target state="final">Layout</target>
-      </trans-unit>
       <trans-unit id="settings.common.autoplay" approved="yes">
         <source>Autoplay</source>
         <target state="final">Automatische Wiedergabe</target>
@@ -167,17 +95,6 @@
       <trans-unit id="settings.common.vertical" xml:space="preserve" approved="yes">
             	<source>Vertical</source>
             <target state="final">Vertikal</target></trans-unit>
-      <trans-unit id="settings.common.horizontal" xml:space="preserve" approved="yes">
-            	<source>Horizontal</source>
-            <target state="final">Horizontal</target></trans-unit>
-      <trans-unit id="settings.common.animateOut" approved="yes">
-        <source>Outro Animation</source>
-        <target state="final">Outro Animation</target>
-      </trans-unit>
-      <trans-unit id="settings.common.animateIn" approved="yes">
-        <source>Intro Animation</source>
-        <target state="final">Intro Animation</target>
-      </trans-unit>
       <trans-unit id="settings.common.autoHeight" xml:space="preserve" approved="yes">
                 <source>Auto Height</source>
             <target state="final">Automatische Höhe</target></trans-unit>
@@ -214,9 +131,6 @@
         <source>Text position</source>
         <target state="final">Textposition</target>
       </trans-unit>
-      <trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve" approved="yes">
-				<source>Link</source>
-			<target state="final">Link</target></trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve" approved="yes">
 				<source>Left</source>
 			<target state="final">Links</target></trans-unit>
