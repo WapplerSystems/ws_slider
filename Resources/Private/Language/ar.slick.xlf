@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ar">
+    <header/>
+    <body>
+      <!-- slick slider -->
+      <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
+                <source>Custom Paging</source>
+            </trans-unit> -->
+    </body>
+  </file>
+</xliff>
