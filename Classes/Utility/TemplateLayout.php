@@ -24,16 +24,13 @@ class TemplateLayout implements SingletonInterface
         $templateLayouts = [];
 
         // Add TsConfig values
-        foreach ($this->getTemplateLayoutsFromTsConfig($pageUid) as $template) {
-            if (\str_starts_with($template[1], '--div--')) {
-                $optGroupParts = GeneralUtility::trimExplode(',', $template[1], true, 2);
+        foreach ($this->getTemplateLayoutsFromTsConfig($pageUid) as $templateKey => $title) {
+            if (is_string($title) && str_starts_with($title, '--div--')) {
+                $optGroupParts = GeneralUtility::trimExplode(',', $title, true, 2);
                 $title = $optGroupParts[1];
                 $templateKey = $optGroupParts[0];
-                $templateLayouts[] = [$title, $templateKey];
-            } else {
-                $templateLayouts[] = $template;
             }
-
+            $templateLayouts[] = [$title, $templateKey];
         }
 
         return $templateLayouts;
@@ -45,21 +42,12 @@ class TemplateLayout implements SingletonInterface
      * @param $pageUid
      * @return array
      */
-    protected function getTemplateLayoutsFromTsConfig($pageUid)
+    protected function getTemplateLayoutsFromTsConfig(int $pageUid): array
     {
         $templateLayouts = [];
         $pagesTsConfig = BackendUtility::getPagesTSconfig($pageUid);
         if (isset($pagesTsConfig['tx_wsslider.']['templateLayouts.']) && is_array($pagesTsConfig['tx_wsslider.']['templateLayouts.'])) {
-            $templateLayoutsTemp = $pagesTsConfig['tx_wsslider.']['templateLayouts.'];
-            foreach ($templateLayoutsTemp as $name => $value) {
-                if (is_string($value)) {
-                    $template = [$name, $value];
-                    if (isset($templateLayoutsTemp[$name . '.']) && is_array($templateLayoutsTemp[$name . '.'])) {
-                        $template[3] = $templateLayoutsTemp[$name . '.'];
-                    }
-                    $templateLayouts[] = $template;
-                }
-            }
+            $templateLayouts = $pagesTsConfig['tx_wsslider.']['templateLayouts.'];
         }
         return $templateLayouts;
     }
