@@ -24,11 +24,11 @@
                                 <items>
                                     <numIndex index="0">
                                         <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.carousel</numIndex>
-                                        <numIndex index="value">Carousel</numIndex>
+                                        <numIndex index="value">carousel</numIndex>
                                     </numIndex>
                                     <numIndex index="2">
                                         <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.gallery</numIndex>
-                                        <numIndex index="value">Gallery</numIndex>
+                                        <numIndex index="value">gallery</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
@@ -48,11 +48,11 @@
                                 <items>
                                     <numIndex index="0">
                                         <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.horizontal</numIndex>
-                                        <numIndex index="value">Horizontal</numIndex>
+                                        <numIndex index="value">horizontal</numIndex>
                                     </numIndex>
                                     <numIndex index="2">
                                         <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.vertical</numIndex>
-                                        <numIndex index="value">Vertical</numIndex>
+                                        <numIndex index="value">vertical</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
