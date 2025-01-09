@@ -6,20 +6,6 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript',
     'WS Slider General Settings');
 
-/* Assets */
-
-ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Assets/Owl/',
-'WS Slider Owl Assets');
-
-ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Assets/Flexslider/',
-    'WS Slider Flexslider Assets');
-
-ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Assets/TinySlider/',
-    'WS Slider Tiny Slider Assets');
-
-ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Assets/Slick/',
-    'WS Slider Slick Slider Assets');
-
 
 # TypoScript Settings
 

@@ -5,6 +5,10 @@
 
 <f:section name="Default">
 
+    <f:asset.script identifier="flexslider" src="EXT:ws_slider/Resources/Public/JavaScript/Flexslider/jquery.flexslider.min.js" />
+    <f:asset.css identifier="flexslider" href="EXT:ws_slider/Resources/Public/CSS/Flexslider/flexslider.css" />
+    <f:asset.css identifier="flexslider-mods" href="EXT:ws_slider/Resources/Public/CSS/Flexslider/mods.css" />
+
     <div id="wsslider-{data.uid}" class="flexslider">
         <ul class="slides">
             <f:for each="{items}" as="item" iteration="iterator">

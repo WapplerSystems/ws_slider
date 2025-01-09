@@ -5,6 +5,10 @@
 
 <f:section name="Default">
 
+    <f:asset.script identifier="slick" src="EXT:ws_slider/Resources/Public/JavaScript/Slick/slick.min.js"/>
+    <f:asset.css identifier="slick" href="EXT:ws_slider/Resources/Public/CSS/Slick/slick.css"/>
+    <f:asset.css identifier="slick-theme" href="EXT:ws_slider/Resources/Public/CSS/Slick/slick-theme.css"/>
+
     <div id="wsslider-{data.uid}" class=" ">
         <f:for each="{items}" as="item" iteration="iterator">
             <f:render partial="Item/Slick" section="{sliderSettings.layout}"
