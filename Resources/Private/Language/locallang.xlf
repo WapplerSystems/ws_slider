@@ -15,10 +15,6 @@
 				<source>Slider</source>
 			</trans-unit>
 
-			<trans-unit id="title">
-				<source>WS Slider Settings</source>
-			</trans-unit>
-
 			<trans-unit id="settings">
 				<source>Settings</source>
 			</trans-unit>
