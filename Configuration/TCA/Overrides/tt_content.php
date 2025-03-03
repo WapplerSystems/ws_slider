@@ -22,7 +22,8 @@ ExtensionManagementUtility::addTcaSelectItem(
     [
         'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:title',
         'ws_slider',
-        'content-wsslider'
+        'content-wsslider',
+        'special'
     ],
     'textmedia',
     'after'
