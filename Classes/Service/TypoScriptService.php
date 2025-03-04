@@ -84,7 +84,8 @@ class TypoScriptService
             $request,
         );
 
-        return $frontendTypoScript->getSetupTree();
+        self::$typoScript = $frontendTypoScript->getSetupTree();
+        return self::$typoScript;
     }
 
     public static function getTypoScriptValueByPath(array $tsArray, string $path) {
