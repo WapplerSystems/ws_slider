@@ -1,0 +1,4 @@
+name: wapplersystems/ws-slider-flexslider
+label: WsSlider Flexslider
+dependencies:
+  - wapplersystems/ws-slider

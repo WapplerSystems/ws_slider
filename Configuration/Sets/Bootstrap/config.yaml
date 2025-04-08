@@ -1,0 +1,4 @@
+name: wapplersystems/ws-slider-bootstrap
+label: WsSlider Bootstrap
+dependencies:
+  - wapplersystems/ws-slider

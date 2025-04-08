@@ -18,8 +18,5 @@ ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript
 ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/Flexslider/',
     'WS Slider Flexslider Settings');
 
-ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/TinySlider/',
-    'WS Slider Tiny Slider Settings');
-
 ExtensionManagementUtility::addStaticFile('ws_slider', 'Configuration/TypoScript/Renderer/Slick/',
     'WS Slider Slick Slider Settings');
