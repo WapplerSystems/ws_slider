@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:section name="Default">
+
+    <f:asset.script identifier="swiper" src="EXT:ws_slider/Resources/Public/JavaScript/Swiper/swiper-bundle.min.js"/>
+    <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper.css"/>
+
+    <div id="wsslider-{data.uid}" class="swiper">
+
+        <div class="swiper-wrapper">
+            <f:for each="{items}" as="item" iteration="iterator">
+                <f:render partial="Item/Swiper" section="{sliderSettings.layout}"
+                          arguments="{item: item, settings: settings, iterator:iterator}"/>
+            </f:for>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+    <wsslider:addStartJavaScriptCode functionName="Swiper" variableName="wsslider-{data.uid}" selectorAsFirstParameter="true" useNewOperator="true" useJQuery="false" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}"/>
+
+</f:section>
+
+</html>

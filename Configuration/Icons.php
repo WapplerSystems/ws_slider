@@ -28,4 +28,8 @@ return [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
         'source' => 'EXT:ws_slider/Resources/Public/Icons/bootstrap.png',
     ],
+    'ext-wsslider-preset-type-swiper' => [
+        'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+        'source' => 'EXT:ws_slider/Resources/Public/Icons/swiper.svg',
+    ],
 ];

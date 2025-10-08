@@ -1,0 +1,4 @@
+name: wapplersystems/ws-slider-swiper
+label: WsSlider Swiper Slider
+dependencies:
+  - wapplersystems/ws-slider

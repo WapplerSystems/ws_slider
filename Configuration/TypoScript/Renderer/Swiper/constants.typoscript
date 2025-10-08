@@ -1,0 +1,190 @@
+# customcategory=plugin.tx_wsslider.swiper=WS Slider - Swiper
+
+plugin.tx_wsslider.settings.swiper {
+
+
+  allowSlideNext = true
+  allowSlidePrev = true
+  allowTouchMove = true
+  autoHeight = false
+  autoplayDelay = 5000
+
+  breakpointsBase = window
+  centerInsufficientSlides = false
+  centeredSlides = false
+  centeredSlidesBounds = false
+  containerModifierClass = swiper-
+
+  controllerInverse = false
+
+  coverflowEffectRotate =
+  coverflowEffectSlideShadows =
+
+
+  createElements = false
+
+  cssMode = false
+
+  cubeEffectSlideShadows = false
+
+  direction = horizontal
+  edgeSwipeDetection = false
+
+  edgeSwipeThreshold = 20
+  effect = slide
+
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see on the screen.
+  items = 3
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see below 576px display width.
+  responsive.0.items = 1
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see above 576px display width.
+  responsive.576.items = 2
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see above 768px display width.
+  responsive.768.items = 3
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see above 992px display width.
+  responsive.992.items = 3
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see above 1200px display width.
+  responsive.1200.items = 3
+
+  # cat=plugin.tx_wsslider.swiper/swiper/a; type=int+; label=The number of items you want to see above 1400px display width.
+  responsive.1400.items = 3
+
+  # cat=plugin.tx_wsslider.swiper/swiper/b; type=int+; label=margin-right(px) on item.
+  margin = 0
+
+  # cat=plugin.tx_wsslider.swiper/swiper/c; type=options[true,false]; label=Infinity loop. Duplicate last and first items to get loop illusion.
+  loop = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/d; type=options[true,false]; label=Center item. Works well with even an odd number of items.
+  center = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/b; type=int+; label=Drag End Speed
+  dragEndSpeed = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/e; type=options[true,false]; label=Mouse drag enabled.
+  mouseDrag = true
+
+  # cat=plugin.tx_wsslider.swiper/swiper/f; type=options[true,false]; label=Touch drag enabled.
+  touchDrag = true
+
+  # cat=plugin.tx_wsslider.swiper/swiper/g; type=options[true,false]; label=Stage pull to edge.
+  pullDrag = true
+
+  # cat=plugin.tx_wsslider.swiper/swiper/h; type=options[true,false]; label=Item pull to edge.
+  freeDrag = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/i; type=int+; label=Padding left and right on stage (can see neighbours).
+  stagePadding = 0
+
+  # cat=plugin.tx_wsslider.swiper/swiper/j; type=options[true,false]; label=Merge items. Looking for data-merge='{number}' inside item.
+  merge = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/k; type=options[true,false]; label=Fit merged items if screen is smaller than items value.
+  mergeFit = true
+
+  # cat=plugin.tx_wsslider.swiper/swiper/l; type=options[true,false]; label=Set non grid content. Try using width style on divs.
+  autoWidth = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/m; type=string; label=Start position or URL Hash string like '#id'.
+  startPosition = 0
+
+  # cat=plugin.tx_wsslider.swiper/swiper/n; type=options[true,false]; label=Listen to url hash changes. data-hash on items is required.
+  URLhashListener = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/o; type=options[true,false]; label=Show next/prev buttons.
+  nav = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/o; type=int+; label=Navigation speed
+  navSpeed = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/p; type=options[true,false]; label=Go backwards when the boundary has reached.
+  rewind = true
+
+  # cat=plugin.tx_wsslider.swiper/swiper/q; type=string; label=DOM element type for a single directional navigation link.
+  navElement = div
+
+  # cat=plugin.tx_wsslider.swiper/swiper/r; type=string; label=Navigation slide by x. 'page' string can be set to slide by page.
+  slideBy = 1
+
+  # cat=plugin.tx_wsslider.swiper/swiper/s; type=string; label=You can define the transition for the stage you want to use eg. linear.
+  slideTransition =
+
+  # cat=plugin.tx_wsslider.swiper/swiper/t; type=options[true,false]; label=Show dots navigation.
+  dots = true
+
+  # cat=plugin.tx_wsslider.swiper/swiper/u; type=string; label=Show dots each x item.
+  dotsEach = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/v; type=options[true,false]; label=Used by data-dot content.
+  dotsData = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/v; type=int+; label=Pagination speed.
+  dotsSpeed = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/w; type=options[true,false]; label=Use Lazy loading: data-src and data-src-retina for highres. Also load images into background inline style if element is not <img>
+  lazyLoad = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x; type=int+; label=Eagerly pre-loads images to the right (and left when loop is enabled) based on how many items you want to preload.
+  lazyLoadEager = 0
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x1; type=options[true,false]; label=Autoplay.
+  autoplay = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x2; type=int+; label=Autoplay interval timeout.
+  autoplayTimeout = 5000
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x3; type=options[true,false]; label=Pause on mouse hover.
+  autoplayHoverPause = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x3; type=int+; label=Autoplay speed
+  autoplaySpeed = 1000
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x3; type=int+; label=Responsive Refresh Rate
+  responsiveRefreshRate = 1000
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=int+; label=smartSpeed Calculate. More info to come..
+  smartSpeed = 250
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=options[true,false]; label=Video
+  video = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=int+; label=Video Height
+  videoHeight = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=int+; label=Video Width
+  videoWidth = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Outro Animation
+  animateOut = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Intro Animation
+  animateIn = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Fallback Easing Animation
+  fallbackEasing = swing
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Use if swiper items are deep inside some generated content. Don't use dot before class name.
+  nestedItemSelector = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Item Element - DOM element type for swiper-item
+  itemElement = div
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Stage Element - DOM element type for swiper-stage
+  stageElement = div
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Set your own container for nav
+  navContainer = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=Set your own container for dots
+  dotsContainer = false
+
+  # cat=plugin.tx_wsslider.swiper/swiper/x4; type=string; label=If you know the carousel will always be visible set this to false.
+  checkVisible = true
+
+}

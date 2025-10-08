@@ -29,3 +29,7 @@ call_user_func(
     },
     'ws_slider'
 );
+
+
+// Register "wsslider:" namespace
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['wsslider'][] = 'WapplerSystems\\WsSlider\\ViewHelpers';

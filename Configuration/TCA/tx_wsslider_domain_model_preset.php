@@ -17,6 +17,7 @@ return [
             'owl' => 'ext-wsslider-preset-type-owl',
             'slick' => 'ext-wsslider-preset-type-slick',
             'tinyslider' => 'ext-wsslider-preset-type-tinyslider',
+            'swiper' => 'ext-wsslider-preset-type-swiper',
         ],
         'useColumnsForDefaultValues' => 'type',
         'enablecolumns' => [
@@ -45,7 +46,10 @@ return [
             'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.slick,--palette--;;paletteCore,slick'
         ],
         'tinyslider' => [
-            'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.slick,--palette--;;paletteCore,tinyslider'
+            'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.tinySlider,--palette--;;paletteCore,tinyslider'
+        ],
+        'swiper' => [
+            'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.swiper,--palette--;;paletteCore,swiper'
         ],
     ],
     'palettes' => [
@@ -84,6 +88,7 @@ return [
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.owl', 'owl', 'ext-wsslider-preset-type-owl'],
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.slick', 'slick', 'ext-wsslider-preset-type-slick'],
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.tinyslider', 'tinyslider', 'ext-wsslider-preset-type-tinyslider'],
+                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.swiper', 'swiper', 'ext-wsslider-preset-type-swiper'],
                 ],
                 'showIconTable' => true,
                 'size' => 1,
@@ -138,6 +143,16 @@ return [
                 'type' => 'flex',
                 'ds' => [
                     'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Tinyslider.xml',
+                ],
+            ],
+        ],
+        'swiper' => [
+            'exclude' => 1,
+            'label' => '',
+            'config' => [
+                'type' => 'flex',
+                'ds' => [
+                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Swiper.xml',
                 ],
             ],
         ],

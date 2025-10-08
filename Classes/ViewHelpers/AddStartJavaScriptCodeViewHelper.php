@@ -19,7 +19,7 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
 {
 
     public function __construct(
-        protected AssetCollector $assetCollector,
+        protected AssetCollector $assetCollector
     ) {
         parent::__construct();
     }
@@ -33,38 +33,12 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
         $this->registerArgument('functionName', 'string', '', true);
         $this->registerArgument('defaultParameters', 'array', '', false, []);
         $this->registerArgument('useJQuery', 'boolean', '', false, false);
+        $this->registerArgument('useNewOperator', 'boolean', '', false, false);
+        $this->registerArgument('selectorAsFirstParameter', 'boolean', '', false, false);
         $this->registerArgument('selector', 'string', '', false, '');
         $this->registerArgument('overrideParameters', 'array', '', false, []);
         $this->registerArgument('name', 'string', 'Name argument - see PageRenderer documentation', true);
     }
-
-    /**
-     * @var PageRenderer
-     */
-    protected $pageRenderer;
-
-    /**
-     * @var ConfigurationManagerInterface
-     */
-    protected $configurationManager;
-
-    /**
-     * @param PageRenderer $pageRenderer
-     */
-    public function injectPageRenderer(PageRenderer $pageRenderer)
-    {
-        $this->pageRenderer = $pageRenderer;
-    }
-
-    /**
-     * @param ConfigurationManagerInterface $configurationManager
-     * @return void
-     */
-    public function injectConfigurationManager(ConfigurationManagerInterface $configurationManager)
-    {
-        $this->configurationManager = $configurationManager;
-    }
-
 
     /**
      * Render
@@ -101,7 +75,13 @@ class AddStartJavaScriptCodeViewHelper extends AbstractTagBasedViewHelper
             if ($this->arguments['variableName'] !== null) {
                 $block[] = str_replace('-', '', $this->arguments['variableName']) . ' = ';
             }
+            if ($this->arguments['useNewOperator']) {
+                $block[] = 'new ';
+            }
             $block[] = $this->arguments['functionName'] . '(';
+            if ($this->arguments['selectorAsFirstParameter']) {
+                $block[] = '"' .$this->arguments['selector'] . '",';
+            }
             $block[] = json_encode($parameters, JSON_THROW_ON_ERROR);
             $block[] = ')';
         }

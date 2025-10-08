@@ -1,0 +1,87 @@
+plugin.tx_wsslider.settings.renderer.swiper {
+
+
+  items = {$plugin.tx_wsslider.settings.swiper.items}
+  animateIn = {$plugin.tx_wsslider.settings.swiper.animateIn}
+  animateOut = {$plugin.tx_wsslider.settings.swiper.animateOut}
+  margin = {$plugin.tx_wsslider.settings.swiper.margin}
+  loop = {$plugin.tx_wsslider.settings.swiper.loop}
+  center = {$plugin.tx_wsslider.settings.swiper.center}
+  dragEndSpeed = {$plugin.tx_wsslider.settings.swiper.dragEndSpeed}
+  mouseDrag = {$plugin.tx_wsslider.settings.swiper.mouseDrag}
+  touchDrag = {$plugin.tx_wsslider.settings.swiper.touchDrag}
+  pullDrag = {$plugin.tx_wsslider.settings.swiper.pullDrag}
+  freeDrag = {$plugin.tx_wsslider.settings.swiper.freeDrag}
+  stagePadding = {$plugin.tx_wsslider.settings.swiper.stagePadding}
+  merge = {$plugin.tx_wsslider.settings.swiper.merge}
+  mergeFit = {$plugin.tx_wsslider.settings.swiper.mergeFit}
+  autoWidth = {$plugin.tx_wsslider.settings.swiper.autoWidth}
+  startPosition = {$plugin.tx_wsslider.settings.swiper.startPosition}
+  URLhashListener = {$plugin.tx_wsslider.settings.swiper.URLhashListener}
+  nav = {$plugin.tx_wsslider.settings.swiper.nav}
+  navSpeed = {$plugin.tx_wsslider.settings.swiper.navSpeed}
+  rewind = {$plugin.tx_wsslider.settings.swiper.rewind}
+  navElement = {$plugin.tx_wsslider.settings.swiper.navElement}
+  slideBy = {$plugin.tx_wsslider.settings.swiper.slideBy}
+  slideTransition = {$plugin.tx_wsslider.settings.swiper.slideTransition}
+  dots = {$plugin.tx_wsslider.settings.swiper.dots}
+  dotsEach = {$plugin.tx_wsslider.settings.swiper.dotsEach}
+  dotsData = {$plugin.tx_wsslider.settings.swiper.dotsData}
+  dotsSpeed = {$plugin.tx_wsslider.settings.swiper.dotsSpeed}
+  lazyLoad = {$plugin.tx_wsslider.settings.swiper.lazyLoad}
+  lazyLoadEager = {$plugin.tx_wsslider.settings.swiper.lazyLoadEager}
+  autoplay = {$plugin.tx_wsslider.settings.swiper.autoplay}
+  autoplayTimeout = {$plugin.tx_wsslider.settings.swiper.autoplayTimeout}
+  autoplayHoverPause = {$plugin.tx_wsslider.settings.swiper.autoplayHoverPause}
+  autoplaySpeed = {$plugin.tx_wsslider.settings.swiper.autoplaySpeed}
+  responsiveRefreshRate = {$plugin.tx_wsslider.settings.swiper.responsiveRefreshRate}
+  smartSpeed = {$plugin.tx_wsslider.settings.swiper.smartSpeed}
+  video = {$plugin.tx_wsslider.settings.swiper.video}
+  videoHeight = {$plugin.tx_wsslider.settings.swiper.videoHeight}
+  videoWidth = {$plugin.tx_wsslider.settings.swiper.videoWidth}
+  fallbackEasing = {$plugin.tx_wsslider.settings.swiper.fallbackEasing}
+  nestedItemSelector = {$plugin.tx_wsslider.settings.swiper.nestedItemSelector}
+  itemElement = {$plugin.tx_wsslider.settings.swiper.itemElement}
+  stageElement = {$plugin.tx_wsslider.settings.swiper.stageElement}
+  navContainer = {$plugin.tx_wsslider.settings.swiper.navContainer}
+  dotsContainer = {$plugin.tx_wsslider.settings.swiper.dotsContainer}
+  checkVisible = {$plugin.tx_wsslider.settings.swiper.checkVisible}
+
+  navText {
+    0 = TEXT
+    0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+    1 = TEXT
+    1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+  }
+
+  responsive {
+    0 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.0.items}
+    }
+
+    576 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.576.items}
+    }
+
+    768 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.768.items}
+    }
+
+    992 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.992.items}
+    }
+
+    1200 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.1200.items}
+    }
+
+    1400 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.1400.items}
+    }
+
+  }
+
+
+}
+
+tt_content.ws_slider.settings.slider.renderer.swiper < plugin.tx_wsslider.settings.renderer.swiper

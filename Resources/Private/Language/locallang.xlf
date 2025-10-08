@@ -104,6 +104,9 @@
 			<trans-unit id="sheet.slick">
 				<source>Slick Slider</source>
 			</trans-unit>
+			<trans-unit id="sheet.swiper">
+				<source>Swiper Slider</source>
+			</trans-unit>
 
 
 			<!-- common setting labels -->
@@ -249,6 +252,9 @@
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.tinyslider">
 				<source>Tiny Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.swiper">
+				<source>Swiper</source>
 			</trans-unit>
 
 		</body>
