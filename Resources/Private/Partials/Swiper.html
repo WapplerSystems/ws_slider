@@ -5,14 +5,15 @@
 
 <f:section name="Default">
 
+    <f:debug>{_all}</f:debug>
     <f:asset.script identifier="swiper" src="EXT:ws_slider/Resources/Public/JavaScript/Swiper/swiper-bundle.min.js"/>
-    <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper.css"/>
+    <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-bundle.css"/>
 
-    <div id="wsslider-{data.uid}" class="swiper">
+    <div id="{identifier}" class="swiper" style="width: 100%;">
 
         <div class="swiper-wrapper">
             <f:for each="{items}" as="item" iteration="iterator">
-                <f:render partial="Item/Swiper" section="{sliderSettings.layout}"
+                <f:render partial="Item/Swiper" section="{layout}"
                           arguments="{item: item, settings: settings, iterator:iterator}"/>
             </f:for>
         </div>
@@ -26,7 +27,7 @@
 
     </div>
 
-    <wsslider:addStartJavaScriptCode functionName="Swiper" variableName="wsslider-{data.uid}" selectorAsFirstParameter="true" useNewOperator="true" useJQuery="false" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}"/>
+    <f:asset.script identifier="{identifier}">{inlineJavascript}</f:asset.script>
 
 </f:section>
 

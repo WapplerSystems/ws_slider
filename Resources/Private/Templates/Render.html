@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+
+<f:section name="Main">
+
+    <f:flashMessages queueIdentifier="core.template.flashMessages"/>
+
+    <wsslider:render renderer="{sliderSettings.renderer}" items="{items}" layout="{sliderSettings.layout}" parameters="{sliderSettings.parameters}" />
+
+</f:section>
+
+
+</html>

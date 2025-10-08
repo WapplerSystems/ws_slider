@@ -11,7 +11,7 @@
     <div id="wsslider-{data.uid}" class="">
 
         <f:for each="{items}" as="item" iteration="iterator">
-            <f:render partial="Item/Tinyslider" section="{sliderSettings.layout}"
+            <f:render partial="Item/Tinyslider" section="{layout}"
                       arguments="{item: item, settings: settings, iterator:iterator}"/>
         </f:for>
 

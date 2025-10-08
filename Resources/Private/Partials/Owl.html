@@ -13,7 +13,7 @@
         <div class="owl-dots d-none d-md-flex"></div>
         <div class="owl-carousel">
             <f:for each="{items}" as="item" iteration="iterator">
-                <f:render partial="Item/Owl" section="{sliderSettings.layout}"
+                <f:render partial="Item/Owl" section="{layout}"
                           arguments="{item: item, settings: settings, iterator:iterator}"/>
             </f:for>
         </div>

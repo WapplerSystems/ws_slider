@@ -16,7 +16,7 @@
         </f:if>
         <div class="carousel-inner">
             <f:for each="{items}" as="item" iteration="iterator">
-                <f:render partial="Item/Bootstrap" section="{sliderSettings.layout}"
+                <f:render partial="Item/Bootstrap" section="{layout}"
                           arguments="{item: item, settings: settings, iterator:iterator, sliderSettings:sliderSettings}"/>
             </f:for>
         </div>

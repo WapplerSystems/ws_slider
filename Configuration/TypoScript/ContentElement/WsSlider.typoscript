@@ -6,7 +6,7 @@ tt_content.ws_slider {
     ################
     ### TEMPLATE ###
     ################
-    templateName = Slider
+    templateName = Render
 
     templateRootPaths {
         0 = EXT:fluid_styled_content/Resources/Private/Templates/

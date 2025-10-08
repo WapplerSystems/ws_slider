@@ -14,6 +14,8 @@ interface SliderFactoryInterface
 
     public function build(
         array $configuration,
+        SliderDefinition $slider,
+        string $identifier,
         ?ServerRequestInterface $request = null
     ): SliderDefinition;
 }

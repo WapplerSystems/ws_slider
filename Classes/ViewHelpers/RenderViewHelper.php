@@ -7,9 +7,11 @@ use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\RequestInterface;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use WapplerSystems\WsSlider\Factory\ArraySliderFactory;
 use WapplerSystems\WsSlider\Factory\SliderFactoryInterface;
+use WapplerSystems\WsSlider\Model\SliderDefinition;
 
 
 final class RenderViewHelper extends AbstractViewHelper
@@ -60,7 +62,16 @@ final class RenderViewHelper extends AbstractViewHelper
 
         /** @var SliderFactoryInterface $factory */
         $factory = GeneralUtility::getContainer()->get($this->arguments['factoryClass']);
-        $sliderDefinition = $factory->build($overrideConfiguration, $request);
+        $prototype = GeneralUtility::makeInstance(SliderDefinition::class);
+
+        /**
+         * @var ContentObjectRenderer $currentContentObject
+         */
+        $currentContentObject = $request->getAttribute('currentContentObject');
+        $identifier = 'slider_' . $currentContentObject->data['uid'];
+
+        $sliderDefinition = $factory->build($overrideConfiguration, $prototype, $identifier, $request);
+        $sliderDefinition->setIdentifier($identifier);
         return $sliderDefinition->render($request);
     }
 }
