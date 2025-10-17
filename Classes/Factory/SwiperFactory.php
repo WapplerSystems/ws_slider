@@ -15,6 +15,7 @@ class SwiperFactory extends AbstractSliderFactory
     public function build(array $configuration, SliderDefinition $slider, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
 
+        DebugUtility::debug($configuration);
         $slider->setConfiguration($configuration);
 
         $options = [
@@ -110,7 +111,7 @@ class SwiperFactory extends AbstractSliderFactory
             'observer' => false,
             'a11y' => [
                 'enabled' => true,
-                'prevSlideMessage' => 'Previous slide',
+                'prevSlideMessage' => $this->getParameter($configuration, 'a11y.prevSlideMessage'),
                 'nextSlideMessage' => 'Next slide',
                 'firstSlideMessage' => 'This is the first slide',
                 'lastSlideMessage' => 'This is the last slide',
@@ -122,7 +123,7 @@ class SwiperFactory extends AbstractSliderFactory
                 'slideLabelMessage' => '{{index}} / {{slidesLength}}',
             ],
             'autoplay' => [
-                'enabled' => false,
+                'enabled' => true,
                 'delay' => 3000,
                 'waitForTransition' => true,
                 'disableOnInteraction' => true,
@@ -191,7 +192,7 @@ class SwiperFactory extends AbstractSliderFactory
             'navigation' => [
                 'nextEl' => '.swiper-button-next',
                 'prevEl' => '.swiper-button-prev',
-                'hideOnClick' => false,
+                'hideOnClick' => true,
                 'disabledClass' => 'swiper-button-disabled',
                 'hiddenClass' => 'swiper-button-hidden',
                 'lockClass' => 'swiper-button-lock',
@@ -204,7 +205,7 @@ class SwiperFactory extends AbstractSliderFactory
                 'dynamicBullets' => false,
                 'dynamicMainBullets' => 1,
                 'hideOnClick' => false,
-                'clickable' => false,
+                'clickable' => true,
                 'progressbarOpposite' => false,
                 'bulletClass' => 'swiper-pagination-bullet',
                 'bulletActiveClass' => 'swiper-pagination-bullet-active',
@@ -250,12 +251,33 @@ class SwiperFactory extends AbstractSliderFactory
                 'containerClass' => 'swiper-zoom-container',
                 'zoomedSlideClass' => 'swiper-slide-zoomed',
             ],
+            'on' => [],
         ];
 
-        $options = json_encode($options);
+        $options = $this->js_encode($options);
+        $js = '';
+        $onOptions = '';
+        if ($configuration['parameters']['autoplayProgress'] ?? false) {
+            $js .= <<<JS
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+JS;
 
-        $js = <<<JS
-const {$identifier} = new Swiper('#{$identifier}', {$options});
+            $onOptions = <<<JS
+options = { ...options, on: {
+    autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `\${Math.ceil(time / 1000)}s`;
+    }
+} };
+JS;
+        }
+
+        $js .= <<<JS
+let options = {$options};
+{$onOptions}
+const {$identifier} = new Swiper('#{$identifier}', options);
+//console.debug(options);
 JS;
 
         $slider->setJavaScript($js);

@@ -232,6 +232,35 @@
 
                     </settings.js.autoplayTimeout>
 
+                    <settings.js.autoplayProgress>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayProgress
+                        </label>
+                        <description>
+                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayProgress.description
+                        </description>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayProgress</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
+                                    </numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="2">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
+                                    </numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                        </config>
+                    </settings.js.autoplayProgress>
+
                     <settings.js.autoplayDirection>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayDirection
