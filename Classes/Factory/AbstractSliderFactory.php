@@ -6,14 +6,18 @@ declare(strict_types=1);
 namespace WapplerSystems\WsSlider\Factory;
 
 
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
+
 abstract class AbstractSliderFactory implements SliderFactoryInterface
 {
 
-
     protected function getParameter(array $configuration, string $parameterName) {
 
+        $renderer = $configuration['renderer'] ?? 'Default';
+        $xlfFilename = strtolower($renderer);
+        $parameters = $configuration['parameters'] ?? [];
 
-
+        return LocalizationUtility::translate('LLL:EXT:ws_slider/Resources/Private/Language/' . $xlfFilename . '.xlf:settings.' . $parameterName) ?? $parameters[$parameterName] ?? null;
     }
 
     protected function js_encode($array)

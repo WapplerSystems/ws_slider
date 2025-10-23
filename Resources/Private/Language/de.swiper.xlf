@@ -35,21 +35,27 @@
 
 			<trans-unit id="settings.a11y.nextSlideMessage">
 				<source>Next slide</source>
+				<target>Gehe weiter</target>
 			</trans-unit>
 			<trans-unit id="settings.a11y.prevSlideMessage">
 				<source>Previous slide</source>
+				<target>Gehe zurück</target>
 			</trans-unit>
 			<trans-unit id="settings.a11y.firstSlideMessage">
 				<source>This is the first slide</source>
+				<target>Das ist die erste Seite</target>
 			</trans-unit>
 			<trans-unit id="settings.a11y.lastSlideMessage">
 				<source>This is the last slide</source>
+				<target>Das ist die letzte Seite</target>
 			</trans-unit>
 			<trans-unit id="settings.a11y.paginationBulletMessage">
 				<source>Go to slide {{index}}</source>
+				<target>Gehe zur Seite {{index}}</target>
 			</trans-unit>
 			<trans-unit id="settings.a11y.slideLabelMessage">
 				<source>{{index}} / {{slidesLength}}</source>
+				<target>{{index}} / {{slidesLength}}</target>
 			</trans-unit>
 
 		</body>

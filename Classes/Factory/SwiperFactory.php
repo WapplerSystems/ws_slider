@@ -4,8 +4,6 @@ namespace WapplerSystems\WsSlider\Factory;
 
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
-use TYPO3\CMS\Core\Utility\DebugUtility;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use WapplerSystems\WsSlider\Model\SliderDefinition;
 
 #[Autoconfigure(public: true, shared: false)]
@@ -15,7 +13,6 @@ class SwiperFactory extends AbstractSliderFactory
     public function build(array $configuration, SliderDefinition $slider, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
 
-        DebugUtility::debug($configuration);
         $slider->setConfiguration($configuration);
 
         $options = [
@@ -112,15 +109,15 @@ class SwiperFactory extends AbstractSliderFactory
             'a11y' => [
                 'enabled' => true,
                 'prevSlideMessage' => $this->getParameter($configuration, 'a11y.prevSlideMessage'),
-                'nextSlideMessage' => 'Next slide',
-                'firstSlideMessage' => 'This is the first slide',
-                'lastSlideMessage' => 'This is the last slide',
-                'paginationBulletMessage' => 'Go to slide {{index}}',
+                'nextSlideMessage' => $this->getParameter($configuration, 'a11y.nextSlideMessage'),
+                'firstSlideMessage' => $this->getParameter($configuration, 'a11y.firstSlideMessage'),
+                'lastSlideMessage' => $this->getParameter($configuration, 'a11y.lastSlideMessage'),
+                'paginationBulletMessage' => $this->getParameter($configuration, 'a11y.paginationBulletMessage'),
                 'notificationClass' => 'swiper-notification',
                 'containerMessage' => null,
                 'containerRoleDescriptionMessage' => null,
                 'itemRoleDescriptionMessage' => null,
-                'slideLabelMessage' => '{{index}} / {{slidesLength}}',
+                'slideLabelMessage' => $this->getParameter($configuration, 'a11y.slideLabelMessage'),
             ],
             'autoplay' => [
                 'enabled' => true,
@@ -155,15 +152,6 @@ class SwiperFactory extends AbstractSliderFactory
             'flipEffect' => [
                 'slideShadows' => true,
                 'limitRotation' => true,
-            ],
-            'hashNavigation' => [
-                'watchState' => false,
-                'replaceState' => false,
-            ],
-            'history' => [
-                'key' => 'slides',
-                'replaceState' => false,
-                'root' => '',
             ],
             'keyboard' => [
                 'enabled' => false,
@@ -259,24 +247,24 @@ class SwiperFactory extends AbstractSliderFactory
         $onOptions = '';
         if ($configuration['parameters']['autoplayProgress'] ?? false) {
             $js .= <<<JS
-    const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
+    const progressCircle_{$identifier} = document.querySelector(".autoplay-progress svg");
+    const progressContent_{$identifier} = document.querySelector(".autoplay-progress span");
 JS;
 
             $onOptions = <<<JS
-options = { ...options, on: {
+options_{$identifier} = { ...options_{$identifier}, on: {
     autoplayTimeLeft(s, time, progress) {
-        progressCircle.style.setProperty("--progress", 1 - progress);
-        progressContent.textContent = `\${Math.ceil(time / 1000)}s`;
+        progressCircle_{$identifier}.style.setProperty("--progress", 1 - progress);
+        progressContent_{$identifier}.textContent = `\${Math.ceil(time / 1000)}s`;
     }
 } };
 JS;
         }
 
         $js .= <<<JS
-let options = {$options};
+let options_{$identifier} = {$options};
 {$onOptions}
-const {$identifier} = new Swiper('#{$identifier}', options);
+const {$identifier} = new Swiper('#{$identifier}', options_{$identifier});
 //console.debug(options);
 JS;
 
