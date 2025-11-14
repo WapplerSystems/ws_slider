@@ -26,7 +26,7 @@ final class ValueToStringViewHelper extends AbstractViewHelper
     /**
      * Render the supplied byte count as a human-readable string.
      */
-    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext): string
+    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext): ?string
     {
         $value = $renderChildrenClosure();
         if (is_bool($value)) {
