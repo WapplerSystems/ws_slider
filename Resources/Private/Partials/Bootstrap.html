@@ -5,11 +5,11 @@
 
 <f:section name="Default">
 
-    <div id="wsslider-{data.uid}" class="carousel slide" data-bs-ride="{sliderSettings.parameters.ride -> wsslider:format.valueToString()}">
+    <div id="{identifier}" class="carousel slide" data-bs-ride="{sliderSettings.parameters.ride}">
         <f:if condition="{sliderSettings.parameters.indicators} && {items -> f:count()} > 1">
             <div class="carousel-indicators">
                 <f:for each="{items}" as="item" iteration="iterator">
-                    <button type="button" data-bs-target="#wsslider-{data.uid}" data-bs-slide-to="{iterator.index}"
+                    <button type="button" data-bs-target="#{identifier}" data-bs-slide-to="{iterator.index}"
                             class="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
                 </f:for>
             </div>
@@ -21,11 +21,11 @@
             </f:for>
         </div>
         <f:if condition="{sliderSettings.parameters.control} && {items -> f:count()} > 1">
-            <button class="carousel-control-prev" type="button" data-bs-target="#wsslider-{data.uid}" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#{identifier}" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#wsslider-{data.uid}" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#{identifier}" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

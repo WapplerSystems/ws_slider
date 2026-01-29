@@ -9,15 +9,14 @@
     <f:asset.css identifier="slick" href="EXT:ws_slider/Resources/Public/CSS/Slick/slick.css"/>
     <f:asset.css identifier="slick-theme" href="EXT:ws_slider/Resources/Public/CSS/Slick/slick-theme.css"/>
 
-    <div id="wsslider-{data.uid}" class=" ">
+    <div id="{identifier}" class=" ">
         <f:for each="{items}" as="item" iteration="iterator">
             <f:render partial="Item/Slick" section="{layout}"
                       arguments="{item: item, settings: settings, iterator:iterator}"/>
         </f:for>
     </div>
 
-
-    <wsslider:addStartJavaScriptCode functionName="slick" useJQuery="true" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}"/>
+    <f:asset.script identifier="{identifier}">{inlineJavascript}</f:asset.script>
 
 </f:section>
 

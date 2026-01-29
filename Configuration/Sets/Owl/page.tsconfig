@@ -1,6 +1,0 @@
-
-TCEFORM.tt_content {
-    tx_wsslider_renderer.addItems {
-        owl = Owl
-    }
-}

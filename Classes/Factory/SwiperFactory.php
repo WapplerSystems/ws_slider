@@ -12,7 +12,6 @@ class SwiperFactory extends AbstractSliderFactory
 
     public function build(array $configuration, SliderDefinition $slider, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
-
         $slider->setConfiguration($configuration);
 
         $options = [
@@ -265,7 +264,6 @@ JS;
 let options_{$identifier} = {$options};
 {$onOptions}
 const {$identifier} = new Swiper('#{$identifier}', options_{$identifier});
-//console.debug(options);
 JS;
 
         $slider->setJavaScript($js);

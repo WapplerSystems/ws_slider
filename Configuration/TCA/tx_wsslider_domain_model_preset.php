@@ -14,7 +14,6 @@ return [
             'default' => 'ext-wsslider-image',
             'bootstrap' => 'ext-wsslider-preset-type-bootstrap',
             'flexslider' => 'ext-wsslider-preset-type-flexslider',
-            'owl' => 'ext-wsslider-preset-type-owl',
             'slick' => 'ext-wsslider-preset-type-slick',
             'tinyslider' => 'ext-wsslider-preset-type-tinyslider',
             'swiper' => 'ext-wsslider-preset-type-swiper',
@@ -113,16 +112,6 @@ return [
                 'type' => 'flex',
                 'ds' => [
                     'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Bootstrap.xml',
-                ],
-            ],
-        ],
-        'owl' => [
-            'exclude' => 1,
-            'label' => '',
-            'config' => [
-                'type' => 'flex',
-                'ds' => [
-                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Owl.xml',
                 ],
             ],
         ],

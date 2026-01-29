@@ -81,10 +81,6 @@
 				<target state="final">TypoScript</target>
 			</trans-unit>
 			<!-- sheets -->
-			<trans-unit id="sheet.owl" approved="yes">
-				<source>Owl</source>
-				<target state="final">Owl</target>
-			</trans-unit>
 			<trans-unit id="sheet.navigation" approved="yes">
 				<source>Navigation</source>
 				<target state="final">Navigation</target>

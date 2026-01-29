@@ -9,7 +9,7 @@
     <f:asset.css identifier="flexslider" href="EXT:ws_slider/Resources/Public/CSS/Flexslider/flexslider.css" />
     <f:asset.css identifier="flexslider-mods" href="EXT:ws_slider/Resources/Public/CSS/Flexslider/mods.css" />
 
-    <div id="wsslider-{data.uid}" class="flexslider">
+    <div id="{identifier}" class="flexslider">
         <ul class="slides">
             <f:for each="{items}" as="item" iteration="iterator">
                 <f:render partial="Item/Flexslider" section="{layout}"
@@ -18,8 +18,7 @@
         </ul>
     </div>
 
-    <wsslider:addStartJavaScriptCode functionName="flexslider" useJQuery="true" selector="#wsslider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}"/>
-
+    <f:asset.script identifier="{identifier}">{inlineJavascript}</f:asset.script>
 
 </f:section>
 

@@ -20,18 +20,6 @@ ExtensionManagementUtility::registerPageTSConfigFile(
 );
 ExtensionManagementUtility::registerPageTSConfigFile(
     'ws_slider',
-    'Configuration/TsConfig/Page/Renderer/Owl.tsconfig',
-    'Owl'
-);
-/*
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/Renderer/BxSlider.tsconfig',
-    'bxSlider'
-);
-*/
-ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
     'Configuration/TsConfig/Page/Renderer/Slick.tsconfig',
     'Slick'
 );
@@ -43,14 +31,3 @@ ExtensionManagementUtility::registerPageTSConfigFile(
 
 /* Layouts */
 
-ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/Layout/BigNumberDots.tsconfig',
-    'Big Number Dots Layout (only OWL)'
-);
-
-ExtensionManagementUtility::registerPageTSConfigFile(
-    'ws_slider',
-    'Configuration/TsConfig/Page/Layout/Cards.tsconfig',
-    'Card Layout (only OWL, TinySlider)'
-);

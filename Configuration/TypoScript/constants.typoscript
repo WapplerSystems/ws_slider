@@ -19,7 +19,7 @@ plugin.tx_wsslider {
     settings {
 
         # cat=plugin.tx_wsslider/settings/a; type=string; label=Default renderer/slider
-        defaultRenderer = owl
+        defaultRenderer = swiper
 
         # cat=plugin.tx_wsslider/settings/b; type=string; label=Default layout of the selected slider
         layout = Default

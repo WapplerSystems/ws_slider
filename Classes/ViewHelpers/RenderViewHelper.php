@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace WapplerSystems\WsSlider\ViewHelpers;
 
 use Psr\Http\Message\ServerRequestInterface;
-use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\RequestInterface;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
@@ -40,7 +39,7 @@ final class RenderViewHelper extends AbstractViewHelper
             if (GeneralUtility::getContainer()->has('WapplerSystems\WsSlider\Factory\\'.$renderer.'Factory')) {
                 $this->arguments['factoryClass'] = 'WapplerSystems\WsSlider\Factory\\' . $renderer . 'Factory';
             } else {
-                $this->arguments['factoryClass'] = ArraySliderFactory::class;
+                throw new \RuntimeException('No factory found for renderer "' . $renderer . '"', 1666544863);
             }
 
             $overrideConfiguration = [

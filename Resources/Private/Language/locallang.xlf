@@ -77,9 +77,6 @@
 			</trans-unit>
 
 			<!-- sheets -->
-			<trans-unit id="sheet.owl">
-				<source>Owl</source>
-			</trans-unit>
 			<trans-unit id="sheet.navigation">
 				<source>Navigation</source>
 			</trans-unit>
@@ -243,9 +240,6 @@
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.flexslider">
 				<source>Flexslider</source>
-			</trans-unit>
-			<trans-unit id="tx_wsslider_domain_model_preset.type.owl">
-				<source>Owl slider</source>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.slick">
 				<source>Slick slider</source>

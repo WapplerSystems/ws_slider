@@ -24,7 +24,7 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
     {
         $out = [];
         foreach ($array as $k => $v) {
-            $key = preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $k) ? $k : json_encode($k);
+            $key = preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', (string)$k) ? $k : json_encode($k);
             $val = is_array($v) ? $this->js_encode($v) : json_encode($v);
             $out[] = $key . ':' . $val;
         }

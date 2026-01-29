@@ -1,52 +1,9 @@
 # customcategory=plugin.tx_wsslider.swiper=WS Slider - Swiper
+# customsubcategory=base=base
+# customsubcategory=a11y=a11y
+# customsubcategory=breakpoints=breakpoints
 
 plugin.tx_wsslider.settings.swiper {
-
-  # cat=plugin.tx_wsslider.swiper/navigation/a; type=options[true,false]; label=
-  autoplayProgress = false
-
-
-  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=Swiper Richtung: horizontal|vertical
-  direction = horizontal
-
-
-
-  # cat=plugin.tx_wsslider.swiper/basic/003; type=int; label=Slides pro View
-  slidesPerView = 1
-
-  # cat=plugin.tx_wsslider.swiper/basic/004; type=int; label=Slides pro Gruppe
-  slidesPerGroup = 1
-
-  # cat=plugin.tx_wsslider.swiper/basic/005; type=int; label=Abstand zwischen Slides (px)
-  spaceBetween = 0
-
-  # cat=plugin.tx_wsslider.swiper/basic/006; type=int; label=Animation Speed (ms)
-  speed = 300
-
-  # cat=plugin.tx_wsslider.swiper/navigation/010; type=boolean; label=Navigation aktivieren
-  navigation = 0
-
-  # cat=plugin.tx_wsslider.swiper/pagination/020; type=boolean; label=Pagination aktivieren
-  pagination = 0
-
-  # cat=plugin.tx_wsslider.swiper/autoplay/030; type=boolean; label=Autoplay aktivieren
-  autoplay = 0
-
-  # cat=plugin.tx_wsslider.swiper/autoplay/031; type=int; label=Autoplay Delay (ms)
-  autoplayDelay = 5000
-
-  # cat=plugin.tx_wsslider.swiper/effects/040; type=string; label=Effekt: slide|fade|cube|coverflow|flip|creative|cards
-  effect = slide
-
-  # cat=plugin.tx_wsslider.swiper/loop/050; type=boolean; label=Loop aktivieren
-  loop = 0
-
-  # cat=plugin.tx_wsslider.swiper/interaction/060; type=boolean; label=Touch Move erlauben
-  allowTouchMove = 1
-
-  # cat=plugin.tx_wsslider.swiper/interaction/061; type=int; label=Swipe Threshold
-  threshold = 5
-
 
   a11y {
     # cat=plugin.tx_wsslider.swiper/a11y/a; type=options[true,false]; label=enabled
@@ -67,6 +24,118 @@ plugin.tx_wsslider.settings.swiper {
     # cat=plugin.tx_wsslider.swiper/a11y/f; type=string; label=paginationBulletMessage
     paginationBulletMessage = Go to slide {{index}}
   }
+
+  # cat=plugin.tx_wsslider.swiper/base/a; type=options[true,false]; label=allowSlideNext: Set to false to disable swiping to next slide direction (to right or bottom)
+  allowSlideNext = true
+
+  # cat=plugin.tx_wsslider.swiper/base/b; type=options[true,false]; label=allowSlidePrev: Set to false to disable swiping to previous slide direction (to left or top)
+  allowSlidePrev = true
+
+  # cat=plugin.tx_wsslider.swiper/base/c; type=options[true,false]; label=allowTouchMove: If false, then the only way to switch the slide is use of external API functions like slidePrev or slideNext
+  allowTouchMove = true
+
+  # cat=plugin.tx_wsslider.swiper/base/d; type=options[true,false]; label=autoHeight: Set to true and slider wrapper will adapt its height to the height of the currently active slide
+  autoHeight = false
+
+
+  autoplay {
+
+
+
+  }
+
+
+  breakpoints {
+    # cat=plugin.tx_wsslider.swiper/breakpoints/b; type=int+; label=Breakpoint at 576px
+    576 {
+      # cat=plugin.tx_wsslider.swiper/breakpoints/b; type=int+; label=Number of items to display
+      slidesPerView = 1
+    }
+
+    # cat=plugin.tx_wsslider.swiper/breakpoints/c; type=int+; label=Breakpoint at 768px
+    768 {
+      # cat=plugin.tx_wsslider.swiper/breakpoints/c; type=int+; label=Number of items to display
+      slidesPerView = 2
+    }
+
+    # cat=plugin.tx_wsslider.swiper/breakpoints/d; type=int+; label=Breakpoint at 992px
+    992 {
+      # cat=plugin.tx_wsslider.swiper/breakpoints/d; type=int+; label=Number of items to display
+      slidesPerView = 3
+    }
+
+    # cat=plugin.tx_wsslider.swiper/breakpoints/e; type=int+; label=Breakpoint at 1200px
+    1200 {
+      # cat=plugin.tx_wsslider.swiper/breakpoints/e; type=int+; label=Number of items to display
+      slidesPerView = 4
+    }
+
+    # cat=plugin.tx_wsslider.swiper/breakpoints/f; type=int+; label=Breakpoint at 1400px
+    1400 {
+      # cat=plugin.tx_wsslider.swiper/breakpoints/f; type=int+; label=Number of items to display
+      slidesPerView = 5
+    }
+  }
+
+  breakpointsBase {
+
+  }
+
+  cardsEffect {
+
+  }
+
+  # cat=plugin.tx_wsslider.swiper/base/e; type=options[true,false]; label=centerInsufficientSlides: When enabled it center slides if the amount of slides less than slidesPerView. Not intended to be used loop mode and grid.rows
+  centerInsufficientSlides = false
+
+  # cat=plugin.tx_wsslider.swiper/base/f; type=options[true,false]; label=centeredSlides: If true, then active slide will be centered, not always on the left side.
+  centeredSlides = false
+
+  # cat=plugin.tx_wsslider.swiper/base/g; type=options[true,false]; label=centeredSlidesBounds: If true, then active slide will be centered without adding gaps at the beginning and end of slider. Required centeredSlides: true. Not intended to be used with loop or pagination
+  centeredSlidesBounds = false
+
+  # cat=plugin.tx_wsslider.swiper/base/h; type=string; label=containerModifierClass: If true, then active slide will be centered without adding gaps at the beginning and end of slider. Required centeredSlides: true. Not intended to be used with loop or pagination
+  containerModifierClass = swiper-
+
+  controller {
+
+  }
+
+  coverflowEffect {
+
+  }
+
+  # cat=plugin.tx_wsslider.swiper/base/j; type=options[true,false]; label=createElements: When enabled Swiper will automatically wrap slides with swiper-wrapper element, and will create required elements for navigation, pagination and scrollbar they are enabled (with their respective params object or with boolean true))
+  createElements = false
+
+  creativeEffect {
+
+  }
+
+  # cat=plugin.tx_wsslider.swiper/base/k; type=options[true,false]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
+  cssMode = false
+
+  cubeEffect {
+
+  }
+
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
+  direction = horizontal
+
+  edgeSwipeDetection = false
+
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
+  edgeSwipeThreshold = 20
+
+  # cat=plugin.tx_wsslider.swiper/base/l; type=options[slide,fade,cube,coverflow,flip,creative,cards]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
+  effect = slide
+
+  # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=enabled: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
+  enabled = true
+
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
+  eventsPrefix = swiper
+
 
 
   fadeEffect {
@@ -118,36 +187,6 @@ plugin.tx_wsslider.settings.swiper {
     onlyInViewport = true
   }
 
-  breakpoints {
-    # cat=plugin.tx_wsslider.swiper/navigation/b; type=int+; label=Breakpoint at 576px
-    576 {
-      # cat=plugin.tx_wsslider.swiper/navigation/b; type=int+; label=Number of items to display
-      slidesPerView = 1
-    }
 
-    # cat=plugin.tx_wsslider.swiper/navigation/c; type=int+; label=Breakpoint at 768px
-    768 {
-      # cat=plugin.tx_wsslider.swiper/navigation/c; type=int+; label=Number of items to display
-      slidesPerView = 2
-    }
-
-    # cat=plugin.tx_wsslider.swiper/navigation/d; type=int+; label=Breakpoint at 992px
-    992 {
-      # cat=plugin.tx_wsslider.swiper/navigation/d; type=int+; label=Number of items to display
-      slidesPerView = 3
-    }
-
-    # cat=plugin.tx_wsslider.swiper/navigation/e; type=int+; label=Breakpoint at 1200px
-    1200 {
-      # cat=plugin.tx_wsslider.swiper/navigation/e; type=int+; label=Number of items to display
-      slidesPerView = 4
-    }
-
-    # cat=plugin.tx_wsslider.swiper/navigation/f; type=int+; label=Breakpoint at 1400px
-    1400 {
-      # cat=plugin.tx_wsslider.swiper/navigation/f; type=int+; label=Number of items to display
-      slidesPerView = 5
-    }
-  }
 
 }

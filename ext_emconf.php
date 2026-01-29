@@ -2,7 +2,7 @@
 
 $EM_CONF['ws_slider'] = [
     'title' => 'WS Slider - Universal slider extension',
-    'description' => 'Universal slider carousel for Owl slider, flexslider, ... ',
+    'description' => 'Universal slider carousel for Swiper, bootstrap slider, tinyslider, flexslider, ... ',
     'category' => 'plugin',
     'author' => 'Sven Wappler',
     'author_email' => 'typo3YYYY@wappler.systems',
