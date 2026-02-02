@@ -1,59 +1,75 @@
-
 tt_content.ws_slider >
 tt_content.ws_slider =< lib.contentElement
 tt_content.ws_slider {
 
-    ################
-    ### TEMPLATE ###
-    ################
-    templateName = Render
+  ################
+  ### TEMPLATE ###
+  ################
+  templateName = Render
 
-    templateRootPaths {
-        0 = EXT:fluid_styled_content/Resources/Private/Templates/
-        10 = EXT:ws_slider/Resources/Private/Templates/
-        20 = {$plugin.tx_wsslider.view.templateRootPath}
-    }
-    partialRootPaths {
-        0 = EXT:fluid_styled_content/Resources/Private/Partials/
-        10 = EXT:ws_slider/Resources/Private/Partials/
-        20 = {$plugin.tx_wsslider.view.partialRootPath}
-    }
-    layoutRootPaths {
-        0 = EXT:fluid_styled_content/Resources/Private/Layouts/
-        10 = EXT:ws_slider/Resources/Private/Layouts/
-        20 = {$plugin.tx_wsslider.view.layoutRootPath}
-    }
+  templateRootPaths {
+    0 = EXT:fluid_styled_content/Resources/Private/Templates/
+    10 = EXT:ws_slider/Resources/Private/Templates/
+    20 = {$plugin.tx_wsslider.view.templateRootPath}
+  }
 
-    settings {
-        slider < plugin.tx_wsslider.settings
+  partialRootPaths {
+    0 = EXT:fluid_styled_content/Resources/Private/Partials/
+    10 = EXT:ws_slider/Resources/Private/Partials/
+    20 = {$plugin.tx_wsslider.view.partialRootPath}
+  }
+
+  layoutRootPaths {
+    0 = EXT:fluid_styled_content/Resources/Private/Layouts/
+    10 = EXT:ws_slider/Resources/Private/Layouts/
+    20 = {$plugin.tx_wsslider.view.layoutRootPath}
+  }
+
+  settings {
+    view {
+      templateRootPaths {
+        0 = EXT:ws_slider/Resources/Private/Templates/
+        10 = {$plugin.tx_wsslider.view.templateRootPath}
+      }
+      partialRootPaths {
+        0 = EXT:ws_slider/Resources/Private/Partials/
+        10 = {$plugin.tx_wsslider.view.partialRootPath}
+      }
+      layoutRootPaths {
+        0 = EXT:ws_slider/Resources/Private/Layouts/
+        10 = {$plugin.tx_wsslider.view.layoutRootPath}
+      }
     }
+    slider < plugin.tx_wsslider.settings
+  }
 
-    ##########################
-    ### DATA PREPROCESSING ###
-    ##########################
-    dataProcessing {
-        30 = WapplerSystems\WsSlider\DataProcessing\SliderProcessor
+  ##########################
+  ### DATA PREPROCESSING ###
+  ##########################
+  dataProcessing {
+    30 = WapplerSystems\WsSlider\DataProcessing\SliderProcessor
 
-        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    20 {
+      table = tx_wsslider_domain_model_item
+      as = items
+      pidInList.field = pid
+      where {
+        data = field:uid
+        intval = 1
+        wrap = content_uid=|
+      }
+
+      orderBy = sorting
+      dataProcessing {
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         20 {
-            table = tx_wsslider_domain_model_item
-            as = items
-            pidInList.field = pid
-            where {
-                data = field:uid
-                intval = 1
-                wrap = content_uid=|
-            }
-            orderBy = sorting
-            dataProcessing {
-                20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                20 {
-                    references.fieldName = foreground_media
-                    as = foregroundMedia
-                }
-            }
+          references.fieldName = foreground_media
+          as = foregroundMedia
         }
+      }
     }
+  }
 
 }
 

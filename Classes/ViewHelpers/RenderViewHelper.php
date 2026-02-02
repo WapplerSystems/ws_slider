@@ -24,9 +24,10 @@ final class RenderViewHelper extends AbstractViewHelper
     {
         $this->registerArgument('renderer', 'string', 'The renderer.');
         $this->registerArgument('factoryClass', 'string', 'The fully qualified class name of the factory', false);
-        $this->registerArgument('parameters', 'array', 'factory specific configuration', false, []);
+        $this->registerArgument('options', 'array', 'slider options', false, []);
         $this->registerArgument('items', 'array', 'The items', false, []);
         $this->registerArgument('layout', 'string', 'Custom layout', false, 'Default');
+        $this->registerArgument('settings', 'array', 'Settings', false, []);
     }
 
     public function render(): ?string
@@ -34,6 +35,8 @@ final class RenderViewHelper extends AbstractViewHelper
         $renderer = $this->arguments['renderer'];
         /** @var RequestInterface $request */
         $request = $this->renderingContext->getAttribute(ServerRequestInterface::class);
+
+        $prototype = GeneralUtility::makeInstance(SliderDefinition::class);
 
         if ($this->arguments['factoryClass'] === null) {
             if (GeneralUtility::getContainer()->has('WapplerSystems\WsSlider\Factory\\'.$renderer.'Factory')) {
@@ -44,24 +47,24 @@ final class RenderViewHelper extends AbstractViewHelper
 
             $overrideConfiguration = [
                 'renderer' => $renderer,
-                'parameters' => $this->arguments['parameters'],
                 'items' => $this->arguments['items'],
                 'layout' => $this->arguments['layout'],
+                'settings' => $this->arguments['settings'],
             ];
 
         } else {
 
             $overrideConfiguration = [
                 'renderer' => $renderer,
-                'parameters' => $this->arguments['parameters'],
                 'items' => $this->arguments['items'],
                 'layout' => $this->arguments['layout'],
+                'settings' => $this->arguments['settings'],
             ];
         }
 
         /** @var SliderFactoryInterface $factory */
         $factory = GeneralUtility::getContainer()->get($this->arguments['factoryClass']);
-        $prototype = GeneralUtility::makeInstance(SliderDefinition::class);
+        $factory->setPrototype($prototype);
 
         /**
          * @var ContentObjectRenderer $currentContentObject
@@ -69,7 +72,8 @@ final class RenderViewHelper extends AbstractViewHelper
         $currentContentObject = $request->getAttribute('currentContentObject');
         $identifier = 'slider_' . $currentContentObject->data['uid'];
 
-        $sliderDefinition = $factory->build($overrideConfiguration, $prototype, $identifier, $request);
+        $factory->setConfiguration($overrideConfiguration);
+        $sliderDefinition = $factory->build($this->arguments['options'], $identifier, $request);
         $sliderDefinition->setIdentifier($identifier);
         return $sliderDefinition->render($request);
     }

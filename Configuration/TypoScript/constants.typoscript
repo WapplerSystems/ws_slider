@@ -1,4 +1,3 @@
-
 # customcategory=plugin.tx_wsslider=WS Slider
 
 # customsubcategory=owl=Owl
@@ -7,27 +6,27 @@
 
 plugin.tx_wsslider {
 
-    view {
-        # cat=plugin.tx_wsslider/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:ws_slider/Resources/Private/Templates/
-        # cat=plugin.tx_wsslider/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:ws_slider/Resources/Private/Partials/
-        # cat=plugin.tx_wsslider/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:ws_slider/Resources/Private/Layouts/
-    }
+  view {
+    # cat=plugin.tx_wsslider/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:ws_slider/Resources/Private/Templates/
+    # cat=plugin.tx_wsslider/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:ws_slider/Resources/Private/Partials/
+    # cat=plugin.tx_wsslider/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:ws_slider/Resources/Private/Layouts/
+  }
 
-    settings {
+  settings {
 
-        # cat=plugin.tx_wsslider/settings/a; type=string; label=Default renderer/slider
-        defaultRenderer = swiper
+    # cat=plugin.tx_wsslider/settings/a; type=string; label=Default renderer/slider
+    defaultRenderer = swiper
 
-        # cat=plugin.tx_wsslider/settings/b; type=string; label=Default layout of the selected slider
-        layout = Default
+    # cat=plugin.tx_wsslider/settings/b; type=string; label=Default layout of the selected slider
+    layout = Default
 
-        # cat=plugin.tx_wsslider/settings/d; type=boolean; label=Load jQuery script
-        loadJqueryCore = 0
+    # cat=plugin.tx_wsslider/settings/d; type=boolean; label=Load jQuery script
+    loadJqueryCore = 0
 
-    }
+  }
 
 }
 

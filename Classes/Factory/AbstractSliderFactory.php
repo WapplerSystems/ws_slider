@@ -7,9 +7,25 @@ namespace WapplerSystems\WsSlider\Factory;
 
 
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
+use WapplerSystems\WsSlider\Model\SliderDefinition;
 
 abstract class AbstractSliderFactory implements SliderFactoryInterface
 {
+
+    protected array $defaultOptions = [];
+
+
+    protected SliderDefinition $sliderPrototype;
+
+    public function setPrototype(SliderDefinition $sliderPrototype)
+    {
+        $this->sliderPrototype = $sliderPrototype;
+    }
+
+    public function setConfiguration($configuration): void
+    {
+        $this->sliderPrototype->setConfiguration($configuration);
+    }
 
     protected function getParameter(array $configuration, string $parameterName) {
 
@@ -18,6 +34,11 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
         $parameters = $configuration['parameters'] ?? [];
 
         return LocalizationUtility::translate('LLL:EXT:ws_slider/Resources/Private/Language/' . $xlfFilename . '.xlf:settings.' . $parameterName) ?? $parameters[$parameterName] ?? null;
+    }
+
+    protected function mergeOptions(array $options)
+    {
+        return array_merge($this->defaultOptions, $options);
     }
 
     protected function js_encode($array)

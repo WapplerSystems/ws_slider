@@ -29,12 +29,16 @@ class SliderDefinition
          */
         $currentContentObject = $request->getAttribute('currentContentObject');
 
+        debug($this->configuration, 'SliderDefinition configuration');
+
         $viewFactoryData = new ViewFactoryData(
-            templateRootPaths: ['EXT:ws_slider/Resources/Private/Templates/'],
-            partialRootPaths: ['EXT:ws_slider/Resources/Private/Partials/'],
-            layoutRootPaths: ['EXT:ws_slider/Resources/Private/Layouts/'],
+            templateRootPaths: $this->configuration['settings']['view']['templateRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Templates/'],
+            partialRootPaths: $this->configuration['settings']['view']['partialRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Partials/'],
+            layoutRootPaths: $this->configuration['settings']['view']['layoutRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Layouts/'],
             request: $request,
         );
+
+
         $view = $this->viewFactory->create($viewFactoryData);
 
         $view->assignMultiple($this->configuration);

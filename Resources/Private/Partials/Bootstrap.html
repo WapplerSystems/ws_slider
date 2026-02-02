@@ -5,12 +5,12 @@
 
 <f:section name="Default">
 
-    <div id="{identifier}" class="carousel slide" data-bs-ride="{sliderSettings.parameters.ride}">
-        <f:if condition="{sliderSettings.parameters.indicators} && {items -> f:count()} > 1">
+    <div id="{identifier}" class="carousel slide" data-bs-ride="{parameters.ride}">
+        <f:if condition="{parameters.indicators} && {items -> f:count()} > 1">
             <div class="carousel-indicators">
                 <f:for each="{items}" as="item" iteration="iterator">
                     <button type="button" data-bs-target="#{identifier}" data-bs-slide-to="{iterator.index}"
-                            class="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
+                            class="{f:if(condition:'{parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
                 </f:for>
             </div>
         </f:if>
@@ -20,7 +20,7 @@
                           arguments="{item: item, settings: settings, iterator:iterator, sliderSettings:sliderSettings}"/>
             </f:for>
         </div>
-        <f:if condition="{sliderSettings.parameters.control} && {items -> f:count()} > 1">
+        <f:if condition="{parameters.control} && {items -> f:count()} > 1">
             <button class="carousel-control-prev" type="button" data-bs-target="#{identifier}" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
