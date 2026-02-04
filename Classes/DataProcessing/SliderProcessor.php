@@ -70,8 +70,11 @@ class SliderProcessor implements DataProcessorInterface
             $options = self::removeDotsFromTS($options);
 
             $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
-            $flexformOptions = $this->cleanFlexFormOptions($flexformOptions);
-            $options = array_merge_recursive($options, $flexformOptions);
+            $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
+            //debug($flexformOptions, 'flexformOptions');
+            ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
+
+            //debug($options, 'options');
 
         } else {
 
@@ -96,8 +99,8 @@ class SliderProcessor implements DataProcessorInterface
             $flexformData = $processedData['data']['pi_flexform'];
             if (is_string($flexformData)) {
                 $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-                $flexformOptions = $this->cleanFlexFormOptions($flexformOptions);
-                $options = array_merge_recursive($options, $flexformOptions);
+                $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
+                ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
 
             }
         }
@@ -161,7 +164,7 @@ class SliderProcessor implements DataProcessorInterface
         return $out;
     }
 
-    private function cleanFlexFormOptions(array $flexformOptions)
+    private function migrateFlexFormOptions(array $flexformOptions)
     {
         if (isset($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
