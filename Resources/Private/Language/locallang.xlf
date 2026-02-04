@@ -107,67 +107,67 @@
 
 
 			<!-- common setting labels -->
-			<trans-unit id="settings.carousel">
+			<trans-unit id="options.carousel">
 				<source>Carousel</source>
 			</trans-unit>
-			<trans-unit id="settings.gallery">
+			<trans-unit id="options.gallery">
 				<source>Gallery</source>
 			</trans-unit>
-			<trans-unit id="settings.horizontal">
+			<trans-unit id="options.horizontal">
 				<source>Horizontal</source>
 			</trans-unit>
-			<trans-unit id="settings.vertical">
+			<trans-unit id="options.vertical">
 				<source>Vertical</source>
 			</trans-unit>
-			<trans-unit id="settings.common.layout">
+			<trans-unit id="options.common.layout">
 				<source>Layout</source>
 			</trans-unit>
-			<trans-unit id="settings.common.autoplay">
+			<trans-unit id="options.common.autoplay">
 				<source>Autoplay</source>
 			</trans-unit>
-			<trans-unit id="settings.common.lazyLoad">
+			<trans-unit id="options.common.lazyLoad">
 				<source>Lazy load</source>
 			</trans-unit>
-			<trans-unit id="settings.common.loop">
+			<trans-unit id="options.common.loop">
 				<source>Loop / Carousel</source>
 			</trans-unit>
-			<trans-unit id="settings.common.autoplaySpeed">
+			<trans-unit id="options.common.autoplaySpeed">
 				<source>Autoplay speed</source>
 			</trans-unit>
-			<trans-unit id="settings.common.top">
+			<trans-unit id="options.common.top">
 				<source>Top</source>
 			</trans-unit>
-			<trans-unit id="settings.common.bottom">
+			<trans-unit id="options.common.bottom">
 				<source>Bottom</source>
 			</trans-unit>
-			<trans-unit id="settings.common.forward">
+			<trans-unit id="options.common.forward">
 				<source>Forward</source>
 			</trans-unit>
-			<trans-unit id="settings.common.backward">
+			<trans-unit id="options.common.backward">
 				<source>Backward</source>
 			</trans-unit>
-			<trans-unit id="settings.common.vertical">
+			<trans-unit id="options.common.vertical">
 				<source>Vertical</source>
 			</trans-unit>
-			<trans-unit id="settings.common.horizontal">
+			<trans-unit id="options.common.horizontal">
 				<source>Horizontal</source>
 			</trans-unit>
-			<trans-unit id="settings.common.animateOut">
+			<trans-unit id="options.common.animateOut">
 				<source>Outro Animation</source>
 			</trans-unit>
-			<trans-unit id="settings.common.animateIn">
+			<trans-unit id="options.common.animateIn">
 				<source>Intro Animation</source>
 			</trans-unit>
-			<trans-unit id="settings.common.autoHeight">
+			<trans-unit id="options.common.autoHeight">
 				<source>Auto Height</source>
 			</trans-unit>
-			<trans-unit id="settings.common.video">
+			<trans-unit id="options.common.video">
 				<source>Enable Video</source>
 			</trans-unit>
-			<trans-unit id="settings.common.touch">
+			<trans-unit id="options.common.touch">
 				<source>Enable Touch Support</source>
 			</trans-unit>
-			<trans-unit id="settings.common.animationSpeed">
+			<trans-unit id="options.common.animationSpeed">
 				<source>Animation Speed</source>
 			</trans-unit>
 

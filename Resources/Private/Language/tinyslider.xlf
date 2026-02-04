@@ -4,147 +4,147 @@
 		<header/>
 		<body>
 			<!-- tinyslider specific settings -->
-			<trans-unit id="settings.mode">
+			<trans-unit id="options.mode">
 				<source>Mode</source>
 			</trans-unit>
-			<trans-unit id="settings.axis">
+			<trans-unit id="options.axis">
 				<source>Axis</source>
 			</trans-unit>
-			<trans-unit id="settings.items">
+			<trans-unit id="options.items">
 				<source>Items</source>
 			</trans-unit>
 
-			<trans-unit id="settings.responsiveItemCount0">
+			<trans-unit id="options.responsiveItemCount0">
 				<source>Items below 576px display width</source>
 			</trans-unit>
-			<trans-unit id="settings.responsiveItemCount576">
+			<trans-unit id="options.responsiveItemCount576">
 				<source>Items above 576px display width</source>
 			</trans-unit>
-			<trans-unit id="settings.responsiveItemCount768">
+			<trans-unit id="options.responsiveItemCount768">
 				<source>Items above 768px display width</source>
 			</trans-unit>
-			<trans-unit id="settings.responsiveItemCount992">
+			<trans-unit id="options.responsiveItemCount992">
 				<source>Items above 992px display width</source>
 			</trans-unit>
-			<trans-unit id="settings.responsiveItemCount1200">
+			<trans-unit id="options.responsiveItemCount1200">
 				<source>Items above 1200px display width</source>
 			</trans-unit>
-			<trans-unit id="settings.responsiveItemCount1400">
+			<trans-unit id="options.responsiveItemCount1400">
 				<source>Items above 1400px display width</source>
 			</trans-unit>
 
-			<trans-unit id="settings.gutter">
+			<trans-unit id="options.gutter">
 				<source>Gutter</source>
 			</trans-unit>
-			<trans-unit id="settings.edgePadding">
+			<trans-unit id="options.edgePadding">
 				<source>Edge Padding</source>
 			</trans-unit>
-			<trans-unit id="settings.fixedWidth">
+			<trans-unit id="options.fixedWidth">
 				<source>Fixed Width</source>
 			</trans-unit>
-			<trans-unit id="settings.autoWidth">
+			<trans-unit id="options.autoWidth">
 				<source>Auto Width</source>
 			</trans-unit>
-			<trans-unit id="settings.viewportMax">
+			<trans-unit id="options.viewportMax">
 				<source>Viewport Maximum</source>
 			</trans-unit>
-			<trans-unit id="settings.slideBy">
+			<trans-unit id="options.slideBy">
 				<source>Slide By</source>
 			</trans-unit>
-			<trans-unit id="settings.center">
+			<trans-unit id="options.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="settings.controls">
+			<trans-unit id="options.controls">
 				<source>Control Buttons</source>
 			</trans-unit>
-			<trans-unit id="settings.controlsPosition">
+			<trans-unit id="options.controlsPosition">
 				<source>Control Buttons Position</source>
 			</trans-unit>
-			<trans-unit id="settings.controlsContainer">
+			<trans-unit id="options.controlsContainer">
 				<source>Control Buttons Container</source>
 			</trans-unit>
-			<trans-unit id="settings.customPrevButton">
+			<trans-unit id="options.customPrevButton">
 				<source>Custom Previous-Button</source>
 			</trans-unit>
-			<trans-unit id="settings.customNextButton">
+			<trans-unit id="options.customNextButton">
 				<source>Custom Next-Button</source>
 			</trans-unit>
-			<trans-unit id="settings.nav">
+			<trans-unit id="options.nav">
 				<source>Nav Components</source>
 			</trans-unit>
-			<trans-unit id="settings.navPosition">
+			<trans-unit id="options.navPosition">
 				<source>Nav Components Position</source>
 			</trans-unit>
-			<trans-unit id="settings.navContainer">
+			<trans-unit id="options.navContainer">
 				<source>Nav Components Container</source>
 			</trans-unit>
-			<trans-unit id="settings.navAsThumbnails">
+			<trans-unit id="options.navAsThumbnails">
 				<source>Nav As Thumbnails</source>
 			</trans-unit>
-			<trans-unit id="settings.arrowKeys">
+			<trans-unit id="options.arrowKeys">
 				<source>Arrow Keys</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplayPosition">
+			<trans-unit id="options.autoplayPosition">
 				<source>Autoplay Position</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplayTimeout">
+			<trans-unit id="options.autoplayTimeout">
 				<source>Autoplay time between slide changes</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplayDirection">
+			<trans-unit id="options.autoplayDirection">
 				<source>Autoplay Direction</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplayHoverPause">
+			<trans-unit id="options.autoplayHoverPause">
 				<source>Pause autoplay on hover</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplayButtonOutput">
+			<trans-unit id="options.autoplayButtonOutput">
 				<source>Autoplay Button Output</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplayResetOnVisibility">
+			<trans-unit id="options.autoplayResetOnVisibility">
 				<source>Pause autoplay when page is invisible</source>
 			</trans-unit>
-			<trans-unit id="settings.animateNormal">
+			<trans-unit id="options.animateNormal">
 				<source>Normal Animation</source>
 			</trans-unit>
-			<trans-unit id="settings.animateDelay">
+			<trans-unit id="options.animateDelay">
 				<source>Animation Delay</source>
 			</trans-unit>
-			<trans-unit id="settings.rewind">
+			<trans-unit id="options.rewind">
 				<source>Rewind</source>
 			</trans-unit>
-			<trans-unit id="settings.lazyloadSelector">
+			<trans-unit id="options.lazyloadSelector">
 				<source>CSS selector for lazyload images</source>
 			</trans-unit>
-			<trans-unit id="settings.mouseDrag">
+			<trans-unit id="options.mouseDrag">
 				<source>Mouse Drag</source>
 			</trans-unit>
-			<trans-unit id="settings.swipeAngle">
+			<trans-unit id="options.swipeAngle">
 				<source>Swipe Angle</source>
 			</trans-unit>
-			<trans-unit id="settings.preventActionWhenRunning">
+			<trans-unit id="options.preventActionWhenRunning">
 				<source>Prevent next transition while slider is transforming</source>
 			</trans-unit>
-			<trans-unit id="settings.preventScrollOnTouch">
+			<trans-unit id="options.preventScrollOnTouch">
 				<source>Prevent page from scrolling on touch</source>
 			</trans-unit>
-			<trans-unit id="settings.nested">
+			<trans-unit id="options.nested">
 				<source>Nested</source>
 			</trans-unit>
-			<trans-unit id="settings.freezable">
+			<trans-unit id="options.freezable">
 				<source>Freezable</source>
 			</trans-unit>
-			<trans-unit id="settings.disable">
+			<trans-unit id="options.disable">
 				<source>Disable</source>
 			</trans-unit>
-			<trans-unit id="settings.startIndex">
+			<trans-unit id="options.startIndex">
 				<source>Start Index</source>
 			</trans-unit>
-			<trans-unit id="settings.onInit">
+			<trans-unit id="options.onInit">
 				<source>Callback to be run on initialization</source>
 			</trans-unit>
-			<trans-unit id="settings.useLocalStorage">
+			<trans-unit id="options.useLocalStorage">
 				<source>Use Local Storage</source>
 			</trans-unit>
-			<trans-unit id="settings.nonce">
+			<trans-unit id="options.nonce">
 				<source>Nonce Attribute</source>
 			</trans-unit>
 		</body>

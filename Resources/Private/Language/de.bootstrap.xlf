@@ -8,40 +8,40 @@
 				<source>Bootstrap Slider</source>
 			</trans-unit>
 
-			<trans-unit id="settings.interval">
+			<trans-unit id="options.interval">
 				<source>Interval</source>
 			</trans-unit>
-			<trans-unit id="settings.keyboard">
+			<trans-unit id="options.keyboard">
 				<source>Keyboard</source>
 			</trans-unit>
-			<trans-unit id="settings.pause">
+			<trans-unit id="options.pause">
 				<source>Pause</source>
 			</trans-unit>
-			<trans-unit id="settings.ride">
+			<trans-unit id="options.ride">
 				<source>Ride</source>
 			</trans-unit>
-			<trans-unit id="settings.ride.option.carousel">
+			<trans-unit id="options.ride.option.carousel">
 				<source>Carousel</source>
 			</trans-unit>
-			<trans-unit id="settings.touch">
+			<trans-unit id="options.touch">
 				<source>Touch</source>
 			</trans-unit>
-			<trans-unit id="settings.wrap">
+			<trans-unit id="options.wrap">
 				<source>Wrap</source>
 			</trans-unit>
-			<trans-unit id="settings.control">
+			<trans-unit id="options.control">
 				<source>Show control</source>
 			</trans-unit>
-			<trans-unit id="settings.indicators">
+			<trans-unit id="options.indicators">
 				<source>Show indicators</source>
 			</trans-unit>
-			<trans-unit id="settings.title">
+			<trans-unit id="options.title">
 				<source>Show title</source>
 			</trans-unit>
-			<trans-unit id="settings.description">
+			<trans-unit id="options.description">
 				<source>Show description</source>
 			</trans-unit>
-			<trans-unit id="settings.startAt">
+			<trans-unit id="options.startAt">
 				<source>Start at</source>
 			</trans-unit>
 

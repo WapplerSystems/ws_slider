@@ -14,7 +14,7 @@
                 <el>
                     <settings.js.interval>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.interval</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.interval</label>
                         <config>
                             <type>select</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -26,7 +26,7 @@
 
                     <settings.js.keyboard>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.keyboard</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.keyboard</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -53,7 +53,7 @@
 
                     <settings.js.pause>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.pause</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.pause</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -61,13 +61,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.vertical
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.vertical
                                     </numIndex>
                                     <numIndex index="value">vertical</numIndex>
                                 </numIndex>
                                 <numIndex index="1">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.horizontal
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.horizontal
                                     </numIndex>
                                     <numIndex index="value">horizontal</numIndex>
                                 </numIndex>
@@ -80,7 +80,7 @@
 
                     <settings.js.ride>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.ride</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.ride</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -100,7 +100,7 @@
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.ride.option.carousel
+                                        LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.ride.option.carousel
                                     </numIndex>
                                     <numIndex index="value">carousel</numIndex>
                                 </numIndex>
@@ -113,7 +113,7 @@
 
                     <settings.js.touch>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.touch</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.touch</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -140,7 +140,7 @@
 
                     <settings.js.wrap>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.wrap</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.wrap</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -167,7 +167,7 @@
 
                     <settings.js.control>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.control</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.control</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -194,7 +194,7 @@
 
                     <settings.js.indicators>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.indicators</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.indicators</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -221,7 +221,7 @@
 
                     <settings.js.title>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.title</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.title</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -248,7 +248,7 @@
 
                     <settings.js.description>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.description</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.description</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -275,7 +275,7 @@
 
                     <settings.js.startAt>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:settings.startAt</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:options.startAt</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/bootstrap_csh_flexforms.xlf:bootstrap.settings.js.startAt.description
                         </description>

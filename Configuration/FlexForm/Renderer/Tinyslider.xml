@@ -15,7 +15,7 @@
                 <el>
                     <settings.js.mode>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.mode</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.mode</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.mode.description
                         </description>
@@ -26,13 +26,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.carousel
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.carousel
                                     </numIndex>
                                     <numIndex index="value">carousel</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.gallery
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.gallery
                                     </numIndex>
                                     <numIndex index="value">gallery</numIndex>
                                 </numIndex>
@@ -45,7 +45,7 @@
 
                     <settings.js.axis>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.axis</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.axis</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.axis.description
                         </description>
@@ -56,13 +56,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.horizontal
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.horizontal
                                     </numIndex>
                                     <numIndex index="value">horizontal</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.vertical
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.vertical
                                     </numIndex>
                                     <numIndex index="value">vertical</numIndex>
                                 </numIndex>
@@ -75,7 +75,7 @@
 
                     <settings.js.items>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.items</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.items</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.items.description
                         </description>
@@ -90,7 +90,7 @@
 
                     <settings.js.slideBy>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.slideBy</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.slideBy</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.slideBy.description
                         </description>
@@ -105,7 +105,7 @@
 
                     <settings.js.center>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.center</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.center</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.center.description
                         </description>
@@ -136,7 +136,7 @@
                     <settings.js.speed>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animationSpeed
+                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.animationSpeed
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.speed.description
@@ -153,7 +153,7 @@
 
                     <settings.js.autoplay>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.autoplay
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplay.description
@@ -184,7 +184,7 @@
 
                     <settings.js.autoplayPosition>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayPosition
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoplayPosition
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayPosition.description
@@ -197,13 +197,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.top
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.top
                                     </numIndex>
                                     <numIndex index="value">top</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.bottom
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.bottom
                                     </numIndex>
                                     <numIndex index="value">bottom</numIndex>
                                 </numIndex>
@@ -216,7 +216,7 @@
 
                     <settings.js.autoplayTimeout>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayTimeout
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoplayTimeout
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayTimeout.description
@@ -234,7 +234,7 @@
 
                     <settings.js.autoplayDirection>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayDirection
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoplayDirection
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayDirection.description
@@ -247,13 +247,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.forward
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.forward
                                     </numIndex>
                                     <numIndex index="value">forward</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.backward
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.backward
                                     </numIndex>
                                     <numIndex index="value">backward</numIndex>
                                 </numIndex>
@@ -266,7 +266,7 @@
 
                     <settings.js.autoplayHoverPause>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayHoverPause
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoplayHoverPause
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayHoverPause.description
@@ -299,7 +299,7 @@
                     <settings.js.autoplayButtonOutput>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayButtonOutput
+                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoplayButtonOutput
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayButtonOutput.description
@@ -332,7 +332,7 @@
                     <settings.js.autoplayResetOnVisibility>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoplayResetOnVisibility
+                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoplayResetOnVisibility
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayResetOnVisibility.description
@@ -364,7 +364,7 @@
 
                     <settings.js.loop>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.loop</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.loop.description
                         </description>
@@ -394,7 +394,7 @@
 
                     <settings.js.rewind>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.rewind</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.rewind</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.rewind.description
                         </description>
@@ -424,7 +424,7 @@
 
                     <settings.js.lazyload>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.lazyLoad
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.lazyload.description
@@ -455,7 +455,7 @@
 
                     <settings.js.lazyloadSelector>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.lazyloadSelector
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.lazyloadSelector
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.lazyloadSelector.description
@@ -473,7 +473,7 @@
 
                     <settings.js.freezable>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.freezable</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.freezable</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.freezable.description
                         </description>
@@ -503,7 +503,7 @@
 
                     <settings.js.disable>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.disable</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.disable</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.disable.description
                         </description>
@@ -533,7 +533,7 @@
 
                     <settings.js.startIndex>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.startIndex</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.startIndex</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.startIndex.description
                         </description>
@@ -559,7 +559,7 @@
                 <el>
                     <settings.js.nav>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.nav</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.nav</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nav.description
                         </description>
@@ -589,7 +589,7 @@
 
                     <settings.js.navPosition>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.navPosition</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.navPosition</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.navPosition.description
                         </description>
@@ -600,13 +600,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.top
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.top
                                     </numIndex>
                                     <numIndex index="value">top</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.bottom
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.bottom
                                     </numIndex>
                                     <numIndex index="value">bottom</numIndex>
                                 </numIndex>
@@ -619,7 +619,7 @@
 
                     <settings.js.navContainer>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.navContainer</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.navContainer</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.navContainer.description
                         </description>
@@ -635,7 +635,7 @@
 
                     <settings.js.navAsThumbnails>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.navAsThumbnails
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.navAsThumbnails
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.navAsThumbnails.description
@@ -667,7 +667,7 @@
 
                     <settings.js.controls>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controls</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.controls</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.controls.description
                         </description>
@@ -697,7 +697,7 @@
 
                     <settings.js.controlsPosition>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controlsPosition
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.controlsPosition
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.controlsPosition.description
@@ -710,13 +710,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.top
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.top
                                     </numIndex>
                                     <numIndex index="value">top</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.bottom
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.bottom
                                     </numIndex>
                                     <numIndex index="value">bottom</numIndex>
                                 </numIndex>
@@ -729,7 +729,7 @@
 
                     <settings.js.controlsContainer>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controlsContainer
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.controlsContainer
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.controlsContainer.description
@@ -746,7 +746,7 @@
 
                     <settings.js.prevButton>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.customPrevButton
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.customPrevButton
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.prevButton.description
@@ -762,7 +762,7 @@
 
                     <settings.js.nextButton>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.customNextButton
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.customNextButton
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nextButton.description
@@ -778,7 +778,7 @@
 
                     <settings.js.arrowKeys>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.arrowKeys</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.arrowKeys</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.arrowKeys.description
                         </description>
@@ -818,7 +818,7 @@
                 <el>
                     <settings.js.autoHeight>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.autoHeight
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoHeight.description
@@ -849,7 +849,7 @@
 
                     <settings.js.gutter>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.gutter</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.gutter</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.gutter.description
                         </description>
@@ -864,7 +864,7 @@
 
                     <settings.js.edgePadding>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.edgePadding</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.edgePadding</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.edgePadding.description
                         </description>
@@ -879,7 +879,7 @@
 
                     <settings.js.fixedWidth>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.fixedWidth</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.fixedWidth</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.fixedWidth.description
                         </description>
@@ -894,7 +894,7 @@
 
                     <settings.js.autoWidth>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.autoWidth</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.autoWidth</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoWidth.description
                         </description>
@@ -924,7 +924,7 @@
 
                     <settings.js.viewportMax>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.viewportMax</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.viewportMax</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.viewportMax.description
                         </description>
@@ -939,7 +939,7 @@
 
                     <settings.js.nested>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.nested</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.nested</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nested.description
                         </description>
@@ -985,7 +985,7 @@
                 <el>
                     <settings.js.touch>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.touch</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.touch</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.touch.description
                         </description>
@@ -1015,7 +1015,7 @@
 
                     <settings.js.mouseDrag>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.mouseDrag</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.mouseDrag</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.mouseDrag.description
                         </description>
@@ -1045,7 +1045,7 @@
 
                     <settings.js.swipeAngle>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.swipeAngle</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.swipeAngle</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.swipeAngle.description
                         </description>
@@ -1062,7 +1062,7 @@
                     <settings.js.preventScrollOnTouch>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventScrollOnTouch
+                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.preventScrollOnTouch
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.preventScrollOnTouch.description
@@ -1110,7 +1110,7 @@
                 <el>
                     <settings.js.animateIn>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateIn
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.animateIn
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateIn.description
@@ -1126,7 +1126,7 @@
 
                     <settings.js.animateOut>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateOut
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.animateOut
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateOut.description
@@ -1142,7 +1142,7 @@
 
                     <settings.js.animateNormal>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.animateNormal
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.animateNormal
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateNormal.description
@@ -1159,7 +1159,7 @@
 
                     <settings.js.animateDelay>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.animateDelay</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.animateDelay</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateDelay.description
                         </description>
@@ -1177,7 +1177,7 @@
                     <settings.js.preventActionWhenRunning>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.preventActionWhenRunning
+                            LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.preventActionWhenRunning
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.preventActionWhenRunning.description
@@ -1219,7 +1219,7 @@
                 <el>
                     <settings.js.onInit>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.onInit</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.onInit</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.onInit.description
                         </description>
@@ -1235,7 +1235,7 @@
 
                     <settings.js.useLocalStorage>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.useLocalStorage
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.useLocalStorage
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.useLocalStorage.description
@@ -1267,7 +1267,7 @@
 
                     <settings.js.nonce>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.nonce</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.nonce</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.nonce.description
                         </description>
@@ -1293,7 +1293,7 @@
                 <el>
                     <settings.js.responsive.dummy.startIndex>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.startIndex</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.startIndex</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -1306,7 +1306,7 @@
 
                     <settings.js.responsive.dummy.items>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.items</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.items</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -1320,7 +1320,7 @@
 
                     <settings.js.responsive.dummy.slideBy>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.slideBy</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.slideBy</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -1334,7 +1334,7 @@
                     <settings.js.responsive.dummy.speed>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animationSpeed
+                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.animationSpeed
                         </label>
                         <config>
                             <type>input</type>
@@ -1348,7 +1348,7 @@
 
                     <settings.js.responsive.dummy.autoHeight>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.autoHeight
                         </label>
                         <config>
                             <type>select</type>
@@ -1376,7 +1376,7 @@
 
                     <settings.js.responsive.dummy.fixedWidth>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.fixedWidth</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.fixedWidth</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -1388,7 +1388,7 @@
 
                     <settings.js.responsive.dummy.edgePadding>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.edgePadding</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.edgePadding</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -1400,7 +1400,7 @@
 
                     <settings.js.responsive.dummy.gutter>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.gutter</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.gutter</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -1412,7 +1412,7 @@
 
                     <settings.js.responsive.dummy.center>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.center</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.center</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -1439,7 +1439,7 @@
 
                     <settings.js.responsive.dummy.controls>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.controls</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.controls</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -1466,7 +1466,7 @@
 
                     <settings.js.responsive.dummy.disable>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:settings.disable</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.disable</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>

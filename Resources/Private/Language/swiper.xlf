@@ -2,34 +2,34 @@
 	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
 		<header/>
 		<body>
-			<trans-unit id="settings.accessibility">
+			<trans-unit id="options.accessibility">
 				<source>Accessibility</source>
 			</trans-unit>
-			<trans-unit id="settings.arrows">
+			<trans-unit id="options.arrows">
 				<source>Arrows</source>
 			</trans-unit>
-			<trans-unit id="settings.asNavFor">
+			<trans-unit id="options.asNavFor">
 				<source>As Nav For</source>
 			</trans-unit>
-			<trans-unit id="settings.appendArrows">
+			<trans-unit id="options.appendArrows">
 				<source>Append Arrows</source>
 			</trans-unit>
-			<trans-unit id="settings.appendDots">
+			<trans-unit id="options.appendDots">
 				<source>Append Dots</source>
 			</trans-unit>
-			<trans-unit id="settings.prevArrow">
+			<trans-unit id="options.prevArrow">
 				<source>Prev Arrow</source>
 			</trans-unit>
-			<trans-unit id="settings.nextArrow">
+			<trans-unit id="options.nextArrow">
 				<source>Next Arrow</source>
 			</trans-unit>
-			<trans-unit id="settings.centerMode">
+			<trans-unit id="options.centerMode">
 				<source>Center Mode</source>
 			</trans-unit>
-			<trans-unit id="settings.centerPadding">
+			<trans-unit id="options.centerPadding">
 				<source>Center Padding</source>
 			</trans-unit>
-			<trans-unit id="settings.cssEase">
+			<trans-unit id="options.cssEase">
 				<source>CSS3 animation Easing</source>
 			</trans-unit>
 
@@ -53,31 +53,31 @@
 			</trans-unit>
 
 
-			<trans-unit id="settings.autoplay">
+			<trans-unit id="options.autoplay">
 				<source>Autoplay</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay.delay">
+			<trans-unit id="options.autoplay.delay">
 				<source>Delay</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay.disableOnInteraction">
+			<trans-unit id="options.autoplay.disableOnInteraction">
 				<source>Disable on interaction</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay.pauseOnMouseEnter">
+			<trans-unit id="options.autoplay.pauseOnMouseEnter">
 				<source>Pause on mouse enter</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay.reverseDirection">
+			<trans-unit id="options.autoplay.reverseDirection">
 				<source>Reverse direction</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay.stopOnLastSlide">
+			<trans-unit id="options.autoplay.stopOnLastSlide">
 				<source>Stop on last slide</source>
 			</trans-unit>
-			<trans-unit id="settings.autoplay.waitForTransition">
+			<trans-unit id="options.autoplay.waitForTransition">
 				<source>Wait for transition</source>
 			</trans-unit>
-			<trans-unit id="settings.autoHeight">
+			<trans-unit id="options.autoHeight">
 				<source>Auto height</source>
 			</trans-unit>
-			<trans-unit id="settings.navigation.addIcons">
+			<trans-unit id="options.navigation.addIcons">
 				<source>Add Icons</source>
 			</trans-unit>
 

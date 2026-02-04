@@ -24,129 +24,129 @@
 			</trans-unit>
 
 			<!-- flexslider general settings -->
-			<trans-unit id="settings.selector">
+			<trans-unit id="options.selector">
 				<source>Selector</source>
 			</trans-unit>
-			<trans-unit id="settings.animation">
+			<trans-unit id="options.animation">
 				<source>Animation</source>
 			</trans-unit>
-			<trans-unit id="settings.easing">
+			<trans-unit id="options.easing">
 				<source>Easing effect</source>
 			</trans-unit>
-			<trans-unit id="settings.direction">
+			<trans-unit id="options.direction">
 				<source>Direction</source>
 			</trans-unit>
-			<trans-unit id="settings.reverse">
+			<trans-unit id="options.reverse">
 				<source>Reverse order</source>
 			</trans-unit>
-			<trans-unit id="settings.animationLoop">
+			<trans-unit id="options.animationLoop">
 				<source>Animation loop</source>
 			</trans-unit>
-			<trans-unit id="settings.smoothHeight">
+			<trans-unit id="options.smoothHeight">
 				<source>Smooth height</source>
 			</trans-unit>
-			<trans-unit id="settings.startAt">
+			<trans-unit id="options.startAt">
 				<source>Start at</source>
 			</trans-unit>
-			<trans-unit id="settings.slideshow">
+			<trans-unit id="options.slideshow">
 				<source>Slideshow mode</source>
 			</trans-unit>
-			<trans-unit id="settings.slideshowSpeed">
+			<trans-unit id="options.slideshowSpeed">
 				<source>Slideshow speed (in milliseconds)</source>
 			</trans-unit>
-			<trans-unit id="settings.animationSpeed">
+			<trans-unit id="options.animationSpeed">
 				<source>Animation speed (in milliseconds)</source>
 			</trans-unit>
-			<trans-unit id="settings.initDelay">
+			<trans-unit id="options.initDelay">
 				<source>Init delay in milliseconds</source>
 			</trans-unit>
-			<trans-unit id="settings.randomize">
+			<trans-unit id="options.randomize">
 				<source>Random mode</source>
 			</trans-unit>
-			<trans-unit id="settings.fadeFirstSlide">
+			<trans-unit id="options.fadeFirstSlide">
 				<source>Fade in first slide</source>
 			</trans-unit>
 
-			<trans-unit id="settings.fade">
+			<trans-unit id="options.fade">
 				<source>Fade</source>
 			</trans-unit>
-			<trans-unit id="settings.slide">
+			<trans-unit id="options.slide">
 				<source>Slide</source>
 			</trans-unit>
 
 			<!-- Usability Features -->
-			<trans-unit id="settings.pauseOnAction">
+			<trans-unit id="options.pauseOnAction">
 				<source>Pause on action</source>
 			</trans-unit>
-			<trans-unit id="settings.pauseOnHover">
+			<trans-unit id="options.pauseOnHover">
 				<source>Pause on hover</source>
 			</trans-unit>
-			<trans-unit id="settings.pauseInvisible">
+			<trans-unit id="options.pauseInvisible">
 				<source>Pause Invisible</source>
 			</trans-unit>
-			<trans-unit id="settings.useCSS">
+			<trans-unit id="options.useCSS">
 				<source>User CSS</source>
 			</trans-unit>
-			<trans-unit id="settings.touch">
+			<trans-unit id="options.touch">
 				<source>Touch mode</source>
 			</trans-unit>
-			<trans-unit id="settings.video">
+			<trans-unit id="options.video">
 				<source>Video mode</source>
 			</trans-unit>
 
 			<!-- Primary Controls -->
-			<trans-unit id="settings.controlNav">
+			<trans-unit id="options.controlNav">
 				<source>Navigation Dots</source>
 			</trans-unit>
-			<trans-unit id="settings.directionNav">
+			<trans-unit id="options.directionNav">
 				<source>Navigation Arrows</source>
 			</trans-unit>
 
 			<!-- Secondary Navigation -->
-			<trans-unit id="settings.keyboard">
+			<trans-unit id="options.keyboard">
 				<source>Keyboard support</source>
 			</trans-unit>
-			<trans-unit id="settings.multipleKeyboard">
+			<trans-unit id="options.multipleKeyboard">
 				<source>Allow keyboard navigation to affect multiple sliders</source>
 			</trans-unit>
-			<trans-unit id="settings.mousewheel">
+			<trans-unit id="options.mousewheel">
 				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
 			</trans-unit>
-			<trans-unit id="settings.pausePlay">
+			<trans-unit id="options.pausePlay">
 				<source>Create pause/play dynamic element</source>
 			</trans-unit>
 
 			<!-- Special Properties -->
-			<trans-unit id="settings.controlsContainer">
+			<trans-unit id="options.controlsContainer">
 				<source>controlsContainer jQuery object/selector</source>
 			</trans-unit>
-			<trans-unit id="settings.manualControls">
+			<trans-unit id="options.manualControls">
 				<source>manualControls jQuery object/selector</source>
 			</trans-unit>
-			<trans-unit id="settings.customDirectionNav">
+			<trans-unit id="options.customDirectionNav">
 				<source>customDirectionNav jQuery object/selector</source>
 			</trans-unit>
-			<trans-unit id="settings.sync">
+			<trans-unit id="options.sync">
 				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
 			</trans-unit>
-			<trans-unit id="settings.asNavFor">
+			<trans-unit id="options.asNavFor">
 				<source>asNavFor selector</source>
 			</trans-unit>
 
 			<!-- Carousel-->
-			<trans-unit id="settings.itemWidth">
+			<trans-unit id="options.itemWidth">
 				<source>Element width in pixels</source>
 			</trans-unit>
-			<trans-unit id="settings.itemMargin">
+			<trans-unit id="options.itemMargin">
 				<source>Element border (margin)</source>
 			</trans-unit>
-			<trans-unit id="settings.minItems">
+			<trans-unit id="options.minItems">
 				<source>Min number of elements</source>
 			</trans-unit>
-			<trans-unit id="settings.maxItems">
+			<trans-unit id="options.maxItems">
 				<source>Max number of elements</source>
 			</trans-unit>
-			<trans-unit id="settings.move">
+			<trans-unit id="options.move">
 				<source>Number of elements, which should be moved in animation</source>
 			</trans-unit>
 		</body>

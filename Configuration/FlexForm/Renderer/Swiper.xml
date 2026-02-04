@@ -14,54 +14,54 @@
                 <type>array</type>
                 <el>
                     <settings.autoHeight>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoHeight</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoHeight</label>
                         <config>
                             <type>check</type>
                         </config>
                     </settings.autoHeight>
 
                     <settings.autoplay.active>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay</label>
                         <config>
                             <type>check</type>
                         </config>
                     </settings.autoplay.active>
                     <settings.autoplay.delay>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.delay</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.delay</label>
                         <config>
                             <type>input</type>
                         </config>
                     </settings.autoplay.delay>
                     <settings.autoplay.disableOnInteraction>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.disableOnInteraction</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.disableOnInteraction</label>
                         <config>
                             <type>check</type>
                             <default>1</default>
                         </config>
                     </settings.autoplay.disableOnInteraction>
                     <settings.autoplay.pauseOnMouseEnter>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.pauseOnMouseEnter</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.pauseOnMouseEnter</label>
                         <config>
                             <type>check</type>
                             <default>0</default>
                         </config>
                     </settings.autoplay.pauseOnMouseEnter>
                     <settings.autoplay.reverseDirection>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.reverseDirection</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.reverseDirection</label>
                         <config>
                             <type>check</type>
                             <default>0</default>
                         </config>
                     </settings.autoplay.reverseDirection>
                     <settings.autoplay.stopOnLastSlide>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.stopOnLastSlide</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.stopOnLastSlide</label>
                         <config>
                             <type>check</type>
                             <default>0</default>
                         </config>
                     </settings.autoplay.stopOnLastSlide>
                     <settings.autoplay.waitForTransition>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.waitForTransition</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.waitForTransition</label>
                         <config>
                             <type>check</type>
                             <default>1</default>
@@ -82,7 +82,7 @@
                 <el>
 
                     <settings.navigation.addIcons>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.navigation.addIcons</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.navigation.addIcons</label>
                         <config>
                             <type>check</type>
                         </config>
@@ -102,7 +102,7 @@
                 <el>
                     <settings.responsive.dummy.startIndex>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.startIndex</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.startIndex</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -115,7 +115,7 @@
 
                     <settings.responsive.dummy.items>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.items</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.items</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -129,7 +129,7 @@
 
                     <settings.responsive.dummy.slideBy>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.slideBy</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.slideBy</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -140,64 +140,9 @@
 
                     </settings.responsive.dummy.slideBy>
 
-                    <settings.responsive.dummy.speed>
-
-                        <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animationSpeed
-                        </label>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.speed</typoscriptPath>
-                            <size>1</size>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.responsive.dummy.speed>
-
-                    <settings.responsive.dummy.autoHeight>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight
-                        </label>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoHeight</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.responsive.dummy.autoHeight>
-
-                    <settings.responsive.dummy.fixedWidth>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.fixedWidth</label>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.fixedWidth</typoscriptPath>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.responsive.dummy.fixedWidth>
-
                     <settings.responsive.dummy.edgePadding>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.edgePadding</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.edgePadding</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -209,7 +154,7 @@
 
                     <settings.responsive.dummy.gutter>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.gutter</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.gutter</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
@@ -221,7 +166,7 @@
 
                     <settings.responsive.dummy.center>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.center</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.center</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -248,7 +193,7 @@
 
                     <settings.responsive.dummy.controls>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.controls</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.controls</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -275,7 +220,7 @@
 
                     <settings.responsive.dummy.disable>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.disable</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.disable</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>

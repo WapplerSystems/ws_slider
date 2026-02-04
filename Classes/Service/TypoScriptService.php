@@ -3,12 +3,17 @@ namespace WapplerSystems\WsSlider\Service;
 
 
 use Exception;
+use Symfony\Component\DependencyInjection\Attribute\Autowire;
+use TYPO3\CMS\Core\Cache\Frontend\FrontendInterface;
+use TYPO3\CMS\Core\Cache\Frontend\PhpFrontend;
 use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Error\Http\AbstractServerErrorException;
 use TYPO3\CMS\Core\Exception\SiteNotFoundException;
 use TYPO3\CMS\Core\Http\PropagateResponseException;
 use TYPO3\CMS\Core\Http\ServerRequest;
+use TYPO3\CMS\Core\Site\Entity\NullSite;
 use TYPO3\CMS\Core\Site\Entity\Site;
+use TYPO3\CMS\Core\Site\Set\SetRegistry;
 use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\TypoScript\AST\Node\RootNode;
 use TYPO3\CMS\Core\TypoScript\FrontendTypoScriptFactory;
@@ -25,7 +30,14 @@ class TypoScriptService
     protected static RootNode $typoScript;
 
 
-    public function __construct(readonly FrontendTypoScriptFactory $frontendTypoScriptFactory, readonly SysTemplateRepository $sysTemplateRepository)
+    public function __construct(readonly FrontendTypoScriptFactory $frontendTypoScriptFactory,
+                                readonly SysTemplateRepository $sysTemplateRepository,
+                                #[Autowire(service: 'cache.runtime')]
+                                private FrontendInterface $runtimeCache,
+                                private SetRegistry $setRegistry,
+                                #[Autowire(service: 'cache.typoscript')]
+                                private PhpFrontend $typoScriptCache,
+    )
     {
 
     }
@@ -40,52 +52,65 @@ class TypoScriptService
      * @throws AbstractServerErrorException
      * @throws PropagateResponseException
      */
-    public function getTypoScript(int $pageUid, ?ServerRequest $request = null, int $languageUid = 0, array $rootLine = [], ?Site $site = null): RootNode
+    public function getTypoScript(int $pageUid, ?ServerRequest $request = null, int $languageUid = 0, array $rootLine = [], ?Site $site = null): array
     {
-        if (isset(self::$typoScript) && self::$typoScript !== null) {
-            return self::$typoScript;
+        $cacheIdentifier = 'extbase-backend-typoscript-pageId-' . $pageUid;
+        $setupArray = $this->runtimeCache->get($cacheIdentifier);
+        if (is_array($setupArray)) {
+            return $setupArray;
         }
 
-        if ($site === null && $request !== null) {
-            $site = $request->getAttribute('site');
+        if ($site === null) {
+            // If still no site object, have NullSite (usually pid 0).
+            $site = new NullSite();
         }
 
-        // Ensure the rootline is available
-        if (count($rootLine) === 0) {
-            /** @var RootlineUtility $rootlineUtility */
-            $rootlineUtility = GeneralUtility::makeInstance(RootlineUtility::class, $pageUid);
-            $rootLine = $rootlineUtility->get();
+        $rootLine = [];
+        $sysTemplateRows = [];
+        $sysTemplateFakeRow = [
+            'uid' => 0,
+            'pid' => 0,
+            'title' => 'Fake sys_template row to force extension statics loading',
+            'root' => 1,
+            'clear' => 3,
+            'include_static_file' => '',
+            'basedOn' => '',
+            'includeStaticAfterBasedOn' => 0,
+            'static_file_mode' => false,
+            'constants' => '',
+            'config' => '',
+            'deleted' => 0,
+            'hidden' => 0,
+            'starttime' => 0,
+            'endtime' => 0,
+            'sorting' => 0,
+        ];
+        if ($pageUid > 0) {
+            $rootLine = GeneralUtility::makeInstance(RootlineUtility::class, $pageUid)->get();
+            $sysTemplateRows = $this->sysTemplateRepository->getSysTemplateRowsByRootline($rootLine, $request);
+            ksort($rootLine);
         }
-        //
-        // Ensure the site configuration is available
-        if (!($site instanceof Site)) {
-            /** @var SiteFinder $siteFinder */
-            $siteFinder = GeneralUtility::makeInstance(SiteFinder::class);
-            $site = $siteFinder->getSiteByPageId($pageUid);
+
+        $sets = $site instanceof Site ? $this->setRegistry->getSets(...$site->getSets()) : [];
+        if (empty($sysTemplateRows) && $sets === []) {
+            // If there is no page (pid 0 only), or if the first 'is_siteroot' site has no sys_template record or assigned site sets,
+            // then we "fake" a sys_template row: This triggers inclusion of 'global' and 'extension static' TypoScript.
+            $sysTemplateRows[] = $sysTemplateFakeRow;
         }
 
+        $expressionMatcherVariables = [
+            'request' => $request,
+            'pageId' => $pageUid,
+            'page' => !empty($rootLine) ? $rootLine[array_key_first($rootLine)] : [],
+            'fullRootLine' => $rootLine,
+            'site' => $site,
+        ];
 
-        $sysTemplateRows = $this->sysTemplateRepository->getSysTemplateRowsByRootline($rootLine, $request);
-        $frontendTypoScript = $this->frontendTypoScriptFactory->createSettingsAndSetupConditions(
-            $site,
-            $sysTemplateRows,
-            [],
-            null,
-        );
-
-        $frontendTypoScript = $this->frontendTypoScriptFactory->createSetupConfigOrFullSetup(
-            true,
-            $frontendTypoScript,
-            $site,
-            $sysTemplateRows,
-            [],
-            0,
-            null,
-            $request,
-        );
-
-        self::$typoScript = $frontendTypoScript->getSetupTree();
-        return self::$typoScript;
+        $typoScript = $this->frontendTypoScriptFactory->createSettingsAndSetupConditions($site, $sysTemplateRows, $expressionMatcherVariables, $this->typoScriptCache);
+        $typoScript = $this->frontendTypoScriptFactory->createSetupConfigOrFullSetup(true, $typoScript, $site, $sysTemplateRows, $expressionMatcherVariables, '0', $this->typoScriptCache, null);
+        $setupArray = $typoScript->getSetupArray();
+        $this->runtimeCache->set($cacheIdentifier, $setupArray);
+        return $setupArray;
     }
 
     public static function getTypoScriptValueByPath(array $tsArray, string $path) {
