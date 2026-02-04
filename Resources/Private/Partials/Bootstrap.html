@@ -10,14 +10,14 @@
             <div class="carousel-indicators">
                 <f:for each="{items}" as="item" iteration="iterator">
                     <button type="button" data-bs-target="#{identifier}" data-bs-slide-to="{iterator.index}"
-                            class="{f:if(condition:'{parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
+                            class="{f:if(condition:'{parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{options.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
                 </f:for>
             </div>
         </f:if>
         <div class="carousel-inner">
             <f:for each="{items}" as="item" iteration="iterator">
                 <f:render partial="Item/Bootstrap" section="{layout}"
-                          arguments="{item: item, settings: settings, iterator:iterator, sliderSettings:sliderSettings}"/>
+                          arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
             </f:for>
         </div>
         <f:if condition="{parameters.control} && {items -> f:count()} > 1">

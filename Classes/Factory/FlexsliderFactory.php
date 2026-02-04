@@ -54,9 +54,11 @@ class FlexsliderFactory extends AbstractSliderFactory
     public function build(array $options, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
 
-        $jsOptions = $this->mergeOptions($options);
+        $options = $this->mergeOptions($options);
 
-        $optionsJson = $this->js_encode($jsOptions);
+        $this->sliderPrototype->setOptions($options);
+
+        $optionsJson = $this->js_encode($options);
         $js = "jQuery('#{$identifier}').flexslider({$optionsJson});\n";
         $this->sliderPrototype->setJavaScript($js);
 

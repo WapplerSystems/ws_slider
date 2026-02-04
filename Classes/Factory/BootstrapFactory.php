@@ -30,7 +30,7 @@ class BootstrapFactory extends AbstractSliderFactory
 
         $options = $this->mergeOptions($options);
 
-
+        $this->sliderPrototype->setOptions($options);
 
         return $this->sliderPrototype;
     }

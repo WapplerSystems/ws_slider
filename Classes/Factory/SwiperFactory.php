@@ -241,7 +241,7 @@ class SwiperFactory extends AbstractSliderFactory
     {
 
 
-        $jsOptions = $this->mergeOptions([
+        $options = $this->mergeOptions([
             'a11y' => [
                 'enabled' => true,
                 'prevSlideMessage' => $this->getParameter($options, 'a11y.prevSlideMessage'),
@@ -257,7 +257,9 @@ class SwiperFactory extends AbstractSliderFactory
             ],
         ]);
 
-        $jsOptions = $this->js_encode($jsOptions);
+        $this->sliderPrototype->setOptions($options);
+
+        $jsOptions = $this->js_encode($options);
         $js = '';
         $onOptions = '';
         if ($configuration['parameters']['autoplayProgress'] ?? false) {
@@ -283,6 +285,7 @@ const {$identifier} = new Swiper('#{$identifier}', options_{$identifier});
 JS;
 
         $this->sliderPrototype->setJavaScript($js);
+
 
         return $this->sliderPrototype;
     }

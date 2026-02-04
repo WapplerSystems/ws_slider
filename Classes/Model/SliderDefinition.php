@@ -16,6 +16,8 @@ class SliderDefinition
 
     private string $javascript = '';
 
+    private array $options = [];
+
     private array $configuration = [];
 
     public function __construct(
@@ -44,6 +46,7 @@ class SliderDefinition
         $view->assignMultiple($this->configuration);
         $view->assign('inlineJavascript', $this->javascript);
         $view->assign('data', $currentContentObject->data);
+        $view->assign('options', $this->options);
 
         return $view->render('Slider.html');
     }
@@ -63,9 +66,19 @@ class SliderDefinition
         $this->configuration = $configuration;
     }
 
-    public function setIdentifier(string $identifier)
+    public function setIdentifier(string $identifier): void
     {
         $this->configuration['identifier'] = $identifier;
+    }
+
+    public function getOptions(): array
+    {
+        return $this->options;
+    }
+
+    public function setOptions(array $options): void
+    {
+        $this->options = $options;
     }
 
 

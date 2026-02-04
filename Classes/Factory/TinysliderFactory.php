@@ -60,9 +60,11 @@ class TinysliderFactory extends AbstractSliderFactory
     public function build(array $options, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
 
-        $jsOptions = $this->mergeOptions($options);
+        $options = $this->mergeOptions($options);
 
-        $optionsJson = $this->js_encode($jsOptions);
+        $this->sliderPrototype->setOptions($options);
+
+        $optionsJson = $this->js_encode($options);
         $js = "var {$identifier} = tns({$optionsJson});\n";
         $this->sliderPrototype->setJavaScript($js);
 

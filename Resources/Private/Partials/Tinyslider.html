@@ -12,7 +12,7 @@
 
         <f:for each="{items}" as="item" iteration="iterator">
             <f:render partial="Item/Tinyslider" section="{layout}"
-                      arguments="{item: item, settings: settings, iterator:iterator}"/>
+                      arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
         </f:for>
 
     </div>
