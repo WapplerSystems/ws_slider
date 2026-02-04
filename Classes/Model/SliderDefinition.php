@@ -31,8 +31,6 @@ class SliderDefinition
          */
         $currentContentObject = $request->getAttribute('currentContentObject');
 
-        debug($this->configuration, 'SliderDefinition configuration');
-
         $viewFactoryData = new ViewFactoryData(
             templateRootPaths: $this->configuration['settings']['view']['templateRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Templates/'],
             partialRootPaths: $this->configuration['settings']['view']['partialRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Partials/'],
