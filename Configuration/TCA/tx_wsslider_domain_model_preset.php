@@ -38,9 +38,6 @@ return [
         'bootstrap' => [
             'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:sheet.bootstrap,--palette--;;paletteCore,bootstrap'
         ],
-        'owl' => [
-            'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:sheet.owl,--palette--;;paletteCore,owl'
-        ],
         'slick' => [
             'showitem' => '--div--;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.slick,--palette--;;paletteCore,slick'
         ],
@@ -84,7 +81,6 @@ return [
                 'items' => [
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.bootstrap', 'bootstrap', 'ext-wsslider-preset-type-bootstrap'],
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.flexslider', 'flexslider', 'ext-wsslider-preset-type-flexslider'],
-                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.owl', 'owl', 'ext-wsslider-preset-type-owl'],
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.slick', 'slick', 'ext-wsslider-preset-type-slick'],
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.tinyslider', 'tinyslider', 'ext-wsslider-preset-type-tinyslider'],
                     ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.swiper', 'swiper', 'ext-wsslider-preset-type-swiper'],

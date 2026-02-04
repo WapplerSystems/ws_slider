@@ -103,19 +103,12 @@ class SwiperFactory extends AbstractSliderFactory
         'observer' => false,
         'a11y' => [
             'enabled' => true,
-            'prevSlideMessage' => 'Previous slide',
-            'nextSlideMessage' => 'Next slide',
-            'firstSlideMessage' => 'This is the first slide',
-            'lastSlideMessage' => 'This is the last slide',
-            'paginationBulletMessage' => 'Go to slide {{index}}',
             'notificationClass' => 'swiper-notification',
             'containerMessage' => null,
             'containerRoleDescriptionMessage' => null,
             'itemRoleDescriptionMessage' => null,
-            'slideLabelMessage' => '{{index}} / {{slidesLength}}',
         ],
         'autoplay' => [
-            'enabled' => true,
             'delay' => 3000,
             'waitForTransition' => true,
             'disableOnInteraction' => true,
@@ -173,6 +166,7 @@ class SwiperFactory extends AbstractSliderFactory
             'eventsTarget' => 'container',
         ],
         'navigation' => [
+            'enabled' => true,
             'nextEl' => '.swiper-button-next',
             'prevEl' => '.swiper-button-prev',
             'hideOnClick' => true,
@@ -240,8 +234,7 @@ class SwiperFactory extends AbstractSliderFactory
     public function build(array $options, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
 
-
-        $options = $this->mergeOptions([
+        $jsOptions = $this->mergeOptions([
             'a11y' => [
                 'enabled' => true,
                 'prevSlideMessage' => $this->getParameter($options, 'a11y.prevSlideMessage'),
@@ -257,9 +250,10 @@ class SwiperFactory extends AbstractSliderFactory
             ],
         ]);
 
-        $this->sliderPrototype->setOptions($options);
 
-        $jsOptions = $this->js_encode($options);
+        $this->sliderPrototype->setOptions($jsOptions);
+
+        $jsOptions = $this->js_encode($jsOptions);
         $js = '';
         $onOptions = '';
         if ($configuration['parameters']['autoplayProgress'] ?? false) {

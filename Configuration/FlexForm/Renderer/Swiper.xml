@@ -13,568 +13,62 @@
 
                 <type>array</type>
                 <el>
-                    <settings.js.mode>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.mode</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.mode.description
-                        </description>
+                    <settings.autoHeight>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoHeight</label>
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.mode</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.carousel
-                                    </numIndex>
-                                    <numIndex index="value">carousel</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.gallery
-                                    </numIndex>
-                                    <numIndex index="value">gallery</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
+                            <type>check</type>
                         </config>
+                    </settings.autoHeight>
 
-                    </settings.js.mode>
-
-                    <settings.js.axis>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.axis</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.axis.description
-                        </description>
+                    <settings.autoplay.active>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay</label>
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.axis</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.horizontal
-                                    </numIndex>
-                                    <numIndex index="value">horizontal</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.vertical
-                                    </numIndex>
-                                    <numIndex index="value">vertical</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
+                            <type>check</type>
                         </config>
-
-                    </settings.js.axis>
-
-                    <settings.js.items>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.items</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.items.description
-                        </description>
+                    </settings.autoplay.active>
+                    <settings.autoplay.delay>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.delay</label>
                         <config>
                             <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.items</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
-
-                    </settings.js.items>
-
-                    <settings.js.slideBy>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.slideBy</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.slideBy.description
-                        </description>
+                    </settings.autoplay.delay>
+                    <settings.autoplay.disableOnInteraction>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.disableOnInteraction</label>
                         <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.slideBy</typoscriptPath>
-                            <eval>num,trim</eval>
+                            <type>check</type>
+                            <default>1</default>
                         </config>
-
-                    </settings.js.slideBy>
-
-                    <settings.js.center>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.center</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.center.description
-                        </description>
+                    </settings.autoplay.disableOnInteraction>
+                    <settings.autoplay.pauseOnMouseEnter>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.pauseOnMouseEnter</label>
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.center</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
+                            <type>check</type>
+                            <default>0</default>
                         </config>
-
-                    </settings.js.center>
-
-                    <settings.js.speed>
-
-                        <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animationSpeed
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.speed.description
-                        </description>
+                    </settings.autoplay.pauseOnMouseEnter>
+                    <settings.autoplay.reverseDirection>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.reverseDirection</label>
                         <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.speed</typoscriptPath>
-                            <size>1</size>
-                            <eval>num,trim</eval>
+                            <type>check</type>
+                            <default>0</default>
                         </config>
-
-                    </settings.js.speed>
-
-                    <settings.js.autoplay>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplay.description
-                        </description>
+                    </settings.autoplay.reverseDirection>
+                    <settings.autoplay.stopOnLastSlide>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.stopOnLastSlide</label>
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplay</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
+                            <type>check</type>
+                            <default>0</default>
                         </config>
-
-                    </settings.js.autoplay>
-
-                    <settings.js.autoplayPosition>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayPosition
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayPosition.description
-                        </description>
+                    </settings.autoplay.stopOnLastSlide>
+                    <settings.autoplay.waitForTransition>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplay.waitForTransition</label>
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayPosition
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.top
-                                    </numIndex>
-                                    <numIndex index="value">top</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.bottom
-                                    </numIndex>
-                                    <numIndex index="value">bottom</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
+                            <type>check</type>
+                            <default>1</default>
                         </config>
+                    </settings.autoplay.waitForTransition>
 
-                    </settings.js.autoplayPosition>
 
-                    <settings.js.autoplayTimeout>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayTimeout
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayTimeout.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayTimeout
-                            </typoscriptPath>
-                            <size>1</size>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.autoplayTimeout>
-
-                    <settings.js.autoplayProgress>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayProgress
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayProgress.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayProgress</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-                    </settings.js.autoplayProgress>
-
-                    <settings.js.autoplayDirection>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayDirection
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayDirection.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayDirection
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.forward
-                                    </numIndex>
-                                    <numIndex index="value">forward</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.backward
-                                    </numIndex>
-                                    <numIndex index="value">backward</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.autoplayDirection>
-
-                    <settings.js.autoplayHoverPause>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayHoverPause
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayHoverPause.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayHoverPause
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.autoplayHoverPause>
-
-                    <settings.js.autoplayButtonOutput>
-
-                        <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayButtonOutput
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayButtonOutput.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayButtonOutput
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.autoplayButtonOutput>
-
-                    <settings.js.autoplayResetOnVisibility>
-
-                        <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoplayResetOnVisibility
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoplayResetOnVisibility.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayResetOnVisibility
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.autoplayResetOnVisibility>
-
-                    <settings.js.loop>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.loop.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.loop</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.loop>
-
-                    <settings.js.rewind>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.rewind</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.rewind.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.rewind</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.rewind>
-
-                    <settings.js.lazyload>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.lazyload.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.lazyload</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.lazyload>
-
-                    <settings.js.lazyloadSelector>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.lazyloadSelector
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.lazyloadSelector.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.lazyloadSelector
-                            </typoscriptPath>
-                            <size>12</size>
-                            <eval>trim</eval>
-                        </config>
-
-                    </settings.js.lazyloadSelector>
-
-                    <settings.js.freezable>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.freezable</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.freezable.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.freezable</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.freezable>
-
-                    <settings.js.disable>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.disable</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.disable.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.disable</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.disable>
-
-                    <settings.js.startIndex>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.startIndex</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.startIndex.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.startIndex</typoscriptPath>
-                            <size>1</size>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.startIndex>
                 </el>
             </ROOT>
         </swiper>
@@ -587,766 +81,17 @@
                 <type>array</type>
                 <el>
 
-
-
-
-
-                    <settings.js.nav>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.nav</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.nav.description
-                        </description>
+                    <settings.navigation.addIcons>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.navigation.addIcons</label>
                         <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.nav</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
+                            <type>check</type>
                         </config>
+                    </settings.navigation.addIcons>
 
-                    </settings.js.nav>
 
-                    <settings.js.navPosition>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.navPosition</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.navPosition.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navPosition</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.top
-                                    </numIndex>
-                                    <numIndex index="value">top</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.bottom
-                                    </numIndex>
-                                    <numIndex index="value">bottom</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.navPosition>
-
-                    <settings.js.navContainer>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.navContainer</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.navContainer.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navContainer
-                            </typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.navContainer>
-
-                    <settings.js.navAsThumbnails>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.navAsThumbnails
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.navAsThumbnails.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navAsThumbnails
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.navAsThumbnails>
-
-                    <settings.js.controls>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.controls</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.controls.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.controls</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.controls>
-
-                    <settings.js.controlsPosition>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.controlsPosition
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.controlsPosition.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.controlsPosition
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.top
-                                    </numIndex>
-                                    <numIndex index="value">top</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.bottom
-                                    </numIndex>
-                                    <numIndex index="value">bottom</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.controlsPosition>
-
-                    <settings.js.controlsContainer>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.controlsContainer
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.controlsContainer.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.controlsContainer
-                            </typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.controlsContainer>
-
-                    <settings.js.prevButton>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.customPrevButton
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.prevButton.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.prevButton</typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.prevButton>
-
-                    <settings.js.nextButton>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.customNextButton
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.nextButton.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.nextButton</typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.nextButton>
-
-                    <settings.js.arrowKeys>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.arrowKeys</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.arrowKeys.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.arrowKeys</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.arrowKeys>
                 </el>
             </ROOT>
         </navigation>
-
-        <layout>
-            <ROOT>
-
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.layout</sheetTitle>
-
-                <type>array</type>
-                <el>
-                    <settings.js.autoHeight>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoHeight.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoHeight</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.autoHeight>
-
-                    <settings.js.gutter>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.gutter</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.gutter.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.gutter</typoscriptPath>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.gutter>
-
-                    <settings.js.edgePadding>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.edgePadding</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.edgePadding.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.edgePadding</typoscriptPath>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.edgePadding>
-
-                    <settings.js.fixedWidth>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.fixedWidth</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.fixedWidth.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.fixedWidth</typoscriptPath>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.fixedWidth>
-
-                    <settings.js.autoWidth>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.autoWidth</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.autoWidth.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoWidth</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.autoWidth>
-
-                    <settings.js.viewportMax>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.viewportMax</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.viewportMax.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.viewportMax</typoscriptPath>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.viewportMax>
-
-                    <settings.js.nested>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.nested</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.nested.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.nested</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:inner
-                                    </numIndex>
-                                    <numIndex index="value">inner</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:outer
-                                    </numIndex>
-                                    <numIndex index="value">outer</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.nested>
-                </el>
-            </ROOT>
-        </layout>
-
-        <dragNdrop>
-            <ROOT>
-
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.dragNdrop</sheetTitle>
-
-                <type>array</type>
-                <el>
-
-                    <settings.js.allowSlideNext>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.allowSlideNext</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.allowSlideNext.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.allowSlideNext</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-                    </settings.js.allowSlideNext>
-
-
-                    <settings.js.touch>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.touch</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.touch.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.touch</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.touch>
-
-                    <settings.js.mouseDrag>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.mouseDrag</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.mouseDrag.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.mouseDrag</typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.mouseDrag>
-
-                    <settings.js.swipeAngle>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.swipeAngle</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.swipeAngle.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.swipeAngle</typoscriptPath>
-                            <size>1</size>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.swipeAngle>
-
-                    <settings.js.preventScrollOnTouch>
-
-                        <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.preventScrollOnTouch
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.preventScrollOnTouch.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.preventScrollOnTouch
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:force
-                                    </numIndex>
-                                    <numIndex index="value">force</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:auto
-                                    </numIndex>
-                                    <numIndex index="value">auto</numIndex>
-                                </numIndex>
-                                <numIndex index="2">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.preventScrollOnTouch>
-                </el>
-            </ROOT>
-        </dragNdrop>
-
-        <animation>
-            <ROOT>
-
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.animation</sheetTitle>
-
-                <type>array</type>
-                <el>
-                    <settings.js.animateIn>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateIn
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.animateIn.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.animateIn</typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.animateIn>
-
-                    <settings.js.animateOut>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animateOut
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.animateOut.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.animateOut</typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.animateOut>
-
-                    <settings.js.animateNormal>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.animateNormal
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.animateNormal.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.animateNormal
-                            </typoscriptPath>
-                            <size>12</size>
-                        </config>
-
-                    </settings.js.animateNormal>
-
-                    <settings.js.animateDelay>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.animateDelay</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.animateDelay.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.animateDelay
-                            </typoscriptPath>
-                            <size>1</size>
-                            <eval>num,trim</eval>
-                        </config>
-
-                    </settings.js.animateDelay>
-
-                    <settings.js.preventActionWhenRunning>
-
-                        <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.preventActionWhenRunning
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.preventActionWhenRunning.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.preventActionWhenRunning
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.preventActionWhenRunning>
-                </el>
-            </ROOT>
-        </animation>
-
-        <advanced>
-            <ROOT>
-
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.advanced</sheetTitle>
-
-                <type>array</type>
-                <el>
-                    <settings.js.onInit>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.onInit</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.onInit.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.onInit</typoscriptPath>
-                            <size>6</size>
-                            <eval>trim</eval>
-                        </config>
-
-                    </settings.js.onInit>
-
-                    <settings.js.useLocalStorage>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.useLocalStorage
-                        </label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.useLocalStorage.description
-                        </description>
-                        <config>
-                            <type>select</type>
-                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.useLocalStorage
-                            </typoscriptPath>
-                            <items>
-                                <numIndex index="0">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
-                                    </numIndex>
-                                    <numIndex index="value">true</numIndex>
-                                </numIndex>
-                                <numIndex index="1">
-                                    <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
-                                    </numIndex>
-                                    <numIndex index="value">false</numIndex>
-                                </numIndex>
-                            </items>
-                            <maxitems>1</maxitems>
-                            <size>1</size>
-                        </config>
-
-                    </settings.js.useLocalStorage>
-
-                    <settings.js.nonce>
-
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.nonce</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/swiper_csh_flexforms.xlf:swiper.settings.js.nonce.description
-                        </description>
-                        <config>
-                            <type>input</type>
-                            <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.nonce</typoscriptPath>
-                            <size>6</size>
-                            <eval>trim</eval>
-                        </config>
-
-                    </settings.js.nonce>
-                </el>
-            </ROOT>
-        </advanced>
 
         <responsive.dummy>
             <ROOT>
@@ -1355,7 +100,7 @@
 
                 <type>array</type>
                 <el>
-                    <settings.js.responsive.dummy.startIndex>
+                    <settings.responsive.dummy.startIndex>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.startIndex</label>
                         <config>
@@ -1366,9 +111,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.startIndex>
+                    </settings.responsive.dummy.startIndex>
 
-                    <settings.js.responsive.dummy.items>
+                    <settings.responsive.dummy.items>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.items</label>
                         <config>
@@ -1380,9 +125,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.items>
+                    </settings.responsive.dummy.items>
 
-                    <settings.js.responsive.dummy.slideBy>
+                    <settings.responsive.dummy.slideBy>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.slideBy</label>
                         <config>
@@ -1393,9 +138,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.slideBy>
+                    </settings.responsive.dummy.slideBy>
 
-                    <settings.js.responsive.dummy.speed>
+                    <settings.responsive.dummy.speed>
 
                         <label>
                             LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.animationSpeed
@@ -1408,9 +153,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.speed>
+                    </settings.responsive.dummy.speed>
 
-                    <settings.js.responsive.dummy.autoHeight>
+                    <settings.responsive.dummy.autoHeight>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight
                         </label>
@@ -1436,9 +181,9 @@
                             <size>1</size>
                         </config>
 
-                    </settings.js.responsive.dummy.autoHeight>
+                    </settings.responsive.dummy.autoHeight>
 
-                    <settings.js.responsive.dummy.fixedWidth>
+                    <settings.responsive.dummy.fixedWidth>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.fixedWidth</label>
                         <config>
@@ -1448,9 +193,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.fixedWidth>
+                    </settings.responsive.dummy.fixedWidth>
 
-                    <settings.js.responsive.dummy.edgePadding>
+                    <settings.responsive.dummy.edgePadding>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.edgePadding</label>
                         <config>
@@ -1460,9 +205,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.edgePadding>
+                    </settings.responsive.dummy.edgePadding>
 
-                    <settings.js.responsive.dummy.gutter>
+                    <settings.responsive.dummy.gutter>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.gutter</label>
                         <config>
@@ -1472,9 +217,9 @@
                             <eval>num,trim</eval>
                         </config>
 
-                    </settings.js.responsive.dummy.gutter>
+                    </settings.responsive.dummy.gutter>
 
-                    <settings.js.responsive.dummy.center>
+                    <settings.responsive.dummy.center>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.center</label>
                         <config>
@@ -1499,9 +244,9 @@
                             <size>1</size>
                         </config>
 
-                    </settings.js.responsive.dummy.center>
+                    </settings.responsive.dummy.center>
 
-                    <settings.js.responsive.dummy.controls>
+                    <settings.responsive.dummy.controls>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.controls</label>
                         <config>
@@ -1526,9 +271,9 @@
                             <size>1</size>
                         </config>
 
-                    </settings.js.responsive.dummy.controls>
+                    </settings.responsive.dummy.controls>
 
-                    <settings.js.responsive.dummy.disable>
+                    <settings.responsive.dummy.disable>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:settings.disable</label>
                         <config>
@@ -1553,7 +298,7 @@
                             <size>1</size>
                         </config>
 
-                    </settings.js.responsive.dummy.disable>
+                    </settings.responsive.dummy.disable>
 
                 </el>
             </ROOT>

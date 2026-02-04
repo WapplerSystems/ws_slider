@@ -1,7 +1,5 @@
 plugin.tx_wsslider.settings.renderer.swiper {
 
-  autoplayProgress = {$plugin.tx_wsslider.settings.swiper.autoplayProgress}
-
 
 
   navText {

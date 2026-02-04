@@ -8,7 +8,16 @@
 
     <f:flashMessages queueIdentifier="core.template.flashMessages"/>
 
-    <wsslider:render renderer="{sliderSettings.renderer}" items="{items}" layout="{sliderSettings.layout}" options="{sliderSettings.parameters}" settings="{settings}" />
+    <f:if condition="{presetNotFound}">
+        <f:then>
+            <div class="alert alert-danger">
+                Preset not found
+            </div>
+        </f:then>
+        <f:else>
+            <wsslider:render renderer="{sliderSettings.renderer}" items="{items}" layout="{sliderSettings.layout}" options="{options}" settings="{settings}" />
+        </f:else>
+    </f:if>
 
 </f:section>
 

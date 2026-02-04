@@ -29,11 +29,11 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
 
     protected function getParameter(array $configuration, string $parameterName) {
 
-        $renderer = $configuration['renderer'] ?? 'Default';
-        $xlfFilename = strtolower($renderer);
+        $className = get_class($this);
+        $className = substr($className, 32, -7);
+        $xlfFilename = strtolower($className);
         $parameters = $configuration['parameters'] ?? [];
-
-        return LocalizationUtility::translate('LLL:EXT:ws_slider/Resources/Private/Language/' . $xlfFilename . '.xlf:settings.' . $parameterName) ?? $parameters[$parameterName] ?? null;
+        return LocalizationUtility::translate('LLL:EXT:ws_slider/Resources/Private/Language/' . $xlfFilename . '.xlf:options.' . $parameterName) ?? $parameters[$parameterName] ?? null;
     }
 
     protected function mergeOptions(array $options)

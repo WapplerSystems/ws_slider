@@ -33,23 +33,52 @@
 				<source>CSS3 animation Easing</source>
 			</trans-unit>
 
-			<trans-unit id="settings.a11y.nextSlideMessage">
+			<trans-unit id="options.a11y.nextSlideMessage">
 				<source>Next slide</source>
 			</trans-unit>
-			<trans-unit id="settings.a11y.prevSlideMessage">
+			<trans-unit id="options.a11y.prevSlideMessage">
 				<source>Previous slide</source>
 			</trans-unit>
-			<trans-unit id="settings.a11y.firstSlideMessage">
+			<trans-unit id="options.a11y.firstSlideMessage">
 				<source>This is the first slide</source>
 			</trans-unit>
-			<trans-unit id="settings.a11y.lastSlideMessage">
+			<trans-unit id="options.a11y.lastSlideMessage">
 				<source>This is the last slide</source>
 			</trans-unit>
-			<trans-unit id="settings.a11y.paginationBulletMessage">
+			<trans-unit id="options.a11y.paginationBulletMessage">
 				<source>Go to slide {{index}}</source>
 			</trans-unit>
-			<trans-unit id="settings.a11y.slideLabelMessage">
+			<trans-unit id="options.a11y.slideLabelMessage">
 				<source>{{index}} / {{slidesLength}}</source>
+			</trans-unit>
+
+
+			<trans-unit id="settings.autoplay">
+				<source>Autoplay</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplay.delay">
+				<source>Delay</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplay.disableOnInteraction">
+				<source>Disable on interaction</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplay.pauseOnMouseEnter">
+				<source>Pause on mouse enter</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplay.reverseDirection">
+				<source>Reverse direction</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplay.stopOnLastSlide">
+				<source>Stop on last slide</source>
+			</trans-unit>
+			<trans-unit id="settings.autoplay.waitForTransition">
+				<source>Wait for transition</source>
+			</trans-unit>
+			<trans-unit id="settings.autoHeight">
+				<source>Auto height</source>
+			</trans-unit>
+			<trans-unit id="settings.navigation.addIcons">
+				<source>Add Icons</source>
 			</trans-unit>
 
 		</body>
