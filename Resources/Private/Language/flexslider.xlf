@@ -149,6 +149,11 @@
 			<trans-unit id="options.move">
 				<source>Number of elements, which should be moved in animation</source>
 			</trans-unit>
+
+
+			<trans-unit id="btn.more">
+				<source>More</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

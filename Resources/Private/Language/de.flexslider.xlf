@@ -142,6 +142,13 @@
       <trans-unit id="options.move" xml:space="preserve" approved="yes">
 				<source>Number of elements, which should be moved in animation</source>
 			<target state="final">Anzahl der Elemente, die in der Animation verschoben werden sollen</target></trans-unit>
-    </body>
+
+
+		<trans-unit id="btn.more">
+			<source>More</source>
+			<target>Mehr</target>
+		</trans-unit>
+
+	</body>
   </file>
 </xliff>

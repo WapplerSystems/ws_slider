@@ -40,7 +40,11 @@ plugin.tx_wsslider.settings.swiper {
 
   autoplay {
 
+    # cat=plugin.tx_wsslider.swiper/autoplay/a; type=options[true,false]; label=autoplay
+    active = true
 
+    # cat=plugin.tx_wsslider.swiper/autoplay/b; type=int+; label=Delay between transitions (in ms)
+    delay = 3000
 
   }
 

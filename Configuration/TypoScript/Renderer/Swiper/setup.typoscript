@@ -1,6 +1,13 @@
 plugin.tx_wsslider.settings.renderer.swiper {
 
+  autoHeight = {$plugin.tx_wsslider.settings.swiper.autoHeight}
 
+  autoplay {
+
+    active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}
+    delay = {$plugin.tx_wsslider.settings.swiper.autoplay.delay}
+
+  }
 
   navText {
     0 = TEXT
