@@ -3,12 +3,14 @@ declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\DataProcessing;
 
+use Psr\EventDispatcher\EventDispatcherInterface;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
+use WapplerSystems\WsSlider\Event\AfterSliderProcessedEvent;
 
 /**
  *
@@ -25,12 +27,15 @@ class SliderProcessor implements DataProcessorInterface
      */
     protected $flexFormService;
 
+    protected EventDispatcherInterface $eventDispatcher;
+
     /**
      * Constructor
      */
-    public function __construct()
+    public function __construct(EventDispatcherInterface $eventDispatcher)
     {
         $this->flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
+        $this->eventDispatcher = $eventDispatcher;
     }
 
     /**
@@ -115,6 +120,10 @@ class SliderProcessor implements DataProcessorInterface
         unset($settings['defaultRenderer']);
 
         $processedData['sliderSettings'] = $settings;
+
+        /** @var AfterSliderProcessedEvent $event */
+        $event = $this->eventDispatcher->dispatch(new AfterSliderProcessedEvent($cObj, $contentObjectConfiguration, $processorConfiguration, $processedData));
+        $processedData = $event->getProcessedData();
 
         return $processedData;
     }

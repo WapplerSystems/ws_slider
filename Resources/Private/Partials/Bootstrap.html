@@ -5,12 +5,12 @@
 
 <f:section name="Default">
 
-    <div id="{identifier}" class="carousel slide" data-bs-ride="{parameters.ride}">
-        <f:if condition="{parameters.indicators} && {items -> f:count()} > 1">
+    <div id="{identifier}" class="carousel slide" data-bs-ride="{options.ride}">
+        <f:if condition="{options.indicators} && {items -> f:count()} > 1">
             <div class="carousel-indicators">
                 <f:for each="{items}" as="item" iteration="iterator">
                     <button type="button" data-bs-target="#{identifier}" data-bs-slide-to="{iterator.index}"
-                            class="{f:if(condition:'{parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{options.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
+                            class="{f:if(condition:'{options.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{options.options.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
                 </f:for>
             </div>
         </f:if>
@@ -20,14 +20,14 @@
                           arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
             </f:for>
         </div>
-        <f:if condition="{parameters.control} && {items -> f:count()} > 1">
+        <f:if condition="{options.control} && {items -> f:count()} > 1">
             <button class="carousel-control-prev" type="button" data-bs-target="#{identifier}" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden"><f:translate key="LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:btn.previous" /></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#{identifier}" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden"><f:translate key="LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:btn.next" /></span>
             </button>
         </f:if>
     </div>

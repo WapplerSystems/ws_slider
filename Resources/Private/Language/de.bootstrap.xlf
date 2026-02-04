@@ -48,12 +48,15 @@
 
 			<trans-unit id="btn.previous">
 				<source>Previous</source>
+				<target>Zurück</target>
 			</trans-unit>
 			<trans-unit id="btn.next">
 				<source>Next</source>
+				<target>Weiter</target>
 			</trans-unit>
 			<trans-unit id="btn.more">
 				<source>More</source>
+				<target>Mehr</target>
 			</trans-unit>
 
 		</body>

@@ -26,3 +26,6 @@ services:
 
   WapplerSystems\WsSlider\Hooks\ItemsProcFunc:
     public: true
+
+  WapplerSystems\WsSlider\DataProcessing\SliderProcessor:
+    public: true

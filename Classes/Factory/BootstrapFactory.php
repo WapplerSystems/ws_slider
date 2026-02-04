@@ -30,6 +30,14 @@ class BootstrapFactory extends AbstractSliderFactory
 
         $options = $this->mergeOptions($options);
 
+        if ($options['ride'] ?? false) {
+            if ($options['ride'] === true) {
+                $options['ride'] = 'true';
+            }
+        } else {
+            $options['ride'] = 'false';
+        }
+
         $this->sliderPrototype->setOptions($options);
 
         return $this->sliderPrototype;

@@ -4,7 +4,7 @@
 
 <f:section name="Default">
 
-    <div class="carousel-item carousel-item-{item.data.style_class}{f:if(condition:iterator.isFirst,then:' active')}">
+    <div class="carousel-item carousel-item-{item.data.style_class}{f:if(condition:iterator.isFirst,then:' active')}" data-bs-interval="{options.interval}">
         <f:if condition="{item.foregroundMedia.0}">
 
             <f:image class="img-fluid" image="{item.foregroundMedia.0}"/>
@@ -24,7 +24,7 @@
             <f:if condition="{item.data.link}">
                 <div class="caption-link">
                     <f:link.typolink parameter="{item.data.link}">
-                        <f:translate key="more">More</f:translate>
+                        <f:translate key="more"><f:translate key="LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:btn.more" /></f:translate>
                     </f:link.typolink>
                 </div>
             </f:if>

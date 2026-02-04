@@ -3,11 +3,13 @@ declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\Model;
 
+use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use TYPO3\CMS\Core\View\ViewFactoryData;
 use TYPO3\CMS\Core\View\ViewFactoryInterface;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+use WapplerSystems\WsSlider\Event\BeforeSliderRenderEvent;
 
 #[Autoconfigure(public: true, shared: false)]
 class SliderDefinition
@@ -21,7 +23,8 @@ class SliderDefinition
     private array $configuration = [];
 
     public function __construct(
-        private readonly ViewFactoryInterface $viewFactory
+        private readonly ViewFactoryInterface $viewFactory,
+        private readonly EventDispatcherInterface $eventDispatcher
     ) {}
 
     public function render(?ServerRequestInterface $request = null): string
@@ -31,20 +34,32 @@ class SliderDefinition
          */
         $currentContentObject = $request->getAttribute('currentContentObject');
 
+        $event = $this->eventDispatcher->dispatch(new BeforeSliderRenderEvent(
+            $request,
+            $this->configuration,
+            $this->options,
+            $this->javascript
+        ));
+
+        $configuration = $event->getConfiguration();
+        $options = $event->getOptions();
+        $javascript = $event->getJavascript();
+
         $viewFactoryData = new ViewFactoryData(
-            templateRootPaths: $this->configuration['settings']['view']['templateRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Templates/'],
-            partialRootPaths: $this->configuration['settings']['view']['partialRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Partials/'],
-            layoutRootPaths: $this->configuration['settings']['view']['layoutRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Layouts/'],
+            templateRootPaths: $configuration['settings']['view']['templateRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Templates/'],
+            partialRootPaths: $configuration['settings']['view']['partialRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Partials/'],
+            layoutRootPaths: $configuration['settings']['view']['layoutRootPaths'] ?? ['EXT:ws_slider/Resources/Private/Layouts/'],
             request: $request,
         );
 
 
         $view = $this->viewFactory->create($viewFactoryData);
 
-        $view->assignMultiple($this->configuration);
-        $view->assign('inlineJavascript', $this->javascript);
+        $view->assignMultiple($configuration);
+        $view->assign('inlineJavascript', $javascript);
         $view->assign('data', $currentContentObject->data);
-        $view->assign('options', $this->options);
+        $view->assign('options', $options);
+
 
         return $view->render('Slider.html');
     }
