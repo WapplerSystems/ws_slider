@@ -23,6 +23,12 @@ services:
         identifier: 'ws-slider/set-data-structure-identifier'
         method: 'setDataStructureIdentifier'
         event: TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureIdentifierInitializedEvent
+      - name: event.listener
+        identifier: 'ws-slider/after-flex-form-data-structure-parsed-event'
+        method: 'afterFlexFormDataStructureParsedEvent'
+        event: TYPO3\CMS\Core\Configuration\Event\AfterFlexFormDataStructureParsedEvent
+
+
 
   WapplerSystems\WsSlider\Hooks\ItemsProcFunc:
     public: true

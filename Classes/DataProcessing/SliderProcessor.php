@@ -68,6 +68,8 @@ class SliderProcessor implements DataProcessorInterface
 
             $options = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
             $options = self::removeDotsFromTS($options);
+            //debug($options, 'ts options');
+            //debug($preset[$rendererKey]);
 
             $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
             $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);

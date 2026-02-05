@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace WapplerSystems\WsSlider\FlexForm;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Core\Configuration\Event\AfterFlexFormDataStructureParsedEvent;
 use TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureIdentifierInitializedEvent;
 use TYPO3\CMS\Core\Configuration\Event\BeforeFlexFormDataStructureParsedEvent;
 use TYPO3\CMS\Core\Localization\LanguageService;
@@ -70,7 +71,7 @@ final class FlexFormParsingModifyEventListener
 
             $typoscript = $this->typoScriptService->getTypoScript($row['pid']);
 
-            $tsSettings = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),'plugin.tx_wsslider.settings');
+            $tsSettings = TypoScriptService::getTypoScriptValueByPath($typoscript,'plugin.tx_wsslider.settings');
             $defaultValue = null;
             if (isset($tsSettings['defaultRenderer'])) $defaultValue = $tsSettings['defaultRenderer'];
 
@@ -246,6 +247,14 @@ final class FlexFormParsingModifyEventListener
 
         return $finishersDefinition;
     }
+
+
+    public function afterFlexFormDataStructureParsedEvent(AfterFlexFormDataStructureParsedEvent $event): void
+    {
+
+
+    }
+
 
     /**
      * @return LanguageService

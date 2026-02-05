@@ -22,7 +22,6 @@
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.animation</typoscriptPath>
-                            <eval>null</eval>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
@@ -37,6 +36,7 @@
                                     <numIndex index="value">slide</numIndex>
                                 </numIndex>
                             </items>
+                            <nullable>1</nullable>
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
