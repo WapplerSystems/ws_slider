@@ -32,6 +32,9 @@
 			<trans-unit id="options.cssEase">
 				<source>CSS3 animation Easing</source>
 			</trans-unit>
+			<trans-unit id="options.effect">
+				<source>Effect</source>
+			</trans-unit>
 
 			<trans-unit id="options.a11y.nextSlideMessage">
 				<source>Next slide</source>

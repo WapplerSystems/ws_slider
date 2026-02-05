@@ -4,6 +4,7 @@ namespace WapplerSystems\WsSlider\Factory;
 
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
+use TYPO3\CMS\Core\Utility\ArrayUtility;
 use WapplerSystems\WsSlider\Model\SliderDefinition;
 
 #[Autoconfigure(public: true, shared: false)]
@@ -234,7 +235,9 @@ class SwiperFactory extends AbstractSliderFactory
     public function build(array $options, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
 
-        $jsOptions = $this->mergeOptions([
+        $jsOptions = $this->mergeOptions($options);
+
+        ArrayUtility::mergeRecursiveWithOverrule($jsOptions, [
             'a11y' => [
                 'enabled' => true,
                 'prevSlideMessage' => $this->getParameter($options, 'a11y.prevSlideMessage'),
@@ -248,8 +251,7 @@ class SwiperFactory extends AbstractSliderFactory
                 'itemRoleDescriptionMessage' => null,
                 'slideLabelMessage' => $this->getParameter($options, 'a11y.slideLabelMessage'),
             ],
-        ]);
-
+        ], true, false);
 
         $this->sliderPrototype->setOptions($jsOptions);
 

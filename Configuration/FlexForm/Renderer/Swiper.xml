@@ -22,7 +22,7 @@
 
 
                     <settings.effect>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.disableOnInteraction</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.effect</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -33,7 +33,7 @@
                                     <numIndex index="value">slide</numIndex>
                                 </numIndex>
                                 <numIndex index="1">
-                                    <numIndex index="label">cube</numIndex>
+                                    <numIndex index="label">fade</numIndex>
                                     <numIndex index="value">fade</numIndex>
                                 </numIndex>
                                 <numIndex index="2">

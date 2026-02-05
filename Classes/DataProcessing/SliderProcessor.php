@@ -72,7 +72,7 @@ class SliderProcessor implements DataProcessorInterface
             $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
             $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
             //debug($flexformOptions, 'flexformOptions');
-            ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
+            ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
 
             //debug($options, 'options');
 
@@ -102,7 +102,7 @@ class SliderProcessor implements DataProcessorInterface
             if (is_string($flexformData)) {
                 $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($flexformData);
                 $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
-                ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
+                ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
 
             }
 
