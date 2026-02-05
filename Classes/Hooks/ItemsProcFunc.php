@@ -28,7 +28,7 @@ class ItemsProcFunc
      *
      * @param array &$config configuration array
      */
-    public function userTemplateLayout(array $config, $pObj)
+    public function userTemplateLayout(array $config, $pObj): void
     {
         $currentColPos = $config['row']['colPos'];
         $pageId = $this->getPageId($config['row']['pid']);
@@ -36,7 +36,7 @@ class ItemsProcFunc
         $rendererTyposcriptPath = $config['config']['rendererTyposcriptPath'];
 
         $typoscript = $this->typoScriptService->getTypoScript($pageId, null, 0, [], $config['site']);
-        $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$rendererTyposcriptPath);
+        $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript,$rendererTyposcriptPath);
         if ($currentRenderer === '' && $defaultRenderer !== '') $currentRenderer = $defaultRenderer;
 
         if ($currentRenderer === '') return;
@@ -50,7 +50,7 @@ class ItemsProcFunc
                     self::getLanguageService()->sL($layout[0]),
                     $layout[1]
                 ];
-                array_push($config['items'], $additionalLayout);
+                $config['items'][] = $additionalLayout;
             }
         }
     }
@@ -63,7 +63,7 @@ class ItemsProcFunc
      * @param string $currentRenderer
      * @return array
      */
-    protected function reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer)
+    protected function reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer): array
     {
         $currentColPos = (int)$currentColPos;
         $restrictions = [];
@@ -103,7 +103,7 @@ class ItemsProcFunc
      * @param array $config tca items
      * @param string $tableName table name
      */
-    protected function removeNonValidOrderFields(array &$config, $tableName)
+    protected function removeNonValidOrderFields(array &$config, $tableName): void
     {
         $allowedFields = array_keys($GLOBALS['TCA'][$tableName]['columns']);
 
@@ -119,9 +119,9 @@ class ItemsProcFunc
      * Get tt_content record
      *
      * @param int $uid
-     * @return array
+     * @return array|null
      */
-    protected function getContentElementRow($uid)
+    protected function getContentElementRow($uid): ?array
     {
         return BackendUtilityCore::getRecord('tt_content', $uid);
     }
@@ -132,7 +132,7 @@ class ItemsProcFunc
      * @param int $pid
      * @return int
      */
-    protected function getPageId($pid)
+    protected function getPageId($pid): int
     {
         $pid = (int)$pid;
 

@@ -76,6 +76,8 @@ class SliderProcessor implements DataProcessorInterface
 
             //debug($options, 'options');
 
+            $this->convertStringOptionsToBoolean($options);
+
         } else {
 
             $settings['renderer'] = $settings['defaultRenderer'];
@@ -103,6 +105,8 @@ class SliderProcessor implements DataProcessorInterface
                 ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
 
             }
+
+            $this->convertStringOptionsToBoolean($options);
         }
 
         $processedData['options'] = $options;
@@ -164,7 +168,7 @@ class SliderProcessor implements DataProcessorInterface
         return $out;
     }
 
-    private function migrateFlexFormOptions(array $flexformOptions)
+    private function migrateFlexFormOptions(array $flexformOptions): array
     {
         if (isset($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
@@ -180,6 +184,23 @@ class SliderProcessor implements DataProcessorInterface
         }
 
         return $flexformOptions;
+    }
+
+    private function convertStringOptionsToBoolean(&$options)
+    {
+        foreach ($options as $key => $value) {
+            if (is_array($value)) {
+                $this->convertStringOptionsToBoolean($options[$key]);
+            } else {
+                if (is_string($value)) {
+                    if (strtolower($value) === 'true') {
+                        $options[$key] = true;
+                    } elseif (strtolower($value) === 'false') {
+                        $options[$key] = false;
+                    }
+                }
+            }
+        }
     }
 
 }

@@ -61,6 +61,7 @@ class TinysliderFactory extends AbstractSliderFactory
     {
 
         $options = $this->mergeOptions($options);
+        $options['container'] = '#' . $identifier;
 
         $this->sliderPrototype->setOptions($options);
 
