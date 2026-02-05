@@ -70,7 +70,7 @@ final class FlexFormParsingModifyEventListener
 
             $typoscript = $this->typoScriptService->getTypoScript($row['pid']);
 
-            $tsSettings = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),'plugin.tx_wsslider.settings');
+            $tsSettings = TypoScriptService::getTypoScriptValueByPath($typoscript,'plugin.tx_wsslider.settings');
             $defaultValue = null;
             if (isset($tsSettings['defaultRenderer'])) $defaultValue = $tsSettings['defaultRenderer'];
 
