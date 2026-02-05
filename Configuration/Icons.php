@@ -12,10 +12,6 @@ return [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
         'source' => 'EXT:ws_slider/Resources/Public/Icons/flexslider.png',
     ],
-    'ext-wsslider-preset-type-owl' => [
-        'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-        'source' => 'EXT:ws_slider/Resources/Public/Icons/owl.png',
-    ],
     'ext-wsslider-preset-type-slick' => [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
         'source' => 'EXT:ws_slider/Resources/Public/Icons/slick.png',
@@ -27,5 +23,9 @@ return [
     'ext-wsslider-preset-type-bootstrap' => [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
         'source' => 'EXT:ws_slider/Resources/Public/Icons/bootstrap.png',
+    ],
+    'ext-wsslider-preset-type-swiper' => [
+        'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+        'source' => 'EXT:ws_slider/Resources/Public/Icons/swiper.svg',
     ],
 ];

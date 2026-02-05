@@ -169,3 +169,5 @@ ExtensionManagementUtility::addPiFlexFormValue(
 );
 
 
+$GLOBALS['TCA']['tt_content']['types']['ws_slider']['previewRenderer'] =
+    \WapplerSystems\WsSlider\Preview\WsSliderPreviewRenderer::class;

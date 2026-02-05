@@ -7,8 +7,8 @@
 
 Currently the following slider scripts are provided:
 
+* [Swiper](https://swiperjs.com/)
 * [FlexSlider 2](http://flexslider.woothemes.com/)
-* [Owl](https://owlcarousel2.github.io/OwlCarousel2/)
 * [TinySlider 2](https://ganlanyuan.github.io/tiny-slider/)
 * [Slick](https://kenwheeler.github.io/slick/)
 * [Bootstrap](https://getbootstrap.com/docs/5.3/components/carousel/)

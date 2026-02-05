@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+
+<f:section name="Main">
+
+    <f:flashMessages queueIdentifier="core.template.flashMessages"/>
+
+    <f:if condition="{presetNotFound}">
+        <f:then>
+            <div class="alert alert-danger">
+                Preset not found
+            </div>
+        </f:then>
+        <f:else>
+            <wsslider:render renderer="{sliderSettings.renderer}" items="{items}" layout="{sliderSettings.layout}" options="{options}" settings="{settings}" />
+        </f:else>
+    </f:if>
+
+</f:section>
+
+
+</html>

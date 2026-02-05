@@ -32,7 +32,7 @@ CREATE TABLE tx_wsslider_domain_model_preset
 
 	flexslider text                 DEFAULT NULL,
 	bootstrap  text                 DEFAULT NULL,
-	owl        text                 DEFAULT NULL,
+	swiper     text                 DEFAULT NULL,
 	slick      text                 DEFAULT NULL,
 	tinyslider text                 DEFAULT NULL
 

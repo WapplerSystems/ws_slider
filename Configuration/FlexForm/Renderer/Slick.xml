@@ -13,7 +13,7 @@
                 <el>
                     <settings.js.autoplay>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplay
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.autoplay
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.autoplay.description
@@ -46,7 +46,7 @@
                     <settings.js.autoplaySpeed>
 
                         <label>
-                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoplaySpeed
+                            LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.autoplaySpeed
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.autoplaySpeed.description
@@ -62,7 +62,7 @@
 
                     <settings.js.infinite>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.loop</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.loop</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.infinite.description
                         </description>
@@ -93,7 +93,7 @@
 
                     <settings.js.initialSlide>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.initialSlide</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.initialSlide</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.initialSlide.description
                         </description>
@@ -108,7 +108,7 @@
 
                     <settings.js.lazyLoad>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.lazyLoad
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.lazyLoad
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.lazyLoad.description
@@ -134,7 +134,7 @@
                 <el>
                     <settings.js.swipe>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.swipe</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.swipe</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.swipe.description
                         </description>
@@ -164,7 +164,7 @@
 
                     <settings.js.swipeToSlide>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.swipeToSlide</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.swipeToSlide</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.swipeToSlide.description
                         </description>
@@ -194,7 +194,7 @@
 
                     <settings.js.touchMove>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.touchMove</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.touchMove</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.touchMove.description
                         </description>
@@ -224,7 +224,7 @@
 
                     <settings.js.touchThreshold>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.touchThreshold</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.touchThreshold</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.touchThreshold.description
                         </description>
@@ -239,7 +239,7 @@
 
                     <settings.js.accessibility>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.accessibility</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.accessibility</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.accessibility.description
                         </description>
@@ -269,7 +269,7 @@
 
                     <settings.js.arrows>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.arrows</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.arrows</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.arrows.description
                         </description>
@@ -299,7 +299,7 @@
 
                     <!--<settings.js.appendArrows>
 
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.appendArrows</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.appendArrows</label>
                             <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.appendArrows.description</description>
                             <config>
                                 <type>input</type>
@@ -312,7 +312,7 @@
 
                     <settings.js.appendDots>
 
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.appendDots</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.appendDots</label>
                             <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.appendDots.description</description>
                             <config>
                                 <type>input</type>
@@ -325,7 +325,7 @@
 
                     <settings.js.prevArrow>
 
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.prevArrow</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.prevArrow</label>
                             <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.prevArrow.description</description>
                             <config>
                                 <type>input</type>
@@ -338,7 +338,7 @@
 
                     <settings.js.nextArrow>
 
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.nextArrow</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.nextArrow</label>
                             <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.nextArrow.description</description>
                             <config>
                                 <type>input</type>
@@ -351,7 +351,7 @@
 
                     <settings.js.dots>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.dots</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.dots</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.dots.description
                         </description>
@@ -381,7 +381,7 @@
 
                     <settings.js.dotsClass>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.dotsClass</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.dotsClass</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.dotsClass.description
                         </description>
@@ -396,7 +396,7 @@
 
                     <settings.js.draggable>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.draggable</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.draggable</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.draggable.description
                         </description>
@@ -426,7 +426,7 @@
 
                     <settings.js.pauseOnFocus>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.pauseOnFocus</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.pauseOnFocus</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.pauseOnFocus.description
                         </description>
@@ -456,7 +456,7 @@
 
                     <settings.js.pauseOnHover>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.pauseOnHover</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.pauseOnHover</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.pauseOnHover.description
                         </description>
@@ -486,7 +486,7 @@
 
                     <settings.js.pauseOnDotsHover>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.pauseOnDotsHover</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.pauseOnDotsHover</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.pauseOnDotsHover.description
                         </description>
@@ -516,7 +516,7 @@
 
                     <settings.js.verticalSwiping>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.verticalSwiping</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.verticalSwiping</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.verticalSwiping.description
                         </description>
@@ -546,7 +546,7 @@
 
                     <settings.js.rtl>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.rtl</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.rtl</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.rtl.description
                         </description>
@@ -576,7 +576,7 @@
 
                     <settings.js.asNavFor>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.asNavFor</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.asNavFor</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.asNavFor.description
                         </description>
@@ -601,7 +601,7 @@
                 <el>
                     <settings.js.slidesToShow>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesToShow</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.slidesToShow</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesToShow.description
                         </description>
@@ -617,7 +617,7 @@
 
                     <settings.js.slidesToScroll>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesToScroll</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.slidesToScroll</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesToScroll.description
                         </description>
@@ -632,7 +632,7 @@
                     `
                     <settings.js.mobileFirst>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.mobileFirst</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.mobileFirst</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.mobileFirst.description
                         </description>
@@ -662,7 +662,7 @@
 
                     <settings.js.adaptiveHeight>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.autoHeight
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.autoHeight
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.adaptiveHeight.description
@@ -693,7 +693,7 @@
 
                     <settings.js.variableWidth>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.variableWidth</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.variableWidth</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.variableWidth.description
                         </description>
@@ -723,7 +723,7 @@
 
                     <settings.js.vertical>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.vertical</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.vertical</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.vertical.description
                         </description>
@@ -753,7 +753,7 @@
 
                     <settings.js.centerMode>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.centerMode</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.centerMode</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.centerMode.description
                         </description>
@@ -783,7 +783,7 @@
 
                     <settings.js.centerPadding>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.centerPadding</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.centerPadding</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.centerPadding.description
                         </description>
@@ -798,7 +798,7 @@
 
                     <settings.js.focusOnSelect>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.focusOnSelect</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.focusOnSelect</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.focusOnSelect.description
                         </description>
@@ -828,7 +828,7 @@
 
                     <settings.js.edgeFriction>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.edgeFriction</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.edgeFriction</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.edgeFriction.description
                         </description>
@@ -843,7 +843,7 @@
 
                     <settings.js.respondTo>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.respondTo</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.respondTo</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.respondTo.description
                         </description>
@@ -858,7 +858,7 @@
 
                     <settings.js.rows>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.rows</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.rows</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.rows.description
                         </description>
@@ -873,7 +873,7 @@
 
                     <settings.js.slidesPerRow>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesPerRow</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.slidesPerRow</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesPerRow.description
                         </description>
@@ -899,7 +899,7 @@
                 <el>
                     <settings.js.useCSS>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.useCSS</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.useCSS</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.useCSS.description
                         </description>
@@ -929,7 +929,7 @@
 
                     <settings.js.useTransform>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.useTransform</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.useTransform</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.useTransform.description
                         </description>
@@ -959,7 +959,7 @@
 
                     <settings.js.easing>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.easing</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.easing</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.easing.description
                         </description>
@@ -974,7 +974,7 @@
 
                     <settings.js.cssEase>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.cssEase</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.cssEase</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.cssEase.description
                         </description>
@@ -989,7 +989,7 @@
 
                     <!--<settings.js.customPaging>
 
-                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.customPaging</label>
+                            <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.customPaging</label>
                             <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.customPaging.description</description>
                             <config>
                                 <type>input</type>
@@ -1002,7 +1002,7 @@
 
                     <settings.js.fade>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.fade</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.fade</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.fade.description
                         </description>
@@ -1032,7 +1032,7 @@
 
                     <settings.js.speed>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.speed</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.speed</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.speed.description
                         </description>
@@ -1047,7 +1047,7 @@
 
                     <settings.js.waitForAnimate>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.waitForAnimate</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.waitForAnimate</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.waitForAnimate.description
                         </description>
@@ -1087,7 +1087,7 @@
                 <el>
                     <settings.js.zindex>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.zindex</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.zindex</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.zindex.description
                         </description>
@@ -1114,7 +1114,7 @@
 
                     <settings.js.responsive.dummy.settings.slidesToShow>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:settings.slidesToShow</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.slidesToShow</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>

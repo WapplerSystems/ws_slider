@@ -8,17 +8,16 @@
     <f:asset.script identifier="tinyslider" src="EXT:ws_slider/Resources/Public/JavaScript/TinySlider/tiny-slider.js" />
     <f:asset.css identifier="tinyslider" href="EXT:ws_slider/Resources/Public/CSS/TinySlider/tiny-slider.css" />
 
-    <div id="wsslider-{data.uid}" class="">
+    <div id="{identifier}" class="">
 
         <f:for each="{items}" as="item" iteration="iterator">
-            <f:render partial="Item/Tinyslider" section="{sliderSettings.layout}"
-                      arguments="{item: item, settings: settings, iterator:iterator}"/>
+            <f:render partial="Item/Tinyslider" section="{layout}"
+                      arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
         </f:for>
 
     </div>
 
-    <wsslider:addStartJavaScriptCode functionName="tns" variableName="slider-{data.uid}" name="wsslider-{data.uid}" defaultParameters="{sliderSettings.parameters}" overrideParameters="{container: '#wsslider-{data.uid}'}"/>
-
+    <f:asset.script identifier="{identifier}">{inlineJavascript}</f:asset.script>
 
 </f:section>
 

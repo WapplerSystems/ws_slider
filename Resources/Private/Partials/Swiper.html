@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      xmlns:wsslider="http://typo3.org/ns/WapplerSystems/WsSlider/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:section name="Default">
+
+    <f:asset.script identifier="swiper" src="EXT:ws_slider/Resources/Public/JavaScript/Swiper/swiper-bundle.js"/>
+    <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-bundle.css"/>
+    <f:asset.css identifier="swiper-addons" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-addons.css"/>
+
+    <div id="{identifier}" class="swiper" style="width: 100%;">
+
+        <div class="swiper-wrapper">
+            <f:for each="{items}" as="item" iteration="iterator">
+                <f:render partial="Item/Swiper" section="{layout}"
+                          arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
+            </f:for>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+
+        <f:if condition="{parameters.autoplayProgress}">
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </f:if>
+
+    </div>
+
+    <f:asset.script identifier="{identifier}">{inlineJavascript}</f:asset.script>
+
+</f:section>
+
+</html>

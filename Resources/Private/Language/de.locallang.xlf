@@ -81,10 +81,6 @@
 				<target state="final">TypoScript</target>
 			</trans-unit>
 			<!-- sheets -->
-			<trans-unit id="sheet.owl" approved="yes">
-				<source>Owl</source>
-				<target state="final">Owl</target>
-			</trans-unit>
 			<trans-unit id="sheet.navigation" approved="yes">
 				<source>Navigation</source>
 				<target state="final">Navigation</target>
@@ -118,87 +114,87 @@
 				<target state="final">Slick Slider</target>
 			</trans-unit>
 			<!-- common setting labels -->
-			<trans-unit id="settings.carousel">
+			<trans-unit id="options.carousel">
 				<source>Carousel</source>
 				<target>Karussel</target>
 			</trans-unit>
-			<trans-unit id="settings.gallery">
+			<trans-unit id="options.gallery">
 				<source>Gallery</source>
 				<target>Galerie</target>
 			</trans-unit>
-			<trans-unit id="settings.horizontal">
+			<trans-unit id="options.horizontal">
 				<source>Horizontal</source>
 				<target>Horizontal</target>
 			</trans-unit>
-			<trans-unit id="settings.vertical">
+			<trans-unit id="options.vertical">
 				<source>Vertical</source>
 				<target>Vertikal</target>
 			</trans-unit>
-			<trans-unit id="settings.common.layout" approved="yes">
+			<trans-unit id="options.common.layout" approved="yes">
 				<source>Layout</source>
 				<target state="final">Layout</target>
 			</trans-unit>
-			<trans-unit id="settings.common.autoplay" approved="yes">
+			<trans-unit id="options.common.autoplay" approved="yes">
 				<source>Autoplay</source>
 				<target state="final">Automatische Wiedergabe</target>
 			</trans-unit>
-			<trans-unit id="settings.common.lazyLoad" approved="yes">
+			<trans-unit id="options.common.lazyLoad" approved="yes">
 				<source>Lazy load</source>
 				<target state="final">Lazy Load</target>
 			</trans-unit>
-			<trans-unit id="settings.common.loop" approved="yes">
+			<trans-unit id="options.common.loop" approved="yes">
 				<source>Loop / Carousel</source>
 				<target state="final">Schleife / Karussell</target>
 			</trans-unit>
-			<trans-unit id="settings.common.autoplaySpeed" approved="yes">
+			<trans-unit id="options.common.autoplaySpeed" approved="yes">
 				<source>Autoplay speed</source>
 				<target state="final">Automatische Wiedergabe Geschwindigkeit</target>
 			</trans-unit>
-			<trans-unit id="settings.common.top" approved="yes">
+			<trans-unit id="options.common.top" approved="yes">
 				<source>Top</source>
 				<target state="final">Oben</target>
 			</trans-unit>
-			<trans-unit id="settings.common.bottom" approved="yes">
+			<trans-unit id="options.common.bottom" approved="yes">
 				<source>Bottom</source>
 				<target state="final">Unten</target>
 			</trans-unit>
-			<trans-unit id="settings.common.forward" approved="yes">
+			<trans-unit id="options.common.forward" approved="yes">
 				<source>Forward</source>
 				<target state="final">Vorwärts</target>
 			</trans-unit>
-			<trans-unit id="settings.common.backward" approved="yes">
+			<trans-unit id="options.common.backward" approved="yes">
 				<source>Backward</source>
 				<target state="final">Rückwärts</target>
 			</trans-unit>
-			<trans-unit id="settings.common.vertical" approved="yes">
+			<trans-unit id="options.common.vertical" approved="yes">
 				<source>Vertical</source>
 				<target state="final">Vertikal</target>
 			</trans-unit>
-			<trans-unit id="settings.common.horizontal" approved="yes">
+			<trans-unit id="options.common.horizontal" approved="yes">
 				<source>Horizontal</source>
 				<target state="final">Horizontal</target>
 			</trans-unit>
-			<trans-unit id="settings.common.animateOut" approved="yes">
+			<trans-unit id="options.common.animateOut" approved="yes">
 				<source>Outro Animation</source>
 				<target state="final">Outro Animation</target>
 			</trans-unit>
-			<trans-unit id="settings.common.animateIn" approved="yes">
+			<trans-unit id="options.common.animateIn" approved="yes">
 				<source>Intro Animation</source>
 				<target state="final">Intro Animation</target>
 			</trans-unit>
-			<trans-unit id="settings.common.autoHeight" approved="yes">
+			<trans-unit id="options.common.autoHeight" approved="yes">
 				<source>Auto Height</source>
 				<target state="final">Automatische Höhe</target>
 			</trans-unit>
-			<trans-unit id="settings.common.video" approved="yes">
+			<trans-unit id="options.common.video" approved="yes">
 				<source>Enable Video</source>
 				<target state="final">Video aktivieren</target>
 			</trans-unit>
-			<trans-unit id="settings.common.touch" approved="yes">
+			<trans-unit id="options.common.touch" approved="yes">
 				<source>Enable Touch Support</source>
 				<target state="final">Touch-Support aktivieren</target>
 			</trans-unit>
-			<trans-unit id="settings.common.animationSpeed" approved="yes">
+			<trans-unit id="options.common.animationSpeed" approved="yes">
 				<source>Animation Speed</source>
 				<target state="final">Animationsgeschwindigkeit</target>
 			</trans-unit>

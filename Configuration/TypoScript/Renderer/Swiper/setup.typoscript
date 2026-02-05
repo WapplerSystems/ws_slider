@@ -1,0 +1,49 @@
+plugin.tx_wsslider.settings.renderer.swiper {
+
+  autoHeight = {$plugin.tx_wsslider.settings.swiper.autoHeight}
+
+  autoplay {
+
+    active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}
+    delay = {$plugin.tx_wsslider.settings.swiper.autoplay.delay}
+
+  }
+
+  navText {
+    0 = TEXT
+    0.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.previous
+    1 = TEXT
+    1.data = LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:label.next
+  }
+
+  responsive {
+    0 {
+      items = {$plugin.tx_wsslider.settings.swiper.responsive.0.items}
+    }
+
+    576 {
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.576.slidesPerView}
+    }
+
+    768 {
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.768.slidesPerView}
+    }
+
+    992 {
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.992.slidesPerView}
+    }
+
+    1200 {
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.1200.slidesPerView}
+    }
+
+    1400 {
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.1400.slidesPerView}
+    }
+
+  }
+
+
+}
+
+tt_content.ws_slider.settings.slider.renderer.swiper < plugin.tx_wsslider.settings.renderer.swiper

@@ -1,0 +1,63 @@
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+		<header/>
+		<body>
+			<trans-unit id="options.accessibility">
+				<source>Accessibility</source>
+			</trans-unit>
+			<trans-unit id="options.arrows">
+				<source>Arrows</source>
+			</trans-unit>
+			<trans-unit id="options.asNavFor">
+				<source>As Nav For</source>
+			</trans-unit>
+			<trans-unit id="options.appendArrows">
+				<source>Append Arrows</source>
+			</trans-unit>
+			<trans-unit id="options.appendDots">
+				<source>Append Dots</source>
+			</trans-unit>
+			<trans-unit id="options.prevArrow">
+				<source>Prev Arrow</source>
+			</trans-unit>
+			<trans-unit id="options.nextArrow">
+				<source>Next Arrow</source>
+			</trans-unit>
+			<trans-unit id="options.centerMode">
+				<source>Center Mode</source>
+			</trans-unit>
+			<trans-unit id="options.centerPadding">
+				<source>Center Padding</source>
+			</trans-unit>
+			<trans-unit id="options.cssEase">
+				<source>CSS3 animation Easing</source>
+			</trans-unit>
+
+			<trans-unit id="options.a11y.nextSlideMessage">
+				<source>Next slide</source>
+				<target>Gehe weiter</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.prevSlideMessage">
+				<source>Previous slide</source>
+				<target>Gehe zurück</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.firstSlideMessage">
+				<source>This is the first slide</source>
+				<target>Das ist die erste Seite</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.lastSlideMessage">
+				<source>This is the last slide</source>
+				<target>Das ist die letzte Seite</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.paginationBulletMessage">
+				<source>Go to slide {{index}}</source>
+				<target>Gehe zur Seite {{index}}</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.slideLabelMessage">
+				<source>{{index}} / {{slidesLength}}</source>
+				<target>{{index}} / {{slidesLength}}</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

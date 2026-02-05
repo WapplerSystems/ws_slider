@@ -3,12 +3,14 @@ declare(strict_types=1);
 
 namespace WapplerSystems\WsSlider\DataProcessing;
 
+use Psr\EventDispatcher\EventDispatcherInterface;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
+use WapplerSystems\WsSlider\Event\AfterSliderProcessedEvent;
 
 /**
  *
@@ -25,12 +27,15 @@ class SliderProcessor implements DataProcessorInterface
      */
     protected $flexFormService;
 
+    protected EventDispatcherInterface $eventDispatcher;
+
     /**
      * Constructor
      */
-    public function __construct()
+    public function __construct(EventDispatcherInterface $eventDispatcher)
     {
         $this->flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
+        $this->eventDispatcher = $eventDispatcher;
     }
 
     /**
@@ -40,7 +45,7 @@ class SliderProcessor implements DataProcessorInterface
      * @param array $processedData Key/value store of processed data (e.g. to be passed to a Fluid View)
      * @return array the processed data as key/value store
      */
-    public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData)
+    public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData): array
     {
 
         $settings = $contentObjectConfiguration['settings.']['slider.'];
@@ -50,6 +55,10 @@ class SliderProcessor implements DataProcessorInterface
         if (($processedData['data']['tx_wsslider_preset'] ?? 0) > 0) {
 
             $preset = BackendUtility::getRecord('tx_wsslider_domain_model_preset', $processedData['data']['tx_wsslider_preset']);
+            if ($preset === null) {
+                $processedData['presetNotFound'] = true;
+                return $processedData;
+            }
 
             $rendererKey = $settings['renderer'] = $preset['type'];
             if (isset($settings['renderer.'][$rendererKey . '.'])) {
@@ -57,26 +66,24 @@ class SliderProcessor implements DataProcessorInterface
                 unset($settings['renderer.']);
             }
 
-            $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
-            $settings['parameters'] = self::removeDotsFromTS($settings['parameters']);
-            $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+            $options = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
+            $options = self::removeDotsFromTS($options);
 
-            $presetValues = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
-            if (is_array($presetValues['settings']['js'] ?? null)) {
-                ArrayUtility::mergeRecursiveWithOverrule(
-                    $settings['parameters'],
-                    $presetValues['settings']['js'],
-                    true,
-                    false
-                );
-            }
+            $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
+            $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
+            //debug($flexformOptions, 'flexformOptions');
+            ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
 
-            $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+            //debug($options, 'options');
+
+            $this->convertStringOptionsToBoolean($options);
 
         } else {
 
             $settings['renderer'] = $settings['defaultRenderer'];
-            if ($processedData['data']['tx_wsslider_renderer'] !== null) $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
+            if ($processedData['data']['tx_wsslider_renderer'] !== null) {
+                $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
+            }
 
             $rendererKey = strtolower($settings['renderer']);
 
@@ -86,28 +93,25 @@ class SliderProcessor implements DataProcessorInterface
             }
 
 
-            $settings['parameters'] = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
-            $settings['parameters'] = self::removeDotsFromTS($settings['parameters']);
-            $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
+            $options = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
+            $options = self::removeDotsFromTS($options);
 
 
             // Process Flexform
             $flexformData = $processedData['data']['pi_flexform'];
             if (is_string($flexformData)) {
-                $flexformData = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-                if (is_array($flexformData['settings']['js'] ?? null)) {
-                    ArrayUtility::mergeRecursiveWithOverrule(
-                        $settings['parameters'],
-                        $flexformData['settings']['js'],
-                        true,
-                        false
-                    );
-                }
+                $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($flexformData);
+                $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
+                ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, false, false);
+
             }
+
+            $this->convertStringOptionsToBoolean($options);
         }
 
+        $processedData['options'] = $options;
+
         # convert integers in texts to integers
-        $settings['parameters'] = $this->convertStringToSimpleType($settings['parameters']);
         $settings['jsonParameters'] = json_encode($settings['parameters'], JSON_THROW_ON_ERROR);
 
         $settings['renderer'] = ucfirst($settings['renderer']);
@@ -116,27 +120,11 @@ class SliderProcessor implements DataProcessorInterface
 
         $processedData['sliderSettings'] = $settings;
 
+        /** @var AfterSliderProcessedEvent $event */
+        $event = $this->eventDispatcher->dispatch(new AfterSliderProcessedEvent($cObj, $contentObjectConfiguration, $processorConfiguration, $processedData));
+        $processedData = $event->getProcessedData();
+
         return $processedData;
-    }
-
-
-    private function convertStringToSimpleType(array $ts)
-    {
-        $out = [];
-        foreach ($ts as $key => $value) {
-            if (is_array($value)) {
-                $out[$key] = $this->convertStringToSimpleType($value);
-            } else if (is_numeric($value)) {
-                $out[$key] = (int)$value;
-            } else if ($value === 'true') {
-                $out[$key] = true;
-            } else if ($value === 'false') {
-                $out[$key] = false;
-            } else {
-                $out[$key] = $value;
-            }
-        }
-        return $out;
     }
 
 
@@ -178,6 +166,41 @@ class SliderProcessor implements DataProcessorInterface
             }
         }
         return $out;
+    }
+
+    private function migrateFlexFormOptions(array $flexformOptions): array
+    {
+        if (isset($flexformOptions['settings'])) {
+            foreach ($flexformOptions['settings'] as $key => $value) {
+                $flexformOptions[$key] = $value;
+            }
+            unset($flexformOptions['settings']);
+        }
+        if (isset($flexformOptions['js'])) {
+            foreach ($flexformOptions['js'] as $key => $value) {
+                $flexformOptions[$key] = $value;
+            }
+            unset($flexformOptions['js']);
+        }
+
+        return $flexformOptions;
+    }
+
+    private function convertStringOptionsToBoolean(&$options)
+    {
+        foreach ($options as $key => $value) {
+            if (is_array($value)) {
+                $this->convertStringOptionsToBoolean($options[$key]);
+            } else {
+                if (is_string($value)) {
+                    if (strtolower($value) === 'true') {
+                        $options[$key] = true;
+                    } elseif (strtolower($value) === 'false') {
+                        $options[$key] = false;
+                    }
+                }
+            }
+        }
     }
 
 }

@@ -5,29 +5,29 @@
 
 <f:section name="Default">
 
-    <div id="wsslider-{data.uid}" class="carousel slide" data-bs-ride="{sliderSettings.parameters.ride -> wsslider:format.valueToString()}">
-        <f:if condition="{sliderSettings.parameters.indicators} && {items -> f:count()} > 1">
+    <div id="{identifier}" class="carousel slide" data-bs-ride="{options.ride}">
+        <f:if condition="{options.indicators} && {items -> f:count()} > 1">
             <div class="carousel-indicators">
                 <f:for each="{items}" as="item" iteration="iterator">
-                    <button type="button" data-bs-target="#wsslider-{data.uid}" data-bs-slide-to="{iterator.index}"
-                            class="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{sliderSettings.parameters.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
+                    <button type="button" data-bs-target="#{identifier}" data-bs-slide-to="{iterator.index}"
+                            class="{f:if(condition:'{options.startAt} == {iterator.index}',then:'active')}" aria-current="{f:if(condition:'{options.options.startAt} == {iterator.index}',then:'true',else:'false')}" aria-label="{item.data.title}"></button>
                 </f:for>
             </div>
         </f:if>
         <div class="carousel-inner">
             <f:for each="{items}" as="item" iteration="iterator">
-                <f:render partial="Item/Bootstrap" section="{sliderSettings.layout}"
-                          arguments="{item: item, settings: settings, iterator:iterator, sliderSettings:sliderSettings}"/>
+                <f:render partial="Item/Bootstrap" section="{layout}"
+                          arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
             </f:for>
         </div>
-        <f:if condition="{sliderSettings.parameters.control} && {items -> f:count()} > 1">
-            <button class="carousel-control-prev" type="button" data-bs-target="#wsslider-{data.uid}" data-bs-slide="prev">
+        <f:if condition="{options.control} && {items -> f:count()} > 1">
+            <button class="carousel-control-prev" type="button" data-bs-target="#{identifier}" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden"><f:translate key="LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:btn.previous" /></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#wsslider-{data.uid}" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#{identifier}" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden"><f:translate key="LLL:EXT:ws_slider/Resources/Private/Language/bootstrap.xlf:btn.next" /></span>
             </button>
         </f:if>
     </div>

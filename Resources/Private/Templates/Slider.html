@@ -1,16 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en"
       xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
-<f:layout name="Default"/>
 
-
-<f:section name="Main">
-
-    <f:flashMessages queueIdentifier="core.template.flashMessages"/>
-
-    <f:render section="Default" partial="{sliderSettings.renderer}" arguments="{_all}"/>
-
-</f:section>
-
+<f:render section="Default" partial="{renderer}" arguments="{_all}"/>
 
 </html>

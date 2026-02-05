@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+
+
+        <swiper>
+            <ROOT>
+
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.swiper</sheetTitle>
+
+                <type>array</type>
+                <el>
+                    <settings.autoHeight>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoHeight</label>
+                        <config>
+                            <type>check</type>
+                        </config>
+                    </settings.autoHeight>
+
+                    <settings.autoplay.active>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay</label>
+                        <config>
+                            <type>check</type>
+                        </config>
+                    </settings.autoplay.active>
+                    <settings.autoplay.delay>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.delay</label>
+                        <config>
+                            <type>input</type>
+                        </config>
+                    </settings.autoplay.delay>
+                    <settings.autoplay.disableOnInteraction>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.disableOnInteraction</label>
+                        <config>
+                            <type>check</type>
+                            <default>1</default>
+                        </config>
+                    </settings.autoplay.disableOnInteraction>
+                    <settings.autoplay.pauseOnMouseEnter>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.pauseOnMouseEnter</label>
+                        <config>
+                            <type>check</type>
+                            <default>0</default>
+                        </config>
+                    </settings.autoplay.pauseOnMouseEnter>
+                    <settings.autoplay.reverseDirection>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.reverseDirection</label>
+                        <config>
+                            <type>check</type>
+                            <default>0</default>
+                        </config>
+                    </settings.autoplay.reverseDirection>
+                    <settings.autoplay.stopOnLastSlide>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.stopOnLastSlide</label>
+                        <config>
+                            <type>check</type>
+                            <default>0</default>
+                        </config>
+                    </settings.autoplay.stopOnLastSlide>
+                    <settings.autoplay.waitForTransition>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.waitForTransition</label>
+                        <config>
+                            <type>check</type>
+                            <default>1</default>
+                        </config>
+                    </settings.autoplay.waitForTransition>
+
+
+                </el>
+            </ROOT>
+        </swiper>
+
+        <navigation>
+            <ROOT>
+
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.navigation</sheetTitle>
+
+                <type>array</type>
+                <el>
+
+                    <settings.navigation.addIcons>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.navigation.addIcons</label>
+                        <config>
+                            <type>check</type>
+                        </config>
+                    </settings.navigation.addIcons>
+
+
+                </el>
+            </ROOT>
+        </navigation>
+
+        <responsive.dummy>
+            <ROOT>
+
+                <sheetTitle>DUMMY</sheetTitle>
+
+                <type>array</type>
+                <el>
+                    <settings.responsive.dummy.startIndex>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.startIndex</label>
+                        <config>
+                            <type>input</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.startIndex</typoscriptPath>
+                            <size>1</size>
+                            <eval>num,trim</eval>
+                        </config>
+
+                    </settings.responsive.dummy.startIndex>
+
+                    <settings.responsive.dummy.items>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.items</label>
+                        <config>
+                            <type>input</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.responsive.dummy.items
+                            </typoscriptPath>
+                            <size>1</size>
+                            <eval>num,trim</eval>
+                        </config>
+
+                    </settings.responsive.dummy.items>
+
+                    <settings.responsive.dummy.slideBy>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.slideBy</label>
+                        <config>
+                            <type>input</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.slideBy</typoscriptPath>
+                            <size>1</size>
+                            <eval>num,trim</eval>
+                        </config>
+
+                    </settings.responsive.dummy.slideBy>
+
+                    <settings.responsive.dummy.edgePadding>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.edgePadding</label>
+                        <config>
+                            <type>input</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.edgePadding</typoscriptPath>
+                            <eval>num,trim</eval>
+                        </config>
+
+                    </settings.responsive.dummy.edgePadding>
+
+                    <settings.responsive.dummy.gutter>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.gutter</label>
+                        <config>
+                            <type>input</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.gutter</typoscriptPath>
+                            <eval>num,trim</eval>
+                        </config>
+
+                    </settings.responsive.dummy.gutter>
+
+                    <settings.responsive.dummy.center>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.center</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.center</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
+                                    </numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
+                                    </numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                        </config>
+
+                    </settings.responsive.dummy.center>
+
+                    <settings.responsive.dummy.controls>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.controls</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.controls</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
+                                    </numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
+                                    </numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                        </config>
+
+                    </settings.responsive.dummy.controls>
+
+                    <settings.responsive.dummy.disable>
+
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.disable</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.disable</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
+                                    </numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
+                                    </numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                        </config>
+
+                    </settings.responsive.dummy.disable>
+
+                </el>
+            </ROOT>
+        </responsive.dummy>
+    </sheets>
+</T3DataStructure>

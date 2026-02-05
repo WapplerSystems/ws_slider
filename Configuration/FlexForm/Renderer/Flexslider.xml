@@ -14,7 +14,7 @@
                 <el>
                     <settings.js.animation>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animation</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.animation</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animation.description
                         </description>
@@ -26,13 +26,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.fade
+                                        LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.fade
                                     </numIndex>
                                     <numIndex index="value">fade</numIndex>
                                 </numIndex>
                                 <numIndex index="1">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slide
+                                        LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.slide
                                     </numIndex>
                                     <numIndex index="value">slide</numIndex>
                                 </numIndex>
@@ -45,7 +45,7 @@
 
                     <settings.js.easing>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.easing</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.easing</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.easing.description
                         </description>
@@ -60,7 +60,7 @@
 
                     <settings.js.direction>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.direction</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.direction</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.direction.description
                         </description>
@@ -71,13 +71,13 @@
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.vertical
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.vertical
                                     </numIndex>
                                     <numIndex index="value">vertical</numIndex>
                                 </numIndex>
                                 <numIndex index="1">
                                     <numIndex index="label">
-                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:settings.common.horizontal
+                                        LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.horizontal
                                     </numIndex>
                                     <numIndex index="value">horizontal</numIndex>
                                 </numIndex>
@@ -90,7 +90,7 @@
 
                     <settings.js.reverse>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.reverse</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.reverse</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.reverse.description
                         </description>
@@ -120,7 +120,7 @@
 
                     <settings.js.animationLoop>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animationLoop
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.animationLoop
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animationLoop.description
@@ -152,7 +152,7 @@
 
                     <settings.js.smoothHeight>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.smoothHeight</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.smoothHeight</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.smoothHeight.description
                         </description>
@@ -183,7 +183,7 @@
 
                     <settings.js.startAt>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.startAt</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.startAt</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.startAt.description
                         </description>
@@ -199,7 +199,7 @@
 
                     <settings.js.slideshow>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slideshow</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.slideshow</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.slideshow.description
                         </description>
@@ -229,7 +229,7 @@
 
                     <settings.js.slideshowSpeed>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.slideshowSpeed
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.slideshowSpeed
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.slideshowSpeed.description
@@ -247,7 +247,7 @@
 
                     <settings.js.animationSpeed>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.animationSpeed
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.animationSpeed
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.animationSpeed.description
@@ -265,7 +265,7 @@
 
                     <settings.js.initDelay>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.initDelay</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.initDelay</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.initDelay.description
                         </description>
@@ -281,7 +281,7 @@
 
                     <settings.js.randomize>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.randomize</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.randomize</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.randomize.description
                         </description>
@@ -311,7 +311,7 @@
 
                     <settings.js.fadeFirstSlide>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.fadeFirstSlide
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.fadeFirstSlide
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.fadeFirstSlide.description
@@ -353,7 +353,7 @@
                 <el>
                     <settings.js.pauseOnAction>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseOnAction
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.pauseOnAction
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pauseOnAction.description
@@ -385,7 +385,7 @@
 
                     <settings.js.pauseOnHover>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseOnHover</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.pauseOnHover</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pauseOnHover.description
                         </description>
@@ -416,7 +416,7 @@
 
                     <settings.js.pauseInvisible>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pauseInvisible
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.pauseInvisible
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pauseInvisible.description
@@ -448,7 +448,7 @@
 
                     <settings.js.useCSS>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.useCSS</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.useCSS</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.useCSS.description
                         </description>
@@ -478,7 +478,7 @@
 
                     <settings.js.touch>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.touch</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.touch</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.touch.description
                         </description>
@@ -508,7 +508,7 @@
 
                     <settings.js.video>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.video</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.video</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.video.description
                         </description>
@@ -550,7 +550,7 @@
 
                     <settings.js.controlNav>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlNav</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.controlNav</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.controlNav.description
                         </description>
@@ -580,7 +580,7 @@
 
                     <settings.js.directionNav>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.directionNav</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.directionNav</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.directionNav.description
                         </description>
@@ -623,7 +623,7 @@
                 <el>
                     <settings.js.keyboard>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.keyboard</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.keyboard</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.keyboard.description
                         </description>
@@ -653,7 +653,7 @@
 
                     <settings.js.multipleKeyboard>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.multipleKeyboard
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.multipleKeyboard
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.multipleKeyboard.description
@@ -685,7 +685,7 @@
 
                     <settings.js.mousewheel>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.mousewheel</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.mousewheel</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.mousewheel.description
                         </description>
@@ -715,7 +715,7 @@
 
                     <settings.js.pausePlay>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.pausePlay</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.pausePlay</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.pausePlay.description
                         </description>
@@ -756,7 +756,7 @@
                 <el>
                     <settings.js.selector>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.selector</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.selector</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.selector.description
                         </description>
@@ -771,7 +771,7 @@
 
                     <settings.js.controlsContainer>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.controlsContainer
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.controlsContainer
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.controlsContainer.description
@@ -789,7 +789,7 @@
 
                     <settings.js.manualControls>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.manualControls
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.manualControls
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.manualControls.description
@@ -807,7 +807,7 @@
 
                     <settings.js.customDirectionNav>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.customDirectionNav
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.customDirectionNav
                         </label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.customDirectionNav.description
@@ -825,7 +825,7 @@
 
                     <settings.js.sync>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.sync</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.sync</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.sync.description
                         </description>
@@ -841,7 +841,7 @@
 
                     <settings.js.asNavFor>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.asNavFor</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.asNavFor</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.asNavFor.description
                         </description>
@@ -867,7 +867,7 @@
                 <el>
                     <settings.js.itemWidth>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemWidth</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.itemWidth</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.itemWidth.description
                         </description>
@@ -883,7 +883,7 @@
 
                     <settings.js.itemMargin>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.itemMargin</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.itemMargin</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.itemMargin.description
                         </description>
@@ -899,7 +899,7 @@
 
                     <settings.js.minItems>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.minItems</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.minItems</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.minItems.description
                         </description>
@@ -915,7 +915,7 @@
 
                     <settings.js.maxItems>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.maxItems</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.maxItems</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.maxItems.description
                         </description>
@@ -931,7 +931,7 @@
 
                     <settings.js.move>
 
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:settings.move</label>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/flexslider.xlf:options.move</label>
                         <description>
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.move.description
                         </description>

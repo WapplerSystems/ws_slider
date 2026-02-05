@@ -19,6 +19,7 @@ use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 use TYPO3\CMS\Backend\Form\InlineStackProcessor;
 use TYPO3\CMS\Backend\Form\Utility\FormEngineUtility;
 use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
+use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
 use WapplerSystems\WsSlider\Service\TypoScriptService;
@@ -85,7 +86,10 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $resultArray = $this->initializeResultArray();
         $languageService = $this->getLanguageService();
 
-        $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
+        $typoscript = null;
+        if ($this->data['site'] instanceof Site) {
+            $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
+        }
 
         $table = $this->data['tableName'];
         $field = $this->data['fieldName'];
@@ -155,7 +159,9 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
             }
         }
 
-        $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$config['typoscriptPath']);
+        if ($typoscript !== null) {
+            $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript,$config['typoscriptPath']);
+        }
         if ($selectedValue === null) {
             $selectedValue = $defaultValue;
         }

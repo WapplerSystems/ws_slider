@@ -4,6 +4,7 @@ namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 use TYPO3\CMS\Core\Localization\LanguageService;
+use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
 use TYPO3\CMS\Core\Utility\StringUtility;
@@ -67,7 +68,10 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
     {
         $languageService = $this->getLanguageService();
 
-        $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
+        $typoscript = null;
+        if ($this->data['site'] instanceof Site) {
+            $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
+        }
 
         $table = $this->data['tableName'];
         $fieldName = $this->data['fieldName'];
@@ -273,15 +277,17 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
 
         $fullElement = $mainFieldHtml;
 
-
-        $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript->toArray(),$config['typoscriptPath']);
+        $defaultValue = null;
+        if ($typoscript !== null) {
+            $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript,$config['typoscriptPath']);
+        }
 
         if ($defaultValue !== null) {
             $checked = ($itemValue !== '' && $itemValue !== null) ? ' checked="checked"' : '';
             $placeholder = $shortenedPlaceholder = $defaultValue ?? '';
             $disabled = '';
             $fallbackValue = 0;
-            if (strlen($placeholder) > 0) {
+            if ($placeholder !== '') {
                 $shortenedPlaceholder = GeneralUtility::fixed_lgd_cs($placeholder, 20);
                 if ($placeholder !== $shortenedPlaceholder) {
                     $overrideLabel = sprintf(
