@@ -56,29 +56,389 @@
 			<trans-unit id="options.autoplay">
 				<source>Autoplay</source>
 			</trans-unit>
-			<trans-unit id="options.autoplay.delay">
-				<source>Delay</source>
+			<trans-unit id="options.autoplay.delay" xml:space="preserve">
+				<source>Delay between transitions (in ms)</source>
 			</trans-unit>
-			<trans-unit id="options.autoplay.disableOnInteraction">
-				<source>Disable on interaction</source>
+			<trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve">
+				<source>Disable autoplay on interaction</source>
 			</trans-unit>
-			<trans-unit id="options.autoplay.pauseOnMouseEnter">
-				<source>Pause on mouse enter</source>
+			<trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve">
+				<source>Pause autoplay on mouse enter</source>
 			</trans-unit>
-			<trans-unit id="options.autoplay.reverseDirection">
-				<source>Reverse direction</source>
+			<trans-unit id="options.autoplay.reverseDirection" xml:space="preserve">
+				<source>Autoplay in reverse direction</source>
 			</trans-unit>
-			<trans-unit id="options.autoplay.stopOnLastSlide">
-				<source>Stop on last slide</source>
+			<trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve">
+				<source>Stop autoplay on last slide</source>
 			</trans-unit>
-			<trans-unit id="options.autoplay.waitForTransition">
-				<source>Wait for transition</source>
+			<trans-unit id="options.autoplay.waitForTransition" xml:space="preserve">
+				<source>Wait for transition before next autoplay</source>
 			</trans-unit>
 			<trans-unit id="options.autoHeight">
 				<source>Auto height</source>
 			</trans-unit>
-			<trans-unit id="options.navigation.addIcons">
-				<source>Add Icons</source>
+			<trans-unit id="options.navigation.addIcons" xml:space="preserve">
+				<source>Add SVG icons to navigation buttons</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.disabledClass" xml:space="preserve">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.enabled" xml:space="preserve">
+				<source>Enable/disable navigation (breakpoint support)</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.hiddenClass" xml:space="preserve">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.hideOnClick" xml:space="preserve">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.lockClass" xml:space="preserve">
+				<source>CSS class name added to navigation button when it is disabled</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.nextEl" xml:space="preserve">
+				<source>CSS selector or HTML element for the next button</source>
+			</trans-unit>
+			<trans-unit id="options.navigation.prevEl" xml:space="preserve">
+				<source>CSS selector or HTML element for the previous button</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve">
+				<source>CSS class name of currently active pagination bullet</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletClass" xml:space="preserve">
+				<source>CSS class name of single pagination bullet</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletElement" xml:space="preserve">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickable" xml:space="preserve">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickableClass" xml:space="preserve">
+				<source>CSS class name set to pagination when it is clickable</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.currentClass" xml:space="preserve">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicBullets" xml:space="preserve">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.el" xml:space="preserve">
+				<source>CSS selector or HTML element of the container with pagination</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.enabled" xml:space="preserve">
+				<source>Enable/disable pagination (breakpoint support)</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve">
+				<source>Format function for current number in fraction pagination</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve">
+				<source>Format function for total number in fraction pagination</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.hiddenClass" xml:space="preserve">
+				<source>CSS class name of pagination when it becomes inactive</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.hideOnClick" xml:space="preserve">
+				<source>Toggle pagination container visibility after click on slider container</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.horizontalClass" xml:space="preserve">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.lockClass" xml:space="preserve">
+				<source>CSS class name set to pagination when it is disabled</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.modifierClass" xml:space="preserve">
+				<source>Prefix for modifier CSS class name for pagination</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve">
+				<source>CSS class name of pagination progressbar fill element</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve">
+				<source>Progressbar opposite to Swiper's direction</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve">
+				<source>CSS class name of pagination progressbar opposite</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderBullet" xml:space="preserve">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderCustom" xml:space="preserve">
+				<source>Custom function for custom pagination type</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderFraction" xml:space="preserve">
+				<source>Custom function for fraction pagination type</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderProgressbar" xml:space="preserve">
+				<source>Custom function for progressbar pagination type</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.totalClass" xml:space="preserve">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.type" xml:space="preserve">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+			</trans-unit>
+			<trans-unit id="options.pagination.verticalClass" xml:space="preserve">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragClass" xml:space="preserve">
+				<source>Scrollbar draggable element CSS class</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragSize" xml:space="preserve">
+				<source>Size of scrollbar draggable element in px</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.draggable" xml:space="preserve">
+				<source>Enable draggable scrollbar</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.el" xml:space="preserve">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.enabled" xml:space="preserve">
+				<source>Enable/disable scrollbar (breakpoint support)</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.hide" xml:space="preserve">
+				<source>Hide scrollbar automatically after user interaction</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.lockClass" xml:space="preserve">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve">
+				<source>Snap slider position to slides when you release scrollbar</source>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.verticalClass" xml:space="preserve">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.enabled" xml:space="preserve">
+				<source>Enable free mode</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.minimumVelocity" xml:space="preserve">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.momentum" xml:space="preserve">
+				<source>Enable momentum in free mode</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.momentumBounce" xml:space="preserve">
+				<source>Enable momentum bounce in free mode</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.momentumBounceRatio" xml:space="preserve">
+				<source>Momentum bounce ratio</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.momentumRatio" xml:space="preserve">
+				<source>Momentum ratio</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.momentumVelocityRatio" xml:space="preserve">
+				<source>Momentum velocity ratio</source>
+			</trans-unit>
+			<trans-unit id="options.freemode.sticky" xml:space="preserve">
+				<source>Snap to slides in free mode</source>
+			</trans-unit>
+			<trans-unit id="options.grid.fill" xml:space="preserve">
+				<source>How slides should fill rows (by column or by row)</source>
+			</trans-unit>
+			<trans-unit id="options.grid.rows" xml:space="preserve">
+				<source>Number of slides rows (multirow layout)</source>
+			</trans-unit>
+			<trans-unit id="options.parallax.enabled" xml:space="preserve">
+				<source>Enable parallaxed elements inside the slider</source>
+			</trans-unit>
+			<trans-unit id="options.fadeeffect.crossFade" xml:space="preserve">
+				<source>Enables slides cross fade</source>
+			</trans-unit>
+			<trans-unit id="options.coverfloweffect.depth" xml:space="preserve">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+			</trans-unit>
+			<trans-unit id="options.coverfloweffect.modifier" xml:space="preserve">
+				<source>Effect multiplier</source>
+			</trans-unit>
+			<trans-unit id="options.coverfloweffect.rotate" xml:space="preserve">
+				<source>Slide rotate in degrees</source>
+			</trans-unit>
+			<trans-unit id="options.coverfloweffect.scale" xml:space="preserve">
+				<source>Slide scale effect</source>
+			</trans-unit>
+			<trans-unit id="options.coverfloweffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			</trans-unit>
+			<trans-unit id="options.coverfloweffect.stretch" xml:space="preserve">
+				<source>Stretch space between slides (px or %)</source>
+			</trans-unit>
+			<trans-unit id="options.flipeffect.limitRotation" xml:space="preserve">
+				<source>Limit edge slides rotation</source>
+			</trans-unit>
+			<trans-unit id="options.flipeffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			</trans-unit>
+			<trans-unit id="options.cubeeffect.shadow" xml:space="preserve">
+				<source>Enables main slider shadow</source>
+			</trans-unit>
+			<trans-unit id="options.cubeeffect.shadowOffset" xml:space="preserve">
+				<source>Main shadow offset in px</source>
+			</trans-unit>
+			<trans-unit id="options.cubeeffect.shadowScale" xml:space="preserve">
+				<source>Main shadow scale ratio</source>
+			</trans-unit>
+			<trans-unit id="options.cubeeffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			</trans-unit>
+			<trans-unit id="options.cardseffect.perSlideOffset" xml:space="preserve">
+				<source>Offset distance per slide (in px)</source>
+			</trans-unit>
+			<trans-unit id="options.cardseffect.perSlideRotate" xml:space="preserve">
+				<source>Rotate angle per slide (in degrees)</source>
+			</trans-unit>
+			<trans-unit id="options.cardseffect.rotate" xml:space="preserve">
+				<source>Enables cards rotation</source>
+			</trans-unit>
+			<trans-unit id="options.cardseffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			</trans-unit>
+			<trans-unit id="options.creativeeffect.limitProgress" xml:space="preserve">
+				<source>Limit progress/offset to amount of side slides</source>
+			</trans-unit>
+			<trans-unit id="options.creativeeffect.next" xml:space="preserve">
+				<source>Next slide transformations</source>
+			</trans-unit>
+			<trans-unit id="options.creativeeffect.perspective" xml:space="preserve">
+				<source>Enable 3D perspective for custom transforms</source>
+			</trans-unit>
+			<trans-unit id="options.creativeeffect.prev" xml:space="preserve">
+				<source>Previous slide transformations</source>
+			</trans-unit>
+			<trans-unit id="options.creativeeffect.progressMultiplier" xml:space="preserve">
+				<source>Multiply slide transformations and opacity</source>
+			</trans-unit>
+			<trans-unit id="options.creativeeffect.shadowPerProgress" xml:space="preserve">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+			</trans-unit>
+			<trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve">
+				<source>Auto scroll offset for thumbs</source>
+			</trans-unit>
+			<trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve">
+				<source>Enable multiple active thumbnail slides</source>
+			</trans-unit>
+			<trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve">
+				<source>Additional class for activated thumbs swiper slide</source>
+			</trans-unit>
+			<trans-unit id="options.thumbs.swiper" xml:space="preserve">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+			</trans-unit>
+			<trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve">
+				<source>Additional class for thumbs swiper container</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.containerClass" xml:space="preserve">
+				<source>CSS class name of zoom container</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve">
+				<source>Limit zoom to original image size</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.maxRatio" xml:space="preserve">
+				<source>Maximum image zoom multiplier</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.minRatio" xml:space="preserve">
+				<source>Minimal image zoom multiplier</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve">
+				<source>Pan zoomed image on mouse move</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.toggle" xml:space="preserve">
+				<source>Enable/disable zoom-in by double tap</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve">
+				<source>CSS class name of zoomed in container</source>
+			</trans-unit>
+			<trans-unit id="options.keyboard.enabled" xml:space="preserve">
+				<source>Enable keyboard control</source>
+			</trans-unit>
+			<trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve">
+				<source>Control sliders only in viewport</source>
+			</trans-unit>
+			<trans-unit id="options.keyboard.pageUpDown" xml:space="preserve">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+			</trans-unit>
+			<trans-unit id="options.keyboard.speed" xml:space="preserve">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.enabled" xml:space="preserve">
+				<source>Enable mousewheel control</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve">
+				<source>Force mousewheel swipes to axis</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.invert" xml:space="preserve">
+				<source>Invert sliding direction</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve">
+				<source>Class name to ignore mousewheel scrolling</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve">
+				<source>Release mousewheel event on edges</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.sensitivity" xml:space="preserve">
+				<source>Mousewheel sensitivity multiplier</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides" xml:space="preserve">
+				<source>Virtual Slides</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.cache" xml:space="preserve">
+				<source>Enable DOM cache of rendered slides</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.enabled" xml:space="preserve">
+				<source>Enable virtual slides</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternal" xml:space="preserve">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve">
+				<source>Update Swiper layout after renderExternal</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderSlide" xml:space="preserve">
+				<source>Function to render slide</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slides" xml:space="preserve">
+				<source>Array with slides</source>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+			</trans-unit>
+			<trans-unit id="options.hashnavigation" xml:space="preserve">
+				<source>Hash Navigation</source>
+			</trans-unit>
+			<trans-unit id="options.hashnavigation.getSlideIndex" xml:space="preserve">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+			</trans-unit>
+			<trans-unit id="options.hashnavigation.replaceState" xml:space="preserve">
+				<source>Replace current URL state instead of adding to history</source>
+			</trans-unit>
+			<trans-unit id="options.hashnavigation.watchState" xml:space="preserve">
+				<source>Enable navigation by browser history/hash</source>
 			</trans-unit>
 
 		</body>

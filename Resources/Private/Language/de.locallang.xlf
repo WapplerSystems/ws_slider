@@ -85,6 +85,82 @@
 				<source>Navigation</source>
 				<target state="final">Navigation</target>
 			</trans-unit>
+			<trans-unit id="sheet.pagination" approved="yes">
+				<source>Pagination</source>
+				<target state="final">Paginierung</target>
+			</trans-unit>
+			<trans-unit id="sheet.scrollbar" approved="yes">
+				<source>Scrollbar</source>
+				<target state="final">Scrollbar</target>
+			</trans-unit>
+			<trans-unit id="sheet.autoplay">
+				<source>Autoplay</source>
+				<target state="final">Autoplay</target>
+			</trans-unit>
+			<trans-unit id="sheet.freemode">
+				<source>Free Mode</source>
+				<target state="final">Freier Modus</target>
+			</trans-unit>
+			<trans-unit id="sheet.grid">
+				<source>Grid</source>
+				<target state="final">Grid</target>
+			</trans-unit>
+			<trans-unit id="sheet.parallax">
+				<source>Parallax</source>
+				<target state="final">Parallax</target>
+			</trans-unit>
+			<trans-unit id="sheet.fadeeffect">
+				<source>Fade Effect</source>
+				<target state="final">Fade Effekt</target>
+			</trans-unit>
+			<trans-unit id="sheet.coverfloweffect">
+				<source>CoverFlow Effect</source>
+				<target state="final">Coverflow Effekt</target>
+			</trans-unit>
+			<trans-unit id="sheet.flipeffect">
+				<source>Flip Effect</source>
+				<target state="final">Flip Effekt</target>
+			</trans-unit>
+			<trans-unit id="sheet.cubeeffect">
+				<source>Cube Effect</source>
+				<target state="final">Cube Effekt</target>
+			</trans-unit>
+			<trans-unit id="sheet.cardseffect">
+				<source>Cards Effect</source>
+				<target state="final">Cards Effekt</target>
+			</trans-unit>
+			<trans-unit id="sheet.creativeeffect">
+				<source>Creative Effect</source>
+				<target state="final">Creative Effekt</target>
+			</trans-unit>
+			<trans-unit id="sheet.thumbs">
+				<source>Thumbs</source>
+				<target state="final">Thumbs</target>
+			</trans-unit>
+			<trans-unit id="sheet.zoom">
+				<source>Zoom</source>
+				<target state="final">Zoom</target>
+			</trans-unit>
+			<trans-unit id="sheet.keyboard">
+				<source>Keyboard</source>
+				<target state="final">Tastatur</target>
+			</trans-unit>
+			<trans-unit id="sheet.mousewheel">
+				<source>Mousewheel</source>
+				<target state="final">Mausrad</target>
+			</trans-unit>
+			<trans-unit id="sheet.virtualslides">
+				<source>Virtual Slides</source>
+				<target state="final">Virtuelle Slides</target>
+			</trans-unit>
+			<trans-unit id="sheet.hashnavigation">
+				<source>Hash Navigation</source>
+				<target state="final">Hash Navigation</target>
+			</trans-unit>
+			<trans-unit id="sheet.history">
+				<source>History Navigation</source>
+				<target state="final">History Navigation</target>
+			</trans-unit>
 			<trans-unit id="sheet.layout" approved="yes">
 				<source>Layout</source>
 				<target state="final">Darstellung</target>

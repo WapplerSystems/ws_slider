@@ -2,6 +2,24 @@
 # customsubcategory=base=base
 # customsubcategory=a11y=a11y
 # customsubcategory=breakpoints=breakpoints
+# customsubcategory=pagination=pagination
+# customsubcategory=scrollbar=scrollbar
+# customsubcategory=autoplay=autoplay
+# customsubcategory=freemode=freemode
+# customsubcategory=grid=grid
+# customsubcategory=paralax=paralax
+# customsubcategory=fadeeffect=fadeeffect
+# customsubcategory=coverfloweffect=coverfloweffect
+# customsubcategory=flipeffect=flipeffect
+# customsubcategory=cubeeffect=cubeeffect
+# customsubcategory=cardseffect=cardseffect
+# customsubcategory=creativeeffect=creativeeffect
+# customsubcategory=thumbs=thumbs
+# customsubcategory=zoom=zoom
+# customsubcategory=keyboard=keyboard
+# customsubcategory=mousewheel=mousewheel
+# customsubcategory=virtualslides=virtualslides
+# customsubcategory=hashnavigation=hashnavigation
 
 plugin.tx_wsslider.settings.swiper {
 
@@ -123,12 +141,12 @@ plugin.tx_wsslider.settings.swiper {
 
   }
 
-  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
   direction = horizontal
 
   edgeSwipeDetection = false
 
-  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
   edgeSwipeThreshold = 20
 
   # cat=plugin.tx_wsslider.swiper/base/l; type=options[slide,fade,cube,coverflow,flip,creative,cards]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
@@ -137,7 +155,7 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=enabled: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   enabled = true
 
-  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   eventsPrefix = swiper
 
 
@@ -170,6 +188,11 @@ plugin.tx_wsslider.settings.swiper {
 
   }
 
+  # cat=plugin.tx_wsslider.swiper/grid/a; type=options[column,row]; label=How slides should fill rows (by column or by row)
+  plugin.tx_wsslider.settings.renderer.swiper.grid.fill = column
+  # cat=plugin.tx_wsslider.swiper/grid/b; type=int+; label=Number of slides rows (multirow layout)
+  plugin.tx_wsslider.settings.renderer.swiper.grid.rows = 1
+
   hashNavigation {
     # cat=plugin.tx_wsslider.swiper/hashNavigation/b; type=options[true,false]; label=replaceState
     replaceState = true
@@ -194,3 +217,272 @@ plugin.tx_wsslider.settings.swiper {
 
 
 }
+
+# cat=plugin.tx_wsslider.swiper/navigation/a; type=options[true,false]; label=Add SVG icons to navigation buttons
+plugin.tx_wsslider.settings.renderer.swiper.navigation.addIcons = true
+# cat=plugin.tx_wsslider.swiper/navigation/b; type=string; label=CSS class name added to navigation button when it becomes disabled
+plugin.tx_wsslider.settings.renderer.swiper.navigation.disabledClass = swiper-button-disabled
+# cat=plugin.tx_wsslider.swiper/navigation/c; type=options[true,false]; label=Enable/disable navigation (breakpoint support)
+plugin.tx_wsslider.settings.renderer.swiper.navigation.enabled = true
+# cat=plugin.tx_wsslider.swiper/navigation/d; type=string; label=CSS class name added to navigation button when it becomes hidden
+plugin.tx_wsslider.settings.renderer.swiper.navigation.hiddenClass = swiper-button-hidden
+# cat=plugin.tx_wsslider.swiper/navigation/e; type=options[true,false]; label=Toggle navigation buttons visibility after click on slider container
+plugin.tx_wsslider.settings.renderer.swiper.navigation.hideOnClick = false
+# cat=plugin.tx_wsslider.swiper/navigation/f; type=string; label=CSS class name added to navigation button when it is disabled
+plugin.tx_wsslider.settings.renderer.swiper.navigation.lockClass = swiper-button-lock
+# cat=plugin.tx_wsslider.swiper/navigation/g; type=string; label=CSS class name added on swiper container when navigation is disabled by breakpoint
+plugin.tx_wsslider.settings.renderer.swiper.navigation.navigationDisabledClass = swiper-navigation-disabled
+# cat=plugin.tx_wsslider.swiper/navigation/h; type=string; label=CSS selector or HTML element for the next button
+plugin.tx_wsslider.settings.renderer.swiper.navigation.nextEl =
+# cat=plugin.tx_wsslider.swiper/navigation/i; type=string; label=CSS selector or HTML element for the previous button
+plugin.tx_wsslider.settings.renderer.swiper.navigation.prevEl =
+
+# cat=plugin.tx_wsslider.swiper/pagination/a; type=string; label=CSS class name of currently active pagination bullet
+plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletActiveClass = swiper-pagination-bullet-active
+# cat=plugin.tx_wsslider.swiper/pagination/b; type=string; label=CSS class name of single pagination bullet
+plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletClass = swiper-pagination-bullet
+# cat=plugin.tx_wsslider.swiper/pagination/c; type=string; label=HTML tag for single pagination bullet (only for bullets type)
+plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletElement = span
+# cat=plugin.tx_wsslider.swiper/pagination/d; type=options[true,false]; label=Clicking on pagination bullet causes slide transition (only for bullets type)
+plugin.tx_wsslider.settings.renderer.swiper.pagination.clickable = false
+# cat=plugin.tx_wsslider.swiper/pagination/e; type=string; label=CSS class name set to pagination when it is clickable
+plugin.tx_wsslider.settings.renderer.swiper.pagination.clickableClass = swiper-pagination-clickable
+# cat=plugin.tx_wsslider.swiper/pagination/f; type=string; label=CSS class name of the element with currently active index in fraction pagination
+plugin.tx_wsslider.settings.renderer.swiper.pagination.currentClass = swiper-pagination-current
+# cat=plugin.tx_wsslider.swiper/pagination/g; type=options[true,false]; label=Show only a few bullets at the same time (for many slides)
+plugin.tx_wsslider.settings.renderer.swiper.pagination.dynamicBullets = false
+# cat=plugin.tx_wsslider.swiper/pagination/h; type=int+; label=Number of main bullets visible when dynamicBullets enabled
+plugin.tx_wsslider.settings.renderer.swiper.pagination.dynamicMainBullets = 1
+# cat=plugin.tx_wsslider.swiper/pagination/i; type=string; label=CSS selector or HTML element of the container with pagination
+plugin.tx_wsslider.settings.renderer.swiper.pagination.el =
+# cat=plugin.tx_wsslider.swiper/pagination/j; type=options[true,false]; label=Enable/disable pagination (breakpoint support)
+plugin.tx_wsslider.settings.renderer.swiper.pagination.enabled = true
+# cat=plugin.tx_wsslider.swiper/pagination/k; type=string; label=Format function for current number in fraction pagination
+plugin.tx_wsslider.settings.renderer.swiper.pagination.formatFractionCurrent =
+# cat=plugin.tx_wsslider.swiper/pagination/l; type=string; label=Format function for total number in fraction pagination
+plugin.tx_wsslider.settings.renderer.swiper.pagination.formatFractionTotal =
+# cat=plugin.tx_wsslider.swiper/pagination/m; type=string; label=CSS class name of pagination when it becomes inactive
+plugin.tx_wsslider.settings.renderer.swiper.pagination.hiddenClass = swiper-pagination-hidden
+# cat=plugin.tx_wsslider.swiper/pagination/n; type=options[true,false]; label=Toggle pagination container visibility after click on slider container
+plugin.tx_wsslider.settings.renderer.swiper.pagination.hideOnClick = true
+# cat=plugin.tx_wsslider.swiper/pagination/o; type=string; label=CSS class name set to pagination in horizontal Swiper
+plugin.tx_wsslider.settings.renderer.swiper.pagination.horizontalClass = swiper-pagination-horizontal
+# cat=plugin.tx_wsslider.swiper/pagination/p; type=string; label=CSS class name set to pagination when it is disabled
+plugin.tx_wsslider.settings.renderer.swiper.pagination.lockClass = swiper-pagination-lock
+# cat=plugin.tx_wsslider.swiper/pagination/q; type=string; label=Prefix for modifier CSS class name for pagination
+plugin.tx_wsslider.settings.renderer.swiper.pagination.modifierClass = swiper-pagination-
+# cat=plugin.tx_wsslider.swiper/pagination/r; type=string; label=CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint
+plugin.tx_wsslider.settings.renderer.swiper.pagination.paginationDisabledClass = swiper-pagination-disabled
+# cat=plugin.tx_wsslider.swiper/pagination/s; type=string; label=CSS class name of pagination progressbar fill element
+plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarFillClass = swiper-pagination-progressbar-fill
+# cat=plugin.tx_wsslider.swiper/pagination/t; type=options[true,false]; label=Progressbar opposite to Swiper's direction
+plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarOpposite = false
+# cat=plugin.tx_wsslider.swiper/pagination/u; type=string; label=CSS class name of pagination progressbar opposite
+plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarOppositeClass = swiper-pagination-progressbar-opposite
+# cat=plugin.tx_wsslider.swiper/pagination/v; type=string; label=Custom function for pagination bullets (only for bullets type)
+plugin.tx_wsslider.settings.renderer.swiper.pagination.renderBullet =
+# cat=plugin.tx_wsslider.swiper/pagination/w; type=string; label=Custom function for custom pagination type
+plugin.tx_wsslider.settings.renderer.swiper.pagination.renderCustom =
+# cat=plugin.tx_wsslider.swiper/pagination/x; type=string; label=Custom function for fraction pagination type
+plugin.tx_wsslider.settings.renderer.swiper.pagination.renderFraction =
+# cat=plugin.tx_wsslider.swiper/pagination/y; type=string; label=Custom function for progressbar pagination type
+plugin.tx_wsslider.settings.renderer.swiper.pagination.renderProgressbar =
+# cat=plugin.tx_wsslider.swiper/pagination/z; type=string; label=CSS class name of the element with total number in fraction pagination
+plugin.tx_wsslider.settings.renderer.swiper.pagination.totalClass = swiper-pagination-total
+# cat=plugin.tx_wsslider.swiper/pagination/aa; type=options[bullets,fraction,progressbar,custom]; label=Type of pagination (bullets, fraction, progressbar, custom)
+plugin.tx_wsslider.settings.renderer.swiper.pagination.type = bullets
+# cat=plugin.tx_wsslider.swiper/pagination/ab; type=string; label=CSS class name set to pagination in vertical Swiper
+plugin.tx_wsslider.settings.renderer.swiper.pagination.verticalClass = swiper-pagination-vertical
+
+# cat=plugin.tx_wsslider.swiper/scrollbar/a; type=string; label=Scrollbar draggable element CSS class
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.dragClass = swiper-scrollbar-drag
+# cat=plugin.tx_wsslider.swiper/scrollbar/b; type=string; label=Size of scrollbar draggable element in px
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.dragSize = auto
+# cat=plugin.tx_wsslider.swiper/scrollbar/c; type=options[true,false]; label=Enable draggable scrollbar
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.draggable = false
+# cat=plugin.tx_wsslider.swiper/scrollbar/d; type=string; label=CSS selector or HTML element of the container with scrollbar
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.el =
+# cat=plugin.tx_wsslider.swiper/scrollbar/e; type=options[true,false]; label=Enable/disable scrollbar (breakpoint support)
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.enabled = true
+# cat=plugin.tx_wsslider.swiper/scrollbar/f; type=options[true,false]; label=Hide scrollbar automatically after user interaction
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.hide = true
+# cat=plugin.tx_wsslider.swiper/scrollbar/g; type=string; label=CSS class name set to scrollbar in horizontal Swiper
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.horizontalClass = swiper-scrollbar-horizontal
+# cat=plugin.tx_wsslider.swiper/scrollbar/h; type=string; label=Scrollbar element additional CSS class when it is disabled
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.lockClass = swiper-scrollbar-lock
+# cat=plugin.tx_wsslider.swiper/scrollbar/i; type=string; label=CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.scrollbarDisabledClass = swiper-scrollbar-disabled
+# cat=plugin.tx_wsslider.swiper/scrollbar/j; type=options[true,false]; label=Snap slider position to slides when you release scrollbar
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.snapOnRelease = false
+# cat=plugin.tx_wsslider.swiper/scrollbar/k; type=string; label=CSS class name set to scrollbar in vertical Swiper
+plugin.tx_wsslider.settings.renderer.swiper.scrollbar.verticalClass = swiper-scrollbar-vertical
+
+# cat=plugin.tx_wsslider.swiper/autoplay/a; type=int+; label=Delay between transitions (in ms)
+plugin.tx_wsslider.settings.renderer.swiper.autoplay.delay = 3000
+# cat=plugin.tx_wsslider.swiper/autoplay/b; type=options[true,false]; label=Disable autoplay on interaction
+plugin.tx_wsslider.settings.renderer.swiper.autoplay.disableOnInteraction = true
+# cat=plugin.tx_wsslider.swiper/autoplay/c; type=options[true,false]; label=Pause autoplay on mouse enter
+plugin.tx_wsslider.settings.renderer.swiper.autoplay.pauseOnMouseEnter = false
+# cat=plugin.tx_wsslider.swiper/autoplay/d; type=options[true,false]; label=Autoplay in reverse direction
+plugin.tx_wsslider.settings.renderer.swiper.autoplay.reverseDirection = false
+# cat=plugin.tx_wsslider.swiper/autoplay/e; type=options[true,false]; label=Stop autoplay on last slide
+plugin.tx_wsslider.settings.renderer.swiper.autoplay.stopOnLastSlide = false
+# cat=plugin.tx_wsslider.swiper/autoplay/f; type=options[true,false]; label=Wait for transition before next autoplay
+plugin.tx_wsslider.settings.renderer.swiper.autoplay.waitForTransition = true
+
+# cat=plugin.tx_wsslider.swiper/freemode/a; type=options[true,false]; label=Enable free mode
+plugin.tx_wsslider.settings.renderer.swiper.freemode.enabled = false
+# cat=plugin.tx_wsslider.swiper/freemode/b; type=float+; label=Minimum touchmove-velocity for free mode momentum
+plugin.tx_wsslider.settings.renderer.swiper.freemode.minimumVelocity = 0.02
+# cat=plugin.tx_wsslider.swiper/freemode/c; type=options[true,false]; label=Enable momentum in free mode
+plugin.tx_wsslider.settings.renderer.swiper.freemode.momentum = true
+# cat=plugin.tx_wsslider.swiper/freemode/d; type=options[true,false]; label=Enable momentum bounce in free mode
+plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumBounce = true
+# cat=plugin.tx_wsslider.swiper/freemode/e; type=float+; label=Momentum bounce ratio
+plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumBounceRatio = 1
+# cat=plugin.tx_wsslider.swiper/freemode/f; type=float+; label=Momentum ratio
+plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumRatio = 1
+# cat=plugin.tx_wsslider.swiper/freemode/g; type=float+; label=Momentum velocity ratio
+plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumVelocityRatio = 1
+# cat=plugin.tx_wsslider.swiper/freemode/h; type=options[true,false]; label=Snap to slides in free mode
+plugin.tx_wsslider.settings.renderer.swiper.freemode.sticky = false
+
+# cat=plugin.tx_wsslider.swiper/parallax/a; type=options[true,false]; label=Enable parallaxed elements inside the slider
+plugin.tx_wsslider.settings.renderer.swiper.parallax.enabled = false
+
+# cat=plugin.tx_wsslider.swiper/fadeeffect/a; type=options[true,false]; label=Enables slides cross fade
+plugin.tx_wsslider.settings.renderer.swiper.fadeeffect.crossFade = false
+
+# cat=plugin.tx_wsslider.swiper/coverfloweffect/a; type=int+; label=Depth offset in px (slides translate in Z axis)
+plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.depth = 100
+# cat=plugin.tx_wsslider.swiper/coverfloweffect/b; type=float+; label=Effect multiplier
+plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.modifier = 1
+# cat=plugin.tx_wsslider.swiper/coverfloweffect/c; type=int+; label=Slide rotate in degrees
+plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.rotate = 50
+# cat=plugin.tx_wsslider.swiper/coverfloweffect/d; type=float+; label=Slide scale effect
+plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.scale = 1
+# cat=plugin.tx_wsslider.swiper/coverfloweffect/e; type=options[true,false]; label=Enables slides shadows
+plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.slideShadows = true
+# cat=plugin.tx_wsslider.swiper/coverfloweffect/f; type=string; label=Stretch space between slides (px or %)
+plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.stretch = 0
+
+
+# cat=plugin.tx_wsslider.swiper/flipeffect/a; type=options[true,false]; label=Limit edge slides rotation
+plugin.tx_wsslider.settings.renderer.swiper.flipeffect.limitRotation = true
+# cat=plugin.tx_wsslider.swiper/flipeffect/b; type=options[true,false]; label=Enables slides shadows
+plugin.tx_wsslider.settings.renderer.swiper.flipeffect.slideShadows = true
+
+
+# cat=plugin.tx_wsslider.swiper/cubeeffect/a; type=options[true,false]; label=Enables main slider shadow
+plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadow = true
+# cat=plugin.tx_wsslider.swiper/cubeeffect/b; type=int+; label=Main shadow offset in px
+plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowOffset = 20
+# cat=plugin.tx_wsslider.swiper/cubeeffect/c; type=float+; label=Main shadow scale ratio
+plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowScale = 0.94
+# cat=plugin.tx_wsslider.swiper/cubeeffect/d; type=options[true,false]; label=Enables slides shadows
+plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.slideShadows = true
+
+# cat=plugin.tx_wsslider.swiper/cardseffect/a; type=int+; label=Offset distance per slide (in px)
+plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideOffset = 8
+# cat=plugin.tx_wsslider.swiper/cardseffect/b; type=int+; label=Rotate angle per slide (in degrees)
+plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideRotate = 2
+# cat=plugin.tx_wsslider.swiper/cardseffect/c; type=options[true,false]; label=Enables cards rotation
+plugin.tx_wsslider.settings.renderer.swiper.cardseffect.rotate = true
+# cat=plugin.tx_wsslider.swiper/cardseffect/d; type=options[true,false]; label=Enables slides shadows
+plugin.tx_wsslider.settings.renderer.swiper.cardseffect.slideShadows = true
+
+
+# cat=plugin.tx_wsslider.swiper/creativeeffect/a; type=int+; label=Limit progress/offset to amount of side slides
+plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.limitProgress = 1
+# cat=plugin.tx_wsslider.swiper/creativeeffect/b; type=string; label=Next slide transformations
+plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.next =
+# cat=plugin.tx_wsslider.swiper/creativeeffect/c; type=options[true,false]; label=Enable 3D perspective for custom transforms
+plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.perspective = true
+# cat=plugin.tx_wsslider.swiper/creativeeffect/d; type=string; label=Previous slide transformations
+plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.prev =
+# cat=plugin.tx_wsslider.swiper/creativeeffect/e; type=float+; label=Multiply slide transformations and opacity
+plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.progressMultiplier = 1
+# cat=plugin.tx_wsslider.swiper/creativeeffect/f; type=options[true,false]; label=Split shadow opacity per slide based on limitProgress
+plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.shadowPerProgress = false
+
+
+# cat=plugin.tx_wsslider.swiper/thumbs/a; type=int+; label=Auto scroll offset for thumbs
+plugin.tx_wsslider.settings.renderer.swiper.thumbs.autoScrollOffset = 0
+# cat=plugin.tx_wsslider.swiper/thumbs/b; type=options[true,false]; label=Enable multiple active thumbnail slides
+plugin.tx_wsslider.settings.renderer.swiper.thumbs.multipleActiveThumbs = true
+# cat=plugin.tx_wsslider.swiper/thumbs/c; type=string; label=Additional class for activated thumbs swiper slide
+plugin.tx_wsslider.settings.renderer.swiper.thumbs.slideThumbActiveClass = swiper-slide-thumb-active
+# cat=plugin.tx_wsslider.swiper/thumbs/d; type=string; label=Swiper instance or parameters for thumbs swiper
+plugin.tx_wsslider.settings.renderer.swiper.thumbs.swiper = null
+# cat=plugin.tx_wsslider.swiper/thumbs/e; type=string; label=Additional class for thumbs swiper container
+plugin.tx_wsslider.settings.renderer.swiper.thumbs.thumbsContainerClass = swiper-thumbs
+
+# cat=plugin.tx_wsslider.swiper/zoom/a; type=string; label=CSS class name of zoom container
+plugin.tx_wsslider.settings.renderer.swiper.zoom.containerClass = swiper-zoom-container
+# cat=plugin.tx_wsslider.swiper/zoom/b; type=options[true,false]; label=Limit zoom to original image size
+plugin.tx_wsslider.settings.renderer.swiper.zoom.limitToOriginalSize = false
+# cat=plugin.tx_wsslider.swiper/zoom/c; type=float+; label=Maximum image zoom multiplier
+plugin.tx_wsslider.settings.renderer.swiper.zoom.maxRatio = 3
+# cat=plugin.tx_wsslider.swiper/zoom/d; type=float+; label=Minimal image zoom multiplier
+plugin.tx_wsslider.settings.renderer.swiper.zoom.minRatio = 1
+# cat=plugin.tx_wsslider.swiper/zoom/e; type=options[true,false]; label=Pan zoomed image on mouse move
+plugin.tx_wsslider.settings.renderer.swiper.zoom.panOnMouseMove = false
+# cat=plugin.tx_wsslider.swiper/zoom/f; type=options[true,false]; label=Enable/disable zoom-in by double tap
+plugin.tx_wsslider.settings.renderer.swiper.zoom.toggle = true
+# cat=plugin.tx_wsslider.swiper/zoom/g; type=string; label=CSS class name of zoomed in container
+plugin.tx_wsslider.settings.renderer.swiper.zoom.zoomedSlideClass = swiper-slide-zoomed
+
+# cat=plugin.tx_wsslider.swiper/keyboard/a; type=options[true,false]; label=Enable keyboard control
+plugin.tx_wsslider.settings.renderer.swiper.keyboard.enabled = false
+# cat=plugin.tx_wsslider.swiper/keyboard/b; type=options[true,false]; label=Control sliders only in viewport
+plugin.tx_wsslider.settings.renderer.swiper.keyboard.onlyInViewport = true
+# cat=plugin.tx_wsslider.swiper/keyboard/c; type=options[true,false]; label=Enable keyboard navigation by Page Up/Down keys
+plugin.tx_wsslider.settings.renderer.swiper.keyboard.pageUpDown = true
+# cat=plugin.tx_wsslider.swiper/keyboard/d; type=int+; label=Speed of keyboard navigation transitions (ms)
+plugin.tx_wsslider.settings.renderer.swiper.keyboard.speed =
+
+# cat=plugin.tx_wsslider.swiper/mousewheel/a; type=options[true,false]; label=Enable mousewheel control
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.enabled = false
+# cat=plugin.tx_wsslider.swiper/mousewheel/b; type=string; label=CSS selector or HTML element for mousewheel events target
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.eventsTarget = container
+# cat=plugin.tx_wsslider.swiper/mousewheel/c; type=options[true,false]; label=Force mousewheel swipes to axis
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.forceToAxis = false
+# cat=plugin.tx_wsslider.swiper/mousewheel/d; type=options[true,false]; label=Invert sliding direction
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.invert = false
+# cat=plugin.tx_wsslider.swiper/mousewheel/e; type=string; label=Class name to ignore mousewheel scrolling
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.noMousewheelClass = swiper-no-mousewheel
+# cat=plugin.tx_wsslider.swiper/mousewheel/f; type=options[true,false]; label=Release mousewheel event on edges
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.releaseOnEdges = false
+# cat=plugin.tx_wsslider.swiper/mousewheel/g; type=float+; label=Mousewheel sensitivity multiplier
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.sensitivity = 1
+# cat=plugin.tx_wsslider.swiper/mousewheel/h; type=float+; label=Minimum mousewheel scroll delta to trigger slide change
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.thresholdDelta =
+# cat=plugin.tx_wsslider.swiper/mousewheel/i; type=float+; label=Minimum mousewheel scroll time delta (ms) to trigger slide change
+plugin.tx_wsslider.settings.renderer.swiper.mousewheel.thresholdTime =
+
+# cat=plugin.tx_wsslider.swiper/virtualslides/a; type=int+; label=Increase amount of pre-rendered slides after active slide
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.addSlidesAfter = 0
+# cat=plugin.tx_wsslider.swiper/virtualslides/b; type=int+; label=Increase amount of pre-rendered slides before active slide
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.addSlidesBefore = 0
+# cat=plugin.tx_wsslider.swiper/virtualslides/c; type=options[true,false]; label=Enable DOM cache of rendered slides
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.cache = true
+# cat=plugin.tx_wsslider.swiper/virtualslides/d; type=options[true,false]; label=Enable virtual slides
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.enabled = false
+# cat=plugin.tx_wsslider.swiper/virtualslides/e; type=string; label=Function for external rendering (e.g. React/Vue)
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderExternal =
+# cat=plugin.tx_wsslider.swiper/virtualslides/f; type=options[true,false]; label=Update Swiper layout after renderExternal
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderExternalUpdate = true
+# cat=plugin.tx_wsslider.swiper/virtualslides/g; type=string; label=Function to render slide
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderSlide =
+# cat=plugin.tx_wsslider.swiper/virtualslides/h; type=string; label=Array with slides
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.slides =
+# cat=plugin.tx_wsslider.swiper/virtualslides/i; type=int+; label=Slide size for slidesPerView: auto (in px)
+plugin.tx_wsslider.settings.renderer.swiper.virtualslides.slidesPerViewAutoSlideSize = 320
+
+# cat=plugin.tx_wsslider.swiper/hashnavigation/a; type=string; label=Designed to be used with Virtual slides when it is impossible to find slide in DOM by hash (e.g. not yet rendered)
+plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.getSlideIndex =
+# cat=plugin.tx_wsslider.swiper/hashnavigation/b; type=boolean; label=Works in addition to hashnav to replace current url state with the new one instead of adding it to history
+plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.replaceState = false
+# cat=plugin.tx_wsslider.swiper/hashnavigation/c; type=boolean; label=Set to true to enable also navigation through slides (when hashnav is enabled) by browser history or by setting directly hash on document location
+plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.watchState = false
+

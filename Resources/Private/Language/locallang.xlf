@@ -80,6 +80,63 @@
 			<trans-unit id="sheet.navigation">
 				<source>Navigation</source>
 			</trans-unit>
+			<trans-unit id="sheet.pagination">
+				<source>Pagination</source>
+			</trans-unit>
+			<trans-unit id="sheet.scrollbar">
+				<source>Scrollbar</source>
+			</trans-unit>
+			<trans-unit id="sheet.autoplay">
+				<source>Autoplay</source>
+			</trans-unit>
+			<trans-unit id="sheet.freemode">
+				<source>Free Mode</source>
+			</trans-unit>
+			<trans-unit id="sheet.grid">
+				<source>Grid</source>
+			</trans-unit>
+			<trans-unit id="sheet.parallax">
+				<source>Parallax</source>
+			</trans-unit>
+			<trans-unit id="sheet.fadeeffect">
+				<source>Fade Effect</source>
+			</trans-unit>
+			<trans-unit id="sheet.coverfloweffect">
+				<source>CoverFlow Effect</source>
+			</trans-unit>
+			<trans-unit id="sheet.flipeffect">
+				<source>Flip Effect</source>
+			</trans-unit>
+			<trans-unit id="sheet.cubeeffect">
+				<source>Cube Effect</source>
+			</trans-unit>
+			<trans-unit id="sheet.cardseffect">
+				<source>Cards Effect</source>
+			</trans-unit>
+			<trans-unit id="sheet.creativeeffect">
+				<source>Creative Effect</source>
+			</trans-unit>
+			<trans-unit id="sheet.thumbs">
+				<source>Thumbs</source>
+			</trans-unit>
+			<trans-unit id="sheet.zoom">
+				<source>Zoom</source>
+			</trans-unit>
+			<trans-unit id="sheet.keyboard">
+				<source>Keyboard</source>
+			</trans-unit>
+			<trans-unit id="sheet.mousewheel">
+				<source>Mousewheel</source>
+			</trans-unit>
+			<trans-unit id="sheet.virtualslides">
+				<source>Virtual Slides</source>
+			</trans-unit>
+			<trans-unit id="sheet.hashnavigation">
+				<source>Hash Navigation</source>
+			</trans-unit>
+			<trans-unit id="sheet.history">
+				<source>History Navigation</source>
+			</trans-unit>
 			<trans-unit id="sheet.layout">
 				<source>Layout</source>
 			</trans-unit>
