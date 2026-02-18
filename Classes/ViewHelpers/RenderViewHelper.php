@@ -38,6 +38,10 @@ final class RenderViewHelper extends AbstractViewHelper
 
         $prototype = GeneralUtility::makeInstance(SliderDefinition::class);
 
+        if ($renderer === '' && $this->arguments['factoryClass'] === null) {
+            $renderer = ucfirst($this->arguments['settings']['slider']['defaultRenderer'] ?? '');
+        }
+
         if ($this->arguments['factoryClass'] === null) {
             if (GeneralUtility::getContainer()->has('WapplerSystems\WsSlider\Factory\\'.$renderer.'Factory')) {
                 $this->arguments['factoryClass'] = 'WapplerSystems\WsSlider\Factory\\' . $renderer . 'Factory';
