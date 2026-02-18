@@ -5,7 +5,7 @@
 
 <f:section name="Default">
 
-    <f:asset.script identifier="tinyslider" src="EXT:ws_slider/Resources/Public/JavaScript/TinySlider/tiny-slider.js" />
+    <f:asset.script useNonce="true" identifier="tinyslider" src="EXT:ws_slider/Resources/Public/JavaScript/TinySlider/tiny-slider.js" />
     <f:asset.css identifier="tinyslider" href="EXT:ws_slider/Resources/Public/CSS/TinySlider/tiny-slider.css" />
 
     <div id="{identifier}" class="">
@@ -17,7 +17,7 @@
 
     </div>
 
-    <f:asset.script identifier="{identifier}">{inlineJavascript}</f:asset.script>
+    <f:asset.script useNonce="true" inline="true" identifier="{identifier}">{inlineJavascript}</f:asset.script>
 
 </f:section>
 

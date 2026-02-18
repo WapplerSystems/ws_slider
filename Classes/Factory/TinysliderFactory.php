@@ -65,6 +65,8 @@ class TinysliderFactory extends AbstractSliderFactory
 
         $this->sliderPrototype->setOptions($options);
 
+        $options['nonce'] = 'js:document.currentScript.nonce';
+
         $optionsJson = $this->js_encode($options);
         $js = "var {$identifier} = tns({$optionsJson});\n";
         $this->sliderPrototype->setJavaScript($js);
