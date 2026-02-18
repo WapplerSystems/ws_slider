@@ -233,9 +233,9 @@ plugin.tx_wsslider.settings.renderer.swiper.navigation.lockClass = swiper-button
 # cat=plugin.tx_wsslider.swiper/navigation/g; type=string; label=CSS class name added on swiper container when navigation is disabled by breakpoint
 plugin.tx_wsslider.settings.renderer.swiper.navigation.navigationDisabledClass = swiper-navigation-disabled
 # cat=plugin.tx_wsslider.swiper/navigation/h; type=string; label=CSS selector or HTML element for the next button
-plugin.tx_wsslider.settings.renderer.swiper.navigation.nextEl =
+plugin.tx_wsslider.settings.renderer.swiper.navigation.nextEl = .swiper-button-next
 # cat=plugin.tx_wsslider.swiper/navigation/i; type=string; label=CSS selector or HTML element for the previous button
-plugin.tx_wsslider.settings.renderer.swiper.navigation.prevEl =
+plugin.tx_wsslider.settings.renderer.swiper.navigation.prevEl = .swiper-button-prev
 
 # cat=plugin.tx_wsslider.swiper/pagination/a; type=string; label=CSS class name of currently active pagination bullet
 plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletActiveClass = swiper-pagination-bullet-active
