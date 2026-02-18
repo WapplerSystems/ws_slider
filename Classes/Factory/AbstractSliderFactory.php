@@ -54,7 +54,11 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
                 } else if (is_string($v) && str_starts_with($v,'num:')) {
                         $val = (int)substr($v, 4);
                 } else if (is_string($v) && str_starts_with($v,'bool:')) {
-                        $val = (bool)substr($v, 5);
+                    $val = (bool)substr($v, 5);
+                } else if (is_numeric($v) && is_string($v) && str_contains($v,'.')) {
+                    $val = (float)$v;
+                } else if (is_numeric($v)) {
+                    $val = (int)$v;
                 } else {
                     $val = json_encode($v);
                 }
