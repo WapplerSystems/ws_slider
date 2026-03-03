@@ -280,6 +280,9 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         $defaultValue = null;
         if ($typoscript !== null) {
             $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript,$config['typoscriptPath']);
+            if ($config['type'] === 'number') {
+                $defaultValue = (int)$defaultValue;
+            }
         }
 
         if ($defaultValue !== null) {
