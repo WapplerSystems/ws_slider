@@ -3,114 +3,146 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
-      <trans-unit id="tinyslider.settings.js.mode.description" xml:space="preserve" approved="yes">
-				<source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
-			<target state="final">Kontrolliert das Animationsverhalten. Bei 'karussell' verschiebt sich alles zur Seite. Bei 'galerie' werden Animationen für Überblenden verwendet und alle Elemente werden gleichzeitig verändert.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.axis.description" xml:space="preserve" approved="yes">
-				<source>The axis of the slider.</source>
-			<target state="final">Die Achse des Sliders.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.items.description" xml:space="preserve" approved="yes">
-				<source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
-			<target state="final">Anzahl der Folien die im Viewport angezeigt werden. Wenn die Anzahl der Elemente kleiner oder gleich als die hier angegebene Anzahl sind, wird der slider nicht initialisiert</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.gutter.description" xml:space="preserve" approved="yes">
-				<source>Space between slides (in “px”).</source>
-			<target state="final">Abstand zwischen Elementen (in „px“).</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.edgePadding.description" xml:space="preserve" approved="yes">
-				<source>Space on the outside (in “px”).</source>
-			<target state="final">Padding außerhalb (in px).</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.fixedWidth.description" xml:space="preserve" approved="yes">
-				<source>Controls width attribute of the slides.</source>
-			<target state="final">Steuert das Breitenattribut der Elemente.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoWidth.description" xml:space="preserve" approved="yes">
-				<source>If true, the width of each slide will be its natural width as an inline-block box.</source>
-			<target state="final">Falls aktiviert, ist die Breite jedes Elements als Inline-Block die natürliche Breite der Folie.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.viewportMax.description" xml:space="preserve" approved="yes">
-				<source>Maximum viewport width for fixedWidth/autoWidth.</source>
-			<target state="final">Maximale Viewportbreite für die feste/automatische Breite.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.slideBy.description" xml:space="preserve" approved="yes">
-				<source>Number of slides going on one “click”.</source>
-			<target state="final">Anzahl der Elemente die verschoben werden bei einer Aktion.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.center.description" xml:space="preserve" approved="yes">
-				<source>Center the active slide in the viewport.</source>
-			<target state="final">Zentriert die aktive Folie.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.controls.description" xml:space="preserve" approved="yes">
-				<source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
-			<target state="final">Kontrolliert die Sichtbarkeit und Funktionalität der Kontrollkomponenten (Vorherige/Nächste buttons). Falls aktiviert, werden alle Kontrollkomponenten aktiviert. Für bessere Benutzbarkeit ist Kontrolle über linker/rechter Pfeiltaste möglich wenn einer der Vorherige/Nächste Buttons fokussiert ist.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsPosition.description" xml:space="preserve" approved="yes">
-				<source>Controls controls position.</source>
-			<target state="final">Positionen der Kontrollschaltflächen.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsContainer.description" xml:space="preserve" approved="yes">
-				<source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
-			<target state="final">Das container Element/Selektor um die Vorherige/Nächste Buttons. Muss mindestens 2 untergeordnete Elemente haben.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.prevButton.description" xml:space="preserve" approved="yes">
-				<source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-			<target state="final">Benutzerdefinierter "Vorherige"-Button. Diese Option wird ignoriert falls der Container der Kontrollelemente ein Node Element oder ein CSS Selektor ist.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.nextButton.description" xml:space="preserve" approved="yes">
-				<source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-			<target state="final">Benutzerdefinierter "Nächste"-Button. Diese Option wird ignoriert falls der Container der Kontrollelemente ein Node Element oder ein CSS Selektor ist.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.nav.description" xml:space="preserve" approved="yes">
-				<source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
-			<target state="final">Aktiviert die Navigationspunkte.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.navPosition.description" xml:space="preserve" approved="yes">
-				<source>Controls nav position.</source>
-			<target state="final">Positionen der Kontrollelemente.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.navContainer.description" xml:space="preserve" approved="yes">
-				<source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
-			<target state="final">Das Containerelement/Selektor um die Navigationspunkte.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" xml:space="preserve" approved="yes">
-				<source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
-			<target state="final">Geben Sie an, ob es sich bei den Punkten um Thumbnails handelt. Wenn ja, sind sie immer sichtbar, auch wenn mehr als 1 Element im Viewport angezeigt wird.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.arrowKeys.description" xml:space="preserve" approved="yes">
-				<source>Allows using arrow keys to switch slides.</source>
-			<target state="final">Ermöglicht das Wechseln von Folien mit Pfeiltasten.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.speed.description" xml:space="preserve" approved="yes">
-				<source>Speed of the slide animation (in “ms”).</source>
-			<target state="final">Geschwindigkeit der Folienanimation (in „ms“).</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplay.description" xml:space="preserve" approved="yes">
-				<source>Toggles the automatic change of slides.</source>
-			<target state="final">Schaltet den automatische Wechsel der Folien an.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" xml:space="preserve" approved="yes">
-				<source>Controls autoplay position.</source>
-			<target state="final">Kontrolliert die Autoplay Position.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" xml:space="preserve" approved="yes">
-				<source>Time between 2 autoplay slides change (in “ms”).</source>
-			<target state="final">Zeit zwischen 2 Autoplay-Folien ändern (in „ms“).</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" xml:space="preserve" approved="yes">
-				<source>Direction of slide movement (ascending/descending the slide index).</source>
-			<target state="final">Richtung der Folienbewegung (aufsteigen/absteigend des Folienindex).</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" xml:space="preserve" approved="yes">
-				<source>Stops sliding on mouseover.</source>
-			<target state="final">Stoppt Autoplay wenn der Mauszeiger über dem slider schwebt.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButton.description" xml:space="preserve" approved="yes">
-				<source>The customized autoplay start/stop button or selector.</source>
-			<target state="final">Benutzerdefinierter Autotoplay Start-/Stop-Button oder Selektor.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" xml:space="preserve">
-				<source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-			<target state="needs-translation">Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" xml:space="preserve" approved="yes">
-				<source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
-			<target state="final">Pausiert Autoplay wenn die Seite nicht sichtbar ist und führt es fort sobald die Seite wieder sichtbar ist.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateIn.description" xml:space="preserve" approved="yes">
-				<source>Name of intro animation class.</source>
-			<target state="final">Name der Intro Animationsklasse.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateOut.description" xml:space="preserve" approved="yes">
-				<source>Name of outro animation class.</source>
-			<target state="final">Name der Outro Animationsklasse.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateNormal.description" xml:space="preserve" approved="yes">
-				<source>Name of default animation class.</source>
-			<target state="final">Name der Standard Animationsklasse.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateDelay.description" xml:space="preserve" approved="yes">
-				<source>Time between each gallery animation (in “ms”).</source>
-			<target state="final">Zeit zwischen jeder Galerieanimation (in „ms“).</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.loop.description" xml:space="preserve" approved="yes">
-				<source>Moves throughout all the slides seamlessly.</source>
-			<target state="final">Slider bildet eine Endlosschleife.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.rewind.description" xml:space="preserve" approved="yes">
-				<source>Moves to the opposite edge when reaching the first or last slide.</source>
-			<target state="final">Läuft wieder in die andere Richtung beim Erreichen der ersten oder letzten Folie.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoHeight.description" xml:space="preserve" approved="yes">
-				<source>Height of slider container changes according to each slide’s height.</source>
-			<target state="final">Die Höhe des Sliders ändert sich je nach Höhe der einzelnen Folien.</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
+        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
+        <target state="final">Kontrolliert das Animationsverhalten. Bei 'karussell' verschiebt sich alles zur Seite. Bei 'galerie' werden Animationen für Überblenden verwendet und alle Elemente werden gleichzeitig verändert.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
+        <source>The axis of the slider.</source>
+        <target state="final">Die Achse des Sliders.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
+        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
+        <target state="final">Anzahl der Folien die im Viewport angezeigt werden. Wenn die Anzahl der Elemente kleiner oder gleich als die hier angegebene Anzahl sind, wird der slider nicht initialisiert</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
+        <source>Space between slides (in “px”).</source>
+        <target state="final">Abstand zwischen Elementen (in „px“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
+        <source>Space on the outside (in “px”).</source>
+        <target state="final">Padding außerhalb (in px).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
+        <source>Controls width attribute of the slides.</source>
+        <target state="final">Steuert das Breitenattribut der Elemente.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
+        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
+        <target state="final">Falls aktiviert, ist die Breite jedes Elements als Inline-Block die natürliche Breite der Folie.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
+        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
+        <target state="final">Maximale Viewportbreite für die feste/automatische Breite.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
+        <source>Number of slides going on one “click”.</source>
+        <target state="final">Anzahl der Elemente die verschoben werden bei einer Aktion.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
+        <source>Center the active slide in the viewport.</source>
+        <target state="final">Zentriert die aktive Folie.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
+        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
+        <target state="final">Kontrolliert die Sichtbarkeit und Funktionalität der Kontrollkomponenten (Vorherige/Nächste buttons). Falls aktiviert, werden alle Kontrollkomponenten aktiviert. Für bessere Benutzbarkeit ist Kontrolle über linker/rechter Pfeiltaste möglich wenn einer der Vorherige/Nächste Buttons fokussiert ist.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
+        <source>Controls controls position.</source>
+        <target state="final">Positionen der Kontrollschaltflächen.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
+        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
+        <target state="final">Das container Element/Selektor um die Vorherige/Nächste Buttons. Muss mindestens 2 untergeordnete Elemente haben.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
+        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+        <target state="final">Benutzerdefinierter "Vorherige"-Button. Diese Option wird ignoriert falls der Container der Kontrollelemente ein Node Element oder ein CSS Selektor ist.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
+        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+        <target state="final">Benutzerdefinierter "Nächste"-Button. Diese Option wird ignoriert falls der Container der Kontrollelemente ein Node Element oder ein CSS Selektor ist.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
+        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
+        <target state="final">Aktiviert die Navigationspunkte.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
+        <source>Controls nav position.</source>
+        <target state="final">Positionen der Kontrollelemente.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
+        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
+        <target state="final">Das Containerelement/Selektor um die Navigationspunkte.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
+        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
+        <target state="final">Geben Sie an, ob es sich bei den Punkten um Thumbnails handelt. Wenn ja, sind sie immer sichtbar, auch wenn mehr als 1 Element im Viewport angezeigt wird.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
+        <source>Allows using arrow keys to switch slides.</source>
+        <target state="final">Ermöglicht das Wechseln von Folien mit Pfeiltasten.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
+        <source>Speed of the slide animation (in “ms”).</source>
+        <target state="final">Geschwindigkeit der Folienanimation (in „ms“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
+        <source>Toggles the automatic change of slides.</source>
+        <target state="final">Schaltet den automatische Wechsel der Folien an.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
+        <source>Controls autoplay position.</source>
+        <target state="final">Kontrolliert die Autoplay Position.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
+        <source>Time between 2 autoplay slides change (in “ms”).</source>
+        <target state="final">Zeit zwischen 2 Autoplay-Folien ändern (in „ms“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
+        <source>Direction of slide movement (ascending/descending the slide index).</source>
+        <target state="final">Richtung der Folienbewegung (aufsteigen/absteigend des Folienindex).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
+        <source>Stops sliding on mouseover.</source>
+        <target state="final">Stoppt Autoplay wenn der Mauszeiger über dem slider schwebt.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
+        <source>The customized autoplay start/stop button or selector.</source>
+        <target state="final">Benutzerdefinierter Autotoplay Start-/Stop-Button oder Selektor.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
+        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
+        <target state="final">Pausiert Autoplay wenn die Seite nicht sichtbar ist und führt es fort sobald die Seite wieder sichtbar ist.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
+        <source>Name of intro animation class.</source>
+        <target state="final">Name der Intro Animationsklasse.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
+        <source>Name of outro animation class.</source>
+        <target state="final">Name der Outro Animationsklasse.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
+        <source>Name of default animation class.</source>
+        <target state="final">Name der Standard Animationsklasse.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
+        <source>Time between each gallery animation (in “ms”).</source>
+        <target state="final">Zeit zwischen jeder Galerieanimation (in „ms“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
+        <source>Moves throughout all the slides seamlessly.</source>
+        <target state="final">Slider bildet eine Endlosschleife.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
+        <source>Moves to the opposite edge when reaching the first or last slide.</source>
+        <target state="final">Läuft wieder in die andere Richtung beim Erreichen der ersten oder letzten Folie.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
+        <source>Height of slider container changes according to each slide’s height.</source>
+        <target state="final">Die Höhe des Sliders ändert sich je nach Höhe der einzelnen Folien.</target>
+      </trans-unit>
       <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
 				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
                         NOTE:
@@ -118,45 +150,46 @@
                         + data-src attribute with its value of the real image src is required;
                         + width attribute for every image is required for autoWidth slider.</source>
 			<target state="final">Aktiviert lazy loading. Klasse .tns-lazy-img muss bei jedem Bild gesetzt sein welches mit lazy load geladen werden soll falls nichts spezifisches beim lazy load selektor angegeben wurde. data-src Attribut mit dem Pfad der Bildquelle wird benötigt. Das width Attribut wird für jedes Bild benötigt falls autoWidth benutzt wird.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" xml:space="preserve" approved="yes">
-				<source>The CSS selector for lazyload images.</source>
-			<target state="final">Der CSS-Selektor für nachzuladende Bilder mit lazy load.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.touch.description" xml:space="preserve" approved="yes">
-				<source>Activates input detection for touch devices.</source>
-			<target state="final">Aktiviert Touch-Eingabeerkennung.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.mouseDrag.description" xml:space="preserve" approved="yes">
-				<source>Changing slides by dragging them.</source>
-			<target state="final">Folienwechsel durch Wischen mit der Maus aktivieren.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.swipeAngle.description" xml:space="preserve" approved="yes">
-				<source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
-			<target state="final">Wischen oder Ziehen wird nicht ausgelöst, wenn der Winkel nicht innerhalb des eingestellten Bereichs liegt.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" xml:space="preserve" approved="yes">
-				<source>Prevent next transition while slider is transforming.</source>
-			<target state="final">Verhindert den nächsten Übergang wenn der Slider gerade noch einen Übergang durchführt.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" xml:space="preserve" approved="yes">
-				<source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
-			<target state="final">Verhindert das Scrollen der Seite beim Berühren. Wenn auf „auto“ gesetzt, wird der Slider zuerst überprüft, ob die Berührungsrichtung mit der Slider-Achse übereinstimmt, dann entscheiden, ob das Scrollen der Seite verhindert wird oder nicht. Wenn auf „erzwingen“ gesetzt wird, verhindert der Slider immer das Scrollen der Seite.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.nested.description" xml:space="preserve" approved="yes">
-				<source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
-			<target state="final">Definieren Sie die Beziehung zwischen verschachtelten Slidern. Stellen Sie sicher, dass Sie zuerst den inneren Slider ausführen, sonst ist die Höhe des inneren Sliders falsch.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.freezable.description" xml:space="preserve" approved="yes">
-				<source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
-			<target state="final">Geben Sie an, ob der Slider eingefroren wird (Steuerelemente, Nav, Autoplay und andere Funktionen werden nicht funktionieren), wenn alle Folien auf einer Seite angezeigt werden können.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.disable.description" xml:space="preserve" approved="yes">
-				<source>Disable slider.</source>
-			<target state="final">Slider deaktivieren.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.startIndex.description" xml:space="preserve" approved="yes">
-				<source>The initial index of the slider.</source>
-			<target state="final">Auf welchem Element soll der Slider starten?</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" xml:space="preserve">
-				<source>Callback to be run on initialization.</source>
-			<target state="needs-translation">Callback to be run on initialization.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" xml:space="preserve">
-				<source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-			<target state="needs-translation">Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" xml:space="preserve">
-				<source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-			<target state="needs-translation">Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
+        <source>The CSS selector for lazyload images.</source>
+        <target state="final">Der CSS-Selektor für nachzuladende Bilder mit lazy load.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
+        <source>Activates input detection for touch devices.</source>
+        <target state="final">Aktiviert Touch-Eingabeerkennung.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
+        <source>Changing slides by dragging them.</source>
+        <target state="final">Folienwechsel durch Wischen mit der Maus aktivieren.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
+        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
+        <target state="final">Wischen oder Ziehen wird nicht ausgelöst, wenn der Winkel nicht innerhalb des eingestellten Bereichs liegt.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
+        <source>Prevent next transition while slider is transforming.</source>
+        <target state="final">Verhindert den nächsten Übergang wenn der Slider gerade noch einen Übergang durchführt.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
+        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
+        <target state="final">Verhindert das Scrollen der Seite beim Berühren. Wenn auf „auto“ gesetzt, wird der Slider zuerst überprüft, ob die Berührungsrichtung mit der Slider-Achse übereinstimmt, dann entscheiden, ob das Scrollen der Seite verhindert wird oder nicht. Wenn auf „erzwingen“ gesetzt wird, verhindert der Slider immer das Scrollen der Seite.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
+        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
+        <target state="final">Definieren Sie die Beziehung zwischen verschachtelten Slidern. Stellen Sie sicher, dass Sie zuerst den inneren Slider ausführen, sonst ist die Höhe des inneren Sliders falsch.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
+        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
+        <target state="final">Geben Sie an, ob der Slider eingefroren wird (Steuerelemente, Nav, Autoplay und andere Funktionen werden nicht funktionieren), wenn alle Folien auf einer Seite angezeigt werden können.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
+        <source>Disable slider.</source>
+        <target state="final">Slider deaktivieren.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
+        <source>The initial index of the slider.</source>
+        <target state="final">Auf welchem Element soll der Slider starten?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
