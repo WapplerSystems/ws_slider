@@ -3,13 +3,33 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
+      <trans-unit id="title" approved="yes">
+        <source>Slider</source>
+        <target state="final">Slider</target>
+      </trans-unit>
+      <trans-unit id="description" approved="yes">
+        <source>Universal Slider / Carousel</source>
+        <target state="final">Universal Slider / Carousel</target>
+      </trans-unit>
+      <trans-unit id="palette.wsslider" approved="yes">
+        <source>Slider</source>
+        <target state="final">Slider</target>
+      </trans-unit>
       <trans-unit id="settings" approved="yes">
         <source>Settings</source>
         <target state="final">Einstellungen</target>
       </trans-unit>
+      <trans-unit id="renderer" approved="yes">
+        <source>Renderer</source>
+        <target state="final">Darstellendes Skript</target>
+      </trans-unit>
       <trans-unit id="items" approved="yes">
         <source>Items</source>
         <target state="final">Elemente</target>
+      </trans-unit>
+      <trans-unit id="preset" approved="yes">
+        <source>Preset</source>
+        <target state="final">Vorlage</target>
       </trans-unit>
       <trans-unit id="yes" approved="yes">
         <source>Yes</source>
@@ -48,6 +68,10 @@
         <source>Previous</source>
         <target state="final">Zurück</target>
       </trans-unit>
+      <trans-unit id="settings.typoscript" approved="yes">
+        <source>TypoScript</source>
+        <target state="final">TypoScript</target>
+      </trans-unit>
       <!-- sheets -->
       <trans-unit id="sheet.pagination" approved="yes">
         <source>Pagination</source>
@@ -56,6 +80,10 @@
       <trans-unit id="sheet.freemode" approved="yes">
         <source>Free Mode</source>
         <target state="final">Freier Modus</target>
+      </trans-unit>
+      <trans-unit id="sheet.grid" approved="yes">
+        <source>Grid</source>
+        <target state="final">Raster</target>
       </trans-unit>
       <trans-unit id="sheet.fadeeffect" approved="yes">
         <source>Fade Effect</source>
@@ -80,6 +108,10 @@
       <trans-unit id="sheet.creativeeffect" approved="yes">
         <source>Creative Effect</source>
         <target state="final">Creative Effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.zoom" approved="yes">
+        <source>Zoom</source>
+        <target state="final">Zoom</target>
       </trans-unit>
       <trans-unit id="sheet.keyboard" approved="yes">
         <source>Keyboard</source>
@@ -109,7 +141,23 @@
         <source>General</source>
         <target state="final">Allgemein</target>
       </trans-unit>
+      <trans-unit id="sheet.slick" approved="yes">
+        <source>Slick Slider</source>
+        <target state="final">Slick Slider</target>
+      </trans-unit>
+      <trans-unit id="sheet.swiper" approved="yes">
+        <source>Swiper Slider</source>
+        <target state="final">Swiper Slider</target>
+      </trans-unit>
       <!-- common setting labels -->
+      <trans-unit id="options.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Horizontal</target>
+      </trans-unit>
+      <trans-unit id="options.common.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Darstellung</target>
+      </trans-unit>
       <trans-unit id="options.common.autoplay" approved="yes">
         <source>Autoplay</source>
         <target state="final">Automatische Wiedergabe</target>
@@ -145,6 +193,10 @@
       <trans-unit id="options.common.vertical" approved="yes">
         <source>Vertical</source>
         <target state="final">Vertikal</target>
+      </trans-unit>
+      <trans-unit id="options.common.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Horizontal</target>
       </trans-unit>
       <trans-unit id="options.common.autoHeight" approved="yes">
         <source>Auto Height</source>
@@ -192,6 +244,10 @@
         <source>Text position</source>
         <target state="final">Textposition</target>
       </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Link</target>
+      </trans-unit>
       <trans-unit id="tx_wsslider_domain_model_item.textposition_left" approved="yes">
         <source>Left</source>
         <target state="final">Links</target>
@@ -223,6 +279,38 @@
       <trans-unit id="addImage" approved="yes">
         <source>Add image</source>
         <target state="final">Bild hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
+        <source>WS slider preset</source>
+        <target state="final">WS Slider Vorlage</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Typ</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.bootstrap" approved="yes">
+        <source>Bootstrap</source>
+        <target state="final">Bootstrap</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.flexslider" approved="yes">
+        <source>Flexslider</source>
+        <target state="final">Flexslider</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.slick" approved="yes">
+        <source>Slick slider</source>
+        <target state="final">Slick Slider</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.tinyslider" approved="yes">
+        <source>Tiny Slider</source>
+        <target state="final">Tiny Slider</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.swiper" approved="yes">
+        <source>Swiper</source>
+        <target state="final">Swiper</target>
       </trans-unit>
     </body>
   </file>
