@@ -47,7 +47,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.effect>
 
@@ -61,11 +60,10 @@
                     <settings.autoplay.delay>
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.delay</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplay.delay</typoscriptPath>
                             <size>8</size>
-                            <default>3000</default>
                         </config>
                     </settings.autoplay.delay>
                     <settings.autoplay.disableOnInteraction>
@@ -86,7 +84,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.autoplay.disableOnInteraction>
                     <settings.autoplay.pauseOnMouseEnter>
@@ -107,7 +104,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.autoplay.pauseOnMouseEnter>
                     <settings.autoplay.reverseDirection>
@@ -128,7 +124,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.autoplay.reverseDirection>
                     <settings.autoplay.stopOnLastSlide>
@@ -149,7 +144,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.autoplay.stopOnLastSlide>
                     <settings.autoplay.waitForTransition>
@@ -170,7 +164,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.autoplay.waitForTransition>
 
@@ -205,7 +198,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.navigation.addIcons>
                     <settings.navigation.disabledClass>
@@ -215,7 +207,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navigation.disabledClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-button-disabled</default>
                         </config>
                     </settings.navigation.disabledClass>
                     <settings.navigation.enabled>
@@ -245,7 +236,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navigation.hiddenClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-button-hidden</default>
                         </config>
                     </settings.navigation.hiddenClass>
                     <settings.navigation.hideOnClick>
@@ -266,7 +256,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.navigation.hideOnClick>
                     <settings.navigation.lockClass>
@@ -276,7 +265,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navigation.lockClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-button-lock</default>
                         </config>
                     </settings.navigation.lockClass>
                     <settings.navigation.navigationDisabledClass>
@@ -286,7 +274,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.navigation.navigationDisabledClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-navigation-disabled</default>
                         </config>
                     </settings.navigation.navigationDisabledClass>
                     <settings.navigation.nextEl>
@@ -478,7 +465,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletActiveClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-bullet-active</default>
                         </config>
                     </settings.pagination.bulletActiveClass>
                     <settings.pagination.bulletClass>
@@ -488,7 +474,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-bullet</default>
                         </config>
                     </settings.pagination.bulletClass>
                     <settings.pagination.bulletElement>
@@ -498,7 +483,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletElement</typoscriptPath>
                             <size>16</size>
-                            <default>span</default>
                         </config>
                     </settings.pagination.bulletElement>
                     <settings.pagination.clickable>
@@ -519,7 +503,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.pagination.clickable>
                     <settings.pagination.clickableClass>
@@ -529,7 +512,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.clickableClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-clickable</default>
                         </config>
                     </settings.pagination.clickableClass>
                     <settings.pagination.currentClass>
@@ -539,7 +521,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.currentClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-current</default>
                         </config>
                     </settings.pagination.currentClass>
                     <settings.pagination.dynamicBullets>
@@ -560,7 +541,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.pagination.dynamicBullets>
                     <settings.pagination.dynamicMainBullets>
@@ -570,7 +550,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.dynamicMainBullets</typoscriptPath>
                             <size>4</size>
-                            <default>1</default>
                         </config>
                     </settings.pagination.dynamicMainBullets>
                     <settings.pagination.el>
@@ -627,7 +606,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.hiddenClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-hidden</default>
                         </config>
                     </settings.pagination.hiddenClass>
                     <settings.pagination.hideOnClick>
@@ -648,7 +626,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.pagination.hideOnClick>
                     <settings.pagination.horizontalClass>
@@ -658,7 +635,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.horizontalClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-horizontal</default>
                         </config>
                     </settings.pagination.horizontalClass>
                     <settings.pagination.lockClass>
@@ -668,7 +644,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.lockClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-lock</default>
                         </config>
                     </settings.pagination.lockClass>
                     <settings.pagination.modifierClass>
@@ -678,7 +653,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.modifierClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-</default>
                         </config>
                     </settings.pagination.modifierClass>
                     <settings.pagination.paginationDisabledClass>
@@ -688,7 +662,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.paginationDisabledClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-disabled</default>
                         </config>
                     </settings.pagination.paginationDisabledClass>
                     <settings.pagination.progressbarFillClass>
@@ -698,7 +671,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarFillClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-progressbar-fill</default>
                         </config>
                     </settings.pagination.progressbarFillClass>
                     <settings.pagination.progressbarOpposite>
@@ -719,7 +691,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.pagination.progressbarOpposite>
                     <settings.pagination.progressbarOppositeClass>
@@ -729,7 +700,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarOppositeClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-progressbar-opposite</default>
                         </config>
                     </settings.pagination.progressbarOppositeClass>
                     <settings.pagination.renderBullet>
@@ -775,7 +745,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.totalClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-total</default>
                         </config>
                     </settings.pagination.totalClass>
                     <settings.pagination.type>
@@ -804,7 +773,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>bullets</default>
                         </config>
                     </settings.pagination.type>
                     <settings.pagination.verticalClass>
@@ -814,7 +782,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.pagination.verticalClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-pagination-vertical</default>
                         </config>
                     </settings.pagination.verticalClass>
                 </el>
@@ -832,7 +799,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.scrollbar.dragClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-scrollbar-drag</default>
                         </config>
                     </settings.scrollbar.dragClass>
                     <settings.scrollbar.dragSize>
@@ -842,7 +808,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.scrollbar.dragSize</typoscriptPath>
                             <size>8</size>
-                            <default>auto</default>
                         </config>
                     </settings.scrollbar.dragSize>
                     <settings.scrollbar.draggable>
@@ -863,7 +828,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.scrollbar.draggable>
                     <settings.scrollbar.el>
@@ -913,7 +877,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.scrollbar.hide>
                     <settings.scrollbar.horizontalClass>
@@ -923,7 +886,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.scrollbar.horizontalClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-scrollbar-horizontal</default>
                         </config>
                     </settings.scrollbar.horizontalClass>
                     <settings.scrollbar.lockClass>
@@ -933,7 +895,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.scrollbar.lockClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-scrollbar-lock</default>
                         </config>
                     </settings.scrollbar.lockClass>
                     <settings.scrollbar.scrollbarDisabledClass>
@@ -943,7 +904,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.scrollbar.scrollbarDisabledClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-scrollbar-disabled</default>
                         </config>
                     </settings.scrollbar.scrollbarDisabledClass>
                     <settings.scrollbar.snapOnRelease>
@@ -964,7 +924,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.scrollbar.snapOnRelease>
                     <settings.scrollbar.verticalClass>
@@ -974,7 +933,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.scrollbar.verticalClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-scrollbar-vertical</default>
                         </config>
                     </settings.scrollbar.verticalClass>
                 </el>
@@ -1003,7 +961,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.keyboard.enabled>
                     <settings.keyboard.onlyInViewport>
@@ -1024,7 +981,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.keyboard.onlyInViewport>
                     <settings.keyboard.pageUpDown>
@@ -1045,7 +1001,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.keyboard.pageUpDown>
                     <settings.keyboard.speed>
@@ -1083,7 +1038,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.freemode.enabled>
                     <settings.freemode.minimumVelocity>
@@ -1093,7 +1047,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.freemode.minimumVelocity</typoscriptPath>
                             <size>8</size>
-                            <default>0.02</default>
                         </config>
                     </settings.freemode.minimumVelocity>
                     <settings.freemode.momentum>
@@ -1114,7 +1067,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.freemode.momentum>
                     <settings.freemode.momentumBounce>
@@ -1135,7 +1087,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.freemode.momentumBounce>
                     <settings.freemode.momentumBounceRatio>
@@ -1145,7 +1096,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumBounceRatio</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.freemode.momentumBounceRatio>
                     <settings.freemode.momentumRatio>
@@ -1155,7 +1105,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumRatio</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.freemode.momentumRatio>
                     <settings.freemode.momentumVelocityRatio>
@@ -1165,7 +1114,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumVelocityRatio</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.freemode.momentumVelocityRatio>
                     <settings.freemode.sticky>
@@ -1186,7 +1134,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.freemode.sticky>
                 </el>
@@ -1215,7 +1162,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>column</default>
                         </config>
                     </settings.grid.fill>
                     <settings.grid.rows>
@@ -1225,7 +1171,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.grid.rows</typoscriptPath>
                             <size>4</size>
-                            <default>1</default>
                         </config>
                     </settings.grid.rows>
                 </el>
@@ -1254,7 +1199,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.parallax.enabled>
                 </el>
@@ -1283,7 +1227,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.fadeeffect.crossFade>
                 </el>
@@ -1301,7 +1244,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.depth</typoscriptPath>
                             <size>8</size>
-                            <default>100</default>
                         </config>
                     </settings.coverfloweffect.depth>
                     <settings.coverfloweffect.modifier>
@@ -1311,7 +1253,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.modifier</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.coverfloweffect.modifier>
                     <settings.coverfloweffect.rotate>
@@ -1321,7 +1262,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.rotate</typoscriptPath>
                             <size>8</size>
-                            <default>50</default>
                         </config>
                     </settings.coverfloweffect.rotate>
                     <settings.coverfloweffect.scale>
@@ -1331,7 +1271,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.scale</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.coverfloweffect.scale>
                     <settings.coverfloweffect.slideShadows>
@@ -1352,7 +1291,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.coverfloweffect.slideShadows>
                     <settings.coverfloweffect.stretch>
@@ -1362,7 +1300,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.stretch</typoscriptPath>
                             <size>8</size>
-                            <default>0</default>
                         </config>
                     </settings.coverfloweffect.stretch>
                 </el>
@@ -1391,7 +1328,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.flipeffect.limitRotation>
                     <settings.flipeffect.slideShadows>
@@ -1412,7 +1348,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.flipeffect.slideShadows>
                 </el>
@@ -1441,7 +1376,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.cubeeffect.shadow>
                     <settings.cubeeffect.shadowOffset>
@@ -1451,7 +1385,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowOffset</typoscriptPath>
                             <size>8</size>
-                            <default>20</default>
                         </config>
                     </settings.cubeeffect.shadowOffset>
                     <settings.cubeeffect.shadowScale>
@@ -1461,7 +1394,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowScale</typoscriptPath>
                             <size>8</size>
-                            <default>0.94</default>
                         </config>
                     </settings.cubeeffect.shadowScale>
                     <settings.cubeeffect.slideShadows>
@@ -1482,7 +1414,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.cubeeffect.slideShadows>
                 </el>
@@ -1500,7 +1431,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideOffset</typoscriptPath>
                             <size>8</size>
-                            <default>8</default>
                         </config>
                     </settings.cardseffect.perSlideOffset>
                     <settings.cardseffect.perSlideRotate>
@@ -1510,7 +1440,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideRotate</typoscriptPath>
                             <size>8</size>
-                            <default>2</default>
                         </config>
                     </settings.cardseffect.perSlideRotate>
                     <settings.cardseffect.rotate>
@@ -1531,7 +1460,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.cardseffect.rotate>
                     <settings.cardseffect.slideShadows>
@@ -1552,7 +1480,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.cardseffect.slideShadows>
                 </el>
@@ -1570,7 +1497,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.limitProgress</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.creativeeffect.limitProgress>
                     <settings.creativeeffect.next>
@@ -1600,7 +1526,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.creativeeffect.perspective>
                     <settings.creativeeffect.prev>
@@ -1619,7 +1544,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.progressMultiplier</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.creativeeffect.progressMultiplier>
                     <settings.creativeeffect.shadowPerProgress>
@@ -1640,7 +1564,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.creativeeffect.shadowPerProgress>
                 </el>
@@ -1658,7 +1581,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.thumbs.autoScrollOffset</typoscriptPath>
                             <size>8</size>
-                            <default>0</default>
                         </config>
                     </settings.thumbs.autoScrollOffset>
                     <settings.thumbs.multipleActiveThumbs>
@@ -1679,7 +1601,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.thumbs.multipleActiveThumbs>
                     <settings.thumbs.slideThumbActiveClass>
@@ -1689,7 +1610,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.thumbs.slideThumbActiveClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-slide-thumb-active</default>
                         </config>
                     </settings.thumbs.slideThumbActiveClass>
                     <settings.thumbs.swiper>
@@ -1699,7 +1619,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.thumbs.swiper</typoscriptPath>
                             <size>32</size>
-                            <default>null</default>
                         </config>
                     </settings.thumbs.swiper>
                     <settings.thumbs.thumbsContainerClass>
@@ -1709,7 +1628,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.thumbs.thumbsContainerClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-thumbs</default>
                         </config>
                     </settings.thumbs.thumbsContainerClass>
                 </el>
@@ -1727,7 +1645,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.zoom.containerClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-zoom-container</default>
                         </config>
                     </settings.zoom.containerClass>
                     <settings.zoom.limitToOriginalSize>
@@ -1748,7 +1665,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.zoom.limitToOriginalSize>
                     <settings.zoom.maxRatio>
@@ -1758,7 +1674,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.zoom.maxRatio</typoscriptPath>
                             <size>8</size>
-                            <default>3</default>
                         </config>
                     </settings.zoom.maxRatio>
                     <settings.zoom.minRatio>
@@ -1768,7 +1683,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.zoom.minRatio</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.zoom.minRatio>
                     <settings.zoom.panOnMouseMove>
@@ -1789,7 +1703,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.zoom.panOnMouseMove>
                     <settings.zoom.toggle>
@@ -1810,7 +1723,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>1</default>
                         </config>
                     </settings.zoom.toggle>
                     <settings.zoom.zoomedSlideClass>
@@ -1820,7 +1732,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.zoom.zoomedSlideClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-slide-zoomed</default>
                         </config>
                     </settings.zoom.zoomedSlideClass>
                 </el>
@@ -1849,7 +1760,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.mousewheel.enabled>
                     <settings.mousewheel.eventsTarget>
@@ -1859,7 +1769,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.mousewheel.eventsTarget</typoscriptPath>
                             <size>32</size>
-                            <default>container</default>
                         </config>
                     </settings.mousewheel.eventsTarget>
                     <settings.mousewheel.forceToAxis>
@@ -1880,7 +1789,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.mousewheel.forceToAxis>
                     <settings.mousewheel.invert>
@@ -1901,7 +1809,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.mousewheel.invert>
                     <settings.mousewheel.noMousewheelClass>
@@ -1911,7 +1818,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.mousewheel.noMousewheelClass</typoscriptPath>
                             <size>32</size>
-                            <default>swiper-no-mousewheel</default>
                         </config>
                     </settings.mousewheel.noMousewheelClass>
                     <settings.mousewheel.releaseOnEdges>
@@ -1932,7 +1838,6 @@
                             </items>
                             <maxitems>1</maxitems>
                             <size>1</size>
-                            <default>0</default>
                         </config>
                     </settings.mousewheel.releaseOnEdges>
                     <settings.mousewheel.sensitivity>
@@ -1942,7 +1847,6 @@
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.mousewheel.sensitivity</typoscriptPath>
                             <size>8</size>
-                            <default>1</default>
                         </config>
                     </settings.mousewheel.sensitivity>
                     <settings.mousewheel.thresholdDelta>
@@ -1976,7 +1880,6 @@
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
                             <eval>int</eval>
-                            <default>0</default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.addSlidesAfter</typoscriptPath>
                         </config>
                     </settings.virtualslides.addSlidesAfter>
@@ -1985,7 +1888,6 @@
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
                             <eval>int</eval>
-                            <default>0</default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.addSlidesBefore</typoscriptPath>
                         </config>
                     </settings.virtualslides.addSlidesBefore>
@@ -2004,7 +1906,6 @@
                                     <numIndex index="value">false</numIndex>
                                 </numIndex>
                             </items>
-                            <default>1</default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.cache</typoscriptPath>
                         </config>
                     </settings.virtualslides.cache>
@@ -2023,7 +1924,6 @@
                                     <numIndex index="value">false</numIndex>
                                 </numIndex>
                             </items>
-                            <default>0</default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.enabled</typoscriptPath>
                         </config>
                     </settings.virtualslides.enabled>
@@ -2031,7 +1931,6 @@
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.virtualslides.renderExternal</label>
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
-                            <default></default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderExternal</typoscriptPath>
                         </config>
                     </settings.virtualslides.renderExternal>
@@ -2050,7 +1949,6 @@
                                     <numIndex index="value">false</numIndex>
                                 </numIndex>
                             </items>
-                            <default>1</default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderExternalUpdate</typoscriptPath>
                         </config>
                     </settings.virtualslides.renderExternalUpdate>
@@ -2058,7 +1956,6 @@
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.virtualslides.renderSlide</label>
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
-                            <default></default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderSlide</typoscriptPath>
                         </config>
                     </settings.virtualslides.renderSlide>
@@ -2066,7 +1963,6 @@
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.virtualslides.slides</label>
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
-                            <default></default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.slides</typoscriptPath>
                         </config>
                     </settings.virtualslides.slides>
@@ -2075,7 +1971,6 @@
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
                             <eval>int</eval>
-                            <default>320</default>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.virtualslides.slidesPerViewAutoSlideSize</typoscriptPath>
                         </config>
                     </settings.virtualslides.slidesPerViewAutoSlideSize>
