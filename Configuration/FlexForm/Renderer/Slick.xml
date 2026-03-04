@@ -52,10 +52,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.autoplaySpeed.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.autoplaySpeed</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.autoplaySpeed>
@@ -98,10 +97,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.initialSlide.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.initialSlide</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.initialSlide>
@@ -229,20 +227,16 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.touchThreshold.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.touchThreshold</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.touchThreshold>
 
                     <settings.js.accessibility>
-
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.accessibility</label>
-                        <description>
-                            LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.accessibility.description
-                        </description>
+                        <description>LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.accessibility.description</description>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -606,10 +600,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesToShow.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.slidesToShow</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.slidesToShow>
@@ -622,10 +615,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesToScroll.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.slidesToScroll</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.slidesToScroll>
@@ -863,10 +855,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.rows.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.rows</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.rows>
@@ -878,10 +869,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.slidesPerRow.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.slidesPerRow</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.slidesPerRow>
@@ -1037,10 +1027,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.speed.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.speed</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.speed>
@@ -1092,10 +1081,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/slick_csh_flexforms.xlf:slick.settings.js.zindex.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.zindex</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.zindex>
@@ -1116,13 +1104,10 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/slick.xlf:options.slidesToShow</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>
-                                plugin.tx_wsslider.settings.renderer.slick.responsive.dummy.settings.slidesToShow
-                            </typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.responsive.dummy.settings.slidesToShow</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.settings.slidesToShow>

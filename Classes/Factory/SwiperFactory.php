@@ -253,6 +253,9 @@ class SwiperFactory extends AbstractSliderFactory
             ],
         ], true, false);
 
+        $jsOptions['breakpoints'] = $jsOptions['responsive'] ?? [];
+        unset($jsOptions['responsive']);
+
         $this->sliderPrototype->setOptions($jsOptions);
 
         $jsOptions = $this->js_encode($jsOptions);

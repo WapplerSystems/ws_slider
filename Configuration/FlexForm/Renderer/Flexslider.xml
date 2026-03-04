@@ -188,11 +188,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.startAt.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.startAt</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.startAt>
@@ -235,12 +234,11 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.slideshowSpeed.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.slideshowSpeed
                             </typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.slideshowSpeed>
@@ -872,11 +870,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.itemWidth.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.itemWidth</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.itemWidth>
@@ -888,11 +885,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.itemMargin.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.itemMargin</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.itemMargin>
@@ -904,11 +900,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.minItems.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.minItems</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.minItems>
@@ -920,11 +915,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.maxItems.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.maxItems</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.maxItems>
@@ -936,11 +930,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/flexslider_csh_flexforms.xlf:flexslider.settings.js.move.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.flexslider.move</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.move>

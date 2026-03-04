@@ -1,11 +1,9 @@
 <?php
 
-use TYPO3\CMS\Core\Information\Typo3Version;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use WapplerSystems\WsSlider\Backend\Form\Element\InfoTextElement;
-use WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptPlaceholderElement;
 use WapplerSystems\WsSlider\Backend\Form\Element\InputTextWithTypoScriptPlaceholderElement;
+use WapplerSystems\WsSlider\Backend\Form\Element\NullableNumberElement;
+use WapplerSystems\WsSlider\Backend\Form\Element\SelectSingleWithTypoScriptPlaceholderElement;
 
 call_user_func(
     function ($extKey) {
@@ -24,6 +22,11 @@ call_user_func(
             'nodeName' => 'infoTextRenderType',
             'priority' => 40,
             'class' => InfoTextElement::class,
+        ];
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1772577861] = [
+            'nodeName' => 'nullableNumber',
+            'priority' => 40,
+            'class' => NullableNumberElement::class,
         ];
 
     },

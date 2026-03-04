@@ -80,10 +80,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.items.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.items</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.items>
@@ -95,10 +94,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.slideBy.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.slideBy</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.slideBy>
@@ -142,11 +140,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.speed.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.speed</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.speed>
@@ -222,12 +219,11 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.autoplayTimeout.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.autoplayTimeout
                             </typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.autoplayTimeout>
@@ -538,11 +534,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.startIndex.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.startIndex</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.startIndex>
@@ -854,10 +849,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.gutter.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.gutter</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.gutter>
@@ -869,10 +863,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.edgePadding.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.edgePadding</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.edgePadding>
@@ -884,10 +877,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.fixedWidth.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.fixedWidth</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.fixedWidth>
@@ -929,10 +921,9 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.viewportMax.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.viewportMax</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.viewportMax>
@@ -1050,11 +1041,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.swipeAngle.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.swipeAngle</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.swipeAngle>
@@ -1164,12 +1154,11 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/tinyslider_csh_flexforms.xlf:tinyslider.settings.js.animateDelay.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.animateDelay
                             </typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.animateDelay>
@@ -1295,11 +1284,10 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.startIndex</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.startIndex</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.startIndex>
@@ -1308,12 +1296,10 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.items</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.dummy.items
-                            </typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.responsive.dummy.items</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.items>
@@ -1322,11 +1308,10 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.slideBy</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.slideBy</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.slideBy>
@@ -1337,11 +1322,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.common.animationSpeed
                         </label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.speed</typoscriptPath>
                             <size>1</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.speed>
@@ -1378,10 +1362,9 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.fixedWidth</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.fixedWidth</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.fixedWidth>
@@ -1390,10 +1373,9 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.edgePadding</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.edgePadding</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.edgePadding>
@@ -1402,10 +1384,9 @@
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/tinyslider.xlf:options.gutter</label>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.tinyslider.gutter</typoscriptPath>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.responsive.dummy.gutter>

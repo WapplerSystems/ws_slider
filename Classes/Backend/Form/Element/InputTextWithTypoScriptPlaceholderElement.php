@@ -85,6 +85,10 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         }
         $config = $parameterArray['fieldConf']['config'];
         $evalList = GeneralUtility::trimExplode(',', $config['eval'] ?? '', true);
+        if ($config['type'] === 'number') {
+            $evalList[] = 'num';
+        }
+
         $size = MathUtility::forceIntegerInRange($config['size'] ?? $this->defaultInputWidth, $this->minimumInputWidth, $this->maxInputWidth);
         $width = $this->formMaxWidth($size);
 

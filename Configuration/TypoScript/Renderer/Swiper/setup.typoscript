@@ -1,30 +1,34 @@
 plugin.tx_wsslider.settings.renderer.swiper {
 
   autoHeight = {$plugin.tx_wsslider.settings.swiper.autoHeight}
+  effect = {$plugin.tx_wsslider.settings.swiper.effect}
+  cssMode = {$plugin.tx_wsslider.settings.swiper.cssMode}
+  direction = {$plugin.tx_wsslider.settings.swiper.direction}
 
   autoplay {
-    delay = {$plugin.tx_wsslider.settings.renderer.swiper.autoplay.delay}
-    disableOnInteraction = {$plugin.tx_wsslider.settings.renderer.swiper.autoplay.disableOnInteraction}
-    pauseOnMouseEnter = {$plugin.tx_wsslider.settings.renderer.swiper.autoplay.pauseOnMouseEnter}
-    reverseDirection = {$plugin.tx_wsslider.settings.renderer.swiper.autoplay.reverseDirection}
-    stopOnLastSlide = {$plugin.tx_wsslider.settings.renderer.swiper.autoplay.stopOnLastSlide}
-    waitForTransition = {$plugin.tx_wsslider.settings.renderer.swiper.autoplay.waitForTransition}
+    active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}
+    delay = {$plugin.tx_wsslider.settings.swiper.autoplay.delay}
+    disableOnInteraction = {$plugin.tx_wsslider.settings.swiper.autoplay.disableOnInteraction}
+    pauseOnMouseEnter = {$plugin.tx_wsslider.settings.swiper.autoplay.pauseOnMouseEnter}
+    reverseDirection = {$plugin.tx_wsslider.settings.swiper.autoplay.reverseDirection}
+    stopOnLastSlide = {$plugin.tx_wsslider.settings.swiper.autoplay.stopOnLastSlide}
+    waitForTransition = {$plugin.tx_wsslider.settings.swiper.autoplay.waitForTransition}
   }
 
   freemode {
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.enabled}
-    minimumVelocity = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.minimumVelocity}
-    momentum = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.momentum}
-    momentumBounce = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumBounce}
-    momentumBounceRatio = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumBounceRatio}
-    momentumRatio = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumRatio}
-    momentumVelocityRatio = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.momentumVelocityRatio}
-    sticky = {$plugin.tx_wsslider.settings.renderer.swiper.freemode.sticky}
+    enabled = {$plugin.tx_wsslider.settings.swiper.freemode.enabled}
+    minimumVelocity = {$plugin.tx_wsslider.settings.swiper.freemode.minimumVelocity}
+    momentum = {$plugin.tx_wsslider.settings.swiper.freemode.momentum}
+    momentumBounce = {$plugin.tx_wsslider.settings.swiper.freemode.momentumBounce}
+    momentumBounceRatio = {$plugin.tx_wsslider.settings.swiper.freemode.momentumBounceRatio}
+    momentumRatio = {$plugin.tx_wsslider.settings.swiper.freemode.momentumRatio}
+    momentumVelocityRatio = {$plugin.tx_wsslider.settings.swiper.freemode.momentumVelocityRatio}
+    sticky = {$plugin.tx_wsslider.settings.swiper.freemode.sticky}
   }
 
   grid {
-    fill = {$plugin.tx_wsslider.settings.renderer.swiper.grid.fill}
-    rows = {$plugin.tx_wsslider.settings.renderer.swiper.grid.rows}
+    fill = {$plugin.tx_wsslider.settings.swiper.grid.fill}
+    rows = {$plugin.tx_wsslider.settings.swiper.grid.rows}
   }
 
   navText {
@@ -35,46 +39,46 @@ plugin.tx_wsslider.settings.renderer.swiper {
   }
 
   navigation {
-    addIcons = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.addIcons}
-    disabledClass = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.disabledClass}
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.enabled}
-    hiddenClass = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.hiddenClass}
-    hideOnClick = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.hideOnClick}
-    lockClass = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.lockClass}
-    navigationDisabledClass = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.navigationDisabledClass}
-    nextEl = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.nextEl}
-    prevEl = {$plugin.tx_wsslider.settings.renderer.swiper.navigation.prevEl}
+    addIcons = {$plugin.tx_wsslider.settings.swiper.navigation.addIcons}
+    disabledClass = {$plugin.tx_wsslider.settings.swiper.navigation.disabledClass}
+    enabled = {$plugin.tx_wsslider.settings.swiper.navigation.enabled}
+    hiddenClass = {$plugin.tx_wsslider.settings.swiper.navigation.hiddenClass}
+    hideOnClick = {$plugin.tx_wsslider.settings.swiper.navigation.hideOnClick}
+    lockClass = {$plugin.tx_wsslider.settings.swiper.navigation.lockClass}
+    navigationDisabledClass = {$plugin.tx_wsslider.settings.swiper.navigation.navigationDisabledClass}
+    nextEl = {$plugin.tx_wsslider.settings.swiper.navigation.nextEl}
+    prevEl = {$plugin.tx_wsslider.settings.swiper.navigation.prevEl}
   }
 
   pagination {
-    bulletActiveClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletActiveClass}
-    bulletClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletClass}
-    bulletElement = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.bulletElement}
-    clickable = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.clickable}
-    clickableClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.clickableClass}
-    currentClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.currentClass}
-    dynamicBullets = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.dynamicBullets}
-    dynamicMainBullets = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.dynamicMainBullets}
-    el = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.el}
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.enabled}
-    formatFractionCurrent = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.formatFractionCurrent}
-    formatFractionTotal = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.formatFractionTotal}
-    hiddenClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.hiddenClass}
-    hideOnClick = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.hideOnClick}
-    horizontalClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.horizontalClass}
-    lockClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.lockClass}
-    modifierClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.modifierClass}
-    paginationDisabledClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.paginationDisabledClass}
-    progressbarFillClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarFillClass}
-    progressbarOpposite = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarOpposite}
-    progressbarOppositeClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.progressbarOppositeClass}
-    renderBullet = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.renderBullet}
-    renderCustom = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.renderCustom}
-    renderFraction = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.renderFraction}
-    renderProgressbar = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.renderProgressbar}
-    totalClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.totalClass}
-    type = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.type}
-    verticalClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.verticalClass}
+    bulletActiveClass = {$plugin.tx_wsslider.settings.swiper.pagination.bulletActiveClass}
+    bulletClass = {$plugin.tx_wsslider.settings.swiper.pagination.bulletClass}
+    bulletElement = {$plugin.tx_wsslider.settings.swiper.pagination.bulletElement}
+    clickable = {$plugin.tx_wsslider.settings.swiper.pagination.clickable}
+    clickableClass = {$plugin.tx_wsslider.settings.swiper.pagination.clickableClass}
+    currentClass = {$plugin.tx_wsslider.settings.swiper.pagination.currentClass}
+    dynamicBullets = {$plugin.tx_wsslider.settings.swiper.pagination.dynamicBullets}
+    dynamicMainBullets = {$plugin.tx_wsslider.settings.swiper.pagination.dynamicMainBullets}
+    el = {$plugin.tx_wsslider.settings.swiper.pagination.el}
+    enabled = {$plugin.tx_wsslider.settings.swiper.pagination.enabled}
+    formatFractionCurrent = {$plugin.tx_wsslider.settings.swiper.pagination.formatFractionCurrent}
+    formatFractionTotal = {$plugin.tx_wsslider.settings.swiper.pagination.formatFractionTotal}
+    hiddenClass = {$plugin.tx_wsslider.settings.swiper.pagination.hiddenClass}
+    hideOnClick = {$plugin.tx_wsslider.settings.swiper.pagination.hideOnClick}
+    horizontalClass = {$plugin.tx_wsslider.settings.swiper.pagination.horizontalClass}
+    lockClass = {$plugin.tx_wsslider.settings.swiper.pagination.lockClass}
+    modifierClass = {$plugin.tx_wsslider.settings.swiper.pagination.modifierClass}
+    paginationDisabledClass = {$plugin.tx_wsslider.settings.swiper.pagination.paginationDisabledClass}
+    progressbarFillClass = {$plugin.tx_wsslider.settings.swiper.pagination.progressbarFillClass}
+    progressbarOpposite = {$plugin.tx_wsslider.settings.swiper.pagination.progressbarOpposite}
+    progressbarOppositeClass = {$plugin.tx_wsslider.settings.swiper.pagination.progressbarOppositeClass}
+    renderBullet = {$plugin.tx_wsslider.settings.swiper.pagination.renderBullet}
+    renderCustom = {$plugin.tx_wsslider.settings.swiper.pagination.renderCustom}
+    renderFraction = {$plugin.tx_wsslider.settings.swiper.pagination.renderFraction}
+    renderProgressbar = {$plugin.tx_wsslider.settings.swiper.pagination.renderProgressbar}
+    totalClass = {$plugin.tx_wsslider.settings.swiper.pagination.totalClass}
+    type = {$plugin.tx_wsslider.settings.swiper.pagination.type}
+    verticalClass = {$plugin.tx_wsslider.settings.swiper.pagination.verticalClass}
   }
 
   responsive {
@@ -105,117 +109,117 @@ plugin.tx_wsslider.settings.renderer.swiper {
   }
 
   scrollbar {
-    dragClass = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.dragClass}
-    dragSize = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.dragSize}
-    draggable = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.draggable}
-    el = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.el}
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.enabled}
-    hide = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.hide}
-    horizontalClass = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.horizontalClass}
-    lockClass = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.lockClass}
-    scrollbarDisabledClass = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.scrollbarDisabledClass}
-    snapOnRelease = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.snapOnRelease}
-    verticalClass = {$plugin.tx_wsslider.settings.renderer.swiper.scrollbar.verticalClass}
+    dragClass = {$plugin.tx_wsslider.settings.swiper.scrollbar.dragClass}
+    dragSize = {$plugin.tx_wsslider.settings.swiper.scrollbar.dragSize}
+    draggable = {$plugin.tx_wsslider.settings.swiper.scrollbar.draggable}
+    el = {$plugin.tx_wsslider.settings.swiper.scrollbar.el}
+    enabled = {$plugin.tx_wsslider.settings.swiper.scrollbar.enabled}
+    hide = {$plugin.tx_wsslider.settings.swiper.scrollbar.hide}
+    horizontalClass = {$plugin.tx_wsslider.settings.swiper.scrollbar.horizontalClass}
+    lockClass = {$plugin.tx_wsslider.settings.swiper.scrollbar.lockClass}
+    scrollbarDisabledClass = {$plugin.tx_wsslider.settings.swiper.scrollbar.scrollbarDisabledClass}
+    snapOnRelease = {$plugin.tx_wsslider.settings.swiper.scrollbar.snapOnRelease}
+    verticalClass = {$plugin.tx_wsslider.settings.swiper.scrollbar.verticalClass}
   }
 
   parallax {
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.parallax.enabled}
+    enabled = {$plugin.tx_wsslider.settings.swiper.parallax.enabled}
   }
 
   fadeeffect {
-    crossFade = {$plugin.tx_wsslider.settings.renderer.swiper.fadeeffect.crossFade}
+    crossFade = {$plugin.tx_wsslider.settings.swiper.fadeeffect.crossFade}
   }
 
   coverfloweffect {
-    depth = {$plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.depth}
-    modifier = {$plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.modifier}
-    rotate = {$plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.rotate}
-    scale = {$plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.scale}
-    slideShadows = {$plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.slideShadows}
-    stretch = {$plugin.tx_wsslider.settings.renderer.swiper.coverfloweffect.stretch}
+    depth = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.depth}
+    modifier = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.modifier}
+    rotate = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.rotate}
+    scale = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.scale}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.slideShadows}
+    stretch = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.stretch}
   }
 
   flipeffect {
-    limitRotation = {$plugin.tx_wsslider.settings.renderer.swiper.flipeffect.limitRotation}
-    slideShadows = {$plugin.tx_wsslider.settings.renderer.swiper.flipeffect.slideShadows}
+    limitRotation = {$plugin.tx_wsslider.settings.swiper.flipeffect.limitRotation}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.flipeffect.slideShadows}
   }
 
   cubeeffect {
-    shadow = {$plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadow}
-    shadowOffset = {$plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowOffset}
-    shadowScale = {$plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowScale}
-    slideShadows = {$plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.slideShadows}
+    shadow = {$plugin.tx_wsslider.settings.swiper.cubeeffect.shadow}
+    shadowOffset = {$plugin.tx_wsslider.settings.swiper.cubeeffect.shadowOffset}
+    shadowScale = {$plugin.tx_wsslider.settings.swiper.cubeeffect.shadowScale}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.cubeeffect.slideShadows}
   }
 
   cardseffect {
-    perSlideOffset = {$plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideOffset}
-    perSlideRotate = {$plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideRotate}
-    rotate = {$plugin.tx_wsslider.settings.renderer.swiper.cardseffect.rotate}
-    slideShadows = {$plugin.tx_wsslider.settings.renderer.swiper.cardseffect.slideShadows}
+    perSlideOffset = {$plugin.tx_wsslider.settings.swiper.cardseffect.perSlideOffset}
+    perSlideRotate = {$plugin.tx_wsslider.settings.swiper.cardseffect.perSlideRotate}
+    rotate = {$plugin.tx_wsslider.settings.swiper.cardseffect.rotate}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.cardseffect.slideShadows}
   }
 
   creativeeffect {
-    limitProgress = {$plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.limitProgress}
-    next = {$plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.next}
-    perspective = {$plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.perspective}
-    prev = {$plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.prev}
-    progressMultiplier = {$plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.progressMultiplier}
-    shadowPerProgress = {$plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.shadowPerProgress}
+    limitProgress = {$plugin.tx_wsslider.settings.swiper.creativeeffect.limitProgress}
+    next = {$plugin.tx_wsslider.settings.swiper.creativeeffect.next}
+    perspective = {$plugin.tx_wsslider.settings.swiper.creativeeffect.perspective}
+    prev = {$plugin.tx_wsslider.settings.swiper.creativeeffect.prev}
+    progressMultiplier = {$plugin.tx_wsslider.settings.swiper.creativeeffect.progressMultiplier}
+    shadowPerProgress = {$plugin.tx_wsslider.settings.swiper.creativeeffect.shadowPerProgress}
   }
 
   thumbs {
-    autoScrollOffset = {$plugin.tx_wsslider.settings.renderer.swiper.thumbs.autoScrollOffset}
-    multipleActiveThumbs = {$plugin.tx_wsslider.settings.renderer.swiper.thumbs.multipleActiveThumbs}
-    slideThumbActiveClass = {$plugin.tx_wsslider.settings.renderer.swiper.thumbs.slideThumbActiveClass}
-    swiper = {$plugin.tx_wsslider.settings.renderer.swiper.thumbs.swiper}
-    thumbsContainerClass = {$plugin.tx_wsslider.settings.renderer.swiper.thumbs.thumbsContainerClass}
+    autoScrollOffset = {$plugin.tx_wsslider.settings.swiper.thumbs.autoScrollOffset}
+    multipleActiveThumbs = {$plugin.tx_wsslider.settings.swiper.thumbs.multipleActiveThumbs}
+    slideThumbActiveClass = {$plugin.tx_wsslider.settings.swiper.thumbs.slideThumbActiveClass}
+    swiper = {$plugin.tx_wsslider.settings.swiper.thumbs.swiper}
+    thumbsContainerClass = {$plugin.tx_wsslider.settings.swiper.thumbs.thumbsContainerClass}
   }
 
   zoom {
-    containerClass = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.containerClass}
-    limitToOriginalSize = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.limitToOriginalSize}
-    maxRatio = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.maxRatio}
-    minRatio = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.minRatio}
-    panOnMouseMove = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.panOnMouseMove}
-    toggle = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.toggle}
-    zoomedSlideClass = {$plugin.tx_wsslider.settings.renderer.swiper.zoom.zoomedSlideClass}
+    containerClass = {$plugin.tx_wsslider.settings.swiper.zoom.containerClass}
+    limitToOriginalSize = {$plugin.tx_wsslider.settings.swiper.zoom.limitToOriginalSize}
+    maxRatio = {$plugin.tx_wsslider.settings.swiper.zoom.maxRatio}
+    minRatio = {$plugin.tx_wsslider.settings.swiper.zoom.minRatio}
+    panOnMouseMove = {$plugin.tx_wsslider.settings.swiper.zoom.panOnMouseMove}
+    toggle = {$plugin.tx_wsslider.settings.swiper.zoom.toggle}
+    zoomedSlideClass = {$plugin.tx_wsslider.settings.swiper.zoom.zoomedSlideClass}
   }
 
   keyboard {
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.keyboard.enabled}
-    onlyInViewport = {$plugin.tx_wsslider.settings.renderer.swiper.keyboard.onlyInViewport}
-    pageUpDown = {$plugin.tx_wsslider.settings.renderer.swiper.keyboard.pageUpDown}
-    speed = {$plugin.tx_wsslider.settings.renderer.swiper.keyboard.speed}
+    enabled = {$plugin.tx_wsslider.settings.swiper.keyboard.enabled}
+    onlyInViewport = {$plugin.tx_wsslider.settings.swiper.keyboard.onlyInViewport}
+    pageUpDown = {$plugin.tx_wsslider.settings.swiper.keyboard.pageUpDown}
+    speed = {$plugin.tx_wsslider.settings.swiper.keyboard.speed}
   }
 
   mousewheel {
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.enabled}
-    eventsTarget = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.eventsTarget}
-    forceToAxis = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.forceToAxis}
-    invert = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.invert}
-    noMousewheelClass = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.noMousewheelClass}
-    releaseOnEdges = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.releaseOnEdges}
-    sensitivity = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.sensitivity}
-    thresholdDelta = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.thresholdDelta}
-    thresholdTime = {$plugin.tx_wsslider.settings.renderer.swiper.mousewheel.thresholdTime}
+    enabled = {$plugin.tx_wsslider.settings.swiper.mousewheel.enabled}
+    eventsTarget = {$plugin.tx_wsslider.settings.swiper.mousewheel.eventsTarget}
+    forceToAxis = {$plugin.tx_wsslider.settings.swiper.mousewheel.forceToAxis}
+    invert = {$plugin.tx_wsslider.settings.swiper.mousewheel.invert}
+    noMousewheelClass = {$plugin.tx_wsslider.settings.swiper.mousewheel.noMousewheelClass}
+    releaseOnEdges = {$plugin.tx_wsslider.settings.swiper.mousewheel.releaseOnEdges}
+    sensitivity = {$plugin.tx_wsslider.settings.swiper.mousewheel.sensitivity}
+    thresholdDelta = {$plugin.tx_wsslider.settings.swiper.mousewheel.thresholdDelta}
+    thresholdTime = {$plugin.tx_wsslider.settings.swiper.mousewheel.thresholdTime}
   }
 
   virtualslides {
-    addSlidesAfter = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.addSlidesAfter}
-    addSlidesBefore = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.addSlidesBefore}
-    cache = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.cache}
-    enabled = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.enabled}
-    renderExternal = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderExternal}
-    renderExternalUpdate = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderExternalUpdate}
-    renderSlide = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.renderSlide}
-    slides = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.slides}
-    slidesPerViewAutoSlideSize = {$plugin.tx_wsslider.settings.renderer.swiper.virtualslides.slidesPerViewAutoSlideSize}
+    addSlidesAfter = {$plugin.tx_wsslider.settings.swiper.virtualslides.addSlidesAfter}
+    addSlidesBefore = {$plugin.tx_wsslider.settings.swiper.virtualslides.addSlidesBefore}
+    cache = {$plugin.tx_wsslider.settings.swiper.virtualslides.cache}
+    enabled = {$plugin.tx_wsslider.settings.swiper.virtualslides.enabled}
+    renderExternal = {$plugin.tx_wsslider.settings.swiper.virtualslides.renderExternal}
+    renderExternalUpdate = {$plugin.tx_wsslider.settings.swiper.virtualslides.renderExternalUpdate}
+    renderSlide = {$plugin.tx_wsslider.settings.swiper.virtualslides.renderSlide}
+    slides = {$plugin.tx_wsslider.settings.swiper.virtualslides.slides}
+    slidesPerViewAutoSlideSize = {$plugin.tx_wsslider.settings.swiper.virtualslides.slidesPerViewAutoSlideSize}
   }
 
   hashnavigation {
-    getSlideIndex = {$plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.getSlideIndex}
-    replaceState = {$plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.replaceState}
-    watchState = {$plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.watchState}
+    getSlideIndex = {$plugin.tx_wsslider.settings.swiper.hashnavigation.getSlideIndex}
+    replaceState = {$plugin.tx_wsslider.settings.swiper.hashnavigation.replaceState}
+    watchState = {$plugin.tx_wsslider.settings.swiper.hashnavigation.watchState}
   }
 
 }

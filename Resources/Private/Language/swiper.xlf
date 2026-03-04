@@ -443,6 +443,15 @@
 			<trans-unit id="options.hashnavigation.watchState" xml:space="preserve">
 				<source>Enable navigation by browser history/hash</source>
 			</trans-unit>
+			<trans-unit id="options.slidesPerView">
+				<source>Slides per view</source>
+			</trans-unit>
+			<trans-unit id="options.spaceBetween">
+				<source>Space between slides (in px)</source>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroup">
+				<source>Number of slides in group</source>
+			</trans-unit>
 
 		</body>
 	</file>

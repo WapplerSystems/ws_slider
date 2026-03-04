@@ -280,11 +280,10 @@
                             LLL:EXT:ws_slider/Resources/Private/Language/bootstrap_csh_flexforms.xlf:bootstrap.settings.js.startAt.description
                         </description>
                         <config>
-                            <type>input</type>
+                            <type>number</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.bootstrap.startAt</typoscriptPath>
                             <size>12</size>
-                            <eval>num,trim</eval>
                         </config>
 
                     </settings.js.startAt>

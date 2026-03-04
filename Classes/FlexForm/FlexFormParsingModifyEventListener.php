@@ -138,8 +138,9 @@ final class FlexFormParsingModifyEventListener
                         $newSheet['ROOT']['sheetTitle'] = 'Responsive > '.$bpPixel;
 
                         foreach ($newSheet['ROOT']['el'] as $fieldName => $field) {
-
-                            $field['config']['typoscriptPath'] = str_replace('dummy',(string)$bpPixel,$field['config']['typoscriptPath']);
+                            if (isset($field['config']['typoscriptPath'])) {
+                                $field['config']['typoscriptPath'] = str_replace('dummy',(string)$bpPixel,$field['config']['typoscriptPath']);
+                            }
                             $newSheet['ROOT']['el'][str_replace('dummy',(string)$bpPixel,$fieldName)] = $field;
                             unset($newSheet['ROOT']['el'][$fieldName]);
                         }
@@ -149,6 +150,7 @@ final class FlexFormParsingModifyEventListener
                 }
 
                 $dataStructure = $dataStructureCopy;
+                //debug($dataStructure);
 
             } catch (NoSuchFileException|ParseErrorException $e) {
                 $this->addInvalidFrameworkConfigurationFlashMessage($e);
