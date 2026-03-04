@@ -71,10 +71,7 @@ class SliderProcessor implements DataProcessorInterface
 
             $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
             $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
-            //debug($flexformOptions, 'flexformOptions');
             ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
-
-            //debug($options, 'options');
 
             $this->convertStringOptionsToBoolean($options);
 
@@ -92,10 +89,8 @@ class SliderProcessor implements DataProcessorInterface
                 unset($settings['renderer.']);
             }
 
-
             $options = $this->resolveTypoScriptConfiguration($cObj, $settings['parameters']);
             $options = self::removeDotsFromTS($options);
-
 
             // Process Flexform
             $flexformData = $processedData['data']['pi_flexform'];
