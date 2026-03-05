@@ -77,21 +77,9 @@
         <source>Pagination</source>
         <target state="final">Paginierung</target>
       </trans-unit>
-      <trans-unit id="sheet.freemode" approved="yes">
-        <source>Free Mode</source>
-        <target state="final">Freier Modus</target>
-      </trans-unit>
       <trans-unit id="sheet.grid" approved="yes">
         <source>Grid</source>
         <target state="final">Raster</target>
-      </trans-unit>
-      <trans-unit id="sheet.fadeeffect" approved="yes">
-        <source>Fade Effect</source>
-        <target state="final">Fade Effekt</target>
-      </trans-unit>
-      <trans-unit id="sheet.coverfloweffect" approved="yes">
-        <source>CoverFlow Effect</source>
-        <target state="final">Coverflow Effekt</target>
       </trans-unit>
       <trans-unit id="sheet.flipeffect" approved="yes">
         <source>Flip Effect</source>
