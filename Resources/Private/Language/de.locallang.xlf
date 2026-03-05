@@ -53,15 +53,15 @@
         <source>Pagination</source>
         <target state="final">Paginierung</target>
       </trans-unit>
-      <trans-unit id="sheet.freemode" approved="yes">
+      <trans-unit id="sheet.freeMode" approved="yes">
         <source>Free Mode</source>
         <target state="final">Freier Modus</target>
       </trans-unit>
-      <trans-unit id="sheet.fadeeffect" approved="yes">
+      <trans-unit id="sheet.fadeEffect" approved="yes">
         <source>Fade Effect</source>
         <target state="final">Fade Effekt</target>
       </trans-unit>
-      <trans-unit id="sheet.coverfloweffect" approved="yes">
+      <trans-unit id="sheet.coverflowEffect" approved="yes">
         <source>CoverFlow Effect</source>
         <target state="final">Coverflow Effekt</target>
       </trans-unit>

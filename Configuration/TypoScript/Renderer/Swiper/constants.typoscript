@@ -8,8 +8,8 @@
 # customsubcategory=freemode=freemode
 # customsubcategory=grid=grid
 # customsubcategory=paralax=paralax
-# customsubcategory=fadeeffect=fadeeffect
-# customsubcategory=coverfloweffect=coverfloweffect
+# customsubcategory=fadeEffect=fadeEffect
+# customsubcategory=coverflowEffect=coverflowEffect
 # customsubcategory=flipeffect=flipeffect
 # customsubcategory=cubeeffect=cubeeffect
 # customsubcategory=cardseffect=cardseffect
@@ -342,24 +342,24 @@ plugin.tx_wsslider.settings.swiper {
     enabled = false
   }
 
-  fadeeffect {
-    # cat=plugin.tx_wsslider.swiper/fadeeffect/a; type=options[true,false]; label=Enables slides cross fade
+  fadeEffect {
+    # cat=plugin.tx_wsslider.swiper/fadeEffect/a; type=options[true,false]; label=Enables slides cross fade
     crossFade = false
   }
 
-  coverfloweffect {
+  coverflowEffect {
 
-    # cat=plugin.tx_wsslider.swiper/coverfloweffect/a; type=int+; label=Depth offset in px (slides translate in Z axis)
+    # cat=plugin.tx_wsslider.swiper/coverflowEffect/a; type=int+; label=Depth offset in px (slides translate in Z axis)
     depth = 100
-    # cat=plugin.tx_wsslider.swiper/coverfloweffect/b; type=float+; label=Effect multiplier
+    # cat=plugin.tx_wsslider.swiper/coverflowEffect/b; type=float+; label=Effect multiplier
     modifier = 1
-    # cat=plugin.tx_wsslider.swiper/coverfloweffect/c; type=int+; label=Slide rotate in degrees
+    # cat=plugin.tx_wsslider.swiper/coverflowEffect/c; type=int+; label=Slide rotate in degrees
     rotate = 50
-    # cat=plugin.tx_wsslider.swiper/coverfloweffect/d; type=float+; label=Slide scale effect
+    # cat=plugin.tx_wsslider.swiper/coverflowEffect/d; type=float+; label=Slide scale effect
     scale = 1
-    # cat=plugin.tx_wsslider.swiper/coverfloweffect/e; type=options[true,false]; label=Enables slides shadows
+    # cat=plugin.tx_wsslider.swiper/coverflowEffect/e; type=options[true,false]; label=Enables slides shadows
     slideShadows = true
-    # cat=plugin.tx_wsslider.swiper/coverfloweffect/f; type=string; label=Stretch space between slides (px or %)
+    # cat=plugin.tx_wsslider.swiper/coverflowEffect/f; type=string; label=Stretch space between slides (px or %)
     stretch = 0
 
   }

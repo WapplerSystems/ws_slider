@@ -89,7 +89,7 @@
 			<trans-unit id="sheet.autoplay">
 				<source>Autoplay</source>
 			</trans-unit>
-			<trans-unit id="sheet.freemode">
+			<trans-unit id="sheet.freeMode">
 				<source>Free Mode</source>
 			</trans-unit>
 			<trans-unit id="sheet.grid">
@@ -98,10 +98,10 @@
 			<trans-unit id="sheet.parallax">
 				<source>Parallax</source>
 			</trans-unit>
-			<trans-unit id="sheet.fadeeffect">
+			<trans-unit id="sheet.fadeEffect">
 				<source>Fade Effect</source>
 			</trans-unit>
-			<trans-unit id="sheet.coverfloweffect">
+			<trans-unit id="sheet.coverflowEffect">
 				<source>CoverFlow Effect</source>
 			</trans-unit>
 			<trans-unit id="sheet.flipeffect">

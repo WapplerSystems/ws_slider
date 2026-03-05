@@ -15,15 +15,15 @@ plugin.tx_wsslider.settings.renderer.swiper {
     waitForTransition = {$plugin.tx_wsslider.settings.swiper.autoplay.waitForTransition}
   }
 
-  freemode {
-    enabled = {$plugin.tx_wsslider.settings.swiper.freemode.enabled}
-    minimumVelocity = {$plugin.tx_wsslider.settings.swiper.freemode.minimumVelocity}
-    momentum = {$plugin.tx_wsslider.settings.swiper.freemode.momentum}
-    momentumBounce = {$plugin.tx_wsslider.settings.swiper.freemode.momentumBounce}
-    momentumBounceRatio = {$plugin.tx_wsslider.settings.swiper.freemode.momentumBounceRatio}
-    momentumRatio = {$plugin.tx_wsslider.settings.swiper.freemode.momentumRatio}
-    momentumVelocityRatio = {$plugin.tx_wsslider.settings.swiper.freemode.momentumVelocityRatio}
-    sticky = {$plugin.tx_wsslider.settings.swiper.freemode.sticky}
+  freeMode {
+    enabled = {$plugin.tx_wsslider.settings.swiper.freeMode.enabled}
+    minimumVelocity = {$plugin.tx_wsslider.settings.swiper.freeMode.minimumVelocity}
+    momentum = {$plugin.tx_wsslider.settings.swiper.freeMode.momentum}
+    momentumBounce = {$plugin.tx_wsslider.settings.swiper.freeMode.momentumBounce}
+    momentumBounceRatio = {$plugin.tx_wsslider.settings.swiper.freeMode.momentumBounceRatio}
+    momentumRatio = {$plugin.tx_wsslider.settings.swiper.freeMode.momentumRatio}
+    momentumVelocityRatio = {$plugin.tx_wsslider.settings.swiper.freeMode.momentumVelocityRatio}
+    sticky = {$plugin.tx_wsslider.settings.swiper.freeMode.sticky}
   }
 
   grid {
@@ -126,17 +126,17 @@ plugin.tx_wsslider.settings.renderer.swiper {
     enabled = {$plugin.tx_wsslider.settings.swiper.parallax.enabled}
   }
 
-  fadeeffect {
-    crossFade = {$plugin.tx_wsslider.settings.swiper.fadeeffect.crossFade}
+  fadeEffect {
+    crossFade = {$plugin.tx_wsslider.settings.swiper.fadeEffect.crossFade}
   }
 
-  coverfloweffect {
-    depth = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.depth}
-    modifier = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.modifier}
-    rotate = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.rotate}
-    scale = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.scale}
-    slideShadows = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.slideShadows}
-    stretch = {$plugin.tx_wsslider.settings.swiper.coverfloweffect.stretch}
+  coverflowEffect {
+    depth = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.depth}
+    modifier = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.modifier}
+    rotate = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.rotate}
+    scale = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.scale}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.slideShadows}
+    stretch = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.stretch}
   }
 
   flipeffect {

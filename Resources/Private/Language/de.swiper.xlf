@@ -219,28 +219,28 @@
 			<trans-unit id="options.autoplay.waitForTransition" xml:space="preserve">
 				<source>Warte auf Transition vor nächstem Autoplay</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.enabled" xml:space="preserve">
+			<trans-unit id="options.freeMode.enabled" xml:space="preserve">
 				<source>Free Mode aktivieren</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.minimumVelocity" xml:space="preserve">
+			<trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve">
 				<source>Minimale Touchmove-Geschwindigkeit für Free Mode Momentum</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.momentum" xml:space="preserve">
+			<trans-unit id="options.freeMode.momentum" xml:space="preserve">
 				<source>Momentum im Free Mode aktivieren</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.momentumBounce" xml:space="preserve">
+			<trans-unit id="options.freeMode.momentumBounce" xml:space="preserve">
 				<source>Momentum-Bounce im Free Mode aktivieren</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.momentumBounceRatio" xml:space="preserve">
+			<trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve">
 				<source>Momentum-Bounce-Verhältnis</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.momentumRatio" xml:space="preserve">
+			<trans-unit id="options.freeMode.momentumRatio" xml:space="preserve">
 				<source>Momentum-Verhältnis</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.momentumVelocityRatio" xml:space="preserve">
+			<trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve">
 				<source>Momentum-Geschwindigkeitsverhältnis</source>
 			</trans-unit>
-			<trans-unit id="options.freemode.sticky" xml:space="preserve">
+			<trans-unit id="options.freeMode.sticky" xml:space="preserve">
 				<source>Snap zu Slides im Free Mode</source>
 			</trans-unit>
 			<trans-unit id="options.grid.fill" xml:space="preserve">
@@ -252,25 +252,25 @@
 			<trans-unit id="options.parallax.enabled" xml:space="preserve">
 				<source>Parallax-Elemente im Slider aktivieren</source>
 			</trans-unit>
-			<trans-unit id="options.fadeeffect.crossFade" xml:space="preserve">
+			<trans-unit id="options.fadeEffect.crossFade" xml:space="preserve">
 				<source>Aktiviert Slide Crossfade</source>
 			</trans-unit>
-			<trans-unit id="options.coverfloweffect.depth" xml:space="preserve">
+			<trans-unit id="options.coverflowEffect.depth" xml:space="preserve">
 				<source>Tiefenversatz in px (Slides auf Z-Achse)</source>
 			</trans-unit>
-			<trans-unit id="options.coverfloweffect.modifier" xml:space="preserve">
+			<trans-unit id="options.coverflowEffect.modifier" xml:space="preserve">
 				<source>Effekt-Multiplikator</source>
 			</trans-unit>
-			<trans-unit id="options.coverfloweffect.rotate" xml:space="preserve">
+			<trans-unit id="options.coverflowEffect.rotate" xml:space="preserve">
 				<source>Slide-Rotation in Grad</source>
 			</trans-unit>
-			<trans-unit id="options.coverfloweffect.scale" xml:space="preserve">
+			<trans-unit id="options.coverflowEffect.scale" xml:space="preserve">
 				<source>Slide-Skalierungseffekt</source>
 			</trans-unit>
-			<trans-unit id="options.coverfloweffect.slideShadows" xml:space="preserve">
+			<trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve">
 				<source>Aktiviert Slide-Schatten</source>
 			</trans-unit>
-			<trans-unit id="options.coverfloweffect.stretch" xml:space="preserve">
+			<trans-unit id="options.coverflowEffect.stretch" xml:space="preserve">
 				<source>Abstand zwischen Slides (px oder %)</source>
 			</trans-unit>
 			<trans-unit id="options.flipeffect.limitRotation" xml:space="preserve">
