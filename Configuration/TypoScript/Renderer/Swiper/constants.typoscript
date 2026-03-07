@@ -75,6 +75,12 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   eventsPrefix = swiper
 
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=slidesPerView
+  slidesPerView = 1
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=spaceBetween
+  spaceBetween = 10
+
 
   flipEffect {
     # cat=plugin.tx_wsslider.swiper/effects/flip/a; type=options[true,false]; label=Slide Shadows
@@ -167,12 +173,13 @@ plugin.tx_wsslider.settings.swiper {
 
 
   hashNavigation {
-
-    # cat=plugin.tx_wsslider.swiper/hashNavigation/a; type=string; label=Designed to be used with Virtual slides when it is impossible to find slide in DOM by hash (e.g. not yet rendered)
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/a; type=boolean; label=Enable
+    enabled = false
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/b; type=string; label=Designed to be used with Virtual slides when it is impossible to find slide in DOM by hash (e.g. not yet rendered)
     getSlideIndex =
-    # cat=plugin.tx_wsslider.swiper/hashNavigation/b; type=boolean; label=Works in addition to hashnav to replace current url state with the new one instead of adding it to history
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/c; type=boolean; label=Works in addition to hashnav to replace current url state with the new one instead of adding it to history
     replaceState = false
-    # cat=plugin.tx_wsslider.swiper/hashNavigation/c; type=boolean; label=Set to true to enable also navigation through slides (when hashnav is enabled) by browser history or by setting directly hash on document location
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/d; type=boolean; label=Set to true to enable also navigation through slides (when hashnav is enabled) by browser history or by setting directly hash on document location
     watchState = false
 
   }

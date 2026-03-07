@@ -167,6 +167,9 @@
 
 
 			<!-- common setting labels -->
+			<trans-unit id="options.enabled">
+				<source>Enabled</source>
+			</trans-unit>
 			<trans-unit id="options.carousel">
 				<source>Carousel</source>
 			</trans-unit>

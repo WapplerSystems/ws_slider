@@ -63,6 +63,30 @@
                             <size>1</size>
                         </config>
                     </settings.effect>
+
+                    <settings.slidesPerView>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.slidesPerView</label>
+                        <config>
+                            <type>number</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.slidesPerView</typoscriptPath>
+                            <nullable>1</nullable>
+                            <size>8</size>
+                        </config>
+                    </settings.slidesPerView>
+
+                    <settings.spaceBetween>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.spaceBetween</label>
+                        <config>
+                            <type>number</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.spaceBetween</typoscriptPath>
+                            <nullable>1</nullable>
+                            <size>8</size>
+                        </config>
+                    </settings.spaceBetween>
+
+
                     <settings.autoplay.active>
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay</label>
                         <config>
@@ -1905,6 +1929,24 @@
 
                 <type>array</type>
                 <el>
+                    <settings.hashNavigation.enabled>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:options.enabled</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashNavigation.enabled</typoscriptPath>
+                        </config>
+                    </settings.hashNavigation.enabled>
                     <settings.hashNavigation.getSlideIndex>
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashNavigation.getSlideIndex</label>
                         <config>

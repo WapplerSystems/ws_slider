@@ -31,12 +31,6 @@ class SwiperFactory extends AbstractSliderFactory
         'edgeSwipeDetection' => false,
         'edgeSwipeThreshold' => 20,
         'freeMode' => false,
-        'freeModeMomentum' => true,
-        'freeModeMomentumRatio' => 1,
-        'freeModeMomentumBounce' => true,
-        'freeModeMomentumBounceRatio' => 1,
-        'freeModeMinimumVelocity' => 0.02,
-        'freeModeSticky' => false,
         'autoHeight' => false,
         'setWrapperSize' => false,
         'virtualTranslate' => false,
@@ -253,8 +247,12 @@ class SwiperFactory extends AbstractSliderFactory
             ],
         ], true, false);
 
-        $jsOptions['breakpoints'] = $jsOptions['responsive'] ?? [];
-        unset($jsOptions['responsive']);
+        if (!($jsOptions['hashNavigation']['enabled'] ?? false)) {
+             unset($jsOptions['hashNavigation']);
+        }
+        if (!($jsOptions['freeMode']['enabled'] ?? false)) {
+             unset($jsOptions['freeMode']);
+        }
 
         $this->sliderPrototype->setOptions($jsOptions);
 

@@ -4,6 +4,9 @@ plugin.tx_wsslider.settings.renderer.swiper {
   effect = {$plugin.tx_wsslider.settings.swiper.effect}
   cssMode = {$plugin.tx_wsslider.settings.swiper.cssMode}
   direction = {$plugin.tx_wsslider.settings.swiper.direction}
+  slidesPerView = {$plugin.tx_wsslider.settings.swiper.slidesPerView}
+  spaceBetween = {$plugin.tx_wsslider.settings.swiper.spaceBetween}
+  speed = {$plugin.tx_wsslider.settings.swiper.speed}
 
   autoplay {
     active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}
@@ -214,6 +217,7 @@ plugin.tx_wsslider.settings.renderer.swiper {
   }
 
   hashNavigation {
+    enabled = {$plugin.tx_wsslider.settings.swiper.hashNavigation.enabled}
     getSlideIndex = {$plugin.tx_wsslider.settings.swiper.hashNavigation.getSlideIndex}
     replaceState = {$plugin.tx_wsslider.settings.swiper.hashNavigation.replaceState}
     watchState = {$plugin.tx_wsslider.settings.swiper.hashNavigation.watchState}
