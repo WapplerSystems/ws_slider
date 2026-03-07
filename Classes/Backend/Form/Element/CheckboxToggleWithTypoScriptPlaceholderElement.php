@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
+use TYPO3\CMS\Core\Site\Entity\Site;
 use WapplerSystems\WsSlider\Service\TypoScriptService;
 
 /**
@@ -61,8 +62,9 @@ class CheckboxToggleWithTypoScriptPlaceholderElement extends AbstractFormElement
     {
         $resultArray = $this->initializeResultArray();
 
-        $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
-
+        if ($this->data['site'] instanceof Site) {
+            $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
+        }
 
         $elementHtml = '';
         $disabled = false;

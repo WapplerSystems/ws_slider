@@ -1,6 +1,7 @@
 <?php
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use WapplerSystems\WsSlider\Hooks\DisplayCondition;
 use WapplerSystems\WsSlider\Hooks\ItemsProcFunc;
 
 defined('TYPO3') || die();
@@ -95,7 +96,8 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
                     ],
                 ]
             ]
-        ]
+        ],
+        'displayCond' => 'FIELD:tx_wsslider_source:=:',
     ],
     'tx_wsslider_preset' => [
         'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:preset',
@@ -139,7 +141,22 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
                 ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 'Default']
             ]
         ]
-    ]
+    ],
+    'tx_wsslider_source' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:source',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'itemsProcFunc' => ItemsProcFunc::class . '->sources',
+            'default' => '',
+            'items' => [
+                ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', '']
+            ],
+        ],
+        'displayCond' => 'USER:'. DisplayCondition::class.'->displaySources',
+        'onChange' => 'reload',
+    ],
 ]);
 
 
@@ -151,6 +168,8 @@ $GLOBALS['TCA']['tt_content']['palettes'] = array_replace_recursive(
                 tx_wsslider_preset;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:preset,--linebreak--,
                 tx_wsslider_renderer;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:renderer,
                 tx_wsslider_layout;LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.layout,
+                --linebreak--,
+                tx_wsslider_source;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:source,
                 --linebreak--,
                 tx_wsslider_items;LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:items,
              ',

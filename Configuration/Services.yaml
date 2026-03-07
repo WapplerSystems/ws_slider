@@ -27,5 +27,11 @@ services:
   WapplerSystems\WsSlider\Hooks\ItemsProcFunc:
     public: true
 
+  WapplerSystems\WsSlider\Hooks\DisplayCondition:
+    public: true
+
   WapplerSystems\WsSlider\DataProcessing\SliderProcessor:
+    public: true
+
+  WapplerSystems\WsSlider\Source\SliderSourceRegistry:
     public: true

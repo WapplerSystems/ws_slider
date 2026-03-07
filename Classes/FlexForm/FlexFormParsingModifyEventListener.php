@@ -150,7 +150,6 @@ final class FlexFormParsingModifyEventListener
                 }
 
                 $dataStructure = $dataStructureCopy;
-                //debug($dataStructure);
 
             } catch (NoSuchFileException|ParseErrorException $e) {
                 $this->addInvalidFrameworkConfigurationFlashMessage($e);

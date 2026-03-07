@@ -47,7 +47,6 @@ tt_content.ws_slider {
   ### DATA PREPROCESSING ###
   ##########################
   dataProcessing {
-    30 = WapplerSystems\WsSlider\DataProcessing\SliderProcessor
 
     20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
     20 {
@@ -69,6 +68,8 @@ tt_content.ws_slider {
         }
       }
     }
+
+    30 = WapplerSystems\WsSlider\DataProcessing\SliderProcessor
   }
 
 }

@@ -7,6 +7,7 @@ use TYPO3\CMS\Backend\Utility\BackendUtility as BackendUtilityCore;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use WapplerSystems\WsSlider\Service\TypoScriptService;
+use WapplerSystems\WsSlider\Source\SliderSourceRegistry;
 use WapplerSystems\WsSlider\Utility\TemplateLayout;
 
 /**
@@ -15,12 +16,12 @@ use WapplerSystems\WsSlider\Utility\TemplateLayout;
 class ItemsProcFunc
 {
 
-    /** @var TemplateLayout $templateLayoutsUtility */
-    protected $templateLayoutsUtility;
 
-    public function __construct(readonly private TypoScriptService $typoScriptService)
+    public function __construct(readonly private TypoScriptService $typoScriptService,
+                                readonly TemplateLayout            $templateLayout,
+                                readonly SliderSourceRegistry      $sliderSourceRegistry,
+    )
     {
-        $this->templateLayoutsUtility = GeneralUtility::makeInstance(TemplateLayout::class);
     }
 
     /**
@@ -36,22 +37,33 @@ class ItemsProcFunc
         $rendererTyposcriptPath = $config['config']['rendererTyposcriptPath'];
 
         $typoscript = $this->typoScriptService->getTypoScript($pageId, null, 0, [], $config['site']);
-        $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript,$rendererTyposcriptPath);
+        $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript, $rendererTyposcriptPath);
         if ($currentRenderer === '' && $defaultRenderer !== '') $currentRenderer = $defaultRenderer;
 
         if ($currentRenderer === '') return;
 
         if ($pageId > 0) {
-            $templateLayouts = $this->templateLayoutsUtility->getAvailableTemplateLayouts($pageId);
+            $templateLayouts = $this->templateLayout->getAvailableTemplateLayouts($pageId);
 
             $templateLayouts = $this->reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer);
             foreach ($templateLayouts as $layout) {
                 $additionalLayout = [
-                    self::getLanguageService()->sL($layout[0]),
+                    $this->getLanguageService()->sL($layout[0]),
                     $layout[1]
                 ];
                 $config['items'][] = $additionalLayout;
             }
+        }
+    }
+
+    public function sources(array $config, $pObj): void
+    {
+        foreach ($this->sliderSourceRegistry->getSources() as $source) {
+            $additionalSource = [
+                $source->getName(),
+                get_class($source)
+            ];
+            $config['items'][] = $additionalSource;
         }
     }
 
@@ -145,10 +157,7 @@ class ItemsProcFunc
     }
 
 
-    /**
-     * @return LanguageService
-     */
-    protected static function getLanguageService(): LanguageService
+    protected function getLanguageService(): LanguageService
     {
         return $GLOBALS['LANG'];
     }

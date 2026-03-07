@@ -54,18 +54,19 @@ class TypoScriptService
      */
     public function getTypoScript(int $pageUid, ?ServerRequest $request = null, int $languageUid = 0, array $rootLine = [], ?Site $site = null): array
     {
-        $cacheIdentifier = 'extbase-backend-typoscript-pageId-' . $pageUid;
+        $cacheIdentifier = 'wsslider-typoscript-pageId-' . $pageUid;
         $setupArray = $this->runtimeCache->get($cacheIdentifier);
         if (is_array($setupArray)) {
             return $setupArray;
         }
+
+        $site = $site ?? GeneralUtility::makeInstance(SiteFinder::class)->getSiteByPageId($pageUid);
 
         if ($site === null) {
             // If still no site object, have NullSite (usually pid 0).
             $site = new NullSite();
         }
 
-        $rootLine = [];
         $sysTemplateRows = [];
         $sysTemplateFakeRow = [
             'uid' => 0,
@@ -86,7 +87,9 @@ class TypoScriptService
             'sorting' => 0,
         ];
         if ($pageUid > 0) {
-            $rootLine = GeneralUtility::makeInstance(RootlineUtility::class, $pageUid)->get();
+            if ($rootLine === []) {
+                $rootLine = GeneralUtility::makeInstance(RootlineUtility::class, $pageUid)->get();
+            }
             $sysTemplateRows = $this->sysTemplateRepository->getSysTemplateRowsByRootline($rootLine, $request);
             ksort($rootLine);
         }

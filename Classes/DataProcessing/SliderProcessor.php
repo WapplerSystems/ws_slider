@@ -11,13 +11,12 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 use WapplerSystems\WsSlider\Event\AfterSliderProcessedEvent;
+use WapplerSystems\WsSlider\Source\SliderSourceInterface;
+use WapplerSystems\WsSlider\Source\SliderSourceRegistry;
 
 /**
  *
  * 10 = WapplerSystems\WsSlider\DataProcessing\SliderProcessor
- * 10 {
- *   as = flexform
- * }
  */
 class SliderProcessor implements DataProcessorInterface
 {
@@ -25,7 +24,7 @@ class SliderProcessor implements DataProcessorInterface
     /**
      * @var FlexFormService
      */
-    protected $flexFormService;
+    protected FlexFormService $flexFormService;
 
     protected EventDispatcherInterface $eventDispatcher;
 
@@ -51,6 +50,16 @@ class SliderProcessor implements DataProcessorInterface
         $settings = $contentObjectConfiguration['settings.']['slider.'];
         $settings['parameters'] = [];
         $settings['layout'] = $processedData['data']['tx_wsslider_layout'] ?? 'Default';
+
+        if ($processedData['data']['tx_wsslider_source'] !== null && $processedData['data']['tx_wsslider_source'] !== '') {
+            /** @var SliderSourceInterface $source */
+            $source = GeneralUtility::getContainer()->get(SliderSourceRegistry::class)->getSource($processedData['data']['tx_wsslider_source']);
+            if ($source === null) {
+                throw new \RuntimeException('No slider source found with name "' . $processedData['data']['tx_wsslider_source'] . '"', 1666544862);
+            }
+            $processedData['items'] = $source->getSliderItems($cObj->getRequest());
+        }
+
 
         if (($processedData['data']['tx_wsslider_preset'] ?? 0) > 0) {
 
@@ -98,7 +107,6 @@ class SliderProcessor implements DataProcessorInterface
                 $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($flexformData);
                 $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
                 ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
-
             }
 
             $this->convertStringOptionsToBoolean($options);
@@ -114,6 +122,8 @@ class SliderProcessor implements DataProcessorInterface
         unset($settings['defaultRenderer']);
 
         $processedData['sliderSettings'] = $settings;
+
+        $processedData['source'] = $processedData['data']['tx_wsslider_source'] ?? '';
 
         /** @var AfterSliderProcessedEvent $event */
         $event = $this->eventDispatcher->dispatch(new AfterSliderProcessedEvent($cObj, $contentObjectConfiguration, $processorConfiguration, $processedData));

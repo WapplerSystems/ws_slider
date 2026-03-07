@@ -8,9 +8,10 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\RequestInterface;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
-use WapplerSystems\WsSlider\Factory\ArraySliderFactory;
 use WapplerSystems\WsSlider\Factory\SliderFactoryInterface;
 use WapplerSystems\WsSlider\Model\SliderDefinition;
+use WapplerSystems\WsSlider\Source\SliderSourceInterface;
+use WapplerSystems\WsSlider\Source\SliderSourceRegistry;
 
 
 final class RenderViewHelper extends AbstractViewHelper
@@ -42,6 +43,8 @@ final class RenderViewHelper extends AbstractViewHelper
             $renderer = ucfirst($this->arguments['settings']['slider']['defaultRenderer'] ?? '');
         }
 
+        $items = $this->arguments['items'];
+
         if ($this->arguments['factoryClass'] === null) {
             if (GeneralUtility::getContainer()->has('WapplerSystems\WsSlider\Factory\\'.$renderer.'Factory')) {
                 $this->arguments['factoryClass'] = 'WapplerSystems\WsSlider\Factory\\' . $renderer . 'Factory';
@@ -51,7 +54,7 @@ final class RenderViewHelper extends AbstractViewHelper
 
             $overrideConfiguration = [
                 'renderer' => $renderer,
-                'items' => $this->arguments['items'],
+                'items' => $items,
                 'layout' => $this->arguments['layout'],
                 'settings' => $this->arguments['settings'],
             ];
@@ -60,7 +63,7 @@ final class RenderViewHelper extends AbstractViewHelper
 
             $overrideConfiguration = [
                 'renderer' => $renderer,
-                'items' => $this->arguments['items'],
+                'items' => $items,
                 'layout' => $this->arguments['layout'],
                 'settings' => $this->arguments['settings'],
             ];

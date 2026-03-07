@@ -27,6 +27,9 @@
 			<trans-unit id="preset">
 				<source>Preset</source>
 			</trans-unit>
+			<trans-unit id="source">
+				<source>Source</source>
+			</trans-unit>
 
 			<trans-unit id="yes">
 				<source>Yes</source>

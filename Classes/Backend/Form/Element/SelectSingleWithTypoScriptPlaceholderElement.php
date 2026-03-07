@@ -83,13 +83,12 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
      */
     public function render(): array
     {
+
         $resultArray = $this->initializeResultArray();
         $languageService = $this->getLanguageService();
 
         $typoscript = null;
-        if ($this->data['site'] instanceof Site) {
-            $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
-        }
+
 
         $table = $this->data['tableName'];
         $field = $this->data['fieldName'];
@@ -97,8 +96,13 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $parameterArray = $this->data['parameterArray'];
         $config = $parameterArray['fieldConf']['config'];
 
+        if ($this->data['site'] instanceof Site) {
+            $typoscript = $this->typoScriptService->getTypoScript($this->data['parentPageRow']['uid'], $this->data['request'], 0, $this->data['rootline'], $this->data['site']);
+        }
+
         $selectItems = $parameterArray['fieldConf']['config']['items'];
         $classList = ['form-select', 'form-control-adapt'];
+
 
         # fix for flexform
         $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'], 4);
@@ -165,6 +169,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         if ($selectedValue === null) {
             $selectedValue = $defaultValue;
         }
+
 
         foreach ($selectItems as $item) {
             $selected = $selectedValue === (string)($item['value'] ?? '');
