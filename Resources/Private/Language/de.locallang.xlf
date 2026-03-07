@@ -65,19 +65,19 @@
         <source>CoverFlow Effect</source>
         <target state="final">Coverflow Effekt</target>
       </trans-unit>
-      <trans-unit id="sheet.flipeffect" approved="yes">
+      <trans-unit id="sheet.flipEffect" approved="yes">
         <source>Flip Effect</source>
         <target state="final">Flip Effekt</target>
       </trans-unit>
-      <trans-unit id="sheet.cubeeffect" approved="yes">
+      <trans-unit id="sheet.cubeEffect" approved="yes">
         <source>Cube Effect</source>
         <target state="final">Cube Effekt</target>
       </trans-unit>
-      <trans-unit id="sheet.cardseffect" approved="yes">
+      <trans-unit id="sheet.cardsEffect" approved="yes">
         <source>Cards Effect</source>
         <target state="final">Cards Effekt</target>
       </trans-unit>
-      <trans-unit id="sheet.creativeeffect" approved="yes">
+      <trans-unit id="sheet.creativeEffect" approved="yes">
         <source>Creative Effect</source>
         <target state="final">Creative Effekt</target>
       </trans-unit>

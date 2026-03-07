@@ -59,6 +59,8 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
                     $val = (float)$v;
                 } else if (is_numeric($v)) {
                     $val = (int)$v;
+                } else if (is_string($v) && $v === '') {
+                    continue; // TODO: find solution for empty strings, currently they are just ignored, but maybe they should be passed as empty strings to the js side
                 } else {
                     $val = json_encode($v);
                 }

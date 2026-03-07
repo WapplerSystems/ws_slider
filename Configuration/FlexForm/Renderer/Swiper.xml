@@ -327,7 +327,7 @@
             </ROOT>
         </navigation>
 
-        <responsive.dummy>
+        <breakpoints.dummy>
             <ROOT>
 
                 <sheetTitle>DUMMY</sheetTitle>
@@ -335,7 +335,7 @@
                 <type>array</type>
                 <el>
 
-                    <settings.responsive.dummy.slidesPerView>
+                    <settings.breakpoints.dummy.slidesPerView>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.slidesPerView</label>
                         <config>
@@ -345,9 +345,9 @@
                             <size>3</size>
                         </config>
 
-                    </settings.responsive.dummy.slidesPerView>
+                    </settings.breakpoints.dummy.slidesPerView>
 
-                    <settings.responsive.dummy.spaceBetween>
+                    <settings.breakpoints.dummy.spaceBetween>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.spaceBetween</label>
                         <config>
@@ -357,9 +357,9 @@
                             <size>3</size>
                         </config>
 
-                    </settings.responsive.dummy.spaceBetween>
+                    </settings.breakpoints.dummy.spaceBetween>
 
-                    <settings.responsive.dummy.slidesPerGroup>
+                    <settings.breakpoints.dummy.slidesPerGroup>
 
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.slidesPerGroup</label>
                         <config>
@@ -369,11 +369,11 @@
                             <size>3</size>
                         </config>
 
-                    </settings.responsive.dummy.slidesPerGroup>
+                    </settings.breakpoints.dummy.slidesPerGroup>
 
                 </el>
             </ROOT>
-        </responsive.dummy>
+        </breakpoints.dummy>
         <pagination>
             <ROOT>
                 <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.pagination</sheetTitle>
@@ -1226,17 +1226,17 @@
                 </el>
             </ROOT>
         </coverflowEffect>
-        <flipeffect>
+        <flipEffect>
             <ROOT>
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.flipeffect</sheetTitle>
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.flipEffect</sheetTitle>
                 <type>array</type>
                 <el>
-                    <settings.flipeffect.limitRotation>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.flipeffect.limitRotation</label>
+                    <settings.flipEffect.limitRotation>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.flipEffect.limitRotation</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.flipeffect.limitRotation</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.flipEffect.limitRotation</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1250,13 +1250,13 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.flipeffect.limitRotation>
-                    <settings.flipeffect.slideShadows>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.flipeffect.slideShadows</label>
+                    </settings.flipEffect.limitRotation>
+                    <settings.flipEffect.slideShadows>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.flipEffect.slideShadows</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.flipeffect.slideShadows</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.flipEffect.slideShadows</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1270,21 +1270,21 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.flipeffect.slideShadows>
+                    </settings.flipEffect.slideShadows>
                 </el>
             </ROOT>
-        </flipeffect>
-        <cubeeffect>
+        </flipEffect>
+        <cubeEffect>
             <ROOT>
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.cubeeffect</sheetTitle>
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.cubeEffect</sheetTitle>
                 <type>array</type>
                 <el>
-                    <settings.cubeeffect.shadow>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeeffect.shadow</label>
+                    <settings.cubeEffect.shadow>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeEffect.shadow</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadow</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeEffect.shadow</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1298,31 +1298,31 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.cubeeffect.shadow>
-                    <settings.cubeeffect.shadowOffset>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeeffect.shadowOffset</label>
+                    </settings.cubeEffect.shadow>
+                    <settings.cubeEffect.shadowOffset>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeEffect.shadowOffset</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowOffset</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeEffect.shadowOffset</typoscriptPath>
                             <size>8</size>
                         </config>
-                    </settings.cubeeffect.shadowOffset>
-                    <settings.cubeeffect.shadowScale>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeeffect.shadowScale</label>
+                    </settings.cubeEffect.shadowOffset>
+                    <settings.cubeEffect.shadowScale>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeEffect.shadowScale</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.shadowScale</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeEffect.shadowScale</typoscriptPath>
                             <size>8</size>
                         </config>
-                    </settings.cubeeffect.shadowScale>
-                    <settings.cubeeffect.slideShadows>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeeffect.slideShadows</label>
+                    </settings.cubeEffect.shadowScale>
+                    <settings.cubeEffect.slideShadows>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cubeEffect.slideShadows</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeeffect.slideShadows</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cubeEffect.slideShadows</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1336,39 +1336,39 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.cubeeffect.slideShadows>
+                    </settings.cubeEffect.slideShadows>
                 </el>
             </ROOT>
-        </cubeeffect>
-        <cardseffect>
+        </cubeEffect>
+        <cardsEffect>
             <ROOT>
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.cardseffect</sheetTitle>
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.cardsEffect</sheetTitle>
                 <type>array</type>
                 <el>
-                    <settings.cardseffect.perSlideOffset>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardseffect.perSlideOffset</label>
+                    <settings.cardsEffect.perSlideOffset>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardsEffect.perSlideOffset</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideOffset</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardsEffect.perSlideOffset</typoscriptPath>
                             <size>8</size>
                         </config>
-                    </settings.cardseffect.perSlideOffset>
-                    <settings.cardseffect.perSlideRotate>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardseffect.perSlideRotate</label>
+                    </settings.cardsEffect.perSlideOffset>
+                    <settings.cardsEffect.perSlideRotate>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardsEffect.perSlideRotate</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardseffect.perSlideRotate</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardsEffect.perSlideRotate</typoscriptPath>
                             <size>8</size>
                         </config>
-                    </settings.cardseffect.perSlideRotate>
-                    <settings.cardseffect.rotate>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardseffect.rotate</label>
+                    </settings.cardsEffect.perSlideRotate>
+                    <settings.cardsEffect.rotate>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardsEffect.rotate</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardseffect.rotate</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardsEffect.rotate</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1382,13 +1382,13 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.cardseffect.rotate>
-                    <settings.cardseffect.slideShadows>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardseffect.slideShadows</label>
+                    </settings.cardsEffect.rotate>
+                    <settings.cardsEffect.slideShadows>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.cardsEffect.slideShadows</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardseffect.slideShadows</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.cardsEffect.slideShadows</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1402,39 +1402,39 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.cardseffect.slideShadows>
+                    </settings.cardsEffect.slideShadows>
                 </el>
             </ROOT>
-        </cardseffect>
-        <creativeeffect>
+        </cardsEffect>
+        <creativeEffect>
             <ROOT>
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.creativeeffect</sheetTitle>
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.creativeEffect</sheetTitle>
                 <type>array</type>
                 <el>
-                    <settings.creativeeffect.limitProgress>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeeffect.limitProgress</label>
+                    <settings.creativeEffect.limitProgress>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeEffect.limitProgress</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.limitProgress</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeEffect.limitProgress</typoscriptPath>
                             <size>8</size>
                         </config>
-                    </settings.creativeeffect.limitProgress>
-                    <settings.creativeeffect.next>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeeffect.next</label>
+                    </settings.creativeEffect.limitProgress>
+                    <settings.creativeEffect.next>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeEffect.next</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.next</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeEffect.next</typoscriptPath>
                             <size>32</size>
                         </config>
-                    </settings.creativeeffect.next>
-                    <settings.creativeeffect.perspective>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeeffect.perspective</label>
+                    </settings.creativeEffect.next>
+                    <settings.creativeEffect.perspective>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeEffect.perspective</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.perspective</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeEffect.perspective</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1448,31 +1448,31 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.creativeeffect.perspective>
-                    <settings.creativeeffect.prev>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeeffect.prev</label>
+                    </settings.creativeEffect.perspective>
+                    <settings.creativeEffect.prev>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeEffect.prev</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.prev</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeEffect.prev</typoscriptPath>
                             <size>32</size>
                         </config>
-                    </settings.creativeeffect.prev>
-                    <settings.creativeeffect.progressMultiplier>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeeffect.progressMultiplier</label>
+                    </settings.creativeEffect.prev>
+                    <settings.creativeEffect.progressMultiplier>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeEffect.progressMultiplier</label>
                         <config>
                             <type>input</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.progressMultiplier</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeEffect.progressMultiplier</typoscriptPath>
                             <size>8</size>
                         </config>
-                    </settings.creativeeffect.progressMultiplier>
-                    <settings.creativeeffect.shadowPerProgress>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeeffect.shadowPerProgress</label>
+                    </settings.creativeEffect.progressMultiplier>
+                    <settings.creativeEffect.shadowPerProgress>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.creativeEffect.shadowPerProgress</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeeffect.shadowPerProgress</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.creativeEffect.shadowPerProgress</typoscriptPath>
                             <items>
                                 <numIndex index="0">
                                     <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
@@ -1486,10 +1486,10 @@
                             <maxitems>1</maxitems>
                             <size>1</size>
                         </config>
-                    </settings.creativeeffect.shadowPerProgress>
+                    </settings.creativeEffect.shadowPerProgress>
                 </el>
             </ROOT>
-        </creativeeffect>
+        </creativeEffect>
         <thumbs>
             <ROOT>
                 <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.thumbs</sheetTitle>
@@ -1898,24 +1898,24 @@
                 </el>
             </ROOT>
         </virtual>
-        <hashnavigation>
+        <hashNavigation>
             <ROOT>
 
-                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.hashnavigation</sheetTitle>
+                <sheetTitle>LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:sheet.hashNavigation</sheetTitle>
 
                 <type>array</type>
                 <el>
-                    <settings.hashnavigation.getSlideIndex>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashnavigation.getSlideIndex</label>
+                    <settings.hashNavigation.getSlideIndex>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashNavigation.getSlideIndex</label>
                         <config>
                             <type>inputWithTypoScriptPlaceholder</type>
                             <size>40</size>
                             <eval>trim</eval>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.getSlideIndex</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashNavigation.getSlideIndex</typoscriptPath>
                         </config>
-                    </settings.hashnavigation.getSlideIndex>
-                    <settings.hashnavigation.replaceState>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashnavigation.replaceState</label>
+                    </settings.hashNavigation.getSlideIndex>
+                    <settings.hashNavigation.replaceState>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashNavigation.replaceState</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -1929,11 +1929,11 @@
                                     <numIndex index="value">false</numIndex>
                                 </numIndex>
                             </items>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.replaceState</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashNavigation.replaceState</typoscriptPath>
                         </config>
-                    </settings.hashnavigation.replaceState>
-                    <settings.hashnavigation.watchState>
-                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashnavigation.watchState</label>
+                    </settings.hashNavigation.replaceState>
+                    <settings.hashNavigation.watchState>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.hashNavigation.watchState</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
@@ -1947,11 +1947,11 @@
                                     <numIndex index="value">false</numIndex>
                                 </numIndex>
                             </items>
-                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashnavigation.watchState</typoscriptPath>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.hashNavigation.watchState</typoscriptPath>
                         </config>
-                    </settings.hashnavigation.watchState>
+                    </settings.hashNavigation.watchState>
                 </el>
             </ROOT>
-        </hashnavigation>
+        </hashNavigation>
     </sheets>
 </T3DataStructure>

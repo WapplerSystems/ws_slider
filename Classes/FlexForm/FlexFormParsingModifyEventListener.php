@@ -148,6 +148,48 @@ final class FlexFormParsingModifyEventListener
                     }
                     unset($dataStructureCopy['sheets']['responsive.dummy']);
                 }
+                if (isset($dataStructure['sheets']['breakpoints.dummy'])) {
+
+                    if (isset($identifier['pageTs'][ucfirst($rendererKey).'.']['breakpoints.'])) {
+
+                        foreach ($identifier['pageTs'][ucfirst($rendererKey).'.']['breakpoints.'] ?? [] as $bpPixel => $bpName) {
+
+                            $newSheet = $dataStructure['sheets']['breakpoints.dummy'];
+                            $newSheet['ROOT']['sheetTitle'] = 'Breakpoint > '.$bpPixel;
+
+                            foreach ($newSheet['ROOT']['el'] as $fieldName => $field) {
+                                if (isset($field['config']['typoscriptPath'])) {
+                                    $field['config']['typoscriptPath'] = str_replace('dummy',(string)$bpPixel,$field['config']['typoscriptPath']);
+                                }
+                                $newSheet['ROOT']['el'][str_replace('dummy',(string)$bpPixel,$fieldName)] = $field;
+                                unset($newSheet['ROOT']['el'][$fieldName]);
+                            }
+                            $dataStructureCopy['sheets']['breakpoints.'.$bpPixel] = $newSheet;
+                        }
+                        unset($dataStructureCopy['sheets']['breakpoints.dummy']);
+
+                    } else {
+
+                        foreach ($identifier['pageTs']['breakpoints.'] ?? [] as $bpPixel => $bpName) {
+
+                            $newSheet = $dataStructure['sheets']['breakpoints.dummy'];
+                            $newSheet['ROOT']['sheetTitle'] = 'Breakpoint > '.$bpPixel;
+
+                            foreach ($newSheet['ROOT']['el'] as $fieldName => $field) {
+                                if (isset($field['config']['typoscriptPath'])) {
+                                    $field['config']['typoscriptPath'] = str_replace('dummy',(string)$bpPixel,$field['config']['typoscriptPath']);
+                                }
+                                $newSheet['ROOT']['el'][str_replace('dummy',(string)$bpPixel,$fieldName)] = $field;
+                                unset($newSheet['ROOT']['el'][$fieldName]);
+                            }
+                            $dataStructureCopy['sheets']['breakpoints.'.$bpPixel] = $newSheet;
+                        }
+                        unset($dataStructureCopy['sheets']['breakpoints.dummy']);
+
+                    }
+
+
+                }
 
                 $dataStructure = $dataStructureCopy;
 

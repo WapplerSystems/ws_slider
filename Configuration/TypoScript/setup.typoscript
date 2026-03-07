@@ -15,4 +15,4 @@ plugin.tx_wsslider {
 [global]
 
 
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ws_slider/Configuration/TypoScript/ContentElement/" extensions="typoscript">
+@import 'EXT:ws_slider/Configuration/TypoScript/ContentElement/*.typoscript'

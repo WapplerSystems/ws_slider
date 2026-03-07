@@ -273,52 +273,52 @@
 			<trans-unit id="options.coverflowEffect.stretch" xml:space="preserve">
 				<source>Abstand zwischen Slides (px oder %)</source>
 			</trans-unit>
-			<trans-unit id="options.flipeffect.limitRotation" xml:space="preserve">
+			<trans-unit id="options.flipEffect.limitRotation" xml:space="preserve">
 				<source>Begrenze die Rotation der Rand-Slides</source>
 			</trans-unit>
-			<trans-unit id="options.flipeffect.slideShadows" xml:space="preserve">
+			<trans-unit id="options.flipEffect.slideShadows" xml:space="preserve">
 				<source>Aktiviert Slide-Schatten</source>
 			</trans-unit>
-			<trans-unit id="options.cubeeffect.shadow" xml:space="preserve">
+			<trans-unit id="options.cubeEffect.shadow" xml:space="preserve">
 				<source>Aktiviert Haupt-Slider-Schatten</source>
 			</trans-unit>
-			<trans-unit id="options.cubeeffect.shadowOffset" xml:space="preserve">
+			<trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve">
 				<source>Haupt-Schatten Offset in px</source>
 			</trans-unit>
-			<trans-unit id="options.cubeeffect.shadowScale" xml:space="preserve">
+			<trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve">
 				<source>Haupt-Schatten Skalierungsfaktor</source>
 			</trans-unit>
-			<trans-unit id="options.cubeeffect.slideShadows" xml:space="preserve">
+			<trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve">
 				<source>Aktiviert Slide-Schatten</source>
 			</trans-unit>
-			<trans-unit id="options.cardseffect.perSlideOffset" xml:space="preserve">
+			<trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve">
 				<source>Versatz pro Slide (in px)</source>
 			</trans-unit>
-			<trans-unit id="options.cardseffect.perSlideRotate" xml:space="preserve">
+			<trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve">
 				<source>Rotationswinkel pro Slide (in Grad)</source>
 			</trans-unit>
-			<trans-unit id="options.cardseffect.rotate" xml:space="preserve">
+			<trans-unit id="options.cardsEffect.rotate" xml:space="preserve">
 				<source>Kartenrotation aktivieren</source>
 			</trans-unit>
-			<trans-unit id="options.cardseffect.slideShadows" xml:space="preserve">
+			<trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve">
 				<source>Aktiviert Slide-Schatten</source>
 			</trans-unit>
-			<trans-unit id="options.creativeeffect.limitProgress" xml:space="preserve">
+			<trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve">
 				<source>Begrenze Progress/Offset auf Anzahl der Seiten-Slides</source>
 			</trans-unit>
-			<trans-unit id="options.creativeeffect.next" xml:space="preserve">
+			<trans-unit id="options.creativeEffect.next" xml:space="preserve">
 				<source>Transformationen für nächsten Slide</source>
 			</trans-unit>
-			<trans-unit id="options.creativeeffect.perspective" xml:space="preserve">
+			<trans-unit id="options.creativeEffect.perspective" xml:space="preserve">
 				<source>3D-Perspektive für eigene Transformationen aktivieren</source>
 			</trans-unit>
-			<trans-unit id="options.creativeeffect.prev" xml:space="preserve">
+			<trans-unit id="options.creativeEffect.prev" xml:space="preserve">
 				<source>Transformationen für vorherigen Slide</source>
 			</trans-unit>
-			<trans-unit id="options.creativeeffect.progressMultiplier" xml:space="preserve">
+			<trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve">
 				<source>Transformationen und Opazität multiplizieren</source>
 			</trans-unit>
-			<trans-unit id="options.creativeeffect.shadowPerProgress" xml:space="preserve">
+			<trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve">
 				<source>Schatten-Opazität pro Slide nach limitProgress aufteilen</source>
 			</trans-unit>
 			<trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve">

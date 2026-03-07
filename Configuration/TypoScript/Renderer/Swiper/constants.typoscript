@@ -10,18 +10,78 @@
 # customsubcategory=paralax=paralax
 # customsubcategory=fadeEffect=fadeEffect
 # customsubcategory=coverflowEffect=coverflowEffect
-# customsubcategory=flipeffect=flipeffect
-# customsubcategory=cubeeffect=cubeeffect
-# customsubcategory=cardseffect=cardseffect
-# customsubcategory=creativeeffect=creativeeffect
+# customsubcategory=fadeEffect=fadeEffect
+# customsubcategory=cubeEffect=cubeEffect
+# customsubcategory=cardsEffect=cardsEffect
+# customsubcategory=creativeEffect=creativeEffect
 # customsubcategory=thumbs=thumbs
 # customsubcategory=zoom=zoom
 # customsubcategory=keyboard=keyboard
 # customsubcategory=mousewheel=mousewheel
 # customsubcategory=virtualslides=virtualslides
-# customsubcategory=hashnavigation=hashnavigation
+# customsubcategory=hashNavigation=hashNavigation
 
 plugin.tx_wsslider.settings.swiper {
+
+
+
+  # cat=plugin.tx_wsslider.swiper/base/a; type=options[true,false]; label=allowSlideNext: Set to false to disable swiping to next slide direction (to right or bottom)
+  allowSlideNext = true
+
+  # cat=plugin.tx_wsslider.swiper/base/b; type=options[true,false]; label=allowSlidePrev: Set to false to disable swiping to previous slide direction (to left or top)
+  allowSlidePrev = true
+
+  # cat=plugin.tx_wsslider.swiper/base/c; type=options[true,false]; label=allowTouchMove: If false, then the only way to switch the slide is use of external API functions like slidePrev or slideNext
+  allowTouchMove = true
+
+  # cat=plugin.tx_wsslider.swiper/base/d; type=options[true,false]; label=autoHeight: Set to true and slider wrapper will adapt its height to the height of the currently active slide
+  autoHeight = false
+
+  focusableElements = input, select, option, textarea, button, video, label
+
+
+  # cat=plugin.tx_wsslider.swiper/base/e; type=options[true,false]; label=centerInsufficientSlides: When enabled it center slides if the amount of slides less than slidesPerView. Not intended to be used loop mode and grid.rows
+  centerInsufficientSlides = false
+
+  # cat=plugin.tx_wsslider.swiper/base/f; type=options[true,false]; label=centeredSlides: If true, then active slide will be centered, not always on the left side.
+  centeredSlides = false
+
+  # cat=plugin.tx_wsslider.swiper/base/g; type=options[true,false]; label=centeredSlidesBounds: If true, then active slide will be centered without adding gaps at the beginning and end of slider. Required centeredSlides: true. Not intended to be used with loop or pagination
+  centeredSlidesBounds = false
+
+  # cat=plugin.tx_wsslider.swiper/base/h; type=string; label=containerModifierClass: If true, then active slide will be centered without adding gaps at the beginning and end of slider. Required centeredSlides: true. Not intended to be used with loop or pagination
+  containerModifierClass = swiper-
+
+  # cat=plugin.tx_wsslider.swiper/base/j; type=options[true,false]; label=createElements: When enabled Swiper will automatically wrap slides with swiper-wrapper element, and will create required elements for navigation, pagination and scrollbar they are enabled (with their respective params object or with boolean true))
+  createElements = false
+
+  # cat=plugin.tx_wsslider.swiper/base/k; type=options[true,false]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
+  cssMode = false
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
+  direction = horizontal
+
+  edgeSwipeDetection = false
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
+  edgeSwipeThreshold = 20
+
+  # cat=plugin.tx_wsslider.swiper/base/l; type=options[slide,fade,cube,coverflow,flip,creative,cards]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
+  effect = slide
+
+  # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=enabled: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
+  enabled = true
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
+  eventsPrefix = swiper
+
+
+  flipEffect {
+    # cat=plugin.tx_wsslider.swiper/effects/flip/a; type=options[true,false]; label=Slide Shadows
+    slideShadows = true
+
+  }
+
 
   a11y {
     # cat=plugin.tx_wsslider.swiper/a11y/a; type=options[true,false]; label=enabled
@@ -42,18 +102,6 @@ plugin.tx_wsslider.settings.swiper {
     # cat=plugin.tx_wsslider.swiper/a11y/f; type=string; label=paginationBulletMessage
     paginationBulletMessage = Go to slide {{index}}
   }
-
-  # cat=plugin.tx_wsslider.swiper/base/a; type=options[true,false]; label=allowSlideNext: Set to false to disable swiping to next slide direction (to right or bottom)
-  allowSlideNext = true
-
-  # cat=plugin.tx_wsslider.swiper/base/b; type=options[true,false]; label=allowSlidePrev: Set to false to disable swiping to previous slide direction (to left or top)
-  allowSlidePrev = true
-
-  # cat=plugin.tx_wsslider.swiper/base/c; type=options[true,false]; label=allowTouchMove: If false, then the only way to switch the slide is use of external API functions like slidePrev or slideNext
-  allowTouchMove = true
-
-  # cat=plugin.tx_wsslider.swiper/base/d; type=options[true,false]; label=autoHeight: Set to true and slider wrapper will adapt its height to the height of the currently active slide
-  autoHeight = false
 
 
   autoplay {
@@ -108,64 +156,6 @@ plugin.tx_wsslider.settings.swiper {
     }
   }
 
-  # cat=plugin.tx_wsslider.swiper/base/e; type=options[true,false]; label=centerInsufficientSlides: When enabled it center slides if the amount of slides less than slidesPerView. Not intended to be used loop mode and grid.rows
-  centerInsufficientSlides = false
-
-  # cat=plugin.tx_wsslider.swiper/base/f; type=options[true,false]; label=centeredSlides: If true, then active slide will be centered, not always on the left side.
-  centeredSlides = false
-
-  # cat=plugin.tx_wsslider.swiper/base/g; type=options[true,false]; label=centeredSlidesBounds: If true, then active slide will be centered without adding gaps at the beginning and end of slider. Required centeredSlides: true. Not intended to be used with loop or pagination
-  centeredSlidesBounds = false
-
-  # cat=plugin.tx_wsslider.swiper/base/h; type=string; label=containerModifierClass: If true, then active slide will be centered without adding gaps at the beginning and end of slider. Required centeredSlides: true. Not intended to be used with loop or pagination
-  containerModifierClass = swiper-
-
-  # cat=plugin.tx_wsslider.swiper/base/j; type=options[true,false]; label=createElements: When enabled Swiper will automatically wrap slides with swiper-wrapper element, and will create required elements for navigation, pagination and scrollbar they are enabled (with their respective params object or with boolean true))
-  createElements = false
-
-  # cat=plugin.tx_wsslider.swiper/base/k; type=options[true,false]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
-  cssMode = false
-
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
-  direction = horizontal
-
-  edgeSwipeDetection = false
-
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
-  edgeSwipeThreshold = 20
-
-  # cat=plugin.tx_wsslider.swiper/base/l; type=options[slide,fade,cube,coverflow,flip,creative,cards]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
-  effect = slide
-
-  # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=enabled: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
-  enabled = true
-
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
-  eventsPrefix = swiper
-
-
-
-  fadeEffect {
-    # cat=plugin.tx_wsslider.swiper/effects/fade/a; type=options[true,false]; label=Crossfade
-    crossFade = true
-  }
-
-  flipEffect {
-    # cat=plugin.tx_wsslider.swiper/effects/flip/a; type=options[true,false]; label=Slide Shadows
-    slideShadows = true
-
-  }
-
-
-  focusableElements = input, select, option, textarea, button, video, label
-
-  freeMode {
-    # cat=plugin.tx_wsslider.swiper/freeMode/a; type=options[true,false]; label=enabled
-    enabled = true
-
-    # cat=plugin.tx_wsslider.swiper/freeMode/b; type=options[true,false]; label=sticky
-    sticky = true
-  }
 
   grid {
     # cat=plugin.tx_wsslider.swiper/grid/a; type=options[column,row]; label=How slides should fill rows (by column or by row)
@@ -176,13 +166,13 @@ plugin.tx_wsslider.settings.swiper {
 
 
 
-  hashnavigation {
+  hashNavigation {
 
-    # cat=plugin.tx_wsslider.swiper/hashnavigation/a; type=string; label=Designed to be used with Virtual slides when it is impossible to find slide in DOM by hash (e.g. not yet rendered)
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/a; type=string; label=Designed to be used with Virtual slides when it is impossible to find slide in DOM by hash (e.g. not yet rendered)
     getSlideIndex =
-    # cat=plugin.tx_wsslider.swiper/hashnavigation/b; type=boolean; label=Works in addition to hashnav to replace current url state with the new one instead of adding it to history
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/b; type=boolean; label=Works in addition to hashnav to replace current url state with the new one instead of adding it to history
     replaceState = false
-    # cat=plugin.tx_wsslider.swiper/hashnavigation/c; type=boolean; label=Set to true to enable also navigation through slides (when hashnav is enabled) by browser history or by setting directly hash on document location
+    # cat=plugin.tx_wsslider.swiper/hashNavigation/c; type=boolean; label=Set to true to enable also navigation through slides (when hashnav is enabled) by browser history or by setting directly hash on document location
     watchState = false
 
   }
@@ -316,23 +306,23 @@ plugin.tx_wsslider.settings.swiper {
 
   }
 
-  freemode {
+  freeMode {
 
-    # cat=plugin.tx_wsslider.swiper/freemode/a; type=options[true,false]; label=Enable free mode
+    # cat=plugin.tx_wsslider.swiper/freeMode/a; type=options[true,false]; label=Enable free mode
     enabled = false
-    # cat=plugin.tx_wsslider.swiper/freemode/b; type=float+; label=Minimum touchmove-velocity for free mode momentum
+    # cat=plugin.tx_wsslider.swiper/freeMode/b; type=float+; label=Minimum touchmove-velocity for free mode momentum
     minimumVelocity = 0.02
-    # cat=plugin.tx_wsslider.swiper/freemode/c; type=options[true,false]; label=Enable momentum in free mode
+    # cat=plugin.tx_wsslider.swiper/freeMode/c; type=options[true,false]; label=Enable momentum in free mode
     momentum = true
-    # cat=plugin.tx_wsslider.swiper/freemode/d; type=options[true,false]; label=Enable momentum bounce in free mode
+    # cat=plugin.tx_wsslider.swiper/freeMode/d; type=options[true,false]; label=Enable momentum bounce in free mode
     momentumBounce = true
-    # cat=plugin.tx_wsslider.swiper/freemode/e; type=float+; label=Momentum bounce ratio
+    # cat=plugin.tx_wsslider.swiper/freeMode/e; type=float+; label=Momentum bounce ratio
     momentumBounceRatio = 1
-    # cat=plugin.tx_wsslider.swiper/freemode/f; type=float+; label=Momentum ratio
+    # cat=plugin.tx_wsslider.swiper/freeMode/f; type=float+; label=Momentum ratio
     momentumRatio = 1
-    # cat=plugin.tx_wsslider.swiper/freemode/g; type=float+; label=Momentum velocity ratio
+    # cat=plugin.tx_wsslider.swiper/freeMode/g; type=float+; label=Momentum velocity ratio
     momentumVelocityRatio = 1
-    # cat=plugin.tx_wsslider.swiper/freemode/h; type=options[true,false]; label=Snap to slides in free mode
+    # cat=plugin.tx_wsslider.swiper/freeMode/h; type=options[true,false]; label=Snap to slides in free mode
     sticky = false
   }
 
@@ -364,48 +354,48 @@ plugin.tx_wsslider.settings.swiper {
 
   }
 
-  flipeffect {
-    # cat=plugin.tx_wsslider.swiper/flipeffect/a; type=options[true,false]; label=Limit edge slides rotation
+  flipEffect {
+    # cat=plugin.tx_wsslider.swiper/flipEffect/a; type=options[true,false]; label=Limit edge slides rotation
     limitRotation = true
-    # cat=plugin.tx_wsslider.swiper/flipeffect/b; type=options[true,false]; label=Enables slides shadows
+    # cat=plugin.tx_wsslider.swiper/flipEffect/b; type=options[true,false]; label=Enables slides shadows
     slideShadows = true
   }
 
-  cubeeffect {
-    # cat=plugin.tx_wsslider.swiper/cubeeffect/a; type=options[true,false]; label=Enables main slider shadow
+  cubeEffect {
+    # cat=plugin.tx_wsslider.swiper/cubeEffect/a; type=options[true,false]; label=Enables main slider shadow
     shadow = true
-    # cat=plugin.tx_wsslider.swiper/cubeeffect/b; type=int+; label=Main shadow offset in px
+    # cat=plugin.tx_wsslider.swiper/cubeEffect/b; type=int+; label=Main shadow offset in px
     shadowOffset = 20
-    # cat=plugin.tx_wsslider.swiper/cubeeffect/c; type=float+; label=Main shadow scale ratio
+    # cat=plugin.tx_wsslider.swiper/cubeEffect/c; type=float+; label=Main shadow scale ratio
     shadowScale = 0.94
-    # cat=plugin.tx_wsslider.swiper/cubeeffect/d; type=options[true,false]; label=Enables slides shadows
+    # cat=plugin.tx_wsslider.swiper/cubeEffect/d; type=options[true,false]; label=Enables slides shadows
     slideShadows = true
   }
 
-  cardseffect {
-    # cat=plugin.tx_wsslider.swiper/cardseffect/a; type=int+; label=Offset distance per slide (in px)
+  cardsEffect {
+    # cat=plugin.tx_wsslider.swiper/cardsEffect/a; type=int+; label=Offset distance per slide (in px)
     perSlideOffset = 8
-    # cat=plugin.tx_wsslider.swiper/cardseffect/b; type=int+; label=Rotate angle per slide (in degrees)
+    # cat=plugin.tx_wsslider.swiper/cardsEffect/b; type=int+; label=Rotate angle per slide (in degrees)
     perSlideRotate = 2
-    # cat=plugin.tx_wsslider.swiper/cardseffect/c; type=options[true,false]; label=Enables cards rotation
+    # cat=plugin.tx_wsslider.swiper/cardsEffect/c; type=options[true,false]; label=Enables cards rotation
     rotate = true
-    # cat=plugin.tx_wsslider.swiper/cardseffect/d; type=options[true,false]; label=Enables slides shadows
+    # cat=plugin.tx_wsslider.swiper/cardsEffect/d; type=options[true,false]; label=Enables slides shadows
     slideShadows = true
   }
 
-  creativeeffect {
+  creativeEffect {
 
-    # cat=plugin.tx_wsslider.swiper/creativeeffect/a; type=int+; label=Limit progress/offset to amount of side slides
+    # cat=plugin.tx_wsslider.swiper/creativeEffect/a; type=int+; label=Limit progress/offset to amount of side slides
     limitProgress = 1
-    # cat=plugin.tx_wsslider.swiper/creativeeffect/b; type=string; label=Next slide transformations
+    # cat=plugin.tx_wsslider.swiper/creativeEffect/b; type=string; label=Next slide transformations
     next =
-    # cat=plugin.tx_wsslider.swiper/creativeeffect/c; type=options[true,false]; label=Enable 3D perspective for custom transforms
+    # cat=plugin.tx_wsslider.swiper/creativeEffect/c; type=options[true,false]; label=Enable 3D perspective for custom transforms
     perspective = true
-    # cat=plugin.tx_wsslider.swiper/creativeeffect/d; type=string; label=Previous slide transformations
+    # cat=plugin.tx_wsslider.swiper/creativeEffect/d; type=string; label=Previous slide transformations
     prev =
-    # cat=plugin.tx_wsslider.swiper/creativeeffect/e; type=float+; label=Multiply slide transformations and opacity
+    # cat=plugin.tx_wsslider.swiper/creativeEffect/e; type=float+; label=Multiply slide transformations and opacity
     progressMultiplier = 1
-    # cat=plugin.tx_wsslider.swiper/creativeeffect/f; type=options[true,false]; label=Split shadow opacity per slide based on limitProgress
+    # cat=plugin.tx_wsslider.swiper/creativeEffect/f; type=options[true,false]; label=Split shadow opacity per slide based on limitProgress
     shadowPerProgress = false
   }
 

@@ -81,29 +81,26 @@ plugin.tx_wsslider.settings.renderer.swiper {
     verticalClass = {$plugin.tx_wsslider.settings.swiper.pagination.verticalClass}
   }
 
-  responsive {
-    0 {
-      items = {$plugin.tx_wsslider.settings.swiper.responsive.0.items}
-    }
+  breakpoints {
 
     576 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.576.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.576.slidesPerView}
     }
 
     768 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.768.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.768.slidesPerView}
     }
 
     992 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.992.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.992.slidesPerView}
     }
 
     1200 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.1200.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.1200.slidesPerView}
     }
 
     1400 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.1400.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.1400.slidesPerView}
     }
 
   }
@@ -139,32 +136,32 @@ plugin.tx_wsslider.settings.renderer.swiper {
     stretch = {$plugin.tx_wsslider.settings.swiper.coverflowEffect.stretch}
   }
 
-  flipeffect {
-    limitRotation = {$plugin.tx_wsslider.settings.swiper.flipeffect.limitRotation}
-    slideShadows = {$plugin.tx_wsslider.settings.swiper.flipeffect.slideShadows}
+  flipEffect {
+    limitRotation = {$plugin.tx_wsslider.settings.swiper.flipEffect.limitRotation}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.flipEffect.slideShadows}
   }
 
-  cubeeffect {
-    shadow = {$plugin.tx_wsslider.settings.swiper.cubeeffect.shadow}
-    shadowOffset = {$plugin.tx_wsslider.settings.swiper.cubeeffect.shadowOffset}
-    shadowScale = {$plugin.tx_wsslider.settings.swiper.cubeeffect.shadowScale}
-    slideShadows = {$plugin.tx_wsslider.settings.swiper.cubeeffect.slideShadows}
+  cubeEffect {
+    shadow = {$plugin.tx_wsslider.settings.swiper.cubeEffect.shadow}
+    shadowOffset = {$plugin.tx_wsslider.settings.swiper.cubeEffect.shadowOffset}
+    shadowScale = {$plugin.tx_wsslider.settings.swiper.cubeEffect.shadowScale}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.cubeEffect.slideShadows}
   }
 
-  cardseffect {
-    perSlideOffset = {$plugin.tx_wsslider.settings.swiper.cardseffect.perSlideOffset}
-    perSlideRotate = {$plugin.tx_wsslider.settings.swiper.cardseffect.perSlideRotate}
-    rotate = {$plugin.tx_wsslider.settings.swiper.cardseffect.rotate}
-    slideShadows = {$plugin.tx_wsslider.settings.swiper.cardseffect.slideShadows}
+  cardsEffect {
+    perSlideOffset = {$plugin.tx_wsslider.settings.swiper.cardsEffect.perSlideOffset}
+    perSlideRotate = {$plugin.tx_wsslider.settings.swiper.cardsEffect.perSlideRotate}
+    rotate = {$plugin.tx_wsslider.settings.swiper.cardsEffect.rotate}
+    slideShadows = {$plugin.tx_wsslider.settings.swiper.cardsEffect.slideShadows}
   }
 
-  creativeeffect {
-    limitProgress = {$plugin.tx_wsslider.settings.swiper.creativeeffect.limitProgress}
-    next = {$plugin.tx_wsslider.settings.swiper.creativeeffect.next}
-    perspective = {$plugin.tx_wsslider.settings.swiper.creativeeffect.perspective}
-    prev = {$plugin.tx_wsslider.settings.swiper.creativeeffect.prev}
-    progressMultiplier = {$plugin.tx_wsslider.settings.swiper.creativeeffect.progressMultiplier}
-    shadowPerProgress = {$plugin.tx_wsslider.settings.swiper.creativeeffect.shadowPerProgress}
+  creativeEffect {
+    limitProgress = {$plugin.tx_wsslider.settings.swiper.creativeEffect.limitProgress}
+    next = {$plugin.tx_wsslider.settings.swiper.creativeEffect.next}
+    perspective = {$plugin.tx_wsslider.settings.swiper.creativeEffect.perspective}
+    prev = {$plugin.tx_wsslider.settings.swiper.creativeEffect.prev}
+    progressMultiplier = {$plugin.tx_wsslider.settings.swiper.creativeEffect.progressMultiplier}
+    shadowPerProgress = {$plugin.tx_wsslider.settings.swiper.creativeEffect.shadowPerProgress}
   }
 
   thumbs {
@@ -216,10 +213,10 @@ plugin.tx_wsslider.settings.renderer.swiper {
     slidesPerViewAutoSlideSize = {$plugin.tx_wsslider.settings.swiper.virtualslides.slidesPerViewAutoSlideSize}
   }
 
-  hashnavigation {
-    getSlideIndex = {$plugin.tx_wsslider.settings.swiper.hashnavigation.getSlideIndex}
-    replaceState = {$plugin.tx_wsslider.settings.swiper.hashnavigation.replaceState}
-    watchState = {$plugin.tx_wsslider.settings.swiper.hashnavigation.watchState}
+  hashNavigation {
+    getSlideIndex = {$plugin.tx_wsslider.settings.swiper.hashNavigation.getSlideIndex}
+    replaceState = {$plugin.tx_wsslider.settings.swiper.hashNavigation.replaceState}
+    watchState = {$plugin.tx_wsslider.settings.swiper.hashNavigation.watchState}
   }
 
 }

@@ -107,16 +107,16 @@
 			<trans-unit id="sheet.coverflowEffect">
 				<source>CoverFlow Effect</source>
 			</trans-unit>
-			<trans-unit id="sheet.flipeffect">
+			<trans-unit id="sheet.flipEffect">
 				<source>Flip Effect</source>
 			</trans-unit>
-			<trans-unit id="sheet.cubeeffect">
+			<trans-unit id="sheet.cubeEffect">
 				<source>Cube Effect</source>
 			</trans-unit>
-			<trans-unit id="sheet.cardseffect">
+			<trans-unit id="sheet.cardsEffect">
 				<source>Cards Effect</source>
 			</trans-unit>
-			<trans-unit id="sheet.creativeeffect">
+			<trans-unit id="sheet.creativeEffect">
 				<source>Creative Effect</source>
 			</trans-unit>
 			<trans-unit id="sheet.thumbs">
@@ -134,7 +134,7 @@
 			<trans-unit id="sheet.virtualslides">
 				<source>Virtual Slides</source>
 			</trans-unit>
-			<trans-unit id="sheet.hashnavigation">
+			<trans-unit id="sheet.hashNavigation">
 				<source>Hash Navigation</source>
 			</trans-unit>
 			<trans-unit id="sheet.history">
