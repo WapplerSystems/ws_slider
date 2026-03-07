@@ -81,22 +81,6 @@
         <source>Grid</source>
         <target state="final">Raster</target>
       </trans-unit>
-      <trans-unit id="sheet.flipeffect" approved="yes">
-        <source>Flip Effect</source>
-        <target state="final">Flip Effekt</target>
-      </trans-unit>
-      <trans-unit id="sheet.cubeeffect" approved="yes">
-        <source>Cube Effect</source>
-        <target state="final">Cube Effekt</target>
-      </trans-unit>
-      <trans-unit id="sheet.cardseffect" approved="yes">
-        <source>Cards Effect</source>
-        <target state="final">Cards Effekt</target>
-      </trans-unit>
-      <trans-unit id="sheet.creativeeffect" approved="yes">
-        <source>Creative Effect</source>
-        <target state="final">Creative Effekt</target>
-      </trans-unit>
       <trans-unit id="sheet.zoom" approved="yes">
         <source>Zoom</source>
         <target state="final">Zoom</target>
