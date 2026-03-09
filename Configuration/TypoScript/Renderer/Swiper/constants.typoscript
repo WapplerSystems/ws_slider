@@ -182,16 +182,16 @@ plugin.tx_wsslider.settings.swiper {
     sticky = true
   }
 
-  grid {
+  #grid {
     # cat=plugin.tx_wsslider.swiper/grid/a; type=int+; label=Rows
-    rows = 1
+  #rows = 1
 
-  }
+  #}
 
   # cat=plugin.tx_wsslider.swiper/grid/a; type=options[column,row]; label=How slides should fill rows (by column or by row)
   plugin.tx_wsslider.settings.renderer.swiper.grid.fill = column
   # cat=plugin.tx_wsslider.swiper/grid/b; type=int+; label=Number of slides rows (multirow layout)
-  plugin.tx_wsslider.settings.renderer.swiper.grid.rows = 1
+  plugin.tx_wsslider.settings.renderer.swiper.grid.rows = 2
 
   hashNavigation {
     # cat=plugin.tx_wsslider.swiper/hashNavigation/b; type=options[true,false]; label=replaceState
