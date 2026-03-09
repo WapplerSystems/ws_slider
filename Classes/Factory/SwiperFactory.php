@@ -255,6 +255,15 @@ class SwiperFactory extends AbstractSliderFactory
 
         $this->sliderPrototype->setOptions($jsOptions);
 
+
+        /*$jsOptions = [
+            'grid' => [
+                'rows' => 2,
+                'fill' => 'row'
+            ]
+        ];*/
+        debug($jsOptions);
+
         $jsOptions = $this->js_encode($jsOptions);
         $js = '';
         $onOptions = '';

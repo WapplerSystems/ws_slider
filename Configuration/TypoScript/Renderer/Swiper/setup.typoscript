@@ -77,29 +77,27 @@ plugin.tx_wsslider.settings.renderer.swiper {
     verticalClass = {$plugin.tx_wsslider.settings.renderer.swiper.pagination.verticalClass}
   }
 
-  responsive {
-    0 {
-      items = {$plugin.tx_wsslider.settings.swiper.responsive.0.items}
-    }
+  breakpoints {
+
 
     576 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.576.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.576.slidesPerView}
     }
 
     768 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.768.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.768.slidesPerView}
     }
 
     992 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.992.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.992.slidesPerView}
     }
 
     1200 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.1200.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.1200.slidesPerView}
     }
 
     1400 {
-      slidesPerView = {$plugin.tx_wsslider.settings.swiper.responsive.1400.slidesPerView}
+      slidesPerView = {$plugin.tx_wsslider.settings.swiper.breakpoints.1400.slidesPerView}
     }
 
   }
