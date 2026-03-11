@@ -13,222 +13,10 @@ class SwiperFactory extends AbstractSliderFactory
 
     protected array $defaultOptions = [
         'init' => true,
-        'direction' => 'horizontal',
-        'oneWayMovement' => false,
-        'touchEventsTarget' => 'wrapper',
-        'initialSlide' => 0,
-        'speed' => 300,
-        'cssMode' => false,
-        'updateOnWindowResize' => true,
-        'resizeObserver' => true,
-        'observeParents' => false,
-        'observeSlideChildren' => false,
-        'width' => null,
-        'height' => null,
-        'preventInteractionOnTransition' => false,
-        'userAgent' => null,
-        'url' => null,
-        'edgeSwipeDetection' => false,
-        'edgeSwipeThreshold' => 20,
-        'freeMode' => false,
-        'autoHeight' => false,
-        'setWrapperSize' => false,
-        'virtualTranslate' => false,
-        'effect' => 'slide',
-        'breakpoints' => [],
-        'breakpointsBase' => 'window',
-        'spaceBetween' => 0,
-        'slidesPerView' => 1,
-        'slidesPerGroup' => 1,
-        'slidesPerGroupSkip' => 0,
-        'slidesPerGroupAuto' => false,
-        'centeredSlides' => false,
-        'centeredSlidesBounds' => false,
-        'slidesOffsetBefore' => 0,
-        'slidesOffsetAfter' => 0,
-        'normalizeSlideIndex' => false,
-        'centerInsufficientSlides' => false,
-        'slidesPerColumn' => 1,
-        'slidesPerColumnFill' => 'column',
-        'roundLengths' => false,
-        'touchRatio' => 1,
-        'touchAngle' => 45,
-        'simulateTouch' => true,
-        'shortSwipes' => true,
-        'longSwipes' => true,
-        'longSwipesRatio' => 0.5,
-        'longSwipesMs' => 300,
-        'followFinger' => true,
-        'allowTouchMove' => true,
-        'threshold' => 0,
-        'touchMoveStopPropagation' => false,
-        'touchStartPreventDefault' => true,
-        'touchStartForcePreventDefault' => false,
-        'touchReleaseOnEdges' => false,
-        'uniqueNavElements' => true,
-        'watchSlidesProgress' => false,
-        'watchSlidesVisibility' => false,
-        'grabCursor' => false,
-        'preventClicks' => true,
-        'preventClicksPropagation' => true,
-        'slideToClickedSlide' => false,
-        'preloadImages' => true,
-        'updateOnImagesReady' => true,
-        'loop' => false,
-        'loopAdditionalSlides' => 0,
-        'loopedSlides' => null,
-        'loopFillGroupWithBlank' => false,
-        'loopPreventsSlide' => true,
-        'rewind' => false,
-        'allowSlidePrev' => true,
-        'allowSlideNext' => true,
-        'swipeHandler' => null,
-        'noSwiping' => true,
-        'noSwipingClass' => 'swiper-no-swiping',
-        'noSwipingSelector' => null,
-        'passiveListeners' => true,
-        'containerModifierClass' => 'swiper-container-',
-        'slideClass' => 'swiper-slide',
-        'slideActiveClass' => 'swiper-slide-active',
-        'slideVisibleClass' => 'swiper-slide-visible',
-        'slideNextClass' => 'swiper-slide-next',
-        'slidePrevClass' => 'swiper-slide-prev',
-        'wrapperClass' => 'swiper-wrapper',
-        'runCallbacksOnInit' => true,
-        'observer' => false,
-        'a11y' => [
-            'enabled' => true,
-            'notificationClass' => 'swiper-notification',
-            'containerMessage' => null,
-            'containerRoleDescriptionMessage' => null,
-            'itemRoleDescriptionMessage' => null,
-        ],
-        'autoplay' => [
-            'delay' => 3000,
-            'waitForTransition' => true,
-            'disableOnInteraction' => true,
-            'stopOnLastSlide' => false,
-            'reverseDirection' => false,
-            'pauseOnMouseEnter' => false,
-        ],
-        'controller' => [
-            'control' => null,
-            'inverse' => false,
-            'by' => 'slide',
-        ],
-        'coverflowEffect' => [
-            'rotate' => 50,
-            'stretch' => 0,
-            'depth' => 100,
-            'modifier' => 1,
-            'slideShadows' => true,
-        ],
-        'cubeEffect' => [
-            'slideShadows' => true,
-            'shadow' => true,
-            'shadowOffset' => 20,
-            'shadowScale' => 0.94,
-        ],
-        'fadeEffect' => [
-            'crossFade' => false,
-        ],
-        'flipEffect' => [
-            'slideShadows' => true,
-            'limitRotation' => true,
-        ],
-        'keyboard' => [
-            'enabled' => false,
-            'onlyInViewport' => true,
-            'pageUpDown' => true,
-        ],
-        'lazy' => [
-            'enabled' => false,
-            'loadPrevNext' => false,
-            'loadPrevNextAmount' => 1,
-            'loadOnTransitionStart' => false,
-            'scrollingElement' => null,
-            'elementClass' => 'swiper-lazy',
-            'loadedClass' => 'swiper-lazy-loaded',
-            'loadingClass' => 'swiper-lazy-loading',
-            'preloaderClass' => 'swiper-lazy-preloader',
-        ],
-        'mousewheel' => [
-            'enabled' => false,
-            'forceToAxis' => false,
-            'releaseOnEdges' => false,
-            'invert' => false,
-            'sensitivity' => 1,
-            'eventsTarget' => 'container',
-        ],
-        'navigation' => [
-            'enabled' => true,
-            'nextEl' => '.swiper-button-next',
-            'prevEl' => '.swiper-button-prev',
-            'hideOnClick' => true,
-            'disabledClass' => 'swiper-button-disabled',
-            'hiddenClass' => 'swiper-button-hidden',
-            'lockClass' => 'swiper-button-lock',
-        ],
-        'pagination' => [
-            'enabled' => true,
-            'el' => '.swiper-pagination',
-            'type' => 'bullets',
-            'bulletElement' => 'span',
-            'dynamicBullets' => false,
-            'dynamicMainBullets' => 1,
-            'hideOnClick' => false,
-            'clickable' => true,
-            'progressbarOpposite' => false,
-            'bulletClass' => 'swiper-pagination-bullet',
-            'bulletActiveClass' => 'swiper-pagination-bullet-active',
-            'modifierClass' => 'swiper-pagination-',
-            'currentClass' => 'swiper-pagination-current',
-            'totalClass' => 'swiper-pagination-total',
-            'hiddenClass' => 'swiper-pagination-hidden',
-            'progressbarFillClass' => 'swiper-pagination-progressbar-fill',
-            'clickableClass' => 'swiper-pagination-clickable',
-            'lockClass' => 'swiper-pagination-lock',
-        ],
-        'parallax' => [
-            'enabled' => false,
-        ],
-        'scrollbar' => [
-            'el' => null,
-            'hide' => false,
-            'draggable' => false,
-            'snapOnRelease' => true,
-            'lockClass' => 'swiper-scrollbar-lock',
-            'dragClass' => 'swiper-scrollbar-drag',
-        ],
-        'thumbs' => [
-            'swiper' => null,
-            'autoScrollOffset' => 0,
-            'slideThumbActiveClass' => 'swiper-slide-thumb-active',
-        ],
-        'virtual' => [
-            'enabled' => false,
-            'slides' => [],
-            'cache' => true,
-            'renderSlide' => null,
-            'renderExternal' => null,
-            'renderExternalUpdate' => true,
-            'addSlidesBefore' => 0,
-            'addSlidesAfter' => 0,
-        ],
-        'zoom' => [
-            'enabled' => false,
-            'maxRatio' => 3,
-            'minRatio' => 1,
-            'toggle' => true,
-            'containerClass' => 'swiper-zoom-container',
-            'zoomedSlideClass' => 'swiper-slide-zoomed',
-        ],
-        'on' => [],
     ];
 
     public function build(array $options, string $identifier, ?ServerRequestInterface $request = null): SliderDefinition
     {
-
         $jsOptions = $this->mergeOptions($options);
 
         ArrayUtility::mergeRecursiveWithOverrule($jsOptions, [
@@ -253,8 +41,29 @@ class SwiperFactory extends AbstractSliderFactory
         if (!($jsOptions['freeMode']['enabled'] ?? false)) {
              unset($jsOptions['freeMode']);
         }
-
+        if (!($jsOptions['virtual']['enabled'] ?? false)) {
+             unset($jsOptions['virtual']);
+        } else {
+            unset($jsOptions['virtual']['enabled']);
+        }
+        if (!($jsOptions['zoom']['enabled'] ?? false)) {
+             unset($jsOptions['zoom']);
+        } else {
+            unset($jsOptions['zoom']['enabled']);
+        }
+        if (!($jsOptions['pagination']['enabled'] ?? false)) {
+             unset($jsOptions['pagination']);
+        } else {
+            unset($jsOptions['pagination']['enabled']);
+        }
+        if (!($jsOptions['scrollbar']['enabled'] ?? false)) {
+             unset($jsOptions['scrollbar']);
+        } else {
+            unset($jsOptions['scrollbar']['enabled']);
+        }
         $this->sliderPrototype->setOptions($jsOptions);
+
+        unset($jsOptions['customClasses']);
 
         $jsOptions = $this->js_encode($jsOptions);
         $js = '';

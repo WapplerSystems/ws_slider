@@ -4,9 +4,14 @@ plugin.tx_wsslider.settings.renderer.swiper {
   effect = {$plugin.tx_wsslider.settings.swiper.effect}
   cssMode = {$plugin.tx_wsslider.settings.swiper.cssMode}
   direction = {$plugin.tx_wsslider.settings.swiper.direction}
+  slidesPerGroup = {$plugin.tx_wsslider.settings.swiper.slidesPerGroup}
+  slidesPerGroupAuto = {$plugin.tx_wsslider.settings.swiper.slidesPerGroupAuto}
+  slidesPerGroupSkip = {$plugin.tx_wsslider.settings.swiper.slidesPerGroupSkip}
   slidesPerView = {$plugin.tx_wsslider.settings.swiper.slidesPerView}
   spaceBetween = {$plugin.tx_wsslider.settings.swiper.spaceBetween}
   speed = {$plugin.tx_wsslider.settings.swiper.speed}
+  height = {$plugin.tx_wsslider.settings.swiper.height}
+  customClasses = {$plugin.tx_wsslider.settings.swiper.customClasses}
 
   autoplay {
     active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}
@@ -176,6 +181,7 @@ plugin.tx_wsslider.settings.renderer.swiper {
   }
 
   zoom {
+    enabled = {$plugin.tx_wsslider.settings.swiper.zoom.enabled}
     containerClass = {$plugin.tx_wsslider.settings.swiper.zoom.containerClass}
     limitToOriginalSize = {$plugin.tx_wsslider.settings.swiper.zoom.limitToOriginalSize}
     maxRatio = {$plugin.tx_wsslider.settings.swiper.zoom.maxRatio}
@@ -204,16 +210,16 @@ plugin.tx_wsslider.settings.renderer.swiper {
     thresholdTime = {$plugin.tx_wsslider.settings.swiper.mousewheel.thresholdTime}
   }
 
-  virtualslides {
-    addSlidesAfter = {$plugin.tx_wsslider.settings.swiper.virtualslides.addSlidesAfter}
-    addSlidesBefore = {$plugin.tx_wsslider.settings.swiper.virtualslides.addSlidesBefore}
-    cache = {$plugin.tx_wsslider.settings.swiper.virtualslides.cache}
-    enabled = {$plugin.tx_wsslider.settings.swiper.virtualslides.enabled}
-    renderExternal = {$plugin.tx_wsslider.settings.swiper.virtualslides.renderExternal}
-    renderExternalUpdate = {$plugin.tx_wsslider.settings.swiper.virtualslides.renderExternalUpdate}
-    renderSlide = {$plugin.tx_wsslider.settings.swiper.virtualslides.renderSlide}
-    slides = {$plugin.tx_wsslider.settings.swiper.virtualslides.slides}
-    slidesPerViewAutoSlideSize = {$plugin.tx_wsslider.settings.swiper.virtualslides.slidesPerViewAutoSlideSize}
+  virtual {
+    addSlidesAfter = {$plugin.tx_wsslider.settings.swiper.virtual.addSlidesAfter}
+    addSlidesBefore = {$plugin.tx_wsslider.settings.swiper.virtual.addSlidesBefore}
+    cache = {$plugin.tx_wsslider.settings.swiper.virtual.cache}
+    enabled = {$plugin.tx_wsslider.settings.swiper.virtual.enabled}
+    renderExternal = {$plugin.tx_wsslider.settings.swiper.virtual.renderExternal}
+    renderExternalUpdate = {$plugin.tx_wsslider.settings.swiper.virtual.renderExternalUpdate}
+    renderSlide = {$plugin.tx_wsslider.settings.swiper.virtual.renderSlide}
+    slides = {$plugin.tx_wsslider.settings.swiper.virtual.slides}
+    slidesPerViewAutoSlideSize = {$plugin.tx_wsslider.settings.swiper.virtual.slidesPerViewAutoSlideSize}
   }
 
   hashNavigation {

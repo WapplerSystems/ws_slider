@@ -9,7 +9,7 @@
     <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-bundle.css"/>
     <f:asset.css identifier="swiper-addons" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-addons.css"/>
 
-    <div id="{identifier}" class="swiper" style="width: 100%;">
+    <div id="{identifier}" class="swiper {options.customClasses}" style="width: 100%;">
 
         <div class="swiper-wrapper">
             <f:for each="{items}" as="item" iteration="iterator">

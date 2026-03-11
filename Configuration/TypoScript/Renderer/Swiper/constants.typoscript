@@ -23,7 +23,8 @@
 
 plugin.tx_wsslider.settings.swiper {
 
-
+  # cat=plugin.tx_wsslider.swiper/base/a; type=string; label=Custom CSS class name added to swiper container
+  customClasses =
 
   # cat=plugin.tx_wsslider.swiper/base/a; type=options[true,false]; label=allowSlideNext: Set to false to disable swiping to next slide direction (to right or bottom)
   allowSlideNext = true
@@ -61,6 +62,12 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
   direction = horizontal
 
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=Speed of transition between slides (in ms)
+  speed = 300
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=Height of the slider in px (when autoHeight is disabled)
+  height =
+
   edgeSwipeDetection = false
 
   # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
@@ -75,11 +82,22 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   eventsPrefix = swiper
 
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=Slides per group
+  slidesPerGroup =
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=options[true,false]; label=Slides per group auto
+  slidesPerGroupAuto = false
+
+  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=Slides per group skip
+  slidesPerGroupSkip = 0
+
   # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=slidesPerView
-  slidesPerView = 1
+  slidesPerView =
 
   # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=spaceBetween
   spaceBetween = 10
+
+
 
 
   flipEffect {
@@ -134,31 +152,31 @@ plugin.tx_wsslider.settings.swiper {
     # cat=plugin.tx_wsslider.swiper/breakpoints/b; type=int+; label=Breakpoint at 576px
     576 {
       # cat=plugin.tx_wsslider.swiper/breakpoints/b; type=int+; label=Number of items to display
-      slidesPerView = 1
+      slidesPerView =
     }
 
     # cat=plugin.tx_wsslider.swiper/breakpoints/c; type=int+; label=Breakpoint at 768px
     768 {
       # cat=plugin.tx_wsslider.swiper/breakpoints/c; type=int+; label=Number of items to display
-      slidesPerView = 2
+      slidesPerView =
     }
 
     # cat=plugin.tx_wsslider.swiper/breakpoints/d; type=int+; label=Breakpoint at 992px
     992 {
       # cat=plugin.tx_wsslider.swiper/breakpoints/d; type=int+; label=Number of items to display
-      slidesPerView = 3
+      slidesPerView =
     }
 
     # cat=plugin.tx_wsslider.swiper/breakpoints/e; type=int+; label=Breakpoint at 1200px
     1200 {
       # cat=plugin.tx_wsslider.swiper/breakpoints/e; type=int+; label=Number of items to display
-      slidesPerView = 4
+      slidesPerView =
     }
 
     # cat=plugin.tx_wsslider.swiper/breakpoints/f; type=int+; label=Breakpoint at 1400px
     1400 {
       # cat=plugin.tx_wsslider.swiper/breakpoints/f; type=int+; label=Number of items to display
-      slidesPerView = 5
+      slidesPerView =
     }
   }
 
@@ -226,7 +244,6 @@ plugin.tx_wsslider.settings.swiper {
 
   pagination {
 
-
     # cat=plugin.tx_wsslider.swiper/pagination/a; type=string; label=CSS class name of currently active pagination bullet
     bulletActiveClass = swiper-pagination-bullet-active
     # cat=plugin.tx_wsslider.swiper/pagination/b; type=string; label=CSS class name of single pagination bullet
@@ -244,9 +261,9 @@ plugin.tx_wsslider.settings.swiper {
     # cat=plugin.tx_wsslider.swiper/pagination/h; type=int+; label=Number of main bullets visible when dynamicBullets enabled
     dynamicMainBullets = 1
     # cat=plugin.tx_wsslider.swiper/pagination/i; type=string; label=CSS selector or HTML element of the container with pagination
-    el =
-    # cat=plugin.tx_wsslider.swiper/pagination/j; type=options[true,false]; label=Enable/disable pagination (breakpoint support)
-    enabled = true
+    el = .swiper-pagination
+    # cat=plugin.tx_wsslider.swiper/pagination/j; type=options[true,false]; label=Enable/disable pagination
+    enabled = false
     # cat=plugin.tx_wsslider.swiper/pagination/k; type=string; label=Format function for current number in fraction pagination
     formatFractionCurrent =
     # cat=plugin.tx_wsslider.swiper/pagination/l; type=string; label=Format function for total number in fraction pagination
@@ -295,9 +312,9 @@ plugin.tx_wsslider.settings.swiper {
     # cat=plugin.tx_wsslider.swiper/scrollbar/c; type=options[true,false]; label=Enable draggable scrollbar
     draggable = false
     # cat=plugin.tx_wsslider.swiper/scrollbar/d; type=string; label=CSS selector or HTML element of the container with scrollbar
-    el =
+    el = .swiper-scrollbar
     # cat=plugin.tx_wsslider.swiper/scrollbar/e; type=options[true,false]; label=Enable/disable scrollbar (breakpoint support)
-    enabled = true
+    enabled = false
     # cat=plugin.tx_wsslider.swiper/scrollbar/f; type=options[true,false]; label=Hide scrollbar automatically after user interaction
     hide = true
     # cat=plugin.tx_wsslider.swiper/scrollbar/g; type=string; label=CSS class name set to scrollbar in horizontal Swiper
@@ -420,6 +437,8 @@ plugin.tx_wsslider.settings.swiper {
   }
 
   zoom {
+    # cat=plugin.tx_wsslider.swiper/zoom/a; type=options[true,false]; label=Enable zoom
+    enabled = false
     # cat=plugin.tx_wsslider.swiper/zoom/a; type=string; label=CSS class name of zoom container
     containerClass = swiper-zoom-container
     # cat=plugin.tx_wsslider.swiper/zoom/b; type=options[true,false]; label=Limit zoom to original image size
@@ -468,7 +487,7 @@ plugin.tx_wsslider.settings.swiper {
     thresholdTime =
   }
 
-  virtualslides {
+  virtual {
 
     # cat=plugin.tx_wsslider.swiper/virtualslides/a; type=int+; label=Increase amount of pre-rendered slides after active slide
     addSlidesAfter = 0

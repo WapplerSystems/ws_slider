@@ -35,6 +35,18 @@
 			<trans-unit id="options.effect">
 				<source>Effect</source>
 			</trans-unit>
+			<trans-unit id="options.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="options.customClasses">
+				<source>Additional CSS classes</source>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupAuto">
+				<source>Slides per group auto</source>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupSkip">
+				<source>Slides per group skip</source>
+			</trans-unit>
 
 			<trans-unit id="options.a11y.nextSlideMessage">
 				<source>Next slide</source>
@@ -87,7 +99,7 @@
 				<source>CSS class name added to navigation button when it becomes disabled</source>
 			</trans-unit>
 			<trans-unit id="options.navigation.enabled" xml:space="preserve">
-				<source>Enable/disable navigation (breakpoint support)</source>
+				<source>Enable/disable navigation</source>
 			</trans-unit>
 			<trans-unit id="options.navigation.hiddenClass" xml:space="preserve">
 				<source>CSS class name added to navigation button when it becomes hidden</source>
@@ -135,7 +147,7 @@
 				<source>CSS selector or HTML element of the container with pagination</source>
 			</trans-unit>
 			<trans-unit id="options.pagination.enabled" xml:space="preserve">
-				<source>Enable/disable pagination (breakpoint support)</source>
+				<source>Enable/disable pagination</source>
 			</trans-unit>
 			<trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve">
 				<source>Format function for current number in fraction pagination</source>
@@ -204,7 +216,7 @@
 				<source>CSS selector or HTML element of the container with scrollbar</source>
 			</trans-unit>
 			<trans-unit id="options.scrollbar.enabled" xml:space="preserve">
-				<source>Enable/disable scrollbar (breakpoint support)</source>
+				<source>Enable/disable scrollbar</source>
 			</trans-unit>
 			<trans-unit id="options.scrollbar.hide" xml:space="preserve">
 				<source>Hide scrollbar automatically after user interaction</source>
@@ -340,6 +352,9 @@
 			</trans-unit>
 			<trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve">
 				<source>Additional class for thumbs swiper container</source>
+			</trans-unit>
+			<trans-unit id="options.zoom.enabled" xml:space="preserve">
+				<source>Enable/disable zoom</source>
 			</trans-unit>
 			<trans-unit id="options.zoom.containerClass" xml:space="preserve">
 				<source>CSS class name of zoom container</source>
