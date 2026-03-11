@@ -124,6 +124,9 @@ final class FlexFormParsingModifyEventListener
                 }
 
                 $newSheets = $this->getRendererSheets($rendererKey);
+                if ($newSheets === []) {
+                    return;
+                }
                 ArrayUtility::mergeRecursiveWithOverrule(
                     $dataStructure,
                     $newSheets
