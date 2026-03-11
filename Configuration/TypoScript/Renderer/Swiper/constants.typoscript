@@ -59,18 +59,18 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider.swiper/base/k; type=options[true,false]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
   cssMode = false
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=direction: Can be 'horizontal' or 'vertical' (for vertical slider).
   direction = horizontal
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=Speed of transition between slides (in ms)
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=Speed of transition between slides (in ms)
   speed = 300
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=Height of the slider in px (when autoHeight is disabled)
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=Height of the slider in px (when autoHeight is disabled)
   height =
 
   edgeSwipeDetection = false
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
   edgeSwipeThreshold = 20
 
   # cat=plugin.tx_wsslider.swiper/base/l; type=options[slide,fade,cube,coverflow,flip,creative,cards]; label=cssMode: When enabled it will use modern CSS Scroll Snap API.
@@ -79,22 +79,22 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=enabled: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   enabled = true
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   eventsPrefix = swiper
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=Slides per group
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=Slides per group
   slidesPerGroup =
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=options[true,false]; label=Slides per group auto
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=options[true,false]; label=Slides per group auto
   slidesPerGroupAuto = false
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=Slides per group skip
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=Slides per group skip
   slidesPerGroupSkip = 0
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=slidesPerView
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=slidesPerView
   slidesPerView =
 
-  # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=spaceBetween
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=spaceBetween
   spaceBetween = 10
 
   # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=Loop
@@ -108,6 +108,7 @@ plugin.tx_wsslider.settings.swiper {
 
   # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=Prevents sliding
   loopPreventsSliding = false
+
 
   flipEffect {
     # cat=plugin.tx_wsslider.swiper/effects/flip/a; type=options[true,false]; label=Slide Shadows

@@ -96,7 +96,9 @@ JS;
         $js .= <<<JS
 let options_{$identifier} = {$jsOptions};
 {$onOptions}
-console.debug(options_{$identifier});
+if (options_{$identifier}.debug) {
+    console.debug(options_{$identifier});
+}
 const {$identifier} = new Swiper('#{$identifier}', options_{$identifier});
 JS;
 

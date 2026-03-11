@@ -16,6 +16,7 @@ plugin.tx_wsslider.settings.renderer.swiper {
   loopAddBlankSlides = {$plugin.tx_wsslider.settings.swiper.loopAddBlankSlides}
   loopAdditionalSlides = {$plugin.tx_wsslider.settings.swiper.loopAdditionalSlides}
   loopPreventsSliding = {$plugin.tx_wsslider.settings.swiper.loopPreventsSliding}
+  debug = {$plugin.tx_wsslider.settings.debug}
 
   autoplay {
     active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}

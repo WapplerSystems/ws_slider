@@ -26,6 +26,9 @@ plugin.tx_wsslider {
     # cat=plugin.tx_wsslider/settings/d; type=boolean; label=Load jQuery script
     loadJqueryCore = 0
 
+    # cat=plugin.tx_wsslider/settings/e; type=options[true,false]; label=Debug mode
+    debug = false
+
   }
 
 }
