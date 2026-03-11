@@ -41,11 +41,23 @@
 			<trans-unit id="options.customClasses">
 				<source>Additional CSS classes</source>
 			</trans-unit>
+			<trans-unit id="options.loop">
+				<source>Loop</source>
+			</trans-unit>
+			<trans-unit id="options.loopAddBlankSlides">
+				<source>Add blank slides to loop</source>
+			</trans-unit>
+			<trans-unit id="options.loopAdditionalSlides">
+				<source>Loop additional slides</source>
+			</trans-unit>
 			<trans-unit id="options.slidesPerGroupAuto">
 				<source>Slides per group auto</source>
 			</trans-unit>
 			<trans-unit id="options.slidesPerGroupSkip">
 				<source>Slides per group skip</source>
+			</trans-unit>
+			<trans-unit id="options.loopPreventsSliding">
+				<source>Prevents sliding in loop</source>
 			</trans-unit>
 
 			<trans-unit id="options.a11y.nextSlideMessage">

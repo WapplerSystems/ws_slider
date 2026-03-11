@@ -152,7 +152,82 @@
                         </config>
                     </settings.customClasses>
 
+                    <settings.loop>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.loop</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.loop</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                            <nullable>1</nullable>
+                        </config>
+                    </settings.loop>
 
+                    <settings.loopAddBlankSlides>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.loopAddBlankSlides</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.loopAddBlankSlides</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                            <nullable>1</nullable>
+                        </config>
+                    </settings.loopAddBlankSlides>
+
+                    <settings.loopAdditionalSlides>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.loopAdditionalSlides</label>
+                        <config>
+                            <type>number</type>
+                            <renderType>inputWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.loopAdditionalSlides</typoscriptPath>
+                            <nullable>1</nullable>
+                            <size>8</size>
+                        </config>
+                    </settings.loopAdditionalSlides>
+
+                    <settings.loopPreventsSliding>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.loopPreventsSliding</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.loopPreventsSliding</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                            <nullable>1</nullable>
+                        </config>
+                    </settings.loopPreventsSliding>
 
                 </el>
             </ROOT>

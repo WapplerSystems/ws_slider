@@ -97,8 +97,17 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider/swiper/basic/001; type=int; label=spaceBetween
   spaceBetween = 10
 
+  # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=Loop
+  loop = false
 
+  # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=Add blank slides to loop
+  loopAddBlankSlides = false
 
+  # cat=plugin.tx_wsslider.swiper/base/m; type=int; label=Loop additional slides
+  loopAdditionalSlides =
+
+  # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=Prevents sliding
+  loopPreventsSliding = false
 
   flipEffect {
     # cat=plugin.tx_wsslider.swiper/effects/flip/a; type=options[true,false]; label=Slide Shadows

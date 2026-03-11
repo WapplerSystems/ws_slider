@@ -23,7 +23,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <div class="swiper-scrollbar"></div>
+        <f:if condition="{options.scrollbar}">
+            <div class="swiper-scrollbar"></div>
+        </f:if>
 
         <f:if condition="{parameters.autoplayProgress}">
             <div class="autoplay-progress">

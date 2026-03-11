@@ -12,6 +12,10 @@ plugin.tx_wsslider.settings.renderer.swiper {
   speed = {$plugin.tx_wsslider.settings.swiper.speed}
   height = {$plugin.tx_wsslider.settings.swiper.height}
   customClasses = {$plugin.tx_wsslider.settings.swiper.customClasses}
+  loop = {$plugin.tx_wsslider.settings.swiper.loop}
+  loopAddBlankSlides = {$plugin.tx_wsslider.settings.swiper.loopAddBlankSlides}
+  loopAdditionalSlides = {$plugin.tx_wsslider.settings.swiper.loopAdditionalSlides}
+  loopPreventsSliding = {$plugin.tx_wsslider.settings.swiper.loopPreventsSliding}
 
   autoplay {
     active = {$plugin.tx_wsslider.settings.swiper.autoplay.active}
