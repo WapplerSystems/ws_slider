@@ -9,7 +9,7 @@
     <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-bundle.css"/>
     <f:asset.css identifier="swiper-addons" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-addons.css"/>
 
-    <div id="{identifier}" class="swiper {options.customClasses}" style="width: 100%;">
+    <div id="{identifier}" class="swiper {options.customClasses}">
 
         <div class="swiper-wrapper">
             <f:for each="{items}" as="item" iteration="iterator">
@@ -20,8 +20,7 @@
 
         <div class="swiper-pagination"></div>
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+
 
         <f:if condition="{options.scrollbar}">
             <div class="swiper-scrollbar"></div>
@@ -37,6 +36,9 @@
         </f:if>
 
     </div>
+
+    <div id="{identifier}__swiper-button-prev" class="swiper-button-prev"></div>
+    <div id="{identifier}__swiper-button-next" class="swiper-button-next"></div>
 
     <f:asset.script useNonce="true" inline="true" identifier="{identifier}">{inlineJavascript}</f:asset.script>
 

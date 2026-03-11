@@ -61,6 +61,15 @@ class SwiperFactory extends AbstractSliderFactory
         } else {
             unset($jsOptions['scrollbar']['enabled']);
         }
+
+        if (empty($jsOptions['navigation']['nextEl'])) {
+            $jsOptions['navigation']['nextEl'] = '#'.$identifier.'__swiper-button-next';
+        }
+        if (empty($jsOptions['navigation']['prevEl'])) {
+            $jsOptions['navigation']['prevEl'] = '#'.$identifier.'__swiper-button-prev';
+        }
+
+
         $this->sliderPrototype->setOptions($jsOptions);
 
         unset($jsOptions['customClasses']);
@@ -87,6 +96,7 @@ JS;
         $js .= <<<JS
 let options_{$identifier} = {$jsOptions};
 {$onOptions}
+console.debug(options_{$identifier});
 const {$identifier} = new Swiper('#{$identifier}', options_{$identifier});
 JS;
 
