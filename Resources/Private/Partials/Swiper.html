@@ -9,36 +9,39 @@
     <f:asset.css identifier="swiper" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-bundle.css"/>
     <f:asset.css identifier="swiper-addons" href="EXT:ws_slider/Resources/Public/CSS/Swiper/swiper-addons.css"/>
 
-    <div id="{identifier}" class="swiper {options.customClasses}">
+    <div>
+        <div id="{identifier}" class="swiper {options.customClasses}">
 
-        <div class="swiper-wrapper">
-            <f:for each="{items}" as="item" iteration="iterator">
-                <f:render partial="Item/Swiper" section="{layout}"
-                          arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
-            </f:for>
+            <div class="swiper-wrapper">
+                <f:for each="{items}" as="item" iteration="iterator">
+                    <f:render partial="Item/Swiper" section="{layout}"
+                              arguments="{item: item, settings: settings, options: options, iterator:iterator}"/>
+                </f:for>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+
+
+            <f:if condition="{options.scrollbar}">
+                <div class="swiper-scrollbar"></div>
+            </f:if>
+
+            <f:if condition="{parameters.autoplayProgress}">
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </f:if>
+
         </div>
 
-        <div class="swiper-pagination"></div>
-
-
-
-        <f:if condition="{options.scrollbar}">
-            <div class="swiper-scrollbar"></div>
-        </f:if>
-
-        <f:if condition="{parameters.autoplayProgress}">
-            <div class="autoplay-progress">
-                <svg viewBox="0 0 48 48">
-                    <circle cx="24" cy="24" r="20"></circle>
-                </svg>
-                <span></span>
-            </div>
-        </f:if>
+        <div id="{identifier}__swiper-button-prev" class="swiper-button-prev"></div>
+        <div id="{identifier}__swiper-button-next" class="swiper-button-next"></div>
 
     </div>
-
-    <div id="{identifier}__swiper-button-prev" class="swiper-button-prev"></div>
-    <div id="{identifier}__swiper-button-next" class="swiper-button-next"></div>
 
     <f:asset.script useNonce="true" inline="true" identifier="{identifier}">{inlineJavascript}</f:asset.script>
 
