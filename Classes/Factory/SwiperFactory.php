@@ -61,6 +61,9 @@ class SwiperFactory extends AbstractSliderFactory
         } else {
             unset($jsOptions['scrollbar']['enabled']);
         }
+        if (!($jsOptions['autoplay']['active'] ?? false)) {
+             unset($jsOptions['autoplay']);
+        }
 
         if (empty($jsOptions['navigation']['nextEl'])) {
             $jsOptions['navigation']['nextEl'] = '#'.$identifier.'__swiper-button-next';
