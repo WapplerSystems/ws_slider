@@ -68,6 +68,9 @@ plugin.tx_wsslider.settings.swiper {
   # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=Height of the slider in px (when autoHeight is disabled)
   height =
 
+  # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=Width of the slider in px
+  width =
+
   edgeSwipeDetection = false
 
   # cat=plugin.tx_wsslider.swiper/basic/001; type=int; label=edgeSwipeThreshold:Area (in px) from left edge of the screen to release touch events for swipe-back in app
@@ -78,6 +81,9 @@ plugin.tx_wsslider.settings.swiper {
 
   # cat=plugin.tx_wsslider.swiper/base/m; type=options[true,false]; label=enabled: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   enabled = true
+
+  # cat=plugin.tx_wsslider.swiper/base/n; type=options[true,false]; label=setWrapperSize
+  setWrapperSize = false
 
   # cat=plugin.tx_wsslider.swiper/basic/001; type=string; label=eventsPrefix: Whether Swiper initially enabled. When Swiper is disabled, it will hide all navigation elements and won't respond to any events and interactions
   eventsPrefix = swiper

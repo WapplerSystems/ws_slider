@@ -35,8 +35,17 @@
 			<trans-unit id="options.effect">
 				<source>Effect</source>
 			</trans-unit>
+			<trans-unit id="options.setWrapperSize">
+				<source>setWrapperSize</source>
+			</trans-unit>
 			<trans-unit id="options.height">
 				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="options.width">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="options.direction">
+				<source>Direction</source>
 			</trans-unit>
 			<trans-unit id="options.customClasses">
 				<source>Additional CSS classes</source>

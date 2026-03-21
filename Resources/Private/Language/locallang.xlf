@@ -53,6 +53,13 @@
 				<source>Hover</source>
 			</trans-unit>
 
+			<trans-unit id="horizontal">
+				<source>horizontal</source>
+			</trans-unit>
+			<trans-unit id="vertical">
+				<source>vertical</source>
+			</trans-unit>
+
 			<trans-unit id="default">
 				<source>Default</source>
 			</trans-unit>
