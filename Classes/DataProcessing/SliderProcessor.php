@@ -5,12 +5,12 @@ namespace WapplerSystems\WsSlider\DataProcessing;
 
 use Psr\EventDispatcher\EventDispatcherInterface;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
-use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 use WapplerSystems\WsSlider\Event\AfterSliderProcessedEvent;
+use WapplerSystems\WsSlider\FlexForm\FlexFormService;
 use WapplerSystems\WsSlider\Source\SliderSourceInterface;
 use WapplerSystems\WsSlider\Source\SliderSourceRegistry;
 
@@ -179,13 +179,13 @@ class SliderProcessor implements DataProcessorInterface
 
     private function migrateFlexFormOptions(array $flexformOptions): array
     {
-        if (isset($flexformOptions['settings'])) {
+        if (isset($flexformOptions['settings']) && is_array($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
                 $flexformOptions[$key] = $value;
             }
             unset($flexformOptions['settings']);
         }
-        if (isset($flexformOptions['js'])) {
+        if (isset($flexformOptions['js']) && is_array($flexformOptions['js'])) {
             foreach ($flexformOptions['js'] as $key => $value) {
                 $flexformOptions[$key] = $value;
             }
