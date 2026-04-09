@@ -213,7 +213,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                 $itemValue = (int)$itemValue;
             } elseif (in_array('double2', $evalList, true)) {
                 $valueType = 'double';
-                $itemValue = (double)$itemValue;
+                $itemValue = (float)$itemValue;
             }
             $callbackParams = [$table, $row['uid'], $fieldName, $parameterArray['itemFormElName']];
             $id = 'slider-' . md5($parameterArray['itemFormElName']);
