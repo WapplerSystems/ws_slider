@@ -70,10 +70,10 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
     ];
 
 
-    public function __construct(readonly private TypoScriptService $typoScriptService)
-    {
-
-    }
+    public function __construct(
+        readonly private TypoScriptService $typoScriptService,
+        private readonly InlineStackProcessor $inlineStackProcessor,
+    ) {}
 
 
     /**
@@ -108,14 +108,11 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
         $nullControlNameEscaped = 'control[active]' . substr($parameterArray['itemFormElName'], 4);
 
         // Check against inline uniqueness
-        /** @var InlineStackProcessor $inlineStackProcessor */
-        $inlineStackProcessor = GeneralUtility::makeInstance(InlineStackProcessor::class);
-        $inlineStackProcessor->initializeByGivenStructure($this->data['inlineStructure']);
         $uniqueIds = [];
         if (($this->data['isInlineChild'] ?? false) && ($this->data['inlineParentUid'] ?? false)) {
             // If config[foreign_unique] is set for the parent inline field, all
             // already used unique ids must be excluded from the select items.
-            $inlineObjectName = $inlineStackProcessor->getCurrentStructureDomObjectIdPrefix($this->data['inlineFirstPid']);
+            $inlineObjectName = $this->inlineStackProcessor->getDomObjectIdPrefixFromStructure($this->data['inlineStructure'], $this->data['inlineFirstPid']);
             if (($this->data['inlineParentConfig']['foreign_table'] ?? false) === $table
                 && ($this->data['inlineParentConfig']['foreign_unique'] ?? false) === $field
             ) {
@@ -131,7 +128,7 @@ class SelectSingleWithTypoScriptPlaceholderElement extends AbstractFormElement
             ) {
                 $uniqueIds[] = $this->data['inlineParentUid'];
             }
-            $uniqueIds = array_map(static fn ($item) => (int)$item, $uniqueIds);
+            $uniqueIds = array_map(intval(...), $uniqueIds);
         }
 
         // Initialization:
