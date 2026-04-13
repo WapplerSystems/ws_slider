@@ -19,7 +19,7 @@
                             <type>select</type>
                             <renderType>inputWithTypoScriptPlaceholder</renderType>
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.bootstrap.interval</typoscriptPath>
-                            <eval>null</eval>
+                            <nullable>1</nullable>
                         </config>
 
                     </settings.js.interval>

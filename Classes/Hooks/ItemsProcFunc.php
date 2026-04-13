@@ -99,7 +99,7 @@ class ItemsProcFunc
         }
         /* renderer check */
         foreach ($templateLayouts as $key => $layout) {
-            if (isset($layout[3]['renderers']) && $currentRenderer !== null && strpos($layout[3]['renderers'], $currentRenderer) === false) {
+            if (isset($layout[3]['renderers']) && $currentRenderer !== null && !str_contains($layout[3]['renderers'], $currentRenderer)) {
                 unset($allLayouts[$key]);
             }
         }

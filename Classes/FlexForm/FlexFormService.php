@@ -67,7 +67,7 @@ class FlexFormService
             if (($nodeKey[0] ?? '') === '_') {
                 continue;
             }
-            if (strpos((string)$nodeKey, '.')) {
+            if (str_contains((string)$nodeKey, '.')) {
                 $nodeKeyParts = explode('.', $nodeKey);
                 $currentNode = &$result;
                 $nodeKeyPartsCount = count($nodeKeyParts);
