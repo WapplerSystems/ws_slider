@@ -11,17 +11,18 @@ class WsSliderPreviewRenderer implements PreviewRendererInterface
 {
     public function renderPageModulePreviewHeader(GridColumnItem $item): string
     {
-        $renderer = $item->getRecord()['tx_wsslider_renderer'] ?? '';
+        $row = $item->getRecord()->getRawRecord()->toArray();
+        $renderer = $row['tx_wsslider_renderer'] ?? '';
         if ($renderer === '') {
             return '<strong>Slider</strong>';
         }
 
-        return '<strong>'. ucfirst($item->getRecord()['tx_wsslider_renderer'] ?? '') .'</strong>';
+        return '<strong>'. ucfirst($renderer) .'</strong>';
     }
 
     public function renderPageModulePreviewContent(GridColumnItem $item): string
     {
-        $row = $item->getRecord();
+        $row = $item->getRecord()->getRawRecord()->toArray();
         if ($row['tx_wsslider_source'] !== null && $row['tx_wsslider_source'] !== '') {
             return '<br><em>Source: ' . htmlspecialchars($row['tx_wsslider_source']) . '</em>';
         }
