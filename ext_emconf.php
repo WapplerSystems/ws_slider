@@ -11,7 +11,7 @@ $EM_CONF['ws_slider'] = [
     'version' => '13.3.10',
     'constraints' => [
         'depends' => [
-            'typo3' => '13.0.0-13.4.99',
+            'typo3' => '14.0.0-14.99.99',
             'fluid_styled_content' => '',
         ],
         'conflicts' => [
