@@ -22,7 +22,10 @@ use TYPO3\CMS\Install\Updates\UpgradeWizardInterface;
  *     the renderer was inferred from the FlexForm sheet)
  *
  * The Owl-specific FlexForm sheet structure cannot be mapped 1:1
- * to Swiper, so the FlexForm is reset to NULL after migration.
+ * to Swiper, so pi_flexform is reset to NULL after migration.
+ * tx_wsslider_layout is also reset to NULL because layout names
+ * are not portable across renderers (e.g. an "Cards" layout that
+ * only Owl provided would throw InvalidSectionException on Swiper).
  * Affected elements will fall back to Swiper defaults — review
  * each slider visually after running the wizard.
  */
@@ -100,6 +103,7 @@ class OwlToSwiperMigration implements UpgradeWizardInterface, ConfirmableInterfa
             <<<SQL
                 UPDATE tt_content
                    SET tx_wsslider_renderer = :renderer,
+                       tx_wsslider_layout = NULL,
                        pi_flexform = NULL
                  WHERE CType = 'ws_slider'
                    AND (
