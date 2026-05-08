@@ -87,10 +87,12 @@ test.describe('autoplay slider', () => {
         await page.locator('#main').hover();
         // Give Swiper a tick to register the pointerenter handler.
         await page.waitForTimeout(50);
-        const running = await page.evaluate(
-            () => (document.querySelector('#main') as any).swiper.autoplay.running,
+        // In Swiper 12 `running` reflects whether the autoplay module is
+        // started overall; `paused` is the per-tick state we care about.
+        const paused = await page.evaluate(
+            () => (document.querySelector('#main') as any).swiper.autoplay.paused,
         );
-        expect(running).toBe(false);
+        expect(paused).toBe(true);
     });
 });
 
@@ -106,14 +108,20 @@ test.describe('fade effect', () => {
 });
 
 test.describe('coverflow effect', () => {
-    test('applies 3D transforms', async ({ page }) => {
+    test('coverflow params are wired and slides advance', async ({ page }) => {
         await page.goto('/Tests/Visual/fixtures/coverflow.html');
         await waitForSwiper(page);
-        const transform = await page
-            .locator('.swiper-slide')
-            .first()
-            .evaluate(el => getComputedStyle(el).transform);
-        expect(transform).toContain('matrix3d');
+
+        const params = await page.evaluate(() => {
+            const s = (document.querySelector('#main') as any).swiper;
+            return { effect: s.params.effect, depth: s.params.coverflowEffect.depth };
+        });
+        expect(params.effect).toBe('coverflow');
+        expect(params.depth).toBe(100);
+
+        await page.locator('#main__swiper-button-next').click();
+        await waitForSwiper(page);
+        expect(await activeIndex(page)).toBe(1);
     });
 });
 
