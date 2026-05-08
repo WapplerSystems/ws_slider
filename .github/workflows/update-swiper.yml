@@ -1,0 +1,92 @@
+name: Update Swiper
+
+on:
+  schedule:
+    # 08:00 UTC daily (GitHub schedules only run from the default branch)
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    name: Check for new Swiper release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve latest Swiper version
+        id: latest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          VERSION=$(curl -fsSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/nolimits4web/swiper/releases/latest \
+            | jq -r '.tag_name' | sed 's/^v//')
+          if [ -z "${VERSION}" ] || [ "${VERSION}" = "null" ]; then
+            echo "Could not resolve latest Swiper version" >&2
+            exit 1
+          fi
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Read currently bundled Swiper version
+        id: current
+        run: |
+          set -euo pipefail
+          FILE="Resources/Public/JavaScript/Swiper/swiper-bundle.js"
+          VERSION=$(grep -m1 -oP 'Swiper \K[0-9]+\.[0-9]+\.[0-9]+' "${FILE}" || true)
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Decide whether an update is needed
+        id: check
+        run: |
+          if [ "${{ steps.latest.outputs.version }}" = "${{ steps.current.outputs.version }}" ]; then
+            echo "Swiper is already at ${{ steps.current.outputs.version }} — nothing to do."
+            echo "update_needed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Update available: ${{ steps.current.outputs.version }} -> ${{ steps.latest.outputs.version }}"
+            echo "update_needed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download new Swiper assets from jsDelivr
+        if: steps.check.outputs.update_needed == 'true'
+        run: |
+          set -euo pipefail
+          V="${{ steps.latest.outputs.version }}"
+          BASE="https://cdn.jsdelivr.net/npm/swiper@${V}"
+          curl -fsSL "${BASE}/swiper-bundle.js"      -o Resources/Public/JavaScript/Swiper/swiper-bundle.js
+          curl -fsSL "${BASE}/swiper-bundle.min.js"  -o Resources/Public/JavaScript/Swiper/swiper-bundle.min.js
+          curl -fsSL "${BASE}/swiper-bundle.css"     -o Resources/Public/CSS/Swiper/swiper-bundle.css
+          curl -fsSL "${BASE}/swiper-bundle.min.css" -o Resources/Public/CSS/Swiper/swiper-bundle.min.css
+
+      - name: Create pull request
+        if: steps.check.outputs.update_needed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: deps/swiper-${{ steps.latest.outputs.version }}
+          delete-branch: true
+          commit-message: "[TASK] Update Swiper to ${{ steps.latest.outputs.version }}"
+          title: "Update Swiper to ${{ steps.latest.outputs.version }}"
+          body: |
+            Automated update of the bundled Swiper assets.
+
+            **From:** `${{ steps.current.outputs.version }}`
+            **To:** `${{ steps.latest.outputs.version }}`
+
+            Release notes: https://github.com/nolimits4web/swiper/releases/tag/v${{ steps.latest.outputs.version }}
+
+            Updated files (downloaded from `https://cdn.jsdelivr.net/npm/swiper@${{ steps.latest.outputs.version }}/`):
+            - `Resources/Public/JavaScript/Swiper/swiper-bundle.js`
+            - `Resources/Public/JavaScript/Swiper/swiper-bundle.min.js`
+            - `Resources/Public/CSS/Swiper/swiper-bundle.css`
+            - `Resources/Public/CSS/Swiper/swiper-bundle.min.css`
+          labels: |
+            dependencies
+            swiper
