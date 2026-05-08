@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ws_slider — responsive breakpoints</title>
+    <link rel="stylesheet" href="/Resources/Public/CSS/Swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="/Resources/Public/CSS/Swiper/swiper-addons.css">
+    <link rel="stylesheet" href="/Tests/Visual/fixtures/_layout.css">
+</head>
+<body>
+<div class="stage">
+    <div id="main" class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide demo-slide demo-slide-1">1</div>
+            <div class="swiper-slide demo-slide demo-slide-2">2</div>
+            <div class="swiper-slide demo-slide demo-slide-3">3</div>
+            <div class="swiper-slide demo-slide demo-slide-4">4</div>
+            <div class="swiper-slide demo-slide demo-slide-5">5</div>
+            <div class="swiper-slide demo-slide demo-slide-6">6</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div id="main__swiper-button-prev" class="swiper-button-prev"></div>
+    <div id="main__swiper-button-next" class="swiper-button-next"></div>
+</div>
+
+<script src="/Resources/Public/JavaScript/Swiper/swiper-bundle.js"></script>
+<script>
+    const options_main = {
+        init: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 400,
+        breakpoints: {
+            576: { slidesPerView: 2, spaceBetween: 16 },
+            992: { slidesPerView: 3, spaceBetween: 24 },
+            1280: { slidesPerView: 4, spaceBetween: 24 },
+        },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: {
+            nextEl: '#main__swiper-button-next',
+            prevEl: '#main__swiper-button-prev',
+        },
+    };
+    const main = new Swiper('#main', options_main);
+</script>
+</body>
+</html>

@@ -14,10 +14,19 @@ jobs:
   update:
     name: Check for new Swiper release
     runs-on: ubuntu-latest
+    # Pinned to the Playwright image so the inline visual-test step uses
+    # the same browser build as visual-tests.yml — keeps the baselines
+    # comparable regardless of whether tests run here or there.
+    container:
+      image: mcr.microsoft.com/playwright:v1.49.1-jammy
+      options: --ipc=host
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Trust workspace
+        run: git config --global --add safe.directory "${GITHUB_WORKSPACE}"
 
       - name: Resolve latest Swiper version
         id: latest
@@ -29,8 +38,8 @@ jobs:
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/nolimits4web/swiper/releases/latest \
-            | jq -r '.tag_name' | sed 's/^v//')
-          if [ -z "${VERSION}" ] || [ "${VERSION}" = "null" ]; then
+            | grep -oP '"tag_name":\s*"\K[^"]+' | sed 's/^v//')
+          if [ -z "${VERSION}" ]; then
             echo "Could not resolve latest Swiper version" >&2
             exit 1
           fi
@@ -66,6 +75,58 @@ jobs:
           curl -fsSL "${BASE}/swiper-bundle.css"     -o Resources/Public/CSS/Swiper/swiper-bundle.css
           curl -fsSL "${BASE}/swiper-bundle.min.css" -o Resources/Public/CSS/Swiper/swiper-bundle.min.css
 
+      - name: Install Playwright dependencies
+        if: steps.check.outputs.update_needed == 'true'
+        working-directory: Tests/Visual
+        run: npm ci
+
+      - name: Run visual + functional tests against new Swiper
+        id: tests
+        if: steps.check.outputs.update_needed == 'true'
+        continue-on-error: true
+        working-directory: Tests/Visual
+        run: npx playwright test
+
+      - name: Upload Playwright report
+        if: always() && steps.check.outputs.update_needed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ steps.latest.outputs.version }}
+          path: Tests/Visual/playwright-report/
+          retention-days: 14
+
+      - name: Compose PR body
+        if: steps.check.outputs.update_needed == 'true'
+        env:
+          OUTCOME: ${{ steps.tests.outcome }}
+          FROM: ${{ steps.current.outputs.version }}
+          TO: ${{ steps.latest.outputs.version }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ "${OUTCOME}" = "success" ]; then
+            STATUS="**Tests:** PASSED — Playwright visual + functional suite is green against the new bundle."
+          else
+            STATUS="**Tests:** FAILED — review the [\`playwright-report-${TO}\`](${RUN_URL}) artifact attached to this workflow run before merging. Visual regressions almost always need a baseline refresh; functional regressions usually mean an upstream Swiper API break."
+          fi
+          {
+            echo "Automated update of the bundled Swiper assets."
+            echo
+            echo "**From:** \`${FROM}\`"
+            echo "**To:** \`${TO}\`"
+            echo
+            echo "Release notes: https://github.com/nolimits4web/swiper/releases/tag/v${TO}"
+            echo
+            echo "${STATUS}"
+            echo
+            echo "Workflow run: ${RUN_URL}"
+            echo
+            echo "Updated files (downloaded from \`https://cdn.jsdelivr.net/npm/swiper@${TO}/\`):"
+            echo "- \`Resources/Public/JavaScript/Swiper/swiper-bundle.js\`"
+            echo "- \`Resources/Public/JavaScript/Swiper/swiper-bundle.min.js\`"
+            echo "- \`Resources/Public/CSS/Swiper/swiper-bundle.css\`"
+            echo "- \`Resources/Public/CSS/Swiper/swiper-bundle.min.css\`"
+          } > pr-body.md
+
       - name: Create pull request
         if: steps.check.outputs.update_needed == 'true'
         uses: peter-evans/create-pull-request@v7
@@ -74,19 +135,10 @@ jobs:
           delete-branch: true
           commit-message: "[TASK] Update Swiper to ${{ steps.latest.outputs.version }}"
           title: "Update Swiper to ${{ steps.latest.outputs.version }}"
-          body: |
-            Automated update of the bundled Swiper assets.
-
-            **From:** `${{ steps.current.outputs.version }}`
-            **To:** `${{ steps.latest.outputs.version }}`
-
-            Release notes: https://github.com/nolimits4web/swiper/releases/tag/v${{ steps.latest.outputs.version }}
-
-            Updated files (downloaded from `https://cdn.jsdelivr.net/npm/swiper@${{ steps.latest.outputs.version }}/`):
-            - `Resources/Public/JavaScript/Swiper/swiper-bundle.js`
-            - `Resources/Public/JavaScript/Swiper/swiper-bundle.min.js`
-            - `Resources/Public/CSS/Swiper/swiper-bundle.css`
-            - `Resources/Public/CSS/Swiper/swiper-bundle.min.css`
+          body-path: pr-body.md
+          add-paths: |
+            Resources/Public/JavaScript/Swiper/**
+            Resources/Public/CSS/Swiper/**
           labels: |
             dependencies
             swiper

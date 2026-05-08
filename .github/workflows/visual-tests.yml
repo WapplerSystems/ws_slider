@@ -1,0 +1,107 @@
+name: Visual tests
+
+on:
+  pull_request:
+    paths:
+      - 'Resources/Public/JavaScript/Swiper/**'
+      - 'Resources/Public/CSS/Swiper/**'
+      - 'Resources/Private/Partials/Swiper.html'
+      - 'Resources/Private/Partials/Item/Swiper.html'
+      - 'Classes/Factory/SwiperFactory.php'
+      - 'Tests/Visual/**'
+      - '.github/workflows/visual-tests.yml'
+  workflow_dispatch:
+    inputs:
+      update_snapshots:
+        description: 'Regenerate baseline screenshots and open a PR with them'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Playwright (Chromium)
+    runs-on: ubuntu-latest
+    # Pinning the runtime to the official Playwright image is what makes
+    # screenshots pixel-stable: same browser build, same fonts, same GPU
+    # rasterizer locally and in CI.
+    container:
+      image: mcr.microsoft.com/playwright:v1.49.1-jammy
+      options: --ipc=host
+    defaults:
+      run:
+        working-directory: Tests/Visual
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Trust workspace
+        run: git config --global --add safe.directory "${GITHUB_WORKSPACE}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        if: ${{ !inputs.update_snapshots }}
+        run: npx playwright test
+
+      - name: Regenerate baselines
+        if: ${{ inputs.update_snapshots }}
+        run: npx playwright test --update-snapshots
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: Tests/Visual/playwright-report/
+          retention-days: 14
+
+      - name: Upload updated baselines as artifact
+        if: ${{ inputs.update_snapshots }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-baselines
+          path: Tests/Visual/tests/**/*-snapshots/
+
+  open-baselines-pr:
+    name: Open PR with regenerated baselines
+    needs: test
+    if: ${{ inputs.update_snapshots }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download regenerated baselines
+        uses: actions/download-artifact@v4
+        with:
+          name: visual-baselines
+          path: Tests/Visual/tests/
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: tests/visual-baselines-${{ github.run_id }}
+          delete-branch: true
+          commit-message: '[TASK] Update Playwright visual baselines'
+          title: 'Update Playwright visual baselines'
+          body: |
+            Automatically regenerated visual baselines via
+            `Visual tests` workflow run [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+
+            Please review the diff carefully before merging — every changed
+            PNG is a layout/render change in the bundled Swiper. If anything
+            looks broken (cut-off slides, wrong active state, missing
+            shadows, ...) **do not merge** — that means an upstream Swiper
+            change broke our integration.
+          labels: |
+            tests
+            visual-baselines

@@ -1,0 +1,15 @@
+{
+  "name": "ws-slider-visual-tests",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Playwright-based visual + functional tests for the bundled Swiper assets.",
+  "scripts": {
+    "test": "playwright test",
+    "test:update": "playwright test --update-snapshots",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "http-server": "14.1.1"
+  }
+}

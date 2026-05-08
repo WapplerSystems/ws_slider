@@ -1,0 +1,41 @@
+/* Deterministic page styling. Avoid system fonts so screenshots are
+ * pixel-stable across runners. We use the generic 'sans-serif' family
+ * with a fixed size + line-height + letter-spacing; the actual glyphs
+ * are not the focus of the visual checks (we test layout / Swiper
+ * mechanics), so minor cross-platform font differences are masked
+ * by Playwright's maxDiffPixelRatio threshold. */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font: 16px/1.4 sans-serif;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+}
+
+.stage {
+    width: 1200px;
+    margin: 40px auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+/* Reusable colored slides — pure CSS, no images, no fonts loading. */
+.demo-slide {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 96px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.demo-slide-1 { background: #1f6feb; }
+.demo-slide-2 { background: #d6336c; }
+.demo-slide-3 { background: #2f9e44; }
+.demo-slide-4 { background: #f08c00; }
+.demo-slide-5 { background: #6f42c1; }
+.demo-slide-6 { background: #495057; }
