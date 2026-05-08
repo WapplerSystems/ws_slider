@@ -1,5 +1,5 @@
 /**
- * Swiper 12.1.3
+ * Swiper 12.1.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: March 24, 2026
+ * Released on: April 29, 2026
  */
 
 var Swiper = (function () {
@@ -7363,12 +7363,6 @@ var Swiper = (function () {
         subEl.setAttribute('aria-roledescription', description);
       });
     }
-    function addElControls(el, controls) {
-      el = makeElementsArray(el);
-      el.forEach(subEl => {
-        subEl.setAttribute('aria-controls', controls);
-      });
-    }
     function addElLabel(el, label) {
       el = makeElementsArray(el);
       el.forEach(subEl => {
@@ -7396,7 +7390,7 @@ var Swiper = (function () {
     function enableEl(el) {
       el = makeElementsArray(el);
       el.forEach(subEl => {
-        subEl.setAttribute('aria-disabled', false);
+        subEl.removeAttribute('aria-disabled');
       });
     }
     function onEnterOrSpaceKey(e) {
@@ -7490,7 +7484,6 @@ var Swiper = (function () {
         el.addEventListener('keydown', onEnterOrSpaceKey);
       }
       addElLabel(el, message);
-      addElControls(el, wrapperId);
     };
     const handlePointerDown = e => {
       if (focusTargetSlideEl && focusTargetSlideEl !== e.target && !focusTargetSlideEl.contains(e.target)) {
@@ -9793,7 +9786,7 @@ var Swiper = (function () {
   }
 
   /**
-   * Swiper 12.1.3
+   * Swiper 12.1.4
    * Most modern mobile touch slider and framework with hardware accelerated transitions
    * https://swiperjs.com
    *
@@ -9801,7 +9794,7 @@ var Swiper = (function () {
    *
    * Released under the MIT License
    *
-   * Released on: March 24, 2026
+   * Released on: April 29, 2026
    */
 
 
