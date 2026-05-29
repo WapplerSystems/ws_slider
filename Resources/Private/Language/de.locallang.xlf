@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
+      <trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
+        <source>WS slider preset</source>
+        <target state="final">Slider-Voreinstellung</target>
+      </trans-unit>
       <trans-unit id="settings" approved="yes">
         <source>Settings</source>
         <target state="final">Einstellungen</target>
