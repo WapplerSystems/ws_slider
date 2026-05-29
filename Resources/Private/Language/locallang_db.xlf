@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2026-05-29T00:00:00Z" product-name="ws_slider">
+		<header/>
+		<body>
+			<trans-unit id="extension.title">
+				<source>WS Slider</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
