@@ -42,10 +42,11 @@ final class FlexFormParsingModifyEventListener
     ): void
     {
         $row = $event->getRow();
+        $pageUid = (int)$row['pid'];
         $identifier = $event->getIdentifier();
 
         if ($event->getTableName() === 'tt_content' && $event->getFieldName() === 'pi_flexform' && $row['CType'] === 'ws_slider') {
-            $pageTs = BackendUtility::getPagesTSconfig($row['pid']);
+            $pageTs = BackendUtility::getPagesTSconfig($pageUid);
 
             $identifier = [
                 'type' => 'tca',
@@ -60,7 +61,7 @@ final class FlexFormParsingModifyEventListener
                 return;
             }
 
-            if ($row['pid'] < 0) {
+            if ($pageUid < 0) {
                 $identifier['ext-wsslider-extendSheets'] = 'SaveNeeded';
                 $event->setIdentifier($identifier);
                 return;
@@ -68,7 +69,7 @@ final class FlexFormParsingModifyEventListener
 
             $identifier['pageTs'] = $pageTs['tx_wsslider.'] ?? [];
 
-            $typoscript = $this->typoScriptService->getTypoScript($row['pid']);
+            $typoscript = $this->typoScriptService->getTypoScript($pageUid);
 
             $tsSettings = TypoScriptService::getTypoScriptValueByPath($typoscript,'plugin.tx_wsslider.settings');
             $defaultValue = null;
@@ -88,7 +89,7 @@ final class FlexFormParsingModifyEventListener
         }
         if ($event->getTableName() === 'tx_wsslider_domain_model_preset' && $row['type'] !== '') {
 
-            $pageTs = BackendUtility::getPagesTSconfig($row['pid']);
+            $pageTs = BackendUtility::getPagesTSconfig($pageUid);
             $identifier = [
                 'type' => 'tca',
                 'tableName' => 'tx_wsslider_domain_model_preset',
