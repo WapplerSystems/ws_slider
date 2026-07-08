@@ -1,5 +1,5 @@
 /**
- * Swiper 12.2.0
+ * Swiper 14.0.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: May 27, 2026
+ * Released on: July 7, 2026
  */
 
 :root {
@@ -145,7 +145,7 @@
   }
   &.swiper-centered {
     > .swiper-wrapper::before {
-      content: '';
+      content: "";
       flex-shrink: 0;
       order: 9999;
     }
@@ -256,7 +256,7 @@
 }
 .swiper-virtual.swiper-css-mode {
   .swiper-wrapper::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -783,7 +783,7 @@
     z-index: 0;
 
     &:before {
-      content: '';
+      content: "";
       background: #000;
       position: absolute;
       left: 0;
