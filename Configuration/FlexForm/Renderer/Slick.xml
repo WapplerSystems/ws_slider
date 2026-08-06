@@ -25,12 +25,16 @@
                             <nullable>1</nullable>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -72,12 +76,16 @@
                             <nullable>1</nullable>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -142,12 +150,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.swipe</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -172,12 +184,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.swipeToSlide</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -202,12 +218,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.touchMove</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -243,12 +263,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.accessibility</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -273,12 +297,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.arrows</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -355,12 +383,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.dots</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -400,12 +432,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.draggable</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -430,12 +466,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.pauseOnFocus</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -460,12 +500,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.pauseOnHover</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -490,12 +534,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.pauseOnDotsHover</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -520,12 +568,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.verticalSwiping</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -550,12 +602,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.rtl</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -634,12 +690,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.mobileFirst</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -665,12 +725,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.adaptiveHeight</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -695,12 +759,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.variableWidth</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -725,12 +793,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.vertical</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -755,12 +827,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.centerMode</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -800,12 +876,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.focusOnSelect</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -899,12 +979,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.useCSS</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -929,12 +1013,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.useTransform</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -1002,12 +1090,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.fade</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
@@ -1046,12 +1138,16 @@
                             <typoscriptPath>plugin.tx_wsslider.settings.renderer.slick.waitForAnimate</typoscriptPath>
                             <items>
                                 <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes
                                     </numIndex>
                                     <numIndex index="value">true</numIndex>
                                 </numIndex>
-                                <numIndex index="1">
+                                <numIndex index="2">
                                     <numIndex index="label">
                                         LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no
                                     </numIndex>
