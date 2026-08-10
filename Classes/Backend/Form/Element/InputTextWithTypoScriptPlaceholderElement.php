@@ -285,7 +285,13 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         if ($typoscript !== null) {
             $defaultValue = TypoScriptService::getTypoScriptValueByPath($typoscript,$config['typoscriptPath']);
             if ($config['type'] === 'number') {
-                $defaultValue = (int)$defaultValue;
+                // (int)null and (int)'' are both 0, so the previous unconditional cast claimed a
+                // default of "0" whenever the TypoScript path did not resolve, or the constant was
+                // deliberately empty (slidesPerView, slidesPerGroup, loopAdditionalSlides — there the
+                // JS library's own default applies). An empty value keeps this element in exactly the
+                // nullable form it had before, but makes the block below render core's
+                // "no default available" label instead of a number nobody configured.
+                $defaultValue = $defaultValue === null || $defaultValue === '' ? '' : (int)$defaultValue;
             }
         }
 
