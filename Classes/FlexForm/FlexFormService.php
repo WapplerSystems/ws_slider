@@ -26,7 +26,10 @@ class FlexFormService
             }
             foreach ($languages[$languagePointer] as $valueKey => $valueDefinition) {
                 if (!str_contains($valueKey, '.')) {
-                    $settings[$valueKey] = $this->walkFlexFormNode($valueDefinition, $valuePointer);
+                    $settings[$valueKey] = $this->mergeValue(
+                        $settings[$valueKey] ?? null,
+                        $this->walkFlexFormNode($valueDefinition, $valuePointer)
+                    );
                 } else {
                     $valueKeyParts = explode('.', $valueKey);
                     $currentNode = &$settings;
@@ -38,17 +41,51 @@ class FlexFormService
                     }
                     if (is_array($valueDefinition)) {
                         if (array_key_exists($valuePointer, $valueDefinition)) {
-                            $currentNode = $valueDefinition[$valuePointer];
+                            $value = $valueDefinition[$valuePointer];
                         } else {
-                            $currentNode = $this->walkFlexFormNode($valueDefinition, $valuePointer);
+                            $value = $this->walkFlexFormNode($valueDefinition, $valuePointer);
                         }
                     } else {
-                        $currentNode = $valueDefinition;
+                        $value = $valueDefinition;
                     }
+                    $currentNode = $this->mergeValue($currentNode, $value);
+                    unset($currentNode);
                 }
             }
         }
         return $settings;
+    }
+
+    /**
+     * A record can hold the same setting in more than one sheet: a sheet left over from an earlier
+     * FlexForm layout, or the sheets a backend save materialises (empty, since every option field is
+     * nullable with an empty first item). Sheets are traversed in document order, so without this the
+     * one that happens to come last wins - and an empty value would wipe a value another sheet
+     * provides.
+     *
+     * An empty value means "not set, use the default" - precisely what the nullable
+     * *WithTypoScriptPlaceholder fields express, and how the merge against TypoScript already treats
+     * it (mergeRecursiveWithOverrule with includeEmptyValues: false). So it must never overwrite a
+     * value that is already there. Without this rule, a single save on such a record silently resets
+     * every configured option to the extension defaults, with nothing visible in the backend form.
+     */
+    private function mergeValue(mixed $existing, mixed $new): mixed
+    {
+        if (is_array($existing) && is_array($new)) {
+            foreach ($new as $key => $value) {
+                $existing[$key] = $this->mergeValue($existing[$key] ?? null, $value);
+            }
+            return $existing;
+        }
+        if ($this->isEmptyValue($new) && !$this->isEmptyValue($existing)) {
+            return $existing;
+        }
+        return $new;
+    }
+
+    private function isEmptyValue(mixed $value): bool
+    {
+        return $value === null || $value === '' || $value === [];
     }
 
     private function walkFlexFormNode(mixed $nodeArray, string $valuePointer = 'vDEF'): mixed
