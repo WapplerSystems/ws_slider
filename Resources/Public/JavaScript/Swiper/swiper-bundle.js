@@ -1,5 +1,5 @@
 /**
- * Swiper 14.0.7
+ * Swiper 14.1.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: July 28, 2026
+ * Released on: August 6, 2026
  */
 
 var Swiper = (function () {
@@ -54,9 +54,12 @@ var Swiper = (function () {
         return axis === 'x' ? matrix.m41 : matrix.m42;
     }
     function isObject(o) {
+        // `constructor === Object` would be false for a plain object created in another realm
+        // (params built in the parent page, Swiper running inside an iframe), which makes extend()
+        // replace a nested defaults object instead of merging into it.
         return (typeof o === 'object' &&
             o !== null &&
-            o.constructor === Object &&
+            !!o.constructor &&
             Object.prototype.toString.call(o).slice(8, -1) === 'Object');
     }
     function isNode(node) {
@@ -159,11 +162,13 @@ var Swiper = (function () {
         el.classList.add(...(Array.isArray(classes) ? classes : classesToTokens(classes)));
         return el;
     }
+    // Viewport-relative on purpose: every caller either compares against viewport quantities
+    // or adds window.scrollX/Y itself, so folding the scroll offset in here double-counts.
     function elementOffset(el) {
         const box = el.getBoundingClientRect();
         return {
-            top: box.top + window.scrollY - (el.clientTop || 0),
-            left: box.left + window.scrollX - (el.clientLeft || 0),
+            top: box.top - (el.clientTop || 0),
+            left: box.left - (el.clientLeft || 0),
         };
     }
     function elementPrevAll(el, selector) {
@@ -10162,7 +10167,7 @@ var Swiper = (function () {
     };
 
     /**
-     * Swiper 14.0.7
+     * Swiper 14.1.0
      * Most modern mobile touch slider and framework with hardware accelerated transitions
      * https://swiperjs.com
      *
@@ -10170,7 +10175,7 @@ var Swiper = (function () {
      *
      * Released under the MIT License
      *
-     * Released on: July 28, 2026
+     * Released on: August 6, 2026
      */
 
 
