@@ -1,18 +1,27 @@
-
-
-.flexslider .caption-title { font-weight: bold; }
-.flexslider .caption-body p { margin-bottom: 0; }
-.flexslider .caption-text { padding: 17px; }
+/*
+ * Minimal caption styling for the Flexslider renderer.
+ * Markup: .flexslider .slides li > .caption-wrapper > .caption-text > (.caption-title | .caption-body)
+ */
 
 .flexslider .slides img { height: auto; }
 
+.flexslider .caption-wrapper { width: 100%; }
+.flexslider .caption-text { padding: 17px; }
+.flexslider .caption-title { font-weight: bold; margin-bottom: 5px; }
+.flexslider .caption-body p { margin-bottom: 0; }
+
 @media screen and (min-width: 861px) {
 
-  .slides li div.caption-wrapper { position: absolute; width: 350px; top:auto; bottom: 20px; background: rgba(255,255,255,0.9); }
-  .slides li div.caption span { color: #fff; display: block; }
-  .slides li div.caption .caption-title { font-size: 18px; font-weight: bold; margin-bottom: 5px; text-align: right; }
-  .slides li div.caption .caption-text { font-size: 12px; line-height: 15px; }
+  .flexslider .slides li .caption-wrapper {
+    position: absolute;
+    width: 350px;
+    top: auto;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+  }
 
+  .flexslider .caption-title { font-size: 18px; }
+  .flexslider .caption-body { font-size: 12px; line-height: 15px; }
 
   .flexslider .caption-align-left.caption-wrapper { left: 20px; }
   .flexslider .caption-align-left .caption-link { left: 20px; }
