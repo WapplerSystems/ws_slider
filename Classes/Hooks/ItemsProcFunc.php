@@ -31,39 +31,45 @@ class ItemsProcFunc
      */
     public function userTemplateLayout(array $config, $pObj): void
     {
-        $currentColPos = $config['row']['colPos'];
-        $pageId = $this->getPageId($config['row']['pid']);
+        $currentColPos = $config['row']['colPos'] ?? 0;
+        $pageId = $this->getPageId($config['row']['pid'] ?? 0);
+        if ($pageId <= 0) {
+            return;
+        }
+
         $currentRenderer = $config['row']['tx_wsslider_renderer'][0] ?? '';
-        $rendererTyposcriptPath = $config['config']['rendererTyposcriptPath'];
+        $rendererTyposcriptPath = (string)($config['config']['rendererTyposcriptPath'] ?? '');
 
-        $typoscript = $this->typoScriptService->getTypoScript($pageId, null, 0, [], $config['site']);
-        $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript, $rendererTyposcriptPath);
-        if ($currentRenderer === '' && $defaultRenderer !== '') $currentRenderer = $defaultRenderer;
-
-        if ($currentRenderer === '') return;
-
-        if ($pageId > 0) {
-            $templateLayouts = $this->templateLayout->getAvailableTemplateLayouts($pageId);
-
-            $templateLayouts = $this->reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer);
-            foreach ($templateLayouts as $layout) {
-                $additionalLayout = [
-                    $this->getLanguageService()->sL($layout[0]),
-                    $layout[1]
-                ];
-                $config['items'][] = $additionalLayout;
+        if ($currentRenderer === '' && $rendererTyposcriptPath !== '') {
+            $typoscript = $this->typoScriptService->getTypoScript($pageId, null, 0, [], $config['site'] ?? null);
+            $defaultRenderer = TypoScriptService::getTypoScriptValueByPath($typoscript, $rendererTyposcriptPath);
+            if (is_string($defaultRenderer) && $defaultRenderer !== '') {
+                $currentRenderer = $defaultRenderer;
             }
+        }
+
+        if ($currentRenderer === '') {
+            return;
+        }
+
+        $templateLayouts = $this->templateLayout->getAvailableTemplateLayouts($pageId);
+        $templateLayouts = $this->reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer);
+
+        foreach ($templateLayouts as $layout) {
+            $config['items'][] = [
+                'label' => $this->getLanguageService()->sL($layout[0]),
+                'value' => $layout[1],
+            ];
         }
     }
 
     public function sources(array $config, $pObj): void
     {
         foreach ($this->sliderSourceRegistry->getSources() as $source) {
-            $additionalSource = [
-                $source->getName(),
-                get_class($source)
+            $config['items'][] = [
+                'label' => $source->getName(),
+                'value' => get_class($source),
             ];
-            $config['items'][] = $additionalSource;
         }
     }
 
@@ -152,8 +158,15 @@ class ItemsProcFunc
             return $pid;
         }
 
+        if ($pid === 0) {
+            return 0;
+        }
+
+        // Negative pid means "insert after the content element with this uid".
+        // The record may be gone (e.g. while previewing a history/undo diff), so guard the lookup.
         $row = BackendUtilityCore::getRecord('tt_content', abs($pid), 'uid,pid');
-        return $row['pid'];
+
+        return (int)($row['pid'] ?? 0);
     }
 
 
