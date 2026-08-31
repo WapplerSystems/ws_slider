@@ -4,6 +4,7 @@ namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 use TYPO3\CMS\Core\Localization\LanguageService;
+use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
@@ -138,10 +139,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                         ];
                         $itemValue = $evalObj->deevaluateFieldValue($_params);
                     }
-                    if (method_exists($evalObj, 'returnFieldJS')) {
-                        $resultArray['additionalJavaScriptPost'][] = 'TBE_EDITOR.customEvalFunctions[' . GeneralUtility::quoteJSvalue($func) . ']'
-                            . ' = function(value) {' . $evalObj->returnFieldJS() . '};';
-                    }
+                    $resultArray = $this->resolveJavaScriptEvaluation($resultArray, $func, $evalObj);
                 }
             }
         }
@@ -202,11 +200,11 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
 
         $valueSliderHtml = [];
         if (isset($config['slider']) && is_array($config['slider'])) {
-            $resultArray['requireJsModules'][] = 'TYPO3/CMS/Backend/ValueSlider';
+            $resultArray['javaScriptModules'][] = JavaScriptModuleInstruction::create('@typo3/backend/form-engine/field-wizard/value-slider.js');
             $min = $config['range']['lower'] ?? 0;
             $max = $config['range']['upper'] ?? 10000;
             $step = $config['slider']['step'] ?? 1;
-            $width = $config['slider']['width'] ?? 400;
+            $sliderWidth = (int)($config['slider']['width'] ?? 400);
             $valueType = 'null';
             if (in_array('int', $evalList, true)) {
                 $valueType = 'int';
@@ -227,7 +225,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
             $valueSliderHtml[] = ' data-slider-value-type="' . htmlspecialchars($valueType) . '"';
             $valueSliderHtml[] = ' data-slider-item-name="' . htmlspecialchars($parameterArray['itemFormElName']) . '"';
             $valueSliderHtml[] = ' data-slider-callback-params="' . htmlspecialchars(json_encode($callbackParams, JSON_THROW_ON_ERROR)) . '"';
-            $valueSliderHtml[] = ' style="width: ' . $width . 'px;"';
+            $valueSliderHtml[] = ' style="width: ' . $sliderWidth . 'px;"';
             $valueSliderHtml[] = '>';
             $valueSliderHtml[] = '</div>';
         }
