@@ -4,6 +4,7 @@ namespace WapplerSystems\WsSlider\Backend\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 use TYPO3\CMS\Core\Localization\LanguageService;
+use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
@@ -138,10 +139,7 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
                         ];
                         $itemValue = $evalObj->deevaluateFieldValue($_params);
                     }
-                    if (method_exists($evalObj, 'returnFieldJS')) {
-                        $resultArray['additionalJavaScriptPost'][] = 'TBE_EDITOR.customEvalFunctions[' . GeneralUtility::quoteJSvalue($func) . ']'
-                            . ' = function(value) {' . $evalObj->returnFieldJS() . '};';
-                    }
+                    $resultArray = $this->resolveJavaScriptEvaluation($resultArray, $func, $evalObj);
                 }
             }
         }
@@ -175,61 +173,43 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         }
 
         $valuePickerHtml = [];
-        if (isset($config['valuePicker']['items']) && is_array($config['valuePicker']['items'])) {
-            $mode = $config['valuePicker']['mode'] ?? '';
-            $itemName = $parameterArray['itemFormElName'];
-            $fieldChangeFunc = $parameterArray['fieldChangeFunc'];
-            if ($mode === 'append') {
-                $assignValue = 'document.querySelectorAll(' . GeneralUtility::quoteJSvalue('[data-formengine-input-name="' . $itemName . '"]') . ')[0]'
-                    . '.value+=\'\'+this.options[this.selectedIndex].value';
-            } elseif ($mode === 'prepend') {
-                $assignValue = 'document.querySelectorAll(' . GeneralUtility::quoteJSvalue('[data-formengine-input-name="' . $itemName . '"]') . ')[0]'
-                    . '.value=\'\'+this.options[this.selectedIndex].value+document.editform[' . GeneralUtility::quoteJSvalue($itemName) . '].value';
-            } else {
-                $assignValue = 'document.querySelectorAll(' . GeneralUtility::quoteJSvalue('[data-formengine-input-name="' . $itemName . '"]') . ')[0]'
-                    . '.value=this.options[this.selectedIndex].value';
-            }
-            $valuePickerHtml[] = '<select';
-            $valuePickerHtml[] = ' class="form-control tceforms-select tceforms-wizardselect"';
-            $valuePickerHtml[] = ' onchange="' . htmlspecialchars($assignValue . ';this.blur();this.selectedIndex=0;' . implode('', $fieldChangeFunc)) . '"';
-            $valuePickerHtml[] = '>';
-            $valuePickerHtml[] = '<option></option>';
+        if (is_array($config['valuePicker']['items'] ?? false)) {
             foreach ($config['valuePicker']['items'] as $item) {
-                $valuePickerHtml[] = '<option value="' . htmlspecialchars($item[1]) . '">' . htmlspecialchars($languageService->sL($item[0])) . '</option>';
+                $valuePickerHtml[] = '<typo3-backend-combobox-choice value="' . htmlspecialchars((string)($item['value'] ?? $item[1] ?? '')) . '">'
+                    . htmlspecialchars($languageService->sL((string)($item['label'] ?? $item[0] ?? ''))) . '</typo3-backend-combobox-choice>';
             }
-            $valuePickerHtml[] = '</select>';
+            if ($valuePickerHtml !== []) {
+                $resultArray['javaScriptModules'][] = JavaScriptModuleInstruction::create('@typo3/backend/element/combobox-element.js');
+            }
         }
 
         $valueSliderHtml = [];
-        if (isset($config['slider']) && is_array($config['slider'])) {
-            $resultArray['requireJsModules'][] = 'TYPO3/CMS/Backend/ValueSlider';
+        if (is_array($config['slider'] ?? false)) {
             $min = $config['range']['lower'] ?? 0;
             $max = $config['range']['upper'] ?? 10000;
             $step = $config['slider']['step'] ?? 1;
-            $width = $config['slider']['width'] ?? 400;
-            $valueType = 'null';
-            if (in_array('int', $evalList, true)) {
-                $valueType = 'int';
-                $itemValue = (int)$itemValue;
-            } elseif (in_array('double2', $evalList, true)) {
-                $valueType = 'double';
-                $itemValue = (float)$itemValue;
-            }
-            $callbackParams = [$table, $row['uid'], $fieldName, $parameterArray['itemFormElName']];
-            $id = 'slider-' . md5($parameterArray['itemFormElName']);
-            $valueSliderHtml[] = '<div';
-            $valueSliderHtml[] = ' id="' . $id . '"';
-            $valueSliderHtml[] = ' data-slider-id="' . $id . '"';
-            $valueSliderHtml[] = ' data-slider-min="' . (int)$min . '"';
-            $valueSliderHtml[] = ' data-slider-max="' . (int)$max . '"';
-            $valueSliderHtml[] = ' data-slider-step="' . htmlspecialchars($step) . '"';
-            $valueSliderHtml[] = ' data-slider-value="' . htmlspecialchars($itemValue) . '"';
-            $valueSliderHtml[] = ' data-slider-value-type="' . htmlspecialchars($valueType) . '"';
-            $valueSliderHtml[] = ' data-slider-item-name="' . htmlspecialchars($parameterArray['itemFormElName']) . '"';
-            $valueSliderHtml[] = ' data-slider-callback-params="' . htmlspecialchars(json_encode($callbackParams, JSON_THROW_ON_ERROR)) . '"';
-            $valueSliderHtml[] = ' style="width: ' . $width . 'px;"';
-            $valueSliderHtml[] = '>';
+            $sliderWidth = (int)($config['slider']['width'] ?? 400);
+
+            $valueSliderHtml[] = '<typo3-formengine-valueslider ' . GeneralUtility::implodeAttributes([
+                'target' => $parameterArray['itemFormElName'],
+                'format' => in_array('double2', $evalList, true) ? 'double' : 'integer',
+                'precision' => in_array('double2', $evalList, true) ? '2' : '0',
+            ], true) . '>';
+            $valueSliderHtml[] = '<div class="form-range">';
+            $valueSliderHtml[] = '<input ' . GeneralUtility::implodeAttributes([
+                'type' => 'range',
+                'class' => 'form-range',
+                'min' => (string)(float)$min,
+                'max' => (string)(float)$max,
+                'step' => (string)$step,
+                'style' => 'width: ' . $sliderWidth . 'px',
+                'title' => (string)$itemValue,
+                'value' => (string)$itemValue,
+            ], true) . '>';
             $valueSliderHtml[] = '</div>';
+            $valueSliderHtml[] = '</typo3-formengine-valueslider>';
+
+            $resultArray['javaScriptModules'][] = JavaScriptModuleInstruction::create('@typo3/backend/form-engine/field-wizard/value-slider.js');
         }
 
         $fieldControlResult = $this->renderFieldControl();
@@ -258,13 +238,19 @@ class InputTextWithTypoScriptPlaceholderElement extends AbstractFormElement
         $mainFieldHtml[] = '<div class="form-control-wrap" style="max-width: ' . $width . 'px">';
         $mainFieldHtml[] = '<div class="form-wizards-wrap">';
         $mainFieldHtml[] = '<div class="form-wizards-element">';
-        $mainFieldHtml[] = '<input type="' . $inputType . '"' . GeneralUtility::implodeAttributes($attributes, true) . ' />';
+        if ($valuePickerHtml !== []) {
+            $mainFieldHtml[] = '<typo3-backend-combobox>';
+            $mainFieldHtml[] = '<input type="' . $inputType . '"' . GeneralUtility::implodeAttributes($attributes, true) . ' />';
+            $mainFieldHtml[] = implode(LF, $valuePickerHtml);
+            $mainFieldHtml[] = '</typo3-backend-combobox>';
+        } else {
+            $mainFieldHtml[] = '<input type="' . $inputType . '"' . GeneralUtility::implodeAttributes($attributes, true) . ' />';
+        }
         $mainFieldHtml[] = '<input type="hidden" name="' . $parameterArray['itemFormElName'] . '" value="' . htmlspecialchars($itemValue) . '" />';
         $mainFieldHtml[] = '</div>';
-        if (!empty($valuePickerHtml) || !empty($valueSliderHtml) || !empty($fieldControlHtml)) {
+        if (!empty($valueSliderHtml) || !empty($fieldControlHtml)) {
             $mainFieldHtml[] = '<div class="form-wizards-items-aside">';
             $mainFieldHtml[] = '<div class="btn-group">';
-            $mainFieldHtml[] = implode(LF, $valuePickerHtml);
             $mainFieldHtml[] = implode(LF, $valueSliderHtml);
             $mainFieldHtml[] = $fieldControlHtml;
             $mainFieldHtml[] = '</div>';
