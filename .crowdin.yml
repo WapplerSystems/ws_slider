@@ -1,16 +1,18 @@
 commit_message: 'Fix: New translations %original_file_name% from Crowdin'
 files:
+  # One entry per label file family. The trailing * also picks up the matching
+  # *_csh_flexforms.xlf, and the patterns are anchored to the start of the file
+  # name so that translated files (de.swiper.xlf, ...) are never mistaken for
+  # sources.
+  - source: /Resources/Private/Language/locallang*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
+  - source: /Resources/Private/Language/bootstrap*.xlf
+    translation: /%original_path%/%two_letters_code%.%original_file_name%
   - source: /Resources/Private/Language/flexslider*.xlf
-    translation: /%original_path%/%two_letters_code%.%original_file_name%
-  - source: /Resources/Private/Language/owlslider*.xlf
-    translation: /%original_path%/%two_letters_code%.%original_file_name%
-  - source: /Resources/Private/Language/tinyslider*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
   - source: /Resources/Private/Language/slick*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
-  - source: /Resources/Private/Language/locallang*.xlf
+  - source: /Resources/Private/Language/swiper*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
-  - source: /Resources/Private/Language/*_csh_flexforms.xlf
-    ignore:
-      - /Resources/Private/Language/de.*_csh_flexforms.xlf
+  - source: /Resources/Private/Language/tinyslider*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
