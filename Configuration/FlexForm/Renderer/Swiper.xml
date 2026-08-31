@@ -329,6 +329,31 @@
                             <nullable>1</nullable>
                         </config>
                     </settings.autoplay.active>
+                    <settings.autoplayProgress>
+                        <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplayProgress</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleWithTypoScriptPlaceholder</renderType>
+                            <typoscriptPath>plugin.tx_wsslider.settings.renderer.swiper.autoplayProgress</typoscriptPath>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default</numIndex>
+                                    <numIndex index="value"></numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:yes</numIndex>
+                                    <numIndex index="value">true</numIndex>
+                                </numIndex>
+                                <numIndex index="2">
+                                    <numIndex index="label">LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:no</numIndex>
+                                    <numIndex index="value">false</numIndex>
+                                </numIndex>
+                            </items>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                            <nullable>1</nullable>
+                        </config>
+                    </settings.autoplayProgress>
                     <settings.autoplay.delay>
                         <label>LLL:EXT:ws_slider/Resources/Private/Language/swiper.xlf:options.autoplay.delay</label>
                         <config>

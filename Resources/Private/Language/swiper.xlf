@@ -92,6 +92,9 @@
 			<trans-unit id="options.autoplay">
 				<source>Autoplay</source>
 			</trans-unit>
+			<trans-unit id="options.autoplayProgress">
+				<source>Show autoplay progress indicator</source>
+			</trans-unit>
 			<trans-unit id="options.autoplay.delay" xml:space="preserve">
 				<source>Delay between transitions (in ms)</source>
 			</trans-unit>
