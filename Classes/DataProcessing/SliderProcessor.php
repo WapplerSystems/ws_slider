@@ -179,17 +179,18 @@ class SliderProcessor implements DataProcessorInterface
 
     private function migrateFlexFormOptions(array $flexformOptions): array
     {
-        if (isset($flexformOptions['js']) && is_array($flexformOptions['js'])) {
-            foreach ($flexformOptions['js'] as $key => $value) {
-                $flexformOptions[$key] = $value;
-            }
-            unset($flexformOptions['js']);
-        }
         if (isset($flexformOptions['settings']) && is_array($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
                 $flexformOptions[$key] = $value;
             }
             unset($flexformOptions['settings']);
+        }
+
+        if (isset($flexformOptions['js']) && is_array($flexformOptions['js'])) {
+            foreach ($flexformOptions['js'] as $key => $value) {
+                $flexformOptions[$key] = $value;
+            }
+            unset($flexformOptions['js']);
         }
 
         return $flexformOptions;
