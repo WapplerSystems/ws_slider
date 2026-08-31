@@ -47,11 +47,18 @@ class SliderProcessor implements DataProcessorInterface
     public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData): array
     {
 
-        $settings = $contentObjectConfiguration['settings.']['slider.'];
+        $settings = $contentObjectConfiguration['settings.']['slider.'] ?? [];
         $settings['parameters'] = [];
-        $settings['layout'] = $processedData['data']['tx_wsslider_layout'] ?? 'Default';
 
-        if ($processedData['data']['tx_wsslider_source'] !== null && $processedData['data']['tx_wsslider_source'] !== '') {
+        // An empty field means "not set" - fall back to the TypoScript default instead of
+        // overriding it with an empty string (see forge issue #47).
+        $settings['layout'] = $this->firstNonEmptyString(
+            $processedData['data']['tx_wsslider_layout'] ?? null,
+            $settings['layout'] ?? null,
+            'Default'
+        );
+
+        if (($processedData['data']['tx_wsslider_source'] ?? '') !== '') {
             /** @var SliderSourceInterface $source */
             $source = GeneralUtility::getContainer()->get(SliderSourceRegistry::class)->getSource($processedData['data']['tx_wsslider_source']);
             if ($source === null) {
@@ -69,7 +76,11 @@ class SliderProcessor implements DataProcessorInterface
                 return $processedData;
             }
 
-            $rendererKey = $settings['renderer'] = $preset['type'];
+            $rendererKey = $settings['renderer'] = strtolower((string)($preset['type'] ?? ''));
+            if ($rendererKey === '') {
+                $processedData['presetNotFound'] = true;
+                return $processedData;
+            }
             if (isset($settings['renderer.'][$rendererKey . '.'])) {
                 $settings['parameters'] = $settings['renderer.'][$rendererKey . '.'];
                 unset($settings['renderer.']);
@@ -86,9 +97,18 @@ class SliderProcessor implements DataProcessorInterface
 
         } else {
 
-            $settings['renderer'] = $settings['defaultRenderer'];
-            if ($processedData['data']['tx_wsslider_renderer'] !== null) {
-                $settings['renderer'] = $processedData['data']['tx_wsslider_renderer'];
+            // An empty selection means "use the TypoScript default" - it must not override it.
+            $settings['renderer'] = $this->firstNonEmptyString(
+                $processedData['data']['tx_wsslider_renderer'] ?? null,
+                $settings['defaultRenderer'] ?? null,
+                ''
+            );
+
+            if ($settings['renderer'] === '') {
+                $processedData['error'] = 'No slider renderer configured. Set one on the content element or via'
+                    . ' plugin.tx_wsslider.settings.defaultRenderer.';
+                $processedData['sliderSettings'] = $settings;
+                return $processedData;
             }
 
             $rendererKey = strtolower($settings['renderer']);
@@ -137,6 +157,25 @@ class SliderProcessor implements DataProcessorInterface
     }
 
 
+    /**
+     * Returns the first argument that is a non-empty string, casting scalars on the way.
+     */
+    private function firstNonEmptyString(mixed ...$candidates): string
+    {
+        foreach ($candidates as $candidate) {
+            if ($candidate === null || is_array($candidate)) {
+                continue;
+            }
+            $candidate = trim((string)$candidate);
+            if ($candidate !== '') {
+                return $candidate;
+            }
+        }
+
+        return '';
+    }
+
+
     private function resolveTypoScriptConfiguration(ContentObjectRenderer $cObj, array $configuration = []): array
     {
         foreach ($configuration as $key => $value) {
@@ -177,19 +216,37 @@ class SliderProcessor implements DataProcessorInterface
         return $out;
     }
 
+    /**
+     * All current FlexForms name their fields "settings.<option>", which FlexFormService turns into a
+     * nested "settings" array. Older versions used a "js" container instead.
+     *
+     * "settings" has to be unwrapped first, because it may itself carry a leftover "js" container from
+     * an older version. Unwrapping "js" first left those values nested, so they ended up in the
+     * generated JavaScript as an inert "js: {...}" object that the slider silently ignored while the
+     * flat defaults stayed in effect (github issue #55).
+     *
+     * The "js" container is never written any more, so it only ever holds stale data: it is unwrapped
+     * as a fallback for records that were never re-saved, and dropped as soon as the record carries
+     * current-schema values.
+     */
     private function migrateFlexFormOptions(array $flexformOptions): array
     {
-        if (isset($flexformOptions['js']) && is_array($flexformOptions['js'])) {
-            foreach ($flexformOptions['js'] as $key => $value) {
-                $flexformOptions[$key] = $value;
-            }
-            unset($flexformOptions['js']);
-        }
+        $hasCurrentSchemaOptions = false;
         if (isset($flexformOptions['settings']) && is_array($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
                 $flexformOptions[$key] = $value;
+                $hasCurrentSchemaOptions = $hasCurrentSchemaOptions || $key !== 'js';
             }
             unset($flexformOptions['settings']);
+        }
+
+        if (isset($flexformOptions['js']) && is_array($flexformOptions['js'])) {
+            if (!$hasCurrentSchemaOptions) {
+                foreach ($flexformOptions['js'] as $key => $value) {
+                    $flexformOptions[$key] = $value;
+                }
+            }
+            unset($flexformOptions['js']);
         }
 
         return $flexformOptions;
