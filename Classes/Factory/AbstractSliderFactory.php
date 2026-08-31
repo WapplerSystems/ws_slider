@@ -27,13 +27,53 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
         $this->sliderPrototype->setConfiguration($configuration);
     }
 
-    protected function getParameter(array $configuration, string $parameterName) {
+    /**
+     * Resolves a single option. A value configured via TypoScript or FlexForm always wins;
+     * only when nothing is configured the localized default from the renderer's XLF file is used.
+     *
+     * $parameterName may be a dotted path ("a11y.prevSlideMessage") which is looked up both as a
+     * literal key and as a nested path inside $configuration.
+     */
+    protected function getParameter(array $configuration, string $parameterName): ?string
+    {
+        $configured = $this->lookupOption($configuration, $parameterName);
+        if (is_scalar($configured) && trim((string)$configured) !== '') {
+            return (string)$configured;
+        }
 
-        $className = get_class($this);
-        $className = substr($className, 32, -7);
-        $xlfFilename = strtolower($className);
-        $parameters = $configuration['parameters'] ?? [];
-        return LocalizationUtility::translate('LLL:EXT:ws_slider/Resources/Private/Language/' . $xlfFilename . '.xlf:options.' . $parameterName) ?? $parameters[$parameterName] ?? null;
+        return LocalizationUtility::translate(
+            'LLL:EXT:ws_slider/Resources/Private/Language/' . $this->getRendererKey() . '.xlf:options.' . $parameterName
+        );
+    }
+
+    /**
+     * Lowercase renderer key ("swiper", "flexslider", ...) derived from the factory class name.
+     */
+    protected function getRendererKey(): string
+    {
+        $shortName = substr(strrchr(static::class, '\\') ?: '\\' . static::class, 1);
+
+        return strtolower(substr($shortName, 0, -strlen('Factory')));
+    }
+
+    /**
+     * @return mixed The value behind a literal or dotted key, or null
+     */
+    protected function lookupOption(array $configuration, string $path): mixed
+    {
+        if (array_key_exists($path, $configuration)) {
+            return $configuration[$path];
+        }
+
+        $current = $configuration;
+        foreach (explode('.', $path) as $segment) {
+            if (!is_array($current) || !array_key_exists($segment, $current)) {
+                return null;
+            }
+            $current = $current[$segment];
+        }
+
+        return $current;
     }
 
     protected function mergeOptions(array $options)

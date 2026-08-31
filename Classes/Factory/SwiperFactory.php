@@ -75,15 +75,17 @@ class SwiperFactory extends AbstractSliderFactory
 
         $this->sliderPrototype->setOptions($jsOptions);
 
-        unset($jsOptions['customClasses']);
+        // Template-only flag - Swiper itself must not receive it as an option.
+        $autoplayProgress = (bool)($jsOptions['autoplayProgress'] ?? false);
+        unset($jsOptions['customClasses'], $jsOptions['autoplayProgress']);
 
         $jsOptions = $this->js_encode($jsOptions);
         $js = '';
         $onOptions = '';
-        if ($configuration['parameters']['autoplayProgress'] ?? false) {
+        if ($autoplayProgress) {
             $js .= <<<JS
-    const progressCircle_{$identifier} = document.querySelector(".autoplay-progress svg");
-    const progressContent_{$identifier} = document.querySelector(".autoplay-progress span");
+    const progressCircle_{$identifier} = document.querySelector("#{$identifier} .autoplay-progress svg");
+    const progressContent_{$identifier} = document.querySelector("#{$identifier} .autoplay-progress span");
 JS;
 
             $onOptions = <<<JS
