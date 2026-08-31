@@ -6,7 +6,6 @@ return [
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'sortby' => 'sorting',
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
@@ -18,15 +17,13 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,description,',
+        'searchFields' => 'title,description',
         'typeicon_classes' => [
             'default' => 'ext-wsslider-image'
         ],
         'security' => [
             'ignorePageTypeRestriction' => true,
         ]
-    ],
-    'interface' => [
     ],
     'types' => [
         '1' => [
@@ -50,9 +47,9 @@ return [
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        '',
-                        0
-                    ]
+                        'label' => '',
+                        'value' => 0,
+                    ],
                 ],
                 'foreign_table' => 'tx_wsslider_domain_model_item',
                 'foreign_table_where' => 'AND tx_wsslider_domain_model_item.pid=###CURRENT_PID### AND tx_wsslider_domain_model_item.sys_language_uid IN (-1,0)',
@@ -64,14 +61,6 @@ return [
                 'type' => 'passthrough',
             ],
         ],
-        't3ver_label' => [
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.versionLabel',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'max' => 255,
-            ]
-        ],
         'hidden' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
@@ -80,10 +69,9 @@ return [
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        0 => '',
-                        1 => '',
-                        'invertStateDisplay' => true
-                    ]
+                        'label' => '',
+                        'invertStateDisplay' => true,
+                    ],
                 ],
             ]
         ],
@@ -91,10 +79,8 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'eval' => 'datetime,int',
-                'default' => 0
+                'type' => 'datetime',
+                'default' => 0,
             ],
             'l10n_mode' => 'exclude',
             'l10n_display' => 'defaultAsReadonly'
@@ -103,13 +89,11 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'eval' => 'datetime,int',
+                'type' => 'datetime',
                 'default' => 0,
                 'range' => [
-                    'upper' => mktime(0, 0, 0, 1, 1, 2038)
-                ]
+                    'upper' => mktime(0, 0, 0, 1, 1, 2038),
+                ],
             ],
             'l10n_mode' => 'exclude',
             'l10n_display' => 'defaultAsReadonly'
@@ -135,6 +119,9 @@ return [
                 'enableRichtext' => true,
             ],
         ],
+        // Rendered as CSS class "caption-align-<value>" on the caption wrapper.
+        // Add project specific positions via page TSconfig:
+        // TCEFORM.tx_wsslider_domain_model_item.text_position.addItems.center = Center
         'text_position' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.textPosition',
@@ -143,12 +130,25 @@ return [
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default',
-                        ''
-                    ]
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default',
+                        'value' => '',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.textposition_left',
+                        'value' => 'left',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.textposition_right',
+                        'value' => 'right',
+                    ],
                 ],
+                'default' => '',
             ],
         ],
+        // Rendered as a CSS class suffix on the slide ("wsflexslider-<value>" / "carousel-item-<value>").
+        // The extension ships no styles for these - they are hooks for project CSS.
+        // Add or replace entries via page TSconfig:
+        // TCEFORM.tx_wsslider_domain_model_item.style_class.addItems.highlight = Highlight
         'style_class' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.styleClass',
@@ -156,16 +156,35 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:default',
+                        'value' => '',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.styleclass_style1',
+                        'value' => 'style1',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.styleclass_style2',
+                        'value' => 'style2',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.styleclass_style3',
+                        'value' => 'style3',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.styleclass_style4',
+                        'value' => 'style4',
+                    ],
                 ],
+                'default' => '',
             ],
         ],
         'link' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_item.link',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputLink',
+                'type' => 'link',
             ],
         ],
         'foreground_media' => [

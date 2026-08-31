@@ -21,10 +21,10 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:title',
-        'ws_slider',
-        'content-wsslider',
-        'special'
+        'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:title',
+        'value' => 'ws_slider',
+        'icon' => 'content-wsslider',
+        'group' => 'special',
     ],
     'textmedia',
     'after'
@@ -138,8 +138,11 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             'rendererTyposcriptPath' => 'plugin.tx_wsslider.settings.defaultRenderer',
             'default' => 'Default',
             'items' => [
-                ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 'Default']
-            ]
+                [
+                    'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
+                    'value' => 'Default',
+                ],
+            ],
         ]
     ],
     'tx_wsslider_source' => [
@@ -151,7 +154,10 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
             'itemsProcFunc' => ItemsProcFunc::class . '->sources',
             'default' => '',
             'items' => [
-                ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', '']
+                [
+                    'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
+                    'value' => '',
+                ],
             ],
         ],
         'displayCond' => 'USER:'. DisplayCondition::class.'->displaySources',
