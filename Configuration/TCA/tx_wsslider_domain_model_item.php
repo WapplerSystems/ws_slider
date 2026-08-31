@@ -7,6 +7,10 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'sortby' => 'sorting',
+        // Inline child of the workspace aware tt_content - without this, DataHandler
+        // refuses to create the element in a workspace ('Record could not be created
+        // in this workspace'). The t3ver_* columns are added by the schema analyzer.
+        'versioningWS' => true,
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
