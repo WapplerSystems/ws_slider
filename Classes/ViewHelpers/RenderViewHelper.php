@@ -33,14 +33,22 @@ final class RenderViewHelper extends AbstractViewHelper
 
     public function render(): ?string
     {
-        $renderer = $this->arguments['renderer'];
+        $renderer = ucfirst(trim((string)($this->arguments['renderer'] ?? '')));
         /** @var RequestInterface $request */
         $request = $this->renderingContext->getAttribute(ServerRequestInterface::class);
 
         $prototype = GeneralUtility::makeInstance(SliderDefinition::class);
 
         if ($renderer === '' && $this->arguments['factoryClass'] === null) {
-            $renderer = ucfirst($this->arguments['settings']['slider']['defaultRenderer'] ?? '');
+            $renderer = ucfirst(trim((string)($this->arguments['settings']['slider']['defaultRenderer'] ?? '')));
+        }
+
+        if ($renderer === '' && $this->arguments['factoryClass'] === null) {
+            throw new \RuntimeException(
+                'No slider renderer given. Select one on the content element or set'
+                . ' plugin.tx_wsslider.settings.defaultRenderer.',
+                1666544864
+            );
         }
 
         $items = $this->arguments['items'];
@@ -77,7 +85,7 @@ final class RenderViewHelper extends AbstractViewHelper
          * @var ContentObjectRenderer $currentContentObject
          */
         $currentContentObject = $request->getAttribute('currentContentObject');
-        $identifier = 'slider_' . $currentContentObject->data['uid'];
+        $identifier = 'slider_' . (int)($currentContentObject?->data['uid'] ?? 0);
 
         $factory->setConfiguration($overrideConfiguration);
         $sliderDefinition = $factory->build($this->arguments['options'], $identifier, $request);
