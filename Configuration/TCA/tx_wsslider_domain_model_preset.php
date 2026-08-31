@@ -21,12 +21,9 @@ return [
         'useColumnsForDefaultValues' => 'type',
         'enablecolumns' => [
         ],
-        'searchFields' => 'name',
         'security' => [
             'ignorePageTypeRestriction' => true,
         ]
-    ],
-    'interface' => [
     ],
     'types' => [
         '0' => [
@@ -52,14 +49,6 @@ return [
         'paletteCore' => ['showitem' => 'name, --linebreak--, type'],
     ],
     'columns' => [
-        't3ver_label' => [
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.versionLabel',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'max' => 255,
-            ]
-        ],
         'name' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.name',
@@ -79,11 +68,11 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.bootstrap', 'bootstrap', 'ext-wsslider-preset-type-bootstrap'],
-                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.flexslider', 'flexslider', 'ext-wsslider-preset-type-flexslider'],
-                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.slick', 'slick', 'ext-wsslider-preset-type-slick'],
-                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.tinyslider', 'tinyslider', 'ext-wsslider-preset-type-tinyslider'],
-                    ['LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.swiper', 'swiper', 'ext-wsslider-preset-type-swiper'],
+                    ['label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.bootstrap', 'value' => 'bootstrap', 'icon' => 'ext-wsslider-preset-type-bootstrap'],
+                    ['label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.flexslider', 'value' => 'flexslider', 'icon' => 'ext-wsslider-preset-type-flexslider'],
+                    ['label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.slick', 'value' => 'slick', 'icon' => 'ext-wsslider-preset-type-slick'],
+                    ['label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.tinyslider', 'value' => 'tinyslider', 'icon' => 'ext-wsslider-preset-type-tinyslider'],
+                    ['label' => 'LLL:EXT:ws_slider/Resources/Private/Language/locallang.xlf:tx_wsslider_domain_model_preset.type.swiper', 'value' => 'swiper', 'icon' => 'ext-wsslider-preset-type-swiper'],
                 ],
                 'showIconTable' => true,
                 'size' => 1,
@@ -96,9 +85,8 @@ return [
             'label' => '',
             'config' => [
                 'type' => 'flex',
-                'ds' => [
-                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Flexslider.xml',
-                ],
+                'searchable' => false,
+                'ds' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Flexslider.xml',
             ],
         ],
         'bootstrap' => [
@@ -106,9 +94,8 @@ return [
             'label' => '',
             'config' => [
                 'type' => 'flex',
-                'ds' => [
-                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Bootstrap.xml',
-                ],
+                'searchable' => false,
+                'ds' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Bootstrap.xml',
             ],
         ],
         'slick' => [
@@ -116,9 +103,8 @@ return [
             'label' => '',
             'config' => [
                 'type' => 'flex',
-                'ds' => [
-                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Slick.xml',
-                ],
+                'searchable' => false,
+                'ds' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Slick.xml',
             ],
         ],
         'tinyslider' => [
@@ -126,9 +112,8 @@ return [
             'label' => '',
             'config' => [
                 'type' => 'flex',
-                'ds' => [
-                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Tinyslider.xml',
-                ],
+                'searchable' => false,
+                'ds' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Tinyslider.xml',
             ],
         ],
         'swiper' => [
@@ -136,9 +121,8 @@ return [
             'label' => '',
             'config' => [
                 'type' => 'flex',
-                'ds' => [
-                    'default' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Swiper.xml',
-                ],
+                'searchable' => false,
+                'ds' => 'FILE:EXT:ws_slider/Configuration/FlexForm/Renderer/Swiper.xml',
             ],
         ],
 
