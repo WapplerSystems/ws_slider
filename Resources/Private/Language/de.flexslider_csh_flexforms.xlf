@@ -5,7 +5,7 @@
     <body>
       <!-- general Flexslider options -->
       <trans-unit id="flexslider.settings.js.selector.description" approved="yes">
-        <source>Must match a simple pattern. '{container} &gt; {slide}'.</source>
+        <source>Must match a simple pattern. '{container} > {slide}'.</source>
         <target state="final">Muss mit einem einfachen Muster übereinstimmen. '{container} &gt; {slide}'.</target>
       </trans-unit>
       <trans-unit id="flexslider.settings.js.animation.description" approved="yes">
