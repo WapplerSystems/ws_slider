@@ -1,3 +1,4 @@
-
 tx_wsslider.templateLayouts.Cards = Cards
-tx_wsslider.templateLayouts.Cards.renderers = owl,tinyslider
+# Only Resources/Private/Partials/Item/Tinyslider.html provides a "Cards" section.
+# Offering the layout for other renderers ends in an InvalidSectionException.
+tx_wsslider.templateLayouts.Cards.renderers = tinyslider
