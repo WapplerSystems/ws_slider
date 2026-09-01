@@ -217,32 +217,33 @@ class SliderProcessor implements DataProcessorInterface
     }
 
     /**
-     * All current FlexForms name their fields "settings.<option>", which FlexFormService turns into a
-     * nested "settings" array. Older versions used a "js" container instead.
+     * FlexFormService nests the values by field name. Which container is the current one
+     * depends on the renderer:
+     *   Slick, Flexslider, TinySlider, Bootstrap use "settings.js.<option>"
+     *   Swiper uses "settings.<option>" and only carries a leftover "js" from older versions
      *
-     * "settings" has to be unwrapped first, because it may itself carry a leftover "js" container from
-     * an older version. Unwrapping "js" first left those values nested, so they ended up in the
-     * generated JavaScript as an inert "js: {...}" object that the slider silently ignored while the
-     * flat defaults stayed in effect (github issue #55).
+     * "settings" therefore has to be unwrapped first - unwrapping "js" first was a no-op,
+     * because at that point "js" was still nested inside "settings". It only surfaced
+     * afterwards and was then merged into the options as one nested array, so the generated
+     * JavaScript ended up with an inert "js: {...}" block while the flat defaults stayed in
+     * effect (github issue #55, analysed in more detail in PR #68).
      *
-     * The "js" container is never written any more, so it only ever holds stale data: it is unwrapped
-     * as a fallback for records that were never re-saved, and dropped as soon as the record carries
-     * current-schema values.
+     * "js" values only fill gaps afterwards. For the js-based renderers nothing collides, so
+     * every option is applied; for Swiper the current values win and stale leftovers can no
+     * longer override them.
      */
     private function migrateFlexFormOptions(array $flexformOptions): array
     {
-        $hasCurrentSchemaOptions = false;
         if (isset($flexformOptions['settings']) && is_array($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
                 $flexformOptions[$key] = $value;
-                $hasCurrentSchemaOptions = $hasCurrentSchemaOptions || $key !== 'js';
             }
             unset($flexformOptions['settings']);
         }
 
         if (isset($flexformOptions['js']) && is_array($flexformOptions['js'])) {
-            if (!$hasCurrentSchemaOptions) {
-                foreach ($flexformOptions['js'] as $key => $value) {
+            foreach ($flexformOptions['js'] as $key => $value) {
+                if (!array_key_exists($key, $flexformOptions)) {
                     $flexformOptions[$key] = $value;
                 }
             }
