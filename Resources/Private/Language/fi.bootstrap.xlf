@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="fi">
+		<header/>
+		<body>
+			<trans-unit id="sheet.bootstrap" approved="yes">
+				<source>Bootstrap Slider</source>
+				<target state="needs-review-translation">Bootstrap-liukusäädin</target>
+			</trans-unit>
+			<trans-unit id="options.interval" approved="yes">
+				<source>Interval</source>
+				<target state="needs-review-translation">Intervalli</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard" approved="yes">
+				<source>Keyboard</source>
+				<target state="needs-review-translation">Näppäimistöohjaus</target>
+			</trans-unit>
+			<trans-unit id="options.pause" approved="yes">
+				<source>Pause</source>
+				<target state="needs-review-translation">Keskeytys</target>
+			</trans-unit>
+			<trans-unit id="options.ride" approved="yes">
+				<source>Ride</source>
+				<target state="needs-review-translation">Automaattinen toisto</target>
+			</trans-unit>
+			<trans-unit id="options.ride.option.carousel" approved="yes">
+				<source>Carousel</source>
+				<target state="needs-review-translation">Karuselli</target>
+			</trans-unit>
+			<trans-unit id="options.touch" approved="yes">
+				<source>Touch</source>
+				<target state="needs-review-translation">Kosketus</target>
+			</trans-unit>
+			<trans-unit id="options.wrap" approved="yes">
+				<source>Wrap</source>
+				<target state="needs-review-translation">Kierto</target>
+			</trans-unit>
+			<trans-unit id="options.control" approved="yes">
+				<source>Show control</source>
+				<target state="needs-review-translation">Näytä ohjauspainikkeet</target>
+			</trans-unit>
+			<trans-unit id="options.indicators" approved="yes">
+				<source>Show indicators</source>
+				<target state="needs-review-translation">Näytä indikaattorit</target>
+			</trans-unit>
+			<trans-unit id="options.title" approved="yes">
+				<source>Show title</source>
+				<target state="needs-review-translation">Näytä otsikko</target>
+			</trans-unit>
+			<trans-unit id="options.description" approved="yes">
+				<source>Show description</source>
+				<target state="needs-review-translation">Näytä kuvaus</target>
+			</trans-unit>
+			<trans-unit id="options.startAt" approved="yes">
+				<source>Start at</source>
+				<target state="needs-review-translation">Aloituskohta</target>
+			</trans-unit>
+			<trans-unit id="btn.previous" approved="yes">
+				<source>Previous</source>
+				<target state="needs-review-translation">Edellinen</target>
+			</trans-unit>
+			<trans-unit id="btn.next" approved="yes">
+				<source>Next</source>
+				<target state="needs-review-translation">Seuraava</target>
+			</trans-unit>
+			<trans-unit id="btn.more" approved="yes">
+				<source>More</source>
+				<target state="needs-review-translation">Lisää</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

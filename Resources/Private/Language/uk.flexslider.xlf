@@ -1,15 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="uk">
-    <header/>
-    <body>
-      <!-- sheets -->
-      <!-- flexslider general settings -->
-      <!-- Usability Features -->
-      <!-- Primary Controls -->
-      <!-- Secondary Navigation -->
-      <!-- Special Properties -->
-      <!-- Carousel-->
-    </body>
-  </file>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="uk">
+		<header/>
+		<body>
+			<trans-unit id="sheet.flexslider" approved="yes">
+				<source>Flex Slider</source>
+				<target state="needs-review-translation">Flex Slider</target>
+			</trans-unit>
+			<trans-unit id="sheet.usability" approved="yes">
+				<source>Usability</source>
+				<target state="needs-review-translation">Зручність використання</target>
+			</trans-unit>
+			<trans-unit id="sheet.primaryControls" approved="yes">
+				<source>Primary Controls</source>
+				<target state="needs-review-translation">Основні елементи керування</target>
+			</trans-unit>
+			<trans-unit id="sheet.secondaryNavigation" approved="yes">
+				<source>Secondary Navigation</source>
+				<target state="needs-review-translation">Додаткова навігація</target>
+			</trans-unit>
+			<trans-unit id="sheet.specialProperties" approved="yes">
+				<source>Special Properties</source>
+				<target state="needs-review-translation">Особливі властивості</target>
+			</trans-unit>
+			<trans-unit id="sheet.carousel" approved="yes">
+				<source>Carousel</source>
+				<target state="needs-review-translation">Карусель</target>
+			</trans-unit>
+			<trans-unit id="options.selector" approved="yes">
+				<source>Selector</source>
+				<target state="needs-review-translation">Селектор</target>
+			</trans-unit>
+			<trans-unit id="options.animation" approved="yes">
+				<source>Animation</source>
+				<target state="needs-review-translation">Анімація</target>
+			</trans-unit>
+			<trans-unit id="options.easing" approved="yes">
+				<source>Easing effect</source>
+				<target state="needs-review-translation">Ефект Easing</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">Напрямок</target>
+			</trans-unit>
+			<trans-unit id="options.reverse" approved="yes">
+				<source>Reverse order</source>
+				<target state="needs-review-translation">Зворотний порядок</target>
+			</trans-unit>
+			<trans-unit id="options.animationLoop" approved="yes">
+				<source>Animation loop</source>
+				<target state="needs-review-translation">Цикл анімації</target>
+			</trans-unit>
+			<trans-unit id="options.smoothHeight" approved="yes">
+				<source>Smooth height</source>
+				<target state="needs-review-translation">Плавна зміна висоти між елементами</target>
+			</trans-unit>
+			<trans-unit id="options.startAt" approved="yes">
+				<source>Start at</source>
+				<target state="needs-review-translation">Почати з</target>
+			</trans-unit>
+			<trans-unit id="options.slideshow" approved="yes">
+				<source>Slideshow mode</source>
+				<target state="needs-review-translation">Режим слайд-шоу</target>
+			</trans-unit>
+			<trans-unit id="options.slideshowSpeed" approved="yes">
+				<source>Slideshow speed (in milliseconds)</source>
+				<target state="needs-review-translation">Швидкість слайд-шоу (в мілісекундах)</target>
+			</trans-unit>
+			<trans-unit id="options.animationSpeed" approved="yes">
+				<source>Animation speed (in milliseconds)</source>
+				<target state="needs-review-translation">Швидкість анімації (в мілісекундах)</target>
+			</trans-unit>
+			<trans-unit id="options.initDelay" approved="yes">
+				<source>Init delay in milliseconds</source>
+				<target state="needs-review-translation">Затримка ініціалізації в мілісекундах</target>
+			</trans-unit>
+			<trans-unit id="options.randomize" approved="yes">
+				<source>Random mode</source>
+				<target state="needs-review-translation">Випадковий режим</target>
+			</trans-unit>
+			<trans-unit id="options.fadeFirstSlide" approved="yes">
+				<source>Fade in first slide</source>
+				<target state="needs-review-translation">Плавна поява першого слайда</target>
+			</trans-unit>
+			<trans-unit id="options.fade" approved="yes">
+				<source>Fade</source>
+				<target state="needs-review-translation">Згасання (Fade)</target>
+			</trans-unit>
+			<trans-unit id="options.slide" approved="yes">
+				<source>Slide</source>
+				<target state="needs-review-translation">Ковзання (Slide)</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnAction" approved="yes">
+				<source>Pause on action</source>
+				<target state="needs-review-translation">Пауза при дії</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnHover" approved="yes">
+				<source>Pause on hover</source>
+				<target state="needs-review-translation">Пауза при наведенні</target>
+			</trans-unit>
+			<trans-unit id="options.pauseInvisible" approved="yes">
+				<source>Pause Invisible</source>
+				<target state="needs-review-translation">Пауза, коли невидимий</target>
+			</trans-unit>
+			<trans-unit id="options.useCSS" approved="yes">
+				<source>User CSS</source>
+				<target state="needs-review-translation">Використовувати CSS</target>
+			</trans-unit>
+			<trans-unit id="options.touch" approved="yes">
+				<source>Touch mode</source>
+				<target state="needs-review-translation">Сенсорний режим</target>
+			</trans-unit>
+			<trans-unit id="options.video" approved="yes">
+				<source>Video mode</source>
+				<target state="needs-review-translation">Режим відео</target>
+			</trans-unit>
+			<trans-unit id="options.controlNav" approved="yes">
+				<source>Navigation Dots</source>
+				<target state="needs-review-translation">Точки навігації</target>
+			</trans-unit>
+			<trans-unit id="options.directionNav" approved="yes">
+				<source>Navigation Arrows</source>
+				<target state="needs-review-translation">Стрілки навігації</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard" approved="yes">
+				<source>Keyboard support</source>
+				<target state="needs-review-translation">Керування з клавіатури</target>
+			</trans-unit>
+			<trans-unit id="options.multipleKeyboard" approved="yes">
+				<source>Allow keyboard navigation to affect multiple sliders</source>
+				<target state="needs-review-translation">Дозволити керування з клавіатури для кількох слайдерів</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel" approved="yes">
+				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
+				<target state="needs-review-translation">Підтримка коліщатка миші (потрібен jquery.mousewheel.js)</target>
+			</trans-unit>
+			<trans-unit id="options.pausePlay" approved="yes">
+				<source>Create pause/play dynamic element</source>
+				<target state="needs-review-translation">Створити динамічний елемент паузи/відтворення</target>
+			</trans-unit>
+			<trans-unit id="options.controlsContainer" approved="yes">
+				<source>controlsContainer jQuery object/selector</source>
+				<target state="needs-review-translation">controlsContainer: jQuery-об'єкт/селектор</target>
+			</trans-unit>
+			<trans-unit id="options.manualControls" approved="yes">
+				<source>manualControls jQuery object/selector</source>
+				<target state="needs-review-translation">manualControls: jQuery-об'єкт/селектор</target>
+			</trans-unit>
+			<trans-unit id="options.customDirectionNav" approved="yes">
+				<source>customDirectionNav jQuery object/selector</source>
+				<target state="needs-review-translation">customDirectionNav: jQuery-об'єкт/селектор</target>
+			</trans-unit>
+			<trans-unit id="options.sync" approved="yes">
+				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
+				<target state="needs-review-translation">Селектор синхронізації: повторювати дії цього слайдера на іншому слайдері</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>asNavFor selector</source>
+				<target state="needs-review-translation">Селектор asNavFor</target>
+			</trans-unit>
+			<trans-unit id="options.itemWidth" approved="yes">
+				<source>Element width in pixels</source>
+				<target state="needs-review-translation">Ширина елемента в пікселях</target>
+			</trans-unit>
+			<trans-unit id="options.itemMargin" approved="yes">
+				<source>Element border (margin)</source>
+				<target state="needs-review-translation">Відступ (margin) елемента</target>
+			</trans-unit>
+			<trans-unit id="options.minItems" approved="yes">
+				<source>Min number of elements</source>
+				<target state="needs-review-translation">Мінімальна кількість елементів</target>
+			</trans-unit>
+			<trans-unit id="options.maxItems" approved="yes">
+				<source>Max number of elements</source>
+				<target state="needs-review-translation">Максимальна кількість елементів</target>
+			</trans-unit>
+			<trans-unit id="options.move" approved="yes">
+				<source>Number of elements, which should be moved in animation</source>
+				<target state="needs-review-translation">Кількість елементів, що переміщуються за одну анімацію</target>
+			</trans-unit>
+			<trans-unit id="btn.more" approved="yes">
+				<source>More</source>
+				<target state="needs-review-translation">Більше</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

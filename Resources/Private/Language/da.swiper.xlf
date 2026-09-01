@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="da">
+		<header/>
+		<body>
+			<trans-unit id="options.accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="needs-review-translation">Piltaststyring</target>
+			</trans-unit>
+			<trans-unit id="options.arrows" approved="yes">
+				<source>Arrows</source>
+				<target state="needs-review-translation">Pile</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>As Nav For</source>
+				<target state="needs-review-translation">Som navigation for</target>
+			</trans-unit>
+			<trans-unit id="options.appendArrows" approved="yes">
+				<source>Append Arrows</source>
+				<target state="needs-review-translation">Tilføj pile</target>
+			</trans-unit>
+			<trans-unit id="options.appendDots" approved="yes">
+				<source>Append Dots</source>
+				<target state="needs-review-translation">Tilføj punkter</target>
+			</trans-unit>
+			<trans-unit id="options.prevArrow" approved="yes">
+				<source>Prev Arrow</source>
+				<target state="needs-review-translation">Forrige pil</target>
+			</trans-unit>
+			<trans-unit id="options.nextArrow" approved="yes">
+				<source>Next Arrow</source>
+				<target state="needs-review-translation">Næste pil</target>
+			</trans-unit>
+			<trans-unit id="options.centerMode" approved="yes">
+				<source>Center Mode</source>
+				<target state="needs-review-translation">Centreret tilstand</target>
+			</trans-unit>
+			<trans-unit id="options.centerPadding" approved="yes">
+				<source>Center Padding</source>
+				<target state="needs-review-translation">Centerafstand</target>
+			</trans-unit>
+			<trans-unit id="options.cssEase" approved="yes">
+				<source>CSS3 animation Easing</source>
+				<target state="needs-review-translation">CSS3-animationseasing</target>
+			</trans-unit>
+			<trans-unit id="options.effect" approved="yes">
+				<source>Effect</source>
+				<target state="needs-review-translation">Effekt</target>
+			</trans-unit>
+			<trans-unit id="options.setWrapperSize" approved="yes">
+				<source>setWrapperSize</source>
+				<target state="needs-review-translation">Indstil wrapperstørrelse</target>
+			</trans-unit>
+			<trans-unit id="options.height" approved="yes">
+				<source>Height</source>
+				<target state="needs-review-translation">Højde</target>
+			</trans-unit>
+			<trans-unit id="options.width" approved="yes">
+				<source>Width</source>
+				<target state="needs-review-translation">Bredde</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">Retning</target>
+			</trans-unit>
+			<trans-unit id="options.customClasses" approved="yes">
+				<source>Additional CSS classes</source>
+				<target state="needs-review-translation">Yderligere CSS-klasser</target>
+			</trans-unit>
+			<trans-unit id="options.loop" approved="yes">
+				<source>Loop</source>
+				<target state="needs-review-translation">Loop</target>
+			</trans-unit>
+			<trans-unit id="options.loopAddBlankSlides" approved="yes">
+				<source>Add blank slides to loop</source>
+				<target state="needs-review-translation">Tilføj tomme slides til loop</target>
+			</trans-unit>
+			<trans-unit id="options.loopAdditionalSlides" approved="yes">
+				<source>Loop additional slides</source>
+				<target state="needs-review-translation">Yderligere slides i loop</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupAuto" approved="yes">
+				<source>Slides per group auto</source>
+				<target state="needs-review-translation">Slides pr. gruppe (automatisk)</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupSkip" approved="yes">
+				<source>Slides per group skip</source>
+				<target state="needs-review-translation">Slides pr. gruppe (skip)</target>
+			</trans-unit>
+			<trans-unit id="options.loopPreventsSliding" approved="yes">
+				<source>Prevents sliding in loop</source>
+				<target state="needs-review-translation">Forhindrer glidning i loop</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.nextSlideMessage" approved="yes">
+				<source>Next slide</source>
+				<target state="needs-review-translation">Næste slide</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.prevSlideMessage" approved="yes">
+				<source>Previous slide</source>
+				<target state="needs-review-translation">Forrige slide</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.firstSlideMessage" approved="yes">
+				<source>This is the first slide</source>
+				<target state="needs-review-translation">Dette er den første slide</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.lastSlideMessage" approved="yes">
+				<source>This is the last slide</source>
+				<target state="needs-review-translation">Dette er den sidste slide</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
+				<source>Go to slide {{index}}</source>
+				<target state="needs-review-translation">Gå til slide {{index}}</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.slideLabelMessage" approved="yes">
+				<source>{{index}} / {{slidesLength}}</source>
+				<target state="needs-review-translation">{{index}} / {{slidesLength}}</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay" approved="yes">
+				<source>Autoplay</source>
+				<target state="needs-review-translation">Autoplay</target>
+			</trans-unit>
+			<trans-unit id="options.autoplayProgress" approved="yes">
+				<source>Show autoplay progress indicator</source>
+				<target state="needs-review-translation">Vis fremdriftsindikator for autoplay</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.delay" approved="yes">
+				<source>Delay between transitions (in ms)</source>
+				<target state="needs-review-translation">Forsinkelse mellem overgange (i ms)</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.disableOnInteraction" approved="yes">
+				<source>Disable autoplay on interaction</source>
+				<target state="needs-review-translation">Deaktiver autoplay ved interaktion</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.pauseOnMouseEnter" approved="yes">
+				<source>Pause autoplay on mouse enter</source>
+				<target state="needs-review-translation">Sæt autoplay på pause ved musemarkering</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.reverseDirection" approved="yes">
+				<source>Autoplay in reverse direction</source>
+				<target state="needs-review-translation">Autoplay i omvendt retning</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.stopOnLastSlide" approved="yes">
+				<source>Stop autoplay on last slide</source>
+				<target state="needs-review-translation">Stop autoplay på sidste slide</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.waitForTransition" approved="yes">
+				<source>Wait for transition before next autoplay</source>
+				<target state="needs-review-translation">Vent på overgang før næste autoplay</target>
+			</trans-unit>
+			<trans-unit id="options.autoHeight" approved="yes">
+				<source>Auto height</source>
+				<target state="needs-review-translation">Automatisk højde</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.addIcons" approved="yes">
+				<source>Add SVG icons to navigation buttons</source>
+				<target state="needs-review-translation">Tilføj SVG-ikoner til navigationsknapper</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.disabledClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+				<target state="needs-review-translation">CSS-klassenavn tilføjet navigationsknap, når den deaktiveres</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.enabled" approved="yes">
+				<source>Enable/disable navigation</source>
+				<target state="needs-review-translation">Aktivér/deaktivér navigation</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hiddenClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+				<target state="needs-review-translation">CSS-klassenavn tilføjet navigationsknap, når den skjules</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hideOnClick" approved="yes">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+				<target state="needs-review-translation">Skift navigationsknappers synlighed efter klik på slider</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.lockClass" approved="yes">
+				<source>CSS class name added to navigation button when it is disabled</source>
+				<target state="needs-review-translation">CSS-klassenavn tilføjet navigationsknap, når den er deaktiveret</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.navigationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-klassenavn tilføjet slider, når navigation er deaktiveret af breakpoint</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.nextEl" approved="yes">
+				<source>CSS selector or HTML element for the next button</source>
+				<target state="needs-review-translation">CSS-vælger eller HTML-element til næste-knappen</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.prevEl" approved="yes">
+				<source>CSS selector or HTML element for the previous button</source>
+				<target state="needs-review-translation">CSS-vælger eller HTML-element til forrige-knappen</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletActiveClass" approved="yes">
+				<source>CSS class name of currently active pagination bullet</source>
+				<target state="needs-review-translation">CSS-klassenavn på aktivt pagineringspunkt</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletClass" approved="yes">
+				<source>CSS class name of single pagination bullet</source>
+				<target state="needs-review-translation">CSS-klassenavn på enkelt pagineringspunkt</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletElement" approved="yes">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+				<target state="needs-review-translation">HTML-tag for enkelt pagineringspunkt (kun ved punkttype)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickable" approved="yes">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+				<target state="needs-review-translation">Klik på punkt forårsager slideovergang (kun ved punkttype)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickableClass" approved="yes">
+				<source>CSS class name set to pagination when it is clickable</source>
+				<target state="needs-review-translation">CSS-klassenavn sat på paginering, når den er klikbar</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.currentClass" approved="yes">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+				<target state="needs-review-translation">CSS-klassenavn på element med aktuelt indeks i brøk-paginering</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicBullets" approved="yes">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+				<target state="needs-review-translation">Vis kun få punkter ad gangen (ved mange slides)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicMainBullets" approved="yes">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+				<target state="needs-review-translation">Antal hovedpunkter synlige ved dynamicBullets</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.el" approved="yes">
+				<source>CSS selector or HTML element of the container with pagination</source>
+				<target state="needs-review-translation">CSS-vælger eller HTML-element til pagineringscontainer</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.enabled" approved="yes">
+				<source>Enable/disable pagination</source>
+				<target state="needs-review-translation">Aktivér/deaktivér paginering</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionCurrent" approved="yes">
+				<source>Format function for current number in fraction pagination</source>
+				<target state="needs-review-translation">Formatfunktion for aktuelt tal i brøk-paginering</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionTotal" approved="yes">
+				<source>Format function for total number in fraction pagination</source>
+				<target state="needs-review-translation">Formatfunktion for samlet tal i brøk-paginering</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hiddenClass" approved="yes">
+				<source>CSS class name of pagination when it becomes inactive</source>
+				<target state="needs-review-translation">CSS-klassenavn på paginering, når den er inaktiv</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hideOnClick" approved="yes">
+				<source>Toggle pagination container visibility after click on slider container</source>
+				<target state="needs-review-translation">Skift paginerings synlighed efter klik på slider</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.horizontalClass" approved="yes">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+				<target state="needs-review-translation">CSS-klassenavn sat på paginering i vandret Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.lockClass" approved="yes">
+				<source>CSS class name set to pagination when it is disabled</source>
+				<target state="needs-review-translation">CSS-klassenavn sat på paginering, når den er deaktiveret</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.modifierClass" approved="yes">
+				<source>Prefix for modifier CSS class name for pagination</source>
+				<target state="needs-review-translation">Præfiks for modifier-CSS-klassenavn til paginering</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.paginationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-klassenavn tilføjet slider og paginering, når paginering er deaktiveret af breakpoint</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarFillClass" approved="yes">
+				<source>CSS class name of pagination progressbar fill element</source>
+				<target state="needs-review-translation">CSS-klassenavn på progressbar-udfyldningselement</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOpposite" approved="yes">
+				<source>Progressbar opposite to Swiper's direction</source>
+				<target state="needs-review-translation">Progressbar modsat Swiper's retning</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOppositeClass" approved="yes">
+				<source>CSS class name of pagination progressbar opposite</source>
+				<target state="needs-review-translation">CSS-klassenavn på progressbar modsat</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderBullet" approved="yes">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+				<target state="needs-review-translation">Brugerdefineret funktion for pagineringspunkter (kun ved punkttype)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderCustom" approved="yes">
+				<source>Custom function for custom pagination type</source>
+				<target state="needs-review-translation">Brugerdefineret funktion for brugerdefineret pagineringstype</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderFraction" approved="yes">
+				<source>Custom function for fraction pagination type</source>
+				<target state="needs-review-translation">Brugerdefineret funktion for brøk-pagineringstype</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderProgressbar" approved="yes">
+				<source>Custom function for progressbar pagination type</source>
+				<target state="needs-review-translation">Brugerdefineret funktion for progressbar-pagineringstype</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.totalClass" approved="yes">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+				<target state="needs-review-translation">CSS-klassenavn på element med samlet tal i brøk-paginering</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.type" approved="yes">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+				<target state="needs-review-translation">Pagineringstype (punkter, brøk, progressbar, brugerdefineret)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.verticalClass" approved="yes">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+				<target state="needs-review-translation">CSS-klassenavn sat på paginering i lodret Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragClass" approved="yes">
+				<source>Scrollbar draggable element CSS class</source>
+				<target state="needs-review-translation">CSS-klassenavn på scrollbar-trækelement</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragSize" approved="yes">
+				<source>Size of scrollbar draggable element in px</source>
+				<target state="needs-review-translation">Størrelse på scrollbar-trækelement i px</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.draggable" approved="yes">
+				<source>Enable draggable scrollbar</source>
+				<target state="needs-review-translation">Aktivér trækbar scrollbar</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.el" approved="yes">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+				<target state="needs-review-translation">CSS-vælger eller HTML-element til scrollbar-container</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.enabled" approved="yes">
+				<source>Enable/disable scrollbar</source>
+				<target state="needs-review-translation">Aktivér/deaktivér scrollbar</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.hide" approved="yes">
+				<source>Hide scrollbar automatically after user interaction</source>
+				<target state="needs-review-translation">Skjul scrollbar automatisk efter brugerinteraktion</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.horizontalClass" approved="yes">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+				<target state="needs-review-translation">CSS-klassenavn sat på scrollbar i vandret Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.lockClass" approved="yes">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+				<target state="needs-review-translation">Yderligere CSS-klasse på scrollbar, når den er deaktiveret</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.scrollbarDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-klassenavn tilføjet slider og scrollbar, når scrollbar er deaktiveret af breakpoint</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.snapOnRelease" approved="yes">
+				<source>Snap slider position to slides when you release scrollbar</source>
+				<target state="needs-review-translation">Fastlås sliderposition til slides, når scrollbar slippes</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.verticalClass" approved="yes">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+				<target state="needs-review-translation">CSS-klassenavn sat på scrollbar i lodret Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.enabled" approved="yes">
+				<source>Enable free mode</source>
+				<target state="needs-review-translation">Aktivér fri tilstand</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.minimumVelocity" approved="yes">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+				<target state="needs-review-translation">Minimum touchmove-hastighed for fri tilstand-momentum</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentum" approved="yes">
+				<source>Enable momentum in free mode</source>
+				<target state="needs-review-translation">Aktivér momentum i fri tilstand</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounce" approved="yes">
+				<source>Enable momentum bounce in free mode</source>
+				<target state="needs-review-translation">Aktivér momentum-bounce i fri tilstand</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounceRatio" approved="yes">
+				<source>Momentum bounce ratio</source>
+				<target state="needs-review-translation">Momentum-bounce-forhold</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumRatio" approved="yes">
+				<source>Momentum ratio</source>
+				<target state="needs-review-translation">Momentum-forhold</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumVelocityRatio" approved="yes">
+				<source>Momentum velocity ratio</source>
+				<target state="needs-review-translation">Momentum-hastighedsforhold</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.sticky" approved="yes">
+				<source>Snap to slides in free mode</source>
+				<target state="needs-review-translation">Fastlås til slides i fri tilstand</target>
+			</trans-unit>
+			<trans-unit id="options.grid.fill" approved="yes">
+				<source>How slides should fill rows (by column or by row)</source>
+				<target state="needs-review-translation">Hvordan slides skal udfylde rækker (efter kolonne eller række)</target>
+			</trans-unit>
+			<trans-unit id="options.grid.rows" approved="yes">
+				<source>Number of slides rows (multirow layout)</source>
+				<target state="needs-review-translation">Antal slide-rækker (flerrækket layout)</target>
+			</trans-unit>
+			<trans-unit id="options.parallax.enabled" approved="yes">
+				<source>Enable parallaxed elements inside the slider</source>
+				<target state="needs-review-translation">Aktivér parallax-elementer i slider</target>
+			</trans-unit>
+			<trans-unit id="options.fadeEffect.crossFade" approved="yes">
+				<source>Enables slides cross fade</source>
+				<target state="needs-review-translation">Aktivér krydsfade mellem slides</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.depth" approved="yes">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+				<target state="needs-review-translation">Dybde-forskydning i px (slides bevæger sig i Z-aksen)</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.modifier" approved="yes">
+				<source>Effect multiplier</source>
+				<target state="needs-review-translation">Effektmultiplikator</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.rotate" approved="yes">
+				<source>Slide rotate in degrees</source>
+				<target state="needs-review-translation">Slide-rotation i grader</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.scale" approved="yes">
+				<source>Slide scale effect</source>
+				<target state="needs-review-translation">Slide-skala-effekt</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Aktivér slide-skygger</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.stretch" approved="yes">
+				<source>Stretch space between slides (px or %)</source>
+				<target state="needs-review-translation">Stræk afstand mellem slides (px eller %)</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.limitRotation" approved="yes">
+				<source>Limit edge slides rotation</source>
+				<target state="needs-review-translation">Begræns kant-slides' rotation</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Aktivér slide-skygger</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadow" approved="yes">
+				<source>Enables main slider shadow</source>
+				<target state="needs-review-translation">Aktivér hovedslider-skygge</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowOffset" approved="yes">
+				<source>Main shadow offset in px</source>
+				<target state="needs-review-translation">Hovedskygge-forskydning i px</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowScale" approved="yes">
+				<source>Main shadow scale ratio</source>
+				<target state="needs-review-translation">Hovedskygge-skalaforhold</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Aktivér slide-skygger</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideOffset" approved="yes">
+				<source>Offset distance per slide (in px)</source>
+				<target state="needs-review-translation">Forskydningsafstand pr. slide (i px)</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideRotate" approved="yes">
+				<source>Rotate angle per slide (in degrees)</source>
+				<target state="needs-review-translation">Rotationsvinkel pr. slide (i grader)</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.rotate" approved="yes">
+				<source>Enables cards rotation</source>
+				<target state="needs-review-translation">Aktivér kort-rotation</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Aktivér slide-skygger</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.limitProgress" approved="yes">
+				<source>Limit progress/offset to amount of side slides</source>
+				<target state="needs-review-translation">Begræns fremgang/forskydning til antal sideslides</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.next" approved="yes">
+				<source>Next slide transformations</source>
+				<target state="needs-review-translation">Næste slide-transformationer</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.perspective" approved="yes">
+				<source>Enable 3D perspective for custom transforms</source>
+				<target state="needs-review-translation">Aktivér 3D-perspektiv for brugerdefinerede transformationer</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.prev" approved="yes">
+				<source>Previous slide transformations</source>
+				<target state="needs-review-translation">Forrige slide-transformationer</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.progressMultiplier" approved="yes">
+				<source>Multiply slide transformations and opacity</source>
+				<target state="needs-review-translation">Multiplicer slide-transformationer og opacitet</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.shadowPerProgress" approved="yes">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+				<target state="needs-review-translation">Opdel skygge-opacitet pr. slide baseret på limitProgress</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.autoScrollOffset" approved="yes">
+				<source>Auto scroll offset for thumbs</source>
+				<target state="needs-review-translation">Automatisk rulleforskydning for thumbnails</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.multipleActiveThumbs" approved="yes">
+				<source>Enable multiple active thumbnail slides</source>
+				<target state="needs-review-translation">Aktivér flere aktive thumbnail-slides</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.slideThumbActiveClass" approved="yes">
+				<source>Additional class for activated thumbs swiper slide</source>
+				<target state="needs-review-translation">Yderligere klasse for aktiveret thumbnail-slide</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.swiper" approved="yes">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+				<target state="needs-review-translation">Swiper-instans eller parametre for thumbnail-Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.thumbsContainerClass" approved="yes">
+				<source>Additional class for thumbs swiper container</source>
+				<target state="needs-review-translation">Yderligere klasse for thumbnail-Swiper-container</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.enabled" approved="yes">
+				<source>Enable/disable zoom</source>
+				<target state="needs-review-translation">Aktivér/deaktivér zoom</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.containerClass" approved="yes">
+				<source>CSS class name of zoom container</source>
+				<target state="needs-review-translation">CSS-klassenavn på zoom-container</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.limitToOriginalSize" approved="yes">
+				<source>Limit zoom to original image size</source>
+				<target state="needs-review-translation">Begræns zoom til original billedstørrelse</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.maxRatio" approved="yes">
+				<source>Maximum image zoom multiplier</source>
+				<target state="needs-review-translation">Maksimal billedzoom-multiplikator</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.minRatio" approved="yes">
+				<source>Minimal image zoom multiplier</source>
+				<target state="needs-review-translation">Minimal billedzoom-multiplikator</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.panOnMouseMove" approved="yes">
+				<source>Pan zoomed image on mouse move</source>
+				<target state="needs-review-translation">Pan zoomet billede ved musebevægelse</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.toggle" approved="yes">
+				<source>Enable/disable zoom-in by double tap</source>
+				<target state="needs-review-translation">Aktivér/deaktivér zoom-ind ved dobbelttryk</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.zoomedSlideClass" approved="yes">
+				<source>CSS class name of zoomed in container</source>
+				<target state="needs-review-translation">CSS-klassenavn på zoomed-in container</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.enabled" approved="yes">
+				<source>Enable keyboard control</source>
+				<target state="needs-review-translation">Aktivér tastaturstyring</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.onlyInViewport" approved="yes">
+				<source>Control sliders only in viewport</source>
+				<target state="needs-review-translation">Styr kun sliders i viewport</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.pageUpDown" approved="yes">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+				<target state="needs-review-translation">Aktivér tastaturnavigation med Page Up/Down-taster</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.speed" approved="yes">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+				<target state="needs-review-translation">Hastighed for tastaturnavigationsovergange (ms)</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.enabled" approved="yes">
+				<source>Enable mousewheel control</source>
+				<target state="needs-review-translation">Aktivér musehjulstyring</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.eventsTarget" approved="yes">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+				<target state="needs-review-translation">CSS-vælger eller HTML-element for musehjulshændelser</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.forceToAxis" approved="yes">
+				<source>Force mousewheel swipes to axis</source>
+				<target state="needs-review-translation">Tving musehjulsswipe til akse</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.invert" approved="yes">
+				<source>Invert sliding direction</source>
+				<target state="needs-review-translation">Inverter glideretning</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.noMousewheelClass" approved="yes">
+				<source>Class name to ignore mousewheel scrolling</source>
+				<target state="needs-review-translation">Klassenavn til at ignorere musehjulsrulle</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.releaseOnEdges" approved="yes">
+				<source>Release mousewheel event on edges</source>
+				<target state="needs-review-translation">Frigiv musehjulshændelse ved kanter</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.sensitivity" approved="yes">
+				<source>Mousewheel sensitivity multiplier</source>
+				<target state="needs-review-translation">Musehjulsfølsomhedsmultiplikator</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdDelta" approved="yes">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+				<target state="needs-review-translation">Minimum musehjuls-rulledelta til at udløse slideændring</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdTime" approved="yes">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+				<target state="needs-review-translation">Minimum musehjuls-tidsdelta (ms) til at udløse slideændring</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides" approved="yes">
+				<source>Virtual Slides</source>
+				<target state="needs-review-translation">Virtuelle slides</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesAfter" approved="yes">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+				<target state="needs-review-translation">Forøg antal forhåndsrenderede slides efter aktiv slide</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesBefore" approved="yes">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+				<target state="needs-review-translation">Forøg antal forhåndsrenderede slides før aktiv slide</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.cache" approved="yes">
+				<source>Enable DOM cache of rendered slides</source>
+				<target state="needs-review-translation">Aktivér DOM-cache af renderede slides</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.enabled" approved="yes">
+				<source>Enable virtual slides</source>
+				<target state="needs-review-translation">Aktivér virtuelle slides</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternal" approved="yes">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+				<target state="needs-review-translation">Funktion til ekstern rendering (f.eks. React/Vue)</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternalUpdate" approved="yes">
+				<source>Update Swiper layout after renderExternal</source>
+				<target state="needs-review-translation">Opdater Swiper-layout efter renderExternal</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderSlide" approved="yes">
+				<source>Function to render slide</source>
+				<target state="needs-review-translation">Funktion til at rendre slide</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slides" approved="yes">
+				<source>Array with slides</source>
+				<target state="needs-review-translation">Array med slides</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" approved="yes">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+				<target state="needs-review-translation">Slide-størrelse for slidesPerView: auto (i px)</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation" approved="yes">
+				<source>Hash Navigation</source>
+				<target state="needs-review-translation">Hash-navigation</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.getSlideIndex" approved="yes">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+				<target state="needs-review-translation">Funktion til at hente slide-indeks via hash (til virtuelle slides)</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.replaceState" approved="yes">
+				<source>Replace current URL state instead of adding to history</source>
+				<target state="needs-review-translation">Erstat aktuel URL-tilstand i stedet for at tilføje til historik</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.watchState" approved="yes">
+				<source>Enable navigation by browser history/hash</source>
+				<target state="needs-review-translation">Aktivér navigation via browserhistorik/hash</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerView" approved="yes">
+				<source>Slides per view</source>
+				<target state="needs-review-translation">Slides pr. visning</target>
+			</trans-unit>
+			<trans-unit id="options.spaceBetween" approved="yes">
+				<source>Space between slides (in px)</source>
+				<target state="needs-review-translation">Afstand mellem slides (i px)</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroup" approved="yes">
+				<source>Number of slides in group</source>
+				<target state="needs-review-translation">Antal slides i gruppe</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

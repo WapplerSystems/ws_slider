@@ -1,13 +1,400 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="it">
-    <header/>
-    <body>
-      <!-- Buttons and labels -->
-      <!-- sheets -->
-      <!-- common setting labels -->
-      <!-- Labels -->
-      <!-- item labels -->
-    </body>
-  </file>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="it">
+		<header/>
+		<body>
+			<trans-unit id="title" approved="yes">
+				<source>Slider</source>
+				<target state="needs-review-translation">Slider</target>
+			</trans-unit>
+			<trans-unit id="description" approved="yes">
+				<source>Universal Slider / Carousel</source>
+				<target state="needs-review-translation">Slider / Carosello universale</target>
+			</trans-unit>
+			<trans-unit id="palette.wsslider" approved="yes">
+				<source>Slider</source>
+				<target state="needs-review-translation">Slider</target>
+			</trans-unit>
+			<trans-unit id="settings" approved="yes">
+				<source>Settings</source>
+				<target state="needs-review-translation">Impostazioni</target>
+			</trans-unit>
+			<trans-unit id="renderer" approved="yes">
+				<source>Renderer</source>
+				<target state="needs-review-translation">Renderer</target>
+			</trans-unit>
+			<trans-unit id="items" approved="yes">
+				<source>Items</source>
+				<target state="needs-review-translation">Elementi</target>
+			</trans-unit>
+			<trans-unit id="preset" approved="yes">
+				<source>Preset</source>
+				<target state="needs-review-translation">Preset</target>
+			</trans-unit>
+			<trans-unit id="source" approved="yes">
+				<source>Source</source>
+				<target state="needs-review-translation">Sorgente</target>
+			</trans-unit>
+			<trans-unit id="yes" approved="yes">
+				<source>Yes</source>
+				<target state="needs-review-translation">Sì</target>
+			</trans-unit>
+			<trans-unit id="no" approved="yes">
+				<source>No</source>
+				<target state="needs-review-translation">No</target>
+			</trans-unit>
+			<trans-unit id="force" approved="yes">
+				<source>Force</source>
+				<target state="needs-review-translation">Forza</target>
+			</trans-unit>
+			<trans-unit id="auto" approved="yes">
+				<source>Auto</source>
+				<target state="needs-review-translation">Auto</target>
+			</trans-unit>
+			<trans-unit id="inner" approved="yes">
+				<source>Inner</source>
+				<target state="needs-review-translation">Interno</target>
+			</trans-unit>
+			<trans-unit id="outer" approved="yes">
+				<source>Outer</source>
+				<target state="needs-review-translation">Esterno</target>
+			</trans-unit>
+			<trans-unit id="hover" approved="yes">
+				<source>Hover</source>
+				<target state="needs-review-translation">Hover</target>
+			</trans-unit>
+			<trans-unit id="horizontal" approved="yes">
+				<source>horizontal</source>
+				<target state="needs-review-translation">Orizzontale</target>
+			</trans-unit>
+			<trans-unit id="vertical" approved="yes">
+				<source>vertical</source>
+				<target state="needs-review-translation">Verticale</target>
+			</trans-unit>
+			<trans-unit id="default" approved="yes">
+				<source>Default</source>
+				<target state="needs-review-translation">Predefinito</target>
+			</trans-unit>
+			<trans-unit id="preset_is_set" approved="yes">
+				<source>A preset has been selected</source>
+				<target state="needs-review-translation">È stata selezionata una preimpostazione</target>
+			</trans-unit>
+			<trans-unit id="label.next" approved="yes">
+				<source>Next</source>
+				<target state="needs-review-translation">Avanti</target>
+			</trans-unit>
+			<trans-unit id="label.previous" approved="yes">
+				<source>Previous</source>
+				<target state="needs-review-translation">Indietro</target>
+			</trans-unit>
+			<trans-unit id="label.start" approved="yes">
+				<source>Start</source>
+				<target state="needs-review-translation">Avvia</target>
+			</trans-unit>
+			<trans-unit id="label.stop" approved="yes">
+				<source>Stop</source>
+				<target state="needs-review-translation">Stop</target>
+			</trans-unit>
+			<trans-unit id="settings.typoscript" approved="yes">
+				<source>TypoScript</source>
+				<target state="needs-review-translation">TypoScript</target>
+			</trans-unit>
+			<trans-unit id="sheet.navigation" approved="yes">
+				<source>Navigation</source>
+				<target state="needs-review-translation">Navigazione</target>
+			</trans-unit>
+			<trans-unit id="sheet.pagination" approved="yes">
+				<source>Pagination</source>
+				<target state="needs-review-translation">Paginazione</target>
+			</trans-unit>
+			<trans-unit id="sheet.scrollbar" approved="yes">
+				<source>Scrollbar</source>
+				<target state="needs-review-translation">Barra di scorrimento</target>
+			</trans-unit>
+			<trans-unit id="sheet.autoplay" approved="yes">
+				<source>Autoplay</source>
+				<target state="needs-review-translation">Riproduzione automatica</target>
+			</trans-unit>
+			<trans-unit id="sheet.freeMode" approved="yes">
+				<source>Free Mode</source>
+				<target state="needs-review-translation">Modalità libera</target>
+			</trans-unit>
+			<trans-unit id="sheet.grid" approved="yes">
+				<source>Grid</source>
+				<target state="needs-review-translation">Griglia</target>
+			</trans-unit>
+			<trans-unit id="sheet.parallax" approved="yes">
+				<source>Parallax</source>
+				<target state="needs-review-translation">Parallasse</target>
+			</trans-unit>
+			<trans-unit id="sheet.fadeEffect" approved="yes">
+				<source>Fade Effect</source>
+				<target state="needs-review-translation">Effetto dissolvenza</target>
+			</trans-unit>
+			<trans-unit id="sheet.coverflowEffect" approved="yes">
+				<source>CoverFlow Effect</source>
+				<target state="needs-review-translation">Effetto CoverFlow</target>
+			</trans-unit>
+			<trans-unit id="sheet.flipEffect" approved="yes">
+				<source>Flip Effect</source>
+				<target state="needs-review-translation">Effetto flip</target>
+			</trans-unit>
+			<trans-unit id="sheet.cubeEffect" approved="yes">
+				<source>Cube Effect</source>
+				<target state="needs-review-translation">Effetto cubo</target>
+			</trans-unit>
+			<trans-unit id="sheet.cardsEffect" approved="yes">
+				<source>Cards Effect</source>
+				<target state="needs-review-translation">Effetto schede</target>
+			</trans-unit>
+			<trans-unit id="sheet.creativeEffect" approved="yes">
+				<source>Creative Effect</source>
+				<target state="needs-review-translation">Effetto creativo</target>
+			</trans-unit>
+			<trans-unit id="sheet.thumbs" approved="yes">
+				<source>Thumbs</source>
+				<target state="needs-review-translation">Miniature</target>
+			</trans-unit>
+			<trans-unit id="sheet.zoom" approved="yes">
+				<source>Zoom</source>
+				<target state="needs-review-translation">Zoom</target>
+			</trans-unit>
+			<trans-unit id="sheet.keyboard" approved="yes">
+				<source>Keyboard</source>
+				<target state="needs-review-translation">Tastiera</target>
+			</trans-unit>
+			<trans-unit id="sheet.mousewheel" approved="yes">
+				<source>Mousewheel</source>
+				<target state="needs-review-translation">Rotellina del mouse</target>
+			</trans-unit>
+			<trans-unit id="sheet.virtualslides" approved="yes">
+				<source>Virtual Slides</source>
+				<target state="needs-review-translation">Slide virtuali</target>
+			</trans-unit>
+			<trans-unit id="sheet.hashNavigation" approved="yes">
+				<source>Hash Navigation</source>
+				<target state="needs-review-translation">Navigazione hash</target>
+			</trans-unit>
+			<trans-unit id="sheet.history" approved="yes">
+				<source>History Navigation</source>
+				<target state="needs-review-translation">Navigazione cronologia</target>
+			</trans-unit>
+			<trans-unit id="sheet.layout" approved="yes">
+				<source>Layout</source>
+				<target state="needs-review-translation">Layout</target>
+			</trans-unit>
+			<trans-unit id="sheet.dragNdrop" approved="yes">
+				<source>Swipe/Drag support</source>
+				<target state="needs-review-translation">Supporto swipe/trascinamento</target>
+			</trans-unit>
+			<trans-unit id="sheet.animation" approved="yes">
+				<source>Animation</source>
+				<target state="needs-review-translation">Animazione</target>
+			</trans-unit>
+			<trans-unit id="sheet.advanced" approved="yes">
+				<source>Advanced</source>
+				<target state="needs-review-translation">Avanzate</target>
+			</trans-unit>
+			<trans-unit id="sheet.general" approved="yes">
+				<source>General</source>
+				<target state="needs-review-translation">Generale</target>
+			</trans-unit>
+			<trans-unit id="sheet.tinySlider" approved="yes">
+				<source>Tiny Slider</source>
+				<target state="needs-review-translation">Tiny Slider</target>
+			</trans-unit>
+			<trans-unit id="sheet.slick" approved="yes">
+				<source>Slick Slider</source>
+				<target state="needs-review-translation">Slick Slider</target>
+			</trans-unit>
+			<trans-unit id="sheet.swiper" approved="yes">
+				<source>Swiper Slider</source>
+				<target state="needs-review-translation">Swiper Slider</target>
+			</trans-unit>
+			<trans-unit id="options.enabled" approved="yes">
+				<source>Enabled</source>
+				<target state="needs-review-translation">Abilitato</target>
+			</trans-unit>
+			<trans-unit id="options.carousel" approved="yes">
+				<source>Carousel</source>
+				<target state="needs-review-translation">Carosello</target>
+			</trans-unit>
+			<trans-unit id="options.gallery" approved="yes">
+				<source>Gallery</source>
+				<target state="needs-review-translation">Galleria</target>
+			</trans-unit>
+			<trans-unit id="options.horizontal" approved="yes">
+				<source>Horizontal</source>
+				<target state="needs-review-translation">Orizzontale</target>
+			</trans-unit>
+			<trans-unit id="options.vertical" approved="yes">
+				<source>Vertical</source>
+				<target state="needs-review-translation">Verticale</target>
+			</trans-unit>
+			<trans-unit id="options.common.layout" approved="yes">
+				<source>Layout</source>
+				<target state="needs-review-translation">Layout</target>
+			</trans-unit>
+			<trans-unit id="options.common.autoplay" approved="yes">
+				<source>Autoplay</source>
+				<target state="needs-review-translation">Riproduzione automatica</target>
+			</trans-unit>
+			<trans-unit id="options.common.lazyLoad" approved="yes">
+				<source>Lazy load</source>
+				<target state="needs-review-translation">Lazy load</target>
+			</trans-unit>
+			<trans-unit id="options.common.loop" approved="yes">
+				<source>Loop / Carousel</source>
+				<target state="needs-review-translation">Loop / Carosello</target>
+			</trans-unit>
+			<trans-unit id="options.common.autoplaySpeed" approved="yes">
+				<source>Autoplay speed</source>
+				<target state="needs-review-translation">Velocità di riproduzione automatica</target>
+			</trans-unit>
+			<trans-unit id="options.common.top" approved="yes">
+				<source>Top</source>
+				<target state="needs-review-translation">In alto</target>
+			</trans-unit>
+			<trans-unit id="options.common.bottom" approved="yes">
+				<source>Bottom</source>
+				<target state="needs-review-translation">In basso</target>
+			</trans-unit>
+			<trans-unit id="options.common.forward" approved="yes">
+				<source>Forward</source>
+				<target state="needs-review-translation">Avanti</target>
+			</trans-unit>
+			<trans-unit id="options.common.backward" approved="yes">
+				<source>Backward</source>
+				<target state="needs-review-translation">Indietro</target>
+			</trans-unit>
+			<trans-unit id="options.common.vertical" approved="yes">
+				<source>Vertical</source>
+				<target state="needs-review-translation">Verticale</target>
+			</trans-unit>
+			<trans-unit id="options.common.horizontal" approved="yes">
+				<source>Horizontal</source>
+				<target state="needs-review-translation">Orizzontale</target>
+			</trans-unit>
+			<trans-unit id="options.common.animateOut" approved="yes">
+				<source>Outro Animation</source>
+				<target state="needs-review-translation">Animazione in uscita</target>
+			</trans-unit>
+			<trans-unit id="options.common.animateIn" approved="yes">
+				<source>Intro Animation</source>
+				<target state="needs-review-translation">Animazione in entrata</target>
+			</trans-unit>
+			<trans-unit id="options.common.autoHeight" approved="yes">
+				<source>Auto Height</source>
+				<target state="needs-review-translation">Altezza automatica</target>
+			</trans-unit>
+			<trans-unit id="options.common.video" approved="yes">
+				<source>Enable Video</source>
+				<target state="needs-review-translation">Abilita video</target>
+			</trans-unit>
+			<trans-unit id="options.common.touch" approved="yes">
+				<source>Enable Touch Support</source>
+				<target state="needs-review-translation">Abilita supporto touch</target>
+			</trans-unit>
+			<trans-unit id="options.common.animationSpeed" approved="yes">
+				<source>Animation Speed</source>
+				<target state="needs-review-translation">Velocità di animazione</target>
+			</trans-unit>
+			<trans-unit id="pauseText" approved="yes">
+				<source>Pause</source>
+				<target state="needs-review-translation">Pausa</target>
+			</trans-unit>
+			<trans-unit id="playText" approved="yes">
+				<source>Play</source>
+				<target state="needs-review-translation">Riproduci</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item" approved="yes">
+				<source>Slider element</source>
+				<target state="needs-review-translation">Elemento slider</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.title" approved="yes">
+				<source>Title</source>
+				<target state="needs-review-translation">Titolo</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.description" approved="yes">
+				<source>Description</source>
+				<target state="needs-review-translation">Descrizione</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" approved="yes">
+				<source>Image or Video</source>
+				<target state="needs-review-translation">Immagine o video</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textPosition" approved="yes">
+				<source>Text position</source>
+				<target state="needs-review-translation">Posizione del testo</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.link" approved="yes">
+				<source>Link</source>
+				<target state="needs-review-translation">Link</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_left" approved="yes">
+				<source>Left</source>
+				<target state="needs-review-translation">Sinistra</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.textposition_right" approved="yes">
+				<source>Right</source>
+				<target state="needs-review-translation">Destra</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleClass" approved="yes">
+				<source>Text style class</source>
+				<target state="needs-review-translation">Classe di stile del testo</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" approved="yes">
+				<source>Style 1</source>
+				<target state="needs-review-translation">Stile 1</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" approved="yes">
+				<source>Style 2</source>
+				<target state="needs-review-translation">Stile 2</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" approved="yes">
+				<source>Style 3</source>
+				<target state="needs-review-translation">Stile 3</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" approved="yes">
+				<source>Style 4</source>
+				<target state="needs-review-translation">Stile 4</target>
+			</trans-unit>
+			<trans-unit id="addImage" approved="yes">
+				<source>Add image</source>
+				<target state="needs-review-translation">Aggiungi immagine</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
+				<source>WS slider preset</source>
+				<target state="needs-review-translation">Preset slider WS</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
+				<source>Name</source>
+				<target state="needs-review-translation">Nome</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type" approved="yes">
+				<source>Type</source>
+				<target state="needs-review-translation">Tipo</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.bootstrap" approved="yes">
+				<source>Bootstrap</source>
+				<target state="needs-review-translation">Bootstrap</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.flexslider" approved="yes">
+				<source>Flexslider</source>
+				<target state="needs-review-translation">Flexslider</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.slick" approved="yes">
+				<source>Slick slider</source>
+				<target state="needs-review-translation">Slick slider</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.tinyslider" approved="yes">
+				<source>Tiny Slider</source>
+				<target state="needs-review-translation">Tiny Slider</target>
+			</trans-unit>
+			<trans-unit id="tx_wsslider_domain_model_preset.type.swiper" approved="yes">
+				<source>Swiper</source>
+				<target state="needs-review-translation">Swiper</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

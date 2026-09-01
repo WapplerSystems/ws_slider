@@ -1,12 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="cs">
-    <header/>
-    <body>
-      <!-- slick slider -->
-      <!-- <trans-unit id="options.customPaging">
-				<source>Custom Paging</source>
-			</trans-unit> -->
-    </body>
-  </file>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="cs">
+		<header/>
+		<body>
+			<trans-unit id="options.accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="needs-review-translation">Ovládací prvky aktivovat</target>
+			</trans-unit>
+			<trans-unit id="options.arrows" approved="yes">
+				<source>Arrows</source>
+				<target state="needs-review-translation">Šipky</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>As Nav For</source>
+				<target state="needs-review-translation">Použít jako navigaci pro jiný slider</target>
+			</trans-unit>
+			<trans-unit id="options.appendArrows" approved="yes">
+				<source>Append Arrows</source>
+				<target state="needs-review-translation">Připojit šipky</target>
+			</trans-unit>
+			<trans-unit id="options.appendDots" approved="yes">
+				<source>Append Dots</source>
+				<target state="needs-review-translation">Připojit tečky</target>
+			</trans-unit>
+			<trans-unit id="options.prevArrow" approved="yes">
+				<source>Prev Arrow</source>
+				<target state="needs-review-translation">Šipka „Předchozí“</target>
+			</trans-unit>
+			<trans-unit id="options.nextArrow" approved="yes">
+				<source>Next Arrow</source>
+				<target state="needs-review-translation">Šipka „Další“</target>
+			</trans-unit>
+			<trans-unit id="options.centerMode" approved="yes">
+				<source>Center Mode</source>
+				<target state="needs-review-translation">Centrovaný režim</target>
+			</trans-unit>
+			<trans-unit id="options.centerPadding" approved="yes">
+				<source>Center Padding</source>
+				<target state="needs-review-translation">Vnitřní odsazení v centrovaném režimu</target>
+			</trans-unit>
+			<trans-unit id="options.cssEase" approved="yes">
+				<source>CSS3 animation Easing</source>
+				<target state="needs-review-translation">Easing CSS3 animace</target>
+			</trans-unit>
+			<trans-unit id="options.dots" approved="yes">
+				<source>Dots</source>
+				<target state="needs-review-translation">Tečková navigace</target>
+			</trans-unit>
+			<trans-unit id="options.dotsClass" approved="yes">
+				<source>Dots Class</source>
+				<target state="needs-review-translation">CSS třída tečkové navigace</target>
+			</trans-unit>
+			<trans-unit id="options.draggable" approved="yes">
+				<source>Draggable</source>
+				<target state="needs-review-translation">Přetahovatelné</target>
+			</trans-unit>
+			<trans-unit id="options.fade" approved="yes">
+				<source>Fade</source>
+				<target state="needs-review-translation">Prolínání</target>
+			</trans-unit>
+			<trans-unit id="options.focusOnSelect" approved="yes">
+				<source>Focus On Select</source>
+				<target state="needs-review-translation">Zaměřit při výběru</target>
+			</trans-unit>
+			<trans-unit id="options.easing" approved="yes">
+				<source>Easing</source>
+				<target state="needs-review-translation">Easing</target>
+			</trans-unit>
+			<trans-unit id="options.edgeFriction" approved="yes">
+				<source>Edge Friction</source>
+				<target state="needs-review-translation">Odpor na okraji</target>
+			</trans-unit>
+			<trans-unit id="options.infinite" approved="yes">
+				<source>Infinite</source>
+				<target state="needs-review-translation">Nekonečné</target>
+			</trans-unit>
+			<trans-unit id="options.initialSlide" approved="yes">
+				<source>Initial Slide</source>
+				<target state="needs-review-translation">Počáteční snímek</target>
+			</trans-unit>
+			<trans-unit id="options.mobileFirst" approved="yes">
+				<source>Mobile First</source>
+				<target state="needs-review-translation">Mobile First</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnFocus" approved="yes">
+				<source>Pause on focus</source>
+				<target state="needs-review-translation">Pozastavit při fokusu</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnHover" approved="yes">
+				<source>Pause on hover</source>
+				<target state="needs-review-translation">Pozastavit při najetí myší</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnDotsHover" approved="yes">
+				<source>Pause on Dots hover</source>
+				<target state="needs-review-translation">Pozastavit při najetí na tečky</target>
+			</trans-unit>
+			<trans-unit id="options.respondTo" approved="yes">
+				<source>Respond To</source>
+				<target state="needs-review-translation">Reagovat na</target>
+			</trans-unit>
+			<trans-unit id="options.rows" approved="yes">
+				<source>Rows</source>
+				<target state="needs-review-translation">Řádky</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerRow" approved="yes">
+				<source>Slides per row</source>
+				<target state="needs-review-translation">Snímků na řádek</target>
+			</trans-unit>
+			<trans-unit id="options.slidesToShow" approved="yes">
+				<source>Slides to show</source>
+				<target state="needs-review-translation">Počet zobrazených snímků</target>
+			</trans-unit>
+			<trans-unit id="options.slidesToScroll" approved="yes">
+				<source>Slides to Scroll</source>
+				<target state="needs-review-translation">Počet snímků k posunu</target>
+			</trans-unit>
+			<trans-unit id="options.speed" approved="yes">
+				<source>Slide/Fade animation speed</source>
+				<target state="needs-review-translation">Rychlost animace posunu/prolnutí</target>
+			</trans-unit>
+			<trans-unit id="options.swipe" approved="yes">
+				<source>Enable swiping</source>
+				<target state="needs-review-translation">Povolit přejetí</target>
+			</trans-unit>
+			<trans-unit id="options.swipeToSlide" approved="yes">
+				<source>Swipe to slide</source>
+				<target state="needs-review-translation">Přejetím na snímek</target>
+			</trans-unit>
+			<trans-unit id="options.touchMove" approved="yes">
+				<source>Touch Move</source>
+				<target state="needs-review-translation">Posun dotykem</target>
+			</trans-unit>
+			<trans-unit id="options.touchThreshold" approved="yes">
+				<source>Touch Threshold</source>
+				<target state="needs-review-translation">Práh dotyku</target>
+			</trans-unit>
+			<trans-unit id="options.useCSS" approved="yes">
+				<source>Enable CSS Transitions</source>
+				<target state="needs-review-translation">Povolit CSS přechody</target>
+			</trans-unit>
+			<trans-unit id="options.useTransform" approved="yes">
+				<source>Enable CSS Transform</source>
+				<target state="needs-review-translation">Povolit CSS transformace</target>
+			</trans-unit>
+			<trans-unit id="options.variableWidth" approved="yes">
+				<source>Variable Width</source>
+				<target state="needs-review-translation">Proměnlivá šířka</target>
+			</trans-unit>
+			<trans-unit id="options.vertical" approved="yes">
+				<source>Vertical slide mode</source>
+				<target state="needs-review-translation">Svislý režim posunu</target>
+			</trans-unit>
+			<trans-unit id="options.verticalSwiping" approved="yes">
+				<source>Vertical swipe mode</source>
+				<target state="needs-review-translation">Svislý režim přejetí</target>
+			</trans-unit>
+			<trans-unit id="options.rtl" approved="yes">
+				<source>Right-to-left slider</source>
+				<target state="needs-review-translation">Slider zprava doleva</target>
+			</trans-unit>
+			<trans-unit id="options.waitForAnimate" approved="yes">
+				<source>Wait for animate</source>
+				<target state="needs-review-translation">Čekat na dokončení animace</target>
+			</trans-unit>
+			<trans-unit id="options.zindex" approved="yes">
+				<source>Z-Index value for slides</source>
+				<target state="needs-review-translation">Hodnota Z-indexu pro snímky</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

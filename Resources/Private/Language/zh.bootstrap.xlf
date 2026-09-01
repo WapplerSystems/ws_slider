@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="zh">
+		<header/>
+		<body>
+			<trans-unit id="sheet.bootstrap" approved="yes">
+				<source>Bootstrap Slider</source>
+				<target state="needs-review-translation">Bootstrap 轮播</target>
+			</trans-unit>
+			<trans-unit id="options.interval" approved="yes">
+				<source>Interval</source>
+				<target state="needs-review-translation">自动播放间隔</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard" approved="yes">
+				<source>Keyboard</source>
+				<target state="needs-review-translation">键盘控制</target>
+			</trans-unit>
+			<trans-unit id="options.pause" approved="yes">
+				<source>Pause</source>
+				<target state="needs-review-translation">悬停暂停</target>
+			</trans-unit>
+			<trans-unit id="options.ride" approved="yes">
+				<source>Ride</source>
+				<target state="needs-review-translation">自动播放</target>
+			</trans-unit>
+			<trans-unit id="options.ride.option.carousel" approved="yes">
+				<source>Carousel</source>
+				<target state="needs-review-translation">轮播</target>
+			</trans-unit>
+			<trans-unit id="options.touch" approved="yes">
+				<source>Touch</source>
+				<target state="needs-review-translation">触摸滑动</target>
+			</trans-unit>
+			<trans-unit id="options.wrap" approved="yes">
+				<source>Wrap</source>
+				<target state="needs-review-translation">循环播放</target>
+			</trans-unit>
+			<trans-unit id="options.control" approved="yes">
+				<source>Show control</source>
+				<target state="needs-review-translation">显示控制按钮</target>
+			</trans-unit>
+			<trans-unit id="options.indicators" approved="yes">
+				<source>Show indicators</source>
+				<target state="needs-review-translation">显示指示器</target>
+			</trans-unit>
+			<trans-unit id="options.title" approved="yes">
+				<source>Show title</source>
+				<target state="needs-review-translation">显示标题</target>
+			</trans-unit>
+			<trans-unit id="options.description" approved="yes">
+				<source>Show description</source>
+				<target state="needs-review-translation">显示描述</target>
+			</trans-unit>
+			<trans-unit id="options.startAt" approved="yes">
+				<source>Start at</source>
+				<target state="needs-review-translation">起始项</target>
+			</trans-unit>
+			<trans-unit id="btn.previous" approved="yes">
+				<source>Previous</source>
+				<target state="needs-review-translation">上一个</target>
+			</trans-unit>
+			<trans-unit id="btn.next" approved="yes">
+				<source>Next</source>
+				<target state="needs-review-translation">下一个</target>
+			</trans-unit>
+			<trans-unit id="btn.more" approved="yes">
+				<source>More</source>
+				<target state="needs-review-translation">更多</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

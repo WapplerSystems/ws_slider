@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ro">
-    <header/>
-    <body>
-
-			
-
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ro">
+		<header/>
+		<body>
+			<trans-unit id="bootstrap.settings.js.startAt.description" approved="yes">
+				<source>The starting slide for the slider, in array notation.</source>
+				<target state="needs-review-translation">Slide-ul de pornire pentru slider, în notație array.</target>
+			</trans-unit>
 		</body>
-  </file>
+	</file>
 </xliff>

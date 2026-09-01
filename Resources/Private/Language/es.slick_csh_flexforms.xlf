@@ -1,56 +1,192 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="es-ES">
-    <header/>
-    <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="es">
+		<header/>
+		<body>
+			<trans-unit id="slick.settings.js.accessibility.description" approved="yes">
+				<source>Enables tabbing and arrow key navigation</source>
+				<target state="needs-review-translation">Activa la navegación por tabulación y teclas de flecha</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.adaptiveHeight.description" approved="yes">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+				<target state="needs-review-translation">Activa el ajuste de altura adaptativo para carruseles horizontales de una sola diapositiva.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.autoplay.description" approved="yes">
+				<source>Enables Autoplay</source>
+				<target state="needs-review-translation">Activa Autoplay</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.autoplaySpeed.description" approved="yes">
+				<source>Autoplay Speed in milliseconds</source>
+				<target state="needs-review-translation">Velocidad de Autoplay en milisegundos</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.arrows.description" approved="yes">
+				<source>Prev/Next Arrows</source>
+				<target state="needs-review-translation">Flechas "Anterior/Siguiente"</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.asNavFor.description" approved="yes">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+				<target state="needs-review-translation">Usar este slider como navegación para otro slider (clase o ID)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.appendArrows.description" approved="yes">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+				<target state="needs-review-translation">Cambiar dónde se insertan las flechas de navegación (Selector, htmlString, Array, Element, objeto jQuery)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.appendDots.description" approved="yes">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+				<target state="needs-review-translation">Cambiar dónde se insertan los puntos de navegación (Selector, htmlString, Array, Element, objeto jQuery)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.prevArrow.description" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+				<target state="needs-review-translation">Permite seleccionar un nodo o personalizar el HTML para la flecha "Anterior".</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.nextArrow.description" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+				<target state="needs-review-translation">Permite seleccionar un nodo o personalizar el HTML para la flecha "Siguiente".</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.centerMode.description" approved="yes">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+				<target state="needs-review-translation">Activa la vista centrada con diapositivas parciales anteriores/siguientes. Debe usarse con un número impar de diapositivas visibles.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.centerPadding.description" approved="yes">
+				<source>Side padding when in center mode (px or %)</source>
+				<target state="needs-review-translation">Padding lateral en el modo centrado (px o %)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.cssEase.description" approved="yes">
+				<source>CSS3 Animation Easing</source>
+				<target state="needs-review-translation">Easing de animación CSS3</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.customPadding.description" approved="yes">
+				<source>Custom paging templates. See source for use example.</source>
+				<target state="needs-review-translation">Plantillas de paginación personalizadas. Consulte el código fuente para ver un ejemplo de uso.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.dots.description" approved="yes">
+				<source>Show dot indicators</source>
+				<target state="needs-review-translation">Mostrar indicadores de puntos</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.dotsClass.description" approved="yes">
+				<source>Class for slide indicator dots container</source>
+				<target state="needs-review-translation">Clase para el contenedor de los puntos indicadores de diapositivas</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.draggable.description" approved="yes">
+				<source>Enable mouse dragging</source>
+				<target state="needs-review-translation">Activa el arrastre con el ratón</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.fade.description" approved="yes">
+				<source>Enable fade</source>
+				<target state="needs-review-translation">Activa el efecto de fundido (fade)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.focusOnSelect.description" approved="yes">
+				<source>Enable focus on selected element (click)</source>
+				<target state="needs-review-translation">Activa el foco en el elemento seleccionado (clic)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.easing.description" approved="yes">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+				<target state="needs-review-translation">Añade easing para jQuery animate. Úsese con librerías de easing o los métodos de easing predeterminados</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.edgeFriction.description" approved="yes">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+				<target state="needs-review-translation">Resistencia al deslizar en los bordes de carruseles no infinitos</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.infinite.description" approved="yes">
+				<source>Infinite loop sliding</source>
+				<target state="needs-review-translation">Deslizamiento en bucle infinito</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.initialSlide.description" approved="yes">
+				<source>Slide to start on</source>
+				<target state="needs-review-translation">Diapositiva inicial</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.lazyLoad.description" approved="yes">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+				<target state="needs-review-translation">Establece la técnica de lazy loading. Acepta 'ondemand' o 'progressive'</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.mobileFirst.description" approved="yes">
+				<source>Responsive slick.settings use mobile first calculation</source>
+				<target state="needs-review-translation">Las configuraciones responsive de slick usan el cálculo mobile first</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnFocus.description" approved="yes">
+				<source>Pause Autoplay On Focus</source>
+				<target state="needs-review-translation">Pausar Autoplay al recibir el foco</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnHover.description" approved="yes">
+				<source>Pause Autoplay On Hover</source>
+				<target state="needs-review-translation">Pausar Autoplay al pasar el ratón</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnDotsHover.description" approved="yes">
+				<source>Pause Autoplay when a dot is hovered</source>
+				<target state="needs-review-translation">Pausar Autoplay al pasar el ratón sobre un punto</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.respondTo.description" approved="yes">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+				<target state="needs-review-translation">Ancho al que responde el objeto responsive. Puede ser 'window', 'slider' o 'min' (el menor de los dos)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.rows.description" approved="yes">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+				<target state="needs-review-translation">Un valor mayor que 1 inicializa el modo cuadrícula. Use slidesPerRow para definir cuántas diapositivas debe haber en cada fila.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesPerRow.description" approved="yes">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+				<target state="needs-review-translation">Con el modo cuadrícula activado mediante la opción rows, define cuántas diapositivas hay en cada fila de la cuadrícula.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesToShow.description" approved="yes">
+				<source># of slides to show</source>
+				<target state="needs-review-translation">Número de diapositivas a mostrar</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesToScroll.description" approved="yes">
+				<source># of slides to scroll</source>
+				<target state="needs-review-translation">Número de diapositivas a desplazar</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.speed.description" approved="yes">
+				<source>Slide/Fade animation speed</source>
+				<target state="needs-review-translation">Velocidad de la animación de deslizamiento/fundido</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.swipe.description" approved="yes">
+				<source>Enable swiping</source>
+				<target state="needs-review-translation">Activa el deslizamiento (swipe)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.swipeToSlide.description" approved="yes">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+				<target state="needs-review-translation">Permite arrastrar o deslizar directamente hasta una diapositiva sin importar slidesToScroll</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.touchMove.description" approved="yes">
+				<source>Enable slide motion with touch</source>
+				<target state="needs-review-translation">Activa el movimiento de diapositivas con el tacto</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.touchThreshold.description" approved="yes">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+				<target state="needs-review-translation">Para avanzar las diapositivas, el usuario debe deslizar una longitud de (1/touchThreshold) * el ancho del slider</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.useCSS.description" approved="yes">
+				<source>Enable/Disable CSS Transitions</source>
+				<target state="needs-review-translation">Activar/Desactivar las transiciones CSS</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.useTransform.description" approved="yes">
+				<source>Enable/Disable CSS Transforms</source>
+				<target state="needs-review-translation">Activar/Desactivar las transformaciones CSS</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.variableWidth.description" approved="yes">
+				<source>Variable width slides</source>
+				<target state="needs-review-translation">Diapositivas de ancho variable</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.vertical.description" approved="yes">
+				<source>Vertical slide mode</source>
+				<target state="needs-review-translation">Modo de deslizamiento vertical</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.verticalSwiping.description" approved="yes">
+				<source>Vertical swipe mode</source>
+				<target state="needs-review-translation">Modo de deslizamiento vertical (swipe)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.rtl.description" approved="yes">
+				<source>Change the slider's direction to become right-to-left</source>
+				<target state="needs-review-translation">Cambiar la dirección del slider a derecha-a-izquierda</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.waitForAnimate.description" approved="yes">
+				<source>Ignores requests to advance the slide while animating</source>
+				<target state="needs-review-translation">Ignora las solicitudes de avanzar de diapositiva mientras se está animando</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.zindex.description" approved="yes">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+				<target state="needs-review-translation">Establece los valores de z-index para las diapositivas, útil para IE9 y versiones anteriores</target>
+			</trans-unit>
 		</body>
-  </file>
+	</file>
 </xliff>
