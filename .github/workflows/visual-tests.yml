@@ -1,15 +1,12 @@
 name: Visual tests
 
+# Deliberately not triggered by pull_request: the Swiper update PRs are opened by
+# github-actions[bot], and with the repository's "first time contributors" approval
+# policy every such run stays queued as "action_required" and never executes. The
+# suite already runs inside "Update Swiper" against the new bundle before the PR is
+# opened - its result is quoted in the PR body - so a second, permanently blocked run
+# added nothing but noise. Use the manual dispatch below to check a branch by hand.
 on:
-  pull_request:
-    paths:
-      - 'Resources/Public/JavaScript/Swiper/**'
-      - 'Resources/Public/CSS/Swiper/**'
-      - 'Resources/Private/Partials/Swiper.html'
-      - 'Resources/Private/Partials/Item/Swiper.html'
-      - 'Classes/Factory/SwiperFactory.php'
-      - 'Tests/Visual/**'
-      - '.github/workflows/visual-tests.yml'
   workflow_dispatch:
     inputs:
       update_snapshots:
