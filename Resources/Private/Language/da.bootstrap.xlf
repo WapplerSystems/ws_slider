@@ -4,6 +4,34 @@
     <header/>
     <body>
       <!-- sheets -->
+      <trans-unit id="options.interval" approved="yes">
+        <source>Interval</source>
+        <target state="final">Interval</target>
+      </trans-unit>
+      <trans-unit id="options.ride.option.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Karrusel</target>
+      </trans-unit>
+      <trans-unit id="options.wrap" approved="yes">
+        <source>Wrap</source>
+        <target state="final">Ombryd</target>
+      </trans-unit>
+      <trans-unit id="options.startAt" approved="yes">
+        <source>Start at</source>
+        <target state="final">Start ved</target>
+      </trans-unit>
+      <trans-unit id="btn.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Forrige</target>
+      </trans-unit>
+      <trans-unit id="btn.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Næste</target>
+      </trans-unit>
+      <trans-unit id="btn.more" approved="yes">
+        <source>More</source>
+        <target state="final">Mere</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
