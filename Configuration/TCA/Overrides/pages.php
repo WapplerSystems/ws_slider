@@ -31,3 +31,9 @@ ExtensionManagementUtility::registerPageTSConfigFile(
 
 /* Layouts */
 
+ExtensionManagementUtility::registerPageTSConfigFile(
+    'ws_slider',
+    'Configuration/TsConfig/Page/Layout/Cards.tsconfig',
+    'Layout: Cards (Tiny Slider)'
+);
+

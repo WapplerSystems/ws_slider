@@ -84,32 +84,49 @@ class ItemsProcFunc
     protected function reduceTemplateLayouts($templateLayouts, $currentColPos, $currentRenderer): array
     {
         $currentColPos = (int)$currentColPos;
+        $currentRenderer = strtolower(trim((string)$currentRenderer));
+
         $restrictions = [];
         $allLayouts = [];
+
+        // A layout's sub configuration ("Cards.renderers = tinyslider") arrives as its own
+        // entry, with the trailing dot still on the identifier and the settings as an array.
         foreach ($templateLayouts as $key => $layout) {
-            if (is_array($layout[0])) {
-                if (isset($layout[0]['allowedColPos']) && \str_ends_with($layout[1], '.')) {
-                    $layoutKey = substr($layout[1], 0, -1);
-                    $restrictions[$layoutKey] = GeneralUtility::intExplode(',', $layout[0]['allowedColPos'], true);
+            if (is_array($layout[0] ?? null)) {
+                if (str_ends_with((string)($layout[1] ?? ''), '.')) {
+                    $restrictions[substr((string)$layout[1], 0, -1)] = $layout[0];
                 }
             } else {
                 $allLayouts[$key] = $layout;
             }
         }
-        if (!empty($restrictions)) {
-            foreach ($restrictions as $restrictedIdentifier => $restrictedColPosList) {
-                if (!in_array($currentColPos, $restrictedColPosList, true)) {
-                    unset($allLayouts[$restrictedIdentifier]);
+
+        // $allLayouts is keyed by the position in the list, the restrictions by the layout
+        // identifier - so they have to be looked up via $layout[1], not via the array key.
+        foreach ($allLayouts as $key => $layout) {
+            $restriction = $restrictions[(string)($layout[1] ?? '')] ?? null;
+            if ($restriction === null) {
+                continue;
+            }
+
+            if (isset($restriction['allowedColPos'])) {
+                $allowedColPos = GeneralUtility::intExplode(',', (string)$restriction['allowedColPos'], true);
+                if (!in_array($currentColPos, $allowedColPos, true)) {
+                    unset($allLayouts[$key]);
+                    continue;
+                }
+            }
+
+            if (isset($restriction['renderers']) && $currentRenderer !== '') {
+                $allowedRenderers = array_map(
+                    'strtolower',
+                    GeneralUtility::trimExplode(',', (string)$restriction['renderers'], true)
+                );
+                if (!in_array($currentRenderer, $allowedRenderers, true)) {
+                    unset($allLayouts[$key]);
                 }
             }
         }
-        /* renderer check */
-        foreach ($templateLayouts as $key => $layout) {
-            if (isset($layout[3]['renderers']) && $currentRenderer !== null && !str_contains($layout[3]['renderers'], $currentRenderer)) {
-                unset($allLayouts[$key]);
-            }
-        }
-
 
         return $allLayouts;
     }
