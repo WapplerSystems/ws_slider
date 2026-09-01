@@ -4,6 +4,22 @@
     <header/>
     <body>
       <!-- sheets -->
+      <trans-unit id="sheet.flexslider" approved="yes">
+        <source>Flex Slider</source>
+        <target state="final">Flex Slider</target>
+      </trans-unit>
+      <trans-unit id="sheet.usability" approved="yes">
+        <source>Usability</source>
+        <target state="final">Brugervenlighed</target>
+      </trans-unit>
+      <trans-unit id="sheet.primaryControls" approved="yes">
+        <source>Primary Controls</source>
+        <target state="final">Primære kontroller</target>
+      </trans-unit>
+      <trans-unit id="sheet.secondaryNavigation" approved="yes">
+        <source>Secondary Navigation</source>
+        <target state="final">Sekundær navigation</target>
+      </trans-unit>
       <!-- flexslider general settings -->
       <!-- Usability Features -->
       <!-- Primary Controls -->
