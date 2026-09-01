@@ -134,8 +134,72 @@
         <source>Vertical</source>
         <target state="final">Lodret</target>
       </trans-unit>
+      <trans-unit id="options.common.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Layout</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoplay" approved="yes">
+        <source>Autoplay</source>
+        <target state="final">Autostart</target>
+      </trans-unit>
+      <trans-unit id="options.common.top" approved="yes">
+        <source>Top</source>
+        <target state="final">Top</target>
+      </trans-unit>
+      <trans-unit id="options.common.bottom" approved="yes">
+        <source>Bottom</source>
+        <target state="final">Bund</target>
+      </trans-unit>
+      <trans-unit id="options.common.vertical" approved="yes">
+        <source>Vertical</source>
+        <target state="final">Lodret</target>
+      </trans-unit>
+      <trans-unit id="options.common.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Horisontal</target>
+      </trans-unit>
       <!-- Labels -->
+      <trans-unit id="playText" approved="yes">
+        <source>Play</source>
+        <target state="final">Afspil</target>
+      </trans-unit>
       <!-- item labels -->
+      <trans-unit id="tx_wsslider_domain_model_item.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description" approved="yes">
+        <source>Description</source>
+        <target state="final">Beskrivelse</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Link</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left" approved="yes">
+        <source>Left</source>
+        <target state="final">Venstre</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right" approved="yes">
+        <source>Right</source>
+        <target state="final">Højre</target>
+      </trans-unit>
+      <trans-unit id="addImage" approved="yes">
+        <source>Add image</source>
+        <target state="final">Tilføj billede</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Navn</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Type</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.bootstrap" approved="yes">
+        <source>Bootstrap</source>
+        <target state="final">Bootstrap</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
