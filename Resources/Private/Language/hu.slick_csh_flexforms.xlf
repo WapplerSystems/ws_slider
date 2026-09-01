@@ -1,56 +1,192 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="hu">
-    <header/>
-    <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="hu">
+		<header/>
+		<body>
+			<trans-unit id="slick.settings.js.accessibility.description" approved="yes">
+				<source>Enables tabbing and arrow key navigation</source>
+				<target state="needs-review-translation">Tabulátoros és nyílbillentyűs navigáció engedélyezése</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.adaptiveHeight.description" approved="yes">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+				<target state="needs-review-translation">Adaptív magasság engedélyezése egyetlen elem szélességű vízszintes karusszeleknél.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.autoplay.description" approved="yes">
+				<source>Enables Autoplay</source>
+				<target state="needs-review-translation">Autoplay engedélyezése</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.autoplaySpeed.description" approved="yes">
+				<source>Autoplay Speed in milliseconds</source>
+				<target state="needs-review-translation">Autoplay sebessége ezredmásodpercben</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.arrows.description" approved="yes">
+				<source>Prev/Next Arrows</source>
+				<target state="needs-review-translation">„Előző/Következő” nyilak</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.asNavFor.description" approved="yes">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+				<target state="needs-review-translation">A csúszkát másik csúszka navigációjaként használja (osztály- vagy ID-név)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.appendArrows.description" approved="yes">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+				<target state="needs-review-translation">Megadja, hova legyenek beágyazva a navigációs nyilak (Selector, htmlString, Array, Element, jQuery object)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.appendDots.description" approved="yes">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+				<target state="needs-review-translation">Megadja, hova legyenek beágyazva a navigációs pontok (Selector, htmlString, Array, Element, jQuery object)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.prevArrow.description" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+				<target state="needs-review-translation">Lehetővé teszi egy csomópont kiválasztását vagy az „Előző” nyíl HTML-jének testreszabását.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.nextArrow.description" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+				<target state="needs-review-translation">Lehetővé teszi egy csomópont kiválasztását vagy a „Következő” nyíl HTML-jének testreszabását.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.centerMode.description" approved="yes">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+				<target state="needs-review-translation">Középre igazított nézet engedélyezése részleges előző/következő elemekkel. Páratlan számú látható elemmel (slidesToShow) érdemes használni.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.centerPadding.description" approved="yes">
+				<source>Side padding when in center mode (px or %)</source>
+				<target state="needs-review-translation">Oldalsó padding középre igazított módban (px vagy %)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.cssEase.description" approved="yes">
+				<source>CSS3 Animation Easing</source>
+				<target state="needs-review-translation">CSS3 animáció easing</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.customPadding.description" approved="yes">
+				<source>Custom paging templates. See source for use example.</source>
+				<target state="needs-review-translation">Egyéni lapozási sablonok. Példa a forráskódban.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.dots.description" approved="yes">
+				<source>Show dot indicators</source>
+				<target state="needs-review-translation">Pont jelölők megjelenítése</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.dotsClass.description" approved="yes">
+				<source>Class for slide indicator dots container</source>
+				<target state="needs-review-translation">A diajelölő pontok konténerének osztálya</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.draggable.description" approved="yes">
+				<source>Enable mouse dragging</source>
+				<target state="needs-review-translation">Egérrel való húzás engedélyezése</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.fade.description" approved="yes">
+				<source>Enable fade</source>
+				<target state="needs-review-translation">Áttűnés (fade) engedélyezése</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.focusOnSelect.description" approved="yes">
+				<source>Enable focus on selected element (click)</source>
+				<target state="needs-review-translation">Fókusz engedélyezése a kiválasztott elemen (kattintás)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.easing.description" approved="yes">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+				<target state="needs-review-translation">Easing hozzáadása a jQuery animate-hoz. Easing könyvtárakkal vagy alapértelmezett easing metódusokkal használható.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.edgeFriction.description" approved="yes">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+				<target state="needs-review-translation">Ellenállás nem végtelen karusszelek széleinél való húzáskor</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.infinite.description" approved="yes">
+				<source>Infinite loop sliding</source>
+				<target state="needs-review-translation">Végtelen ciklusú csúsztatás</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.initialSlide.description" approved="yes">
+				<source>Slide to start on</source>
+				<target state="needs-review-translation">Kezdő dia</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.lazyLoad.description" approved="yes">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+				<target state="needs-review-translation">Lazy loading technika beállítása. Értéke 'ondemand' vagy 'progressive' lehet.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.mobileFirst.description" approved="yes">
+				<source>Responsive slick.settings use mobile first calculation</source>
+				<target state="needs-review-translation">A reszponzív beállítások mobile first elv alapján számítódnak</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnFocus.description" approved="yes">
+				<source>Pause Autoplay On Focus</source>
+				<target state="needs-review-translation">Autoplay szüneteltetése fókusznál</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnHover.description" approved="yes">
+				<source>Pause Autoplay On Hover</source>
+				<target state="needs-review-translation">Autoplay szüneteltetése hover esetén</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnDotsHover.description" approved="yes">
+				<source>Pause Autoplay when a dot is hovered</source>
+				<target state="needs-review-translation">Autoplay szüneteltetése, ha egy pont fölé viszik az egeret</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.respondTo.description" approved="yes">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+				<target state="needs-review-translation">A szélesség, amire a reszponzív objektum reagál. Értéke 'window', 'slider' vagy 'min' lehet (a kettő közül a kisebb).</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.rows.description" approved="yes">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+				<target state="needs-review-translation">1-nél nagyobb érték esetén rács mód aktiválódik. A slidesPerRow-val adható meg, hány elem legyen soronként.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesPerRow.description" approved="yes">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+				<target state="needs-review-translation">A rows opcióval aktivált rács módban ez adja meg, hány elem legyen egy sorban.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesToShow.description" approved="yes">
+				<source># of slides to show</source>
+				<target state="needs-review-translation">Látható elemek száma</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesToScroll.description" approved="yes">
+				<source># of slides to scroll</source>
+				<target state="needs-review-translation">Egyszerre görgetett elemek száma</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.speed.description" approved="yes">
+				<source>Slide/Fade animation speed</source>
+				<target state="needs-review-translation">A diaváltás/áttűnés animáció sebessége</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.swipe.description" approved="yes">
+				<source>Enable swiping</source>
+				<target state="needs-review-translation">Húzás engedélyezése</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.swipeToSlide.description" approved="yes">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+				<target state="needs-review-translation">Lehetővé teszi, hogy a felhasználó a slidesToScroll-tól függetlenül közvetlenül egy diára húzzon.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.touchMove.description" approved="yes">
+				<source>Enable slide motion with touch</source>
+				<target state="needs-review-translation">Csúsztatás engedélyezése érintéssel</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.touchThreshold.description" approved="yes">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+				<target state="needs-review-translation">A diaváltáshoz a felhasználónak a csúszka szélességének (1/touchThreshold)-szorosát kell elhúznia.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.useCSS.description" approved="yes">
+				<source>Enable/Disable CSS Transitions</source>
+				<target state="needs-review-translation">CSS átmenetek (Transitions) engedélyezése/tiltása</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.useTransform.description" approved="yes">
+				<source>Enable/Disable CSS Transforms</source>
+				<target state="needs-review-translation">CSS transformok engedélyezése/tiltása</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.variableWidth.description" approved="yes">
+				<source>Variable width slides</source>
+				<target state="needs-review-translation">Változó szélességű elemek</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.vertical.description" approved="yes">
+				<source>Vertical slide mode</source>
+				<target state="needs-review-translation">Függőleges dia mód</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.verticalSwiping.description" approved="yes">
+				<source>Vertical swipe mode</source>
+				<target state="needs-review-translation">Függőleges húzás mód</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.rtl.description" approved="yes">
+				<source>Change the slider's direction to become right-to-left</source>
+				<target state="needs-review-translation">A csúszka irányának jobbról balra állítása</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.waitForAnimate.description" approved="yes">
+				<source>Ignores requests to advance the slide while animating</source>
+				<target state="needs-review-translation">Az animáció közbeni diaváltási kérések figyelmen kívül hagyása</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.zindex.description" approved="yes">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+				<target state="needs-review-translation">A diák zIndex értékének beállítása, IE9 és régebbi verziókhoz hasznos</target>
+			</trans-unit>
 		</body>
-  </file>
+	</file>
 </xliff>

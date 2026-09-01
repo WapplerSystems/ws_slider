@@ -1,430 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
 		<header/>
 		<body>
-			<trans-unit id="options.accessibility">
+			<trans-unit id="options.accessibility" approved="yes">
 				<source>Accessibility</source>
+				<target state="needs-review-translation">Barrierefreiheit</target>
 			</trans-unit>
-			<trans-unit id="options.arrows">
+			<trans-unit id="options.arrows" approved="yes">
 				<source>Arrows</source>
+				<target state="needs-review-translation">Pfeile</target>
 			</trans-unit>
-			<trans-unit id="options.asNavFor">
+			<trans-unit id="options.asNavFor" approved="yes">
 				<source>As Nav For</source>
+				<target state="needs-review-translation">Als Navigation für</target>
 			</trans-unit>
-			<trans-unit id="options.appendArrows">
+			<trans-unit id="options.appendArrows" approved="yes">
 				<source>Append Arrows</source>
+				<target state="needs-review-translation">Pfeile anhängen</target>
 			</trans-unit>
-			<trans-unit id="options.appendDots">
+			<trans-unit id="options.appendDots" approved="yes">
 				<source>Append Dots</source>
+				<target state="needs-review-translation">Punkte anhängen</target>
 			</trans-unit>
-			<trans-unit id="options.prevArrow">
+			<trans-unit id="options.prevArrow" approved="yes">
 				<source>Prev Arrow</source>
+				<target state="needs-review-translation">Zurück-Pfeil</target>
 			</trans-unit>
-			<trans-unit id="options.nextArrow">
+			<trans-unit id="options.nextArrow" approved="yes">
 				<source>Next Arrow</source>
+				<target state="needs-review-translation">Weiter-Pfeil</target>
 			</trans-unit>
-			<trans-unit id="options.centerMode">
+			<trans-unit id="options.centerMode" approved="yes">
 				<source>Center Mode</source>
+				<target state="needs-review-translation">Zentrierter Modus</target>
 			</trans-unit>
-			<trans-unit id="options.centerPadding">
+			<trans-unit id="options.centerPadding" approved="yes">
 				<source>Center Padding</source>
+				<target state="needs-review-translation">Innenabstand Mitte</target>
 			</trans-unit>
-			<trans-unit id="options.cssEase">
+			<trans-unit id="options.cssEase" approved="yes">
 				<source>CSS3 animation Easing</source>
+				<target state="needs-review-translation">CSS3-Animation Easing</target>
 			</trans-unit>
-
-			<trans-unit id="options.a11y.nextSlideMessage">
+			<trans-unit id="options.effect" approved="yes">
+				<source>Effect</source>
+				<target state="needs-review-translation">Effekt</target>
+			</trans-unit>
+			<trans-unit id="options.setWrapperSize" approved="yes">
+				<source>setWrapperSize</source>
+				<target state="needs-review-translation">Wrapper-Größe setzen</target>
+			</trans-unit>
+			<trans-unit id="options.height" approved="yes">
+				<source>Height</source>
+				<target state="needs-review-translation">Höhe</target>
+			</trans-unit>
+			<trans-unit id="options.width" approved="yes">
+				<source>Width</source>
+				<target state="needs-review-translation">Breite</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">Richtung</target>
+			</trans-unit>
+			<trans-unit id="options.customClasses" approved="yes">
+				<source>Additional CSS classes</source>
+				<target state="needs-review-translation">Zusätzliche CSS-Klassen</target>
+			</trans-unit>
+			<trans-unit id="options.loop" approved="yes">
+				<source>Loop</source>
+				<target state="needs-review-translation">Endlosschleife</target>
+			</trans-unit>
+			<trans-unit id="options.loopAddBlankSlides" approved="yes">
+				<source>Add blank slides to loop</source>
+				<target state="needs-review-translation">Leere Slides zur Schleife hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="options.loopAdditionalSlides" approved="yes">
+				<source>Loop additional slides</source>
+				<target state="needs-review-translation">Zusätzliche Slides in Schleife</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupAuto" approved="yes">
+				<source>Slides per group auto</source>
+				<target state="needs-review-translation">Slides pro Gruppe automatisch</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupSkip" approved="yes">
+				<source>Slides per group skip</source>
+				<target state="needs-review-translation">Slides pro Gruppe überspringen</target>
+			</trans-unit>
+			<trans-unit id="options.loopPreventsSliding" approved="yes">
+				<source>Prevents sliding in loop</source>
+				<target state="needs-review-translation">Gleiten in der Schleife verhindern</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.nextSlideMessage" approved="yes">
 				<source>Next slide</source>
-				<target>Gehe weiter</target>
+				<target state="final">Gehe weiter</target>
 			</trans-unit>
-			<trans-unit id="options.a11y.prevSlideMessage">
+			<trans-unit id="options.a11y.prevSlideMessage" approved="yes">
 				<source>Previous slide</source>
-				<target>Gehe zurück</target>
+				<target state="final">Gehe zurück</target>
 			</trans-unit>
-			<trans-unit id="options.a11y.firstSlideMessage">
+			<trans-unit id="options.a11y.firstSlideMessage" approved="yes">
 				<source>This is the first slide</source>
-				<target>Das ist die erste Seite</target>
+				<target state="final">Das ist die erste Seite</target>
 			</trans-unit>
-			<trans-unit id="options.a11y.lastSlideMessage">
+			<trans-unit id="options.a11y.lastSlideMessage" approved="yes">
 				<source>This is the last slide</source>
-				<target>Das ist die letzte Seite</target>
+				<target state="final">Das ist die letzte Seite</target>
 			</trans-unit>
-			<trans-unit id="options.a11y.paginationBulletMessage">
+			<trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
 				<source>Go to slide {{index}}</source>
-				<target>Gehe zur Seite {{index}}</target>
+				<target state="final">Gehe zur Seite {{index}}</target>
 			</trans-unit>
-			<trans-unit id="options.a11y.slideLabelMessage">
+			<trans-unit id="options.a11y.slideLabelMessage" approved="yes">
 				<source>{{index}} / {{slidesLength}}</source>
-				<target>{{index}} / {{slidesLength}}</target>
-			</trans-unit>
-			<trans-unit id="options.navigation.addIcons" xml:space="preserve">
-				<source>SVG-Icons zu Navigationsbuttons hinzufügen</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.disabledClass" xml:space="preserve">
-				<source>CSS-Klassenname, wenn Navigation-Button deaktiviert ist</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.enabled" xml:space="preserve">
-				<source>Navigation aktivieren/deaktivieren (Breakpoint-Unterstützung)</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.hiddenClass" xml:space="preserve">
-				<source>CSS-Klassenname, wenn Navigation-Button ausgeblendet ist</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.hideOnClick" xml:space="preserve">
-				<source>Navigation-Buttons nach Klick auf den Slider ein-/ausblenden</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.lockClass" xml:space="preserve">
-				<source>CSS-Klassenname, wenn Navigation-Button gesperrt ist</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve">
-				<source>CSS-Klassenname am Swiper-Container, wenn Navigation durch Breakpoint deaktiviert ist</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.nextEl" xml:space="preserve">
-				<source>CSS-Selektor oder HTML-Element für den Weiter-Button</source>
-			</trans-unit>
-			<trans-unit id="options.navigation.prevEl" xml:space="preserve">
-				<source>CSS-Selektor oder HTML-Element für den Zurück-Button</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve">
-				<source>CSS-Klassenname der aktuell aktiven Paginierungs-Bullet</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.bulletClass" xml:space="preserve">
-				<source>CSS-Klassenname einer einzelnen Paginierungs-Bullet</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.bulletElement" xml:space="preserve">
-				<source>HTML-Tag für einzelne Paginierungs-Bullet (nur Typ bullets)</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.clickable" xml:space="preserve">
-				<source>Klick auf Paginierungs-Bullet wechselt Slide (nur Typ bullets)</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.clickableClass" xml:space="preserve">
-				<source>CSS-Klassenname, wenn Paginierung klickbar ist</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.currentClass" xml:space="preserve">
-				<source>CSS-Klassenname des Elements mit aktuellem Index bei Fraction-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.dynamicBullets" xml:space="preserve">
-				<source>Nur wenige Bullets gleichzeitig anzeigen (bei vielen Slides)</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve">
-				<source>Anzahl der sichtbaren Haupt-Bullets bei aktivem dynamicBullets</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.el" xml:space="preserve">
-				<source>CSS-Selektor oder HTML-Element des Containers für die Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.enabled" xml:space="preserve">
-				<source>Paginierung aktivieren/deaktivieren (Breakpoint-Unterstützung)</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve">
-				<source>Formatfunktion für aktuellen Wert bei Fraction-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve">
-				<source>Formatfunktion für Gesamtwert bei Fraction-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.hiddenClass" xml:space="preserve">
-				<source>CSS-Klassenname, wenn Paginierung inaktiv ist</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.hideOnClick" xml:space="preserve">
-				<source>Paginierungs-Container nach Klick auf Slider ein-/ausblenden</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.horizontalClass" xml:space="preserve">
-				<source>CSS-Klassenname für horizontale Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.lockClass" xml:space="preserve">
-				<source>CSS-Klassenname, wenn Paginierung deaktiviert ist</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.modifierClass" xml:space="preserve">
-				<source>Präfix für Modifier-CSS-Klassenname der Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve">
-				<source>CSS-Klassenname am Swiper-Container und Paginierung, wenn durch Breakpoint deaktiviert</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve">
-				<source>CSS-Klassenname des Progressbar-Füll-Elements</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve">
-				<source>Progressbar entgegengesetzt zur Swiper-Richtung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve">
-				<source>CSS-Klassenname der entgegengesetzten Progressbar</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.renderBullet" xml:space="preserve">
-				<source>Eigene Funktion für Bullets (nur Typ bullets)</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.renderCustom" xml:space="preserve">
-				<source>Eigene Funktion für Custom-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.renderFraction" xml:space="preserve">
-				<source>Eigene Funktion für Fraction-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.renderProgressbar" xml:space="preserve">
-				<source>Eigene Funktion für Progressbar-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.totalClass" xml:space="preserve">
-				<source>CSS-Klassenname für Gesamtzahl-Element bei Fraction-Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.type" xml:space="preserve">
-				<source>Typ der Paginierung (bullets, fraction, progressbar, custom)</source>
-			</trans-unit>
-			<trans-unit id="options.pagination.verticalClass" xml:space="preserve">
-				<source>CSS-Klassenname für vertikale Paginierung</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.dragClass" xml:space="preserve">
-				<source>CSS-Klasse des scrollbar-drag Elements</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.dragSize" xml:space="preserve">
-				<source>Größe des scrollbar-drag Elements in px</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.draggable" xml:space="preserve">
-				<source>Draggable Scrollbar aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.el" xml:space="preserve">
-				<source>CSS-Selektor oder HTML-Element des Containers für die Scrollbar</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.enabled" xml:space="preserve">
-				<source>Scrollbar aktivieren/deaktivieren (Breakpoint-Unterstützung)</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.hide" xml:space="preserve">
-				<source>Scrollbar nach Interaktion automatisch ausblenden</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve">
-				<source>CSS-Klassenname für horizontale Scrollbar</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.lockClass" xml:space="preserve">
-				<source>Zusätzliche CSS-Klasse, wenn Scrollbar deaktiviert ist</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve">
-				<source>CSS-Klassenname am Swiper-Container und Scrollbar, wenn durch Breakpoint deaktiviert</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve">
-				<source>Slider-Position beim Loslassen der Scrollbar auf Slide snappen</source>
-			</trans-unit>
-			<trans-unit id="options.scrollbar.verticalClass" xml:space="preserve">
-				<source>CSS-Klassenname für vertikale Scrollbar</source>
-			</trans-unit>
-			<trans-unit id="options.autoplay.delay" xml:space="preserve">
-				<source>Verzögerung zwischen Übergängen (in ms)</source>
-			</trans-unit>
-			<trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve">
-				<source>Autoplay bei Interaktion deaktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve">
-				<source>Autoplay bei Mouseover pausieren</source>
-			</trans-unit>
-			<trans-unit id="options.autoplay.reverseDirection" xml:space="preserve">
-				<source>Autoplay in umgekehrter Richtung</source>
-			</trans-unit>
-			<trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve">
-				<source>Autoplay beim letzten Slide stoppen</source>
-			</trans-unit>
-			<trans-unit id="options.autoplay.waitForTransition" xml:space="preserve">
-				<source>Warte auf Transition vor nächstem Autoplay</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.enabled" xml:space="preserve">
-				<source>Free Mode aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve">
-				<source>Minimale Touchmove-Geschwindigkeit für Free Mode Momentum</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.momentum" xml:space="preserve">
-				<source>Momentum im Free Mode aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.momentumBounce" xml:space="preserve">
-				<source>Momentum-Bounce im Free Mode aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve">
-				<source>Momentum-Bounce-Verhältnis</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.momentumRatio" xml:space="preserve">
-				<source>Momentum-Verhältnis</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve">
-				<source>Momentum-Geschwindigkeitsverhältnis</source>
-			</trans-unit>
-			<trans-unit id="options.freeMode.sticky" xml:space="preserve">
-				<source>Snap zu Slides im Free Mode</source>
-			</trans-unit>
-			<trans-unit id="options.grid.fill" xml:space="preserve">
-				<source>Wie sollen Slides die Zeilen füllen (spaltenweise oder zeilenweise)</source>
-			</trans-unit>
-			<trans-unit id="options.grid.rows" xml:space="preserve">
-				<source>Anzahl der Slide-Zeilen (Multirow-Layout)</source>
-			</trans-unit>
-			<trans-unit id="options.parallax.enabled" xml:space="preserve">
-				<source>Parallax-Elemente im Slider aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.fadeEffect.crossFade" xml:space="preserve">
-				<source>Aktiviert Slide Crossfade</source>
-			</trans-unit>
-			<trans-unit id="options.coverflowEffect.depth" xml:space="preserve">
-				<source>Tiefenversatz in px (Slides auf Z-Achse)</source>
-			</trans-unit>
-			<trans-unit id="options.coverflowEffect.modifier" xml:space="preserve">
-				<source>Effekt-Multiplikator</source>
-			</trans-unit>
-			<trans-unit id="options.coverflowEffect.rotate" xml:space="preserve">
-				<source>Slide-Rotation in Grad</source>
-			</trans-unit>
-			<trans-unit id="options.coverflowEffect.scale" xml:space="preserve">
-				<source>Slide-Skalierungseffekt</source>
-			</trans-unit>
-			<trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve">
-				<source>Aktiviert Slide-Schatten</source>
-			</trans-unit>
-			<trans-unit id="options.coverflowEffect.stretch" xml:space="preserve">
-				<source>Abstand zwischen Slides (px oder %)</source>
-			</trans-unit>
-			<trans-unit id="options.flipEffect.limitRotation" xml:space="preserve">
-				<source>Begrenze die Rotation der Rand-Slides</source>
-			</trans-unit>
-			<trans-unit id="options.flipEffect.slideShadows" xml:space="preserve">
-				<source>Aktiviert Slide-Schatten</source>
-			</trans-unit>
-			<trans-unit id="options.cubeEffect.shadow" xml:space="preserve">
-				<source>Aktiviert Haupt-Slider-Schatten</source>
-			</trans-unit>
-			<trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve">
-				<source>Haupt-Schatten Offset in px</source>
-			</trans-unit>
-			<trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve">
-				<source>Haupt-Schatten Skalierungsfaktor</source>
-			</trans-unit>
-			<trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve">
-				<source>Aktiviert Slide-Schatten</source>
-			</trans-unit>
-			<trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve">
-				<source>Versatz pro Slide (in px)</source>
-			</trans-unit>
-			<trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve">
-				<source>Rotationswinkel pro Slide (in Grad)</source>
-			</trans-unit>
-			<trans-unit id="options.cardsEffect.rotate" xml:space="preserve">
-				<source>Kartenrotation aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve">
-				<source>Aktiviert Slide-Schatten</source>
-			</trans-unit>
-			<trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve">
-				<source>Begrenze Progress/Offset auf Anzahl der Seiten-Slides</source>
-			</trans-unit>
-			<trans-unit id="options.creativeEffect.next" xml:space="preserve">
-				<source>Transformationen für nächsten Slide</source>
-			</trans-unit>
-			<trans-unit id="options.creativeEffect.perspective" xml:space="preserve">
-				<source>3D-Perspektive für eigene Transformationen aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.creativeEffect.prev" xml:space="preserve">
-				<source>Transformationen für vorherigen Slide</source>
-			</trans-unit>
-			<trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve">
-				<source>Transformationen und Opazität multiplizieren</source>
-			</trans-unit>
-			<trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve">
-				<source>Schatten-Opazität pro Slide nach limitProgress aufteilen</source>
-			</trans-unit>
-			<trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve">
-				<source>Automatischer Scroll-Offset für Thumbnails</source>
-			</trans-unit>
-			<trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve">
-				<source>Mehrere aktive Thumbnail-Slides erlauben</source>
-			</trans-unit>
-			<trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve">
-				<source>Zusätzliche Klasse für aktivierte Thumbnail-Slides</source>
-			</trans-unit>
-			<trans-unit id="options.thumbs.swiper" xml:space="preserve">
-				<source>Swiper-Instanz oder Parameter für Thumbnails-Swiper</source>
-			</trans-unit>
-			<trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve">
-				<source>Zusätzliche Klasse für Thumbnails-Swiper-Container</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.containerClass" xml:space="preserve">
-				<source>CSS-Klassenname des Zoom-Containers</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve">
-				<source>Zoom auf Originalgröße begrenzen</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.maxRatio" xml:space="preserve">
-				<source>Maximaler Zoom-Faktor</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.minRatio" xml:space="preserve">
-				<source>Minimaler Zoom-Faktor</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve">
-				<source>Zoom-Bild beim Mausbewegen verschieben</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.toggle" xml:space="preserve">
-				<source>Zoom per Doppeltipp aktivieren/deaktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve">
-				<source>CSS-Klassenname des gezoomten Containers</source>
-			</trans-unit>
-			<trans-unit id="options.keyboard.enabled" xml:space="preserve">
-				<source>Tastatursteuerung aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve">
-				<source>Nur Slider im Viewport steuern</source>
-			</trans-unit>
-			<trans-unit id="options.keyboard.pageUpDown" xml:space="preserve">
-				<source>Tastaturnavigation mit Bild auf/ab aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.keyboard.speed" xml:space="preserve">
-				<source>Geschwindigkeit der Tastaturnavigation (ms)</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.enabled" xml:space="preserve">
-				<source>Mausradsteuerung aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve">
-				<source>CSS-Selektor oder HTML-Element für Mousewheel-Events</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve">
-				<source>Mausradbewegung auf Achse erzwingen</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.invert" xml:space="preserve">
-				<source>Richtung invertieren</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve">
-				<source>Klassename zum Ignorieren von Mousewheel-Scrolling</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve">
-				<source>Mausrad-Event an Rändern freigeben</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.sensitivity" xml:space="preserve">
-				<source>Mausrad-Empfindlichkeits-Multiplikator</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve">
-				<source>Minimales Mousewheel-Delta für Slide-Wechsel</source>
-			</trans-unit>
-			<trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve">
-				<source>Minimale Mousewheel-Zeitdifferenz (ms) für Slide-Wechsel</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides" xml:space="preserve">
-				<source>Virtuelle Slides</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve">
-				<source>Anzahl der vorgerenderten Slides nach aktivem Slide erhöhen</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve">
-				<source>Anzahl der vorgerenderten Slides vor aktivem Slide erhöhen</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.cache" xml:space="preserve">
-				<source>DOM-Cache für gerenderte Slides aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.enabled" xml:space="preserve">
-				<source>Virtuelle Slides aktivieren</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.renderExternal" xml:space="preserve">
-				<source>Funktion für externes Rendering (z.B. React/Vue)</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve">
-				<source>Swiper-Layout nach renderExternal aktualisieren</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.renderSlide" xml:space="preserve">
-				<source>Funktion zum Rendern eines Slides</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.slides" xml:space="preserve">
-				<source>Array mit Slides</source>
-			</trans-unit>
-			<trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve">
-				<source>Slide-Größe für slidesPerView: auto (in px)</source>
+				<target state="final">{{index}} / {{slidesLength}}</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay" approved="yes">
+				<source>Autoplay</source>
+				<target state="needs-review-translation">Autoplay</target>
+			</trans-unit>
+			<trans-unit id="options.autoplayProgress" approved="yes">
+				<source>Show autoplay progress indicator</source>
+				<target state="needs-review-translation">Autoplay-Fortschritt anzeigen</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.delay" approved="yes">
+				<source>Delay between transitions (in ms)</source>
+				<target state="needs-review-translation">Verzögerung zwischen Übergängen (in ms)</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.disableOnInteraction" approved="yes">
+				<source>Disable autoplay on interaction</source>
+				<target state="needs-review-translation">Autoplay bei Interaktion deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.pauseOnMouseEnter" approved="yes">
+				<source>Pause autoplay on mouse enter</source>
+				<target state="needs-review-translation">Autoplay bei Mauszeiger pausieren</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.reverseDirection" approved="yes">
+				<source>Autoplay in reverse direction</source>
+				<target state="needs-review-translation">Autoplay in umgekehrter Richtung</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.stopOnLastSlide" approved="yes">
+				<source>Stop autoplay on last slide</source>
+				<target state="needs-review-translation">Autoplay auf letzter Seite stoppen</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.waitForTransition" approved="yes">
+				<source>Wait for transition before next autoplay</source>
+				<target state="needs-review-translation">Auf Übergang vor nächstem Autoplay warten</target>
+			</trans-unit>
+			<trans-unit id="options.autoHeight" approved="yes">
+				<source>Auto height</source>
+				<target state="needs-review-translation">Automatische Höhe</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.addIcons" approved="yes">
+				<source>Add SVG icons to navigation buttons</source>
+				<target state="needs-review-translation">SVG-Icons zu Navigations-Buttons hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.disabledClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+				<target state="needs-review-translation">CSS-Klasse für deaktivierten Navigations-Button</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.enabled" approved="yes">
+				<source>Enable/disable navigation</source>
+				<target state="needs-review-translation">Navigation aktivieren/deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hiddenClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+				<target state="needs-review-translation">CSS-Klasse für ausgeblendeten Navigations-Button</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hideOnClick" approved="yes">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+				<target state="needs-review-translation">Navigations-Buttons nach Klick umschalten</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.lockClass" approved="yes">
+				<source>CSS class name added to navigation button when it is disabled</source>
+				<target state="needs-review-translation">CSS-Klasse für gesperrten Navigations-Button</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.navigationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-Klasse wenn Navigation per Breakpoint deaktiviert</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.nextEl" approved="yes">
+				<source>CSS selector or HTML element for the next button</source>
+				<target state="needs-review-translation">CSS-Selektor/Element für Weiter-Button</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.prevEl" approved="yes">
+				<source>CSS selector or HTML element for the previous button</source>
+				<target state="needs-review-translation">CSS-Selektor/Element für Zurück-Button</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletActiveClass" approved="yes">
+				<source>CSS class name of currently active pagination bullet</source>
+				<target state="needs-review-translation">CSS-Klasse des aktiven Pagination-Punkts</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletClass" approved="yes">
+				<source>CSS class name of single pagination bullet</source>
+				<target state="needs-review-translation">CSS-Klasse eines Pagination-Punkts</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletElement" approved="yes">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+				<target state="needs-review-translation">HTML-Tag für Pagination-Punkt (nur Typ „Punkte")</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickable" approved="yes">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+				<target state="needs-review-translation">Klick auf Pagination-Punkt wechselt Slide (nur Typ „Punkte")</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickableClass" approved="yes">
+				<source>CSS class name set to pagination when it is clickable</source>
+				<target state="needs-review-translation">CSS-Klasse wenn Pagination klickbar</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.currentClass" approved="yes">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+				<target state="needs-review-translation">CSS-Klasse des aktiven Index bei Bruch-Pagination</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicBullets" approved="yes">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+				<target state="needs-review-translation">Nur wenige Punkte gleichzeitig anzeigen (bei vielen Slides)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicMainBullets" approved="yes">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+				<target state="needs-review-translation">Anzahl sichtbarer Haupt-Punkte bei dynamicBullets</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.el" approved="yes">
+				<source>CSS selector or HTML element of the container with pagination</source>
+				<target state="needs-review-translation">CSS-Selektor/Element des Pagination-Containers</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.enabled" approved="yes">
+				<source>Enable/disable pagination</source>
+				<target state="needs-review-translation">Pagination aktivieren/deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionCurrent" approved="yes">
+				<source>Format function for current number in fraction pagination</source>
+				<target state="needs-review-translation">Formatierungsfunktion für aktuelle Zahl (Bruch-Pagination)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionTotal" approved="yes">
+				<source>Format function for total number in fraction pagination</source>
+				<target state="needs-review-translation">Formatierungsfunktion für Gesamtzahl (Bruch-Pagination)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hiddenClass" approved="yes">
+				<source>CSS class name of pagination when it becomes inactive</source>
+				<target state="needs-review-translation">CSS-Klasse wenn Pagination inaktiv</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hideOnClick" approved="yes">
+				<source>Toggle pagination container visibility after click on slider container</source>
+				<target state="needs-review-translation">Pagination nach Klick umschalten</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.horizontalClass" approved="yes">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+				<target state="needs-review-translation">CSS-Klasse für Pagination bei horizontalem Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.lockClass" approved="yes">
+				<source>CSS class name set to pagination when it is disabled</source>
+				<target state="needs-review-translation">CSS-Klasse wenn Pagination gesperrt</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.modifierClass" approved="yes">
+				<source>Prefix for modifier CSS class name for pagination</source>
+				<target state="needs-review-translation">Präfix für Modifier-CSS-Klasse der Pagination</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.paginationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-Klasse wenn Pagination per Breakpoint deaktiviert</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarFillClass" approved="yes">
+				<source>CSS class name of pagination progressbar fill element</source>
+				<target state="needs-review-translation">CSS-Klasse des Fortschrittsbalken-Füllelements</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOpposite" approved="yes">
+				<source>Progressbar opposite to Swiper's direction</source>
+				<target state="needs-review-translation">Fortschrittsbalken entgegen Swiper-Richtung</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOppositeClass" approved="yes">
+				<source>CSS class name of pagination progressbar opposite</source>
+				<target state="needs-review-translation">CSS-Klasse des entgegengesetzten Fortschrittsbalkens</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderBullet" approved="yes">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+				<target state="needs-review-translation">Eigene Funktion für Pagination-Punkte (nur Typ „Punkte")</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderCustom" approved="yes">
+				<source>Custom function for custom pagination type</source>
+				<target state="needs-review-translation">Eigene Funktion für eigenen Pagination-Typ</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderFraction" approved="yes">
+				<source>Custom function for fraction pagination type</source>
+				<target state="needs-review-translation">Eigene Funktion für Bruch-Pagination</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderProgressbar" approved="yes">
+				<source>Custom function for progressbar pagination type</source>
+				<target state="needs-review-translation">Eigene Funktion für Fortschrittsbalken-Pagination</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.totalClass" approved="yes">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+				<target state="needs-review-translation">CSS-Klasse der Gesamtzahl bei Bruch-Pagination</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.type" approved="yes">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+				<target state="needs-review-translation">Typ der Pagination (Punkte, Bruch, Fortschrittsbalken, eigen)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.verticalClass" approved="yes">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+				<target state="needs-review-translation">CSS-Klasse für Pagination bei vertikalem Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragClass" approved="yes">
+				<source>Scrollbar draggable element CSS class</source>
+				<target state="needs-review-translation">CSS-Klasse des ziehbaren Scrollbar-Elements</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragSize" approved="yes">
+				<source>Size of scrollbar draggable element in px</source>
+				<target state="needs-review-translation">Größe des ziehbaren Scrollbar-Elements in px</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.draggable" approved="yes">
+				<source>Enable draggable scrollbar</source>
+				<target state="needs-review-translation">Ziehbare Scrollbar aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.el" approved="yes">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+				<target state="needs-review-translation">CSS-Selektor/Element des Scrollbar-Containers</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.enabled" approved="yes">
+				<source>Enable/disable scrollbar</source>
+				<target state="needs-review-translation">Scrollbar aktivieren/deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.hide" approved="yes">
+				<source>Hide scrollbar automatically after user interaction</source>
+				<target state="needs-review-translation">Scrollbar nach Interaktion automatisch ausblenden</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.horizontalClass" approved="yes">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+				<target state="needs-review-translation">CSS-Klasse für Scrollbar bei horizontalem Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.lockClass" approved="yes">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+				<target state="needs-review-translation">Zusätzliche CSS-Klasse wenn Scrollbar gesperrt</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.scrollbarDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-Klasse wenn Scrollbar per Breakpoint deaktiviert</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.snapOnRelease" approved="yes">
+				<source>Snap slider position to slides when you release scrollbar</source>
+				<target state="needs-review-translation">Slider beim Loslassen einrasten</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.verticalClass" approved="yes">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+				<target state="needs-review-translation">CSS-Klasse für Scrollbar bei vertikalem Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.enabled" approved="yes">
+				<source>Enable free mode</source>
+				<target state="needs-review-translation">Free Mode aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.minimumVelocity" approved="yes">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+				<target state="needs-review-translation">Minimale Touch-Velocity für Free-Mode-Momentum</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentum" approved="yes">
+				<source>Enable momentum in free mode</source>
+				<target state="needs-review-translation">Momentum im Free Mode aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounce" approved="yes">
+				<source>Enable momentum bounce in free mode</source>
+				<target state="needs-review-translation">Momentum-Bounce im Free Mode aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounceRatio" approved="yes">
+				<source>Momentum bounce ratio</source>
+				<target state="needs-review-translation">Momentum-Bounce-Verhältnis</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumRatio" approved="yes">
+				<source>Momentum ratio</source>
+				<target state="needs-review-translation">Momentum-Verhältnis</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumVelocityRatio" approved="yes">
+				<source>Momentum velocity ratio</source>
+				<target state="needs-review-translation">Momentum-Geschwindigkeitsverhältnis</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.sticky" approved="yes">
+				<source>Snap to slides in free mode</source>
+				<target state="needs-review-translation">Im Free Mode an Slides einrasten</target>
+			</trans-unit>
+			<trans-unit id="options.grid.fill" approved="yes">
+				<source>How slides should fill rows (by column or by row)</source>
+				<target state="needs-review-translation">Rows-Füllung der Slides (spalten- oder zeilenweise)</target>
+			</trans-unit>
+			<trans-unit id="options.grid.rows" approved="yes">
+				<source>Number of slides rows (multirow layout)</source>
+				<target state="needs-review-translation">Anzahl der Slides-Zeilen (mehrzeiliges Layout)</target>
+			</trans-unit>
+			<trans-unit id="options.parallax.enabled" approved="yes">
+				<source>Enable parallaxed elements inside the slider</source>
+				<target state="needs-review-translation">Parallax-Elemente im Slider aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.fadeEffect.crossFade" approved="yes">
+				<source>Enables slides cross fade</source>
+				<target state="needs-review-translation">Cross-Fade der Slides aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.depth" approved="yes">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+				<target state="needs-review-translation">Tiefen-Offset in px (Z-Achse)</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.modifier" approved="yes">
+				<source>Effect multiplier</source>
+				<target state="needs-review-translation">Effekt-Multiplikator</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.rotate" approved="yes">
+				<source>Slide rotate in degrees</source>
+				<target state="needs-review-translation">Slide-Rotation in Grad</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.scale" approved="yes">
+				<source>Slide scale effect</source>
+				<target state="needs-review-translation">Slide-Skalierung</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Slide-Schatten aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.stretch" approved="yes">
+				<source>Stretch space between slides (px or %)</source>
+				<target state="needs-review-translation">Abstand zwischen Slides strecken (px oder %)</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.limitRotation" approved="yes">
+				<source>Limit edge slides rotation</source>
+				<target state="needs-review-translation">Rotation der Rand-Slides begrenzen</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Slide-Schatten aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadow" approved="yes">
+				<source>Enables main slider shadow</source>
+				<target state="needs-review-translation">Haupt-Slider-Schatten aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowOffset" approved="yes">
+				<source>Main shadow offset in px</source>
+				<target state="needs-review-translation">Haupt-Schatten-Offset in px</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowScale" approved="yes">
+				<source>Main shadow scale ratio</source>
+				<target state="needs-review-translation">Haupt-Schatten-Skalierung</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Slide-Schatten aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideOffset" approved="yes">
+				<source>Offset distance per slide (in px)</source>
+				<target state="needs-review-translation">Offset-Abstand pro Slide (in px)</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideRotate" approved="yes">
+				<source>Rotate angle per slide (in degrees)</source>
+				<target state="needs-review-translation">Rotationswinkel pro Slide (in Grad)</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.rotate" approved="yes">
+				<source>Enables cards rotation</source>
+				<target state="needs-review-translation">Karten-Rotation aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Slide-Schatten aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.limitProgress" approved="yes">
+				<source>Limit progress/offset to amount of side slides</source>
+				<target state="needs-review-translation">Fortschritt auf Anzahl der Seiten-Slides begrenzen</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.next" approved="yes">
+				<source>Next slide transformations</source>
+				<target state="needs-review-translation">Transformationen der nächsten Slide</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.perspective" approved="yes">
+				<source>Enable 3D perspective for custom transforms</source>
+				<target state="needs-review-translation">3D-Perspektive aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.prev" approved="yes">
+				<source>Previous slide transformations</source>
+				<target state="needs-review-translation">Transformationen der vorherigen Slide</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.progressMultiplier" approved="yes">
+				<source>Multiply slide transformations and opacity</source>
+				<target state="needs-review-translation">Transformationen und Deckkraft multiplizieren</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.shadowPerProgress" approved="yes">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+				<target state="needs-review-translation">Schatten-Deckkraft pro Slide aufteilen</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.autoScrollOffset" approved="yes">
+				<source>Auto scroll offset for thumbs</source>
+				<target state="needs-review-translation">Automatischer Scroll-Offset für Thumbnails</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.multipleActiveThumbs" approved="yes">
+				<source>Enable multiple active thumbnail slides</source>
+				<target state="needs-review-translation">Mehrere aktive Thumbnail-Slides aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.slideThumbActiveClass" approved="yes">
+				<source>Additional class for activated thumbs swiper slide</source>
+				<target state="needs-review-translation">Zusätzliche Klasse für aktive Thumbnail-Slide</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.swiper" approved="yes">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+				<target state="needs-review-translation">Swiper-Instanz oder Parameter für Thumbnail-Swiper</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.thumbsContainerClass" approved="yes">
+				<source>Additional class for thumbs swiper container</source>
+				<target state="needs-review-translation">Zusätzliche Klasse für Thumbnail-Swiper-Container</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.enabled" approved="yes">
+				<source>Enable/disable zoom</source>
+				<target state="needs-review-translation">Zoom aktivieren/deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.containerClass" approved="yes">
+				<source>CSS class name of zoom container</source>
+				<target state="needs-review-translation">CSS-Klasse des Zoom-Containers</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.limitToOriginalSize" approved="yes">
+				<source>Limit zoom to original image size</source>
+				<target state="needs-review-translation">Zoom auf Originalgröße begrenzen</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.maxRatio" approved="yes">
+				<source>Maximum image zoom multiplier</source>
+				<target state="needs-review-translation">Maximale Zoomstufe</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.minRatio" approved="yes">
+				<source>Minimal image zoom multiplier</source>
+				<target state="needs-review-translation">Minimale Zoomstufe</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.panOnMouseMove" approved="yes">
+				<source>Pan zoomed image on mouse move</source>
+				<target state="needs-review-translation">Gezoomtes Bild bei Mausbewegung verschieben</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.toggle" approved="yes">
+				<source>Enable/disable zoom-in by double tap</source>
+				<target state="needs-review-translation">Zoom per Doppeltippen aktivieren/deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.zoomedSlideClass" approved="yes">
+				<source>CSS class name of zoomed in container</source>
+				<target state="needs-review-translation">CSS-Klasse des gezoomten Containers</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.enabled" approved="yes">
+				<source>Enable keyboard control</source>
+				<target state="needs-review-translation">Tastatursteuerung aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.onlyInViewport" approved="yes">
+				<source>Control sliders only in viewport</source>
+				<target state="needs-review-translation">Nur im Viewport steuern</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.pageUpDown" approved="yes">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+				<target state="needs-review-translation">Navigation per Bild-auf/Bild-ab-Tasten aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.speed" approved="yes">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+				<target state="needs-review-translation">Geschwindigkeit der Tastatur-Übergänge (ms)</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.enabled" approved="yes">
+				<source>Enable mousewheel control</source>
+				<target state="needs-review-translation">Mausradsteuerung aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.eventsTarget" approved="yes">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+				<target state="needs-review-translation">CSS-Selektor/Element für Mausrad-Ereignisse</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.forceToAxis" approved="yes">
+				<source>Force mousewheel swipes to axis</source>
+				<target state="needs-review-translation">Mausrad-Wischen an Achse binden</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.invert" approved="yes">
+				<source>Invert sliding direction</source>
+				<target state="needs-review-translation">Gleitrichtung umkehren</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.noMousewheelClass" approved="yes">
+				<source>Class name to ignore mousewheel scrolling</source>
+				<target state="needs-review-translation">Klasse zum Ignorieren des Mausrad-Scrollens</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.releaseOnEdges" approved="yes">
+				<source>Release mousewheel event on edges</source>
+				<target state="needs-review-translation">Mausrad-Ereignis an Rändern freigeben</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.sensitivity" approved="yes">
+				<source>Mousewheel sensitivity multiplier</source>
+				<target state="needs-review-translation">Mausrad-Empfindlichkeit</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdDelta" approved="yes">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+				<target state="needs-review-translation">Mindest-Scroll-Delta für Slide-Wechsel</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdTime" approved="yes">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+				<target state="needs-review-translation">Mindest-Zeit-Delta (ms) für Slide-Wechsel</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides" approved="yes">
+				<source>Virtual Slides</source>
+				<target state="needs-review-translation">Virtuelle Slides</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesAfter" approved="yes">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+				<target state="needs-review-translation">Vorgerenderte Slides nach aktiver Slide erhöhen</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesBefore" approved="yes">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+				<target state="needs-review-translation">Vorgerenderte Slides vor aktiver Slide erhöhen</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.cache" approved="yes">
+				<source>Enable DOM cache of rendered slides</source>
+				<target state="needs-review-translation">DOM-Cache der gerenderten Slides aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.enabled" approved="yes">
+				<source>Enable virtual slides</source>
+				<target state="needs-review-translation">Virtuelle Slides aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternal" approved="yes">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+				<target state="needs-review-translation">Funktion für externes Rendering (z. B. React/Vue)</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternalUpdate" approved="yes">
+				<source>Update Swiper layout after renderExternal</source>
+				<target state="needs-review-translation">Swiper-Layout nach renderExternal aktualisieren</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderSlide" approved="yes">
+				<source>Function to render slide</source>
+				<target state="needs-review-translation">Funktion zum Rendern einer Slide</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slides" approved="yes">
+				<source>Array with slides</source>
+				<target state="needs-review-translation">Array mit Slides</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" approved="yes">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+				<target state="needs-review-translation">Slide-Größe für slidesPerView: auto (in px)</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation" approved="yes">
+				<source>Hash Navigation</source>
+				<target state="needs-review-translation">Hash-Navigation</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.getSlideIndex" approved="yes">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+				<target state="needs-review-translation">Funktion für Slide-Index per Hash (virtuelle Slides)</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.replaceState" approved="yes">
+				<source>Replace current URL state instead of adding to history</source>
+				<target state="needs-review-translation">URL-State ersetzen statt History-Eintrag</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.watchState" approved="yes">
+				<source>Enable navigation by browser history/hash</source>
+				<target state="needs-review-translation">Navigation per Browser-History/Hash aktivieren</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerView" approved="yes">
+				<source>Slides per view</source>
+				<target state="needs-review-translation">Slides pro Ansicht</target>
+			</trans-unit>
+			<trans-unit id="options.spaceBetween" approved="yes">
+				<source>Space between slides (in px)</source>
+				<target state="needs-review-translation">Abstand zwischen Slides (in px)</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroup" approved="yes">
+				<source>Number of slides in group</source>
+				<target state="needs-review-translation">Anzahl Slides pro Gruppe</target>
 			</trans-unit>
 		</body>
 	</file>

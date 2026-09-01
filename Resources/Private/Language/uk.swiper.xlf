@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="uk">
+		<header/>
+		<body>
+			<trans-unit id="options.accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="needs-review-translation">Доступність</target>
+			</trans-unit>
+			<trans-unit id="options.arrows" approved="yes">
+				<source>Arrows</source>
+				<target state="needs-review-translation">Стрілки</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>As Nav For</source>
+				<target state="needs-review-translation">Навігація для</target>
+			</trans-unit>
+			<trans-unit id="options.appendArrows" approved="yes">
+				<source>Append Arrows</source>
+				<target state="needs-review-translation">Додати стрілки</target>
+			</trans-unit>
+			<trans-unit id="options.appendDots" approved="yes">
+				<source>Append Dots</source>
+				<target state="needs-review-translation">Додати точки</target>
+			</trans-unit>
+			<trans-unit id="options.prevArrow" approved="yes">
+				<source>Prev Arrow</source>
+				<target state="needs-review-translation">Попередня стрілка</target>
+			</trans-unit>
+			<trans-unit id="options.nextArrow" approved="yes">
+				<source>Next Arrow</source>
+				<target state="needs-review-translation">Наступна стрілка</target>
+			</trans-unit>
+			<trans-unit id="options.centerMode" approved="yes">
+				<source>Center Mode</source>
+				<target state="needs-review-translation">Режим центрування</target>
+			</trans-unit>
+			<trans-unit id="options.centerPadding" approved="yes">
+				<source>Center Padding</source>
+				<target state="needs-review-translation">Відступ центру</target>
+			</trans-unit>
+			<trans-unit id="options.cssEase" approved="yes">
+				<source>CSS3 animation Easing</source>
+				<target state="needs-review-translation">Easing CSS3-анімації</target>
+			</trans-unit>
+			<trans-unit id="options.effect" approved="yes">
+				<source>Effect</source>
+				<target state="needs-review-translation">Ефект</target>
+			</trans-unit>
+			<trans-unit id="options.setWrapperSize" approved="yes">
+				<source>setWrapperSize</source>
+				<target state="needs-review-translation">Встановити розмір контейнера</target>
+			</trans-unit>
+			<trans-unit id="options.height" approved="yes">
+				<source>Height</source>
+				<target state="needs-review-translation">Висота</target>
+			</trans-unit>
+			<trans-unit id="options.width" approved="yes">
+				<source>Width</source>
+				<target state="needs-review-translation">Ширина</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">Напрямок</target>
+			</trans-unit>
+			<trans-unit id="options.customClasses" approved="yes">
+				<source>Additional CSS classes</source>
+				<target state="needs-review-translation">Додаткові CSS-класи</target>
+			</trans-unit>
+			<trans-unit id="options.loop" approved="yes">
+				<source>Loop</source>
+				<target state="needs-review-translation">Зациклення</target>
+			</trans-unit>
+			<trans-unit id="options.loopAddBlankSlides" approved="yes">
+				<source>Add blank slides to loop</source>
+				<target state="needs-review-translation">Додати порожні слайди в цикл</target>
+			</trans-unit>
+			<trans-unit id="options.loopAdditionalSlides" approved="yes">
+				<source>Loop additional slides</source>
+				<target state="needs-review-translation">Додаткові слайди циклу</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupAuto" approved="yes">
+				<source>Slides per group auto</source>
+				<target state="needs-review-translation">Слайдів у групі автоматично</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupSkip" approved="yes">
+				<source>Slides per group skip</source>
+				<target state="needs-review-translation">Пропустити слайди в групі</target>
+			</trans-unit>
+			<trans-unit id="options.loopPreventsSliding" approved="yes">
+				<source>Prevents sliding in loop</source>
+				<target state="needs-review-translation">Запобігати прокрутці в циклі</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.nextSlideMessage" approved="yes">
+				<source>Next slide</source>
+				<target state="needs-review-translation">Наступний слайд</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.prevSlideMessage" approved="yes">
+				<source>Previous slide</source>
+				<target state="needs-review-translation">Попередній слайд</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.firstSlideMessage" approved="yes">
+				<source>This is the first slide</source>
+				<target state="needs-review-translation">Це перший слайд</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.lastSlideMessage" approved="yes">
+				<source>This is the last slide</source>
+				<target state="needs-review-translation">Це останній слайд</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
+				<source>Go to slide {{index}}</source>
+				<target state="needs-review-translation">Перейти до слайда {{index}}</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.slideLabelMessage" approved="yes">
+				<source>{{index}} / {{slidesLength}}</source>
+				<target state="needs-review-translation">{{index}} / {{slidesLength}}</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay" approved="yes">
+				<source>Autoplay</source>
+				<target state="needs-review-translation">Автовідтворення</target>
+			</trans-unit>
+			<trans-unit id="options.autoplayProgress" approved="yes">
+				<source>Show autoplay progress indicator</source>
+				<target state="needs-review-translation">Показати індикатор прогресу автовідтворення</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.delay" approved="yes">
+				<source>Delay between transitions (in ms)</source>
+				<target state="needs-review-translation">Затримка між переходами (в мс)</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.disableOnInteraction" approved="yes">
+				<source>Disable autoplay on interaction</source>
+				<target state="needs-review-translation">Вимкнути автовідтворення при взаємодії</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.pauseOnMouseEnter" approved="yes">
+				<source>Pause autoplay on mouse enter</source>
+				<target state="needs-review-translation">Пауза автовідтворення при наведенні миші</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.reverseDirection" approved="yes">
+				<source>Autoplay in reverse direction</source>
+				<target state="needs-review-translation">Автовідтворення у зворотному напрямку</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.stopOnLastSlide" approved="yes">
+				<source>Stop autoplay on last slide</source>
+				<target state="needs-review-translation">Зупинити автовідтворення на останньому слайді</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.waitForTransition" approved="yes">
+				<source>Wait for transition before next autoplay</source>
+				<target state="needs-review-translation">Чекати завершення переходу</target>
+			</trans-unit>
+			<trans-unit id="options.autoHeight" approved="yes">
+				<source>Auto height</source>
+				<target state="needs-review-translation">Автоматична висота</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.addIcons" approved="yes">
+				<source>Add SVG icons to navigation buttons</source>
+				<target state="needs-review-translation">Додати SVG-іконки до кнопок навігації</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.disabledClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+				<target state="needs-review-translation">CSS-клас кнопки навігації у вимкненому стані</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.enabled" approved="yes">
+				<source>Enable/disable navigation</source>
+				<target state="needs-review-translation">Увімкнути/вимкнути навігацію</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hiddenClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+				<target state="needs-review-translation">CSS-клас кнопки навігації у прихованому стані</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hideOnClick" approved="yes">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+				<target state="needs-review-translation">Перемикати видимість навігації після кліку по слайдеру</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.lockClass" approved="yes">
+				<source>CSS class name added to navigation button when it is disabled</source>
+				<target state="needs-review-translation">CSS-клас заблокованої кнопки навігації</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.navigationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-клас контейнера при вимкненні навігації брейкпоінтом</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.nextEl" approved="yes">
+				<source>CSS selector or HTML element for the next button</source>
+				<target state="needs-review-translation">CSS-селектор або HTML-елемент для кнопки «Наступний»</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.prevEl" approved="yes">
+				<source>CSS selector or HTML element for the previous button</source>
+				<target state="needs-review-translation">CSS-селектор або HTML-елемент для кнопки «Попередній»</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletActiveClass" approved="yes">
+				<source>CSS class name of currently active pagination bullet</source>
+				<target state="needs-review-translation">CSS-клас активної точки пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletClass" approved="yes">
+				<source>CSS class name of single pagination bullet</source>
+				<target state="needs-review-translation">CSS-клас точки пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletElement" approved="yes">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+				<target state="needs-review-translation">HTML-тег точки пагінації (лише для типу «точки»)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickable" approved="yes">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+				<target state="needs-review-translation">Клік по точці пагінації перемикає слайд (лише для типу «точки»)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickableClass" approved="yes">
+				<source>CSS class name set to pagination when it is clickable</source>
+				<target state="needs-review-translation">CSS-клас клікабельної пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.currentClass" approved="yes">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+				<target state="needs-review-translation">CSS-клас активного елемента дробової пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicBullets" approved="yes">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+				<target state="needs-review-translation">Показувати лише кілька точок одночасно (для багатьох слайдів)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicMainBullets" approved="yes">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+				<target state="needs-review-translation">Кількість основних видимих точок</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.el" approved="yes">
+				<source>CSS selector or HTML element of the container with pagination</source>
+				<target state="needs-review-translation">CSS-селектор або HTML-елемент контейнера пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.enabled" approved="yes">
+				<source>Enable/disable pagination</source>
+				<target state="needs-review-translation">Увімкнути/вимкнути пагінацію</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionCurrent" approved="yes">
+				<source>Format function for current number in fraction pagination</source>
+				<target state="needs-review-translation">Функція форматування поточного числа</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionTotal" approved="yes">
+				<source>Format function for total number in fraction pagination</source>
+				<target state="needs-review-translation">Функція форматування загальної кількості</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hiddenClass" approved="yes">
+				<source>CSS class name of pagination when it becomes inactive</source>
+				<target state="needs-review-translation">CSS-клас пагінації у неактивному стані</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hideOnClick" approved="yes">
+				<source>Toggle pagination container visibility after click on slider container</source>
+				<target state="needs-review-translation">Перемикати видимість пагінації після кліку по слайдеру</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.horizontalClass" approved="yes">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+				<target state="needs-review-translation">CSS-клас пагінації у горизонтальному слайдері</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.lockClass" approved="yes">
+				<source>CSS class name set to pagination when it is disabled</source>
+				<target state="needs-review-translation">CSS-клас заблокованої пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.modifierClass" approved="yes">
+				<source>Prefix for modifier CSS class name for pagination</source>
+				<target state="needs-review-translation">Префікс CSS-класу-модифікатора пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.paginationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-клас при вимкненні пагінації брейкпоінтом</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarFillClass" approved="yes">
+				<source>CSS class name of pagination progressbar fill element</source>
+				<target state="needs-review-translation">CSS-клас заповнення прогресбару пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOpposite" approved="yes">
+				<source>Progressbar opposite to Swiper's direction</source>
+				<target state="needs-review-translation">Прогресбар протилежно напрямку слайдера</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOppositeClass" approved="yes">
+				<source>CSS class name of pagination progressbar opposite</source>
+				<target state="needs-review-translation">CSS-клас протилежного прогресбару пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderBullet" approved="yes">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+				<target state="needs-review-translation">Власна функція для точок пагінації (лише для типу «точки»)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderCustom" approved="yes">
+				<source>Custom function for custom pagination type</source>
+				<target state="needs-review-translation">Власна функція для користувацької пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderFraction" approved="yes">
+				<source>Custom function for fraction pagination type</source>
+				<target state="needs-review-translation">Власна функція для дробової пагінації</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderProgressbar" approved="yes">
+				<source>Custom function for progressbar pagination type</source>
+				<target state="needs-review-translation">Власна функція для пагінації типу «прогресбар»</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.totalClass" approved="yes">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+				<target state="needs-review-translation">CSS-клас елемента із загальною кількістю</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.type" approved="yes">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+				<target state="needs-review-translation">Тип пагінації (точки, дріб, прогресбар, власний)</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.verticalClass" approved="yes">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+				<target state="needs-review-translation">CSS-клас пагінації у вертикальному слайдері</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragClass" approved="yes">
+				<source>Scrollbar draggable element CSS class</source>
+				<target state="needs-review-translation">CSS-клас перетягуваного елемента скролбару</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragSize" approved="yes">
+				<source>Size of scrollbar draggable element in px</source>
+				<target state="needs-review-translation">Розмір перетягуваного елемента скролбару (px)</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.draggable" approved="yes">
+				<source>Enable draggable scrollbar</source>
+				<target state="needs-review-translation">Увімкнути перетягування скролбару</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.el" approved="yes">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+				<target state="needs-review-translation">CSS-селектор або HTML-елемент контейнера скролбару</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.enabled" approved="yes">
+				<source>Enable/disable scrollbar</source>
+				<target state="needs-review-translation">Увімкнути/вимкнути скролбар</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.hide" approved="yes">
+				<source>Hide scrollbar automatically after user interaction</source>
+				<target state="needs-review-translation">Ховати скролбар автоматично після взаємодії</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.horizontalClass" approved="yes">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+				<target state="needs-review-translation">CSS-клас скролбару у горизонтальному слайдері</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.lockClass" approved="yes">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+				<target state="needs-review-translation">Додатковий CSS-клас вимкненого скролбару</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.scrollbarDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+				<target state="needs-review-translation">CSS-клас при вимкненні скролбару брейкпоінтом</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.snapOnRelease" approved="yes">
+				<source>Snap slider position to slides when you release scrollbar</source>
+				<target state="needs-review-translation">Прив'язувати позицію до слайдів при відпусканні скролбару</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.verticalClass" approved="yes">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+				<target state="needs-review-translation">CSS-клас скролбару у вертикальному слайдері</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.enabled" approved="yes">
+				<source>Enable free mode</source>
+				<target state="needs-review-translation">Увімкнути вільний режим</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.minimumVelocity" approved="yes">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+				<target state="needs-review-translation">Мінімальна швидкість руху для імпульсу</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentum" approved="yes">
+				<source>Enable momentum in free mode</source>
+				<target state="needs-review-translation">Увімкнути імпульс</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounce" approved="yes">
+				<source>Enable momentum bounce in free mode</source>
+				<target state="needs-review-translation">Увімкнути відскок імпульсу</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounceRatio" approved="yes">
+				<source>Momentum bounce ratio</source>
+				<target state="needs-review-translation">Коефіцієнт відскоку імпульсу</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumRatio" approved="yes">
+				<source>Momentum ratio</source>
+				<target state="needs-review-translation">Коефіцієнт імпульсу</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumVelocityRatio" approved="yes">
+				<source>Momentum velocity ratio</source>
+				<target state="needs-review-translation">Коефіцієнт швидкості імпульсу</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.sticky" approved="yes">
+				<source>Snap to slides in free mode</source>
+				<target state="needs-review-translation">Прив'язка до слайдів у вільному режимі</target>
+			</trans-unit>
+			<trans-unit id="options.grid.fill" approved="yes">
+				<source>How slides should fill rows (by column or by row)</source>
+				<target state="needs-review-translation">Заповнення рядків слайдами (по стовпцях або рядках)</target>
+			</trans-unit>
+			<trans-unit id="options.grid.rows" approved="yes">
+				<source>Number of slides rows (multirow layout)</source>
+				<target state="needs-review-translation">Кількість рядків слайдів (багаторядкова розкладка)</target>
+			</trans-unit>
+			<trans-unit id="options.parallax.enabled" approved="yes">
+				<source>Enable parallaxed elements inside the slider</source>
+				<target state="needs-review-translation">Увімкнути паралакс-елементи у слайдері</target>
+			</trans-unit>
+			<trans-unit id="options.fadeEffect.crossFade" approved="yes">
+				<source>Enables slides cross fade</source>
+				<target state="needs-review-translation">Увімкнути перехресне затухання слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.depth" approved="yes">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+				<target state="needs-review-translation">Зміщення глибини (px)</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.modifier" approved="yes">
+				<source>Effect multiplier</source>
+				<target state="needs-review-translation">Множник ефекту</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.rotate" approved="yes">
+				<source>Slide rotate in degrees</source>
+				<target state="needs-review-translation">Поворот слайдів (градуси)</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.scale" approved="yes">
+				<source>Slide scale effect</source>
+				<target state="needs-review-translation">Масштабування слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Увімкнути тіні слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.stretch" approved="yes">
+				<source>Stretch space between slides (px or %)</source>
+				<target state="needs-review-translation">Розтягнення простору між слайдами</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.limitRotation" approved="yes">
+				<source>Limit edge slides rotation</source>
+				<target state="needs-review-translation">Обмежити поворот крайніх слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Увімкнути тіні слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadow" approved="yes">
+				<source>Enables main slider shadow</source>
+				<target state="needs-review-translation">Увімкнути тінь слайдера</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowOffset" approved="yes">
+				<source>Main shadow offset in px</source>
+				<target state="needs-review-translation">Зміщення тіні (px)</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowScale" approved="yes">
+				<source>Main shadow scale ratio</source>
+				<target state="needs-review-translation">Коефіцієнт масштабу тіні</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Увімкнути тіні слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideOffset" approved="yes">
+				<source>Offset distance per slide (in px)</source>
+				<target state="needs-review-translation">Зміщення на кожен слайд (px)</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideRotate" approved="yes">
+				<source>Rotate angle per slide (in degrees)</source>
+				<target state="needs-review-translation">Кут повороту на кожен слайд (градуси)</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.rotate" approved="yes">
+				<source>Enables cards rotation</source>
+				<target state="needs-review-translation">Увімкнути поворот карток</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">Увімкнути тіні слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.limitProgress" approved="yes">
+				<source>Limit progress/offset to amount of side slides</source>
+				<target state="needs-review-translation">Обмежити прогрес кількістю бічних слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.next" approved="yes">
+				<source>Next slide transformations</source>
+				<target state="needs-review-translation">Трансформації наступного слайда</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.perspective" approved="yes">
+				<source>Enable 3D perspective for custom transforms</source>
+				<target state="needs-review-translation">Увімкнути 3D-перспективу</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.prev" approved="yes">
+				<source>Previous slide transformations</source>
+				<target state="needs-review-translation">Трансформації попереднього слайда</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.progressMultiplier" approved="yes">
+				<source>Multiply slide transformations and opacity</source>
+				<target state="needs-review-translation">Множити трансформації та прозорість слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.shadowPerProgress" approved="yes">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+				<target state="needs-review-translation">Розділяти прозорість тіні за слайдами</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.autoScrollOffset" approved="yes">
+				<source>Auto scroll offset for thumbs</source>
+				<target state="needs-review-translation">Автозміщення мініатюр</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.multipleActiveThumbs" approved="yes">
+				<source>Enable multiple active thumbnail slides</source>
+				<target state="needs-review-translation">Увімкнути кілька активних мініатюр</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.slideThumbActiveClass" approved="yes">
+				<source>Additional class for activated thumbs swiper slide</source>
+				<target state="needs-review-translation">Додатковий клас активного слайда-мініатюри</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.swiper" approved="yes">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+				<target state="needs-review-translation">Екземпляр Swiper або параметри мініатюр</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.thumbsContainerClass" approved="yes">
+				<source>Additional class for thumbs swiper container</source>
+				<target state="needs-review-translation">Додатковий клас контейнера мініатюр</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.enabled" approved="yes">
+				<source>Enable/disable zoom</source>
+				<target state="needs-review-translation">Увімкнути/вимкнути масштабування</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.containerClass" approved="yes">
+				<source>CSS class name of zoom container</source>
+				<target state="needs-review-translation">CSS-клас контейнера масштабування</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.limitToOriginalSize" approved="yes">
+				<source>Limit zoom to original image size</source>
+				<target state="needs-review-translation">Обмежити масштабування оригінальним розміром</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.maxRatio" approved="yes">
+				<source>Maximum image zoom multiplier</source>
+				<target state="needs-review-translation">Максимальний множник масштабування</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.minRatio" approved="yes">
+				<source>Minimal image zoom multiplier</source>
+				<target state="needs-review-translation">Мінімальний множник масштабування</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.panOnMouseMove" approved="yes">
+				<source>Pan zoomed image on mouse move</source>
+				<target state="needs-review-translation">Панорамування масштабованого зображення при русі миші</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.toggle" approved="yes">
+				<source>Enable/disable zoom-in by double tap</source>
+				<target state="needs-review-translation">Масштабування подвійним тапом</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.zoomedSlideClass" approved="yes">
+				<source>CSS class name of zoomed in container</source>
+				<target state="needs-review-translation">CSS-клас масштабованого контейнера</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.enabled" approved="yes">
+				<source>Enable keyboard control</source>
+				<target state="needs-review-translation">Увімкнути керування з клавіатури</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.onlyInViewport" approved="yes">
+				<source>Control sliders only in viewport</source>
+				<target state="needs-review-translation">Керувати лише у видимій області</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.pageUpDown" approved="yes">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+				<target state="needs-review-translation">Навігація клавішами Page Up/Down</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.speed" approved="yes">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+				<target state="needs-review-translation">Швидкість переходів з клавіатури (мс)</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.enabled" approved="yes">
+				<source>Enable mousewheel control</source>
+				<target state="needs-review-translation">Увімкнути керування колесом миші</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.eventsTarget" approved="yes">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+				<target state="needs-review-translation">CSS-селектор або HTML-елемент для подій колеса миші</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.forceToAxis" approved="yes">
+				<source>Force mousewheel swipes to axis</source>
+				<target state="needs-review-translation">Примусово спрямовувати свайпи по осі</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.invert" approved="yes">
+				<source>Invert sliding direction</source>
+				<target state="needs-review-translation">Інвертувати напрямок прокрутки</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.noMousewheelClass" approved="yes">
+				<source>Class name to ignore mousewheel scrolling</source>
+				<target state="needs-review-translation">Клас для ігнорування прокрутки колесом</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.releaseOnEdges" approved="yes">
+				<source>Release mousewheel event on edges</source>
+				<target state="needs-review-translation">Відпускати подію колеса на краях</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.sensitivity" approved="yes">
+				<source>Mousewheel sensitivity multiplier</source>
+				<target state="needs-review-translation">Множник чутливості колеса миші</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdDelta" approved="yes">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+				<target state="needs-review-translation">Мінімальна дельта прокрутки для зміни слайда</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdTime" approved="yes">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+				<target state="needs-review-translation">Мінімальний час прокрутки (мс) для зміни слайда</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides" approved="yes">
+				<source>Virtual Slides</source>
+				<target state="needs-review-translation">Віртуальні слайди</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesAfter" approved="yes">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+				<target state="needs-review-translation">Додаткові слайди після активного</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesBefore" approved="yes">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+				<target state="needs-review-translation">Додаткові слайди до активного</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.cache" approved="yes">
+				<source>Enable DOM cache of rendered slides</source>
+				<target state="needs-review-translation">Увімкнути DOM-кеш слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.enabled" approved="yes">
+				<source>Enable virtual slides</source>
+				<target state="needs-review-translation">Увімкнути віртуальні слайди</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternal" approved="yes">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+				<target state="needs-review-translation">Функція зовнішнього рендерингу (напр. React/Vue)</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternalUpdate" approved="yes">
+				<source>Update Swiper layout after renderExternal</source>
+				<target state="needs-review-translation">Оновлювати макет після renderExternal</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderSlide" approved="yes">
+				<source>Function to render slide</source>
+				<target state="needs-review-translation">Функція рендерингу слайда</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slides" approved="yes">
+				<source>Array with slides</source>
+				<target state="needs-review-translation">Масив слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" approved="yes">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+				<target state="needs-review-translation">Розмір слайда для slidesPerView: auto (px)</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation" approved="yes">
+				<source>Hash Navigation</source>
+				<target state="needs-review-translation">Навігація за hash</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.getSlideIndex" approved="yes">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+				<target state="needs-review-translation">Функція отримання індексу слайда за hash</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.replaceState" approved="yes">
+				<source>Replace current URL state instead of adding to history</source>
+				<target state="needs-review-translation">Замінювати стан URL замість додавання в історію</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.watchState" approved="yes">
+				<source>Enable navigation by browser history/hash</source>
+				<target state="needs-review-translation">Увімкнути навігацію за історією браузера/hash</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerView" approved="yes">
+				<source>Slides per view</source>
+				<target state="needs-review-translation">Кількість видимих слайдів</target>
+			</trans-unit>
+			<trans-unit id="options.spaceBetween" approved="yes">
+				<source>Space between slides (in px)</source>
+				<target state="needs-review-translation">Проміжок між слайдами (px)</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroup" approved="yes">
+				<source>Number of slides in group</source>
+				<target state="needs-review-translation">Кількість слайдів у групі</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

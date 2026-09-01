@@ -1,64 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
 		<header/>
 		<body>
-			<!-- sheets -->
-			<trans-unit id="sheet.bootstrap">
+			<trans-unit id="sheet.bootstrap" approved="yes">
 				<source>Bootstrap Slider</source>
+				<target state="needs-review-translation">Bootstrap Slider</target>
 			</trans-unit>
-
-			<trans-unit id="options.interval">
+			<trans-unit id="options.interval" approved="yes">
 				<source>Interval</source>
+				<target state="needs-review-translation">Intervall</target>
 			</trans-unit>
-			<trans-unit id="options.keyboard">
+			<trans-unit id="options.keyboard" approved="yes">
 				<source>Keyboard</source>
+				<target state="needs-review-translation">Tastatursteuerung</target>
 			</trans-unit>
-			<trans-unit id="options.pause">
+			<trans-unit id="options.pause" approved="yes">
 				<source>Pause</source>
+				<target state="needs-review-translation">Pause bei Hover</target>
 			</trans-unit>
-			<trans-unit id="options.ride">
+			<trans-unit id="options.ride" approved="yes">
 				<source>Ride</source>
+				<target state="needs-review-translation">Autoplay</target>
 			</trans-unit>
-			<trans-unit id="options.ride.option.carousel">
+			<trans-unit id="options.ride.option.carousel" approved="yes">
 				<source>Carousel</source>
+				<target state="needs-review-translation">Karussell</target>
 			</trans-unit>
-			<trans-unit id="options.touch">
+			<trans-unit id="options.touch" approved="yes">
 				<source>Touch</source>
+				<target state="needs-review-translation">Touch-Steuerung</target>
 			</trans-unit>
-			<trans-unit id="options.wrap">
+			<trans-unit id="options.wrap" approved="yes">
 				<source>Wrap</source>
+				<target state="needs-review-translation">Endlosschleife</target>
 			</trans-unit>
-			<trans-unit id="options.control">
+			<trans-unit id="options.control" approved="yes">
 				<source>Show control</source>
+				<target state="needs-review-translation">Steuerung anzeigen</target>
 			</trans-unit>
-			<trans-unit id="options.indicators">
+			<trans-unit id="options.indicators" approved="yes">
 				<source>Show indicators</source>
+				<target state="needs-review-translation">Indikatoren anzeigen</target>
 			</trans-unit>
-			<trans-unit id="options.title">
+			<trans-unit id="options.title" approved="yes">
 				<source>Show title</source>
+				<target state="needs-review-translation">Titel anzeigen</target>
 			</trans-unit>
-			<trans-unit id="options.description">
+			<trans-unit id="options.description" approved="yes">
 				<source>Show description</source>
+				<target state="needs-review-translation">Beschreibung anzeigen</target>
 			</trans-unit>
-			<trans-unit id="options.startAt">
+			<trans-unit id="options.startAt" approved="yes">
 				<source>Start at</source>
+				<target state="needs-review-translation">Start bei</target>
 			</trans-unit>
-
-
-			<trans-unit id="btn.previous">
+			<trans-unit id="btn.previous" approved="yes">
 				<source>Previous</source>
-				<target>Zurück</target>
+				<target state="final">Zurück</target>
 			</trans-unit>
-			<trans-unit id="btn.next">
+			<trans-unit id="btn.next" approved="yes">
 				<source>Next</source>
-				<target>Weiter</target>
+				<target state="final">Weiter</target>
 			</trans-unit>
-			<trans-unit id="btn.more">
+			<trans-unit id="btn.more" approved="yes">
 				<source>More</source>
-				<target>Mehr</target>
+				<target state="final">Mehr</target>
 			</trans-unit>
-
 		</body>
 	</file>
 </xliff>

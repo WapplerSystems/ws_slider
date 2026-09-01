@@ -1,56 +1,192 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="nl">
-    <header/>
-    <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="nl">
+		<header/>
+		<body>
+			<trans-unit id="slick.settings.js.accessibility.description" approved="yes">
+				<source>Enables tabbing and arrow key navigation</source>
+				<target state="needs-review-translation">Activeert Tabbing en navigatie met pijltjestoetsen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.adaptiveHeight.description" approved="yes">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+				<target state="needs-review-translation">Activeert adaptieve hoogte voor horizontale carrousels met één element.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.autoplay.description" approved="yes">
+				<source>Enables Autoplay</source>
+				<target state="needs-review-translation">Activeert Autoplay</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.autoplaySpeed.description" approved="yes">
+				<source>Autoplay Speed in milliseconds</source>
+				<target state="needs-review-translation">Autoplay-snelheid in milliseconden</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.arrows.description" approved="yes">
+				<source>Prev/Next Arrows</source>
+				<target state="needs-review-translation">"Vorige/Volgende" pijlen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.asNavFor.description" approved="yes">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+				<target state="needs-review-translation">Gebruik deze slider als navigatie voor een andere slider (klasse of ID)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.appendArrows.description" approved="yes">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+				<target state="needs-review-translation">Wijzig waar de navigatiepijlen worden ingevoegd (Selector, htmlString, Array, Element, jQuery object)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.appendDots.description" approved="yes">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+				<target state="needs-review-translation">Wijzig waar de navigatiepunten worden ingevoegd (Selector, htmlString, Array, Element, jQuery object)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.prevArrow.description" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+				<target state="needs-review-translation">Hiermee kunt u een node selecteren of de HTML voor de "Vorige" pijl aanpassen.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.nextArrow.description" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+				<target state="needs-review-translation">Hiermee kunt u een node selecteren of de HTML voor de "Volgende" pijl aanpassen.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.centerMode.description" approved="yes">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+				<target state="needs-review-translation">Activeert gecentreerde weergave met gedeeltelijke vorige/volgende elementen. Gebruik bij een oneven aantal zichtbare elementen.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.centerPadding.description" approved="yes">
+				<source>Side padding when in center mode (px or %)</source>
+				<target state="needs-review-translation">Zijpadding in gecentreerde modus (px of %)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.cssEase.description" approved="yes">
+				<source>CSS3 Animation Easing</source>
+				<target state="needs-review-translation">CSS3-animatie-easing</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.customPadding.description" approved="yes">
+				<source>Custom paging templates. See source for use example.</source>
+				<target state="needs-review-translation">Aangepaste pagineringstemplates. Zie de broncode voor een gebruiksvoorbeeld.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.dots.description" approved="yes">
+				<source>Show dot indicators</source>
+				<target state="needs-review-translation">Toon puntindicatoren</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.dotsClass.description" approved="yes">
+				<source>Class for slide indicator dots container</source>
+				<target state="needs-review-translation">Klasse voor de container van de dia-indicatorpunten</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.draggable.description" approved="yes">
+				<source>Enable mouse dragging</source>
+				<target state="needs-review-translation">Activeer slepen met de muis</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.fade.description" approved="yes">
+				<source>Enable fade</source>
+				<target state="needs-review-translation">Activeer fade</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.focusOnSelect.description" approved="yes">
+				<source>Enable focus on selected element (click)</source>
+				<target state="needs-review-translation">Activeer focus op het geselecteerde element (klik)</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.easing.description" approved="yes">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+				<target state="needs-review-translation">Easing toevoegen voor jQuery animate. Gebruik samen met easing-bibliotheken of standaard easing-methoden</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.edgeFriction.description" approved="yes">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+				<target state="needs-review-translation">Weerstand bij het swipen van de randen van niet-oneindige carrousels</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.infinite.description" approved="yes">
+				<source>Infinite loop sliding</source>
+				<target state="needs-review-translation">Oneindige lus</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.initialSlide.description" approved="yes">
+				<source>Slide to start on</source>
+				<target state="needs-review-translation">Element om mee te starten</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.lazyLoad.description" approved="yes">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+				<target state="needs-review-translation">Stel de lazy-loading-techniek in. Accepteert 'ondemand' of 'progressive'</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.mobileFirst.description" approved="yes">
+				<source>Responsive slick.settings use mobile first calculation</source>
+				<target state="needs-review-translation">Responsive slick-instellingen gebruiken mobile-first-berekening</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnFocus.description" approved="yes">
+				<source>Pause Autoplay On Focus</source>
+				<target state="needs-review-translation">Autoplay pauzeren bij focus</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnHover.description" approved="yes">
+				<source>Pause Autoplay On Hover</source>
+				<target state="needs-review-translation">Autoplay pauzeren bij hover</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.pauseOnDotsHover.description" approved="yes">
+				<source>Pause Autoplay when a dot is hovered</source>
+				<target state="needs-review-translation">Autoplay pauzeren wanneer er over een punt wordt gehoverd</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.respondTo.description" approved="yes">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+				<target state="needs-review-translation">Breedte waarop het responsive object reageert. Kan 'window', 'slider' of 'min' (de kleinste van de twee) zijn</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.rows.description" approved="yes">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+				<target state="needs-review-translation">Een waarde hoger dan 1 activeert de gridmodus. Gebruik slidesPerRow om in te stellen hoeveel elementen er per rij staan.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesPerRow.description" approved="yes">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+				<target state="needs-review-translation">Wanneer de gridmodus via de rows-optie is geactiveerd, stelt dit in hoeveel elementen er per gridrij staan.</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesToShow.description" approved="yes">
+				<source># of slides to show</source>
+				<target state="needs-review-translation">Aantal weer te geven elementen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.slidesToScroll.description" approved="yes">
+				<source># of slides to scroll</source>
+				<target state="needs-review-translation">Aantal elementen om te scrollen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.speed.description" approved="yes">
+				<source>Slide/Fade animation speed</source>
+				<target state="needs-review-translation">Snelheid van slide-/fade-animatie</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.swipe.description" approved="yes">
+				<source>Enable swiping</source>
+				<target state="needs-review-translation">Activeer swipen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.swipeToSlide.description" approved="yes">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+				<target state="needs-review-translation">Sta gebruikers toe om rechtstreeks naar een element te slepen of swipen, ongeacht slidesToScroll</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.touchMove.description" approved="yes">
+				<source>Enable slide motion with touch</source>
+				<target state="needs-review-translation">Activeer beweging via touch</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.touchThreshold.description" approved="yes">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+				<target state="needs-review-translation">Om verder te gaan naar het volgende element moet de gebruiker een afstand van (1/touchThreshold) * de breedte van de slider swipen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.useCSS.description" approved="yes">
+				<source>Enable/Disable CSS Transitions</source>
+				<target state="needs-review-translation">CSS-transities in-/uitschakelen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.useTransform.description" approved="yes">
+				<source>Enable/Disable CSS Transforms</source>
+				<target state="needs-review-translation">CSS-transforms in-/uitschakelen</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.variableWidth.description" approved="yes">
+				<source>Variable width slides</source>
+				<target state="needs-review-translation">Elementen met variabele breedte</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.vertical.description" approved="yes">
+				<source>Vertical slide mode</source>
+				<target state="needs-review-translation">Verticale slidemodus</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.verticalSwiping.description" approved="yes">
+				<source>Vertical swipe mode</source>
+				<target state="needs-review-translation">Verticale swipemodus</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.rtl.description" approved="yes">
+				<source>Change the slider's direction to become right-to-left</source>
+				<target state="needs-review-translation">De richting van de slider wijzigen naar rechts-naar-links</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.waitForAnimate.description" approved="yes">
+				<source>Ignores requests to advance the slide while animating</source>
+				<target state="needs-review-translation">Negeert verzoeken om verder te gaan terwijl er geanimeerd wordt</target>
+			</trans-unit>
+			<trans-unit id="slick.settings.js.zindex.description" approved="yes">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+				<target state="needs-review-translation">Stel de zIndex-waarden voor elementen in, handig voor IE9 en lager</target>
+			</trans-unit>
 		</body>
-  </file>
+	</file>
 </xliff>

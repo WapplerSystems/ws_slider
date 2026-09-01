@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ja">
+		<header/>
+		<body>
+			<trans-unit id="options.accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="needs-review-translation">アクセシビリティ</target>
+			</trans-unit>
+			<trans-unit id="options.arrows" approved="yes">
+				<source>Arrows</source>
+				<target state="needs-review-translation">矢印</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>As Nav For</source>
+				<target state="needs-review-translation">ナビゲーションとして使用</target>
+			</trans-unit>
+			<trans-unit id="options.appendArrows" approved="yes">
+				<source>Append Arrows</source>
+				<target state="needs-review-translation">矢印を追加</target>
+			</trans-unit>
+			<trans-unit id="options.appendDots" approved="yes">
+				<source>Append Dots</source>
+				<target state="needs-review-translation">ドットを追加</target>
+			</trans-unit>
+			<trans-unit id="options.prevArrow" approved="yes">
+				<source>Prev Arrow</source>
+				<target state="needs-review-translation">前へ矢印</target>
+			</trans-unit>
+			<trans-unit id="options.nextArrow" approved="yes">
+				<source>Next Arrow</source>
+				<target state="needs-review-translation">次へ矢印</target>
+			</trans-unit>
+			<trans-unit id="options.centerMode" approved="yes">
+				<source>Center Mode</source>
+				<target state="needs-review-translation">センターモード</target>
+			</trans-unit>
+			<trans-unit id="options.centerPadding" approved="yes">
+				<source>Center Padding</source>
+				<target state="needs-review-translation">中央の余白</target>
+			</trans-unit>
+			<trans-unit id="options.cssEase" approved="yes">
+				<source>CSS3 animation Easing</source>
+				<target state="needs-review-translation">CSS3アニメーション Easing</target>
+			</trans-unit>
+			<trans-unit id="options.effect" approved="yes">
+				<source>Effect</source>
+				<target state="needs-review-translation">エフェクト</target>
+			</trans-unit>
+			<trans-unit id="options.setWrapperSize" approved="yes">
+				<source>setWrapperSize</source>
+				<target state="needs-review-translation">setWrapperSize</target>
+			</trans-unit>
+			<trans-unit id="options.height" approved="yes">
+				<source>Height</source>
+				<target state="needs-review-translation">高さ</target>
+			</trans-unit>
+			<trans-unit id="options.width" approved="yes">
+				<source>Width</source>
+				<target state="needs-review-translation">幅</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">方向</target>
+			</trans-unit>
+			<trans-unit id="options.customClasses" approved="yes">
+				<source>Additional CSS classes</source>
+				<target state="needs-review-translation">追加 CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.loop" approved="yes">
+				<source>Loop</source>
+				<target state="needs-review-translation">ループ</target>
+			</trans-unit>
+			<trans-unit id="options.loopAddBlankSlides" approved="yes">
+				<source>Add blank slides to loop</source>
+				<target state="needs-review-translation">ループに空のスライドを追加</target>
+			</trans-unit>
+			<trans-unit id="options.loopAdditionalSlides" approved="yes">
+				<source>Loop additional slides</source>
+				<target state="needs-review-translation">追加のループスライド</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupAuto" approved="yes">
+				<source>Slides per group auto</source>
+				<target state="needs-review-translation">グループごとのスライド数（自動）</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroupSkip" approved="yes">
+				<source>Slides per group skip</source>
+				<target state="needs-review-translation">グループでスキップするスライド数</target>
+			</trans-unit>
+			<trans-unit id="options.loopPreventsSliding" approved="yes">
+				<source>Prevents sliding in loop</source>
+				<target state="needs-review-translation">ループ時のスライドを防止</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.nextSlideMessage" approved="yes">
+				<source>Next slide</source>
+				<target state="needs-review-translation">次のスライド</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.prevSlideMessage" approved="yes">
+				<source>Previous slide</source>
+				<target state="needs-review-translation">前のスライド</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.firstSlideMessage" approved="yes">
+				<source>This is the first slide</source>
+				<target state="needs-review-translation">これは最初のスライドです</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.lastSlideMessage" approved="yes">
+				<source>This is the last slide</source>
+				<target state="needs-review-translation">これは最後のスライドです</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
+				<source>Go to slide {{index}}</source>
+				<target state="needs-review-translation">スライド {{index}} へ移動</target>
+			</trans-unit>
+			<trans-unit id="options.a11y.slideLabelMessage" approved="yes">
+				<source>{{index}} / {{slidesLength}}</source>
+				<target state="needs-review-translation">{{index}} / {{slidesLength}}</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay" approved="yes">
+				<source>Autoplay</source>
+				<target state="needs-review-translation">自動再生</target>
+			</trans-unit>
+			<trans-unit id="options.autoplayProgress" approved="yes">
+				<source>Show autoplay progress indicator</source>
+				<target state="needs-review-translation">自動再生の進行インジケーターを表示</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.delay" approved="yes">
+				<source>Delay between transitions (in ms)</source>
+				<target state="needs-review-translation">切り替え間の遅延（ms）</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.disableOnInteraction" approved="yes">
+				<source>Disable autoplay on interaction</source>
+				<target state="needs-review-translation">操作時に自動再生を無効にする</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.pauseOnMouseEnter" approved="yes">
+				<source>Pause autoplay on mouse enter</source>
+				<target state="needs-review-translation">マウスホバーで自動再生を一時停止</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.reverseDirection" approved="yes">
+				<source>Autoplay in reverse direction</source>
+				<target state="needs-review-translation">逆方向に自動再生</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.stopOnLastSlide" approved="yes">
+				<source>Stop autoplay on last slide</source>
+				<target state="needs-review-translation">最後のスライドで自動再生を停止</target>
+			</trans-unit>
+			<trans-unit id="options.autoplay.waitForTransition" approved="yes">
+				<source>Wait for transition before next autoplay</source>
+				<target state="needs-review-translation">切り替え完了まで次の自動再生を待機</target>
+			</trans-unit>
+			<trans-unit id="options.autoHeight" approved="yes">
+				<source>Auto height</source>
+				<target state="needs-review-translation">高さを自動調整</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.addIcons" approved="yes">
+				<source>Add SVG icons to navigation buttons</source>
+				<target state="needs-review-translation">ナビゲーションボタンに SVG アイコンを追加</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.disabledClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+				<target state="needs-review-translation">無効になった時にナビゲーションボタンへ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.enabled" approved="yes">
+				<source>Enable/disable navigation</source>
+				<target state="needs-review-translation">ナビゲーションを有効/無効</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hiddenClass" approved="yes">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+				<target state="needs-review-translation">非表示時にナビゲーションボタンへ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.hideOnClick" approved="yes">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+				<target state="needs-review-translation">スライダーコンテナのクリック後にナビゲーションボタンの表示を切り替える</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.lockClass" approved="yes">
+				<source>CSS class name added to navigation button when it is disabled</source>
+				<target state="needs-review-translation">無効時にナビゲーションボタンへ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.navigationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+				<target state="needs-review-translation">ブレークポイントでナビゲーションが無効な時に Swiper コンテナへ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.nextEl" approved="yes">
+				<source>CSS selector or HTML element for the next button</source>
+				<target state="needs-review-translation">次へボタンの CSS セレクターまたは HTML 要素</target>
+			</trans-unit>
+			<trans-unit id="options.navigation.prevEl" approved="yes">
+				<source>CSS selector or HTML element for the previous button</source>
+				<target state="needs-review-translation">前へボタンの CSS セレクターまたは HTML 要素</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletActiveClass" approved="yes">
+				<source>CSS class name of currently active pagination bullet</source>
+				<target state="needs-review-translation">アクティブなページネーションバレットの CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletClass" approved="yes">
+				<source>CSS class name of single pagination bullet</source>
+				<target state="needs-review-translation">各ページネーションバレットの CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.bulletElement" approved="yes">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+				<target state="needs-review-translation">各ページネーションバレットの HTML タグ（bullets タイプのみ）</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickable" approved="yes">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+				<target state="needs-review-translation">バレットのクリックでスライドを切り替える（bullets タイプのみ）</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.clickableClass" approved="yes">
+				<source>CSS class name set to pagination when it is clickable</source>
+				<target state="needs-review-translation">クリック可能なときにページネーションへ設定する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.currentClass" approved="yes">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+				<target state="needs-review-translation">fraction ページネーションで現在のインデックス要素の CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicBullets" approved="yes">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+				<target state="needs-review-translation">一部のバレットのみ表示（スライドが多い場合）</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.dynamicMainBullets" approved="yes">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+				<target state="needs-review-translation">dynamicBullets 有効時に表示するメインバレット数</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.el" approved="yes">
+				<source>CSS selector or HTML element of the container with pagination</source>
+				<target state="needs-review-translation">ページネーションを含むコンテナの CSS セレクターまたは HTML 要素</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.enabled" approved="yes">
+				<source>Enable/disable pagination</source>
+				<target state="needs-review-translation">ページネーションを有効/無効</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionCurrent" approved="yes">
+				<source>Format function for current number in fraction pagination</source>
+				<target state="needs-review-translation">fraction ページネーションで現在の番号を整形する関数</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.formatFractionTotal" approved="yes">
+				<source>Format function for total number in fraction pagination</source>
+				<target state="needs-review-translation">fraction ページネーションで総数を整形する関数</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hiddenClass" approved="yes">
+				<source>CSS class name of pagination when it becomes inactive</source>
+				<target state="needs-review-translation">非アクティブになったときのページネーションの CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.hideOnClick" approved="yes">
+				<source>Toggle pagination container visibility after click on slider container</source>
+				<target state="needs-review-translation">スライダーコンテナのクリック後にページネーションの表示を切り替える</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.horizontalClass" approved="yes">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+				<target state="needs-review-translation">水平 Swiper でページネーションに設定する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.lockClass" approved="yes">
+				<source>CSS class name set to pagination when it is disabled</source>
+				<target state="needs-review-translation">無効時にページネーションへ設定する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.modifierClass" approved="yes">
+				<source>Prefix for modifier CSS class name for pagination</source>
+				<target state="needs-review-translation">ページネーションの修飾 CSS クラスの接頭辞</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.paginationDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+				<target state="needs-review-translation">ブレークポイントでページネーションが無効な時に Swiper コンテナとページネーション要素へ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarFillClass" approved="yes">
+				<source>CSS class name of pagination progressbar fill element</source>
+				<target state="needs-review-translation">ページネーションのプログレスバー塗りつぶし要素の CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOpposite" approved="yes">
+				<source>Progressbar opposite to Swiper's direction</source>
+				<target state="needs-review-translation">プログレスバーを Swiper の方向と逆にする</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.progressbarOppositeClass" approved="yes">
+				<source>CSS class name of pagination progressbar opposite</source>
+				<target state="needs-review-translation">ページネーションのプログレスバー（反対側）の CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderBullet" approved="yes">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+				<target state="needs-review-translation">ページネーションバレットのカスタム関数（bullets タイプのみ）</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderCustom" approved="yes">
+				<source>Custom function for custom pagination type</source>
+				<target state="needs-review-translation">カスタムページネーションのカスタム関数</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderFraction" approved="yes">
+				<source>Custom function for fraction pagination type</source>
+				<target state="needs-review-translation">fraction ページネーションのカスタム関数</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.renderProgressbar" approved="yes">
+				<source>Custom function for progressbar pagination type</source>
+				<target state="needs-review-translation">progressbar ページネーションのカスタム関数</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.totalClass" approved="yes">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+				<target state="needs-review-translation">fraction ページネーションで総数要素の CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.type" approved="yes">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+				<target state="needs-review-translation">ページネーションの種類（bullets, fraction, progressbar, custom）</target>
+			</trans-unit>
+			<trans-unit id="options.pagination.verticalClass" approved="yes">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+				<target state="needs-review-translation">垂直 Swiper でページネーションに設定する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragClass" approved="yes">
+				<source>Scrollbar draggable element CSS class</source>
+				<target state="needs-review-translation">スクロールバーのドラッグ要素の CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.dragSize" approved="yes">
+				<source>Size of scrollbar draggable element in px</source>
+				<target state="needs-review-translation">スクロールバーのドラッグ要素のサイズ（px）</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.draggable" approved="yes">
+				<source>Enable draggable scrollbar</source>
+				<target state="needs-review-translation">ドラッグ可能なスクロールバーを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.el" approved="yes">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+				<target state="needs-review-translation">スクロールバーを含むコンテナの CSS セレクターまたは HTML 要素</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.enabled" approved="yes">
+				<source>Enable/disable scrollbar</source>
+				<target state="needs-review-translation">スクロールバーを有効/無効</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.hide" approved="yes">
+				<source>Hide scrollbar automatically after user interaction</source>
+				<target state="needs-review-translation">操作後にスクロールバーを自動的に非表示</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.horizontalClass" approved="yes">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+				<target state="needs-review-translation">水平 Swiper でスクロールバーに設定する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.lockClass" approved="yes">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+				<target state="needs-review-translation">無効時にスクロールバー要素へ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.scrollbarDisabledClass" approved="yes">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+				<target state="needs-review-translation">ブレークポイントでスクロールバーが無効な時に Swiper コンテナとスクロールバー要素へ追加する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.snapOnRelease" approved="yes">
+				<source>Snap slider position to slides when you release scrollbar</source>
+				<target state="needs-review-translation">スクロールバーを離したときにスライド位置へスナップ</target>
+			</trans-unit>
+			<trans-unit id="options.scrollbar.verticalClass" approved="yes">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+				<target state="needs-review-translation">垂直 Swiper でスクロールバーに設定する CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.enabled" approved="yes">
+				<source>Enable free mode</source>
+				<target state="needs-review-translation">フリーモードを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.minimumVelocity" approved="yes">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+				<target state="needs-review-translation">フリーモードの慣性に必要な最小 touchmove 速度</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentum" approved="yes">
+				<source>Enable momentum in free mode</source>
+				<target state="needs-review-translation">フリーモードで慣性を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounce" approved="yes">
+				<source>Enable momentum bounce in free mode</source>
+				<target state="needs-review-translation">フリーモードで慣性バウンスを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumBounceRatio" approved="yes">
+				<source>Momentum bounce ratio</source>
+				<target state="needs-review-translation">慣性バウンス比率</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumRatio" approved="yes">
+				<source>Momentum ratio</source>
+				<target state="needs-review-translation">慣性比率</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.momentumVelocityRatio" approved="yes">
+				<source>Momentum velocity ratio</source>
+				<target state="needs-review-translation">慣性速度比率</target>
+			</trans-unit>
+			<trans-unit id="options.freeMode.sticky" approved="yes">
+				<source>Snap to slides in free mode</source>
+				<target state="needs-review-translation">フリーモードでスライドにスナップ</target>
+			</trans-unit>
+			<trans-unit id="options.grid.fill" approved="yes">
+				<source>How slides should fill rows (by column or by row)</source>
+				<target state="needs-review-translation">スライドの行の埋め方（列単位または行単位）</target>
+			</trans-unit>
+			<trans-unit id="options.grid.rows" approved="yes">
+				<source>Number of slides rows (multirow layout)</source>
+				<target state="needs-review-translation">スライドの行数（複数行レイアウト）</target>
+			</trans-unit>
+			<trans-unit id="options.parallax.enabled" approved="yes">
+				<source>Enable parallaxed elements inside the slider</source>
+				<target state="needs-review-translation">スライダー内のパララックス要素を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.fadeEffect.crossFade" approved="yes">
+				<source>Enables slides cross fade</source>
+				<target state="needs-review-translation">スライドのクロスフェードを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.depth" approved="yes">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+				<target state="needs-review-translation">深度オフセット（px）（スライドを Z 軸方向に移動）</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.modifier" approved="yes">
+				<source>Effect multiplier</source>
+				<target state="needs-review-translation">エフェクト倍率</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.rotate" approved="yes">
+				<source>Slide rotate in degrees</source>
+				<target state="needs-review-translation">スライドの回転角度（度）</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.scale" approved="yes">
+				<source>Slide scale effect</source>
+				<target state="needs-review-translation">スライドの拡大縮小</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">スライドの影を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.coverflowEffect.stretch" approved="yes">
+				<source>Stretch space between slides (px or %)</source>
+				<target state="needs-review-translation">スライド間の間隔（px または %）</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.limitRotation" approved="yes">
+				<source>Limit edge slides rotation</source>
+				<target state="needs-review-translation">端のスライドの回転を制限</target>
+			</trans-unit>
+			<trans-unit id="options.flipEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">スライドの影を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadow" approved="yes">
+				<source>Enables main slider shadow</source>
+				<target state="needs-review-translation">メインスライダーの影を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowOffset" approved="yes">
+				<source>Main shadow offset in px</source>
+				<target state="needs-review-translation">メインの影のオフセット（px）</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.shadowScale" approved="yes">
+				<source>Main shadow scale ratio</source>
+				<target state="needs-review-translation">メインの影の縮尺比率</target>
+			</trans-unit>
+			<trans-unit id="options.cubeEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">スライドの影を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideOffset" approved="yes">
+				<source>Offset distance per slide (in px)</source>
+				<target state="needs-review-translation">スライドごとのオフセット距離（px）</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.perSlideRotate" approved="yes">
+				<source>Rotate angle per slide (in degrees)</source>
+				<target state="needs-review-translation">スライドごとの回転角度（度）</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.rotate" approved="yes">
+				<source>Enables cards rotation</source>
+				<target state="needs-review-translation">カードの回転を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.cardsEffect.slideShadows" approved="yes">
+				<source>Enables slides shadows</source>
+				<target state="needs-review-translation">スライドの影を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.limitProgress" approved="yes">
+				<source>Limit progress/offset to amount of side slides</source>
+				<target state="needs-review-translation">進捗/オフセットをサイドスライド数に制限</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.next" approved="yes">
+				<source>Next slide transformations</source>
+				<target state="needs-review-translation">次のスライドの変形</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.perspective" approved="yes">
+				<source>Enable 3D perspective for custom transforms</source>
+				<target state="needs-review-translation">カスタム変形で 3D パースペクティブを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.prev" approved="yes">
+				<source>Previous slide transformations</source>
+				<target state="needs-review-translation">前のスライドの変形</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.progressMultiplier" approved="yes">
+				<source>Multiply slide transformations and opacity</source>
+				<target state="needs-review-translation">スライドの変形と不透明度を乗算</target>
+			</trans-unit>
+			<trans-unit id="options.creativeEffect.shadowPerProgress" approved="yes">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+				<target state="needs-review-translation">limitProgress に基づいてスライドごとに影の不透明度を分割</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.autoScrollOffset" approved="yes">
+				<source>Auto scroll offset for thumbs</source>
+				<target state="needs-review-translation">サムネイルの自動スクロールオフセット</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.multipleActiveThumbs" approved="yes">
+				<source>Enable multiple active thumbnail slides</source>
+				<target state="needs-review-translation">複数のアクティブサムネイルを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.slideThumbActiveClass" approved="yes">
+				<source>Additional class for activated thumbs swiper slide</source>
+				<target state="needs-review-translation">アクティブなサムネイルスライドの追加クラス</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.swiper" approved="yes">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+				<target state="needs-review-translation">サムネイル Swiper のインスタンスまたはパラメーター</target>
+			</trans-unit>
+			<trans-unit id="options.thumbs.thumbsContainerClass" approved="yes">
+				<source>Additional class for thumbs swiper container</source>
+				<target state="needs-review-translation">サムネイル Swiper コンテナの追加クラス</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.enabled" approved="yes">
+				<source>Enable/disable zoom</source>
+				<target state="needs-review-translation">ズームを有効/無効</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.containerClass" approved="yes">
+				<source>CSS class name of zoom container</source>
+				<target state="needs-review-translation">ズームコンテナの CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.limitToOriginalSize" approved="yes">
+				<source>Limit zoom to original image size</source>
+				<target state="needs-review-translation">ズームを元の画像サイズに制限</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.maxRatio" approved="yes">
+				<source>Maximum image zoom multiplier</source>
+				<target state="needs-review-translation">画像ズームの最大倍率</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.minRatio" approved="yes">
+				<source>Minimal image zoom multiplier</source>
+				<target state="needs-review-translation">画像ズームの最小倍率</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.panOnMouseMove" approved="yes">
+				<source>Pan zoomed image on mouse move</source>
+				<target state="needs-review-translation">マウス移動でズーム画像をパン</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.toggle" approved="yes">
+				<source>Enable/disable zoom-in by double tap</source>
+				<target state="needs-review-translation">ダブルタップでのズームインを有効/無効</target>
+			</trans-unit>
+			<trans-unit id="options.zoom.zoomedSlideClass" approved="yes">
+				<source>CSS class name of zoomed in container</source>
+				<target state="needs-review-translation">ズームインされたコンテナの CSS クラス</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.enabled" approved="yes">
+				<source>Enable keyboard control</source>
+				<target state="needs-review-translation">キーボード操作を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.onlyInViewport" approved="yes">
+				<source>Control sliders only in viewport</source>
+				<target state="needs-review-translation">ビューポート内のスライダーのみ操作</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.pageUpDown" approved="yes">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+				<target state="needs-review-translation">Page Up/Down キーによるキーボードナビゲーションを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard.speed" approved="yes">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+				<target state="needs-review-translation">キーボードナビゲーションの切り替え速度（ms）</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.enabled" approved="yes">
+				<source>Enable mousewheel control</source>
+				<target state="needs-review-translation">マウスホイール操作を有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.eventsTarget" approved="yes">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+				<target state="needs-review-translation">マウスホイールイベント対象の CSS セレクターまたは HTML 要素</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.forceToAxis" approved="yes">
+				<source>Force mousewheel swipes to axis</source>
+				<target state="needs-review-translation">マウスホイールのスワイプを軸に固定</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.invert" approved="yes">
+				<source>Invert sliding direction</source>
+				<target state="needs-review-translation">スライド方向を反転</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.noMousewheelClass" approved="yes">
+				<source>Class name to ignore mousewheel scrolling</source>
+				<target state="needs-review-translation">マウスホイールスクロールを無視するクラス名</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.releaseOnEdges" approved="yes">
+				<source>Release mousewheel event on edges</source>
+				<target state="needs-review-translation">端でマウスホイールイベントを解放</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.sensitivity" approved="yes">
+				<source>Mousewheel sensitivity multiplier</source>
+				<target state="needs-review-translation">マウスホイール感度の倍率</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdDelta" approved="yes">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+				<target state="needs-review-translation">スライド切り替えを発生させる最小マウスホイールスクロール量</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel.thresholdTime" approved="yes">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+				<target state="needs-review-translation">スライド切り替えを発生させる最小マウスホイールスクロール時間（ms）</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides" approved="yes">
+				<source>Virtual Slides</source>
+				<target state="needs-review-translation">仮想スライド</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesAfter" approved="yes">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+				<target state="needs-review-translation">アクティブスライドの後に事前レンダリングするスライド数を増やす</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.addSlidesBefore" approved="yes">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+				<target state="needs-review-translation">アクティブスライドの前に事前レンダリングするスライド数を増やす</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.cache" approved="yes">
+				<source>Enable DOM cache of rendered slides</source>
+				<target state="needs-review-translation">レンダリング済みスライドの DOM キャッシュを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.enabled" approved="yes">
+				<source>Enable virtual slides</source>
+				<target state="needs-review-translation">仮想スライドを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternal" approved="yes">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+				<target state="needs-review-translation">外部レンダリング用の関数（例: React/Vue）</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderExternalUpdate" approved="yes">
+				<source>Update Swiper layout after renderExternal</source>
+				<target state="needs-review-translation">renderExternal 後に Swiper レイアウトを更新</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.renderSlide" approved="yes">
+				<source>Function to render slide</source>
+				<target state="needs-review-translation">スライドをレンダリングする関数</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slides" approved="yes">
+				<source>Array with slides</source>
+				<target state="needs-review-translation">スライドの配列</target>
+			</trans-unit>
+			<trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" approved="yes">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+				<target state="needs-review-translation">slidesPerView: auto の場合のスライドサイズ（px）</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation" approved="yes">
+				<source>Hash Navigation</source>
+				<target state="needs-review-translation">ハッシュナビゲーション</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.getSlideIndex" approved="yes">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+				<target state="needs-review-translation">ハッシュからスライドインデックスを取得する関数（仮想スライド用）</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.replaceState" approved="yes">
+				<source>Replace current URL state instead of adding to history</source>
+				<target state="needs-review-translation">履歴に追加せず現在の URL 状態を置換</target>
+			</trans-unit>
+			<trans-unit id="options.hashNavigation.watchState" approved="yes">
+				<source>Enable navigation by browser history/hash</source>
+				<target state="needs-review-translation">ブラウザ履歴/ハッシュによるナビゲーションを有効にする</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerView" approved="yes">
+				<source>Slides per view</source>
+				<target state="needs-review-translation">表示するスライド数</target>
+			</trans-unit>
+			<trans-unit id="options.spaceBetween" approved="yes">
+				<source>Space between slides (in px)</source>
+				<target state="needs-review-translation">スライド間の間隔（px）</target>
+			</trans-unit>
+			<trans-unit id="options.slidesPerGroup" approved="yes">
+				<source>Number of slides in group</source>
+				<target state="needs-review-translation">グループ内のスライド数</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

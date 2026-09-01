@@ -1,15 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="fr">
-    <header/>
-    <body>
-      <!-- sheets -->
-      <!-- flexslider general settings -->
-      <!-- Usability Features -->
-      <!-- Primary Controls -->
-      <!-- Secondary Navigation -->
-      <!-- Special Properties -->
-      <!-- Carousel-->
-    </body>
-  </file>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="fr">
+		<header/>
+		<body>
+			<trans-unit id="sheet.flexslider" approved="yes">
+				<source>Flex Slider</source>
+				<target state="needs-review-translation">Flex Slider</target>
+			</trans-unit>
+			<trans-unit id="sheet.usability" approved="yes">
+				<source>Usability</source>
+				<target state="needs-review-translation">Utilisabilité</target>
+			</trans-unit>
+			<trans-unit id="sheet.primaryControls" approved="yes">
+				<source>Primary Controls</source>
+				<target state="needs-review-translation">Contrôles principaux</target>
+			</trans-unit>
+			<trans-unit id="sheet.secondaryNavigation" approved="yes">
+				<source>Secondary Navigation</source>
+				<target state="needs-review-translation">Navigation secondaire</target>
+			</trans-unit>
+			<trans-unit id="sheet.specialProperties" approved="yes">
+				<source>Special Properties</source>
+				<target state="needs-review-translation">Propriétés spéciales</target>
+			</trans-unit>
+			<trans-unit id="sheet.carousel" approved="yes">
+				<source>Carousel</source>
+				<target state="needs-review-translation">Carrousel</target>
+			</trans-unit>
+			<trans-unit id="options.selector" approved="yes">
+				<source>Selector</source>
+				<target state="needs-review-translation">Sélecteur</target>
+			</trans-unit>
+			<trans-unit id="options.animation" approved="yes">
+				<source>Animation</source>
+				<target state="needs-review-translation">Animation</target>
+			</trans-unit>
+			<trans-unit id="options.easing" approved="yes">
+				<source>Easing effect</source>
+				<target state="needs-review-translation">Effet Easing</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">Direction</target>
+			</trans-unit>
+			<trans-unit id="options.reverse" approved="yes">
+				<source>Reverse order</source>
+				<target state="needs-review-translation">Ordre inversé</target>
+			</trans-unit>
+			<trans-unit id="options.animationLoop" approved="yes">
+				<source>Animation loop</source>
+				<target state="needs-review-translation">Boucle d'animation</target>
+			</trans-unit>
+			<trans-unit id="options.smoothHeight" approved="yes">
+				<source>Smooth height</source>
+				<target state="needs-review-translation">Hauteur fluide entre les éléments</target>
+			</trans-unit>
+			<trans-unit id="options.startAt" approved="yes">
+				<source>Start at</source>
+				<target state="needs-review-translation">Démarrer à</target>
+			</trans-unit>
+			<trans-unit id="options.slideshow" approved="yes">
+				<source>Slideshow mode</source>
+				<target state="needs-review-translation">Mode diaporama</target>
+			</trans-unit>
+			<trans-unit id="options.slideshowSpeed" approved="yes">
+				<source>Slideshow speed (in milliseconds)</source>
+				<target state="needs-review-translation">Vitesse du diaporama (en millisecondes)</target>
+			</trans-unit>
+			<trans-unit id="options.animationSpeed" approved="yes">
+				<source>Animation speed (in milliseconds)</source>
+				<target state="needs-review-translation">Vitesse de l'animation (en millisecondes)</target>
+			</trans-unit>
+			<trans-unit id="options.initDelay" approved="yes">
+				<source>Init delay in milliseconds</source>
+				<target state="needs-review-translation">Délai d'initialisation en millisecondes</target>
+			</trans-unit>
+			<trans-unit id="options.randomize" approved="yes">
+				<source>Random mode</source>
+				<target state="needs-review-translation">Mode aléatoire</target>
+			</trans-unit>
+			<trans-unit id="options.fadeFirstSlide" approved="yes">
+				<source>Fade in first slide</source>
+				<target state="needs-review-translation">Fondu sur la première diapositive</target>
+			</trans-unit>
+			<trans-unit id="options.fade" approved="yes">
+				<source>Fade</source>
+				<target state="needs-review-translation">Fondu</target>
+			</trans-unit>
+			<trans-unit id="options.slide" approved="yes">
+				<source>Slide</source>
+				<target state="needs-review-translation">Glissement</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnAction" approved="yes">
+				<source>Pause on action</source>
+				<target state="needs-review-translation">Pause lors d'une action</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnHover" approved="yes">
+				<source>Pause on hover</source>
+				<target state="needs-review-translation">Pause au survol</target>
+			</trans-unit>
+			<trans-unit id="options.pauseInvisible" approved="yes">
+				<source>Pause Invisible</source>
+				<target state="needs-review-translation">Pause lorsque invisible</target>
+			</trans-unit>
+			<trans-unit id="options.useCSS" approved="yes">
+				<source>User CSS</source>
+				<target state="needs-review-translation">Utiliser CSS</target>
+			</trans-unit>
+			<trans-unit id="options.touch" approved="yes">
+				<source>Touch mode</source>
+				<target state="needs-review-translation">Mode tactile</target>
+			</trans-unit>
+			<trans-unit id="options.video" approved="yes">
+				<source>Video mode</source>
+				<target state="needs-review-translation">Mode vidéo</target>
+			</trans-unit>
+			<trans-unit id="options.controlNav" approved="yes">
+				<source>Navigation Dots</source>
+				<target state="needs-review-translation">Points de navigation</target>
+			</trans-unit>
+			<trans-unit id="options.directionNav" approved="yes">
+				<source>Navigation Arrows</source>
+				<target state="needs-review-translation">Flèches de navigation</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard" approved="yes">
+				<source>Keyboard support</source>
+				<target state="needs-review-translation">Navigation clavier</target>
+			</trans-unit>
+			<trans-unit id="options.multipleKeyboard" approved="yes">
+				<source>Allow keyboard navigation to affect multiple sliders</source>
+				<target state="needs-review-translation">Permettre à la navigation clavier d'agir sur plusieurs sliders</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel" approved="yes">
+				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
+				<target state="needs-review-translation">Prise en charge de la molette (nécessite jquery.mousewheel.js)</target>
+			</trans-unit>
+			<trans-unit id="options.pausePlay" approved="yes">
+				<source>Create pause/play dynamic element</source>
+				<target state="needs-review-translation">Créer un élément dynamique pause/lecture</target>
+			</trans-unit>
+			<trans-unit id="options.controlsContainer" approved="yes">
+				<source>controlsContainer jQuery object/selector</source>
+				<target state="needs-review-translation">controlsContainer : objet/sélecteur jQuery</target>
+			</trans-unit>
+			<trans-unit id="options.manualControls" approved="yes">
+				<source>manualControls jQuery object/selector</source>
+				<target state="needs-review-translation">manualControls : objet/sélecteur jQuery</target>
+			</trans-unit>
+			<trans-unit id="options.customDirectionNav" approved="yes">
+				<source>customDirectionNav jQuery object/selector</source>
+				<target state="needs-review-translation">customDirectionNav : objet/sélecteur jQuery</target>
+			</trans-unit>
+			<trans-unit id="options.sync" approved="yes">
+				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
+				<target state="needs-review-translation">Sélecteur de synchronisation : répliquer les actions de ce slider sur un autre slider</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>asNavFor selector</source>
+				<target state="needs-review-translation">Sélecteur asNavFor</target>
+			</trans-unit>
+			<trans-unit id="options.itemWidth" approved="yes">
+				<source>Element width in pixels</source>
+				<target state="needs-review-translation">Largeur de l'élément en pixels</target>
+			</trans-unit>
+			<trans-unit id="options.itemMargin" approved="yes">
+				<source>Element border (margin)</source>
+				<target state="needs-review-translation">Marge de l'élément</target>
+			</trans-unit>
+			<trans-unit id="options.minItems" approved="yes">
+				<source>Min number of elements</source>
+				<target state="needs-review-translation">Nombre minimum d'éléments</target>
+			</trans-unit>
+			<trans-unit id="options.maxItems" approved="yes">
+				<source>Max number of elements</source>
+				<target state="needs-review-translation">Nombre maximum d'éléments</target>
+			</trans-unit>
+			<trans-unit id="options.move" approved="yes">
+				<source>Number of elements, which should be moved in animation</source>
+				<target state="needs-review-translation">Nombre d'éléments déplacés à chaque animation</target>
+			</trans-unit>
+			<trans-unit id="btn.more" approved="yes">
+				<source>More</source>
+				<target state="needs-review-translation">Plus</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

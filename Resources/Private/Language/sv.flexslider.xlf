@@ -1,15 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="sv-SE">
-    <header/>
-    <body>
-      <!-- sheets -->
-      <!-- flexslider general settings -->
-      <!-- Usability Features -->
-      <!-- Primary Controls -->
-      <!-- Secondary Navigation -->
-      <!-- Special Properties -->
-      <!-- Carousel-->
-    </body>
-  </file>
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="sv">
+		<header/>
+		<body>
+			<trans-unit id="sheet.flexslider" approved="yes">
+				<source>Flex Slider</source>
+				<target state="needs-review-translation">Flex Slider</target>
+			</trans-unit>
+			<trans-unit id="sheet.usability" approved="yes">
+				<source>Usability</source>
+				<target state="needs-review-translation">Användbarhet</target>
+			</trans-unit>
+			<trans-unit id="sheet.primaryControls" approved="yes">
+				<source>Primary Controls</source>
+				<target state="needs-review-translation">Primära kontroller</target>
+			</trans-unit>
+			<trans-unit id="sheet.secondaryNavigation" approved="yes">
+				<source>Secondary Navigation</source>
+				<target state="needs-review-translation">Sekundär navigering</target>
+			</trans-unit>
+			<trans-unit id="sheet.specialProperties" approved="yes">
+				<source>Special Properties</source>
+				<target state="needs-review-translation">Särskilda egenskaper</target>
+			</trans-unit>
+			<trans-unit id="sheet.carousel" approved="yes">
+				<source>Carousel</source>
+				<target state="needs-review-translation">Karusell</target>
+			</trans-unit>
+			<trans-unit id="options.selector" approved="yes">
+				<source>Selector</source>
+				<target state="needs-review-translation">Väljare</target>
+			</trans-unit>
+			<trans-unit id="options.animation" approved="yes">
+				<source>Animation</source>
+				<target state="needs-review-translation">Animering</target>
+			</trans-unit>
+			<trans-unit id="options.easing" approved="yes">
+				<source>Easing effect</source>
+				<target state="needs-review-translation">Easing-effekt</target>
+			</trans-unit>
+			<trans-unit id="options.direction" approved="yes">
+				<source>Direction</source>
+				<target state="needs-review-translation">Riktning</target>
+			</trans-unit>
+			<trans-unit id="options.reverse" approved="yes">
+				<source>Reverse order</source>
+				<target state="needs-review-translation">Omvänd ordning</target>
+			</trans-unit>
+			<trans-unit id="options.animationLoop" approved="yes">
+				<source>Animation loop</source>
+				<target state="needs-review-translation">Animationsslinga</target>
+			</trans-unit>
+			<trans-unit id="options.smoothHeight" approved="yes">
+				<source>Smooth height</source>
+				<target state="needs-review-translation">Mjuk höjdanpassning</target>
+			</trans-unit>
+			<trans-unit id="options.startAt" approved="yes">
+				<source>Start at</source>
+				<target state="needs-review-translation">Starta vid</target>
+			</trans-unit>
+			<trans-unit id="options.slideshow" approved="yes">
+				<source>Slideshow mode</source>
+				<target state="needs-review-translation">Bildspelsläge</target>
+			</trans-unit>
+			<trans-unit id="options.slideshowSpeed" approved="yes">
+				<source>Slideshow speed (in milliseconds)</source>
+				<target state="needs-review-translation">Bildspelshastighet (i millisekunder)</target>
+			</trans-unit>
+			<trans-unit id="options.animationSpeed" approved="yes">
+				<source>Animation speed (in milliseconds)</source>
+				<target state="needs-review-translation">Animationshastighet (i millisekunder)</target>
+			</trans-unit>
+			<trans-unit id="options.initDelay" approved="yes">
+				<source>Init delay in milliseconds</source>
+				<target state="needs-review-translation">Startfördröjning i millisekunder</target>
+			</trans-unit>
+			<trans-unit id="options.randomize" approved="yes">
+				<source>Random mode</source>
+				<target state="needs-review-translation">Slumpmässigt läge</target>
+			</trans-unit>
+			<trans-unit id="options.fadeFirstSlide" approved="yes">
+				<source>Fade in first slide</source>
+				<target state="needs-review-translation">Tona in första bilden</target>
+			</trans-unit>
+			<trans-unit id="options.fade" approved="yes">
+				<source>Fade</source>
+				<target state="needs-review-translation">Övertoning</target>
+			</trans-unit>
+			<trans-unit id="options.slide" approved="yes">
+				<source>Slide</source>
+				<target state="needs-review-translation">Glidning</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnAction" approved="yes">
+				<source>Pause on action</source>
+				<target state="needs-review-translation">Pausa vid interaktion</target>
+			</trans-unit>
+			<trans-unit id="options.pauseOnHover" approved="yes">
+				<source>Pause on hover</source>
+				<target state="needs-review-translation">Pausa vid hovring</target>
+			</trans-unit>
+			<trans-unit id="options.pauseInvisible" approved="yes">
+				<source>Pause Invisible</source>
+				<target state="needs-review-translation">Pausa när osynlig</target>
+			</trans-unit>
+			<trans-unit id="options.useCSS" approved="yes">
+				<source>User CSS</source>
+				<target state="needs-review-translation">Använd CSS</target>
+			</trans-unit>
+			<trans-unit id="options.touch" approved="yes">
+				<source>Touch mode</source>
+				<target state="needs-review-translation">Touch-läge</target>
+			</trans-unit>
+			<trans-unit id="options.video" approved="yes">
+				<source>Video mode</source>
+				<target state="needs-review-translation">Videoläge</target>
+			</trans-unit>
+			<trans-unit id="options.controlNav" approved="yes">
+				<source>Navigation Dots</source>
+				<target state="needs-review-translation">Navigeringspunkter</target>
+			</trans-unit>
+			<trans-unit id="options.directionNav" approved="yes">
+				<source>Navigation Arrows</source>
+				<target state="needs-review-translation">Navigeringspilar</target>
+			</trans-unit>
+			<trans-unit id="options.keyboard" approved="yes">
+				<source>Keyboard support</source>
+				<target state="needs-review-translation">Tangentbordsstöd</target>
+			</trans-unit>
+			<trans-unit id="options.multipleKeyboard" approved="yes">
+				<source>Allow keyboard navigation to affect multiple sliders</source>
+				<target state="needs-review-translation">Tillåt tangentbordsnavigering att styra flera sliders</target>
+			</trans-unit>
+			<trans-unit id="options.mousewheel" approved="yes">
+				<source>Mousewheel support (requires jquery.mousewheel.js)</source>
+				<target state="needs-review-translation">Stöd för mushjul (kräver jquery.mousewheel.js)</target>
+			</trans-unit>
+			<trans-unit id="options.pausePlay" approved="yes">
+				<source>Create pause/play dynamic element</source>
+				<target state="needs-review-translation">Skapa dynamiskt paus/spela-element</target>
+			</trans-unit>
+			<trans-unit id="options.controlsContainer" approved="yes">
+				<source>controlsContainer jQuery object/selector</source>
+				<target state="needs-review-translation">controlsContainer jQuery-objekt/väljare</target>
+			</trans-unit>
+			<trans-unit id="options.manualControls" approved="yes">
+				<source>manualControls jQuery object/selector</source>
+				<target state="needs-review-translation">manualControls jQuery-objekt/väljare</target>
+			</trans-unit>
+			<trans-unit id="options.customDirectionNav" approved="yes">
+				<source>customDirectionNav jQuery object/selector</source>
+				<target state="needs-review-translation">customDirectionNav jQuery-objekt/väljare</target>
+			</trans-unit>
+			<trans-unit id="options.sync" approved="yes">
+				<source>Sync selector: mirror the actions performed on this slider with another slider</source>
+				<target state="needs-review-translation">Synk-väljare: spegla åtgärder utförda på denna slider i en annan slider</target>
+			</trans-unit>
+			<trans-unit id="options.asNavFor" approved="yes">
+				<source>asNavFor selector</source>
+				<target state="needs-review-translation">asNavFor-väljare</target>
+			</trans-unit>
+			<trans-unit id="options.itemWidth" approved="yes">
+				<source>Element width in pixels</source>
+				<target state="needs-review-translation">Elementbredd i pixlar</target>
+			</trans-unit>
+			<trans-unit id="options.itemMargin" approved="yes">
+				<source>Element border (margin)</source>
+				<target state="needs-review-translation">Elementmarginal</target>
+			</trans-unit>
+			<trans-unit id="options.minItems" approved="yes">
+				<source>Min number of elements</source>
+				<target state="needs-review-translation">Minsta antal element</target>
+			</trans-unit>
+			<trans-unit id="options.maxItems" approved="yes">
+				<source>Max number of elements</source>
+				<target state="needs-review-translation">Största antal element</target>
+			</trans-unit>
+			<trans-unit id="options.move" approved="yes">
+				<source>Number of elements, which should be moved in animation</source>
+				<target state="needs-review-translation">Antal element som flyttas vid animering</target>
+			</trans-unit>
+			<trans-unit id="btn.more" approved="yes">
+				<source>More</source>
+				<target state="needs-review-translation">Mer</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

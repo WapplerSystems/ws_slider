@@ -1,58 +1,212 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ca">
-    <header/>
-    <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ca">
+		<header/>
+		<body>
+			<trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
+				<source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
+				<target state="needs-review-translation">Controla el comportament de l'animació. Amb 'carousel' tot es desplaça cap al costat, mentre que 'gallery' utilitza animacions d'esvaïment i canvia totes les diapositives alhora.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
+				<source>The axis of the slider.</source>
+				<target state="needs-review-translation">L'eix del slider.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.items.description" approved="yes">
+				<source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
+				<target state="needs-review-translation">Nombre de diapositives que es mostren a la finestra de visualització. Si el nombre de diapositives és menor o igual que el d'elements, el slider no s'inicialitzarà.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
+				<source>Space between slides (in “px”).</source>
+				<target state="needs-review-translation">Espai entre diapositives (en «px»).</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
+				<source>Space on the outside (in “px”).</source>
+				<target state="needs-review-translation">Espai a l'exterior (en «px»).</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
+				<source>Controls width attribute of the slides.</source>
+				<target state="needs-review-translation">Controla l'atribut d'amplada de les diapositives.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
+				<source>If true, the width of each slide will be its natural width as an inline-block box.</source>
+				<target state="needs-review-translation">Si està activat, l'amplada de cada diapositiva serà la seva amplada natural com a caixa inline-block.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
+				<source>Maximum viewport width for fixedWidth/autoWidth.</source>
+				<target state="needs-review-translation">Amplada màxima de la finestra de visualització per a fixedWidth/autoWidth.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
+				<source>Number of slides going on one “click”.</source>
+				<target state="needs-review-translation">Nombre de diapositives que es desplacen amb un «clic».</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.center.description" approved="yes">
+				<source>Center the active slide in the viewport.</source>
+				<target state="needs-review-translation">Centra la diapositiva activa a la finestra de visualització.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
+				<source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
+				<target state="needs-review-translation">Controla la visualització i les funcionalitats dels components de control (botons anterior/següent). Si està activat, es mostren els controls i s'afegeixen totes les funcionalitats. Per millorar l'accessibilitat, quan un botó anterior/següent està enfocat, l'usuari pot controlar el slider amb les tecles de fletxa esquerra/dreta.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
+				<source>Controls controls position.</source>
+				<target state="needs-review-translation">Controla la posició dels controls.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
+				<source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
+				<target state="needs-review-translation">L'element o selector contenidor al voltant dels botons anterior/següent. controlsContainer ha de tenir com a mínim 2 elements fills.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
+				<source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+				<target state="needs-review-translation">Botons «anterior» personalitzats. Aquesta opció s'ignorarà si controlsContainer és un element Node o un selector CSS.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
+				<source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+				<target state="needs-review-translation">Botons «següent» personalitzats. Aquesta opció s'ignorarà si controlsContainer és un element Node o un selector CSS.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
+				<source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
+				<target state="needs-review-translation">Controla la visualització i les funcionalitats dels components de navegació (punts). Si està activat, es mostra la navegació i s'afegeixen totes les funcionalitats.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
+				<source>Controls nav position.</source>
+				<target state="needs-review-translation">Controla la posició de la navegació.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
+				<source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
+				<target state="needs-review-translation">L'element o selector contenidor al voltant dels punts. navContainer ha de tenir com a mínim el mateix nombre de fills que de diapositives.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
+				<source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
+				<target state="needs-review-translation">Indica si els punts són miniatures. Si està activat, sempre seran visibles encara que es mostri més d'una diapositiva a la finestra de visualització.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
+				<source>Allows using arrow keys to switch slides.</source>
+				<target state="needs-review-translation">Permet utilitzar les tecles de fletxa per canviar de diapositiva.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
+				<source>Speed of the slide animation (in “ms”).</source>
+				<target state="needs-review-translation">Velocitat de l'animació de la diapositiva (en «ms»).</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
+				<source>Toggles the automatic change of slides.</source>
+				<target state="needs-review-translation">Activa o desactiva el canvi automàtic de diapositives.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
+				<source>Controls autoplay position.</source>
+				<target state="needs-review-translation">Controla la posició de l'autoplay.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
+				<source>Time between 2 autoplay slides change (in “ms”).</source>
+				<target state="needs-review-translation">Temps entre dos canvis de diapositiva d'autoplay (en «ms»).</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
+				<source>Direction of slide movement (ascending/descending the slide index).</source>
+				<target state="needs-review-translation">Direcció del moviment de la diapositiva (ascendent/descendent en l'índex de diapositives).</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
+				<source>Stops sliding on mouseover.</source>
+				<target state="needs-review-translation">Atura el desplaçament en passar el ratolí per sobre.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
+				<source>The customized autoplay start/stop button or selector.</source>
+				<target state="needs-review-translation">El botó o selector personalitzat d'inici/aturada de l'autoplay.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
+				<source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
+				<target state="needs-review-translation">Genera el marcatge del botó d'autoplay quan l'autoplay està activat però no s'ha proporcionat un autoplayButton personalitzat.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
+				<source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
+				<target state="needs-review-translation">Pausa el desplaçament quan la pàgina no és visible i el reprèn quan torna a ser visible.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
+				<source>Name of intro animation class.</source>
+				<target state="needs-review-translation">Nom de la classe d'animació d'entrada.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
+				<source>Name of outro animation class.</source>
+				<target state="needs-review-translation">Nom de la classe d'animació de sortida.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
+				<source>Name of default animation class.</source>
+				<target state="needs-review-translation">Nom de la classe d'animació per defecte.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
+				<source>Time between each gallery animation (in “ms”).</source>
+				<target state="needs-review-translation">Temps entre cada animació de galeria (en «ms»).</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
+				<source>Moves throughout all the slides seamlessly.</source>
+				<target state="needs-review-translation">Es mou per totes les diapositives de manera contínua.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
+				<source>Moves to the opposite edge when reaching the first or last slide.</source>
+				<target state="needs-review-translation">Es mou cap a l'extrem oposat en arribar a la primera o l'última diapositiva.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
+				<source>Height of slider container changes according to each slide’s height.</source>
+				<target state="needs-review-translation">L'alçada del contenidor del slider canvia segons l'alçada de cada diapositiva.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.lazyload.description" approved="yes">
+				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
+                        NOTE:
+                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
+                        + data-src attribute with its value of the real image src is required;
+                        + width attribute for every image is required for autoWidth slider.</source>
+				<target state="needs-review-translation">Habilita la càrrega diferida (lazyload) de les imatges que actualment no es veuen, estalviant així ample de banda (vegeu la demo). NOTA: + Cal establir la classe .tns-lazy-img a cada imatge que vulgueu carregar de manera diferida si no s'especifica l'opció lazyloadSelector; + Cal l'atribut data-src amb el valor de la src real de la imatge; + Cal l'atribut width per a cada imatge en el cas d'un slider autoWidth.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
+				<source>The CSS selector for lazyload images.</source>
+				<target state="needs-review-translation">El selector CSS per a les imatges amb càrrega diferida.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
+				<source>Activates input detection for touch devices.</source>
+				<target state="needs-review-translation">Activa la detecció d'entrada per a dispositius tàctils.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
+				<source>Changing slides by dragging them.</source>
+				<target state="needs-review-translation">Canviar de diapositiva arrossegant-les.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
+				<source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
+				<target state="needs-review-translation">El lliscament o arrossegament no s'activarà si l'angle no està dins del rang establert.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
+				<source>Prevent next transition while slider is transforming.</source>
+				<target state="needs-review-translation">Impedeix la transició següent mentre el slider s'està transformant.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
+				<source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
+				<target state="needs-review-translation">Impedeix el desplaçament de la pàgina en el touchmove. Si s'estableix a «auto», el slider primer comprovarà si la direcció del toc coincideix amb l'eix del slider, i després decidirà si impedeix el desplaçament de la pàgina o no. Si s'estableix a «force», el slider sempre impedirà el desplaçament de la pàgina.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
+				<source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
+				<target state="needs-review-translation">Defineix la relació entre sliders imbricats. Assegureu-vos d'executar primer el slider interior, altrament l'alçada del contenidor del slider interior serà incorrecta.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
+				<source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
+				<target state="needs-review-translation">Indica si el slider es congelarà (els controls, la navegació, l'autoplay i altres funcions deixaran de funcionar) quan totes les diapositives es poden mostrar en una sola pàgina.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
+				<source>Disable slider.</source>
+				<target state="needs-review-translation">Desactiva el slider.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
+				<source>The initial index of the slider.</source>
+				<target state="needs-review-translation">L'índex inicial del slider.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
+				<source>Callback to be run on initialization.</source>
+				<target state="needs-review-translation">Funció de retorn (callback) que s'executa en la inicialització.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
+				<source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
+				<target state="needs-review-translation">Desa les variables de capacitat del navegador a localStorage sense detectar-les cada vegada que s'executa el slider, si s'estableix a true.</target>
+			</trans-unit>
+			<trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
+				<source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
+				<target state="needs-review-translation">Atribut Nonce opcional per a l'etiqueta d'estil inline, per permetre l'ús del slider sense la font unsafe-inline a la Content Security Policy.</target>
+			</trans-unit>
 		</body>
-  </file>
+	</file>
 </xliff>
