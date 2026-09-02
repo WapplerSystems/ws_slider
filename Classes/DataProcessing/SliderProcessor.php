@@ -94,6 +94,7 @@ class SliderProcessor implements DataProcessorInterface
             ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
 
             $this->convertStringOptionsToBoolean($options);
+            $this->removeArrayKeysMarker($options);
 
         } else {
 
@@ -134,6 +135,7 @@ class SliderProcessor implements DataProcessorInterface
             }
 
             $this->convertStringOptionsToBoolean($options);
+            $this->removeArrayKeysMarker($options);
         }
 
         $processedData['options'] = $options;
@@ -251,6 +253,29 @@ class SliderProcessor implements DataProcessorInterface
         }
 
         return $flexformOptions;
+    }
+
+    /**
+     * Strips the "_removeArrayKeys" marker and reindexes the array into a real PHP list,
+     * so AbstractSliderFactory::js_encode() renders it as a JS array instead of an object.
+     */
+    private function removeArrayKeysMarker(array &$options): void
+    {
+        foreach ($options as $key => &$value) {
+            if (!is_array($value)) {
+                continue;
+            }
+
+            $this->removeArrayKeysMarker($value);
+
+            if (array_key_exists('_removeArrayKeys', $value) && (bool)$value['_removeArrayKeys']) {
+                unset($value['_removeArrayKeys']);
+                $value = array_values($value);
+            }
+        }
+        // Die Referenz aus der Schleife aufloesen, sonst zeigt $value noch auf das
+        // letzte Element und ein spaeteres foreach im selben Scope wuerde es ueberschreiben.
+        unset($value);
     }
 
     private function convertStringOptionsToBoolean(&$options)
