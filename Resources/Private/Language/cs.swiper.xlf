@@ -3,172 +3,518 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="cs">
     <header/>
     <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-			
-			
-			
-			
-			
-			
-
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-		</body>
+      <trans-unit id="options.accessibility" approved="yes">
+        <source>Accessibility</source>
+        <target state="final">Přístupnost</target>
+      </trans-unit>
+      <trans-unit id="options.arrows" approved="yes">
+        <source>Arrows</source>
+        <target state="final">Šipky</target>
+      </trans-unit>
+      <trans-unit id="options.appendArrows" approved="yes">
+        <source>Append Arrows</source>
+        <target state="final">Připojit šipky</target>
+      </trans-unit>
+      <trans-unit id="options.appendDots" approved="yes">
+        <source>Append Dots</source>
+        <target state="final">Připojit tečky</target>
+      </trans-unit>
+      <trans-unit id="options.prevArrow" approved="yes">
+        <source>Prev Arrow</source>
+        <target state="final">Šipka zpět</target>
+      </trans-unit>
+      <trans-unit id="options.nextArrow" approved="yes">
+        <source>Next Arrow</source>
+        <target state="final">Šipka vpřed</target>
+      </trans-unit>
+      <trans-unit id="options.centerMode" approved="yes">
+        <source>Center Mode</source>
+        <target state="final">Režim vystředění</target>
+      </trans-unit>
+      <trans-unit id="options.centerPadding" approved="yes">
+        <source>Center Padding</source>
+        <target state="final">Odsazení při vystředění</target>
+      </trans-unit>
+      <trans-unit id="options.cssEase" approved="yes">
+        <source>CSS3 animation Easing</source>
+        <target state="final">Easing CSS3 animace</target>
+      </trans-unit>
+      <trans-unit id="options.effect" approved="yes">
+        <source>Effect</source>
+        <target state="final">Efekt</target>
+      </trans-unit>
+      <trans-unit id="options.setWrapperSize" approved="yes">
+        <source>setWrapperSize</source>
+        <target state="final">Nastavit velikost obalu</target>
+      </trans-unit>
+      <trans-unit id="options.height" approved="yes">
+        <source>Height</source>
+        <target state="final">Výška</target>
+      </trans-unit>
+      <trans-unit id="options.width" approved="yes">
+        <source>Width</source>
+        <target state="final">Šířka</target>
+      </trans-unit>
+      <trans-unit id="options.direction" approved="yes">
+        <source>Direction</source>
+        <target state="final">Směr</target>
+      </trans-unit>
+      <trans-unit id="options.customClasses" approved="yes">
+        <source>Additional CSS classes</source>
+        <target state="final">Další CSS třídy</target>
+      </trans-unit>
+      <trans-unit id="options.loop" approved="yes">
+        <source>Loop</source>
+        <target state="final">Smyčka</target>
+      </trans-unit>
+      <trans-unit id="options.loopAddBlankSlides" approved="yes">
+        <source>Add blank slides to loop</source>
+        <target state="final">Přidat prázdné slidy do smyčky</target>
+      </trans-unit>
+      <trans-unit id="options.loopAdditionalSlides" approved="yes">
+        <source>Loop additional slides</source>
+        <target state="final">Další slidy smyčky</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerGroupAuto" approved="yes">
+        <source>Slides per group auto</source>
+        <target state="final">Automatický počet slidů ve skupině</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerGroupSkip" approved="yes">
+        <source>Slides per group skip</source>
+        <target state="final">Počet přeskočených slidů ve skupině</target>
+      </trans-unit>
+      <trans-unit id="options.loopPreventsSliding" approved="yes">
+        <source>Prevents sliding in loop</source>
+        <target state="final">Zabránit posunu ve smyčce</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.nextSlideMessage" approved="yes">
+        <source>Next slide</source>
+        <target state="final">Další slide</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.prevSlideMessage" approved="yes">
+        <source>Previous slide</source>
+        <target state="final">Předchozí slide</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.firstSlideMessage" approved="yes">
+        <source>This is the first slide</source>
+        <target state="final">Toto je první slide</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.lastSlideMessage" approved="yes">
+        <source>This is the last slide</source>
+        <target state="final">Toto je poslední slide</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
+        <source>Go to slide {{index}}</source>
+        <target state="final">Přejít na slide {{index}}</target>
+      </trans-unit>
+      <trans-unit id="options.autoplay" approved="yes">
+        <source>Autoplay</source>
+        <target state="final">Automatické přehrávání</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayProgress" approved="yes">
+        <source>Show autoplay progress indicator</source>
+        <target state="final">Zobrazit indikátor průběhu automatického přehrávání</target>
+      </trans-unit>
+      <trans-unit id="options.autoplay.delay" xml:space="preserve" approved="yes">
+				<source>Delay between transitions (in ms)</source>
+			<target state="final">Prodleva mezi přechody (v ms)</target></trans-unit>
+      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve" approved="yes">
+				<source>Disable autoplay on interaction</source>
+			<target state="final">Zakázat automatické přehrávání při interakci</target></trans-unit>
+      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve" approved="yes">
+				<source>Pause autoplay on mouse enter</source>
+			<target state="final">Pozastavit automatické přehrávání při najetí myší</target></trans-unit>
+      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve" approved="yes">
+				<source>Autoplay in reverse direction</source>
+			<target state="final">Automatické přehrávání v opačném směru</target></trans-unit>
+      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve" approved="yes">
+				<source>Stop autoplay on last slide</source>
+			<target state="final">Zastavit automatické přehrávání na posledním slidu</target></trans-unit>
+      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve" approved="yes">
+				<source>Wait for transition before next autoplay</source>
+			<target state="final">Počkat na dokončení přechodu před dalším přehráváním</target></trans-unit>
+      <trans-unit id="options.autoHeight" approved="yes">
+        <source>Auto height</source>
+        <target state="final">Automatická výška</target>
+      </trans-unit>
+      <trans-unit id="options.navigation.addIcons" xml:space="preserve" approved="yes">
+				<source>Add SVG icons to navigation buttons</source>
+			<target state="final">Přidat SVG ikony k navigačním tlačítkům</target></trans-unit>
+      <trans-unit id="options.navigation.disabledClass" xml:space="preserve" approved="yes">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+			<target state="final">CSS třída přidaná navigačnímu tlačítku, když je zakázáno</target></trans-unit>
+      <trans-unit id="options.navigation.enabled" xml:space="preserve" approved="yes">
+				<source>Enable/disable navigation</source>
+			<target state="final">Povolit/zakázat navigaci</target></trans-unit>
+      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve" approved="yes">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+			<target state="final">CSS třída přidaná navigačnímu tlačítku, když je skryté</target></trans-unit>
+      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve" approved="yes">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+			<target state="final">Přepínat viditelnost navigačních tlačítek po kliknutí na slider</target></trans-unit>
+      <trans-unit id="options.navigation.lockClass" xml:space="preserve" approved="yes">
+				<source>CSS class name added to navigation button when it is disabled</source>
+			<target state="final">CSS třída přidaná navigačnímu tlačítku, když je zamčené</target></trans-unit>
+      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve" approved="yes">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+			<target state="final">CSS třída přidaná na kontejner swiperu, když je navigace zakázána breakpointem</target></trans-unit>
+      <trans-unit id="options.navigation.nextEl" xml:space="preserve" approved="yes">
+				<source>CSS selector or HTML element for the next button</source>
+			<target state="final">CSS selektor nebo HTML element tlačítka „Další“</target></trans-unit>
+      <trans-unit id="options.navigation.prevEl" xml:space="preserve" approved="yes">
+				<source>CSS selector or HTML element for the previous button</source>
+			<target state="final">CSS selektor nebo HTML element tlačítka „Předchozí“</target></trans-unit>
+      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of currently active pagination bullet</source>
+			<target state="final">CSS třída aktivního bulletu paginace</target></trans-unit>
+      <trans-unit id="options.pagination.bulletClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of single pagination bullet</source>
+			<target state="final">CSS třída jednoho bulletu paginace</target></trans-unit>
+      <trans-unit id="options.pagination.bulletElement" xml:space="preserve" approved="yes">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+			<target state="final">HTML tag pro jeden bullet paginace (jen typ bullets)</target></trans-unit>
+      <trans-unit id="options.pagination.clickable" xml:space="preserve" approved="yes">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+			<target state="final">Kliknutí na bullet způsobí přechod slidu (jen typ bullets)</target></trans-unit>
+      <trans-unit id="options.pagination.clickableClass" xml:space="preserve" approved="yes">
+				<source>CSS class name set to pagination when it is clickable</source>
+			<target state="final">CSS třída nastavená paginaci, když je klikatelná</target></trans-unit>
+      <trans-unit id="options.pagination.currentClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+			<target state="final">CSS třída prvku s aktuálním indexem ve zlomkové paginaci</target></trans-unit>
+      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve" approved="yes">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+			<target state="final">Zobrazit jen několik bulletů najednou (pro mnoho slidů)</target></trans-unit>
+      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve" approved="yes">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+			<target state="final">Počet hlavních bulletů při povoleném dynamicBullets</target></trans-unit>
+      <trans-unit id="options.pagination.el" xml:space="preserve" approved="yes">
+				<source>CSS selector or HTML element of the container with pagination</source>
+			<target state="final">CSS selektor nebo HTML element kontejneru s paginací</target></trans-unit>
+      <trans-unit id="options.pagination.enabled" xml:space="preserve" approved="yes">
+				<source>Enable/disable pagination</source>
+			<target state="final">Povolit/zakázat paginaci</target></trans-unit>
+      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve" approved="yes">
+				<source>Format function for current number in fraction pagination</source>
+			<target state="final">Formátovací funkce pro aktuální číslo ve zlomkové paginaci</target></trans-unit>
+      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve" approved="yes">
+				<source>Format function for total number in fraction pagination</source>
+			<target state="final">Formátovací funkce pro celkový počet ve zlomkové paginaci</target></trans-unit>
+      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of pagination when it becomes inactive</source>
+			<target state="final">CSS třída paginace, když je neaktivní</target></trans-unit>
+      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve" approved="yes">
+				<source>Toggle pagination container visibility after click on slider container</source>
+			<target state="final">Přepínat viditelnost paginace po kliknutí na slider</target></trans-unit>
+      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve" approved="yes">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+			<target state="final">CSS třída nastavená paginaci v horizontálním swiperu</target></trans-unit>
+      <trans-unit id="options.pagination.lockClass" xml:space="preserve" approved="yes">
+				<source>CSS class name set to pagination when it is disabled</source>
+			<target state="final">CSS třída nastavená paginaci, když je zamčená</target></trans-unit>
+      <trans-unit id="options.pagination.modifierClass" xml:space="preserve" approved="yes">
+				<source>Prefix for modifier CSS class name for pagination</source>
+			<target state="final">Prefix pro modifikační CSS třídu paginace</target></trans-unit>
+      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve" approved="yes">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+			<target state="final">CSS třída přidaná na kontejner swiperu a paginaci, když je paginace zakázána breakpointem</target></trans-unit>
+      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of pagination progressbar fill element</source>
+			<target state="final">CSS třída výplně progressbaru paginace</target></trans-unit>
+      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve" approved="yes">
+				<source>Progressbar opposite to Swiper's direction</source>
+			<target state="final">Progressbar opačně ke směru swiperu</target></trans-unit>
+      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of pagination progressbar opposite</source>
+			<target state="final">CSS třída progressbaru paginace v opačném směru</target></trans-unit>
+      <trans-unit id="options.pagination.renderBullet" xml:space="preserve" approved="yes">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+			<target state="final">Vlastní funkce pro bulky paginace (jen typ bullets)</target></trans-unit>
+      <trans-unit id="options.pagination.renderCustom" xml:space="preserve" approved="yes">
+				<source>Custom function for custom pagination type</source>
+			<target state="final">Vlastní funkce pro vlastní typ paginace</target></trans-unit>
+      <trans-unit id="options.pagination.renderFraction" xml:space="preserve" approved="yes">
+				<source>Custom function for fraction pagination type</source>
+			<target state="final">Vlastní funkce pro zlomkový typ paginace</target></trans-unit>
+      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve" approved="yes">
+				<source>Custom function for progressbar pagination type</source>
+			<target state="final">Vlastní funkce pro typ paginace progressbar</target></trans-unit>
+      <trans-unit id="options.pagination.totalClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+			<target state="final">CSS třída prvku s celkovým počtem ve zlomkové paginaci</target></trans-unit>
+      <trans-unit id="options.pagination.type" xml:space="preserve" approved="yes">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+			<target state="final">Typ paginace (bullets, fraction, progressbar, custom)</target></trans-unit>
+      <trans-unit id="options.pagination.verticalClass" xml:space="preserve" approved="yes">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+			<target state="final">CSS třída nastavená paginaci ve vertikálním swiperu</target></trans-unit>
+      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve" approved="yes">
+				<source>Scrollbar draggable element CSS class</source>
+			<target state="final">CSS třída tažného prvku scrollbaru</target></trans-unit>
+      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve" approved="yes">
+				<source>Size of scrollbar draggable element in px</source>
+			<target state="final">Velikost tažného prvku scrollbaru v px</target></trans-unit>
+      <trans-unit id="options.scrollbar.draggable" xml:space="preserve" approved="yes">
+				<source>Enable draggable scrollbar</source>
+			<target state="final">Povolit tažitelný scrollbar</target></trans-unit>
+      <trans-unit id="options.scrollbar.el" xml:space="preserve" approved="yes">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+			<target state="final">CSS selektor nebo HTML element kontejneru se scrollbarem</target></trans-unit>
+      <trans-unit id="options.scrollbar.enabled" xml:space="preserve" approved="yes">
+				<source>Enable/disable scrollbar</source>
+			<target state="final">Povolit/zakázat scrollbar</target></trans-unit>
+      <trans-unit id="options.scrollbar.hide" xml:space="preserve" approved="yes">
+				<source>Hide scrollbar automatically after user interaction</source>
+			<target state="final">Automaticky skrýt scrollbar po interakci uživatele</target></trans-unit>
+      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve" approved="yes">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+			<target state="final">CSS třída nastavená scrollbaru v horizontálním swiperu</target></trans-unit>
+      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve" approved="yes">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+			<target state="final">Dodatečná CSS třída scrollbaru, když je zamčený</target></trans-unit>
+      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve" approved="yes">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+			<target state="final">CSS třída přidaná na kontejner swiperu a scrollbar, když je scrollbar zakázán breakpointem</target></trans-unit>
+      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve" approved="yes">
+				<source>Snap slider position to slides when you release scrollbar</source>
+			<target state="final">Přichytit pozici slideru ke slidům po uvolnění scrollbaru</target></trans-unit>
+      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve" approved="yes">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+			<target state="final">CSS třída nastavená scrollbaru ve vertikálním swiperu</target></trans-unit>
+      <trans-unit id="options.freeMode.enabled" xml:space="preserve" approved="yes">
+				<source>Enable free mode</source>
+			<target state="final">Povolit volný režim</target></trans-unit>
+      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve" approved="yes">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+			<target state="final">Minimální rychlost touchmove pro setrvačnost ve volném režimu</target></trans-unit>
+      <trans-unit id="options.freeMode.momentum" xml:space="preserve" approved="yes">
+				<source>Enable momentum in free mode</source>
+			<target state="final">Povolit setrvačnost ve volném režimu</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve" approved="yes">
+				<source>Enable momentum bounce in free mode</source>
+			<target state="final">Povolit odraz setrvačnosti ve volném režimu</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve" approved="yes">
+				<source>Momentum bounce ratio</source>
+			<target state="final">Poměr odrazu setrvačnosti</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumRatio" xml:space="preserve" approved="yes">
+				<source>Momentum ratio</source>
+			<target state="final">Poměr setrvačnosti</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve" approved="yes">
+				<source>Momentum velocity ratio</source>
+			<target state="final">Poměr rychlosti setrvačnosti</target></trans-unit>
+      <trans-unit id="options.freeMode.sticky" xml:space="preserve" approved="yes">
+				<source>Snap to slides in free mode</source>
+			<target state="final">Přichytit ke slidům ve volném režimu</target></trans-unit>
+      <trans-unit id="options.grid.fill" xml:space="preserve" approved="yes">
+				<source>How slides should fill rows (by column or by row)</source>
+			<target state="final">Jak mají slidy vyplňovat řádky (po sloupcích nebo po řádcích)</target></trans-unit>
+      <trans-unit id="options.grid.rows" xml:space="preserve" approved="yes">
+				<source>Number of slides rows (multirow layout)</source>
+			<target state="final">Počet řádků slidů (víceřádkové rozložení)</target></trans-unit>
+      <trans-unit id="options.parallax.enabled" xml:space="preserve" approved="yes">
+				<source>Enable parallaxed elements inside the slider</source>
+			<target state="final">Povolit paralaxu prvků uvnitř slideru</target></trans-unit>
+      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve" approved="yes">
+				<source>Enables slides cross fade</source>
+			<target state="final">Povolit vzájemné prolínání slidů</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve" approved="yes">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+			<target state="final">Hloubkový posun v px (slidy se posouvají v ose Z)</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve" approved="yes">
+				<source>Effect multiplier</source>
+			<target state="final">Násobitel efektu</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve" approved="yes">
+				<source>Slide rotate in degrees</source>
+			<target state="final">Otočení slidu ve stupních</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve" approved="yes">
+				<source>Slide scale effect</source>
+			<target state="final">Efekt měřítka slidu</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve" approved="yes">
+				<source>Enables slides shadows</source>
+			<target state="final">Povolit stíny slidů</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve" approved="yes">
+				<source>Stretch space between slides (px or %)</source>
+			<target state="final">Roztažení mezery mezi slidy (px nebo %)</target></trans-unit>
+      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve" approved="yes">
+				<source>Limit edge slides rotation</source>
+			<target state="final">Omezit rotaci okrajových slidů</target></trans-unit>
+      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve" approved="yes">
+				<source>Enables slides shadows</source>
+			<target state="final">Povolit stíny slidů</target></trans-unit>
+      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve" approved="yes">
+				<source>Enables main slider shadow</source>
+			<target state="final">Povolit hlavní stín slideru</target></trans-unit>
+      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve" approved="yes">
+				<source>Main shadow offset in px</source>
+			<target state="final">Posun hlavního stínu v px</target></trans-unit>
+      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve" approved="yes">
+				<source>Main shadow scale ratio</source>
+			<target state="final">Poměr měřítka hlavního stínu</target></trans-unit>
+      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve" approved="yes">
+				<source>Enables slides shadows</source>
+			<target state="final">Povolit stíny slidů</target></trans-unit>
+      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve" approved="yes">
+				<source>Offset distance per slide (in px)</source>
+			<target state="final">Vzdálenost posunu na slide (v px)</target></trans-unit>
+      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve" approved="yes">
+				<source>Rotate angle per slide (in degrees)</source>
+			<target state="final">Úhel otočení na slide (ve stupních)</target></trans-unit>
+      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve" approved="yes">
+				<source>Enables cards rotation</source>
+			<target state="final">Povolit rotaci karet</target></trans-unit>
+      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve" approved="yes">
+				<source>Enables slides shadows</source>
+			<target state="final">Povolit stíny slidů</target></trans-unit>
+      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve" approved="yes">
+				<source>Limit progress/offset to amount of side slides</source>
+			<target state="final">Omezit postup/posun na počet bočních slidů</target></trans-unit>
+      <trans-unit id="options.creativeEffect.next" xml:space="preserve" approved="yes">
+				<source>Next slide transformations</source>
+			<target state="final">Transformace dalšího slidu</target></trans-unit>
+      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve" approved="yes">
+				<source>Enable 3D perspective for custom transforms</source>
+			<target state="final">Povolit 3D perspektivu pro vlastní transformace</target></trans-unit>
+      <trans-unit id="options.creativeEffect.prev" xml:space="preserve" approved="yes">
+				<source>Previous slide transformations</source>
+			<target state="final">Transformace předchozího slidu</target></trans-unit>
+      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve" approved="yes">
+				<source>Multiply slide transformations and opacity</source>
+			<target state="final">Násobit transformace slidů a průhlednost</target></trans-unit>
+      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve" approved="yes">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+			<target state="final">Rozdělit průhlednost stínu na slide podle limitProgress</target></trans-unit>
+      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve" approved="yes">
+				<source>Auto scroll offset for thumbs</source>
+			<target state="final">Automatický posun scrollu pro miniatury</target></trans-unit>
+      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve" approved="yes">
+				<source>Enable multiple active thumbnail slides</source>
+			<target state="final">Povolit více aktivních slidů miniatur</target></trans-unit>
+      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve" approved="yes">
+				<source>Additional class for activated thumbs swiper slide</source>
+			<target state="final">Dodatečná třída pro aktivovaný slide swiperu miniatur</target></trans-unit>
+      <trans-unit id="options.thumbs.swiper" xml:space="preserve" approved="yes">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+			<target state="final">Instance swiperu nebo parametry pro swiper miniatur</target></trans-unit>
+      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve" approved="yes">
+				<source>Additional class for thumbs swiper container</source>
+			<target state="final">Dodatečná třída pro kontejner swiperu miniatur</target></trans-unit>
+      <trans-unit id="options.zoom.enabled" xml:space="preserve" approved="yes">
+				<source>Enable/disable zoom</source>
+			<target state="final">Povolit/zakázat zoom</target></trans-unit>
+      <trans-unit id="options.zoom.containerClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of zoom container</source>
+			<target state="final">CSS třída kontejneru zoomu</target></trans-unit>
+      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve" approved="yes">
+				<source>Limit zoom to original image size</source>
+			<target state="final">Omezit zoom na původní velikost obrázku</target></trans-unit>
+      <trans-unit id="options.zoom.maxRatio" xml:space="preserve" approved="yes">
+				<source>Maximum image zoom multiplier</source>
+			<target state="final">Maximální násobek zoomu obrázku</target></trans-unit>
+      <trans-unit id="options.zoom.minRatio" xml:space="preserve" approved="yes">
+				<source>Minimal image zoom multiplier</source>
+			<target state="final">Minimální násobek zoomu obrázku</target></trans-unit>
+      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve" approved="yes">
+				<source>Pan zoomed image on mouse move</source>
+			<target state="final">Posouvat přiblížený obrázek při pohybu myší</target></trans-unit>
+      <trans-unit id="options.zoom.toggle" xml:space="preserve" approved="yes">
+				<source>Enable/disable zoom-in by double tap</source>
+			<target state="final">Povolit/zakázat přiblížení dvojitým klepnutím</target></trans-unit>
+      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve" approved="yes">
+				<source>CSS class name of zoomed in container</source>
+			<target state="final">CSS třída přiblíženého kontejneru</target></trans-unit>
+      <trans-unit id="options.keyboard.enabled" xml:space="preserve" approved="yes">
+				<source>Enable keyboard control</source>
+			<target state="final">Povolit ovládání klávesnicí</target></trans-unit>
+      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve" approved="yes">
+				<source>Control sliders only in viewport</source>
+			<target state="final">Ovládat slidery pouze ve viewportu</target></trans-unit>
+      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve" approved="yes">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+			<target state="final">Povolit navigaci klávesnicí klávesami Page Up/Down</target></trans-unit>
+      <trans-unit id="options.keyboard.speed" xml:space="preserve" approved="yes">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+			<target state="final">Rychlost přechodů navigace klávesnicí (ms)</target></trans-unit>
+      <trans-unit id="options.mousewheel.enabled" xml:space="preserve" approved="yes">
+				<source>Enable mousewheel control</source>
+			<target state="final">Povolit ovládání kolečkem myši</target></trans-unit>
+      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve" approved="yes">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+			<target state="final">CSS selektor nebo HTML element pro cílové události kolečka myši</target></trans-unit>
+      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve" approved="yes">
+				<source>Force mousewheel swipes to axis</source>
+			<target state="final">Vynutit posun kolečkem myši na osu</target></trans-unit>
+      <trans-unit id="options.mousewheel.invert" xml:space="preserve" approved="yes">
+				<source>Invert sliding direction</source>
+			<target state="final">Invertovat směr posunu</target></trans-unit>
+      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve" approved="yes">
+				<source>Class name to ignore mousewheel scrolling</source>
+			<target state="final">Třída pro ignorování scrollování kolečkem myši</target></trans-unit>
+      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve" approved="yes">
+				<source>Release mousewheel event on edges</source>
+			<target state="final">Uvolnit událost kolečka myši na okrajích</target></trans-unit>
+      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve" approved="yes">
+				<source>Mousewheel sensitivity multiplier</source>
+			<target state="final">Násobek citlivosti kolečka myši</target></trans-unit>
+      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve" approved="yes">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+			<target state="final">Minimální delta scrollu kolečkem myši pro změnu slidu</target></trans-unit>
+      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve" approved="yes">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+			<target state="final">Minimální časový rozdíl scrollu kolečkem myši (ms) pro změnu slidu</target></trans-unit>
+      <trans-unit id="options.virtualslides" xml:space="preserve" approved="yes">
+				<source>Virtual Slides</source>
+			<target state="final">Virtuální slidy</target></trans-unit>
+      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve" approved="yes">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+			<target state="final">Zvýšit počet před-renderovaných slidů za aktivním slidem</target></trans-unit>
+      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve" approved="yes">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+			<target state="final">Zvýšit počet před-renderovaných slidů před aktivním slidem</target></trans-unit>
+      <trans-unit id="options.virtualslides.cache" xml:space="preserve" approved="yes">
+				<source>Enable DOM cache of rendered slides</source>
+			<target state="final">Povolit DOM cache vyrenderovaných slidů</target></trans-unit>
+      <trans-unit id="options.virtualslides.enabled" xml:space="preserve" approved="yes">
+				<source>Enable virtual slides</source>
+			<target state="final">Povolit virtuální slidy</target></trans-unit>
+      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve" approved="yes">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+			<target state="final">Funkce pro externí renderování (např. React/Vue)</target></trans-unit>
+      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve" approved="yes">
+				<source>Update Swiper layout after renderExternal</source>
+			<target state="final">Aktualizovat rozložení swiperu po renderExternal</target></trans-unit>
+      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve" approved="yes">
+				<source>Function to render slide</source>
+			<target state="final">Funkce pro vyrenderování slidu</target></trans-unit>
+      <trans-unit id="options.virtualslides.slides" xml:space="preserve" approved="yes">
+				<source>Array with slides</source>
+			<target state="final">Pole se slidy</target></trans-unit>
+      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve" approved="yes">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+			<target state="final">Velikost slidu pro slidesPerView: auto (v px)</target></trans-unit>
+      <trans-unit id="options.hashNavigation" xml:space="preserve" approved="yes">
+				<source>Hash Navigation</source>
+			<target state="final">Hash navigace</target></trans-unit>
+      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve" approved="yes">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+			<target state="final">Funkce pro získání indexu slidu podle hashe (pro virtuální slidy)</target></trans-unit>
+      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve" approved="yes">
+				<source>Replace current URL state instead of adding to history</source>
+			<target state="final">Nahradit aktuální stav URL místo přidání do historie</target></trans-unit>
+      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve" approved="yes">
+				<source>Enable navigation by browser history/hash</source>
+			<target state="final">Povolit navigaci podle historie/hashe prohlížeče</target></trans-unit>
+      <trans-unit id="options.slidesPerView" approved="yes">
+        <source>Slides per view</source>
+        <target state="final">Počet slidů na pohled</target>
+      </trans-unit>
+      <trans-unit id="options.spaceBetween" approved="yes">
+        <source>Space between slides (in px)</source>
+        <target state="final">Mezera mezi slidy (v px)</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerGroup" approved="yes">
+        <source>Number of slides in group</source>
+        <target state="final">Počet slidů ve skupině</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
