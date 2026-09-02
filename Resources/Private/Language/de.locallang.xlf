@@ -365,7 +365,7 @@
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
 				<source>WS slider preset</source>
-				<target state="needs-review-translation">Slider-Voreinstellung</target>
+				<target state="final">Slider-Voreinstellung</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
 				<source>Name</source>
