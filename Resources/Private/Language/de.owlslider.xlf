@@ -4,41 +4,33 @@
     <header/>
     <body>
       <!-- Owl specific labels -->
-      <trans-unit id="owl" approved="yes">
-        <source>Owl</source>
-        <target state="final">Owl</target>
-      </trans-unit>
       <trans-unit id="settings.items" approved="yes">
         <source>Items</source>
         <target state="final">Elemente</target>
       </trans-unit>
-      <trans-unit id="settings.responsiveItemCount0">
+      <trans-unit id="settings.responsiveItemCount0" approved="yes">
         <source>Items below 576px display width</source>
         <target state="final">Elemente unterhalb 576px Displaybreite</target>
       </trans-unit>
-      <trans-unit id="settings.responsiveItemCount576">
+      <trans-unit id="settings.responsiveItemCount576" approved="yes">
         <source>Items above 576px display width</source>
         <target state="final">Elemente oberhalb 576px Displaybreite</target>
       </trans-unit>
-      <trans-unit id="settings.responsiveItemCount768">
+      <trans-unit id="settings.responsiveItemCount768" approved="yes">
         <source>Items above 768px display width</source>
         <target state="final">Elemente oberhalb 768px Displaybreite</target>
       </trans-unit>
-      <trans-unit id="settings.responsiveItemCount992">
+      <trans-unit id="settings.responsiveItemCount992" approved="yes">
         <source>Items above 992px display width</source>
         <target state="final">Elemente oberhalb 992px Displaybreite</target>
       </trans-unit>
-      <trans-unit id="settings.responsiveItemCount1200">
+      <trans-unit id="settings.responsiveItemCount1200" approved="yes">
         <source>Items above 1200px display width</source>
         <target state="final">Elemente oberhalb 1200px Displaybreite</target>
       </trans-unit>
-      <trans-unit id="settings.responsiveItemCount1400">
+      <trans-unit id="settings.responsiveItemCount1400" approved="yes">
         <source>Items above 1400px display width</source>
         <target state="final">Elemente oberhalb 1400px Displaybreite</target>
-      </trans-unit>
-      <trans-unit id="settings.margin" approved="yes">
-        <source>Margin</source>
-        <target state="final">Margin</target>
       </trans-unit>
       <trans-unit id="settings.stagePadding" approved="yes">
         <source>Stage Padding</source>
@@ -96,10 +88,6 @@
         <source>Drag end speed</source>
         <target state="final">Zieh Endgeschwindigkeit</target>
       </trans-unit>
-      <trans-unit id="settings.lazyLoadEager" approved="yes">
-        <source>Eager Lazy Load</source>
-        <target state="final">Eager Lazy Load</target>
-      </trans-unit>
       <!-- <trans-unit id="settings.smartSpeed">
 				<source>Smart Speed</source>
 			</trans-unit> -->
@@ -118,10 +106,6 @@
       <trans-unit id="settings.nestedItemSelector" approved="yes">
         <source>Nested Item Selector</source>
         <target state="final">Element-Selektor für verschachtelte Elemente</target>
-      </trans-unit>
-      <trans-unit id="settings.itemElement" approved="yes">
-        <source>Item Element</source>
-        <target state="final">Item Element</target>
       </trans-unit>
       <trans-unit id="settings.stageElement" approved="yes">
         <source>Stage Element</source>
