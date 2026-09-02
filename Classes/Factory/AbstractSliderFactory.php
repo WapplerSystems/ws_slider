@@ -83,6 +83,9 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
 
     protected function js_encode($array)
     {
+        // A PHP list must be rendered as a JS array, not as an object.
+        $isList = array_is_list($array);
+
         $out = [];
         foreach ($array as $k => $v) {
             $key = preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', (string)$k) ? $k : json_encode($k);
@@ -105,9 +108,9 @@ abstract class AbstractSliderFactory implements SliderFactoryInterface
                     $val = json_encode($v);
                 }
             }
-            $out[] = $key . ':' . $val;
+            $out[] = $isList ? (string)$val : $key . ':' . $val;
         }
-        return '{' . implode(',', $out) . '}';
+        return $isList ? '[' . implode(',', $out) . ']' : '{' . implode(',', $out) . '}';
     }
 
 }
