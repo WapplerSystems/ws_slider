@@ -39,6 +39,9 @@
       <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
 				<source>Side padding when in center mode (px or %)</source>
 			<target state="final">Seiten-Padding im zentrierten Modus (px oder %)</target></trans-unit>
+      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve" approved="yes">
+				<source>Custom paging templates. See source for use example.</source>
+			<target state="final">Eigene Paging-Vorlagen. Siehe Quellcode für ein Anwendungsbeispiel.</target></trans-unit>
       <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
 				<source>Show dot indicators</source>
 			<target state="final">Zeige Punkte-Navigation</target></trans-unit>
@@ -62,7 +65,7 @@
 			<target state="final">Widerstand beim Wischen von Kanten von endlichen Karussellen</target></trans-unit>
       <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
 				<source>Infinite loop sliding</source>
-			<target state="final">Karussell bildet eine Endlosschleife </target></trans-unit>
+			<target state="final">Karussell bildet eine Endlosschleife</target></trans-unit>
       <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
 				<source>Slide to start on</source>
 			<target state="final">Startelement</target></trans-unit>
