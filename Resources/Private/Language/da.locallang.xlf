@@ -9,7 +9,7 @@
 			</trans-unit>
 			<trans-unit id="description" approved="yes">
 				<source>Universal Slider / Carousel</source>
-				<target state="needs-review-translation">Universal slider / karrusel</target>
+				<target state="final">Universal Slider / Karrusel</target>
 			</trans-unit>
 			<trans-unit id="palette.wsslider" approved="yes">
 				<source>Slider</source>

@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="options.mode" approved="yes">
 				<source>Mode</source>
-				<target state="needs-review-translation">Tilstand</target>
+				<target state="final">Tilstand</target>
 			</trans-unit>
 			<trans-unit id="options.axis" approved="yes">
 				<source>Axis</source>
@@ -13,7 +13,7 @@
 			</trans-unit>
 			<trans-unit id="options.items" approved="yes">
 				<source>Items</source>
-				<target state="needs-review-translation">Elementer</target>
+				<target state="final">Emner</target>
 			</trans-unit>
 			<trans-unit id="options.responsiveItemCount0" approved="yes">
 				<source>Items below 576px display width</source>
@@ -65,7 +65,7 @@
 			</trans-unit>
 			<trans-unit id="options.center" approved="yes">
 				<source>Center</source>
-				<target state="needs-review-translation">Centreret</target>
+				<target state="final">Center</target>
 			</trans-unit>
 			<trans-unit id="options.controls" approved="yes">
 				<source>Control Buttons</source>
@@ -165,7 +165,7 @@
 			</trans-unit>
 			<trans-unit id="options.nested" approved="yes">
 				<source>Nested</source>
-				<target state="needs-review-translation">Indlejret</target>
+				<target state="final">Indlejret</target>
 			</trans-unit>
 			<trans-unit id="options.freezable" approved="yes">
 				<source>Freezable</source>
@@ -173,7 +173,7 @@
 			</trans-unit>
 			<trans-unit id="options.disable" approved="yes">
 				<source>Disable</source>
-				<target state="needs-review-translation">Deaktiver</target>
+				<target state="final">Deaktivér</target>
 			</trans-unit>
 			<trans-unit id="options.startIndex" approved="yes">
 				<source>Start Index</source>
