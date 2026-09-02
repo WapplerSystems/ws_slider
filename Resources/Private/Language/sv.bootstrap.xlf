@@ -4,6 +4,62 @@
     <header/>
     <body>
       <!-- sheets -->
+      <trans-unit id="options.interval" approved="yes">
+        <source>Interval</source>
+        <target state="final">Intervall</target>
+      </trans-unit>
+      <trans-unit id="options.keyboard" approved="yes">
+        <source>Keyboard</source>
+        <target state="final">Tangentbord</target>
+      </trans-unit>
+      <trans-unit id="options.pause" approved="yes">
+        <source>Pause</source>
+        <target state="final">Paus</target>
+      </trans-unit>
+      <trans-unit id="options.ride" approved="yes">
+        <source>Ride</source>
+        <target state="final">Automatisk uppspelning</target>
+      </trans-unit>
+      <trans-unit id="options.ride.option.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Karusell</target>
+      </trans-unit>
+      <trans-unit id="options.wrap" approved="yes">
+        <source>Wrap</source>
+        <target state="final">Loopa</target>
+      </trans-unit>
+      <trans-unit id="options.control" approved="yes">
+        <source>Show control</source>
+        <target state="final">Visa kontroll</target>
+      </trans-unit>
+      <trans-unit id="options.indicators" approved="yes">
+        <source>Show indicators</source>
+        <target state="final">Visa indikatorer</target>
+      </trans-unit>
+      <trans-unit id="options.title" approved="yes">
+        <source>Show title</source>
+        <target state="final">Visa rubrik</target>
+      </trans-unit>
+      <trans-unit id="options.description" approved="yes">
+        <source>Show description</source>
+        <target state="final">Visa beskrivning</target>
+      </trans-unit>
+      <trans-unit id="options.startAt" approved="yes">
+        <source>Start at</source>
+        <target state="final">Börja vid</target>
+      </trans-unit>
+      <trans-unit id="btn.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Föregående</target>
+      </trans-unit>
+      <trans-unit id="btn.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Nästa</target>
+      </trans-unit>
+      <trans-unit id="btn.more" approved="yes">
+        <source>More</source>
+        <target state="final">Mer</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
