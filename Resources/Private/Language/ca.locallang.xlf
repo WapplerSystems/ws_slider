@@ -3,11 +3,335 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ca">
     <header/>
     <body>
+      <trans-unit id="description" approved="yes">
+        <source>Universal Slider / Carousel</source>
+        <target state="final">Slider / carrusel universal</target>
+      </trans-unit>
+      <trans-unit id="settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Configuració</target>
+      </trans-unit>
+      <trans-unit id="items" approved="yes">
+        <source>Items</source>
+        <target state="final">Elements</target>
+      </trans-unit>
+      <trans-unit id="preset" approved="yes">
+        <source>Preset</source>
+        <target state="final">Predefinit</target>
+      </trans-unit>
+      <trans-unit id="source" approved="yes">
+        <source>Source</source>
+        <target state="final">Font</target>
+      </trans-unit>
+      <trans-unit id="yes" approved="yes">
+        <source>Yes</source>
+        <target state="final">Sí</target>
+      </trans-unit>
+      <trans-unit id="force" approved="yes">
+        <source>Force</source>
+        <target state="final">Forçar</target>
+      </trans-unit>
+      <trans-unit id="auto" approved="yes">
+        <source>Auto</source>
+        <target state="final">Automàtic</target>
+      </trans-unit>
+      <trans-unit id="inner" approved="yes">
+        <source>Inner</source>
+        <target state="final">Interior</target>
+      </trans-unit>
+      <trans-unit id="outer" approved="yes">
+        <source>Outer</source>
+        <target state="final">Exterior</target>
+      </trans-unit>
+      <trans-unit id="hover" approved="yes">
+        <source>Hover</source>
+        <target state="final">En passar el cursor</target>
+      </trans-unit>
+      <trans-unit id="horizontal" approved="yes">
+        <source>horizontal</source>
+        <target state="final">Horitzontal</target>
+      </trans-unit>
+      <trans-unit id="vertical" approved="yes">
+        <source>vertical</source>
+        <target state="final">Vertical</target>
+      </trans-unit>
+      <trans-unit id="default" approved="yes">
+        <source>Default</source>
+        <target state="final">Per defecte</target>
+      </trans-unit>
+      <trans-unit id="preset_is_set" approved="yes">
+        <source>A preset has been selected</source>
+        <target state="final">S'ha seleccionat una predefinició</target>
+      </trans-unit>
       <!-- Buttons and labels -->
+      <trans-unit id="label.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Següent</target>
+      </trans-unit>
+      <trans-unit id="label.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Anterior</target>
+      </trans-unit>
+      <trans-unit id="label.start" approved="yes">
+        <source>Start</source>
+        <target state="final">Inicia</target>
+      </trans-unit>
+      <trans-unit id="label.stop" approved="yes">
+        <source>Stop</source>
+        <target state="final">Atura</target>
+      </trans-unit>
       <!-- sheets -->
+      <trans-unit id="sheet.navigation" approved="yes">
+        <source>Navigation</source>
+        <target state="final">Navegació</target>
+      </trans-unit>
+      <trans-unit id="sheet.pagination" approved="yes">
+        <source>Pagination</source>
+        <target state="final">Paginació</target>
+      </trans-unit>
+      <trans-unit id="sheet.scrollbar" approved="yes">
+        <source>Scrollbar</source>
+        <target state="final">Barra de desplaçament</target>
+      </trans-unit>
+      <trans-unit id="sheet.autoplay" approved="yes">
+        <source>Autoplay</source>
+        <target state="final">Reproducció automàtica</target>
+      </trans-unit>
+      <trans-unit id="sheet.freeMode" approved="yes">
+        <source>Free Mode</source>
+        <target state="final">Mode lliure</target>
+      </trans-unit>
+      <trans-unit id="sheet.grid" approved="yes">
+        <source>Grid</source>
+        <target state="final">Graella</target>
+      </trans-unit>
+      <trans-unit id="sheet.parallax" approved="yes">
+        <source>Parallax</source>
+        <target state="final">Paral·laxi</target>
+      </trans-unit>
+      <trans-unit id="sheet.fadeEffect" approved="yes">
+        <source>Fade Effect</source>
+        <target state="final">Efecte d'esvaïment</target>
+      </trans-unit>
+      <trans-unit id="sheet.coverflowEffect" approved="yes">
+        <source>CoverFlow Effect</source>
+        <target state="final">Efecte CoverFlow</target>
+      </trans-unit>
+      <trans-unit id="sheet.flipEffect" approved="yes">
+        <source>Flip Effect</source>
+        <target state="final">Efecte de gir</target>
+      </trans-unit>
+      <trans-unit id="sheet.cubeEffect" approved="yes">
+        <source>Cube Effect</source>
+        <target state="final">Efecte de cub</target>
+      </trans-unit>
+      <trans-unit id="sheet.cardsEffect" approved="yes">
+        <source>Cards Effect</source>
+        <target state="final">Efecte de targetes</target>
+      </trans-unit>
+      <trans-unit id="sheet.creativeEffect" approved="yes">
+        <source>Creative Effect</source>
+        <target state="final">Efecte creatiu</target>
+      </trans-unit>
+      <trans-unit id="sheet.thumbs" approved="yes">
+        <source>Thumbs</source>
+        <target state="final">Miniatures</target>
+      </trans-unit>
+      <trans-unit id="sheet.keyboard" approved="yes">
+        <source>Keyboard</source>
+        <target state="final">Teclat</target>
+      </trans-unit>
+      <trans-unit id="sheet.mousewheel" approved="yes">
+        <source>Mousewheel</source>
+        <target state="final">Roda del ratolí</target>
+      </trans-unit>
+      <trans-unit id="sheet.virtualslides" approved="yes">
+        <source>Virtual Slides</source>
+        <target state="final">Diapositives virtuals</target>
+      </trans-unit>
+      <trans-unit id="sheet.hashNavigation" approved="yes">
+        <source>Hash Navigation</source>
+        <target state="final">Navegació per hash</target>
+      </trans-unit>
+      <trans-unit id="sheet.history" approved="yes">
+        <source>History Navigation</source>
+        <target state="final">Navegació per historial</target>
+      </trans-unit>
+      <trans-unit id="sheet.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Disposició</target>
+      </trans-unit>
+      <trans-unit id="sheet.dragNdrop" approved="yes">
+        <source>Swipe/Drag support</source>
+        <target state="final">Suport de lliscament i arrossegament</target>
+      </trans-unit>
+      <trans-unit id="sheet.animation" approved="yes">
+        <source>Animation</source>
+        <target state="final">Animació</target>
+      </trans-unit>
+      <trans-unit id="sheet.advanced" approved="yes">
+        <source>Advanced</source>
+        <target state="final">Avançat</target>
+      </trans-unit>
       <!-- common setting labels -->
+      <trans-unit id="options.enabled" approved="yes">
+        <source>Enabled</source>
+        <target state="final">Activat</target>
+      </trans-unit>
+      <trans-unit id="options.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Carrusel</target>
+      </trans-unit>
+      <trans-unit id="options.gallery" approved="yes">
+        <source>Gallery</source>
+        <target state="final">Galeria</target>
+      </trans-unit>
+      <trans-unit id="options.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Horitzontal</target>
+      </trans-unit>
+      <trans-unit id="options.common.layout" approved="yes">
+        <source>Layout</source>
+        <target state="final">Disposició</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoplay" approved="yes">
+        <source>Autoplay</source>
+        <target state="final">Reproducció automàtica</target>
+      </trans-unit>
+      <trans-unit id="options.common.lazyLoad" approved="yes">
+        <source>Lazy load</source>
+        <target state="final">Càrrega diferida</target>
+      </trans-unit>
+      <trans-unit id="options.common.loop" approved="yes">
+        <source>Loop / Carousel</source>
+        <target state="final">Bucle / Carrusel</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoplaySpeed" approved="yes">
+        <source>Autoplay speed</source>
+        <target state="final">Velocitat de reproducció automàtica</target>
+      </trans-unit>
+      <trans-unit id="options.common.top" approved="yes">
+        <source>Top</source>
+        <target state="final">Superior</target>
+      </trans-unit>
+      <trans-unit id="options.common.bottom" approved="yes">
+        <source>Bottom</source>
+        <target state="final">Inferior</target>
+      </trans-unit>
+      <trans-unit id="options.common.forward" approved="yes">
+        <source>Forward</source>
+        <target state="final">Endavant</target>
+      </trans-unit>
+      <trans-unit id="options.common.backward" approved="yes">
+        <source>Backward</source>
+        <target state="final">Enrere</target>
+      </trans-unit>
+      <trans-unit id="options.common.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Horitzontal</target>
+      </trans-unit>
+      <trans-unit id="options.common.animateOut" approved="yes">
+        <source>Outro Animation</source>
+        <target state="final">Animació de sortida</target>
+      </trans-unit>
+      <trans-unit id="options.common.animateIn" approved="yes">
+        <source>Intro Animation</source>
+        <target state="final">Animació d'entrada</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoHeight" approved="yes">
+        <source>Auto Height</source>
+        <target state="final">Alçada automàtica</target>
+      </trans-unit>
+      <trans-unit id="options.common.video" approved="yes">
+        <source>Enable Video</source>
+        <target state="final">Activa el vídeo</target>
+      </trans-unit>
+      <trans-unit id="options.common.touch" approved="yes">
+        <source>Enable Touch Support</source>
+        <target state="final">Activa el suport tàctil</target>
+      </trans-unit>
+      <trans-unit id="options.common.animationSpeed" approved="yes">
+        <source>Animation Speed</source>
+        <target state="final">Velocitat d'animació</target>
+      </trans-unit>
       <!-- Labels -->
+      <trans-unit id="pauseText" approved="yes">
+        <source>Pause</source>
+        <target state="final">Pausa</target>
+      </trans-unit>
+      <trans-unit id="playText" approved="yes">
+        <source>Play</source>
+        <target state="final">Reprodueix</target>
+      </trans-unit>
       <!-- item labels -->
+      <trans-unit id="tx_wsslider_domain_model_item" approved="yes">
+        <source>Slider element</source>
+        <target state="final">Element del carrusel</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Títol</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description" approved="yes">
+        <source>Description</source>
+        <target state="final">Descripció</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" approved="yes">
+        <source>Image or Video</source>
+        <target state="final">Imatge o vídeo</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition" approved="yes">
+        <source>Text position</source>
+        <target state="final">Posició del text</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Enllaç</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left" approved="yes">
+        <source>Left</source>
+        <target state="final">Esquerra</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right" approved="yes">
+        <source>Right</source>
+        <target state="final">Dreta</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleClass" approved="yes">
+        <source>Text style class</source>
+        <target state="final">Classe d'estil del text</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" approved="yes">
+        <source>Style 1</source>
+        <target state="final">Estil 1</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" approved="yes">
+        <source>Style 2</source>
+        <target state="final">Estil 2</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" approved="yes">
+        <source>Style 3</source>
+        <target state="final">Estil 3</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" approved="yes">
+        <source>Style 4</source>
+        <target state="final">Estil 4</target>
+      </trans-unit>
+      <trans-unit id="addImage" approved="yes">
+        <source>Add image</source>
+        <target state="final">Afegeix una imatge</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
+        <source>WS slider preset</source>
+        <target state="final">Predefinició de WS slider</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Nom</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Tipus</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
