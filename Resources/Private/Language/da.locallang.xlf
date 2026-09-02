@@ -3,11 +3,295 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="da">
     <header/>
     <body>
+      <trans-unit id="description" approved="yes">
+        <source>Universal Slider / Carousel</source>
+        <target state="final">Universal slider / karrusel</target>
+      </trans-unit>
+      <trans-unit id="settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Indstillinger</target>
+      </trans-unit>
+      <trans-unit id="items" approved="yes">
+        <source>Items</source>
+        <target state="final">Elementer</target>
+      </trans-unit>
+      <trans-unit id="preset" approved="yes">
+        <source>Preset</source>
+        <target state="final">Forudindstilling</target>
+      </trans-unit>
+      <trans-unit id="source" approved="yes">
+        <source>Source</source>
+        <target state="final">Kilde</target>
+      </trans-unit>
+      <trans-unit id="yes" approved="yes">
+        <source>Yes</source>
+        <target state="final">Ja</target>
+      </trans-unit>
+      <trans-unit id="no" approved="yes">
+        <source>No</source>
+        <target state="final">Nej</target>
+      </trans-unit>
+      <trans-unit id="force" approved="yes">
+        <source>Force</source>
+        <target state="final">Tving</target>
+      </trans-unit>
+      <trans-unit id="inner" approved="yes">
+        <source>Inner</source>
+        <target state="final">Indre</target>
+      </trans-unit>
+      <trans-unit id="outer" approved="yes">
+        <source>Outer</source>
+        <target state="final">Ydre</target>
+      </trans-unit>
+      <trans-unit id="horizontal" approved="yes">
+        <source>horizontal</source>
+        <target state="final">Vandret</target>
+      </trans-unit>
+      <trans-unit id="vertical" approved="yes">
+        <source>vertical</source>
+        <target state="final">Lodret</target>
+      </trans-unit>
+      <trans-unit id="default" approved="yes">
+        <source>Default</source>
+        <target state="final">Standard</target>
+      </trans-unit>
+      <trans-unit id="preset_is_set" approved="yes">
+        <source>A preset has been selected</source>
+        <target state="final">En forudindstilling er valgt</target>
+      </trans-unit>
       <!-- Buttons and labels -->
+      <trans-unit id="label.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Næste</target>
+      </trans-unit>
+      <trans-unit id="label.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Forrige</target>
+      </trans-unit>
       <!-- sheets -->
+      <trans-unit id="sheet.pagination" approved="yes">
+        <source>Pagination</source>
+        <target state="final">Paginering</target>
+      </trans-unit>
+      <trans-unit id="sheet.scrollbar" approved="yes">
+        <source>Scrollbar</source>
+        <target state="final">Rullepanel</target>
+      </trans-unit>
+      <trans-unit id="sheet.freeMode" approved="yes">
+        <source>Free Mode</source>
+        <target state="final">Fri tilstand</target>
+      </trans-unit>
+      <trans-unit id="sheet.grid" approved="yes">
+        <source>Grid</source>
+        <target state="final">Gitter</target>
+      </trans-unit>
+      <trans-unit id="sheet.parallax" approved="yes">
+        <source>Parallax</source>
+        <target state="final">Parallakse</target>
+      </trans-unit>
+      <trans-unit id="sheet.fadeEffect" approved="yes">
+        <source>Fade Effect</source>
+        <target state="final">Fade-effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.coverflowEffect" approved="yes">
+        <source>CoverFlow Effect</source>
+        <target state="final">CoverFlow-effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.flipEffect" approved="yes">
+        <source>Flip Effect</source>
+        <target state="final">Flip-effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.cubeEffect" approved="yes">
+        <source>Cube Effect</source>
+        <target state="final">Kube-effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.cardsEffect" approved="yes">
+        <source>Cards Effect</source>
+        <target state="final">Kort-effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.creativeEffect" approved="yes">
+        <source>Creative Effect</source>
+        <target state="final">Kreativ effekt</target>
+      </trans-unit>
+      <trans-unit id="sheet.thumbs" approved="yes">
+        <source>Thumbs</source>
+        <target state="final">Miniaturer</target>
+      </trans-unit>
+      <trans-unit id="sheet.keyboard" approved="yes">
+        <source>Keyboard</source>
+        <target state="final">Tastatur</target>
+      </trans-unit>
+      <trans-unit id="sheet.mousewheel" approved="yes">
+        <source>Mousewheel</source>
+        <target state="final">Musehjul</target>
+      </trans-unit>
+      <trans-unit id="sheet.virtualslides" approved="yes">
+        <source>Virtual Slides</source>
+        <target state="final">Virtuelle slides</target>
+      </trans-unit>
+      <trans-unit id="sheet.hashNavigation" approved="yes">
+        <source>Hash Navigation</source>
+        <target state="final">Hash-navigation</target>
+      </trans-unit>
+      <trans-unit id="sheet.history" approved="yes">
+        <source>History Navigation</source>
+        <target state="final">Historiknavigation</target>
+      </trans-unit>
+      <trans-unit id="sheet.dragNdrop" approved="yes">
+        <source>Swipe/Drag support</source>
+        <target state="final">Swipe/træk-understøttelse</target>
+      </trans-unit>
+      <trans-unit id="sheet.advanced" approved="yes">
+        <source>Advanced</source>
+        <target state="final">Avanceret</target>
+      </trans-unit>
+      <trans-unit id="sheet.general" approved="yes">
+        <source>General</source>
+        <target state="final">Generelt</target>
+      </trans-unit>
       <!-- common setting labels -->
+      <trans-unit id="options.enabled" approved="yes">
+        <source>Enabled</source>
+        <target state="final">Aktiveret</target>
+      </trans-unit>
+      <trans-unit id="options.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Karrusel</target>
+      </trans-unit>
+      <trans-unit id="options.gallery" approved="yes">
+        <source>Gallery</source>
+        <target state="final">Galleri</target>
+      </trans-unit>
+      <trans-unit id="options.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Vandret</target>
+      </trans-unit>
+      <trans-unit id="options.vertical" approved="yes">
+        <source>Vertical</source>
+        <target state="final">Lodret</target>
+      </trans-unit>
+      <trans-unit id="options.common.loop" approved="yes">
+        <source>Loop / Carousel</source>
+        <target state="final">Loop / karrusel</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoplaySpeed" approved="yes">
+        <source>Autoplay speed</source>
+        <target state="final">Autoplay-hastighed</target>
+      </trans-unit>
+      <trans-unit id="options.common.bottom" approved="yes">
+        <source>Bottom</source>
+        <target state="final">Bund</target>
+      </trans-unit>
+      <trans-unit id="options.common.forward" approved="yes">
+        <source>Forward</source>
+        <target state="final">Frem</target>
+      </trans-unit>
+      <trans-unit id="options.common.backward" approved="yes">
+        <source>Backward</source>
+        <target state="final">Tilbage</target>
+      </trans-unit>
+      <trans-unit id="options.common.vertical" approved="yes">
+        <source>Vertical</source>
+        <target state="final">Lodret</target>
+      </trans-unit>
+      <trans-unit id="options.common.horizontal" approved="yes">
+        <source>Horizontal</source>
+        <target state="final">Vandret</target>
+      </trans-unit>
+      <trans-unit id="options.common.animateOut" approved="yes">
+        <source>Outro Animation</source>
+        <target state="final">Outro-animation</target>
+      </trans-unit>
+      <trans-unit id="options.common.animateIn" approved="yes">
+        <source>Intro Animation</source>
+        <target state="final">Intro-animation</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoHeight" approved="yes">
+        <source>Auto Height</source>
+        <target state="final">Auto-højde</target>
+      </trans-unit>
+      <trans-unit id="options.common.video" approved="yes">
+        <source>Enable Video</source>
+        <target state="final">Aktivér video</target>
+      </trans-unit>
+      <trans-unit id="options.common.touch" approved="yes">
+        <source>Enable Touch Support</source>
+        <target state="final">Aktivér touch-understøttelse</target>
+      </trans-unit>
+      <trans-unit id="options.common.animationSpeed" approved="yes">
+        <source>Animation Speed</source>
+        <target state="final">Animationshastighed</target>
+      </trans-unit>
       <!-- Labels -->
+      <trans-unit id="playText" approved="yes">
+        <source>Play</source>
+        <target state="final">Afspil</target>
+      </trans-unit>
       <!-- item labels -->
+      <trans-unit id="tx_wsslider_domain_model_item" approved="yes">
+        <source>Slider element</source>
+        <target state="final">Slider-element</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description" approved="yes">
+        <source>Description</source>
+        <target state="final">Beskrivelse</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" approved="yes">
+        <source>Image or Video</source>
+        <target state="final">Billede eller video</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition" approved="yes">
+        <source>Text position</source>
+        <target state="final">Tekstposition</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left" approved="yes">
+        <source>Left</source>
+        <target state="final">Venstre</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right" approved="yes">
+        <source>Right</source>
+        <target state="final">Højre</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleClass" approved="yes">
+        <source>Text style class</source>
+        <target state="final">Tekststilklasse</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" approved="yes">
+        <source>Style 1</source>
+        <target state="final">Stil 1</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" approved="yes">
+        <source>Style 2</source>
+        <target state="final">Stil 2</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" approved="yes">
+        <source>Style 3</source>
+        <target state="final">Stil 3</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" approved="yes">
+        <source>Style 4</source>
+        <target state="final">Stil 4</target>
+      </trans-unit>
+      <trans-unit id="addImage" approved="yes">
+        <source>Add image</source>
+        <target state="final">Tilføj billede</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
+        <source>WS slider preset</source>
+        <target state="final">WS slider-forudindstilling</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Navn</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.slick" approved="yes">
+        <source>Slick slider</source>
+        <target state="final">Slick-slider</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
