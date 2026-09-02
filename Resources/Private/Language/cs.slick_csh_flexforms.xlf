@@ -3,54 +3,144 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="cs">
     <header/>
     <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-
-		</body>
+      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve" approved="yes">
+				<source>Enables tabbing and arrow key navigation</source>
+			<target state="final">Aktivuje tabbing a navigaci pomocí šipek</target></trans-unit>
+      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve" approved="yes">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+			<target state="final">Aktivuje adaptivní výšku pro horizontální karusely s jedním prvkem.</target></trans-unit>
+      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
+				<source>Enables Autoplay</source>
+			<target state="final">Aktivuje automatické přehrávání</target></trans-unit>
+      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve" approved="yes">
+				<source>Autoplay Speed in milliseconds</source>
+			<target state="final">Rychlost automatického přehrávání v milisekundách</target></trans-unit>
+      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve" approved="yes">
+				<source>Prev/Next Arrows</source>
+			<target state="final">Šipky „Předchozí/Další“</target></trans-unit>
+      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+			<target state="final">Nastavit tento slider jako navigaci pro jiný slider (název třídy nebo ID)</target></trans-unit>
+      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve" approved="yes">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			<target state="final">Změnit umístění navigačních šipek (Selektor, htmlString, Array, Element, jQuery objekt)</target></trans-unit>
+      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve" approved="yes">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			<target state="final">Změnit umístění navigačních teček (Selektor, htmlString, Array, Element, jQuery objekt)</target></trans-unit>
+      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+			<target state="final">Umožňuje vybrat uzel nebo upravit HTML šipky „Předchozí“.</target></trans-unit>
+      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve" approved="yes">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+			<target state="final">Umožňuje vybrat uzel nebo upravit HTML šipky „Další“.</target></trans-unit>
+      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve" approved="yes">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+			<target state="final">Aktivuje centrované zobrazení s částečně viditelnými předchozími/dalšími prvky. Používejte s lichým počtem zobrazených prvků.</target></trans-unit>
+      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
+				<source>Side padding when in center mode (px or %)</source>
+			<target state="final">Boční odsazení v centrovaném režimu (px nebo %)</target></trans-unit>
+      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
+				<source>CSS3 Animation Easing</source>
+			<target state="final">CSS3 Easing animace</target></trans-unit>
+      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve" approved="yes">
+				<source>Custom paging templates. See source for use example.</source>
+			<target state="final">Vlastní šablony stránkování. Příklad použití naleznete ve zdrojovém kódu.</target></trans-unit>
+      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
+				<source>Show dot indicators</source>
+			<target state="final">Zobrazit indikátory teček</target></trans-unit>
+      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve" approved="yes">
+				<source>Class for slide indicator dots container</source>
+			<target state="final">Třída pro kontejner indikátorů teček</target></trans-unit>
+      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve" approved="yes">
+				<source>Enable mouse dragging</source>
+			<target state="final">Povolit tažení myší</target></trans-unit>
+      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve" approved="yes">
+				<source>Enable fade</source>
+			<target state="final">Povolit fade</target></trans-unit>
+      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve" approved="yes">
+				<source>Enable focus on selected element (click)</source>
+			<target state="final">Povolit focus na vybraný prvek (kliknutí)</target></trans-unit>
+      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve" approved="yes">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+			<target state="final">Přidá easing pro jQuery animate. Používejte s knihovnami easing nebo výchozími metodami easing.</target></trans-unit>
+      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve" approved="yes">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+			<target state="final">Odpor při swipování okrajů ne-nekonečných karuselů</target></trans-unit>
+      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
+				<source>Infinite loop sliding</source>
+			<target state="final">Nekonečné posouvání</target></trans-unit>
+      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
+				<source>Slide to start on</source>
+			<target state="final">Výchozí snímek</target></trans-unit>
+      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+			<target state="final">Nastavit techniku líného načítání. Přijímá 'ondemand' nebo 'progressive'.</target></trans-unit>
+      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve" approved="yes">
+				<source>Responsive slick.settings use mobile first calculation</source>
+			<target state="final">Responzivní nastavení slick používá výpočet Mobile First</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve" approved="yes">
+				<source>Pause Autoplay On Focus</source>
+			<target state="final">Pozastavit autoplay při fokusu</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
+				<source>Pause Autoplay On Hover</source>
+			<target state="final">Pozastavit autoplay při najetí myší</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve" approved="yes">
+				<source>Pause Autoplay when a dot is hovered</source>
+			<target state="final">Pozastavit autoplay při najetí na tečku</target></trans-unit>
+      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve" approved="yes">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+			<target state="final">Šířka, na kterou responzivní objekt reaguje. Může být 'window', 'slider' nebo 'min' (menší z obou).</target></trans-unit>
+      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve" approved="yes">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+			<target state="final">Nastavení na více než 1 inicializuje režim mřížky. Pomocí slidesPerRow nastavte počet prvků v každém řádku.</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve" approved="yes">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+			<target state="final">V režimu mřížky inicializovaném pomocí volby rows nastavuje, kolik prvků je v každém řádku mřížky.</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve" approved="yes">
+				<source># of slides to show</source>
+			<target state="final">Počet zobrazených prvků</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve" approved="yes">
+				<source># of slides to scroll</source>
+			<target state="final">Počet prvků k posunutí</target></trans-unit>
+      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
+				<source>Slide/Fade animation speed</source>
+			<target state="final">Rychlost animace posunu/fade</target></trans-unit>
+      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
+				<source>Enable swiping</source>
+			<target state="final">Povolit swipování</target></trans-unit>
+      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve" approved="yes">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+			<target state="final">Umožnit uživatelům tažením nebo swipováním přejít přímo na prvek bez ohledu na slidesToScroll</target></trans-unit>
+      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve" approved="yes">
+				<source>Enable slide motion with touch</source>
+			<target state="final">Povolit pohyb prvku dotykem</target></trans-unit>
+      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve" approved="yes">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+			<target state="final">Pro posun na další prvek musí uživatel swipovat o délku (1/touchThreshold) * šířky slideru</target></trans-unit>
+      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
+				<source>Enable/Disable CSS Transitions</source>
+			<target state="final">Povolit/Zakázat CSS přechody</target></trans-unit>
+      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
+				<source>Enable/Disable CSS Transforms</source>
+			<target state="final">Povolit/Zakázat CSS transformace</target></trans-unit>
+      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve" approved="yes">
+				<source>Variable width slides</source>
+			<target state="final">Prvky s proměnlivou šířkou</target></trans-unit>
+      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
+				<source>Vertical slide mode</source>
+			<target state="final">Vertikální režim posouvání</target></trans-unit>
+      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
+				<source>Vertical swipe mode</source>
+			<target state="final">Vertikální režim swipování</target></trans-unit>
+      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve" approved="yes">
+				<source>Change the slider's direction to become right-to-left</source>
+			<target state="final">Změnit směr slideru na zprava doleva</target></trans-unit>
+      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve" approved="yes">
+				<source>Ignores requests to advance the slide while animating</source>
+			<target state="final">Ignoruje požadavky na posun prvku během animace</target></trans-unit>
+      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve" approved="yes">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+			<target state="final">Nastavit hodnoty zIndex pro prvky, užitečné pro IE9 a nižší</target></trans-unit>
+    </body>
   </file>
 </xliff>
