@@ -4,54 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="options.interval" approved="yes">
-        <source>Interval</source>
-        <target state="final">Intervall</target>
-      </trans-unit>
-      <trans-unit id="options.keyboard" approved="yes">
-        <source>Keyboard</source>
-        <target state="final">Tastatursteuerung</target>
-      </trans-unit>
-      <trans-unit id="options.pause" approved="yes">
-        <source>Pause</source>
-        <target state="final">Pause bei Hover</target>
-      </trans-unit>
-      <trans-unit id="options.ride" approved="yes">
-        <source>Ride</source>
-        <target state="final">Autoplay</target>
-      </trans-unit>
-      <trans-unit id="options.ride.option.carousel" approved="yes">
-        <source>Carousel</source>
-        <target state="final">Karussell</target>
-      </trans-unit>
-      <trans-unit id="options.touch" approved="yes">
-        <source>Touch</source>
-        <target state="final">Touch-Steuerung</target>
-      </trans-unit>
-      <trans-unit id="options.wrap" approved="yes">
-        <source>Wrap</source>
-        <target state="final">Endlosschleife</target>
-      </trans-unit>
-      <trans-unit id="options.control" approved="yes">
-        <source>Show control</source>
-        <target state="final">Steuerung anzeigen</target>
-      </trans-unit>
-      <trans-unit id="options.indicators" approved="yes">
-        <source>Show indicators</source>
-        <target state="final">Indikatoren anzeigen</target>
-      </trans-unit>
-      <trans-unit id="options.title" approved="yes">
-        <source>Show title</source>
-        <target state="final">Titel anzeigen</target>
-      </trans-unit>
-      <trans-unit id="options.description" approved="yes">
-        <source>Show description</source>
-        <target state="final">Beschreibung anzeigen</target>
-      </trans-unit>
-      <trans-unit id="options.startAt" approved="yes">
-        <source>Start at</source>
-        <target state="final">Start bei</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
