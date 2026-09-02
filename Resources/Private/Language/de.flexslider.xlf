@@ -4,10 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="sheet.flexslider" approved="yes">
-        <source>Flex Slider</source>
-        <target state="final">FlexSlider</target>
-      </trans-unit>
       <trans-unit id="sheet.usability" approved="yes">
         <source>Usability</source>
         <target state="final">Benutzbarkeit</target>
@@ -85,10 +81,6 @@
         <source>Fade</source>
         <target state="final">Überblenden</target>
       </trans-unit>
-      <trans-unit id="options.slide" approved="yes">
-        <source>Slide</source>
-        <target state="final">Sliden</target>
-      </trans-unit>
       <!-- Usability Features -->
       <trans-unit id="options.pauseOnAction" approved="yes">
         <source>Pause on action</source>
@@ -115,14 +107,6 @@
         <target state="final">Video-Modus</target>
       </trans-unit>
       <!-- Primary Controls -->
-      <trans-unit id="options.controlNav" approved="yes">
-        <source>Navigation Dots</source>
-        <target state="final">Navigationspunkte</target>
-      </trans-unit>
-      <trans-unit id="options.directionNav" approved="yes">
-        <source>Navigation Arrows</source>
-        <target state="final">Navigationspfeile</target>
-      </trans-unit>
       <!-- Secondary Navigation -->
       <trans-unit id="options.keyboard" approved="yes">
         <source>Keyboard support</source>
