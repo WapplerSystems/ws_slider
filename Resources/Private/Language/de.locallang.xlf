@@ -3,10 +3,6 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="de">
     <header/>
     <body>
-      <trans-unit id="description" approved="yes">
-        <source>Universal Slider / Carousel</source>
-        <target state="final">Universeller Slider / Karussell</target>
-      </trans-unit>
       <trans-unit id="settings" approved="yes">
         <source>Settings</source>
         <target state="final">Einstellungen</target>
@@ -14,14 +10,6 @@
       <trans-unit id="items" approved="yes">
         <source>Items</source>
         <target state="final">Elemente</target>
-      </trans-unit>
-      <trans-unit id="preset" approved="yes">
-        <source>Preset</source>
-        <target state="final">Voreinstellung</target>
-      </trans-unit>
-      <trans-unit id="source" approved="yes">
-        <source>Source</source>
-        <target state="final">Quelle</target>
       </trans-unit>
       <trans-unit id="yes" approved="yes">
         <source>Yes</source>
@@ -35,10 +23,6 @@
         <source>Force</source>
         <target state="final">Erzwingen</target>
       </trans-unit>
-      <trans-unit id="auto" approved="yes">
-        <source>Auto</source>
-        <target state="final">Automatisch</target>
-      </trans-unit>
       <trans-unit id="inner" approved="yes">
         <source>Inner</source>
         <target state="final">Innen</target>
@@ -46,14 +30,6 @@
       <trans-unit id="outer" approved="yes">
         <source>Outer</source>
         <target state="final">Außen</target>
-      </trans-unit>
-      <trans-unit id="horizontal" approved="yes">
-        <source>horizontal</source>
-        <target state="final">Horizontal</target>
-      </trans-unit>
-      <trans-unit id="vertical" approved="yes">
-        <source>vertical</source>
-        <target state="final">Vertikal</target>
       </trans-unit>
       <trans-unit id="default" approved="yes">
         <source>Default</source>
@@ -72,10 +48,6 @@
         <source>Previous</source>
         <target state="final">Zurück</target>
       </trans-unit>
-      <trans-unit id="label.stop" approved="yes">
-        <source>Stop</source>
-        <target state="final">Stopp</target>
-      </trans-unit>
       <!-- sheets -->
       <trans-unit id="sheet.pagination" approved="yes">
         <source>Pagination</source>
@@ -84,10 +56,6 @@
       <trans-unit id="sheet.freeMode" approved="yes">
         <source>Free Mode</source>
         <target state="final">Freier Modus</target>
-      </trans-unit>
-      <trans-unit id="sheet.grid" approved="yes">
-        <source>Grid</source>
-        <target state="final">Raster</target>
       </trans-unit>
       <trans-unit id="sheet.fadeEffect" approved="yes">
         <source>Fade Effect</source>
@@ -113,10 +81,6 @@
         <source>Creative Effect</source>
         <target state="final">Creative Effekt</target>
       </trans-unit>
-      <trans-unit id="sheet.thumbs" approved="yes">
-        <source>Thumbs</source>
-        <target state="final">Vorschaubilder</target>
-      </trans-unit>
       <trans-unit id="sheet.keyboard" approved="yes">
         <source>Keyboard</source>
         <target state="final">Tastatur</target>
@@ -128,14 +92,6 @@
       <trans-unit id="sheet.virtualslides" approved="yes">
         <source>Virtual Slides</source>
         <target state="final">Virtuelle Slides</target>
-      </trans-unit>
-      <trans-unit id="sheet.hashNavigation" approved="yes">
-        <source>Hash Navigation</source>
-        <target state="final">Hash-Navigation</target>
-      </trans-unit>
-      <trans-unit id="sheet.history" approved="yes">
-        <source>History Navigation</source>
-        <target state="final">History-Navigation</target>
       </trans-unit>
       <trans-unit id="sheet.layout" approved="yes">
         <source>Layout</source>
@@ -154,22 +110,6 @@
         <target state="final">Allgemein</target>
       </trans-unit>
       <!-- common setting labels -->
-      <trans-unit id="options.enabled" approved="yes">
-        <source>Enabled</source>
-        <target state="final">Aktiviert</target>
-      </trans-unit>
-      <trans-unit id="options.carousel" approved="yes">
-        <source>Carousel</source>
-        <target state="final">Karussell</target>
-      </trans-unit>
-      <trans-unit id="options.gallery" approved="yes">
-        <source>Gallery</source>
-        <target state="final">Galerie</target>
-      </trans-unit>
-      <trans-unit id="options.vertical" approved="yes">
-        <source>Vertical</source>
-        <target state="final">Vertikal</target>
-      </trans-unit>
       <trans-unit id="options.common.autoplay" approved="yes">
         <source>Autoplay</source>
         <target state="final">Automatische Wiedergabe</target>
@@ -205,14 +145,6 @@
       <trans-unit id="options.common.vertical" approved="yes">
         <source>Vertical</source>
         <target state="final">Vertikal</target>
-      </trans-unit>
-      <trans-unit id="options.common.animateOut" approved="yes">
-        <source>Outro Animation</source>
-        <target state="final">Outro-Animation</target>
-      </trans-unit>
-      <trans-unit id="options.common.animateIn" approved="yes">
-        <source>Intro Animation</source>
-        <target state="final">Intro-Animation</target>
       </trans-unit>
       <trans-unit id="options.common.autoHeight" approved="yes">
         <source>Auto Height</source>
@@ -295,14 +227,6 @@
       <trans-unit id="tx_wsslider_domain_model_preset" approved="yes">
         <source>WS slider preset</source>
         <target state="final">Slider-Voreinstellung</target>
-      </trans-unit>
-      <trans-unit id="tx_wsslider_domain_model_preset.type" approved="yes">
-        <source>Type</source>
-        <target state="final">Typ</target>
-      </trans-unit>
-      <trans-unit id="tx_wsslider_domain_model_preset.type.slick" approved="yes">
-        <source>Slick slider</source>
-        <target state="final">Slick Slider</target>
       </trans-unit>
     </body>
   </file>
