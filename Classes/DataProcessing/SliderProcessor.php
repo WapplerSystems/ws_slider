@@ -273,6 +273,9 @@ class SliderProcessor implements DataProcessorInterface
                 $value = array_values($value);
             }
         }
+        // Die Referenz aus der Schleife aufloesen, sonst zeigt $value noch auf das
+        // letzte Element und ein spaeteres foreach im selben Scope wuerde es ueberschreiben.
+        unset($value);
     }
 
     private function convertStringOptionsToBoolean(&$options)
