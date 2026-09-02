@@ -124,10 +124,6 @@
         <source>Pause autoplay on hover</source>
         <target state="final">Autoplay beim Hover pausieren</target>
       </trans-unit>
-      <trans-unit id="options.autoplayButtonOutput" approved="yes">
-        <source>Autoplay Button Output</source>
-        <target state="final">Autoplay-Button ausgeben</target>
-      </trans-unit>
       <trans-unit id="options.autoplayResetOnVisibility" approved="yes">
         <source>Pause autoplay when page is invisible</source>
         <target state="final">Autoplay pausieren, wenn Seite nicht sichtbar ist</target>
@@ -180,17 +176,9 @@
         <source>Start Index</source>
         <target state="final">Start-Index</target>
       </trans-unit>
-      <trans-unit id="options.onInit" approved="yes">
-        <source>Callback to be run on initialization</source>
-        <target state="final">Callback bei Initialisierung</target>
-      </trans-unit>
       <trans-unit id="options.useLocalStorage" approved="yes">
         <source>Use Local Storage</source>
         <target state="final">Lokalen Speicher verwenden</target>
-      </trans-unit>
-      <trans-unit id="options.nonce" approved="yes">
-        <source>Nonce Attribute</source>
-        <target state="final">Nonce-Attribut</target>
       </trans-unit>
     </body>
   </file>
