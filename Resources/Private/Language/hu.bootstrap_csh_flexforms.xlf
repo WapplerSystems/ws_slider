@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="bootstrap.settings.js.startAt.description" approved="yes">
 				<source>The starting slide for the slider, in array notation.</source>
-				<target state="final">A csúszka kezdő diáját adja meg, tömb indexeléssel (0-tól kezdve).</target>
+				<target state="needs-review-translation">A csúszka kezdő diáját adja meg, tömb indexeléssel (0-tól kezdve).</target>
 			</trans-unit>
 		</body>
 	</file>

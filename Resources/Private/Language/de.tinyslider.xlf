@@ -125,7 +125,7 @@
 			</trans-unit>
 			<trans-unit id="options.autoplayButtonOutput" approved="yes">
 				<source>Autoplay Button Output</source>
-				<target state="final">Autoplay-Button ausgeben</target>
+				<target state="needs-review-translation">Autoplay-Button ausgeben</target>
 			</trans-unit>
 			<trans-unit id="options.autoplayResetOnVisibility" approved="yes">
 				<source>Pause autoplay when page is invisible</source>
@@ -181,7 +181,7 @@
 			</trans-unit>
 			<trans-unit id="options.onInit" approved="yes">
 				<source>Callback to be run on initialization</source>
-				<target state="final">Callback bei Initialisierung</target>
+				<target state="needs-review-translation">Callback bei Initialisierung</target>
 			</trans-unit>
 			<trans-unit id="options.useLocalStorage" approved="yes">
 				<source>Use Local Storage</source>
@@ -189,7 +189,7 @@
 			</trans-unit>
 			<trans-unit id="options.nonce" approved="yes">
 				<source>Nonce Attribute</source>
-				<target state="final">Nonce-Attribut</target>
+				<target state="needs-review-translation">Nonce-Attribut</target>
 			</trans-unit>
 		</body>
 	</file>
