@@ -3,9 +3,10 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ko">
     <header/>
     <body>
-
-			
-
-		</body>
+      <trans-unit id="bootstrap.settings.js.startAt.description" approved="yes">
+        <source>The starting slide for the slider, in array notation.</source>
+        <target state="final">슬라이더의 시작 슬라이드를 배열 표기법으로 지정합니다.</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
