@@ -8,14 +8,6 @@
         <source>Interval</source>
         <target state="final">Interval</target>
       </trans-unit>
-      <trans-unit id="options.keyboard" approved="yes">
-        <source>Keyboard</source>
-        <target state="final">Tastaturstyring</target>
-      </trans-unit>
-      <trans-unit id="options.ride" approved="yes">
-        <source>Ride</source>
-        <target state="final">Autoplay</target>
-      </trans-unit>
       <trans-unit id="options.ride.option.carousel" approved="yes">
         <source>Carousel</source>
         <target state="final">Karrusel</target>
@@ -23,22 +15,6 @@
       <trans-unit id="options.wrap" approved="yes">
         <source>Wrap</source>
         <target state="final">Ombryd</target>
-      </trans-unit>
-      <trans-unit id="options.control" approved="yes">
-        <source>Show control</source>
-        <target state="final">Vis kontrolknapper</target>
-      </trans-unit>
-      <trans-unit id="options.indicators" approved="yes">
-        <source>Show indicators</source>
-        <target state="final">Vis indikatorer</target>
-      </trans-unit>
-      <trans-unit id="options.title" approved="yes">
-        <source>Show title</source>
-        <target state="final">Vis titel</target>
-      </trans-unit>
-      <trans-unit id="options.description" approved="yes">
-        <source>Show description</source>
-        <target state="final">Vis beskrivelse</target>
       </trans-unit>
       <trans-unit id="options.startAt" approved="yes">
         <source>Start at</source>
