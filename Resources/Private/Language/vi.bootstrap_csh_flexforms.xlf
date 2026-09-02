@@ -3,9 +3,10 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="vi">
     <header/>
     <body>
-
-			
-
-		</body>
+      <trans-unit id="bootstrap.settings.js.startAt.description" approved="yes">
+        <source>The starting slide for the slider, in array notation.</source>
+        <target state="final">Slide bắt đầu của slider, theo ký hiệu mảng.</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
