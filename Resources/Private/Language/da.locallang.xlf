@@ -7,6 +7,10 @@
         <source>Slider</source>
         <target state="final">Slider</target>
       </trans-unit>
+      <trans-unit id="description" approved="yes">
+        <source>Universal Slider / Carousel</source>
+        <target state="final">Universal Slider / Karrusel</target>
+      </trans-unit>
       <trans-unit id="palette.wsslider" approved="yes">
         <source>Slider</source>
         <target state="final">Slider</target>
