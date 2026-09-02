@@ -4,6 +4,190 @@
     <header/>
     <body>
       <!-- tinyslider specific settings -->
+      <trans-unit id="options.axis" approved="yes">
+        <source>Axis</source>
+        <target state="final">Axe</target>
+      </trans-unit>
+      <trans-unit id="options.items" approved="yes">
+        <source>Items</source>
+        <target state="final">Éléments</target>
+      </trans-unit>
+      <trans-unit id="options.responsiveItemCount0" approved="yes">
+        <source>Items below 576px display width</source>
+        <target state="final">Éléments en dessous de 576px de largeur d'affichage</target>
+      </trans-unit>
+      <trans-unit id="options.responsiveItemCount576" approved="yes">
+        <source>Items above 576px display width</source>
+        <target state="final">Éléments au-dessus de 576px de largeur d'affichage</target>
+      </trans-unit>
+      <trans-unit id="options.responsiveItemCount768" approved="yes">
+        <source>Items above 768px display width</source>
+        <target state="final">Éléments au-dessus de 768px de largeur d'affichage</target>
+      </trans-unit>
+      <trans-unit id="options.responsiveItemCount992" approved="yes">
+        <source>Items above 992px display width</source>
+        <target state="final">Éléments au-dessus de 992px de largeur d'affichage</target>
+      </trans-unit>
+      <trans-unit id="options.responsiveItemCount1200" approved="yes">
+        <source>Items above 1200px display width</source>
+        <target state="final">Éléments au-dessus de 1200px de largeur d'affichage</target>
+      </trans-unit>
+      <trans-unit id="options.responsiveItemCount1400" approved="yes">
+        <source>Items above 1400px display width</source>
+        <target state="final">Éléments au-dessus de 1400px de largeur d'affichage</target>
+      </trans-unit>
+      <trans-unit id="options.gutter" approved="yes">
+        <source>Gutter</source>
+        <target state="final">Espacement</target>
+      </trans-unit>
+      <trans-unit id="options.edgePadding" approved="yes">
+        <source>Edge Padding</source>
+        <target state="final">Padding des bords</target>
+      </trans-unit>
+      <trans-unit id="options.fixedWidth" approved="yes">
+        <source>Fixed Width</source>
+        <target state="final">Largeur fixe</target>
+      </trans-unit>
+      <trans-unit id="options.autoWidth" approved="yes">
+        <source>Auto Width</source>
+        <target state="final">Largeur automatique</target>
+      </trans-unit>
+      <trans-unit id="options.viewportMax" approved="yes">
+        <source>Viewport Maximum</source>
+        <target state="final">Viewport maximum</target>
+      </trans-unit>
+      <trans-unit id="options.slideBy" approved="yes">
+        <source>Slide By</source>
+        <target state="final">Défilement par</target>
+      </trans-unit>
+      <trans-unit id="options.center" approved="yes">
+        <source>Center</source>
+        <target state="final">Centrer</target>
+      </trans-unit>
+      <trans-unit id="options.controls" approved="yes">
+        <source>Control Buttons</source>
+        <target state="final">Boutons de contrôle</target>
+      </trans-unit>
+      <trans-unit id="options.controlsPosition" approved="yes">
+        <source>Control Buttons Position</source>
+        <target state="final">Position des boutons de contrôle</target>
+      </trans-unit>
+      <trans-unit id="options.controlsContainer" approved="yes">
+        <source>Control Buttons Container</source>
+        <target state="final">Conteneur des boutons de contrôle</target>
+      </trans-unit>
+      <trans-unit id="options.customPrevButton" approved="yes">
+        <source>Custom Previous-Button</source>
+        <target state="final">Bouton précédent personnalisé</target>
+      </trans-unit>
+      <trans-unit id="options.customNextButton" approved="yes">
+        <source>Custom Next-Button</source>
+        <target state="final">Bouton suivant personnalisé</target>
+      </trans-unit>
+      <trans-unit id="options.nav" approved="yes">
+        <source>Nav Components</source>
+        <target state="final">Composants de navigation</target>
+      </trans-unit>
+      <trans-unit id="options.navPosition" approved="yes">
+        <source>Nav Components Position</source>
+        <target state="final">Position des composants de navigation</target>
+      </trans-unit>
+      <trans-unit id="options.navContainer" approved="yes">
+        <source>Nav Components Container</source>
+        <target state="final">Conteneur des composants de navigation</target>
+      </trans-unit>
+      <trans-unit id="options.navAsThumbnails" approved="yes">
+        <source>Nav As Thumbnails</source>
+        <target state="final">Navigation en vignettes</target>
+      </trans-unit>
+      <trans-unit id="options.arrowKeys" approved="yes">
+        <source>Arrow Keys</source>
+        <target state="final">Touches fléchées</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayPosition" approved="yes">
+        <source>Autoplay Position</source>
+        <target state="final">Position du bouton de lecture automatique</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayTimeout" approved="yes">
+        <source>Autoplay time between slide changes</source>
+        <target state="final">Intervalle entre les diapositives</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayDirection" approved="yes">
+        <source>Autoplay Direction</source>
+        <target state="final">Sens de la lecture automatique</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayHoverPause" approved="yes">
+        <source>Pause autoplay on hover</source>
+        <target state="final">Suspendre la lecture automatique au survol</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayButtonOutput" approved="yes">
+        <source>Autoplay Button Output</source>
+        <target state="final">Affichage du bouton de lecture automatique</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayResetOnVisibility" approved="yes">
+        <source>Pause autoplay when page is invisible</source>
+        <target state="final">Suspendre la lecture automatique si la page est invisible</target>
+      </trans-unit>
+      <trans-unit id="options.animateNormal" approved="yes">
+        <source>Normal Animation</source>
+        <target state="final">Animation normale</target>
+      </trans-unit>
+      <trans-unit id="options.animateDelay" approved="yes">
+        <source>Animation Delay</source>
+        <target state="final">Délai d'animation</target>
+      </trans-unit>
+      <trans-unit id="options.rewind" approved="yes">
+        <source>Rewind</source>
+        <target state="final">Revenir au début</target>
+      </trans-unit>
+      <trans-unit id="options.lazyloadSelector" approved="yes">
+        <source>CSS selector for lazyload images</source>
+        <target state="final">Sélecteur CSS pour les images en chargement différé</target>
+      </trans-unit>
+      <trans-unit id="options.mouseDrag" approved="yes">
+        <source>Mouse Drag</source>
+        <target state="final">Glisser à la souris</target>
+      </trans-unit>
+      <trans-unit id="options.swipeAngle" approved="yes">
+        <source>Swipe Angle</source>
+        <target state="final">Angle de balayage</target>
+      </trans-unit>
+      <trans-unit id="options.preventActionWhenRunning" approved="yes">
+        <source>Prevent next transition while slider is transforming</source>
+        <target state="final">Empêcher la transition suivante pendant la transformation</target>
+      </trans-unit>
+      <trans-unit id="options.preventScrollOnTouch" approved="yes">
+        <source>Prevent page from scrolling on touch</source>
+        <target state="final">Empêcher le défilement de la page au toucher</target>
+      </trans-unit>
+      <trans-unit id="options.nested" approved="yes">
+        <source>Nested</source>
+        <target state="final">Imbriqué</target>
+      </trans-unit>
+      <trans-unit id="options.freezable" approved="yes">
+        <source>Freezable</source>
+        <target state="final">Figeable</target>
+      </trans-unit>
+      <trans-unit id="options.disable" approved="yes">
+        <source>Disable</source>
+        <target state="final">Désactiver</target>
+      </trans-unit>
+      <trans-unit id="options.startIndex" approved="yes">
+        <source>Start Index</source>
+        <target state="final">Index de départ</target>
+      </trans-unit>
+      <trans-unit id="options.onInit" approved="yes">
+        <source>Callback to be run on initialization</source>
+        <target state="final">Callback à l'initialisation</target>
+      </trans-unit>
+      <trans-unit id="options.useLocalStorage" approved="yes">
+        <source>Use Local Storage</source>
+        <target state="final">Utiliser le stockage local</target>
+      </trans-unit>
+      <trans-unit id="options.nonce" approved="yes">
+        <source>Nonce Attribute</source>
+        <target state="final">Attribut Nonce</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
