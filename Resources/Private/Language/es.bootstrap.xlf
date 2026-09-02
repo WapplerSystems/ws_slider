@@ -4,6 +4,70 @@
     <header/>
     <body>
       <!-- sheets -->
+      <trans-unit id="sheet.bootstrap" approved="yes">
+        <source>Bootstrap Slider</source>
+        <target state="final">Deslizador Bootstrap</target>
+      </trans-unit>
+      <trans-unit id="options.interval" approved="yes">
+        <source>Interval</source>
+        <target state="final">Intervalo</target>
+      </trans-unit>
+      <trans-unit id="options.keyboard" approved="yes">
+        <source>Keyboard</source>
+        <target state="final">Teclado</target>
+      </trans-unit>
+      <trans-unit id="options.pause" approved="yes">
+        <source>Pause</source>
+        <target state="final">Pausa</target>
+      </trans-unit>
+      <trans-unit id="options.ride" approved="yes">
+        <source>Ride</source>
+        <target state="final">Desplazamiento automático</target>
+      </trans-unit>
+      <trans-unit id="options.ride.option.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Carrusel</target>
+      </trans-unit>
+      <trans-unit id="options.touch" approved="yes">
+        <source>Touch</source>
+        <target state="final">Táctil</target>
+      </trans-unit>
+      <trans-unit id="options.wrap" approved="yes">
+        <source>Wrap</source>
+        <target state="final">Bucle continuo</target>
+      </trans-unit>
+      <trans-unit id="options.control" approved="yes">
+        <source>Show control</source>
+        <target state="final">Mostrar control</target>
+      </trans-unit>
+      <trans-unit id="options.indicators" approved="yes">
+        <source>Show indicators</source>
+        <target state="final">Mostrar indicadores</target>
+      </trans-unit>
+      <trans-unit id="options.title" approved="yes">
+        <source>Show title</source>
+        <target state="final">Mostrar título</target>
+      </trans-unit>
+      <trans-unit id="options.description" approved="yes">
+        <source>Show description</source>
+        <target state="final">Mostrar descripción</target>
+      </trans-unit>
+      <trans-unit id="options.startAt" approved="yes">
+        <source>Start at</source>
+        <target state="final">Comenzar en</target>
+      </trans-unit>
+      <trans-unit id="btn.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Anterior</target>
+      </trans-unit>
+      <trans-unit id="btn.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Siguiente</target>
+      </trans-unit>
+      <trans-unit id="btn.more" approved="yes">
+        <source>More</source>
+        <target state="final">Más</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
