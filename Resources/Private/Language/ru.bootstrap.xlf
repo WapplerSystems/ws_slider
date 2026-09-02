@@ -4,6 +4,70 @@
     <header/>
     <body>
       <!-- sheets -->
+      <trans-unit id="sheet.bootstrap" approved="yes">
+        <source>Bootstrap Slider</source>
+        <target state="final">Слайдер Bootstrap</target>
+      </trans-unit>
+      <trans-unit id="options.interval" approved="yes">
+        <source>Interval</source>
+        <target state="final">Интервал</target>
+      </trans-unit>
+      <trans-unit id="options.keyboard" approved="yes">
+        <source>Keyboard</source>
+        <target state="final">Клавиатура</target>
+      </trans-unit>
+      <trans-unit id="options.pause" approved="yes">
+        <source>Pause</source>
+        <target state="final">Пауза</target>
+      </trans-unit>
+      <trans-unit id="options.ride" approved="yes">
+        <source>Ride</source>
+        <target state="final">Автозапуск</target>
+      </trans-unit>
+      <trans-unit id="options.ride.option.carousel" approved="yes">
+        <source>Carousel</source>
+        <target state="final">Карусель</target>
+      </trans-unit>
+      <trans-unit id="options.touch" approved="yes">
+        <source>Touch</source>
+        <target state="final">Сенсорное управление</target>
+      </trans-unit>
+      <trans-unit id="options.wrap" approved="yes">
+        <source>Wrap</source>
+        <target state="final">Зацикливание</target>
+      </trans-unit>
+      <trans-unit id="options.control" approved="yes">
+        <source>Show control</source>
+        <target state="final">Показать управление</target>
+      </trans-unit>
+      <trans-unit id="options.indicators" approved="yes">
+        <source>Show indicators</source>
+        <target state="final">Показать индикаторы</target>
+      </trans-unit>
+      <trans-unit id="options.title" approved="yes">
+        <source>Show title</source>
+        <target state="final">Показать заголовок</target>
+      </trans-unit>
+      <trans-unit id="options.description" approved="yes">
+        <source>Show description</source>
+        <target state="final">Показать описание</target>
+      </trans-unit>
+      <trans-unit id="options.startAt" approved="yes">
+        <source>Start at</source>
+        <target state="final">Начать с</target>
+      </trans-unit>
+      <trans-unit id="btn.previous" approved="yes">
+        <source>Previous</source>
+        <target state="final">Назад</target>
+      </trans-unit>
+      <trans-unit id="btn.next" approved="yes">
+        <source>Next</source>
+        <target state="final">Далее</target>
+      </trans-unit>
+      <trans-unit id="btn.more" approved="yes">
+        <source>More</source>
+        <target state="final">Подробнее</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
