@@ -3,9 +3,10 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="it">
     <header/>
     <body>
-
-			
-
-		</body>
+      <trans-unit id="bootstrap.settings.js.startAt.description" approved="yes">
+        <source>The starting slide for the slider, in array notation.</source>
+        <target state="final">La slide iniziale del carosello, in notazione array.</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
