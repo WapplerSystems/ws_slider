@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="sheet.flexslider" approved="yes">
 				<source>Flex Slider</source>
-				<target state="needs-review-translation">FlexSlider</target>
+				<target state="final">FlexSlider</target>
 			</trans-unit>
 			<trans-unit id="sheet.usability" approved="yes">
 				<source>Usability</source>
@@ -89,7 +89,7 @@
 			</trans-unit>
 			<trans-unit id="options.slide" approved="yes">
 				<source>Slide</source>
-				<target state="needs-review-translation">Sliden</target>
+				<target state="final">Sliden</target>
 			</trans-unit>
 			<trans-unit id="options.pauseOnAction" approved="yes">
 				<source>Pause on action</source>
@@ -117,11 +117,11 @@
 			</trans-unit>
 			<trans-unit id="options.controlNav" approved="yes">
 				<source>Navigation Dots</source>
-				<target state="needs-review-translation">Navigationspunkte</target>
+				<target state="final">Navigationspunkte</target>
 			</trans-unit>
 			<trans-unit id="options.directionNav" approved="yes">
 				<source>Navigation Arrows</source>
-				<target state="needs-review-translation">Navigationspfeile</target>
+				<target state="final">Navigationspfeile</target>
 			</trans-unit>
 			<trans-unit id="options.keyboard" approved="yes">
 				<source>Keyboard support</source>
@@ -181,7 +181,7 @@
 			</trans-unit>
 			<trans-unit id="btn.more" approved="yes">
 				<source>More</source>
-				<target state="needs-review-translation">Mehr</target>
+				<target state="final">Mehr</target>
 			</trans-unit>
 		</body>
 	</file>

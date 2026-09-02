@@ -9,51 +9,51 @@
 			</trans-unit>
 			<trans-unit id="options.interval" approved="yes">
 				<source>Interval</source>
-				<target state="needs-review-translation">Intervall</target>
+				<target state="final">Intervall</target>
 			</trans-unit>
 			<trans-unit id="options.keyboard" approved="yes">
 				<source>Keyboard</source>
-				<target state="needs-review-translation">Tastatursteuerung</target>
+				<target state="final">Tastatursteuerung</target>
 			</trans-unit>
 			<trans-unit id="options.pause" approved="yes">
 				<source>Pause</source>
-				<target state="needs-review-translation">Pause bei Hover</target>
+				<target state="final">Pause bei Hover</target>
 			</trans-unit>
 			<trans-unit id="options.ride" approved="yes">
 				<source>Ride</source>
-				<target state="needs-review-translation">Autoplay</target>
+				<target state="final">Autoplay</target>
 			</trans-unit>
 			<trans-unit id="options.ride.option.carousel" approved="yes">
 				<source>Carousel</source>
-				<target state="needs-review-translation">Karussell</target>
+				<target state="final">Karussell</target>
 			</trans-unit>
 			<trans-unit id="options.touch" approved="yes">
 				<source>Touch</source>
-				<target state="needs-review-translation">Touch-Steuerung</target>
+				<target state="final">Touch-Steuerung</target>
 			</trans-unit>
 			<trans-unit id="options.wrap" approved="yes">
 				<source>Wrap</source>
-				<target state="needs-review-translation">Endlosschleife</target>
+				<target state="final">Endlosschleife</target>
 			</trans-unit>
 			<trans-unit id="options.control" approved="yes">
 				<source>Show control</source>
-				<target state="needs-review-translation">Steuerung anzeigen</target>
+				<target state="final">Steuerung anzeigen</target>
 			</trans-unit>
 			<trans-unit id="options.indicators" approved="yes">
 				<source>Show indicators</source>
-				<target state="needs-review-translation">Indikatoren anzeigen</target>
+				<target state="final">Indikatoren anzeigen</target>
 			</trans-unit>
 			<trans-unit id="options.title" approved="yes">
 				<source>Show title</source>
-				<target state="needs-review-translation">Titel anzeigen</target>
+				<target state="final">Titel anzeigen</target>
 			</trans-unit>
 			<trans-unit id="options.description" approved="yes">
 				<source>Show description</source>
-				<target state="needs-review-translation">Beschreibung anzeigen</target>
+				<target state="final">Beschreibung anzeigen</target>
 			</trans-unit>
 			<trans-unit id="options.startAt" approved="yes">
 				<source>Start at</source>
-				<target state="needs-review-translation">Start bei</target>
+				<target state="final">Start bei</target>
 			</trans-unit>
 			<trans-unit id="btn.previous" approved="yes">
 				<source>Previous</source>

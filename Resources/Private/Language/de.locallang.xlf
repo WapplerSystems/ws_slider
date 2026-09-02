@@ -5,15 +5,15 @@
 		<body>
 			<trans-unit id="title" approved="yes">
 				<source>Slider</source>
-				<target state="needs-review-translation">Slider</target>
+				<target state="final">Slider</target>
 			</trans-unit>
 			<trans-unit id="description" approved="yes">
 				<source>Universal Slider / Carousel</source>
-				<target state="needs-review-translation">Universeller Slider / Karussell</target>
+				<target state="final">Universeller Slider / Karussell</target>
 			</trans-unit>
 			<trans-unit id="palette.wsslider" approved="yes">
 				<source>Slider</source>
-				<target state="needs-review-translation">Slider</target>
+				<target state="final">Slider</target>
 			</trans-unit>
 			<trans-unit id="settings" approved="yes">
 				<source>Settings</source>
@@ -21,7 +21,7 @@
 			</trans-unit>
 			<trans-unit id="renderer" approved="yes">
 				<source>Renderer</source>
-				<target state="needs-review-translation">Renderer</target>
+				<target state="final">Darstellendes Skript</target>
 			</trans-unit>
 			<trans-unit id="items" approved="yes">
 				<source>Items</source>
@@ -29,11 +29,11 @@
 			</trans-unit>
 			<trans-unit id="preset" approved="yes">
 				<source>Preset</source>
-				<target state="needs-review-translation">Voreinstellung</target>
+				<target state="final">Voreinstellung</target>
 			</trans-unit>
 			<trans-unit id="source" approved="yes">
 				<source>Source</source>
-				<target state="needs-review-translation">Quelle</target>
+				<target state="final">Quelle</target>
 			</trans-unit>
 			<trans-unit id="yes" approved="yes">
 				<source>Yes</source>
@@ -49,7 +49,7 @@
 			</trans-unit>
 			<trans-unit id="auto" approved="yes">
 				<source>Auto</source>
-				<target state="needs-review-translation">Automatisch</target>
+				<target state="final">Automatisch</target>
 			</trans-unit>
 			<trans-unit id="inner" approved="yes">
 				<source>Inner</source>
@@ -65,11 +65,11 @@
 			</trans-unit>
 			<trans-unit id="horizontal" approved="yes">
 				<source>horizontal</source>
-				<target state="needs-review-translation">Horizontal</target>
+				<target state="final">Horizontal</target>
 			</trans-unit>
 			<trans-unit id="vertical" approved="yes">
 				<source>vertical</source>
-				<target state="needs-review-translation">Vertikal</target>
+				<target state="final">Vertikal</target>
 			</trans-unit>
 			<trans-unit id="default" approved="yes">
 				<source>Default</source>
@@ -93,11 +93,11 @@
 			</trans-unit>
 			<trans-unit id="label.stop" approved="yes">
 				<source>Stop</source>
-				<target state="needs-review-translation">Stopp</target>
+				<target state="final">Stopp</target>
 			</trans-unit>
 			<trans-unit id="settings.typoscript" approved="yes">
 				<source>TypoScript</source>
-				<target state="needs-review-translation">TypoScript</target>
+				<target state="final">TypoScript</target>
 			</trans-unit>
 			<trans-unit id="sheet.navigation" approved="yes">
 				<source>Navigation</source>
@@ -121,7 +121,7 @@
 			</trans-unit>
 			<trans-unit id="sheet.grid" approved="yes">
 				<source>Grid</source>
-				<target state="needs-review-translation">Raster</target>
+				<target state="final">Raster</target>
 			</trans-unit>
 			<trans-unit id="sheet.parallax" approved="yes">
 				<source>Parallax</source>
@@ -153,11 +153,11 @@
 			</trans-unit>
 			<trans-unit id="sheet.thumbs" approved="yes">
 				<source>Thumbs</source>
-				<target state="needs-review-translation">Vorschaubilder</target>
+				<target state="final">Vorschaubilder</target>
 			</trans-unit>
 			<trans-unit id="sheet.zoom" approved="yes">
 				<source>Zoom</source>
-				<target state="needs-review-translation">Zoom</target>
+				<target state="final">Zoom</target>
 			</trans-unit>
 			<trans-unit id="sheet.keyboard" approved="yes">
 				<source>Keyboard</source>
@@ -173,11 +173,11 @@
 			</trans-unit>
 			<trans-unit id="sheet.hashNavigation" approved="yes">
 				<source>Hash Navigation</source>
-				<target state="needs-review-translation">Hash-Navigation</target>
+				<target state="final">Hash-Navigation</target>
 			</trans-unit>
 			<trans-unit id="sheet.history" approved="yes">
 				<source>History Navigation</source>
-				<target state="needs-review-translation">History-Navigation</target>
+				<target state="final">History-Navigation</target>
 			</trans-unit>
 			<trans-unit id="sheet.layout" approved="yes">
 				<source>Layout</source>
@@ -205,35 +205,35 @@
 			</trans-unit>
 			<trans-unit id="sheet.slick" approved="yes">
 				<source>Slick Slider</source>
-				<target state="needs-review-translation">Slick Slider</target>
+				<target state="final">Slick Slider</target>
 			</trans-unit>
 			<trans-unit id="sheet.swiper" approved="yes">
 				<source>Swiper Slider</source>
-				<target state="needs-review-translation">Swiper Slider</target>
+				<target state="final">Swiper Slider</target>
 			</trans-unit>
 			<trans-unit id="options.enabled" approved="yes">
 				<source>Enabled</source>
-				<target state="needs-review-translation">Aktiviert</target>
+				<target state="final">Aktiviert</target>
 			</trans-unit>
 			<trans-unit id="options.carousel" approved="yes">
 				<source>Carousel</source>
-				<target state="needs-review-translation">Karussell</target>
+				<target state="final">Karussell</target>
 			</trans-unit>
 			<trans-unit id="options.gallery" approved="yes">
 				<source>Gallery</source>
-				<target state="needs-review-translation">Galerie</target>
+				<target state="final">Galerie</target>
 			</trans-unit>
 			<trans-unit id="options.horizontal" approved="yes">
 				<source>Horizontal</source>
-				<target state="needs-review-translation">Horizontal</target>
+				<target state="final">Horizontal</target>
 			</trans-unit>
 			<trans-unit id="options.vertical" approved="yes">
 				<source>Vertical</source>
-				<target state="needs-review-translation">Vertikal</target>
+				<target state="final">Vertikal</target>
 			</trans-unit>
 			<trans-unit id="options.common.layout" approved="yes">
 				<source>Layout</source>
-				<target state="needs-review-translation">Layout</target>
+				<target state="final">Darstellung</target>
 			</trans-unit>
 			<trans-unit id="options.common.autoplay" approved="yes">
 				<source>Autoplay</source>
@@ -273,15 +273,15 @@
 			</trans-unit>
 			<trans-unit id="options.common.horizontal" approved="yes">
 				<source>Horizontal</source>
-				<target state="needs-review-translation">Horizontal</target>
+				<target state="final">Horizontal</target>
 			</trans-unit>
 			<trans-unit id="options.common.animateOut" approved="yes">
 				<source>Outro Animation</source>
-				<target state="needs-review-translation">Outro-Animation</target>
+				<target state="final">Outro-Animation</target>
 			</trans-unit>
 			<trans-unit id="options.common.animateIn" approved="yes">
 				<source>Intro Animation</source>
-				<target state="needs-review-translation">Intro-Animation</target>
+				<target state="final">Intro-Animation</target>
 			</trans-unit>
 			<trans-unit id="options.common.autoHeight" approved="yes">
 				<source>Auto Height</source>
@@ -329,7 +329,7 @@
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_item.link" approved="yes">
 				<source>Link</source>
-				<target state="needs-review-translation">Link</target>
+				<target state="final">Link</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_item.textposition_left" approved="yes">
 				<source>Left</source>
@@ -369,31 +369,31 @@
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.name" approved="yes">
 				<source>Name</source>
-				<target state="needs-review-translation">Name</target>
+				<target state="final">Name</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type" approved="yes">
 				<source>Type</source>
-				<target state="needs-review-translation">Typ</target>
+				<target state="final">Typ</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.bootstrap" approved="yes">
 				<source>Bootstrap</source>
-				<target state="needs-review-translation">Bootstrap</target>
+				<target state="final">Bootstrap</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.flexslider" approved="yes">
 				<source>Flexslider</source>
-				<target state="needs-review-translation">Flexslider</target>
+				<target state="final">Flexslider</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.slick" approved="yes">
 				<source>Slick slider</source>
-				<target state="needs-review-translation">Slick Slider</target>
+				<target state="final">Slick Slider</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.tinyslider" approved="yes">
 				<source>Tiny Slider</source>
-				<target state="needs-review-translation">Tiny Slider</target>
+				<target state="final">Tiny Slider</target>
 			</trans-unit>
 			<trans-unit id="tx_wsslider_domain_model_preset.type.swiper" approved="yes">
 				<source>Swiper</source>
-				<target state="needs-review-translation">Swiper</target>
+				<target state="final">Swiper</target>
 			</trans-unit>
 		</body>
 	</file>
