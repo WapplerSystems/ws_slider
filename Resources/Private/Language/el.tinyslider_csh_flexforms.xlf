@@ -3,56 +3,209 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="el">
     <header/>
     <body>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		</body>
+      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
+        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
+        <target state="final">Ελέγχει τη συμπεριφορά της κίνησης. Στο 'carousel' όλα μετακινούνται στο πλάι. Στη 'gallery' χρησιμοποιούνται εφέ σταδιακής εμφάνισης (fade) και όλα τα στοιχεία αλλάζουν ταυτόχρονα.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
+        <source>The axis of the slider.</source>
+        <target state="final">Ο άξονας του slider.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
+        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
+        <target state="final">Αριθμός διαφανειών που εμφανίζονται στο viewport. Εάν ο αριθμός των στοιχείων είναι μικρότερος ή ίσος από τον αριθμό που ορίζεται εδώ, το slider δεν θα αρχικοποιηθεί.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
+        <source>Space between slides (in “px”).</source>
+        <target state="final">Απόσταση μεταξύ των στοιχείων (σε „px“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
+        <source>Space on the outside (in “px”).</source>
+        <target state="final">Απόσταση προς τα έξω (σε „px“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
+        <source>Controls width attribute of the slides.</source>
+        <target state="final">Ελέγχει το χαρακτηριστικό πλάτους των στοιχείων.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
+        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
+        <target state="final">Εάν ενεργοποιηθεί, το πλάτος κάθε στοιχείου θα είναι το φυσικό του πλάτος ως inline-block πλαίσιο.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
+        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
+        <target state="final">Μέγιστο πλάτος viewport για σταθερό/αυτόματο πλάτος.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
+        <source>Number of slides going on one “click”.</source>
+        <target state="final">Αριθμός στοιχείων που μετακινούνται με μία ενέργεια.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
+        <source>Center the active slide in the viewport.</source>
+        <target state="final">Κεντράρει την ενεργή διαφάνεια.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
+        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
+        <target state="final">Ελέγχει την εμφάνιση και τη λειτουργικότητα των στοιχείων ελέγχου (κουμπιά προηγούμενο/επόμενο). Εάν ενεργοποιηθεί, εμφανίζονται τα στοιχεία ελέγχου και προστίθενται όλες οι λειτουργίες. Για καλύτερη προσβασιμότητα, όταν ένα κουμπί προηγούμενο/επόμενο είναι εστιασμένο, ο χρήστης μπορεί να ελέγχει το slider με τα βελάκια αριστερά/δεξιά.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
+        <source>Controls controls position.</source>
+        <target state="final">Θέση των κουμπιών ελέγχου.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
+        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
+        <target state="final">Το στοιχείο/επιλογέας container γύρω από τα κουμπιά προηγούμενο/επόμενο. Το controlsContainer πρέπει να έχει τουλάχιστον 2 θυγατρικά στοιχεία.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
+        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+        <target state="final">Προσαρμοσμένα κουμπιά προηγούμενο. Αυτή η επιλογή αγνοείται εάν το controlsContainer είναι στοιχείο Node ή CSS selector.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
+        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+        <target state="final">Προσαρμοσμένα κουμπιά επόμενο. Αυτή η επιλογή αγνοείται εάν το controlsContainer είναι στοιχείο Node ή CSS selector.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
+        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
+        <target state="final">Ελέγχει την εμφάνιση και τη λειτουργικότητα των στοιχείων πλοήγησης (τελείες). Εάν ενεργοποιηθεί, εμφανίζεται η πλοήγηση και προστίθενται όλες οι λειτουργίες.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
+        <source>Controls nav position.</source>
+        <target state="final">Θέση της πλοήγησης.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
+        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
+        <target state="final">Το στοιχείο/επιλογέας container γύρω από τις τελείες. Το navContainer πρέπει να έχει τουλάχιστον τον ίδιο αριθμό θυγατρικών στοιχείων με τις διαφάνειες.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
+        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
+        <target state="final">Υποδεικνύει αν οι τελείες είναι μικρογραφίες. Εάν ενεργοποιηθεί, θα είναι πάντα ορατές ακόμη και όταν εμφανίζονται περισσότερες από 1 διαφάνειες στο viewport.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
+        <source>Allows using arrow keys to switch slides.</source>
+        <target state="final">Επιτρέπει τη χρήση των βελών για την εναλλαγή διαφανειών.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
+        <source>Speed of the slide animation (in “ms”).</source>
+        <target state="final">Ταχύτητα της κίνησης διαφανειών (σε „ms“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
+        <source>Toggles the automatic change of slides.</source>
+        <target state="final">Ενεργοποιεί/απενεργοποιεί την αυτόματη αλλαγή διαφανειών.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
+        <source>Controls autoplay position.</source>
+        <target state="final">Θέση του autoplay.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
+        <source>Time between 2 autoplay slides change (in “ms”).</source>
+        <target state="final">Χρόνος μεταξύ 2 αυτόματων αλλαγών διαφανειών (σε „ms“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
+        <source>Direction of slide movement (ascending/descending the slide index).</source>
+        <target state="final">Κατεύθυνση κίνησης διαφανειών (αύξουσα/φθίνουσα σειρά του δείκτη διαφάνειας).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
+        <source>Stops sliding on mouseover.</source>
+        <target state="final">Σταματά την κίνηση στο πέρασμα του ποντικιού (mouseover).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
+        <source>The customized autoplay start/stop button or selector.</source>
+        <target state="final">Το προσαρμοσμένο κουμπί εκκίνησης/διακοπής autoplay ή επιλογέας.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
+        <source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
+        <target state="final">Παράγει το markup του autoplayButton όταν το autoplay είναι ενεργό αλλά δεν παρέχεται προσαρμοσμένο autoplayButton.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
+        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
+        <target state="final">Διακόπτει την κίνηση όταν η σελίδα δεν είναι ορατή και τη συνεχίζει όταν η σελίδα γίνει ξανά ορατή.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
+        <source>Name of intro animation class.</source>
+        <target state="final">Όνομα της κλάσης κίνησης εισόδου (intro).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
+        <source>Name of outro animation class.</source>
+        <target state="final">Όνομα της κλάσης κίνησης εξόδου (outro).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
+        <source>Name of default animation class.</source>
+        <target state="final">Όνομα της προεπιλεγμένης κλάσης κίνησης.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
+        <source>Time between each gallery animation (in “ms”).</source>
+        <target state="final">Χρόνος μεταξύ κάθε κίνησης gallery (σε „ms“).</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
+        <source>Moves throughout all the slides seamlessly.</source>
+        <target state="final">Μετακινείται μέσα από όλες τις διαφάνειες απρόσκοπτα.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
+        <source>Moves to the opposite edge when reaching the first or last slide.</source>
+        <target state="final">Μετακινείται στο αντίθετο άκρο όταν φτάσει στην πρώτη ή την τελευταία διαφάνεια.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
+        <source>Height of slider container changes according to each slide’s height.</source>
+        <target state="final">Το ύψος του container του slider αλλάζει σύμφωνα με το ύψος κάθε διαφάνειας.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
+				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
+                        NOTE:
+                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
+                        + data-src attribute with its value of the real image src is required;
+                        + width attribute for every image is required for autoWidth slider.</source>
+			<target state="final">Ενεργοποιεί το lazyloading εικόνων που δεν προβάλλονται αυτή τη στιγμή, εξοικονομώντας έτσι εύρος ζώνης (δείτε το demo). ΣΗΜΕΙΩΣΗ: + Η κλάση .tns-lazy-img πρέπει να οριστεί σε κάθε εικόνα που θέλετε να φορτωθεί με lazyload εάν δεν έχει οριστεί η επιλογή lazyloadSelector. + Απαιτείται το χαρακτηριστικό data-src με την τιμή της πραγματικής src της εικόνας. + Το χαρακτηριστικό width για κάθε εικόνα είναι υποχρεωτικό για slider με autoWidth.</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
+        <source>The CSS selector for lazyload images.</source>
+        <target state="final">Ο CSS selector για τις εικόνες με lazyload.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
+        <source>Activates input detection for touch devices.</source>
+        <target state="final">Ενεργοποιεί την ανίχνευση εισόδου για συσκευές αφής.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
+        <source>Changing slides by dragging them.</source>
+        <target state="final">Αλλαγή διαφανειών με σύρσιμο.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
+        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
+        <target state="final">Το swipe ή το σύρσιμο δεν θα ενεργοποιηθεί εάν η γωνία δεν βρίσκεται εντός του εύρους όταν οριστεί.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
+        <source>Prevent next transition while slider is transforming.</source>
+        <target state="final">Αποτρέπει την επόμενη μετάβαση ενώ το slider μετασχηματίζεται.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
+        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
+        <target state="final">Αποτρέπει την κύλιση της σελίδας στο touchmove. Εάν οριστεί σε 'auto', το slider θα ελέγξει πρώτα αν η κατεύθυνση αφής ταιριάζει με τον άξονα του slider και στη συνέχεια θα αποφασίσει αν θα αποτρέψει την κύλιση της σελίδας. Εάν οριστεί σε 'force', το slider θα αποτρέπει πάντα την κύλιση της σελίδας.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
+        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
+        <target state="final">Ορίζει τη σχέση μεταξύ ένθετων slider. Βεβαιωθείτε ότι εκτελείτε πρώτα το εσωτερικό slider, διαφορετικά το ύψος του container του εσωτερικού slider θα είναι λάθος.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
+        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
+        <target state="final">Υποδεικνύει αν το slider θα παγώσει (τα στοιχεία ελέγχου, η πλοήγηση, το autoplay και άλλες λειτουργίες θα σταματήσουν να λειτουργούν) όταν όλες οι διαφάνειες μπορούν να εμφανιστούν σε μία σελίδα.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
+        <source>Disable slider.</source>
+        <target state="final">Απενεργοποιεί το slider.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
+        <source>The initial index of the slider.</source>
+        <target state="final">Ο αρχικός δείκτης του slider.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
+        <source>Callback to be run on initialization.</source>
+        <target state="final">Callback που εκτελείται κατά την αρχικοποίηση.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
+        <source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
+        <target state="final">Αποθηκεύει τις μεταβλητές δυνατοτήτων του browser στο localStorage και δεν τις ανιχνεύει κάθε φορά που εκτελείται το slider εάν ενεργοποιηθεί.</target>
+      </trans-unit>
+      <trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
+        <source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
+        <target state="final">Προαιρετικό χαρακτηριστικό Nonce για το inline style tag ώστε να επιτρέπεται η χρήση του slider χωρίς την πηγή Content Security Policy unsafe-inline.</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
