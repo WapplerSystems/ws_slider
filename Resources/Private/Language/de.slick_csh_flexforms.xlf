@@ -57,7 +57,7 @@
 			</trans-unit>
 			<trans-unit id="slick.settings.js.customPadding.description" approved="yes">
 				<source>Custom paging templates. See source for use example.</source>
-				<target state="final">Eigene Paging-Vorlagen. Siehe Quellcode für ein Anwendungsbeispiel.</target>
+				<target state="needs-review-translation">Eigene Paging-Vorlagen. Siehe Quellcode für ein Anwendungsbeispiel.</target>
 			</trans-unit>
 			<trans-unit id="slick.settings.js.dots.description" approved="yes">
 				<source>Show dot indicators</source>
