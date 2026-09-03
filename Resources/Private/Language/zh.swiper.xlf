@@ -3,522 +3,172 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="zh-TW">
     <header/>
     <body>
-      <trans-unit id="options.accessibility" approved="yes">
-        <source>Accessibility</source>
-        <target state="final">无障碍功能</target>
-      </trans-unit>
-      <trans-unit id="options.arrows" approved="yes">
-        <source>Arrows</source>
-        <target state="final">箭头</target>
-      </trans-unit>
-      <trans-unit id="options.asNavFor" approved="yes">
-        <source>As Nav For</source>
-        <target state="final">关联滑块</target>
-      </trans-unit>
-      <trans-unit id="options.appendArrows" approved="yes">
-        <source>Append Arrows</source>
-        <target state="final">追加箭头</target>
-      </trans-unit>
-      <trans-unit id="options.appendDots" approved="yes">
-        <source>Append Dots</source>
-        <target state="final">追加分页圆点</target>
-      </trans-unit>
-      <trans-unit id="options.prevArrow" approved="yes">
-        <source>Prev Arrow</source>
-        <target state="final">上一个箭头</target>
-      </trans-unit>
-      <trans-unit id="options.nextArrow" approved="yes">
-        <source>Next Arrow</source>
-        <target state="final">下一个箭头</target>
-      </trans-unit>
-      <trans-unit id="options.centerMode" approved="yes">
-        <source>Center Mode</source>
-        <target state="final">居中模式</target>
-      </trans-unit>
-      <trans-unit id="options.centerPadding" approved="yes">
-        <source>Center Padding</source>
-        <target state="final">居中内边距</target>
-      </trans-unit>
-      <trans-unit id="options.cssEase" approved="yes">
-        <source>CSS3 animation Easing</source>
-        <target state="final">CSS3 缓动函数</target>
-      </trans-unit>
-      <trans-unit id="options.effect" approved="yes">
-        <source>Effect</source>
-        <target state="final">效果</target>
-      </trans-unit>
-      <trans-unit id="options.setWrapperSize" approved="yes">
-        <source>setWrapperSize</source>
-        <target state="final">设置容器尺寸</target>
-      </trans-unit>
-      <trans-unit id="options.height" approved="yes">
-        <source>Height</source>
-        <target state="final">高度</target>
-      </trans-unit>
-      <trans-unit id="options.width" approved="yes">
-        <source>Width</source>
-        <target state="final">宽度</target>
-      </trans-unit>
-      <trans-unit id="options.direction" approved="yes">
-        <source>Direction</source>
-        <target state="final">方向</target>
-      </trans-unit>
-      <trans-unit id="options.customClasses" approved="yes">
-        <source>Additional CSS classes</source>
-        <target state="final">附加 CSS 类</target>
-      </trans-unit>
-      <trans-unit id="options.loop" approved="yes">
-        <source>Loop</source>
-        <target state="final">循环</target>
-      </trans-unit>
-      <trans-unit id="options.loopAddBlankSlides" approved="yes">
-        <source>Add blank slides to loop</source>
-        <target state="final">循环时添加空白幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.loopAdditionalSlides" approved="yes">
-        <source>Loop additional slides</source>
-        <target state="final">循环附加幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupAuto" approved="yes">
-        <source>Slides per group auto</source>
-        <target state="final">每组自动幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupSkip" approved="yes">
-        <source>Slides per group skip</source>
-        <target state="final">每组跳过幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.loopPreventsSliding" approved="yes">
-        <source>Prevents sliding in loop</source>
-        <target state="final">循环时阻止滑动</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.nextSlideMessage" approved="yes">
-        <source>Next slide</source>
-        <target state="final">下一张幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.prevSlideMessage" approved="yes">
-        <source>Previous slide</source>
-        <target state="final">上一张幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.firstSlideMessage" approved="yes">
-        <source>This is the first slide</source>
-        <target state="final">这是第一张幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.lastSlideMessage" approved="yes">
-        <source>This is the last slide</source>
-        <target state="final">这是最后一张幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
-        <source>Go to slide {{index}}</source>
-        <target state="final">转到第 {{index}} 张幻灯片</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay" approved="yes">
-        <source>Autoplay</source>
-        <target state="final">自动播放</target>
-      </trans-unit>
-      <trans-unit id="options.autoplayProgress" approved="yes">
-        <source>Show autoplay progress indicator</source>
-        <target state="final">显示自动播放进度指示器</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay.delay" xml:space="preserve" approved="yes">
-				<source>Delay between transitions (in ms)</source>
-			<target state="final">切换间隔（毫秒）</target></trans-unit>
-      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve" approved="yes">
-				<source>Disable autoplay on interaction</source>
-			<target state="final">交互时禁用自动播放</target></trans-unit>
-      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve" approved="yes">
-				<source>Pause autoplay on mouse enter</source>
-			<target state="final">鼠标悬停时暂停自动播放</target></trans-unit>
-      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve" approved="yes">
-				<source>Autoplay in reverse direction</source>
-			<target state="final">反向自动播放</target></trans-unit>
-      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve" approved="yes">
-				<source>Stop autoplay on last slide</source>
-			<target state="final">在最后一张幻灯片停止自动播放</target></trans-unit>
-      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve" approved="yes">
-				<source>Wait for transition before next autoplay</source>
-			<target state="final">等待切换完成后再进行下一次自动播放</target></trans-unit>
-      <trans-unit id="options.autoHeight" approved="yes">
-        <source>Auto height</source>
-        <target state="final">自动高度</target>
-      </trans-unit>
-      <trans-unit id="options.navigation.addIcons" xml:space="preserve" approved="yes">
-				<source>Add SVG icons to navigation buttons</source>
-			<target state="final">为导航按钮添加 SVG 图标</target></trans-unit>
-      <trans-unit id="options.navigation.disabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes disabled</source>
-			<target state="final">导航按钮不可用时添加的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.navigation.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable navigation</source>
-			<target state="final">启用/禁用导航</target></trans-unit>
-      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes hidden</source>
-			<target state="final">导航按钮隐藏时添加的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle navigation buttons visibility after click on slider container</source>
-			<target state="final">点击滑块容器后切换导航按钮可见性</target></trans-unit>
-      <trans-unit id="options.navigation.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it is disabled</source>
-			<target state="final">导航按钮锁定时添加的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
-			<target state="final">因断点禁用导航时添加到 Swiper 容器的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.navigation.nextEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the next button</source>
-			<target state="final">“下一个”按钮的 CSS 选择器或 HTML 元素</target></trans-unit>
-      <trans-unit id="options.navigation.prevEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the previous button</source>
-			<target state="final">“上一个”按钮的 CSS 选择器或 HTML 元素</target></trans-unit>
-      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of currently active pagination bullet</source>
-			<target state="final">当前激活分页圆点的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.bulletClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of single pagination bullet</source>
-			<target state="final">单个分页圆点的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.bulletElement" xml:space="preserve" approved="yes">
-				<source>HTML tag for single pagination bullet (only for bullets type)</source>
-			<target state="final">单个分页圆点的 HTML 标签（仅圆点类型）</target></trans-unit>
-      <trans-unit id="options.pagination.clickable" xml:space="preserve" approved="yes">
-				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
-			<target state="final">点击分页圆点触发幻灯片切换（仅圆点类型）</target></trans-unit>
-      <trans-unit id="options.pagination.clickableClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is clickable</source>
-			<target state="final">分页可点击时设置的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.currentClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with currently active index in fraction pagination</source>
-			<target state="final">分数分页中当前激活索引元素的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve" approved="yes">
-				<source>Show only a few bullets at the same time (for many slides)</source>
-			<target state="final">仅同时显示少量圆点（幻灯片较多时）</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve" approved="yes">
-				<source>Number of main bullets visible when dynamicBullets enabled</source>
-			<target state="final">启用 dynamicBullets 时显示的主圆点数量</target></trans-unit>
-      <trans-unit id="options.pagination.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with pagination</source>
-			<target state="final">分页容器的 CSS 选择器或 HTML 元素</target></trans-unit>
-      <trans-unit id="options.pagination.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable pagination</source>
-			<target state="final">启用/禁用分页</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve" approved="yes">
-				<source>Format function for current number in fraction pagination</source>
-			<target state="final">分数分页当前数字的格式化函数</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve" approved="yes">
-				<source>Format function for total number in fraction pagination</source>
-			<target state="final">分数分页总数字的格式化函数</target></trans-unit>
-      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination when it becomes inactive</source>
-			<target state="final">分页变为非活动状态时的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle pagination container visibility after click on slider container</source>
-			<target state="final">点击滑块容器后切换分页容器可见性</target></trans-unit>
-      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in horizontal Swiper</source>
-			<target state="final">水平 Swiper 中分页的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is disabled</source>
-			<target state="final">分页禁用时设置的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.modifierClass" xml:space="preserve" approved="yes">
-				<source>Prefix for modifier CSS class name for pagination</source>
-			<target state="final">分页修饰符 CSS 类名前缀</target></trans-unit>
-      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
-			<target state="final">因断点禁用分页时添加到 Swiper 容器和分页元素的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar fill element</source>
-			<target state="final">分页进度条填充元素的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve" approved="yes">
-				<source>Progressbar opposite to Swiper's direction</source>
-			<target state="final">进度条与 Swiper 方向相反</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar opposite</source>
-			<target state="final">分页进度条相反方向的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.renderBullet" xml:space="preserve" approved="yes">
-				<source>Custom function for pagination bullets (only for bullets type)</source>
-			<target state="final">分页圆点的自定义函数（仅圆点类型）</target></trans-unit>
-      <trans-unit id="options.pagination.renderCustom" xml:space="preserve" approved="yes">
-				<source>Custom function for custom pagination type</source>
-			<target state="final">自定义分页类型的自定义函数</target></trans-unit>
-      <trans-unit id="options.pagination.renderFraction" xml:space="preserve" approved="yes">
-				<source>Custom function for fraction pagination type</source>
-			<target state="final">分数分页类型的自定义函数</target></trans-unit>
-      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve" approved="yes">
-				<source>Custom function for progressbar pagination type</source>
-			<target state="final">进度条分页类型的自定义函数</target></trans-unit>
-      <trans-unit id="options.pagination.totalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with total number in fraction pagination</source>
-			<target state="final">分数分页中总数元素的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.pagination.type" xml:space="preserve" approved="yes">
-				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
-			<target state="final">分页类型（圆点、分数、进度条、自定义）</target></trans-unit>
-      <trans-unit id="options.pagination.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in vertical Swiper</source>
-			<target state="final">垂直 Swiper 中分页的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar draggable element CSS class</source>
-			<target state="final">滚动条可拖动元素的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve" approved="yes">
-				<source>Size of scrollbar draggable element in px</source>
-			<target state="final">滚动条可拖动元素尺寸（px）</target></trans-unit>
-      <trans-unit id="options.scrollbar.draggable" xml:space="preserve" approved="yes">
-				<source>Enable draggable scrollbar</source>
-			<target state="final">启用可拖动滚动条</target></trans-unit>
-      <trans-unit id="options.scrollbar.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with scrollbar</source>
-			<target state="final">滚动条容器的 CSS 选择器或 HTML 元素</target></trans-unit>
-      <trans-unit id="options.scrollbar.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable scrollbar</source>
-			<target state="final">启用/禁用滚动条</target></trans-unit>
-      <trans-unit id="options.scrollbar.hide" xml:space="preserve" approved="yes">
-				<source>Hide scrollbar automatically after user interaction</source>
-			<target state="final">用户交互后自动隐藏滚动条</target></trans-unit>
-      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in horizontal Swiper</source>
-			<target state="final">水平 Swiper 中滚动条的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar element additional CSS class when it is disabled</source>
-			<target state="final">滚动条禁用时附加的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
-			<target state="final">因断点禁用滚动条时添加到 Swiper 容器和滚动条元素的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve" approved="yes">
-				<source>Snap slider position to slides when you release scrollbar</source>
-			<target state="final">释放滚动条时将滑块位置对齐到幻灯片</target></trans-unit>
-      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in vertical Swiper</source>
-			<target state="final">垂直 Swiper 中滚动条的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.freeMode.enabled" xml:space="preserve" approved="yes">
-				<source>Enable free mode</source>
-			<target state="final">启用自由模式</target></trans-unit>
-      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve" approved="yes">
-				<source>Minimum touchmove-velocity for free mode momentum</source>
-			<target state="final">自由模式惯性所需的最小触摸移动速度</target></trans-unit>
-      <trans-unit id="options.freeMode.momentum" xml:space="preserve" approved="yes">
-				<source>Enable momentum in free mode</source>
-			<target state="final">自由模式下启用惯性</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve" approved="yes">
-				<source>Enable momentum bounce in free mode</source>
-			<target state="final">自由模式下启用惯性回弹</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve" approved="yes">
-				<source>Momentum bounce ratio</source>
-			<target state="final">惯性回弹比率</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumRatio" xml:space="preserve" approved="yes">
-				<source>Momentum ratio</source>
-			<target state="final">惯性比率</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve" approved="yes">
-				<source>Momentum velocity ratio</source>
-			<target state="final">惯性速度比率</target></trans-unit>
-      <trans-unit id="options.freeMode.sticky" xml:space="preserve" approved="yes">
-				<source>Snap to slides in free mode</source>
-			<target state="final">自由模式下对齐到幻灯片</target></trans-unit>
-      <trans-unit id="options.grid.fill" xml:space="preserve" approved="yes">
-				<source>How slides should fill rows (by column or by row)</source>
-			<target state="final">幻灯片如何填充行（按列或按行）</target></trans-unit>
-      <trans-unit id="options.grid.rows" xml:space="preserve" approved="yes">
-				<source>Number of slides rows (multirow layout)</source>
-			<target state="final">幻灯片行数（多行布局）</target></trans-unit>
-      <trans-unit id="options.parallax.enabled" xml:space="preserve" approved="yes">
-				<source>Enable parallaxed elements inside the slider</source>
-			<target state="final">启用滑块内的视差元素</target></trans-unit>
-      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve" approved="yes">
-				<source>Enables slides cross fade</source>
-			<target state="final">启用幻灯片交叉淡入淡出</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve" approved="yes">
-				<source>Depth offset in px (slides translate in Z axis)</source>
-			<target state="final">深度偏移（px）（幻灯片沿 Z 轴平移）</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve" approved="yes">
-				<source>Effect multiplier</source>
-			<target state="final">效果倍率</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Slide rotate in degrees</source>
-			<target state="final">幻灯片旋转角度</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve" approved="yes">
-				<source>Slide scale effect</source>
-			<target state="final">幻灯片缩放效果</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">启用幻灯片阴影</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve" approved="yes">
-				<source>Stretch space between slides (px or %)</source>
-			<target state="final">幻灯片之间的间距（px 或 %）</target></trans-unit>
-      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve" approved="yes">
-				<source>Limit edge slides rotation</source>
-			<target state="final">限制边缘幻灯片的旋转</target></trans-unit>
-      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">启用幻灯片阴影</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve" approved="yes">
-				<source>Enables main slider shadow</source>
-			<target state="final">启用主滑块阴影</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve" approved="yes">
-				<source>Main shadow offset in px</source>
-			<target state="final">主阴影偏移（px）</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve" approved="yes">
-				<source>Main shadow scale ratio</source>
-			<target state="final">主阴影缩放比率</target></trans-unit>
-      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">启用幻灯片阴影</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve" approved="yes">
-				<source>Offset distance per slide (in px)</source>
-			<target state="final">每张幻灯片的偏移距离（px）</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve" approved="yes">
-				<source>Rotate angle per slide (in degrees)</source>
-			<target state="final">每张幻灯片的旋转角度（度）</target></trans-unit>
-      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Enables cards rotation</source>
-			<target state="final">启用卡片旋转</target></trans-unit>
-      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">启用幻灯片阴影</target></trans-unit>
-      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve" approved="yes">
-				<source>Limit progress/offset to amount of side slides</source>
-			<target state="final">将进度/偏移限制在侧边幻灯片数量内</target></trans-unit>
-      <trans-unit id="options.creativeEffect.next" xml:space="preserve" approved="yes">
-				<source>Next slide transformations</source>
-			<target state="final">下一张幻灯片变换</target></trans-unit>
-      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve" approved="yes">
-				<source>Enable 3D perspective for custom transforms</source>
-			<target state="final">为自定义变换启用 3D 透视</target></trans-unit>
-      <trans-unit id="options.creativeEffect.prev" xml:space="preserve" approved="yes">
-				<source>Previous slide transformations</source>
-			<target state="final">上一张幻灯片变换</target></trans-unit>
-      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve" approved="yes">
-				<source>Multiply slide transformations and opacity</source>
-			<target state="final">乘以幻灯片变换和不透明度</target></trans-unit>
-      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve" approved="yes">
-				<source>Split shadow opacity per slide based on limitProgress</source>
-			<target state="final">根据 limitProgress 拆分每张幻灯片的阴影不透明度</target></trans-unit>
-      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve" approved="yes">
-				<source>Auto scroll offset for thumbs</source>
-			<target state="final">缩略图自动滚动偏移</target></trans-unit>
-      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve" approved="yes">
-				<source>Enable multiple active thumbnail slides</source>
-			<target state="final">启用多个活动缩略图幻灯片</target></trans-unit>
-      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve" approved="yes">
-				<source>Additional class for activated thumbs swiper slide</source>
-			<target state="final">激活的缩略图 Swiper 幻灯片的附加类</target></trans-unit>
-      <trans-unit id="options.thumbs.swiper" xml:space="preserve" approved="yes">
-				<source>Swiper instance or parameters for thumbs swiper</source>
-			<target state="final">缩略图 Swiper 的实例或参数</target></trans-unit>
-      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve" approved="yes">
-				<source>Additional class for thumbs swiper container</source>
-			<target state="final">缩略图 Swiper 容器的附加类</target></trans-unit>
-      <trans-unit id="options.zoom.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom</source>
-			<target state="final">启用/禁用缩放</target></trans-unit>
-      <trans-unit id="options.zoom.containerClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoom container</source>
-			<target state="final">缩放容器的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve" approved="yes">
-				<source>Limit zoom to original image size</source>
-			<target state="final">缩放限制在原始图片尺寸</target></trans-unit>
-      <trans-unit id="options.zoom.maxRatio" xml:space="preserve" approved="yes">
-				<source>Maximum image zoom multiplier</source>
-			<target state="final">图片最大缩放倍率</target></trans-unit>
-      <trans-unit id="options.zoom.minRatio" xml:space="preserve" approved="yes">
-				<source>Minimal image zoom multiplier</source>
-			<target state="final">图片最小缩放倍率</target></trans-unit>
-      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve" approved="yes">
-				<source>Pan zoomed image on mouse move</source>
-			<target state="final">鼠标移动时平移缩放图片</target></trans-unit>
-      <trans-unit id="options.zoom.toggle" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom-in by double tap</source>
-			<target state="final">双击切换缩放</target></trans-unit>
-      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoomed in container</source>
-			<target state="final">放大容器的 CSS 类名</target></trans-unit>
-      <trans-unit id="options.keyboard.enabled" xml:space="preserve" approved="yes">
-				<source>Enable keyboard control</source>
-			<target state="final">启用键盘控制</target></trans-unit>
-      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve" approved="yes">
-				<source>Control sliders only in viewport</source>
-			<target state="final">仅控制视口中的滑块</target></trans-unit>
-      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve" approved="yes">
-				<source>Enable keyboard navigation by Page Up/Down keys</source>
-			<target state="final">启用 Page Up/Down 键导航</target></trans-unit>
-      <trans-unit id="options.keyboard.speed" xml:space="preserve" approved="yes">
-				<source>Speed of keyboard navigation transitions (ms)</source>
-			<target state="final">键盘导航切换速度（ms）</target></trans-unit>
-      <trans-unit id="options.mousewheel.enabled" xml:space="preserve" approved="yes">
-				<source>Enable mousewheel control</source>
-			<target state="final">启用鼠标滚轮控制</target></trans-unit>
-      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for mousewheel events target</source>
-			<target state="final">鼠标滚轮事件目标的 CSS 选择器或 HTML 元素</target></trans-unit>
-      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve" approved="yes">
-				<source>Force mousewheel swipes to axis</source>
-			<target state="final">强制鼠标滚轮滑动到轴</target></trans-unit>
-      <trans-unit id="options.mousewheel.invert" xml:space="preserve" approved="yes">
-				<source>Invert sliding direction</source>
-			<target state="final">反转滑动方向</target></trans-unit>
-      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve" approved="yes">
-				<source>Class name to ignore mousewheel scrolling</source>
-			<target state="final">忽略鼠标滚轮滚动的类名</target></trans-unit>
-      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve" approved="yes">
-				<source>Release mousewheel event on edges</source>
-			<target state="final">在边缘释放鼠标滚轮事件</target></trans-unit>
-      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve" approved="yes">
-				<source>Mousewheel sensitivity multiplier</source>
-			<target state="final">鼠标滚轮灵敏度倍率</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll delta to trigger slide change</source>
-			<target state="final">触发幻灯片切换的最小滚轮滚动增量</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
-			<target state="final">触发幻灯片切换的最小滚轮滚动时间差（ms）</target></trans-unit>
-      <trans-unit id="options.virtualslides" xml:space="preserve" approved="yes">
-				<source>Virtual Slides</source>
-			<target state="final">虚拟幻灯片</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides after active slide</source>
-			<target state="final">增加活动幻灯片之后预渲染的幻灯片数量</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides before active slide</source>
-			<target state="final">增加活动幻灯片之前预渲染的幻灯片数量</target></trans-unit>
-      <trans-unit id="options.virtualslides.cache" xml:space="preserve" approved="yes">
-				<source>Enable DOM cache of rendered slides</source>
-			<target state="final">启用已渲染幻灯片的 DOM 缓存</target></trans-unit>
-      <trans-unit id="options.virtualslides.enabled" xml:space="preserve" approved="yes">
-				<source>Enable virtual slides</source>
-			<target state="final">启用虚拟幻灯片</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve" approved="yes">
-				<source>Function for external rendering (e.g. React/Vue)</source>
-			<target state="final">外部渲染函数（如 React/Vue）</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve" approved="yes">
-				<source>Update Swiper layout after renderExternal</source>
-			<target state="final">renderExternal 后更新 Swiper 布局</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve" approved="yes">
-				<source>Function to render slide</source>
-			<target state="final">渲染幻灯片的函数</target></trans-unit>
-      <trans-unit id="options.virtualslides.slides" xml:space="preserve" approved="yes">
-				<source>Array with slides</source>
-			<target state="final">幻灯片数组</target></trans-unit>
-      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve" approved="yes">
-				<source>Slide size for slidesPerView: auto (in px)</source>
-			<target state="final">slidesPerView: auto 的幻灯片尺寸（px）</target></trans-unit>
-      <trans-unit id="options.hashNavigation" xml:space="preserve" approved="yes">
-				<source>Hash Navigation</source>
-			<target state="final">Hash 导航</target></trans-unit>
-      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve" approved="yes">
-				<source>Function to get slide index by hash (for virtual slides)</source>
-			<target state="final">通过 hash 获取幻灯片索引的函数（用于虚拟幻灯片）</target></trans-unit>
-      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve" approved="yes">
-				<source>Replace current URL state instead of adding to history</source>
-			<target state="final">替换当前 URL 状态而不是添加到历史记录</target></trans-unit>
-      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve" approved="yes">
-				<source>Enable navigation by browser history/hash</source>
-			<target state="final">通过浏览器历史/hash 启用导航</target></trans-unit>
-      <trans-unit id="options.slidesPerView" approved="yes">
-        <source>Slides per view</source>
-        <target state="final">每屏显示幻灯片数</target>
-      </trans-unit>
-      <trans-unit id="options.spaceBetween" approved="yes">
-        <source>Space between slides (in px)</source>
-        <target state="final">幻灯片间距（px）</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroup" approved="yes">
-        <source>Number of slides in group</source>
-        <target state="final">每组的幻灯片数量</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</body>
   </file>
 </xliff>
