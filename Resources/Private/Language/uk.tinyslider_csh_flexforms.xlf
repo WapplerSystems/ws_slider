@@ -3,213 +3,56 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="uk">
     <header/>
     <body>
-      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
-        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
-        <target state="final">Керує поведінкою анімації. У режимі «карусель» усе зсувається вбік, а в режимі «галерея» використовуються анімації затухання і всі елементи змінюються одночасно.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
-        <source>The axis of the slider.</source>
-        <target state="final">Вісь слайдера.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
-        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
-        <target state="final">Кількість слайдів, що відображаються у вікні перегляду. Якщо слайдів менше або стільки ж, скільки зазначено тут, слайдер не буде ініціалізовано.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
-        <source>Space between slides (in “px”).</source>
-        <target state="final">Відстань між слайдами (у «px»).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
-        <source>Space on the outside (in “px”).</source>
-        <target state="final">Відступ ззовні (у «px»).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
-        <source>Controls width attribute of the slides.</source>
-        <target state="final">Керує атрибутом ширини слайдів.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
-        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
-        <target state="final">Якщо ввімкнено, ширина кожного слайда буде його природною шириною як inline-block блоку.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
-        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
-        <target state="final">Максимальна ширина вікна перегляду для fixedWidth/autoWidth.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
-        <source>Number of slides going on one “click”.</source>
-        <target state="final">Кількість слайдів, що зсуваються за один «клік».</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
-        <source>Center the active slide in the viewport.</source>
-        <target state="final">Центрує активний слайд у вікні перегляду.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
-        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
-        <target state="final">Керує відображенням і функціональністю компонентів керування (кнопки «попередній/наступний»). Якщо ввімкнено, відображаються елементи керування та додаються всі функції. Для кращої доступності, коли кнопка «попередній/наступний» у фокусі, користувач може керувати слайдером за допомогою клавіш зі стрілками вліво/вправо.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
-        <source>Controls controls position.</source>
-        <target state="final">Керує положенням елементів керування.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
-        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
-        <target state="final">Елемент-контейнер/селектор навколо кнопок «попередній/наступний». controlsContainer має містити щонайменше 2 дочірні елементи.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
-        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">Налаштовані кнопки «попередній». Цей параметр ігнорується, якщо controlsContainer є Node-елементом або CSS-селектором.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
-        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">Налаштовані кнопки «наступний». Цей параметр ігнорується, якщо controlsContainer є Node-елементом або CSS-селектором.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
-        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
-        <target state="final">Керує відображенням і функціональністю компонентів навігації (точки). Якщо ввімкнено, відображається навігація та додаються всі функції.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
-        <source>Controls nav position.</source>
-        <target state="final">Керує положенням навігації.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
-        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
-        <target state="final">Елемент-контейнер/селектор навколо точок. navContainer має містити щонайменше стільки ж дочірніх елементів, скільки є слайдів.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
-        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
-        <target state="final">Вказує, чи є точки мініатюрами. Якщо ввімкнено, вони завжди будуть видимими, навіть коли у вікні перегляду відображається більше ніж 1 слайд.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
-        <source>Allows using arrow keys to switch slides.</source>
-        <target state="final">Дозволяє використовувати клавіші зі стрілками для перемикання слайдів.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
-        <source>Speed of the slide animation (in “ms”).</source>
-        <target state="final">Швидкість анімації слайда (у «ms»).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
-        <source>Toggles the automatic change of slides.</source>
-        <target state="final">Вмикає/вимикає автоматичну зміну слайдів.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
-        <source>Controls autoplay position.</source>
-        <target state="final">Керує положенням автовідтворення.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
-        <source>Time between 2 autoplay slides change (in “ms”).</source>
-        <target state="final">Час між зміною двох слайдів автовідтворення (у «ms»).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
-        <source>Direction of slide movement (ascending/descending the slide index).</source>
-        <target state="final">Напрямок руху слайдів (за зростанням/спаданням індексу слайда).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
-        <source>Stops sliding on mouseover.</source>
-        <target state="final">Зупиняє прокрутку при наведенні курсора.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
-        <source>The customized autoplay start/stop button or selector.</source>
-        <target state="final">Налаштована кнопка запуску/зупинки автовідтворення або селектор.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
-        <source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-        <target state="final">Виводить розмітку autoplayButton, коли autoplay увімкнено, але налаштований autoplayButton не задано.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
-        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
-        <target state="final">Призупиняє прокрутку, коли сторінка невидима, і відновлює її, коли сторінка знову стає видимою.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
-        <source>Name of intro animation class.</source>
-        <target state="final">Назва класу анімації входу.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
-        <source>Name of outro animation class.</source>
-        <target state="final">Назва класу анімації виходу.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
-        <source>Name of default animation class.</source>
-        <target state="final">Назва класу анімації за замовчуванням.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
-        <source>Time between each gallery animation (in “ms”).</source>
-        <target state="final">Час між кожною анімацією галереї (у «ms»).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
-        <source>Moves throughout all the slides seamlessly.</source>
-        <target state="final">Безперервно переміщується по всіх слайдах.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
-        <source>Moves to the opposite edge when reaching the first or last slide.</source>
-        <target state="final">Переміщується до протилежного краю при досягненні першого чи останнього слайда.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
-        <source>Height of slider container changes according to each slide’s height.</source>
-        <target state="final">Висота контейнера слайдера змінюється відповідно до висоти кожного слайда.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
-				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
-                        NOTE:
-                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
-                        + data-src attribute with its value of the real image src is required;
-                        + width attribute for every image is required for autoWidth slider.</source>
-			<target state="final">Вмикає відкладене завантаження зображень, які зараз не переглядаються, заощаджуючи трафік (див. демо).
-                        ПРИМІТКА:
-                        + Клас .tns-lazy-img потрібно задати кожному зображенню, яке ви хочете завантажувати відкладено, якщо не вказано параметр lazyloadSelector;
-                        + необхідний атрибут data-src зі значенням реального src зображення;
-                        + атрибут width для кожного зображення обов'язковий для слайдера autoWidth.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
-        <source>The CSS selector for lazyload images.</source>
-        <target state="final">CSS-селектор для зображень з відкладеним завантаженням.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
-        <source>Activates input detection for touch devices.</source>
-        <target state="final">Активує розпізнавання введення для сенсорних пристроїв.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
-        <source>Changing slides by dragging them.</source>
-        <target state="final">Зміна слайдів перетягуванням.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
-        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
-        <target state="final">Свайп або перетягування не буде викликано, якщо кут виходить за межі заданого діапазону.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
-        <source>Prevent next transition while slider is transforming.</source>
-        <target state="final">Запобігає наступному переходу, поки слайдер переміщується.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
-        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
-        <target state="final">Запобігає прокрутці сторінки при touchmove. Якщо встановлено «auto», слайдер спочатку перевіряє, чи збігається напрямок дотику з віссю слайдера, а потім вирішує, чи запобігати прокрутці сторінки. Якщо встановлено «force», слайдер завжди запобігатиме прокрутці сторінки.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
-        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
-        <target state="final">Визначає зв'язок між вкладеними слайдерами. Переконайтеся, що внутрішній слайдер запускається першим, інакше висота контейнера внутрішнього слайдера буде неправильною.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
-        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
-        <target state="final">Вказує, чи буде слайдер заморожено (керування, навігація, автовідтворення та інші функції припинять роботу), коли всі слайди можна відобразити на одній сторінці.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
-        <source>Disable slider.</source>
-        <target state="final">Вимкнути слайдер.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
-        <source>The initial index of the slider.</source>
-        <target state="final">Початковий індекс слайдера.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
-        <source>Callback to be run on initialization.</source>
-        <target state="final">Функція зворотного виклику, що виконується під час ініціалізації.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
-        <source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-        <target state="final">Зберігати змінні можливостей браузера у localStorage і не визначати їх заново щоразу, коли слайдер запускається, якщо встановлено true.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
-        <source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-        <target state="final">Необов'язковий атрибут Nonce для вбудованого тега стилю, що дозволяє використовувати слайдер без джерела unsafe-inline у Content Security Policy.</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</body>
   </file>
 </xliff>
