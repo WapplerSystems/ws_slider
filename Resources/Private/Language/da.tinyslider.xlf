@@ -8,21 +8,9 @@
         <source>Mode</source>
         <target state="final">Tilstand</target>
       </trans-unit>
-      <trans-unit id="options.items" approved="yes">
-        <source>Items</source>
-        <target state="final">Elementer</target>
-      </trans-unit>
-      <trans-unit id="options.center" approved="yes">
-        <source>Center</source>
-        <target state="final">Centreret</target>
-      </trans-unit>
       <trans-unit id="options.nested" approved="yes">
         <source>Nested</source>
         <target state="final">Indlejret</target>
-      </trans-unit>
-      <trans-unit id="options.disable" approved="yes">
-        <source>Disable</source>
-        <target state="final">Deaktiver</target>
       </trans-unit>
     </body>
   </file>
