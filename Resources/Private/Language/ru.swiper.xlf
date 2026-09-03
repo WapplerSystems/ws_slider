@@ -3,518 +3,172 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ru">
     <header/>
     <body>
-      <trans-unit id="options.accessibility" approved="yes">
-        <source>Accessibility</source>
-        <target state="final">Доступность</target>
-      </trans-unit>
-      <trans-unit id="options.arrows" approved="yes">
-        <source>Arrows</source>
-        <target state="final">Стрелки</target>
-      </trans-unit>
-      <trans-unit id="options.appendArrows" approved="yes">
-        <source>Append Arrows</source>
-        <target state="final">Добавить стрелки</target>
-      </trans-unit>
-      <trans-unit id="options.appendDots" approved="yes">
-        <source>Append Dots</source>
-        <target state="final">Добавить точки</target>
-      </trans-unit>
-      <trans-unit id="options.prevArrow" approved="yes">
-        <source>Prev Arrow</source>
-        <target state="final">Стрелка назад</target>
-      </trans-unit>
-      <trans-unit id="options.nextArrow" approved="yes">
-        <source>Next Arrow</source>
-        <target state="final">Стрелка вперёд</target>
-      </trans-unit>
-      <trans-unit id="options.centerMode" approved="yes">
-        <source>Center Mode</source>
-        <target state="final">Режим по центру</target>
-      </trans-unit>
-      <trans-unit id="options.centerPadding" approved="yes">
-        <source>Center Padding</source>
-        <target state="final">Отступ по центру</target>
-      </trans-unit>
-      <trans-unit id="options.cssEase" approved="yes">
-        <source>CSS3 animation Easing</source>
-        <target state="final">Easing CSS3-анимации</target>
-      </trans-unit>
-      <trans-unit id="options.effect" approved="yes">
-        <source>Effect</source>
-        <target state="final">Эффект</target>
-      </trans-unit>
-      <trans-unit id="options.setWrapperSize" approved="yes">
-        <source>setWrapperSize</source>
-        <target state="final">Устанавливать размер обёртки</target>
-      </trans-unit>
-      <trans-unit id="options.height" approved="yes">
-        <source>Height</source>
-        <target state="final">Высота</target>
-      </trans-unit>
-      <trans-unit id="options.width" approved="yes">
-        <source>Width</source>
-        <target state="final">Ширина</target>
-      </trans-unit>
-      <trans-unit id="options.direction" approved="yes">
-        <source>Direction</source>
-        <target state="final">Направление</target>
-      </trans-unit>
-      <trans-unit id="options.customClasses" approved="yes">
-        <source>Additional CSS classes</source>
-        <target state="final">Дополнительные CSS-классы</target>
-      </trans-unit>
-      <trans-unit id="options.loop" approved="yes">
-        <source>Loop</source>
-        <target state="final">Зацикливание</target>
-      </trans-unit>
-      <trans-unit id="options.loopAddBlankSlides" approved="yes">
-        <source>Add blank slides to loop</source>
-        <target state="final">Добавлять пустые слайды в цикл</target>
-      </trans-unit>
-      <trans-unit id="options.loopAdditionalSlides" approved="yes">
-        <source>Loop additional slides</source>
-        <target state="final">Дополнительные слайды цикла</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupAuto" approved="yes">
-        <source>Slides per group auto</source>
-        <target state="final">Слайдов в группе: авто</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupSkip" approved="yes">
-        <source>Slides per group skip</source>
-        <target state="final">Пропуск слайдов в группе</target>
-      </trans-unit>
-      <trans-unit id="options.loopPreventsSliding" approved="yes">
-        <source>Prevents sliding in loop</source>
-        <target state="final">Запрет прокрутки в цикле</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.nextSlideMessage" approved="yes">
-        <source>Next slide</source>
-        <target state="final">Следующий слайд</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.prevSlideMessage" approved="yes">
-        <source>Previous slide</source>
-        <target state="final">Предыдущий слайд</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.firstSlideMessage" approved="yes">
-        <source>This is the first slide</source>
-        <target state="final">Это первый слайд</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.lastSlideMessage" approved="yes">
-        <source>This is the last slide</source>
-        <target state="final">Это последний слайд</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
-        <source>Go to slide {{index}}</source>
-        <target state="final">Перейти к слайду {{index}}</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay" approved="yes">
-        <source>Autoplay</source>
-        <target state="final">Автопрокрутка</target>
-      </trans-unit>
-      <trans-unit id="options.autoplayProgress" approved="yes">
-        <source>Show autoplay progress indicator</source>
-        <target state="final">Показывать индикатор автопрокрутки</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay.delay" xml:space="preserve" approved="yes">
-				<source>Delay between transitions (in ms)</source>
-			<target state="final">Задержка между переходами (в мс)</target></trans-unit>
-      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve" approved="yes">
-				<source>Disable autoplay on interaction</source>
-			<target state="final">Отключать автопрокрутку при взаимодействии</target></trans-unit>
-      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve" approved="yes">
-				<source>Pause autoplay on mouse enter</source>
-			<target state="final">Пауза при наведении мыши</target></trans-unit>
-      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve" approved="yes">
-				<source>Autoplay in reverse direction</source>
-			<target state="final">Автопрокрутка в обратном направлении</target></trans-unit>
-      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve" approved="yes">
-				<source>Stop autoplay on last slide</source>
-			<target state="final">Останавливать на последнем слайде</target></trans-unit>
-      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve" approved="yes">
-				<source>Wait for transition before next autoplay</source>
-			<target state="final">Ждать завершения перехода перед следующей автопрокруткой</target></trans-unit>
-      <trans-unit id="options.autoHeight" approved="yes">
-        <source>Auto height</source>
-        <target state="final">Автоматическая высота</target>
-      </trans-unit>
-      <trans-unit id="options.navigation.addIcons" xml:space="preserve" approved="yes">
-				<source>Add SVG icons to navigation buttons</source>
-			<target state="final">Добавлять SVG-иконки в кнопки навигации</target></trans-unit>
-      <trans-unit id="options.navigation.disabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes disabled</source>
-			<target state="final">CSS-класс отключённой кнопки навигации</target></trans-unit>
-      <trans-unit id="options.navigation.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable navigation</source>
-			<target state="final">Включить/отключить навигацию</target></trans-unit>
-      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes hidden</source>
-			<target state="final">CSS-класс скрытой кнопки навигации</target></trans-unit>
-      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle navigation buttons visibility after click on slider container</source>
-			<target state="final">Скрывать кнопки навигации после клика по слайдеру</target></trans-unit>
-      <trans-unit id="options.navigation.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it is disabled</source>
-			<target state="final">CSS-класс заблокированной кнопки навигации</target></trans-unit>
-      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
-			<target state="final">CSS-класс контейнера при отключённой навигации (по брейкпоинту)</target></trans-unit>
-      <trans-unit id="options.navigation.nextEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the next button</source>
-			<target state="final">CSS-селектор или HTML-элемент кнопки «Вперёд»</target></trans-unit>
-      <trans-unit id="options.navigation.prevEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the previous button</source>
-			<target state="final">CSS-селектор или HTML-элемент кнопки «Назад»</target></trans-unit>
-      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of currently active pagination bullet</source>
-			<target state="final">CSS-класс активного маркера пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.bulletClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of single pagination bullet</source>
-			<target state="final">CSS-класс маркера пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.bulletElement" xml:space="preserve" approved="yes">
-				<source>HTML tag for single pagination bullet (only for bullets type)</source>
-			<target state="final">HTML-тег маркера пагинации (только для типа «точки»)</target></trans-unit>
-      <trans-unit id="options.pagination.clickable" xml:space="preserve" approved="yes">
-				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
-			<target state="final">Клик по маркеру переключает слайд (только для типа «точки»)</target></trans-unit>
-      <trans-unit id="options.pagination.clickableClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is clickable</source>
-			<target state="final">CSS-класс кликабельной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.currentClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with currently active index in fraction pagination</source>
-			<target state="final">CSS-класс текущего элемента дробной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve" approved="yes">
-				<source>Show only a few bullets at the same time (for many slides)</source>
-			<target state="final">Показывать только несколько маркеров одновременно (при многих слайдах)</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve" approved="yes">
-				<source>Number of main bullets visible when dynamicBullets enabled</source>
-			<target state="final">Количество основных маркеров при динамических маркерах</target></trans-unit>
-      <trans-unit id="options.pagination.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with pagination</source>
-			<target state="final">CSS-селектор или HTML-элемент контейнера пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable pagination</source>
-			<target state="final">Включить/отключить пагинацию</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve" approved="yes">
-				<source>Format function for current number in fraction pagination</source>
-			<target state="final">Функция форматирования текущего числа дробной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve" approved="yes">
-				<source>Format function for total number in fraction pagination</source>
-			<target state="final">Функция форматирования общего числа дробной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination when it becomes inactive</source>
-			<target state="final">CSS-класс неактивной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle pagination container visibility after click on slider container</source>
-			<target state="final">Скрывать пагинацию после клика по слайдеру</target></trans-unit>
-      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in horizontal Swiper</source>
-			<target state="final">CSS-класс пагинации горизонтального слайдера</target></trans-unit>
-      <trans-unit id="options.pagination.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is disabled</source>
-			<target state="final">CSS-класс заблокированной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.modifierClass" xml:space="preserve" approved="yes">
-				<source>Prefix for modifier CSS class name for pagination</source>
-			<target state="final">Префикс модифицирующего CSS-класса пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
-			<target state="final">CSS-класс контейнера при отключённой пагинации (по брейкпоинту)</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar fill element</source>
-			<target state="final">CSS-класс заполнения прогрессбара пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve" approved="yes">
-				<source>Progressbar opposite to Swiper's direction</source>
-			<target state="final">Прогрессбар против направления слайдера</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar opposite</source>
-			<target state="final">CSS-класс противоположного прогрессбара пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.renderBullet" xml:space="preserve" approved="yes">
-				<source>Custom function for pagination bullets (only for bullets type)</source>
-			<target state="final">Своя функция отрисовки маркеров (только для типа «точки»)</target></trans-unit>
-      <trans-unit id="options.pagination.renderCustom" xml:space="preserve" approved="yes">
-				<source>Custom function for custom pagination type</source>
-			<target state="final">Своя функция для типа «custom»</target></trans-unit>
-      <trans-unit id="options.pagination.renderFraction" xml:space="preserve" approved="yes">
-				<source>Custom function for fraction pagination type</source>
-			<target state="final">Своя функция для дробного типа</target></trans-unit>
-      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve" approved="yes">
-				<source>Custom function for progressbar pagination type</source>
-			<target state="final">Своя функция для типа «прогрессбар»</target></trans-unit>
-      <trans-unit id="options.pagination.totalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with total number in fraction pagination</source>
-			<target state="final">CSS-класс элемента с общим числом дробной пагинации</target></trans-unit>
-      <trans-unit id="options.pagination.type" xml:space="preserve" approved="yes">
-				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
-			<target state="final">Тип пагинации (точки, дробный, прогрессбар, custom)</target></trans-unit>
-      <trans-unit id="options.pagination.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in vertical Swiper</source>
-			<target state="final">CSS-класс пагинации вертикального слайдера</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar draggable element CSS class</source>
-			<target state="final">CSS-класс перетаскиваемого элемента скроллбара</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve" approved="yes">
-				<source>Size of scrollbar draggable element in px</source>
-			<target state="final">Размер перетаскиваемого элемента скроллбара (px)</target></trans-unit>
-      <trans-unit id="options.scrollbar.draggable" xml:space="preserve" approved="yes">
-				<source>Enable draggable scrollbar</source>
-			<target state="final">Перетаскиваемый скроллбар</target></trans-unit>
-      <trans-unit id="options.scrollbar.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with scrollbar</source>
-			<target state="final">CSS-селектор или HTML-элемент контейнера скроллбара</target></trans-unit>
-      <trans-unit id="options.scrollbar.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable scrollbar</source>
-			<target state="final">Включить/отключить скроллбар</target></trans-unit>
-      <trans-unit id="options.scrollbar.hide" xml:space="preserve" approved="yes">
-				<source>Hide scrollbar automatically after user interaction</source>
-			<target state="final">Автоматически скрывать скроллбар после взаимодействия</target></trans-unit>
-      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in horizontal Swiper</source>
-			<target state="final">CSS-класс скроллбара горизонтального слайдера</target></trans-unit>
-      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar element additional CSS class when it is disabled</source>
-			<target state="final">Дополнительный CSS-класс заблокированного скроллбара</target></trans-unit>
-      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
-			<target state="final">CSS-класс контейнера при отключённом скроллбаре (по брейкпоинту)</target></trans-unit>
-      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve" approved="yes">
-				<source>Snap slider position to slides when you release scrollbar</source>
-			<target state="final">Фиксировать позицию на слайде при отпускании скроллбара</target></trans-unit>
-      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in vertical Swiper</source>
-			<target state="final">CSS-класс скроллбара вертикального слайдера</target></trans-unit>
-      <trans-unit id="options.freeMode.enabled" xml:space="preserve" approved="yes">
-				<source>Enable free mode</source>
-			<target state="final">Включить свободный режим</target></trans-unit>
-      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve" approved="yes">
-				<source>Minimum touchmove-velocity for free mode momentum</source>
-			<target state="final">Минимальная скорость движения для инерции свободного режима</target></trans-unit>
-      <trans-unit id="options.freeMode.momentum" xml:space="preserve" approved="yes">
-				<source>Enable momentum in free mode</source>
-			<target state="final">Включить инерцию в свободном режиме</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve" approved="yes">
-				<source>Enable momentum bounce in free mode</source>
-			<target state="final">Включить отскок инерции в свободном режиме</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve" approved="yes">
-				<source>Momentum bounce ratio</source>
-			<target state="final">Коэффициент отскока инерции</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumRatio" xml:space="preserve" approved="yes">
-				<source>Momentum ratio</source>
-			<target state="final">Коэффициент инерции</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve" approved="yes">
-				<source>Momentum velocity ratio</source>
-			<target state="final">Коэффициент скорости инерции</target></trans-unit>
-      <trans-unit id="options.freeMode.sticky" xml:space="preserve" approved="yes">
-				<source>Snap to slides in free mode</source>
-			<target state="final">Прилипать к слайдам в свободном режиме</target></trans-unit>
-      <trans-unit id="options.grid.fill" xml:space="preserve" approved="yes">
-				<source>How slides should fill rows (by column or by row)</source>
-			<target state="final">Как слайды заполняют ряды (по столбцам или по рядам)</target></trans-unit>
-      <trans-unit id="options.grid.rows" xml:space="preserve" approved="yes">
-				<source>Number of slides rows (multirow layout)</source>
-			<target state="final">Количество рядов слайдов (многорядный макет)</target></trans-unit>
-      <trans-unit id="options.parallax.enabled" xml:space="preserve" approved="yes">
-				<source>Enable parallaxed elements inside the slider</source>
-			<target state="final">Включить параллакс-элементы внутри слайдера</target></trans-unit>
-      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve" approved="yes">
-				<source>Enables slides cross fade</source>
-			<target state="final">Включить перекрёстное затухание слайдов</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve" approved="yes">
-				<source>Depth offset in px (slides translate in Z axis)</source>
-			<target state="final">Смещение глубины (px), смещение слайдов по оси Z</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve" approved="yes">
-				<source>Effect multiplier</source>
-			<target state="final">Множитель эффекта</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Slide rotate in degrees</source>
-			<target state="final">Поворот слайда в градусах</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve" approved="yes">
-				<source>Slide scale effect</source>
-			<target state="final">Масштаб слайда</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Включить тени слайдов</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve" approved="yes">
-				<source>Stretch space between slides (px or %)</source>
-			<target state="final">Растяжение пространства между слайдами (px или %)</target></trans-unit>
-      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve" approved="yes">
-				<source>Limit edge slides rotation</source>
-			<target state="final">Ограничивать поворот крайних слайдов</target></trans-unit>
-      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Включить тени слайдов</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve" approved="yes">
-				<source>Enables main slider shadow</source>
-			<target state="final">Включить основную тень слайдера</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve" approved="yes">
-				<source>Main shadow offset in px</source>
-			<target state="final">Смещение основной тени (px)</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve" approved="yes">
-				<source>Main shadow scale ratio</source>
-			<target state="final">Масштаб основной тени</target></trans-unit>
-      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Включить тени слайдов</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve" approved="yes">
-				<source>Offset distance per slide (in px)</source>
-			<target state="final">Смещение на слайд (px)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve" approved="yes">
-				<source>Rotate angle per slide (in degrees)</source>
-			<target state="final">Угол поворота на слайд (в градусах)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Enables cards rotation</source>
-			<target state="final">Включить поворот карточек</target></trans-unit>
-      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Включить тени слайдов</target></trans-unit>
-      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve" approved="yes">
-				<source>Limit progress/offset to amount of side slides</source>
-			<target state="final">Ограничивать прогресс/смещение количеством боковых слайдов</target></trans-unit>
-      <trans-unit id="options.creativeEffect.next" xml:space="preserve" approved="yes">
-				<source>Next slide transformations</source>
-			<target state="final">Трансформации следующего слайда</target></trans-unit>
-      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve" approved="yes">
-				<source>Enable 3D perspective for custom transforms</source>
-			<target state="final">Включить 3D-перспективу для своих трансформаций</target></trans-unit>
-      <trans-unit id="options.creativeEffect.prev" xml:space="preserve" approved="yes">
-				<source>Previous slide transformations</source>
-			<target state="final">Трансформации предыдущего слайда</target></trans-unit>
-      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve" approved="yes">
-				<source>Multiply slide transformations and opacity</source>
-			<target state="final">Множитель трансформаций и прозрачности слайда</target></trans-unit>
-      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve" approved="yes">
-				<source>Split shadow opacity per slide based on limitProgress</source>
-			<target state="final">Разделять прозрачность тени по слайдам (по limitProgress)</target></trans-unit>
-      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve" approved="yes">
-				<source>Auto scroll offset for thumbs</source>
-			<target state="final">Автоматическое смещение прокрутки миниатюр</target></trans-unit>
-      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve" approved="yes">
-				<source>Enable multiple active thumbnail slides</source>
-			<target state="final">Включить несколько активных миниатюр</target></trans-unit>
-      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve" approved="yes">
-				<source>Additional class for activated thumbs swiper slide</source>
-			<target state="final">Дополнительный класс активного слайда миниатюр</target></trans-unit>
-      <trans-unit id="options.thumbs.swiper" xml:space="preserve" approved="yes">
-				<source>Swiper instance or parameters for thumbs swiper</source>
-			<target state="final">Экземпляр Swiper или параметры для слайдера миниатюр</target></trans-unit>
-      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve" approved="yes">
-				<source>Additional class for thumbs swiper container</source>
-			<target state="final">Дополнительный класс контейнера миниатюр</target></trans-unit>
-      <trans-unit id="options.zoom.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom</source>
-			<target state="final">Включить/отключить зум</target></trans-unit>
-      <trans-unit id="options.zoom.containerClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoom container</source>
-			<target state="final">CSS-класс контейнера зума</target></trans-unit>
-      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve" approved="yes">
-				<source>Limit zoom to original image size</source>
-			<target state="final">Ограничивать зум исходным размером изображения</target></trans-unit>
-      <trans-unit id="options.zoom.maxRatio" xml:space="preserve" approved="yes">
-				<source>Maximum image zoom multiplier</source>
-			<target state="final">Максимальный множитель зума</target></trans-unit>
-      <trans-unit id="options.zoom.minRatio" xml:space="preserve" approved="yes">
-				<source>Minimal image zoom multiplier</source>
-			<target state="final">Минимальный множитель зума</target></trans-unit>
-      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve" approved="yes">
-				<source>Pan zoomed image on mouse move</source>
-			<target state="final">Панорамировать изображение при движении мыши</target></trans-unit>
-      <trans-unit id="options.zoom.toggle" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom-in by double tap</source>
-			<target state="final">Включить/отключить зум двойным касанием</target></trans-unit>
-      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoomed in container</source>
-			<target state="final">CSS-класс увеличенного контейнера</target></trans-unit>
-      <trans-unit id="options.keyboard.enabled" xml:space="preserve" approved="yes">
-				<source>Enable keyboard control</source>
-			<target state="final">Включить управление с клавиатуры</target></trans-unit>
-      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve" approved="yes">
-				<source>Control sliders only in viewport</source>
-			<target state="final">Управлять слайдерами только в видимой области</target></trans-unit>
-      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve" approved="yes">
-				<source>Enable keyboard navigation by Page Up/Down keys</source>
-			<target state="final">Навигация клавишами Page Up/Down</target></trans-unit>
-      <trans-unit id="options.keyboard.speed" xml:space="preserve" approved="yes">
-				<source>Speed of keyboard navigation transitions (ms)</source>
-			<target state="final">Скорость переходов при навигации с клавиатуры (мс)</target></trans-unit>
-      <trans-unit id="options.mousewheel.enabled" xml:space="preserve" approved="yes">
-				<source>Enable mousewheel control</source>
-			<target state="final">Включить управление колесом мыши</target></trans-unit>
-      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for mousewheel events target</source>
-			<target state="final">CSS-селектор или HTML-элемент — цель событий колеса мыши</target></trans-unit>
-      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve" approved="yes">
-				<source>Force mousewheel swipes to axis</source>
-			<target state="final">Принудительная прокрутка колесом по оси</target></trans-unit>
-      <trans-unit id="options.mousewheel.invert" xml:space="preserve" approved="yes">
-				<source>Invert sliding direction</source>
-			<target state="final">Инвертировать направление прокрутки</target></trans-unit>
-      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve" approved="yes">
-				<source>Class name to ignore mousewheel scrolling</source>
-			<target state="final">Класс для игнорирования прокрутки колесом</target></trans-unit>
-      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve" approved="yes">
-				<source>Release mousewheel event on edges</source>
-			<target state="final">Отпускать событие колеса на краях</target></trans-unit>
-      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve" approved="yes">
-				<source>Mousewheel sensitivity multiplier</source>
-			<target state="final">Множитель чувствительности колеса мыши</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll delta to trigger slide change</source>
-			<target state="final">Минимальный сдвиг колеса для смены слайда</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
-			<target state="final">Минимальный интервал времени (мс) для смены слайда</target></trans-unit>
-      <trans-unit id="options.virtualslides" xml:space="preserve" approved="yes">
-				<source>Virtual Slides</source>
-			<target state="final">Виртуальные слайды</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides after active slide</source>
-			<target state="final">Добавлять слайды после активного слайда</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides before active slide</source>
-			<target state="final">Добавлять слайды до активного слайда</target></trans-unit>
-      <trans-unit id="options.virtualslides.cache" xml:space="preserve" approved="yes">
-				<source>Enable DOM cache of rendered slides</source>
-			<target state="final">Включить DOM-кэш отрисованных слайдов</target></trans-unit>
-      <trans-unit id="options.virtualslides.enabled" xml:space="preserve" approved="yes">
-				<source>Enable virtual slides</source>
-			<target state="final">Включить виртуальные слайды</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve" approved="yes">
-				<source>Function for external rendering (e.g. React/Vue)</source>
-			<target state="final">Функция внешней отрисовки (например, React/Vue)</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve" approved="yes">
-				<source>Update Swiper layout after renderExternal</source>
-			<target state="final">Обновлять макет Swiper после внешней отрисовки</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve" approved="yes">
-				<source>Function to render slide</source>
-			<target state="final">Функция отрисовки слайда</target></trans-unit>
-      <trans-unit id="options.virtualslides.slides" xml:space="preserve" approved="yes">
-				<source>Array with slides</source>
-			<target state="final">Массив со слайдами</target></trans-unit>
-      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve" approved="yes">
-				<source>Slide size for slidesPerView: auto (in px)</source>
-			<target state="final">Размер слайда для slidesPerView: auto (px)</target></trans-unit>
-      <trans-unit id="options.hashNavigation" xml:space="preserve" approved="yes">
-				<source>Hash Navigation</source>
-			<target state="final">Навигация по хешу</target></trans-unit>
-      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve" approved="yes">
-				<source>Function to get slide index by hash (for virtual slides)</source>
-			<target state="final">Функция получения индекса слайда по хешу (для виртуальных слайдов)</target></trans-unit>
-      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve" approved="yes">
-				<source>Replace current URL state instead of adding to history</source>
-			<target state="final">Заменять состояние URL вместо добавления в историю</target></trans-unit>
-      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve" approved="yes">
-				<source>Enable navigation by browser history/hash</source>
-			<target state="final">Навигация по истории браузера/хешу</target></trans-unit>
-      <trans-unit id="options.slidesPerView" approved="yes">
-        <source>Slides per view</source>
-        <target state="final">Слайдов на экран</target>
-      </trans-unit>
-      <trans-unit id="options.spaceBetween" approved="yes">
-        <source>Space between slides (in px)</source>
-        <target state="final">Расстояние между слайдами (px)</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroup" approved="yes">
-        <source>Number of slides in group</source>
-        <target state="final">Количество слайдов в группе</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</body>
   </file>
 </xliff>
