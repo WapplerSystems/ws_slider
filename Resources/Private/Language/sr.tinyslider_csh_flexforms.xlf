@@ -3,213 +3,56 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="sr">
     <header/>
     <body>
-      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
-        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
-        <target state="final">Kontroliše ponašanje animacije. Kod „karusela" sve se pomera u stranu, dok „galerija" koristi efekte prelaza (fade) i menja sve slajdove odjednom.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
-        <source>The axis of the slider.</source>
-        <target state="final">Osa slajdera.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
-        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
-        <target state="final">Broj slajdova prikazanih u okviru za prikaz (viewport). Ako je broj slajdova manji ili jednak ovom broju, slajder se neće inicijalizovati.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
-        <source>Space between slides (in “px”).</source>
-        <target state="final">Razmak između slajdova (u „px").</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
-        <source>Space on the outside (in “px”).</source>
-        <target state="final">Spoljašnji razmak (u „px").</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
-        <source>Controls width attribute of the slides.</source>
-        <target state="final">Kontroliše atribut širine slajdova.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
-        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
-        <target state="final">Ako je uključeno, širina svakog slajda biće njegova prirodna širina kao inline-block element.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
-        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
-        <target state="final">Maksimalna širina okvira za prikaz (viewport) za fiksnu/automatsku širinu.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
-        <source>Number of slides going on one “click”.</source>
-        <target state="final">Broj slajdova koji se pomeraju pri jednom „kliku".</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
-        <source>Center the active slide in the viewport.</source>
-        <target state="final">Centrira aktivni slajd u okviru za prikaz.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
-        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
-        <target state="final">Kontroliše prikaz i funkcionalnosti kontrolnih komponenti (dugmad za prethodni/sledeći). Ako je uključeno, prikazuju se kontrole i dodaju sve funkcionalnosti. Radi bolje pristupačnosti, kada je dugme prethodni/sledeći fokusirano, korisnik može kontrolisati slajder pomoću strelica levo/desno.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
-        <source>Controls controls position.</source>
-        <target state="final">Pozicija kontrolnih dugmadi.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
-        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
-        <target state="final">Kontejnerski element/selektor oko dugmadi za prethodni/sledeći. controlsContainer mora imati najmanje 2 podređena elementa.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
-        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">Prilagođeno dugme za prethodni slajd. Ova opcija se zanemaruje ako je controlsContainer Node element ili CSS selektor.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
-        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">Prilagođeno dugme za sledeći slajd. Ova opcija se zanemaruje ako je controlsContainer Node element ili CSS selektor.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
-        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
-        <target state="final">Kontroliše prikaz i funkcionalnosti navigacionih komponenti (tačkice). Ako je uključeno, prikazuje se navigacija i dodaju sve funkcionalnosti.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
-        <source>Controls nav position.</source>
-        <target state="final">Pozicija navigacije.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
-        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
-        <target state="final">Kontejnerski element/selektor oko tačkica. navContainer mora imati najmanje isti broj podređenih elemenata kao slajdova.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
-        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
-        <target state="final">Označava da li su tačkice sličice (thumbnail). Ako je uključeno, uvek će biti vidljive čak i kada se u okviru za prikaz prikazuje više od 1 slajda.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
-        <source>Allows using arrow keys to switch slides.</source>
-        <target state="final">Omogućava korišćenje strelica za promenu slajdova.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
-        <source>Speed of the slide animation (in “ms”).</source>
-        <target state="final">Brzina animacije slajda (u „ms").</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
-        <source>Toggles the automatic change of slides.</source>
-        <target state="final">Uključuje automatsku promenu slajdova.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
-        <source>Controls autoplay position.</source>
-        <target state="final">Pozicija automatske reprodukcije.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
-        <source>Time between 2 autoplay slides change (in “ms”).</source>
-        <target state="final">Vreme između dve automatske promene slajda (u „ms").</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
-        <source>Direction of slide movement (ascending/descending the slide index).</source>
-        <target state="final">Smer kretanja slajdova (rastući/opadajući indeks slajda).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
-        <source>Stops sliding on mouseover.</source>
-        <target state="final">Zaustavlja klizanje pri prelasku mišem preko slajdera.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
-        <source>The customized autoplay start/stop button or selector.</source>
-        <target state="final">Prilagođeno dugme za pokretanje/zaustavljanje automatske reprodukcije ili selektor.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
-        <source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-        <target state="final">Ispisuje markup dugmeta za automatsku reprodukciju kada je autoplay uključen, a prilagođeno dugme nije navedeno.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
-        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
-        <target state="final">Pauzira klizanje kada stranica nije vidljiva i nastavlja ga kada stranica ponovo postane vidljiva.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
-        <source>Name of intro animation class.</source>
-        <target state="final">Naziv klase za ulaznu (intro) animaciju.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
-        <source>Name of outro animation class.</source>
-        <target state="final">Naziv klase za izlaznu (outro) animaciju.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
-        <source>Name of default animation class.</source>
-        <target state="final">Naziv klase za podrazumevanu animaciju.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
-        <source>Time between each gallery animation (in “ms”).</source>
-        <target state="final">Vreme između svake animacije u galeriji (u „ms").</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
-        <source>Moves throughout all the slides seamlessly.</source>
-        <target state="final">Neometano se kreće kroz sve slajdove.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
-        <source>Moves to the opposite edge when reaching the first or last slide.</source>
-        <target state="final">Pomera se na suprotnu ivicu kada dođe do prvog ili poslednjeg slajda.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
-        <source>Height of slider container changes according to each slide’s height.</source>
-        <target state="final">Visina kontejnera slajdera se menja prema visini svakog slajda.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
-				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
-                        NOTE:
-                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
-                        + data-src attribute with its value of the real image src is required;
-                        + width attribute for every image is required for autoWidth slider.</source>
-			<target state="final">Omogućava lenjo učitavanje (lazyload) slika koje trenutno nisu prikazane, čime se štedi propusni opseg (pogledajte demo).
-NAPOMENA:
-+ klasa .tns-lazy-img mora biti postavljena na svaku sliku koju želite da lenjo učitavate ako opcija lazyloadSelector nije navedena;
-+ obavezan je data-src atribut sa vrednošću stvarnog src izvora slike;
-+ width atribut za svaku sliku je obavezan za slajder sa automatskom širinom.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
-        <source>The CSS selector for lazyload images.</source>
-        <target state="final">CSS selektor za lenjo učitavanje slika.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
-        <source>Activates input detection for touch devices.</source>
-        <target state="final">Aktivira detekciju unosa na uređajima osetljivim na dodir.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
-        <source>Changing slides by dragging them.</source>
-        <target state="final">Promena slajdova njihovim povlačenjem.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
-        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
-        <target state="final">Prevlačenje (swipe) ili povlačenje se neće pokrenuti ako ugao nije unutar opsega kada je podešen.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
-        <source>Prevent next transition while slider is transforming.</source>
-        <target state="final">Sprečava sledeću tranziciju dok se slajder transformiše.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
-        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
-        <target state="final">Sprečava skrolovanje stranice pri dodiru (touchmove). Ako je postavljeno na „auto", slajder prvo proverava da li smer dodira odgovara osi slajdera, pa onda odlučuje da li da spreči skrolovanje stranice ili ne. Ako je postavljeno na „force", slajder uvek sprečava skrolovanje stranice.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
-        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
-        <target state="final">Definiše odnos između ugnježdenih slajdera. Pobrinite se da prvo pokrenete unutrašnji slajder, inače će visina kontejnera unutrašnjeg slajdera biti pogrešna.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
-        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
-        <target state="final">Označava da li će slajder biti zamrznut (kontrole, navigacija, automatska reprodukcija i druge funkcije prestaće da rade) kada se svi slajdovi mogu prikazati na jednoj stranici.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
-        <source>Disable slider.</source>
-        <target state="final">Onemogućava slajder.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
-        <source>The initial index of the slider.</source>
-        <target state="final">Početni indeks slajdera.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
-        <source>Callback to be run on initialization.</source>
-        <target state="final">Povratni poziv (callback) koji se izvršava pri inicijalizaciji.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
-        <source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-        <target state="final">Čuva promenljive o mogućnostima pregledača u localStorage i ne detektuje ih ponovo svaki put kada se slajder pokrene, ako je postavljeno na true.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
-        <source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-        <target state="final">Opcioni Nonce atribut za inline style tag koji omogućava korišćenje slajdera bez unsafe-inline izvora u Content Security Policy.</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</body>
   </file>
 </xliff>
