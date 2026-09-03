@@ -4,62 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="options.interval" approved="yes">
-        <source>Interval</source>
-        <target state="final">Khoảng thời gian</target>
-      </trans-unit>
-      <trans-unit id="options.keyboard" approved="yes">
-        <source>Keyboard</source>
-        <target state="final">Điều khiển bàn phím</target>
-      </trans-unit>
-      <trans-unit id="options.pause" approved="yes">
-        <source>Pause</source>
-        <target state="final">Tạm dừng</target>
-      </trans-unit>
-      <trans-unit id="options.ride" approved="yes">
-        <source>Ride</source>
-        <target state="final">Tự động chạy</target>
-      </trans-unit>
-      <trans-unit id="options.touch" approved="yes">
-        <source>Touch</source>
-        <target state="final">Điều khiển cảm ứng</target>
-      </trans-unit>
-      <trans-unit id="options.wrap" approved="yes">
-        <source>Wrap</source>
-        <target state="final">Lặp lại</target>
-      </trans-unit>
-      <trans-unit id="options.control" approved="yes">
-        <source>Show control</source>
-        <target state="final">Hiển thị điều khiển</target>
-      </trans-unit>
-      <trans-unit id="options.indicators" approved="yes">
-        <source>Show indicators</source>
-        <target state="final">Hiển thị chỉ báo</target>
-      </trans-unit>
-      <trans-unit id="options.title" approved="yes">
-        <source>Show title</source>
-        <target state="final">Hiển thị tiêu đề</target>
-      </trans-unit>
-      <trans-unit id="options.description" approved="yes">
-        <source>Show description</source>
-        <target state="final">Hiển thị mô tả</target>
-      </trans-unit>
-      <trans-unit id="options.startAt" approved="yes">
-        <source>Start at</source>
-        <target state="final">Bắt đầu từ</target>
-      </trans-unit>
-      <trans-unit id="btn.previous" approved="yes">
-        <source>Previous</source>
-        <target state="final">Trước</target>
-      </trans-unit>
-      <trans-unit id="btn.next" approved="yes">
-        <source>Next</source>
-        <target state="final">Tiếp theo</target>
-      </trans-unit>
-      <trans-unit id="btn.more" approved="yes">
-        <source>More</source>
-        <target state="final">Xem thêm</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
