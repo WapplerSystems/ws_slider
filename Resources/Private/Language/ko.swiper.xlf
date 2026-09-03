@@ -3,522 +3,172 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ko">
     <header/>
     <body>
-      <trans-unit id="options.accessibility" approved="yes">
-        <source>Accessibility</source>
-        <target state="final">접근성</target>
-      </trans-unit>
-      <trans-unit id="options.arrows" approved="yes">
-        <source>Arrows</source>
-        <target state="final">화살표</target>
-      </trans-unit>
-      <trans-unit id="options.asNavFor" approved="yes">
-        <source>As Nav For</source>
-        <target state="final">연동 내비게이션</target>
-      </trans-unit>
-      <trans-unit id="options.appendArrows" approved="yes">
-        <source>Append Arrows</source>
-        <target state="final">화살표 배치 위치</target>
-      </trans-unit>
-      <trans-unit id="options.appendDots" approved="yes">
-        <source>Append Dots</source>
-        <target state="final">불릿 배치 위치</target>
-      </trans-unit>
-      <trans-unit id="options.prevArrow" approved="yes">
-        <source>Prev Arrow</source>
-        <target state="final">이전 화살표</target>
-      </trans-unit>
-      <trans-unit id="options.nextArrow" approved="yes">
-        <source>Next Arrow</source>
-        <target state="final">다음 화살표</target>
-      </trans-unit>
-      <trans-unit id="options.centerMode" approved="yes">
-        <source>Center Mode</source>
-        <target state="final">가운데 정렬 모드</target>
-      </trans-unit>
-      <trans-unit id="options.centerPadding" approved="yes">
-        <source>Center Padding</source>
-        <target state="final">가운데 정렬 여백</target>
-      </trans-unit>
-      <trans-unit id="options.cssEase" approved="yes">
-        <source>CSS3 animation Easing</source>
-        <target state="final">CSS 이징 (Easing)</target>
-      </trans-unit>
-      <trans-unit id="options.effect" approved="yes">
-        <source>Effect</source>
-        <target state="final">효과 (Effect)</target>
-      </trans-unit>
-      <trans-unit id="options.setWrapperSize" approved="yes">
-        <source>setWrapperSize</source>
-        <target state="final">래퍼 크기 설정</target>
-      </trans-unit>
-      <trans-unit id="options.height" approved="yes">
-        <source>Height</source>
-        <target state="final">높이</target>
-      </trans-unit>
-      <trans-unit id="options.width" approved="yes">
-        <source>Width</source>
-        <target state="final">너비</target>
-      </trans-unit>
-      <trans-unit id="options.direction" approved="yes">
-        <source>Direction</source>
-        <target state="final">방향</target>
-      </trans-unit>
-      <trans-unit id="options.customClasses" approved="yes">
-        <source>Additional CSS classes</source>
-        <target state="final">추가 CSS 클래스</target>
-      </trans-unit>
-      <trans-unit id="options.loop" approved="yes">
-        <source>Loop</source>
-        <target state="final">무한 반복 (Loop)</target>
-      </trans-unit>
-      <trans-unit id="options.loopAddBlankSlides" approved="yes">
-        <source>Add blank slides to loop</source>
-        <target state="final">반복용 빈 슬라이드 추가</target>
-      </trans-unit>
-      <trans-unit id="options.loopAdditionalSlides" approved="yes">
-        <source>Loop additional slides</source>
-        <target state="final">반복 추가 슬라이드</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupAuto" approved="yes">
-        <source>Slides per group auto</source>
-        <target state="final">그룹별 슬라이드 자동</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupSkip" approved="yes">
-        <source>Slides per group skip</source>
-        <target state="final">그룹별 건너뛰기</target>
-      </trans-unit>
-      <trans-unit id="options.loopPreventsSliding" approved="yes">
-        <source>Prevents sliding in loop</source>
-        <target state="final">반복 모드에서 슬라이딩 방지</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.nextSlideMessage" approved="yes">
-        <source>Next slide</source>
-        <target state="final">다음 슬라이드</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.prevSlideMessage" approved="yes">
-        <source>Previous slide</source>
-        <target state="final">이전 슬라이드</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.firstSlideMessage" approved="yes">
-        <source>This is the first slide</source>
-        <target state="final">첫 번째 슬라이드입니다</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.lastSlideMessage" approved="yes">
-        <source>This is the last slide</source>
-        <target state="final">마지막 슬라이드입니다</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
-        <source>Go to slide {{index}}</source>
-        <target state="final">{{index}}번 슬라이드로 이동</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay" approved="yes">
-        <source>Autoplay</source>
-        <target state="final">자동재생</target>
-      </trans-unit>
-      <trans-unit id="options.autoplayProgress" approved="yes">
-        <source>Show autoplay progress indicator</source>
-        <target state="final">자동재생 진행 표시</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay.delay" xml:space="preserve" approved="yes">
-				<source>Delay between transitions (in ms)</source>
-			<target state="final">전환 간격 (ms)</target></trans-unit>
-      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve" approved="yes">
-				<source>Disable autoplay on interaction</source>
-			<target state="final">상호작용 시 자동재생 중지</target></trans-unit>
-      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve" approved="yes">
-				<source>Pause autoplay on mouse enter</source>
-			<target state="final">마우스 오버 시 일시정지</target></trans-unit>
-      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve" approved="yes">
-				<source>Autoplay in reverse direction</source>
-			<target state="final">역방향 자동재생</target></trans-unit>
-      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve" approved="yes">
-				<source>Stop autoplay on last slide</source>
-			<target state="final">마지막 슬라이드에서 정지</target></trans-unit>
-      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve" approved="yes">
-				<source>Wait for transition before next autoplay</source>
-			<target state="final">전환 후 다음 자동재생 대기</target></trans-unit>
-      <trans-unit id="options.autoHeight" approved="yes">
-        <source>Auto height</source>
-        <target state="final">자동 높이</target>
-      </trans-unit>
-      <trans-unit id="options.navigation.addIcons" xml:space="preserve" approved="yes">
-				<source>Add SVG icons to navigation buttons</source>
-			<target state="final">내비게이션 버튼에 SVG 아이콘 추가</target></trans-unit>
-      <trans-unit id="options.navigation.disabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes disabled</source>
-			<target state="final">비활성화 시 내비게이션 버튼에 추가되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.navigation.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable navigation</source>
-			<target state="final">내비게이션 활성화/비활성화</target></trans-unit>
-      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes hidden</source>
-			<target state="final">숨겨질 때 내비게이션 버튼에 추가되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle navigation buttons visibility after click on slider container</source>
-			<target state="final">슬라이더 클릭 시 내비게이션 버튼 표시 전환</target></trans-unit>
-      <trans-unit id="options.navigation.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it is disabled</source>
-			<target state="final">비활성화 시 내비게이션 버튼에 추가되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
-			<target state="final">브레이크포인트로 내비게이션 비활성화 시 컨테이너에 추가되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.navigation.nextEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the next button</source>
-			<target state="final">다음 버튼의 CSS 선택자 또는 HTML 요소</target></trans-unit>
-      <trans-unit id="options.navigation.prevEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the previous button</source>
-			<target state="final">이전 버튼의 CSS 선택자 또는 HTML 요소</target></trans-unit>
-      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of currently active pagination bullet</source>
-			<target state="final">활성 불릿의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.bulletClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of single pagination bullet</source>
-			<target state="final">단일 불릿의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.bulletElement" xml:space="preserve" approved="yes">
-				<source>HTML tag for single pagination bullet (only for bullets type)</source>
-			<target state="final">단일 불릿의 HTML 태그 (불릿 유형만)</target></trans-unit>
-      <trans-unit id="options.pagination.clickable" xml:space="preserve" approved="yes">
-				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
-			<target state="final">불릿 클릭 시 슬라이드 전환 (불릿 유형만)</target></trans-unit>
-      <trans-unit id="options.pagination.clickableClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is clickable</source>
-			<target state="final">클릭 가능할 때 페이지네이션에 설정되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.currentClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with currently active index in fraction pagination</source>
-			<target state="final">fraction 페이지네이션에서 활성 인덱스 요소의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve" approved="yes">
-				<source>Show only a few bullets at the same time (for many slides)</source>
-			<target state="final">일부 불릿만 동시에 표시 (슬라이드가 많을 때)</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve" approved="yes">
-				<source>Number of main bullets visible when dynamicBullets enabled</source>
-			<target state="final">dynamicBullets 활성 시 표시되는 주요 불릿 수</target></trans-unit>
-      <trans-unit id="options.pagination.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with pagination</source>
-			<target state="final">페이지네이션 컨테이너의 CSS 선택자 또는 HTML 요소</target></trans-unit>
-      <trans-unit id="options.pagination.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable pagination</source>
-			<target state="final">페이지네이션 활성화/비활성화</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve" approved="yes">
-				<source>Format function for current number in fraction pagination</source>
-			<target state="final">fraction 페이지네이션 현재 숫자 포맷 함수</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve" approved="yes">
-				<source>Format function for total number in fraction pagination</source>
-			<target state="final">fraction 페이지네이션 전체 숫자 포맷 함수</target></trans-unit>
-      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination when it becomes inactive</source>
-			<target state="final">비활성화될 때 페이지네이션의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle pagination container visibility after click on slider container</source>
-			<target state="final">슬라이더 클릭 시 페이지네이션 표시 전환</target></trans-unit>
-      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in horizontal Swiper</source>
-			<target state="final">가로 Swiper에서 페이지네이션에 설정되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is disabled</source>
-			<target state="final">비활성화 시 페이지네이션에 설정되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.modifierClass" xml:space="preserve" approved="yes">
-				<source>Prefix for modifier CSS class name for pagination</source>
-			<target state="final">페이지네이션 수식자 CSS 클래스 접두사</target></trans-unit>
-      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
-			<target state="final">브레이크포인트로 페이지네이션 비활성화 시 컨테이너와 요소에 추가되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar fill element</source>
-			<target state="final">페이지네이션 진행바 채움 요소의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve" approved="yes">
-				<source>Progressbar opposite to Swiper's direction</source>
-			<target state="final">Swiper 방향 반대의 진행바</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar opposite</source>
-			<target state="final">반대 방향 페이지네이션 진행바의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.renderBullet" xml:space="preserve" approved="yes">
-				<source>Custom function for pagination bullets (only for bullets type)</source>
-			<target state="final">불릿 사용자 정의 함수 (불릿 유형만)</target></trans-unit>
-      <trans-unit id="options.pagination.renderCustom" xml:space="preserve" approved="yes">
-				<source>Custom function for custom pagination type</source>
-			<target state="final">사용자 정의 페이지네이션 유형 함수</target></trans-unit>
-      <trans-unit id="options.pagination.renderFraction" xml:space="preserve" approved="yes">
-				<source>Custom function for fraction pagination type</source>
-			<target state="final">fraction 페이지네이션 사용자 정의 함수</target></trans-unit>
-      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve" approved="yes">
-				<source>Custom function for progressbar pagination type</source>
-			<target state="final">진행바 페이지네이션 사용자 정의 함수</target></trans-unit>
-      <trans-unit id="options.pagination.totalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with total number in fraction pagination</source>
-			<target state="final">fraction 페이지네이션 전체 숫자 요소의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.pagination.type" xml:space="preserve" approved="yes">
-				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
-			<target state="final">페이지네이션 유형 (불릿, fraction, 진행바, 사용자 정의)</target></trans-unit>
-      <trans-unit id="options.pagination.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in vertical Swiper</source>
-			<target state="final">세로 Swiper에서 페이지네이션에 설정되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar draggable element CSS class</source>
-			<target state="final">스크롤바 드래그 요소 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve" approved="yes">
-				<source>Size of scrollbar draggable element in px</source>
-			<target state="final">스크롤바 드래그 요소 크기 (px)</target></trans-unit>
-      <trans-unit id="options.scrollbar.draggable" xml:space="preserve" approved="yes">
-				<source>Enable draggable scrollbar</source>
-			<target state="final">드래그 가능한 스크롤바 활성화</target></trans-unit>
-      <trans-unit id="options.scrollbar.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with scrollbar</source>
-			<target state="final">스크롤바 컨테이너의 CSS 선택자 또는 HTML 요소</target></trans-unit>
-      <trans-unit id="options.scrollbar.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable scrollbar</source>
-			<target state="final">스크롤바 활성화/비활성화</target></trans-unit>
-      <trans-unit id="options.scrollbar.hide" xml:space="preserve" approved="yes">
-				<source>Hide scrollbar automatically after user interaction</source>
-			<target state="final">사용자 상호작용 후 스크롤바 자동 숨김</target></trans-unit>
-      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in horizontal Swiper</source>
-			<target state="final">가로 Swiper에서 스크롤바에 설정되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar element additional CSS class when it is disabled</source>
-			<target state="final">비활성화 시 스크롤바 요소의 추가 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
-			<target state="final">브레이크포인트로 스크롤바 비활성화 시 컨테이너와 요소에 추가되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve" approved="yes">
-				<source>Snap slider position to slides when you release scrollbar</source>
-			<target state="final">스크롤바 해제 시 슬라이드 위치 스냅</target></trans-unit>
-      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in vertical Swiper</source>
-			<target state="final">세로 Swiper에서 스크롤바에 설정되는 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.freeMode.enabled" xml:space="preserve" approved="yes">
-				<source>Enable free mode</source>
-			<target state="final">프리 모드 활성화</target></trans-unit>
-      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve" approved="yes">
-				<source>Minimum touchmove-velocity for free mode momentum</source>
-			<target state="final">프리 모드 모멘텀 최소 터치 속도</target></trans-unit>
-      <trans-unit id="options.freeMode.momentum" xml:space="preserve" approved="yes">
-				<source>Enable momentum in free mode</source>
-			<target state="final">프리 모드 모멘텀 활성화</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve" approved="yes">
-				<source>Enable momentum bounce in free mode</source>
-			<target state="final">프리 모드 모멘텀 바운스 활성화</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve" approved="yes">
-				<source>Momentum bounce ratio</source>
-			<target state="final">모멘텀 바운스 비율</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumRatio" xml:space="preserve" approved="yes">
-				<source>Momentum ratio</source>
-			<target state="final">모멘텀 비율</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve" approved="yes">
-				<source>Momentum velocity ratio</source>
-			<target state="final">모멘텀 속도 비율</target></trans-unit>
-      <trans-unit id="options.freeMode.sticky" xml:space="preserve" approved="yes">
-				<source>Snap to slides in free mode</source>
-			<target state="final">프리 모드에서 슬라이드 스냅</target></trans-unit>
-      <trans-unit id="options.grid.fill" xml:space="preserve" approved="yes">
-				<source>How slides should fill rows (by column or by row)</source>
-			<target state="final">슬라이드 행 채우기 방식 (열별 또는 행별)</target></trans-unit>
-      <trans-unit id="options.grid.rows" xml:space="preserve" approved="yes">
-				<source>Number of slides rows (multirow layout)</source>
-			<target state="final">슬라이드 행 수 (다중 행 레이아웃)</target></trans-unit>
-      <trans-unit id="options.parallax.enabled" xml:space="preserve" approved="yes">
-				<source>Enable parallaxed elements inside the slider</source>
-			<target state="final">슬라이더 내부 패럴랙스 요소 활성화</target></trans-unit>
-      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve" approved="yes">
-				<source>Enables slides cross fade</source>
-			<target state="final">슬라이드 교차 페이드 활성화</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve" approved="yes">
-				<source>Depth offset in px (slides translate in Z axis)</source>
-			<target state="final">깊이 오프셋 (px, Z축 이동)</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve" approved="yes">
-				<source>Effect multiplier</source>
-			<target state="final">효과 배율</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Slide rotate in degrees</source>
-			<target state="final">슬라이드 회전 각도 (도)</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve" approved="yes">
-				<source>Slide scale effect</source>
-			<target state="final">슬라이드 축척 효과</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">슬라이드 그림자 활성화</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve" approved="yes">
-				<source>Stretch space between slides (px or %)</source>
-			<target state="final">슬라이드 간 간격 (px 또는 %)</target></trans-unit>
-      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve" approved="yes">
-				<source>Limit edge slides rotation</source>
-			<target state="final">가장자리 슬라이드 회전 제한</target></trans-unit>
-      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">슬라이드 그림자 활성화</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve" approved="yes">
-				<source>Enables main slider shadow</source>
-			<target state="final">메인 슬라이더 그림자 활성화</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve" approved="yes">
-				<source>Main shadow offset in px</source>
-			<target state="final">메인 그림자 오프셋 (px)</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve" approved="yes">
-				<source>Main shadow scale ratio</source>
-			<target state="final">메인 그림자 축척 비율</target></trans-unit>
-      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">슬라이드 그림자 활성화</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve" approved="yes">
-				<source>Offset distance per slide (in px)</source>
-			<target state="final">슬라이드당 오프셋 거리 (px)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve" approved="yes">
-				<source>Rotate angle per slide (in degrees)</source>
-			<target state="final">슬라이드당 회전 각도 (도)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Enables cards rotation</source>
-			<target state="final">카드 회전 활성화</target></trans-unit>
-      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">슬라이드 그림자 활성화</target></trans-unit>
-      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve" approved="yes">
-				<source>Limit progress/offset to amount of side slides</source>
-			<target state="final">진행/오프셋을 측면 슬라이드 수로 제한</target></trans-unit>
-      <trans-unit id="options.creativeEffect.next" xml:space="preserve" approved="yes">
-				<source>Next slide transformations</source>
-			<target state="final">다음 슬라이드 변환</target></trans-unit>
-      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve" approved="yes">
-				<source>Enable 3D perspective for custom transforms</source>
-			<target state="final">사용자 정의 변환용 3D 원근 활성화</target></trans-unit>
-      <trans-unit id="options.creativeEffect.prev" xml:space="preserve" approved="yes">
-				<source>Previous slide transformations</source>
-			<target state="final">이전 슬라이드 변환</target></trans-unit>
-      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve" approved="yes">
-				<source>Multiply slide transformations and opacity</source>
-			<target state="final">슬라이드 변환 및 불투명도 배율</target></trans-unit>
-      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve" approved="yes">
-				<source>Split shadow opacity per slide based on limitProgress</source>
-			<target state="final">limitProgress 기반 슬라이드별 그림자 불투명도 분할</target></trans-unit>
-      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve" approved="yes">
-				<source>Auto scroll offset for thumbs</source>
-			<target state="final">썸네일 자동 스크롤 오프셋</target></trans-unit>
-      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve" approved="yes">
-				<source>Enable multiple active thumbnail slides</source>
-			<target state="final">여러 활성 썸네일 슬라이드 활성화</target></trans-unit>
-      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve" approved="yes">
-				<source>Additional class for activated thumbs swiper slide</source>
-			<target state="final">활성 썸네일 Swiper 슬라이드 추가 클래스</target></trans-unit>
-      <trans-unit id="options.thumbs.swiper" xml:space="preserve" approved="yes">
-				<source>Swiper instance or parameters for thumbs swiper</source>
-			<target state="final">썸네일 Swiper 인스턴스 또는 파라미터</target></trans-unit>
-      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve" approved="yes">
-				<source>Additional class for thumbs swiper container</source>
-			<target state="final">썸네일 Swiper 컨테이너 추가 클래스</target></trans-unit>
-      <trans-unit id="options.zoom.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom</source>
-			<target state="final">줌 활성화/비활성화</target></trans-unit>
-      <trans-unit id="options.zoom.containerClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoom container</source>
-			<target state="final">줌 컨테이너의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve" approved="yes">
-				<source>Limit zoom to original image size</source>
-			<target state="final">원본 이미지 크기로 줌 제한</target></trans-unit>
-      <trans-unit id="options.zoom.maxRatio" xml:space="preserve" approved="yes">
-				<source>Maximum image zoom multiplier</source>
-			<target state="final">최대 이미지 줌 배율</target></trans-unit>
-      <trans-unit id="options.zoom.minRatio" xml:space="preserve" approved="yes">
-				<source>Minimal image zoom multiplier</source>
-			<target state="final">최소 이미지 줌 배율</target></trans-unit>
-      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve" approved="yes">
-				<source>Pan zoomed image on mouse move</source>
-			<target state="final">마우스 이동 시 확대 이미지 팬</target></trans-unit>
-      <trans-unit id="options.zoom.toggle" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom-in by double tap</source>
-			<target state="final">더블 탭으로 확대 활성화/비활성화</target></trans-unit>
-      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoomed in container</source>
-			<target state="final">확대된 컨테이너의 CSS 클래스</target></trans-unit>
-      <trans-unit id="options.keyboard.enabled" xml:space="preserve" approved="yes">
-				<source>Enable keyboard control</source>
-			<target state="final">키보드 제어 활성화</target></trans-unit>
-      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve" approved="yes">
-				<source>Control sliders only in viewport</source>
-			<target state="final">뷰포트에 있는 슬라이더만 제어</target></trans-unit>
-      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve" approved="yes">
-				<source>Enable keyboard navigation by Page Up/Down keys</source>
-			<target state="final">Page Up/Down 키로 내비게이션 활성화</target></trans-unit>
-      <trans-unit id="options.keyboard.speed" xml:space="preserve" approved="yes">
-				<source>Speed of keyboard navigation transitions (ms)</source>
-			<target state="final">키보드 내비게이션 전환 속도 (ms)</target></trans-unit>
-      <trans-unit id="options.mousewheel.enabled" xml:space="preserve" approved="yes">
-				<source>Enable mousewheel control</source>
-			<target state="final">마우스 휠 제어 활성화</target></trans-unit>
-      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for mousewheel events target</source>
-			<target state="final">마우스 휠 이벤트 대상 CSS 선택자 또는 HTML 요소</target></trans-unit>
-      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve" approved="yes">
-				<source>Force mousewheel swipes to axis</source>
-			<target state="final">마우스 휠 스와이프를 축으로 고정</target></trans-unit>
-      <trans-unit id="options.mousewheel.invert" xml:space="preserve" approved="yes">
-				<source>Invert sliding direction</source>
-			<target state="final">슬라이딩 방향 반전</target></trans-unit>
-      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve" approved="yes">
-				<source>Class name to ignore mousewheel scrolling</source>
-			<target state="final">마우스 휠 스크롤 무시 클래스</target></trans-unit>
-      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve" approved="yes">
-				<source>Release mousewheel event on edges</source>
-			<target state="final">가장자리에서 마우스 휠 이벤트 해제</target></trans-unit>
-      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve" approved="yes">
-				<source>Mousewheel sensitivity multiplier</source>
-			<target state="final">마우스 휠 감도 배율</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll delta to trigger slide change</source>
-			<target state="final">슬라이드 변경 트리거 최소 스크롤 델타</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
-			<target state="final">슬라이드 변경 트리거 최소 스크롤 시간 (ms)</target></trans-unit>
-      <trans-unit id="options.virtualslides" xml:space="preserve" approved="yes">
-				<source>Virtual Slides</source>
-			<target state="final">가상 슬라이드</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides after active slide</source>
-			<target state="final">활성 슬라이드 뒤 사전 렌더링 슬라이드 수 증가</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides before active slide</source>
-			<target state="final">활성 슬라이드 앞 사전 렌더링 슬라이드 수 증가</target></trans-unit>
-      <trans-unit id="options.virtualslides.cache" xml:space="preserve" approved="yes">
-				<source>Enable DOM cache of rendered slides</source>
-			<target state="final">렌더링된 슬라이드의 DOM 캐시 활성화</target></trans-unit>
-      <trans-unit id="options.virtualslides.enabled" xml:space="preserve" approved="yes">
-				<source>Enable virtual slides</source>
-			<target state="final">가상 슬라이드 활성화</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve" approved="yes">
-				<source>Function for external rendering (e.g. React/Vue)</source>
-			<target state="final">외부 렌더링 함수 (예: React/Vue)</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve" approved="yes">
-				<source>Update Swiper layout after renderExternal</source>
-			<target state="final">renderExternal 후 Swiper 레이아웃 갱신</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve" approved="yes">
-				<source>Function to render slide</source>
-			<target state="final">슬라이드 렌더링 함수</target></trans-unit>
-      <trans-unit id="options.virtualslides.slides" xml:space="preserve" approved="yes">
-				<source>Array with slides</source>
-			<target state="final">슬라이드 배열</target></trans-unit>
-      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve" approved="yes">
-				<source>Slide size for slidesPerView: auto (in px)</source>
-			<target state="final">slidesPerView: auto 슬라이드 크기 (px)</target></trans-unit>
-      <trans-unit id="options.hashNavigation" xml:space="preserve" approved="yes">
-				<source>Hash Navigation</source>
-			<target state="final">해시 내비게이션</target></trans-unit>
-      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve" approved="yes">
-				<source>Function to get slide index by hash (for virtual slides)</source>
-			<target state="final">해시로 슬라이드 인덱스 가져오는 함수 (가상 슬라이드용)</target></trans-unit>
-      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve" approved="yes">
-				<source>Replace current URL state instead of adding to history</source>
-			<target state="final">히스토리 추가 대신 현재 URL 상태 교체</target></trans-unit>
-      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve" approved="yes">
-				<source>Enable navigation by browser history/hash</source>
-			<target state="final">브라우저 히스토리/해시로 내비게이션 활성화</target></trans-unit>
-      <trans-unit id="options.slidesPerView" approved="yes">
-        <source>Slides per view</source>
-        <target state="final">화면당 슬라이드 수</target>
-      </trans-unit>
-      <trans-unit id="options.spaceBetween" approved="yes">
-        <source>Space between slides (in px)</source>
-        <target state="final">슬라이드 간 간격 (px)</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroup" approved="yes">
-        <source>Number of slides in group</source>
-        <target state="final">그룹당 슬라이드 수</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</body>
   </file>
 </xliff>
