@@ -3,71 +3,11 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="hu">
     <header/>
     <body>
-      <trans-unit id="title" approved="yes">
-        <source>Slider</source>
-        <target state="final">Cím</target>
-      </trans-unit>
       <!-- Buttons and labels -->
       <!-- sheets -->
-      <trans-unit id="sheet.scrollbar" approved="yes">
-        <source>Scrollbar</source>
-        <target state="final">Gördítősáv</target>
-      </trans-unit>
-      <trans-unit id="sheet.hashNavigation" approved="yes">
-        <source>Hash Navigation</source>
-        <target state="final">Hash navigáció</target>
-      </trans-unit>
-      <trans-unit id="sheet.history" approved="yes">
-        <source>History Navigation</source>
-        <target state="final">Előzmény navigáció</target>
-      </trans-unit>
-      <trans-unit id="sheet.dragNdrop" approved="yes">
-        <source>Swipe/Drag support</source>
-        <target state="final">Csúsztatás/húzás támogatás</target>
-      </trans-unit>
       <!-- common setting labels -->
-      <trans-unit id="options.common.lazyLoad" approved="yes">
-        <source>Lazy load</source>
-        <target state="final">Lazy betöltés</target>
-      </trans-unit>
-      <trans-unit id="options.common.loop" approved="yes">
-        <source>Loop / Carousel</source>
-        <target state="final">Hurok / Körhinta</target>
-      </trans-unit>
-      <trans-unit id="options.common.top" approved="yes">
-        <source>Top</source>
-        <target state="final">Felül</target>
-      </trans-unit>
-      <trans-unit id="options.common.bottom" approved="yes">
-        <source>Bottom</source>
-        <target state="final">Alul</target>
-      </trans-unit>
-      <trans-unit id="options.common.backward" approved="yes">
-        <source>Backward</source>
-        <target state="final">Vissza</target>
-      </trans-unit>
-      <trans-unit id="options.common.animateOut" approved="yes">
-        <source>Outro Animation</source>
-        <target state="final">Kilépő animáció</target>
-      </trans-unit>
-      <trans-unit id="options.common.animateIn" approved="yes">
-        <source>Intro Animation</source>
-        <target state="final">Belépő animáció</target>
-      </trans-unit>
-      <trans-unit id="options.common.touch" approved="yes">
-        <source>Enable Touch Support</source>
-        <target state="final">Érintés támogatás engedélyezése</target>
-      </trans-unit>
       <!-- Labels -->
       <!-- item labels -->
-      <trans-unit id="tx_wsslider_domain_model_item.textPosition" approved="yes">
-        <source>Text position</source>
-        <target state="final">Szöveg pozíció</target>
-      </trans-unit>
-      <trans-unit id="tx_wsslider_domain_model_item.styleClass" approved="yes">
-        <source>Text style class</source>
-        <target state="final">Szövegstílus osztály</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
