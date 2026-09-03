@@ -3,518 +3,172 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="vi">
     <header/>
     <body>
-      <trans-unit id="options.accessibility" approved="yes">
-        <source>Accessibility</source>
-        <target state="final">Hỗ trợ tiếp cận</target>
-      </trans-unit>
-      <trans-unit id="options.arrows" approved="yes">
-        <source>Arrows</source>
-        <target state="final">Mũi tên</target>
-      </trans-unit>
-      <trans-unit id="options.asNavFor" approved="yes">
-        <source>As Nav For</source>
-        <target state="final">Làm điều hướng cho</target>
-      </trans-unit>
-      <trans-unit id="options.appendArrows" approved="yes">
-        <source>Append Arrows</source>
-        <target state="final">Thêm mũi tên vào</target>
-      </trans-unit>
-      <trans-unit id="options.appendDots" approved="yes">
-        <source>Append Dots</source>
-        <target state="final">Thêm chấm vào</target>
-      </trans-unit>
-      <trans-unit id="options.prevArrow" approved="yes">
-        <source>Prev Arrow</source>
-        <target state="final">Mũi tên trước</target>
-      </trans-unit>
-      <trans-unit id="options.nextArrow" approved="yes">
-        <source>Next Arrow</source>
-        <target state="final">Mũi tên sau</target>
-      </trans-unit>
-      <trans-unit id="options.centerMode" approved="yes">
-        <source>Center Mode</source>
-        <target state="final">Chế độ căn giữa</target>
-      </trans-unit>
-      <trans-unit id="options.centerPadding" approved="yes">
-        <source>Center Padding</source>
-        <target state="final">Đệm căn giữa</target>
-      </trans-unit>
-      <trans-unit id="options.cssEase" approved="yes">
-        <source>CSS3 animation Easing</source>
-        <target state="final">Easing hoạt ảnh CSS3</target>
-      </trans-unit>
-      <trans-unit id="options.effect" approved="yes">
-        <source>Effect</source>
-        <target state="final">Hiệu ứng</target>
-      </trans-unit>
-      <trans-unit id="options.height" approved="yes">
-        <source>Height</source>
-        <target state="final">Chiều cao</target>
-      </trans-unit>
-      <trans-unit id="options.width" approved="yes">
-        <source>Width</source>
-        <target state="final">Chiều rộng</target>
-      </trans-unit>
-      <trans-unit id="options.direction" approved="yes">
-        <source>Direction</source>
-        <target state="final">Hướng</target>
-      </trans-unit>
-      <trans-unit id="options.customClasses" approved="yes">
-        <source>Additional CSS classes</source>
-        <target state="final">Lớp CSS bổ sung</target>
-      </trans-unit>
-      <trans-unit id="options.loop" approved="yes">
-        <source>Loop</source>
-        <target state="final">Lặp lại</target>
-      </trans-unit>
-      <trans-unit id="options.loopAddBlankSlides" approved="yes">
-        <source>Add blank slides to loop</source>
-        <target state="final">Thêm slide trống khi lặp</target>
-      </trans-unit>
-      <trans-unit id="options.loopAdditionalSlides" approved="yes">
-        <source>Loop additional slides</source>
-        <target state="final">Slide lặp bổ sung</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupAuto" approved="yes">
-        <source>Slides per group auto</source>
-        <target state="final">Tự động slide mỗi nhóm</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupSkip" approved="yes">
-        <source>Slides per group skip</source>
-        <target state="final">Bỏ qua slide mỗi nhóm</target>
-      </trans-unit>
-      <trans-unit id="options.loopPreventsSliding" approved="yes">
-        <source>Prevents sliding in loop</source>
-        <target state="final">Ngăn trượt khi lặp</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.nextSlideMessage" approved="yes">
-        <source>Next slide</source>
-        <target state="final">Trang tiếp theo</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.prevSlideMessage" approved="yes">
-        <source>Previous slide</source>
-        <target state="final">Trang trước đó</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.firstSlideMessage" approved="yes">
-        <source>This is the first slide</source>
-        <target state="final">Đây là trang đầu tiên</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.lastSlideMessage" approved="yes">
-        <source>This is the last slide</source>
-        <target state="final">Đây là trang cuối cùng</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
-        <source>Go to slide {{index}}</source>
-        <target state="final">Đi tới trang {{index}}</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay" approved="yes">
-        <source>Autoplay</source>
-        <target state="final">Tự phát</target>
-      </trans-unit>
-      <trans-unit id="options.autoplayProgress" approved="yes">
-        <source>Show autoplay progress indicator</source>
-        <target state="final">Hiển thị thanh tiến trình tự phát</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay.delay" xml:space="preserve" approved="yes">
-				<source>Delay between transitions (in ms)</source>
-			<target state="final">Độ trễ giữa các chuyển tiếp (tính bằng ms)</target></trans-unit>
-      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve" approved="yes">
-				<source>Disable autoplay on interaction</source>
-			<target state="final">Tắt tự phát khi tương tác</target></trans-unit>
-      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve" approved="yes">
-				<source>Pause autoplay on mouse enter</source>
-			<target state="final">Tạm dừng tự phát khi di chuột vào</target></trans-unit>
-      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve" approved="yes">
-				<source>Autoplay in reverse direction</source>
-			<target state="final">Tự phát theo hướng ngược lại</target></trans-unit>
-      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve" approved="yes">
-				<source>Stop autoplay on last slide</source>
-			<target state="final">Dừng tự phát ở trang cuối</target></trans-unit>
-      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve" approved="yes">
-				<source>Wait for transition before next autoplay</source>
-			<target state="final">Chờ chuyển tiếp xong trước khi tự phát tiếp</target></trans-unit>
-      <trans-unit id="options.autoHeight" approved="yes">
-        <source>Auto height</source>
-        <target state="final">Tự động chiều cao</target>
-      </trans-unit>
-      <trans-unit id="options.navigation.addIcons" xml:space="preserve" approved="yes">
-				<source>Add SVG icons to navigation buttons</source>
-			<target state="final">Thêm biểu tượng SVG vào nút điều hướng</target></trans-unit>
-      <trans-unit id="options.navigation.disabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes disabled</source>
-			<target state="final">Lớp CSS gán cho nút điều hướng khi bị vô hiệu</target></trans-unit>
-      <trans-unit id="options.navigation.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable navigation</source>
-			<target state="final">Bật/tắt điều hướng</target></trans-unit>
-      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes hidden</source>
-			<target state="final">Lớp CSS gán cho nút điều hướng khi bị ẩn</target></trans-unit>
-      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle navigation buttons visibility after click on slider container</source>
-			<target state="final">Chuyển hiển thị nút điều hướng sau khi nhấp vào vùng chứa slider</target></trans-unit>
-      <trans-unit id="options.navigation.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it is disabled</source>
-			<target state="final">Lớp CSS gán cho nút điều hướng khi bị khóa</target></trans-unit>
-      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
-			<target state="final">Lớp CSS gán cho vùng chứa swiper khi điều hướng bị vô hiệu theo breakpoint</target></trans-unit>
-      <trans-unit id="options.navigation.nextEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the next button</source>
-			<target state="final">Bộ chọn CSS hoặc phần tử HTML cho nút tiếp theo</target></trans-unit>
-      <trans-unit id="options.navigation.prevEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the previous button</source>
-			<target state="final">Bộ chọn CSS hoặc phần tử HTML cho nút trước đó</target></trans-unit>
-      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of currently active pagination bullet</source>
-			<target state="final">Lớp CSS của chấm phân trang đang hoạt động</target></trans-unit>
-      <trans-unit id="options.pagination.bulletClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of single pagination bullet</source>
-			<target state="final">Lớp CSS của một chấm phân trang</target></trans-unit>
-      <trans-unit id="options.pagination.bulletElement" xml:space="preserve" approved="yes">
-				<source>HTML tag for single pagination bullet (only for bullets type)</source>
-			<target state="final">Thẻ HTML cho một chấm phân trang (chỉ cho kiểu bullets)</target></trans-unit>
-      <trans-unit id="options.pagination.clickable" xml:space="preserve" approved="yes">
-				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
-			<target state="final">Nhấp vào chấm phân trang gây chuyển slide (chỉ cho kiểu bullets)</target></trans-unit>
-      <trans-unit id="options.pagination.clickableClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is clickable</source>
-			<target state="final">Lớp CSS gán cho phân trang khi có thể nhấp</target></trans-unit>
-      <trans-unit id="options.pagination.currentClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with currently active index in fraction pagination</source>
-			<target state="final">Lớp CSS của phần tử có chỉ số đang hoạt động trong phân trang dạng phân số</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve" approved="yes">
-				<source>Show only a few bullets at the same time (for many slides)</source>
-			<target state="final">Chỉ hiển thị vài chấm cùng lúc (cho nhiều slide)</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve" approved="yes">
-				<source>Number of main bullets visible when dynamicBullets enabled</source>
-			<target state="final">Số chấm chính hiển thị khi bật dynamicBullets</target></trans-unit>
-      <trans-unit id="options.pagination.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with pagination</source>
-			<target state="final">Bộ chọn CSS hoặc phần tử HTML của vùng chứa phân trang</target></trans-unit>
-      <trans-unit id="options.pagination.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable pagination</source>
-			<target state="final">Bật/tắt phân trang</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve" approved="yes">
-				<source>Format function for current number in fraction pagination</source>
-			<target state="final">Hàm định dạng số hiện tại trong phân trang dạng phân số</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve" approved="yes">
-				<source>Format function for total number in fraction pagination</source>
-			<target state="final">Hàm định dạng tổng số trong phân trang dạng phân số</target></trans-unit>
-      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination when it becomes inactive</source>
-			<target state="final">Lớp CSS của phân trang khi không hoạt động</target></trans-unit>
-      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle pagination container visibility after click on slider container</source>
-			<target state="final">Chuyển hiển thị vùng chứa phân trang sau khi nhấp vào vùng chứa slider</target></trans-unit>
-      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in horizontal Swiper</source>
-			<target state="final">Lớp CSS gán cho phân trang trong Swiper ngang</target></trans-unit>
-      <trans-unit id="options.pagination.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is disabled</source>
-			<target state="final">Lớp CSS gán cho phân trang khi bị khóa</target></trans-unit>
-      <trans-unit id="options.pagination.modifierClass" xml:space="preserve" approved="yes">
-				<source>Prefix for modifier CSS class name for pagination</source>
-			<target state="final">Tiền tố cho lớp CSS modifier của phân trang</target></trans-unit>
-      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
-			<target state="final">Lớp CSS gán cho vùng chứa swiper và phần tử phân trang khi phân trang bị vô hiệu theo breakpoint</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar fill element</source>
-			<target state="final">Lớp CSS của phần tử điền thanh tiến trình phân trang</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve" approved="yes">
-				<source>Progressbar opposite to Swiper's direction</source>
-			<target state="final">Thanh tiến trình ngược với hướng Swiper</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar opposite</source>
-			<target state="final">Lớp CSS của thanh tiến trình phân trang ngược</target></trans-unit>
-      <trans-unit id="options.pagination.renderBullet" xml:space="preserve" approved="yes">
-				<source>Custom function for pagination bullets (only for bullets type)</source>
-			<target state="final">Hàm tùy chỉnh cho chấm phân trang (chỉ cho kiểu bullets)</target></trans-unit>
-      <trans-unit id="options.pagination.renderCustom" xml:space="preserve" approved="yes">
-				<source>Custom function for custom pagination type</source>
-			<target state="final">Hàm tùy chỉnh cho kiểu phân trang tùy chỉnh</target></trans-unit>
-      <trans-unit id="options.pagination.renderFraction" xml:space="preserve" approved="yes">
-				<source>Custom function for fraction pagination type</source>
-			<target state="final">Hàm tùy chỉnh cho kiểu phân trang dạng phân số</target></trans-unit>
-      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve" approved="yes">
-				<source>Custom function for progressbar pagination type</source>
-			<target state="final">Hàm tùy chỉnh cho kiểu phân trang dạng thanh tiến trình</target></trans-unit>
-      <trans-unit id="options.pagination.totalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with total number in fraction pagination</source>
-			<target state="final">Lớp CSS của phần tử tổng số trong phân trang dạng phân số</target></trans-unit>
-      <trans-unit id="options.pagination.type" xml:space="preserve" approved="yes">
-				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
-			<target state="final">Kiểu phân trang (bullets, fraction, progressbar, custom)</target></trans-unit>
-      <trans-unit id="options.pagination.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in vertical Swiper</source>
-			<target state="final">Lớp CSS gán cho phân trang trong Swiper dọc</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar draggable element CSS class</source>
-			<target state="final">Lớp CSS của phần tử kéo thanh cuộn</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve" approved="yes">
-				<source>Size of scrollbar draggable element in px</source>
-			<target state="final">Kích thước phần tử kéo thanh cuộn (px)</target></trans-unit>
-      <trans-unit id="options.scrollbar.draggable" xml:space="preserve" approved="yes">
-				<source>Enable draggable scrollbar</source>
-			<target state="final">Bật thanh cuộn có thể kéo</target></trans-unit>
-      <trans-unit id="options.scrollbar.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with scrollbar</source>
-			<target state="final">Bộ chọn CSS hoặc phần tử HTML của vùng chứa thanh cuộn</target></trans-unit>
-      <trans-unit id="options.scrollbar.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable scrollbar</source>
-			<target state="final">Bật/tắt thanh cuộn</target></trans-unit>
-      <trans-unit id="options.scrollbar.hide" xml:space="preserve" approved="yes">
-				<source>Hide scrollbar automatically after user interaction</source>
-			<target state="final">Tự ẩn thanh cuộn sau khi người dùng tương tác</target></trans-unit>
-      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in horizontal Swiper</source>
-			<target state="final">Lớp CSS gán cho thanh cuộn trong Swiper ngang</target></trans-unit>
-      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar element additional CSS class when it is disabled</source>
-			<target state="final">Lớp CSS bổ sung của phần tử thanh cuộn khi bị khóa</target></trans-unit>
-      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
-			<target state="final">Lớp CSS gán cho vùng chứa swiper và phần tử thanh cuộn khi thanh cuộn bị vô hiệu theo breakpoint</target></trans-unit>
-      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve" approved="yes">
-				<source>Snap slider position to slides when you release scrollbar</source>
-			<target state="final">Khớp vị trí slider vào slide khi nhả thanh cuộn</target></trans-unit>
-      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in vertical Swiper</source>
-			<target state="final">Lớp CSS gán cho thanh cuộn trong Swiper dọc</target></trans-unit>
-      <trans-unit id="options.freeMode.enabled" xml:space="preserve" approved="yes">
-				<source>Enable free mode</source>
-			<target state="final">Bật chế độ tự do</target></trans-unit>
-      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve" approved="yes">
-				<source>Minimum touchmove-velocity for free mode momentum</source>
-			<target state="final">Vận tốc touchmove tối thiểu cho quán tính chế độ tự do</target></trans-unit>
-      <trans-unit id="options.freeMode.momentum" xml:space="preserve" approved="yes">
-				<source>Enable momentum in free mode</source>
-			<target state="final">Bật quán tính trong chế độ tự do</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve" approved="yes">
-				<source>Enable momentum bounce in free mode</source>
-			<target state="final">Bật nảy quán tính trong chế độ tự do</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve" approved="yes">
-				<source>Momentum bounce ratio</source>
-			<target state="final">Tỷ lệ nảy quán tính</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumRatio" xml:space="preserve" approved="yes">
-				<source>Momentum ratio</source>
-			<target state="final">Tỷ lệ quán tính</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve" approved="yes">
-				<source>Momentum velocity ratio</source>
-			<target state="final">Tỷ lệ vận tốc quán tính</target></trans-unit>
-      <trans-unit id="options.freeMode.sticky" xml:space="preserve" approved="yes">
-				<source>Snap to slides in free mode</source>
-			<target state="final">Khớp vào slide trong chế độ tự do</target></trans-unit>
-      <trans-unit id="options.grid.fill" xml:space="preserve" approved="yes">
-				<source>How slides should fill rows (by column or by row)</source>
-			<target state="final">Cách slide điền vào hàng (theo cột hoặc theo hàng)</target></trans-unit>
-      <trans-unit id="options.grid.rows" xml:space="preserve" approved="yes">
-				<source>Number of slides rows (multirow layout)</source>
-			<target state="final">Số hàng slide (bố cục nhiều hàng)</target></trans-unit>
-      <trans-unit id="options.parallax.enabled" xml:space="preserve" approved="yes">
-				<source>Enable parallaxed elements inside the slider</source>
-			<target state="final">Bật phần tử parallax bên trong slider</target></trans-unit>
-      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve" approved="yes">
-				<source>Enables slides cross fade</source>
-			<target state="final">Bật mờ chéo giữa các slide</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve" approved="yes">
-				<source>Depth offset in px (slides translate in Z axis)</source>
-			<target state="final">Độ lệch chiều sâu (px) (slide dịch theo trục Z)</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve" approved="yes">
-				<source>Effect multiplier</source>
-			<target state="final">Hệ số nhân hiệu ứng</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Slide rotate in degrees</source>
-			<target state="final">Góc xoay slide (độ)</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve" approved="yes">
-				<source>Slide scale effect</source>
-			<target state="final">Hiệu ứng tỷ lệ slide</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Bật bóng đổ slide</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve" approved="yes">
-				<source>Stretch space between slides (px or %)</source>
-			<target state="final">Khoảng cách giãn giữa các slide (px hoặc %)</target></trans-unit>
-      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve" approved="yes">
-				<source>Limit edge slides rotation</source>
-			<target state="final">Giới hạn xoay của slide ở rìa</target></trans-unit>
-      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Bật bóng đổ slide</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve" approved="yes">
-				<source>Enables main slider shadow</source>
-			<target state="final">Bật bóng đổ slider chính</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve" approved="yes">
-				<source>Main shadow offset in px</source>
-			<target state="final">Độ lệch bóng chính (px)</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve" approved="yes">
-				<source>Main shadow scale ratio</source>
-			<target state="final">Tỷ lệ co giãn bóng chính</target></trans-unit>
-      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Bật bóng đổ slide</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve" approved="yes">
-				<source>Offset distance per slide (in px)</source>
-			<target state="final">Khoảng cách lệch mỗi slide (px)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve" approved="yes">
-				<source>Rotate angle per slide (in degrees)</source>
-			<target state="final">Góc xoay mỗi slide (độ)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Enables cards rotation</source>
-			<target state="final">Bật xoay thẻ</target></trans-unit>
-      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Bật bóng đổ slide</target></trans-unit>
-      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve" approved="yes">
-				<source>Limit progress/offset to amount of side slides</source>
-			<target state="final">Giới hạn tiến trình/lệch theo số slide bên</target></trans-unit>
-      <trans-unit id="options.creativeEffect.next" xml:space="preserve" approved="yes">
-				<source>Next slide transformations</source>
-			<target state="final">Biến đổi slide tiếp theo</target></trans-unit>
-      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve" approved="yes">
-				<source>Enable 3D perspective for custom transforms</source>
-			<target state="final">Bật phối cảnh 3D cho biến đổi tùy chỉnh</target></trans-unit>
-      <trans-unit id="options.creativeEffect.prev" xml:space="preserve" approved="yes">
-				<source>Previous slide transformations</source>
-			<target state="final">Biến đổi slide trước đó</target></trans-unit>
-      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve" approved="yes">
-				<source>Multiply slide transformations and opacity</source>
-			<target state="final">Nhân biến đổi slide và độ mờ</target></trans-unit>
-      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve" approved="yes">
-				<source>Split shadow opacity per slide based on limitProgress</source>
-			<target state="final">Tách độ mờ bóng theo từng slide dựa trên limitProgress</target></trans-unit>
-      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve" approved="yes">
-				<source>Auto scroll offset for thumbs</source>
-			<target state="final">Độ lệch tự cuộn cho hình thu nhỏ</target></trans-unit>
-      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve" approved="yes">
-				<source>Enable multiple active thumbnail slides</source>
-			<target state="final">Bật nhiều slide hình thu nhỏ hoạt động</target></trans-unit>
-      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve" approved="yes">
-				<source>Additional class for activated thumbs swiper slide</source>
-			<target state="final">Lớp bổ sung cho slide swiper hình thu nhỏ đang kích hoạt</target></trans-unit>
-      <trans-unit id="options.thumbs.swiper" xml:space="preserve" approved="yes">
-				<source>Swiper instance or parameters for thumbs swiper</source>
-			<target state="final">Thể hiện Swiper hoặc tham số cho swiper hình thu nhỏ</target></trans-unit>
-      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve" approved="yes">
-				<source>Additional class for thumbs swiper container</source>
-			<target state="final">Lớp bổ sung cho vùng chứa swiper hình thu nhỏ</target></trans-unit>
-      <trans-unit id="options.zoom.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom</source>
-			<target state="final">Bật/tắt thu phóng</target></trans-unit>
-      <trans-unit id="options.zoom.containerClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoom container</source>
-			<target state="final">Lớp CSS của vùng chứa thu phóng</target></trans-unit>
-      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve" approved="yes">
-				<source>Limit zoom to original image size</source>
-			<target state="final">Giới hạn thu phóng theo kích thước ảnh gốc</target></trans-unit>
-      <trans-unit id="options.zoom.maxRatio" xml:space="preserve" approved="yes">
-				<source>Maximum image zoom multiplier</source>
-			<target state="final">Hệ số thu phóng ảnh tối đa</target></trans-unit>
-      <trans-unit id="options.zoom.minRatio" xml:space="preserve" approved="yes">
-				<source>Minimal image zoom multiplier</source>
-			<target state="final">Hệ số thu phóng ảnh tối thiểu</target></trans-unit>
-      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve" approved="yes">
-				<source>Pan zoomed image on mouse move</source>
-			<target state="final">Di chuyển ảnh đã phóng khi di chuột</target></trans-unit>
-      <trans-unit id="options.zoom.toggle" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom-in by double tap</source>
-			<target state="final">Bật/tắt phóng to bằng chạm hai lần</target></trans-unit>
-      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoomed in container</source>
-			<target state="final">Lớp CSS của vùng chứa đã phóng to</target></trans-unit>
-      <trans-unit id="options.keyboard.enabled" xml:space="preserve" approved="yes">
-				<source>Enable keyboard control</source>
-			<target state="final">Bật điều khiển bằng bàn phím</target></trans-unit>
-      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve" approved="yes">
-				<source>Control sliders only in viewport</source>
-			<target state="final">Chỉ điều khiển slider trong khung nhìn</target></trans-unit>
-      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve" approved="yes">
-				<source>Enable keyboard navigation by Page Up/Down keys</source>
-			<target state="final">Bật điều hướng bàn phím bằng phím Page Up/Down</target></trans-unit>
-      <trans-unit id="options.keyboard.speed" xml:space="preserve" approved="yes">
-				<source>Speed of keyboard navigation transitions (ms)</source>
-			<target state="final">Tốc độ chuyển tiếp điều hướng bàn phím (ms)</target></trans-unit>
-      <trans-unit id="options.mousewheel.enabled" xml:space="preserve" approved="yes">
-				<source>Enable mousewheel control</source>
-			<target state="final">Bật điều khiển bằng bánh xe chuột</target></trans-unit>
-      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for mousewheel events target</source>
-			<target state="final">Bộ chọn CSS hoặc phần tử HTML cho đích sự kiện bánh xe chuột</target></trans-unit>
-      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve" approved="yes">
-				<source>Force mousewheel swipes to axis</source>
-			<target state="final">Ép thao tác vuốt bánh xe theo trục</target></trans-unit>
-      <trans-unit id="options.mousewheel.invert" xml:space="preserve" approved="yes">
-				<source>Invert sliding direction</source>
-			<target state="final">Đảo hướng trượt</target></trans-unit>
-      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve" approved="yes">
-				<source>Class name to ignore mousewheel scrolling</source>
-			<target state="final">Lớp để bỏ qua cuộn bánh xe chuột</target></trans-unit>
-      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve" approved="yes">
-				<source>Release mousewheel event on edges</source>
-			<target state="final">Giải phóng sự kiện bánh xe ở rìa</target></trans-unit>
-      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve" approved="yes">
-				<source>Mousewheel sensitivity multiplier</source>
-			<target state="final">Hệ số nhân độ nhạy bánh xe chuột</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll delta to trigger slide change</source>
-			<target state="final">Delta cuộn tối thiểu để kích hoạt chuyển slide</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
-			<target state="final">Delta thời gian cuộn tối thiểu (ms) để kích hoạt chuyển slide</target></trans-unit>
-      <trans-unit id="options.virtualslides" xml:space="preserve" approved="yes">
-				<source>Virtual Slides</source>
-			<target state="final">Slide ảo</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides after active slide</source>
-			<target state="final">Tăng số slide dựng sẵn sau slide đang hoạt động</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides before active slide</source>
-			<target state="final">Tăng số slide dựng sẵn trước slide đang hoạt động</target></trans-unit>
-      <trans-unit id="options.virtualslides.cache" xml:space="preserve" approved="yes">
-				<source>Enable DOM cache of rendered slides</source>
-			<target state="final">Bật bộ nhớ đệm DOM cho các slide đã dựng</target></trans-unit>
-      <trans-unit id="options.virtualslides.enabled" xml:space="preserve" approved="yes">
-				<source>Enable virtual slides</source>
-			<target state="final">Bật slide ảo</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve" approved="yes">
-				<source>Function for external rendering (e.g. React/Vue)</source>
-			<target state="final">Hàm dựng bên ngoài (ví dụ: React/Vue)</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve" approved="yes">
-				<source>Update Swiper layout after renderExternal</source>
-			<target state="final">Cập nhật bố cục Swiper sau renderExternal</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve" approved="yes">
-				<source>Function to render slide</source>
-			<target state="final">Hàm dựng slide</target></trans-unit>
-      <trans-unit id="options.virtualslides.slides" xml:space="preserve" approved="yes">
-				<source>Array with slides</source>
-			<target state="final">Mảng các slide</target></trans-unit>
-      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve" approved="yes">
-				<source>Slide size for slidesPerView: auto (in px)</source>
-			<target state="final">Kích thước slide cho slidesPerView: auto (px)</target></trans-unit>
-      <trans-unit id="options.hashNavigation" xml:space="preserve" approved="yes">
-				<source>Hash Navigation</source>
-			<target state="final">Điều hướng Hash</target></trans-unit>
-      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve" approved="yes">
-				<source>Function to get slide index by hash (for virtual slides)</source>
-			<target state="final">Hàm lấy chỉ số slide theo hash (cho slide ảo)</target></trans-unit>
-      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve" approved="yes">
-				<source>Replace current URL state instead of adding to history</source>
-			<target state="final">Thay trạng thái URL hiện tại thay vì thêm vào lịch sử</target></trans-unit>
-      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve" approved="yes">
-				<source>Enable navigation by browser history/hash</source>
-			<target state="final">Bật điều hướng theo lịch sử/hash trình duyệt</target></trans-unit>
-      <trans-unit id="options.slidesPerView" approved="yes">
-        <source>Slides per view</source>
-        <target state="final">Số slide hiển thị</target>
-      </trans-unit>
-      <trans-unit id="options.spaceBetween" approved="yes">
-        <source>Space between slides (in px)</source>
-        <target state="final">Khoảng cách giữa các slide (px)</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroup" approved="yes">
-        <source>Number of slides in group</source>
-        <target state="final">Số slide trong một nhóm</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</body>
   </file>
 </xliff>
