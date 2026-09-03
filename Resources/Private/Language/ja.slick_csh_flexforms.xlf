@@ -3,144 +3,54 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ja">
     <header/>
     <body>
-      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve" approved="yes">
-				<source>Enables tabbing and arrow key navigation</source>
-			<target state="final">タブ移動と矢印キーによるナビゲーションを有効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve" approved="yes">
-				<source>Enables adaptive height for single slide horizontal carousels.</source>
-			<target state="final">単一スライドの水平カルーセルで高さを自動調整します</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
-				<source>Enables Autoplay</source>
-			<target state="final">自動再生を有効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve" approved="yes">
-				<source>Autoplay Speed in milliseconds</source>
-			<target state="final">自動再生の速度（ミリ秒）</target></trans-unit>
-      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve" approved="yes">
-				<source>Prev/Next Arrows</source>
-			<target state="final">「前へ／次へ」矢印</target></trans-unit>
-      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
-				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
-			<target state="final">このスライダーを別のスライダーのナビゲーションとして使用します（クラスまたはID）</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">ナビゲーション矢印を配置する場所を変更します（Selector, htmlString, Array, Element, jQuery object）</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">ナビゲーションドットを配置する場所を変更します（Selector, htmlString, Array, Element, jQuery object）</target></trans-unit>
-      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
-			<target state="final">ノードを選択するか、「前へ」矢印のHTMLをカスタマイズできます。</target></trans-unit>
-      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
-			<target state="final">ノードを選択するか、「次へ」矢印のHTMLをカスタマイズできます。</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve" approved="yes">
-				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
-			<target state="final">前後のスライドが部分的に見える中央寄せ表示を有効にします。slidesToShowの値が奇数の場合に使用します。</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
-				<source>Side padding when in center mode (px or %)</source>
-			<target state="final">中央寄せモード時のサイド余白（px または %）</target></trans-unit>
-      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
-				<source>CSS3 Animation Easing</source>
-			<target state="final">CSS3アニメーションのイージング</target></trans-unit>
-      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve" approved="yes">
-				<source>Custom paging templates. See source for use example.</source>
-			<target state="final">カスタムページングテンプレート。使用例はソースを参照してください。</target></trans-unit>
-      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
-				<source>Show dot indicators</source>
-			<target state="final">ドットインジケーターを表示します</target></trans-unit>
-      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve" approved="yes">
-				<source>Class for slide indicator dots container</source>
-			<target state="final">スライドインジケーターのドットコンテナのクラス</target></trans-unit>
-      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve" approved="yes">
-				<source>Enable mouse dragging</source>
-			<target state="final">マウスドラッグを有効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve" approved="yes">
-				<source>Enable fade</source>
-			<target state="final">フェードを有効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve" approved="yes">
-				<source>Enable focus on selected element (click)</source>
-			<target state="final">選択した要素にフォーカスを有効にします（クリック）</target></trans-unit>
-      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve" approved="yes">
-				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
-			<target state="final">jQueryアニメーションにイージングを追加します。イージングライブラリまたはデフォルトのイージングメソッドと併用します。</target></trans-unit>
-      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve" approved="yes">
-				<source>Resistance when swiping edges of non-infinite carousels</source>
-			<target state="final">非ループのカルーセルで端をスワイプした際の抵抗</target></trans-unit>
-      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
-				<source>Infinite loop sliding</source>
-			<target state="final">無限ループのスライド</target></trans-unit>
-      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
-				<source>Slide to start on</source>
-			<target state="final">開始時のスライド</target></trans-unit>
-      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
-				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
-			<target state="final">遅延読み込みの方式を設定します。'ondemand' または 'progressive' を指定できます。</target></trans-unit>
-      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve" approved="yes">
-				<source>Responsive slick.settings use mobile first calculation</source>
-			<target state="final">レスポンシブ設定でモバイルファーストの計算を使用します</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Focus</source>
-			<target state="final">フォーカス時に自動再生を一時停止します</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Hover</source>
-			<target state="final">ホバー時に自動再生を一時停止します</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay when a dot is hovered</source>
-			<target state="final">ドットにホバーした際に自動再生を一時停止します</target></trans-unit>
-      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve" approved="yes">
-				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
-			<target state="final">レスポンシブオブジェクトが反応する幅。'window'、'slider'、'min'（小さい方）を指定できます。</target></trans-unit>
-      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve" approved="yes">
-				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
-			<target state="final">1より大きい値を設定するとグリッドモードになります。slidesPerRowで各列のスライド数を設定します。</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve" approved="yes">
-				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
-			<target state="final">rowsオプションでグリッドモードを初期化した場合に、各グリッド行のスライド数を設定します。</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve" approved="yes">
-				<source># of slides to show</source>
-			<target state="final">表示するスライド数</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve" approved="yes">
-				<source># of slides to scroll</source>
-			<target state="final">スクロールするスライド数</target></trans-unit>
-      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
-				<source>Slide/Fade animation speed</source>
-			<target state="final">スライド／フェードアニメーションの速度</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
-				<source>Enable swiping</source>
-			<target state="final">スワイプを有効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve" approved="yes">
-				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
-			<target state="final">slidesToScrollに関係なく、ユーザーがスライドへ直接ドラッグまたはスワイプできるようにします</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve" approved="yes">
-				<source>Enable slide motion with touch</source>
-			<target state="final">タッチによるスライド操作を有効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve" approved="yes">
-				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
-			<target state="final">スライドを進めるには、ユーザーがスライダー幅の（1/touchThreshold）倍をスワイプする必要があります</target></trans-unit>
-      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transitions</source>
-			<target state="final">CSSトランジションを有効／無効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transforms</source>
-			<target state="final">CSSトランスフォームを有効／無効にします</target></trans-unit>
-      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve" approved="yes">
-				<source>Variable width slides</source>
-			<target state="final">可変幅のスライド</target></trans-unit>
-      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
-				<source>Vertical slide mode</source>
-			<target state="final">縦方向のスライドモード</target></trans-unit>
-      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
-				<source>Vertical swipe mode</source>
-			<target state="final">縦方向のスワイプモード</target></trans-unit>
-      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve" approved="yes">
-				<source>Change the slider's direction to become right-to-left</source>
-			<target state="final">スライダーの方向を右から左に変更します</target></trans-unit>
-      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve" approved="yes">
-				<source>Ignores requests to advance the slide while animating</source>
-			<target state="final">アニメーション中のスライド送りリクエストを無視します</target></trans-unit>
-      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve" approved="yes">
-				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
-			<target state="final">スライドのzIndex値を設定します。IE9以前で便利です。</target></trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+		</body>
   </file>
 </xliff>
