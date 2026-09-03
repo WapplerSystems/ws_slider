@@ -3,209 +3,56 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="vi">
     <header/>
     <body>
-      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
-        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
-        <target state="final">Điều khiển hành vi hoạt ảnh. Với 'carousel', mọi thứ trượt sang một bên. Với 'gallery', hoạt ảnh mờ dần (fade) được sử dụng và tất cả các phần tử được thay đổi cùng lúc.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
-        <source>The axis of the slider.</source>
-        <target state="final">Trục của slider.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
-        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
-        <target state="final">Số lượng slide được hiển thị trong viewport. Nếu số slide nhỏ hơn hoặc bằng số này, slider sẽ không được khởi tạo.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
-        <source>Space between slides (in “px”).</source>
-        <target state="final">Khoảng cách giữa các slide (tính bằng “px”).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
-        <source>Space on the outside (in “px”).</source>
-        <target state="final">Khoảng cách bên ngoài (tính bằng “px”).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
-        <source>Controls width attribute of the slides.</source>
-        <target state="final">Điều khiển thuộc tính chiều rộng (width) của các slide.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
-        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
-        <target state="final">Nếu được bật, chiều rộng của mỗi slide sẽ là chiều rộng tự nhiên của nó như một khối inline-block.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
-        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
-        <target state="final">Chiều rộng viewport tối đa cho fixedWidth/autoWidth.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
-        <source>Number of slides going on one “click”.</source>
-        <target state="final">Số lượng slide dịch chuyển trong một lần “click”.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
-        <source>Center the active slide in the viewport.</source>
-        <target state="final">Căn giữa slide đang hoạt động trong viewport.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
-        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
-        <target state="final">Điều khiển việc hiển thị và chức năng của các thành phần điều khiển (nút trước/sau). Nếu được bật, các điều khiển sẽ được hiển thị và kích hoạt đầy đủ chức năng. Để cải thiện khả năng truy cập, khi một nút trước/sau được focus, người dùng có thể điều khiển slider bằng các phím mũi tên trái/phải.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
-        <source>Controls controls position.</source>
-        <target state="final">Điều khiển vị trí của các nút điều khiển.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
-        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
-        <target state="final">Phần tử/bộ chọn (selector) chứa các nút trước/sau. controlsContainer phải có ít nhất 2 phần tử con.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
-        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">Nút “trước” tùy chỉnh. Tùy chọn này sẽ bị bỏ qua nếu controlsContainer là một phần tử Node hoặc một CSS selector.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
-        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">Nút “sau” tùy chỉnh. Tùy chọn này sẽ bị bỏ qua nếu controlsContainer là một phần tử Node hoặc một CSS selector.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
-        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
-        <target state="final">Điều khiển việc hiển thị và chức năng của các thành phần điều hướng (dots). Nếu được bật, điều hướng sẽ được hiển thị và kích hoạt đầy đủ chức năng.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
-        <source>Controls nav position.</source>
-        <target state="final">Điều khiển vị trí của điều hướng (nav).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
-        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
-        <target state="final">Phần tử/bộ chọn (selector) chứa các dots. navContainer phải có ít nhất số phần tử con bằng số slide.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
-        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
-        <target state="final">Xác định xem các dots có phải là hình thu nhỏ (thumbnail) hay không. Nếu được bật, chúng sẽ luôn hiển thị ngay cả khi có nhiều hơn 1 slide được hiển thị trong viewport.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
-        <source>Allows using arrow keys to switch slides.</source>
-        <target state="final">Cho phép sử dụng các phím mũi tên để chuyển slide.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
-        <source>Speed of the slide animation (in “ms”).</source>
-        <target state="final">Tốc độ của hoạt ảnh slide (tính bằng “ms”).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
-        <source>Toggles the automatic change of slides.</source>
-        <target state="final">Bật/tắt việc tự động chuyển slide.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
-        <source>Controls autoplay position.</source>
-        <target state="final">Điều khiển vị trí của autoplay.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
-        <source>Time between 2 autoplay slides change (in “ms”).</source>
-        <target state="final">Thời gian giữa 2 lần chuyển slide tự động (tính bằng “ms”).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
-        <source>Direction of slide movement (ascending/descending the slide index).</source>
-        <target state="final">Hướng di chuyển của slide (tăng/giảm chỉ số slide).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
-        <source>Stops sliding on mouseover.</source>
-        <target state="final">Dừng trượt khi di chuột qua (mouseover).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
-        <source>The customized autoplay start/stop button or selector.</source>
-        <target state="final">Nút hoặc bộ chọn (selector) bắt đầu/dừng autoplay tùy chỉnh.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
-        <source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-        <target state="final">Xuất markup của autoplayButton khi autoplay được bật nhưng không có autoplayButton tùy chỉnh được cung cấp.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
-        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
-        <target state="final">Tạm dừng trượt khi trang không hiển thị và tiếp tục khi trang hiển thị trở lại.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
-        <source>Name of intro animation class.</source>
-        <target state="final">Tên của class hoạt ảnh xuất hiện (intro).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
-        <source>Name of outro animation class.</source>
-        <target state="final">Tên của class hoạt ảnh biến mất (outro).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
-        <source>Name of default animation class.</source>
-        <target state="final">Tên của class hoạt ảnh mặc định.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
-        <source>Time between each gallery animation (in “ms”).</source>
-        <target state="final">Thời gian giữa mỗi hoạt ảnh gallery (tính bằng “ms”).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
-        <source>Moves throughout all the slides seamlessly.</source>
-        <target state="final">Di chuyển liên tục qua tất cả các slide một cách mượt mà.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
-        <source>Moves to the opposite edge when reaching the first or last slide.</source>
-        <target state="final">Di chuyển về phía đối diện khi đến slide đầu tiên hoặc cuối cùng.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
-        <source>Height of slider container changes according to each slide’s height.</source>
-        <target state="final">Chiều cao của container slider thay đổi theo chiều cao của từng slide.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
-				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
-                        NOTE:
-                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
-                        + data-src attribute with its value of the real image src is required;
-                        + width attribute for every image is required for autoWidth slider.</source>
-			<target state="final">Bật tính năng tải chậm (lazyload) cho các hình ảnh hiện không được xem, nhằm tiết kiệm băng thông (xem demo). LƯU Ý: + Class .tns-lazy-img cần được đặt trên mỗi hình ảnh muốn tải chậm nếu tùy chọn lazyloadSelector không được chỉ định; + Thuộc tính data-src với giá trị là src thực của hình ảnh là bắt buộc; + Thuộc tính width cho mỗi hình ảnh là bắt buộc đối với slider autoWidth.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
-        <source>The CSS selector for lazyload images.</source>
-        <target state="final">CSS selector cho các hình ảnh tải chậm (lazyload).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
-        <source>Activates input detection for touch devices.</source>
-        <target state="final">Kích hoạt phát hiện thao tác nhập cho các thiết bị cảm ứng (touch).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
-        <source>Changing slides by dragging them.</source>
-        <target state="final">Thay đổi slide bằng cách kéo chúng.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
-        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
-        <target state="final">Thao tác vuốt (swipe) hoặc kéo sẽ không được kích hoạt nếu góc không nằm trong phạm vi khi được thiết lập.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
-        <source>Prevent next transition while slider is transforming.</source>
-        <target state="final">Ngăn chuyển tiếp tiếp theo trong khi slider đang chuyển đổi.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
-        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
-        <target state="final">Ngăn trang cuộn khi touchmove. Nếu đặt là “auto”, slider sẽ kiểm tra trước xem hướng chạm có khớp với trục của slider hay không, rồi mới quyết định có ngăn cuộn trang hay không. Nếu đặt là “force”, slider sẽ luôn ngăn cuộn trang.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
-        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
-        <target state="final">Xác định mối quan hệ giữa các slider lồng nhau. Hãy đảm bảo chạy slider bên trong trước, nếu không chiều cao của container slider bên trong sẽ bị sai.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
-        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
-        <target state="final">Xác định xem slider có bị đóng băng hay không (các điều khiển, nav, autoplay và các chức năng khác sẽ ngừng hoạt động) khi tất cả các slide có thể hiển thị trong một trang.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
-        <source>Disable slider.</source>
-        <target state="final">Tắt slider.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
-        <source>The initial index of the slider.</source>
-        <target state="final">Chỉ số (index) ban đầu của slider.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
-        <source>Callback to be run on initialization.</source>
-        <target state="final">Callback được chạy khi khởi tạo.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
-        <source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-        <target state="final">Lưu các biến khả năng của trình duyệt vào localStorage và không phát hiện lại chúng mỗi khi slider chạy nếu được bật (true).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
-        <source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-        <target state="final">Thuộc tính Nonce tùy chọn cho thẻ style inline để cho phép sử dụng slider mà không cần nguồn unsafe-inline trong Content Security Policy.</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</body>
   </file>
 </xliff>
