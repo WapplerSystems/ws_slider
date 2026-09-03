@@ -4,66 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="options.interval" approved="yes">
-        <source>Interval</source>
-        <target state="final">Geçiş aralığı</target>
-      </trans-unit>
-      <trans-unit id="options.keyboard" approved="yes">
-        <source>Keyboard</source>
-        <target state="final">Klavye</target>
-      </trans-unit>
-      <trans-unit id="options.pause" approved="yes">
-        <source>Pause</source>
-        <target state="final">Duraklat</target>
-      </trans-unit>
-      <trans-unit id="options.ride" approved="yes">
-        <source>Ride</source>
-        <target state="final">Otomatik oynat</target>
-      </trans-unit>
-      <trans-unit id="options.ride.option.carousel" approved="yes">
-        <source>Carousel</source>
-        <target state="final">Karusel</target>
-      </trans-unit>
-      <trans-unit id="options.touch" approved="yes">
-        <source>Touch</source>
-        <target state="final">Dokunma</target>
-      </trans-unit>
-      <trans-unit id="options.wrap" approved="yes">
-        <source>Wrap</source>
-        <target state="final">Döngü</target>
-      </trans-unit>
-      <trans-unit id="options.control" approved="yes">
-        <source>Show control</source>
-        <target state="final">Kontrolleri göster</target>
-      </trans-unit>
-      <trans-unit id="options.indicators" approved="yes">
-        <source>Show indicators</source>
-        <target state="final">Göstergeleri göster</target>
-      </trans-unit>
-      <trans-unit id="options.title" approved="yes">
-        <source>Show title</source>
-        <target state="final">Başlığı göster</target>
-      </trans-unit>
-      <trans-unit id="options.description" approved="yes">
-        <source>Show description</source>
-        <target state="final">Açıklamayı göster</target>
-      </trans-unit>
-      <trans-unit id="options.startAt" approved="yes">
-        <source>Start at</source>
-        <target state="final">Başlangıç</target>
-      </trans-unit>
-      <trans-unit id="btn.previous" approved="yes">
-        <source>Previous</source>
-        <target state="final">Önceki</target>
-      </trans-unit>
-      <trans-unit id="btn.next" approved="yes">
-        <source>Next</source>
-        <target state="final">Sonraki</target>
-      </trans-unit>
-      <trans-unit id="btn.more" approved="yes">
-        <source>More</source>
-        <target state="final">Daha fazla</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
