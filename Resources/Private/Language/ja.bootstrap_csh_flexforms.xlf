@@ -3,10 +3,9 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ja">
     <header/>
     <body>
-      <trans-unit id="bootstrap.settings.js.startAt.description" approved="yes">
-        <source>The starting slide for the slider, in array notation.</source>
-        <target state="final">スライダーの開始位置となるスライドを配列表記で指定します。</target>
-      </trans-unit>
-    </body>
+
+			
+
+		</body>
   </file>
 </xliff>
