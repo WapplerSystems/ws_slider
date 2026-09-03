@@ -3,213 +3,56 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ja">
     <header/>
     <body>
-      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
-        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
-        <target state="final">アニメーションの動作を制御します。「carousel」ではすべてのスライドが横へスライドし、「gallery」ではフェードアニメーションが使用され、すべてのスライドが一度に切り替わります。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
-        <source>The axis of the slider.</source>
-        <target state="final">スライダーの軸。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
-        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
-        <target state="final">ビューポート内に表示されるスライドの数。スライドの数がこの値以下になる場合、スライダーは初期化されません。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
-        <source>Space between slides (in “px”).</source>
-        <target state="final">スライド間の間隔（「px」単位）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
-        <source>Space on the outside (in “px”).</source>
-        <target state="final">外側の余白（「px」単位）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
-        <source>Controls width attribute of the slides.</source>
-        <target state="final">スライドの width 属性を制御します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
-        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
-        <target state="final">有効にすると、各スライドの幅は inline-block ボックスとしての自然な幅になります。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
-        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
-        <target state="final">fixedWidth / autoWidth の場合のビューポートの最大幅。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
-        <source>Number of slides going on one “click”.</source>
-        <target state="final">1 回の「クリック」で移動するスライドの数。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
-        <source>Center the active slide in the viewport.</source>
-        <target state="final">アクティブなスライドをビューポートの中央に配置します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
-        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
-        <target state="final">コントロールコンポーネント（前へ／次へボタン）の表示と機能を制御します。有効にするとコントロールが表示され、すべての機能が追加されます。アクセシビリティ向上のため、前へ／次へボタンがフォーカスされている間は左右の矢印キーでスライダーを操作できます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
-        <source>Controls controls position.</source>
-        <target state="final">コントロールの位置を制御します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
-        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
-        <target state="final">前へ／次へボタンを囲むコンテナ要素またはセレクター。controlsContainer には少なくとも 2 つの子要素が必要です。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
-        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">カスタマイズされた「前へ」ボタン。controlsContainer が Node 要素または CSS セレクターの場合、このオプションは無視されます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
-        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">カスタマイズされた「次へ」ボタン。controlsContainer が Node 要素または CSS セレクターの場合、このオプションは無視されます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
-        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
-        <target state="final">ナビゲーションコンポーネント（ドット）の表示と機能を制御します。有効にするとナビゲーションが表示され、すべての機能が追加されます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
-        <source>Controls nav position.</source>
-        <target state="final">ナビゲーションの位置を制御します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
-        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
-        <target state="final">ドットを囲むコンテナ要素またはセレクター。navContainer には少なくともスライドと同数の子要素が必要です。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
-        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
-        <target state="final">ドットをサムネイルとして扱うかどうかを指定します。有効にすると、ビューポートに 1 つ以上のスライドが表示されている場合でも常に表示されます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
-        <source>Allows using arrow keys to switch slides.</source>
-        <target state="final">矢印キーでスライドを切り替えられるようにします。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
-        <source>Speed of the slide animation (in “ms”).</source>
-        <target state="final">スライドアニメーションの速度（「ms」単位）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
-        <source>Toggles the automatic change of slides.</source>
-        <target state="final">スライドの自動切り替えを切り替えます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
-        <source>Controls autoplay position.</source>
-        <target state="final">自動再生の位置を制御します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
-        <source>Time between 2 autoplay slides change (in “ms”).</source>
-        <target state="final">自動再生でスライドが切り替わるまでの間隔（「ms」単位）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
-        <source>Direction of slide movement (ascending/descending the slide index).</source>
-        <target state="final">スライド移動の方向（スライドインデックスの昇順／降順）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
-        <source>Stops sliding on mouseover.</source>
-        <target state="final">マウスオーバー時にスライドの切り替えを停止します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
-        <source>The customized autoplay start/stop button or selector.</source>
-        <target state="final">カスタマイズされた自動再生の開始／停止ボタンまたはセレクター。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
-        <source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-        <target state="final">autoplay が有効で、カスタマイズされた autoplayButton が指定されていない場合に autoplayButton のマークアップを出力します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
-        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
-        <target state="final">ページが非表示になったときにスライドの切り替えを一時停止し、ページが再び表示されたときに再開します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
-        <source>Name of intro animation class.</source>
-        <target state="final">表示（イントロ）アニメーションのクラス名。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
-        <source>Name of outro animation class.</source>
-        <target state="final">非表示（アウトロ）アニメーションのクラス名。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
-        <source>Name of default animation class.</source>
-        <target state="final">デフォルトのアニメーションクラス名。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
-        <source>Time between each gallery animation (in “ms”).</source>
-        <target state="final">各ギャラリーアニメーション間の時間（「ms」単位）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
-        <source>Moves throughout all the slides seamlessly.</source>
-        <target state="final">すべてのスライドをシームレスに循環します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
-        <source>Moves to the opposite edge when reaching the first or last slide.</source>
-        <target state="final">最初または最後のスライドに達したときに反対側の端へ移動します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
-        <source>Height of slider container changes according to each slide’s height.</source>
-        <target state="final">スライダーコンテナの高さが各スライドの高さに応じて変化します。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
-				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
-                        NOTE:
-                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
-                        + data-src attribute with its value of the real image src is required;
-                        + width attribute for every image is required for autoWidth slider.</source>
-			<target state="final">現在表示されていない画像の遅延読み込みを有効にして帯域幅を節約します（デモ参照）。
-注意:
-+ lazyloadSelector オプションが指定されていない場合、遅延読み込みするすべての画像に .tns-lazy-img クラスを設定する必要があります。
-+ 実際の画像 src の値を指定した data-src 属性が必要です。
-+ autoWidth スライダーの場合、すべての画像に width 属性が必要です。</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
-        <source>The CSS selector for lazyload images.</source>
-        <target state="final">遅延読み込み対象画像の CSS セレクター。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
-        <source>Activates input detection for touch devices.</source>
-        <target state="final">タッチデバイスの入力検出を有効にします。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
-        <source>Changing slides by dragging them.</source>
-        <target state="final">ドラッグによるスライドの切り替え。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
-        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
-        <target state="final">角度が設定範囲内にない場合、スワイプやドラッグはトリガーされません。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
-        <source>Prevent next transition while slider is transforming.</source>
-        <target state="final">スライダーが変形中の場合、次のトランジションを防ぎます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
-        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
-        <target state="final">touchmove 時にページのスクロールを防ぎます。「auto」に設定すると、スライダーはまずタッチ方向がスライダーの軸と一致するかを確認してから、ページのスクロールを防ぐかどうかを決定します。「force」に設定すると、スライダーは常にページのスクロールを防ぎます。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
-        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
-        <target state="final">入れ子になったスライダー間の関係を定義します。内側のスライダーを先に実行してください。そうしないと、内側のスライダーコンテナの高さが正しくありません。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
-        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
-        <target state="final">すべてのスライドが 1 ページに表示できる場合に、スライダーをフリーズするかどうかを指定します（コントロール、ナビゲーション、自動再生などの機能が動作を停止します）。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
-        <source>Disable slider.</source>
-        <target state="final">スライダーを無効にします。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
-        <source>The initial index of the slider.</source>
-        <target state="final">スライダーの初期インデックス。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
-        <source>Callback to be run on initialization.</source>
-        <target state="final">初期化時に実行するコールバック。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
-        <source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-        <target state="final">true に設定すると、ブラウザー能力の変数を localStorage に保存し、スライダー実行のたびに検出しなくなります。</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
-        <source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-        <target state="final">インライン style タグ用のオプションの Nonce 属性。Content Security Policy の unsafe-inline ソースなしでスライダーを使用できるようにします。</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</body>
   </file>
 </xliff>
