@@ -3,144 +3,54 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ko">
     <header/>
     <body>
-      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve" approved="yes">
-				<source>Enables tabbing and arrow key navigation</source>
-			<target state="final">탭 및 화살표 키 탐색을 활성화합니다</target></trans-unit>
-      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve" approved="yes">
-				<source>Enables adaptive height for single slide horizontal carousels.</source>
-			<target state="final">단일 슬라이드 가로 캐러셀의 높이 자동 조절을 활성화합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
-				<source>Enables Autoplay</source>
-			<target state="final">자동 재생(Autoplay)을 활성화합니다</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve" approved="yes">
-				<source>Autoplay Speed in milliseconds</source>
-			<target state="final">자동 재생 속도(밀리초)</target></trans-unit>
-      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve" approved="yes">
-				<source>Prev/Next Arrows</source>
-			<target state="final">"이전/다음" 화살표</target></trans-unit>
-      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
-				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
-			<target state="final">이 슬라이더를 다른 슬라이더의 내비게이션으로 사용합니다 (클래스 또는 ID 이름)</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">내비게이션 화살표가 삽입될 위치를 변경합니다 (Selector, htmlString, Array, Element, jQuery 객체)</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">내비게이션 도트가 삽입될 위치를 변경합니다 (Selector, htmlString, Array, Element, jQuery 객체)</target></trans-unit>
-      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
-			<target state="final">"이전" 화살표의 노드를 선택하거나 HTML을 사용자 지정할 수 있습니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
-			<target state="final">"다음" 화살표의 노드를 선택하거나 HTML을 사용자 지정할 수 있습니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve" approved="yes">
-				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
-			<target state="final">이전/다음 슬라이드가 부분적으로 보이는 중앙 정렬 보기를 활성화합니다. slidesToShow 개수가 홀수일 때 사용하세요.</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
-				<source>Side padding when in center mode (px or %)</source>
-			<target state="final">중앙 정렬 모드에서의 측면 패딩 (px 또는 %)</target></trans-unit>
-      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
-				<source>CSS3 Animation Easing</source>
-			<target state="final">CSS3 애니메이션 Easing</target></trans-unit>
-      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve" approved="yes">
-				<source>Custom paging templates. See source for use example.</source>
-			<target state="final">사용자 지정 페이징 템플릿. 사용 예시는 소스를 참조하세요.</target></trans-unit>
-      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
-				<source>Show dot indicators</source>
-			<target state="final">도트 표시기 표시</target></trans-unit>
-      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve" approved="yes">
-				<source>Class for slide indicator dots container</source>
-			<target state="final">슬라이드 표시기 도트 컨테이너의 클래스</target></trans-unit>
-      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve" approved="yes">
-				<source>Enable mouse dragging</source>
-			<target state="final">마우스 드래그 활성화</target></trans-unit>
-      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve" approved="yes">
-				<source>Enable fade</source>
-			<target state="final">페이드(fade) 활성화</target></trans-unit>
-      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve" approved="yes">
-				<source>Enable focus on selected element (click)</source>
-			<target state="final">선택된 요소에 포커스 활성화 (클릭)</target></trans-unit>
-      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve" approved="yes">
-				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
-			<target state="final">jQuery animate용 easing을 추가합니다. easing 라이브러리 또는 기본 easing 메서드와 함께 사용하세요.</target></trans-unit>
-      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve" approved="yes">
-				<source>Resistance when swiping edges of non-infinite carousels</source>
-			<target state="final">무한 루프가 아닌 캐러셀의 가장자리를 스와이프할 때의 저항</target></trans-unit>
-      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
-				<source>Infinite loop sliding</source>
-			<target state="final">무한 루프 슬라이딩</target></trans-unit>
-      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
-				<source>Slide to start on</source>
-			<target state="final">시작할 슬라이드</target></trans-unit>
-      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
-				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
-			<target state="final">지연 로딩 방식을 설정합니다. 'ondemand' 또는 'progressive' 사용 가능</target></trans-unit>
-      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve" approved="yes">
-				<source>Responsive slick.settings use mobile first calculation</source>
-			<target state="final">반응형 설정에 Mobile First 계산 방식을 사용합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Focus</source>
-			<target state="final">포커스 시 자동 재생 일시 정지</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Hover</source>
-			<target state="final">마우스 호버 시 자동 재생 일시 정지</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay when a dot is hovered</source>
-			<target state="final">도트에 마우스를 올리면 자동 재생 일시 정지</target></trans-unit>
-      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve" approved="yes">
-				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
-			<target state="final">반응형 객체가 반응하는 너비 기준입니다. 'window', 'slider' 또는 'min'(둘 중 작은 값)을 사용할 수 있습니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve" approved="yes">
-				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
-			<target state="final">1보다 큰 값으로 설정하면 그리드 모드가 활성화됩니다. 각 행의 슬라이드 개수는 slidesPerRow로 설정합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve" approved="yes">
-				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
-			<target state="final">rows 옵션으로 그리드 모드를 활성화했을 때, 각 그리드 행에 표시할 슬라이드 개수를 설정합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve" approved="yes">
-				<source># of slides to show</source>
-			<target state="final">표시할 슬라이드 개수</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve" approved="yes">
-				<source># of slides to scroll</source>
-			<target state="final">스크롤할 슬라이드 개수</target></trans-unit>
-      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
-				<source>Slide/Fade animation speed</source>
-			<target state="final">슬라이드/페이드 애니메이션 속도</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
-				<source>Enable swiping</source>
-			<target state="final">스와이프 활성화</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve" approved="yes">
-				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
-			<target state="final">slidesToScroll 값과 관계없이 사용자가 슬라이드를 직접 드래그하거나 스와이프할 수 있게 허용합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve" approved="yes">
-				<source>Enable slide motion with touch</source>
-			<target state="final">터치로 슬라이드 이동 활성화</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve" approved="yes">
-				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
-			<target state="final">슬라이드를 넘기려면 사용자가 슬라이더 너비의 (1/touchThreshold) 배 길이를 스와이프해야 합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transitions</source>
-			<target state="final">CSS Transitions 활성화/비활성화</target></trans-unit>
-      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transforms</source>
-			<target state="final">CSS Transforms 활성화/비활성화</target></trans-unit>
-      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve" approved="yes">
-				<source>Variable width slides</source>
-			<target state="final">가변 너비 슬라이드</target></trans-unit>
-      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
-				<source>Vertical slide mode</source>
-			<target state="final">세로 슬라이드 모드</target></trans-unit>
-      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
-				<source>Vertical swipe mode</source>
-			<target state="final">세로 스와이프 모드</target></trans-unit>
-      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve" approved="yes">
-				<source>Change the slider's direction to become right-to-left</source>
-			<target state="final">슬라이더 방향을 오른쪽에서 왼쪽(RTL)으로 변경합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve" approved="yes">
-				<source>Ignores requests to advance the slide while animating</source>
-			<target state="final">애니메이션 중 슬라이드 전환 요청을 무시합니다.</target></trans-unit>
-      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve" approved="yes">
-				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
-			<target state="final">슬라이드의 zIndex 값을 설정합니다. IE9 이하에서 유용합니다.</target></trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+		</body>
   </file>
 </xliff>
