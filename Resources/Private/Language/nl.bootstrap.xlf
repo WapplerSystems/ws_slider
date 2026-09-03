@@ -4,58 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="options.keyboard" approved="yes">
-        <source>Keyboard</source>
-        <target state="final">Toetsenbord</target>
-      </trans-unit>
-      <trans-unit id="options.pause" approved="yes">
-        <source>Pause</source>
-        <target state="final">Pauze</target>
-      </trans-unit>
-      <trans-unit id="options.ride" approved="yes">
-        <source>Ride</source>
-        <target state="final">Automatisch afspelen</target>
-      </trans-unit>
-      <trans-unit id="options.ride.option.carousel" approved="yes">
-        <source>Carousel</source>
-        <target state="final">Carrousel</target>
-      </trans-unit>
-      <trans-unit id="options.wrap" approved="yes">
-        <source>Wrap</source>
-        <target state="final">Doorlopend</target>
-      </trans-unit>
-      <trans-unit id="options.control" approved="yes">
-        <source>Show control</source>
-        <target state="final">Bediening tonen</target>
-      </trans-unit>
-      <trans-unit id="options.indicators" approved="yes">
-        <source>Show indicators</source>
-        <target state="final">Indicatoren tonen</target>
-      </trans-unit>
-      <trans-unit id="options.title" approved="yes">
-        <source>Show title</source>
-        <target state="final">Titel tonen</target>
-      </trans-unit>
-      <trans-unit id="options.description" approved="yes">
-        <source>Show description</source>
-        <target state="final">Beschrijving tonen</target>
-      </trans-unit>
-      <trans-unit id="options.startAt" approved="yes">
-        <source>Start at</source>
-        <target state="final">Starten bij</target>
-      </trans-unit>
-      <trans-unit id="btn.previous" approved="yes">
-        <source>Previous</source>
-        <target state="final">Vorige</target>
-      </trans-unit>
-      <trans-unit id="btn.next" approved="yes">
-        <source>Next</source>
-        <target state="final">Volgende</target>
-      </trans-unit>
-      <trans-unit id="btn.more" approved="yes">
-        <source>More</source>
-        <target state="final">Meer</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
