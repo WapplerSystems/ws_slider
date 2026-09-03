@@ -3,500 +3,172 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="nl">
     <header/>
     <body>
-      <trans-unit id="options.accessibility" approved="yes">
-        <source>Accessibility</source>
-        <target state="final">Toegankelijkheid</target>
-      </trans-unit>
-      <trans-unit id="options.arrows" approved="yes">
-        <source>Arrows</source>
-        <target state="final">Pijlen</target>
-      </trans-unit>
-      <trans-unit id="options.asNavFor" approved="yes">
-        <source>As Nav For</source>
-        <target state="final">Als navigatie voor</target>
-      </trans-unit>
-      <trans-unit id="options.appendArrows" approved="yes">
-        <source>Append Arrows</source>
-        <target state="final">Pijlen toevoegen aan</target>
-      </trans-unit>
-      <trans-unit id="options.appendDots" approved="yes">
-        <source>Append Dots</source>
-        <target state="final">Punten toevoegen aan</target>
-      </trans-unit>
-      <trans-unit id="options.prevArrow" approved="yes">
-        <source>Prev Arrow</source>
-        <target state="final">Vorige pijl</target>
-      </trans-unit>
-      <trans-unit id="options.nextArrow" approved="yes">
-        <source>Next Arrow</source>
-        <target state="final">Volgende pijl</target>
-      </trans-unit>
-      <trans-unit id="options.centerMode" approved="yes">
-        <source>Center Mode</source>
-        <target state="final">Centreren</target>
-      </trans-unit>
-      <trans-unit id="options.centerPadding" approved="yes">
-        <source>Center Padding</source>
-        <target state="final">Padding bij centreren</target>
-      </trans-unit>
-      <trans-unit id="options.cssEase" approved="yes">
-        <source>CSS3 animation Easing</source>
-        <target state="final">CSS3-animatie easing</target>
-      </trans-unit>
-      <trans-unit id="options.height" approved="yes">
-        <source>Height</source>
-        <target state="final">Hoogte</target>
-      </trans-unit>
-      <trans-unit id="options.width" approved="yes">
-        <source>Width</source>
-        <target state="final">Breedte</target>
-      </trans-unit>
-      <trans-unit id="options.direction" approved="yes">
-        <source>Direction</source>
-        <target state="final">Richting</target>
-      </trans-unit>
-      <trans-unit id="options.customClasses" approved="yes">
-        <source>Additional CSS classes</source>
-        <target state="final">Aanvullende CSS-klassen</target>
-      </trans-unit>
-      <trans-unit id="options.loopAddBlankSlides" approved="yes">
-        <source>Add blank slides to loop</source>
-        <target state="final">Lege slides aan loop toevoegen</target>
-      </trans-unit>
-      <trans-unit id="options.loopAdditionalSlides" approved="yes">
-        <source>Loop additional slides</source>
-        <target state="final">Extra slides in loop</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupAuto" approved="yes">
-        <source>Slides per group auto</source>
-        <target state="final">Slides per groep automatisch</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroupSkip" approved="yes">
-        <source>Slides per group skip</source>
-        <target state="final">Slides per groep overslaan</target>
-      </trans-unit>
-      <trans-unit id="options.loopPreventsSliding" approved="yes">
-        <source>Prevents sliding in loop</source>
-        <target state="final">Schuiven in loop voorkomen</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.nextSlideMessage" approved="yes">
-        <source>Next slide</source>
-        <target state="final">Volgende slide</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.prevSlideMessage" approved="yes">
-        <source>Previous slide</source>
-        <target state="final">Vorige slide</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.firstSlideMessage" approved="yes">
-        <source>This is the first slide</source>
-        <target state="final">Dit is de eerste slide</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.lastSlideMessage" approved="yes">
-        <source>This is the last slide</source>
-        <target state="final">Dit is de laatste slide</target>
-      </trans-unit>
-      <trans-unit id="options.a11y.paginationBulletMessage" approved="yes">
-        <source>Go to slide {{index}}</source>
-        <target state="final">Ga naar slide {{index}}</target>
-      </trans-unit>
-      <trans-unit id="options.autoplayProgress" approved="yes">
-        <source>Show autoplay progress indicator</source>
-        <target state="final">Voortgangsindicator autoplay tonen</target>
-      </trans-unit>
-      <trans-unit id="options.autoplay.delay" xml:space="preserve" approved="yes">
-				<source>Delay between transitions (in ms)</source>
-			<target state="final">Vertraging tussen overgangen (in ms)</target></trans-unit>
-      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve" approved="yes">
-				<source>Disable autoplay on interaction</source>
-			<target state="final">Autoplay uitschakelen bij interactie</target></trans-unit>
-      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve" approved="yes">
-				<source>Pause autoplay on mouse enter</source>
-			<target state="final">Autoplay pauzeren bij muis over</target></trans-unit>
-      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve" approved="yes">
-				<source>Autoplay in reverse direction</source>
-			<target state="final">Autoplay in omgekeerde richting</target></trans-unit>
-      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve" approved="yes">
-				<source>Stop autoplay on last slide</source>
-			<target state="final">Autoplay stoppen op laatste slide</target></trans-unit>
-      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve" approved="yes">
-				<source>Wait for transition before next autoplay</source>
-			<target state="final">Wachten op overgang voor volgende autoplay</target></trans-unit>
-      <trans-unit id="options.autoHeight" approved="yes">
-        <source>Auto height</source>
-        <target state="final">Automatische hoogte</target>
-      </trans-unit>
-      <trans-unit id="options.navigation.addIcons" xml:space="preserve" approved="yes">
-				<source>Add SVG icons to navigation buttons</source>
-			<target state="final">SVG-pictogrammen aan navigatieknoppen toevoegen</target></trans-unit>
-      <trans-unit id="options.navigation.disabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes disabled</source>
-			<target state="final">CSS-klasse voor uitgeschakelde navigatieknop</target></trans-unit>
-      <trans-unit id="options.navigation.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable navigation</source>
-			<target state="final">Navigatie in-/uitschakelen</target></trans-unit>
-      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it becomes hidden</source>
-			<target state="final">CSS-klasse voor verborgen navigatieknop</target></trans-unit>
-      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle navigation buttons visibility after click on slider container</source>
-			<target state="final">Navigatieknoppen tonen/verbergen na klik op slider</target></trans-unit>
-      <trans-unit id="options.navigation.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added to navigation button when it is disabled</source>
-			<target state="final">CSS-klasse voor vergrendelde navigatieknop</target></trans-unit>
-      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
-			<target state="final">CSS-klasse op slidercontainer bij navigatie uitgeschakeld door breakpoint</target></trans-unit>
-      <trans-unit id="options.navigation.nextEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the next button</source>
-			<target state="final">CSS-selector of HTML-element voor de knop 'volgende'</target></trans-unit>
-      <trans-unit id="options.navigation.prevEl" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for the previous button</source>
-			<target state="final">CSS-selector of HTML-element voor de knop 'vorige'</target></trans-unit>
-      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of currently active pagination bullet</source>
-			<target state="final">CSS-klasse van actieve paginatiepunt</target></trans-unit>
-      <trans-unit id="options.pagination.bulletClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of single pagination bullet</source>
-			<target state="final">CSS-klasse van een paginatiepunt</target></trans-unit>
-      <trans-unit id="options.pagination.bulletElement" xml:space="preserve" approved="yes">
-				<source>HTML tag for single pagination bullet (only for bullets type)</source>
-			<target state="final">HTML-tag voor paginatiepunt (alleen bij type punten)</target></trans-unit>
-      <trans-unit id="options.pagination.clickable" xml:space="preserve" approved="yes">
-				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
-			<target state="final">Klikken op paginatiepunt verspringt slide</target></trans-unit>
-      <trans-unit id="options.pagination.clickableClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is clickable</source>
-			<target state="final">CSS-klasse voor klikbare paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.currentClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with currently active index in fraction pagination</source>
-			<target state="final">CSS-klasse van actieve index bij fractie-paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve" approved="yes">
-				<source>Show only a few bullets at the same time (for many slides)</source>
-			<target state="final">Slechts enkele punten tegelijk tonen</target></trans-unit>
-      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve" approved="yes">
-				<source>Number of main bullets visible when dynamicBullets enabled</source>
-			<target state="final">Aantal hoofdpunten bij dynamische punten</target></trans-unit>
-      <trans-unit id="options.pagination.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with pagination</source>
-			<target state="final">CSS-selector of HTML-element van de paginatiecontainer</target></trans-unit>
-      <trans-unit id="options.pagination.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable pagination</source>
-			<target state="final">Paginatie in-/uitschakelen</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve" approved="yes">
-				<source>Format function for current number in fraction pagination</source>
-			<target state="final">Formaatfunctie voor huidig nummer bij fractie-paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve" approved="yes">
-				<source>Format function for total number in fraction pagination</source>
-			<target state="final">Formaatfunctie voor totaal bij fractie-paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination when it becomes inactive</source>
-			<target state="final">CSS-klasse voor inactieve paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve" approved="yes">
-				<source>Toggle pagination container visibility after click on slider container</source>
-			<target state="final">Paginatie tonen/verbergen na klik op slider</target></trans-unit>
-      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in horizontal Swiper</source>
-			<target state="final">CSS-klasse voor paginatie bij horizontale slider</target></trans-unit>
-      <trans-unit id="options.pagination.lockClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination when it is disabled</source>
-			<target state="final">CSS-klasse voor uitgeschakelde paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.modifierClass" xml:space="preserve" approved="yes">
-				<source>Prefix for modifier CSS class name for pagination</source>
-			<target state="final">Voorvoegsel voor modifier-CSS-klasse van paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
-			<target state="final">CSS-klasse op container en paginatie bij uitgeschakeld door breakpoint</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar fill element</source>
-			<target state="final">CSS-klasse van vul-element van voortgangsbalk</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve" approved="yes">
-				<source>Progressbar opposite to Swiper's direction</source>
-			<target state="final">Voortgangsbalk tegengesteld aan sliderrichting</target></trans-unit>
-      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of pagination progressbar opposite</source>
-			<target state="final">CSS-klasse van tegengestelde voortgangsbalk</target></trans-unit>
-      <trans-unit id="options.pagination.renderBullet" xml:space="preserve" approved="yes">
-				<source>Custom function for pagination bullets (only for bullets type)</source>
-			<target state="final">Eigen functie voor paginatiepunten (alleen bij type punten)</target></trans-unit>
-      <trans-unit id="options.pagination.renderCustom" xml:space="preserve" approved="yes">
-				<source>Custom function for custom pagination type</source>
-			<target state="final">Eigen functie voor aangepast paginatietype</target></trans-unit>
-      <trans-unit id="options.pagination.renderFraction" xml:space="preserve" approved="yes">
-				<source>Custom function for fraction pagination type</source>
-			<target state="final">Eigen functie voor fractie-paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve" approved="yes">
-				<source>Custom function for progressbar pagination type</source>
-			<target state="final">Eigen functie voor voortgangsbalk-paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.totalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of the element with total number in fraction pagination</source>
-			<target state="final">CSS-klasse van het totale nummer bij fractie-paginatie</target></trans-unit>
-      <trans-unit id="options.pagination.type" xml:space="preserve" approved="yes">
-				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
-			<target state="final">Type paginatie (punten, fractie, voortgangsbalk, aangepast)</target></trans-unit>
-      <trans-unit id="options.pagination.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to pagination in vertical Swiper</source>
-			<target state="final">CSS-klasse voor paginatie bij verticale slider</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar draggable element CSS class</source>
-			<target state="final">CSS-klasse van versleepbaar schuifbalkelement</target></trans-unit>
-      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve" approved="yes">
-				<source>Size of scrollbar draggable element in px</source>
-			<target state="final">Grootte van versleepbaar element (px)</target></trans-unit>
-      <trans-unit id="options.scrollbar.draggable" xml:space="preserve" approved="yes">
-				<source>Enable draggable scrollbar</source>
-			<target state="final">Versleepbare schuifbalk inschakelen</target></trans-unit>
-      <trans-unit id="options.scrollbar.el" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element of the container with scrollbar</source>
-			<target state="final">CSS-selector of HTML-element van de schuifbalkcontainer</target></trans-unit>
-      <trans-unit id="options.scrollbar.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable scrollbar</source>
-			<target state="final">Schuifbalk in-/uitschakelen</target></trans-unit>
-      <trans-unit id="options.scrollbar.hide" xml:space="preserve" approved="yes">
-				<source>Hide scrollbar automatically after user interaction</source>
-			<target state="final">Schuifbalk automatisch verbergen na interactie</target></trans-unit>
-      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in horizontal Swiper</source>
-			<target state="final">CSS-klasse voor schuifbalk bij horizontale slider</target></trans-unit>
-      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve" approved="yes">
-				<source>Scrollbar element additional CSS class when it is disabled</source>
-			<target state="final">Extra CSS-klasse voor uitgeschakelde schuifbalk</target></trans-unit>
-      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve" approved="yes">
-				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
-			<target state="final">CSS-klasse op container en schuifbalk bij uitgeschakeld door breakpoint</target></trans-unit>
-      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve" approved="yes">
-				<source>Snap slider position to slides when you release scrollbar</source>
-			<target state="final">Naar slide uitlijnen bij loslaten van schuifbalk</target></trans-unit>
-      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve" approved="yes">
-				<source>CSS class name set to scrollbar in vertical Swiper</source>
-			<target state="final">CSS-klasse voor schuifbalk bij verticale slider</target></trans-unit>
-      <trans-unit id="options.freeMode.enabled" xml:space="preserve" approved="yes">
-				<source>Enable free mode</source>
-			<target state="final">Free mode inschakelen</target></trans-unit>
-      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve" approved="yes">
-				<source>Minimum touchmove-velocity for free mode momentum</source>
-			<target state="final">Minimale touchmove-snelheid voor free mode-momentum</target></trans-unit>
-      <trans-unit id="options.freeMode.momentum" xml:space="preserve" approved="yes">
-				<source>Enable momentum in free mode</source>
-			<target state="final">Momentum in free mode inschakelen</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve" approved="yes">
-				<source>Enable momentum bounce in free mode</source>
-			<target state="final">Momentum-bounce in free mode inschakelen</target></trans-unit>
-      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve" approved="yes">
-				<source>Momentum bounce ratio</source>
-			<target state="final">Momentum-bounce ratio</target></trans-unit>
-      <trans-unit id="options.freeMode.sticky" xml:space="preserve" approved="yes">
-				<source>Snap to slides in free mode</source>
-			<target state="final">In free mode naar slides uitlijnen</target></trans-unit>
-      <trans-unit id="options.grid.fill" xml:space="preserve" approved="yes">
-				<source>How slides should fill rows (by column or by row)</source>
-			<target state="final">Hoe slides rijen vullen (per kolom of per rij)</target></trans-unit>
-      <trans-unit id="options.grid.rows" xml:space="preserve" approved="yes">
-				<source>Number of slides rows (multirow layout)</source>
-			<target state="final">Aantal rijen slides (meerrijige layout)</target></trans-unit>
-      <trans-unit id="options.parallax.enabled" xml:space="preserve" approved="yes">
-				<source>Enable parallaxed elements inside the slider</source>
-			<target state="final">Parallax-elementen in de slider inschakelen</target></trans-unit>
-      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve" approved="yes">
-				<source>Enables slides cross fade</source>
-			<target state="final">Crossfade van slides inschakelen</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve" approved="yes">
-				<source>Depth offset in px (slides translate in Z axis)</source>
-			<target state="final">Diepte-offset in px (slides verschuiven in Z-as)</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve" approved="yes">
-				<source>Effect multiplier</source>
-			<target state="final">Effectvermenigvuldiger</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Slide rotate in degrees</source>
-			<target state="final">Slide rotatie in graden</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve" approved="yes">
-				<source>Slide scale effect</source>
-			<target state="final">Schaaleffect van slide</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Slideschaduwen inschakelen</target></trans-unit>
-      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve" approved="yes">
-				<source>Stretch space between slides (px or %)</source>
-			<target state="final">Ruimte tussen slides uitrekken (px of %)</target></trans-unit>
-      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve" approved="yes">
-				<source>Limit edge slides rotation</source>
-			<target state="final">Rotatie van rande-slides beperken</target></trans-unit>
-      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Slideschaduwen inschakelen</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve" approved="yes">
-				<source>Enables main slider shadow</source>
-			<target state="final">Hoofdschaduw van de slider inschakelen</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve" approved="yes">
-				<source>Main shadow offset in px</source>
-			<target state="final">Hoofdschaduw-offset in px</target></trans-unit>
-      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve" approved="yes">
-				<source>Main shadow scale ratio</source>
-			<target state="final">Schaalverhouding hoofdschaduw</target></trans-unit>
-      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Slideschaduwen inschakelen</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve" approved="yes">
-				<source>Offset distance per slide (in px)</source>
-			<target state="final">Offsetafstand per slide (in px)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve" approved="yes">
-				<source>Rotate angle per slide (in degrees)</source>
-			<target state="final">Rotatiehoek per slide (in graden)</target></trans-unit>
-      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve" approved="yes">
-				<source>Enables cards rotation</source>
-			<target state="final">Kaartrotatie inschakelen</target></trans-unit>
-      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve" approved="yes">
-				<source>Enables slides shadows</source>
-			<target state="final">Slideschaduwen inschakelen</target></trans-unit>
-      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve" approved="yes">
-				<source>Limit progress/offset to amount of side slides</source>
-			<target state="final">Voortgang/offset beperken tot aantal zijslides</target></trans-unit>
-      <trans-unit id="options.creativeEffect.next" xml:space="preserve" approved="yes">
-				<source>Next slide transformations</source>
-			<target state="final">Transformaties van volgende slide</target></trans-unit>
-      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve" approved="yes">
-				<source>Enable 3D perspective for custom transforms</source>
-			<target state="final">3D-perspectief voor eigen transformaties inschakelen</target></trans-unit>
-      <trans-unit id="options.creativeEffect.prev" xml:space="preserve" approved="yes">
-				<source>Previous slide transformations</source>
-			<target state="final">Transformaties van vorige slide</target></trans-unit>
-      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve" approved="yes">
-				<source>Multiply slide transformations and opacity</source>
-			<target state="final">Slide-transformaties en dekking vermenigvuldigen</target></trans-unit>
-      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve" approved="yes">
-				<source>Split shadow opacity per slide based on limitProgress</source>
-			<target state="final">Schaduwdekking per slide splitsen op basis van limitProgress</target></trans-unit>
-      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve" approved="yes">
-				<source>Auto scroll offset for thumbs</source>
-			<target state="final">Auto-scroll offset voor thumbnails</target></trans-unit>
-      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve" approved="yes">
-				<source>Enable multiple active thumbnail slides</source>
-			<target state="final">Meerdere actieve thumbnails inschakelen</target></trans-unit>
-      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve" approved="yes">
-				<source>Additional class for activated thumbs swiper slide</source>
-			<target state="final">Extra klasse voor actieve thumbnailslide</target></trans-unit>
-      <trans-unit id="options.thumbs.swiper" xml:space="preserve" approved="yes">
-				<source>Swiper instance or parameters for thumbs swiper</source>
-			<target state="final">Swiper-instantie of parameters voor thumbnailslider</target></trans-unit>
-      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve" approved="yes">
-				<source>Additional class for thumbs swiper container</source>
-			<target state="final">Extra klasse voor thumbnailcontainer</target></trans-unit>
-      <trans-unit id="options.zoom.enabled" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom</source>
-			<target state="final">Zoom in-/uitschakelen</target></trans-unit>
-      <trans-unit id="options.zoom.containerClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoom container</source>
-			<target state="final">CSS-klasse van zoomcontainer</target></trans-unit>
-      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve" approved="yes">
-				<source>Limit zoom to original image size</source>
-			<target state="final">Zoom beperken tot originele afbeeldingsgrootte</target></trans-unit>
-      <trans-unit id="options.zoom.maxRatio" xml:space="preserve" approved="yes">
-				<source>Maximum image zoom multiplier</source>
-			<target state="final">Maximale zoomfactor</target></trans-unit>
-      <trans-unit id="options.zoom.minRatio" xml:space="preserve" approved="yes">
-				<source>Minimal image zoom multiplier</source>
-			<target state="final">Minimale zoomfactor</target></trans-unit>
-      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve" approved="yes">
-				<source>Pan zoomed image on mouse move</source>
-			<target state="final">Gezoomde afbeelding pannen bij muisbeweging</target></trans-unit>
-      <trans-unit id="options.zoom.toggle" xml:space="preserve" approved="yes">
-				<source>Enable/disable zoom-in by double tap</source>
-			<target state="final">Inzoomen door dubbel tikken in-/uitschakelen</target></trans-unit>
-      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve" approved="yes">
-				<source>CSS class name of zoomed in container</source>
-			<target state="final">CSS-klasse van ingezoomde container</target></trans-unit>
-      <trans-unit id="options.keyboard.enabled" xml:space="preserve" approved="yes">
-				<source>Enable keyboard control</source>
-			<target state="final">Toetsenbordbesturing inschakelen</target></trans-unit>
-      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve" approved="yes">
-				<source>Control sliders only in viewport</source>
-			<target state="final">Sliders alleen in viewport besturen</target></trans-unit>
-      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve" approved="yes">
-				<source>Enable keyboard navigation by Page Up/Down keys</source>
-			<target state="final">Toetsenbordnavigatie met Page Up/Down inschakelen</target></trans-unit>
-      <trans-unit id="options.keyboard.speed" xml:space="preserve" approved="yes">
-				<source>Speed of keyboard navigation transitions (ms)</source>
-			<target state="final">Snelheid van toetsenbordnavigatie-overgangen (ms)</target></trans-unit>
-      <trans-unit id="options.mousewheel.enabled" xml:space="preserve" approved="yes">
-				<source>Enable mousewheel control</source>
-			<target state="final">Muiswielbesturing inschakelen</target></trans-unit>
-      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve" approved="yes">
-				<source>CSS selector or HTML element for mousewheel events target</source>
-			<target state="final">CSS-selector of HTML-element voor muiswielevents</target></trans-unit>
-      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve" approved="yes">
-				<source>Force mousewheel swipes to axis</source>
-			<target state="final">Muiswielswipes naar as forceren</target></trans-unit>
-      <trans-unit id="options.mousewheel.invert" xml:space="preserve" approved="yes">
-				<source>Invert sliding direction</source>
-			<target state="final">Schuifrichting omkeren</target></trans-unit>
-      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve" approved="yes">
-				<source>Class name to ignore mousewheel scrolling</source>
-			<target state="final">Klasse om muiswielscrollen te negeren</target></trans-unit>
-      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve" approved="yes">
-				<source>Release mousewheel event on edges</source>
-			<target state="final">Muiswielevent op randen vrijgeven</target></trans-unit>
-      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve" approved="yes">
-				<source>Mousewheel sensitivity multiplier</source>
-			<target state="final">Gevoeligheidsfactor muiswiel</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll delta to trigger slide change</source>
-			<target state="final">Minimale scrolldelta voor slidewissel</target></trans-unit>
-      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve" approved="yes">
-				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
-			<target state="final">Minimale scroltijd (ms) voor slidewissel</target></trans-unit>
-      <trans-unit id="options.virtualslides" xml:space="preserve" approved="yes">
-				<source>Virtual Slides</source>
-			<target state="final">Virtuele slides</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides after active slide</source>
-			<target state="final">Aantal vooraf gerenderde slides na actieve slide verhogen</target></trans-unit>
-      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve" approved="yes">
-				<source>Increase amount of pre-rendered slides before active slide</source>
-			<target state="final">Aantal vooraf gerenderde slides voor actieve slide verhogen</target></trans-unit>
-      <trans-unit id="options.virtualslides.cache" xml:space="preserve" approved="yes">
-				<source>Enable DOM cache of rendered slides</source>
-			<target state="final">DOM-cache van gerenderde slides inschakelen</target></trans-unit>
-      <trans-unit id="options.virtualslides.enabled" xml:space="preserve" approved="yes">
-				<source>Enable virtual slides</source>
-			<target state="final">Virtuele slides inschakelen</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve" approved="yes">
-				<source>Function for external rendering (e.g. React/Vue)</source>
-			<target state="final">Functie voor externe rendering (bijv. React/Vue)</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve" approved="yes">
-				<source>Update Swiper layout after renderExternal</source>
-			<target state="final">Swiper-layout bijwerken na renderExternal</target></trans-unit>
-      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve" approved="yes">
-				<source>Function to render slide</source>
-			<target state="final">Functie om slide te renderen</target></trans-unit>
-      <trans-unit id="options.virtualslides.slides" xml:space="preserve" approved="yes">
-				<source>Array with slides</source>
-			<target state="final">Array met slides</target></trans-unit>
-      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve" approved="yes">
-				<source>Slide size for slidesPerView: auto (in px)</source>
-			<target state="final">Slidegrootte voor slidesPerView: auto (in px)</target></trans-unit>
-      <trans-unit id="options.hashNavigation" xml:space="preserve" approved="yes">
-				<source>Hash Navigation</source>
-			<target state="final">Hashnavigatie</target></trans-unit>
-      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve" approved="yes">
-				<source>Function to get slide index by hash (for virtual slides)</source>
-			<target state="final">Functie om slide-index uit hash te halen (voor virtuele slides)</target></trans-unit>
-      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve" approved="yes">
-				<source>Replace current URL state instead of adding to history</source>
-			<target state="final">Huidige URL-status vervangen in plaats van toevoegen aan geschiedenis</target></trans-unit>
-      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve" approved="yes">
-				<source>Enable navigation by browser history/hash</source>
-			<target state="final">Navigatie via browsergeschiedenis/hash inschakelen</target></trans-unit>
-      <trans-unit id="options.slidesPerView" approved="yes">
-        <source>Slides per view</source>
-        <target state="final">Slides per weergave</target>
-      </trans-unit>
-      <trans-unit id="options.spaceBetween" approved="yes">
-        <source>Space between slides (in px)</source>
-        <target state="final">Ruimte tussen slides (in px)</target>
-      </trans-unit>
-      <trans-unit id="options.slidesPerGroup" approved="yes">
-        <source>Number of slides in group</source>
-        <target state="final">Aantal slides per groep</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</body>
   </file>
 </xliff>
