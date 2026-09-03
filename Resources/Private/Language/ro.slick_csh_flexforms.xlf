@@ -3,144 +3,54 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ro">
     <header/>
     <body>
-      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve" approved="yes">
-				<source>Enables tabbing and arrow key navigation</source>
-			<target state="final">Activează navigarea cu tasta Tab și cu tastele săgeți</target></trans-unit>
-      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve" approved="yes">
-				<source>Enables adaptive height for single slide horizontal carousels.</source>
-			<target state="final">Activează înălțimea adaptivă pentru carusele orizontale cu un singur slide.</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
-				<source>Enables Autoplay</source>
-			<target state="final">Activează Autoplay</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve" approved="yes">
-				<source>Autoplay Speed in milliseconds</source>
-			<target state="final">Viteza Autoplay în milisecunde</target></trans-unit>
-      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve" approved="yes">
-				<source>Prev/Next Arrows</source>
-			<target state="final">Săgeți „Anterioară/Următoare”</target></trans-unit>
-      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
-				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
-			<target state="final">Folosește acest slider ca navigare pentru un alt slider (nume de clasă sau ID)</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">Schimbă locul unde sunt atașate săgețile de navigare (Selector, htmlString, Array, Element, obiect jQuery)</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">Schimbă locul unde sunt atașate punctele de navigare (Selector, htmlString, Array, Element, obiect jQuery)</target></trans-unit>
-      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
-			<target state="final">Vă permite să selectați un nod sau să personalizați HTML-ul pentru săgeata „Anterioară”.</target></trans-unit>
-      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
-			<target state="final">Vă permite să selectați un nod sau să personalizați HTML-ul pentru săgeata „Următoare”.</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve" approved="yes">
-				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
-			<target state="final">Activează vizualizarea centrată cu slide-uri parțiale anterioare/următoare. Folosiți cu un număr impar de slide-uri vizibile.</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
-				<source>Side padding when in center mode (px or %)</source>
-			<target state="final">Padding lateral în modul centrat (px sau %)</target></trans-unit>
-      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
-				<source>CSS3 Animation Easing</source>
-			<target state="final">Easing pentru animația CSS3</target></trans-unit>
-      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve" approved="yes">
-				<source>Custom paging templates. See source for use example.</source>
-			<target state="final">Șabloane personalizate de paginare. Consultați sursa pentru un exemplu de utilizare.</target></trans-unit>
-      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
-				<source>Show dot indicators</source>
-			<target state="final">Afișează indicatorii cu puncte</target></trans-unit>
-      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve" approved="yes">
-				<source>Class for slide indicator dots container</source>
-			<target state="final">Clasa pentru containerul punctelor indicatoare de slide</target></trans-unit>
-      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve" approved="yes">
-				<source>Enable mouse dragging</source>
-			<target state="final">Activează tragerea cu mouse-ul</target></trans-unit>
-      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve" approved="yes">
-				<source>Enable fade</source>
-			<target state="final">Activează efectul de fade</target></trans-unit>
-      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve" approved="yes">
-				<source>Enable focus on selected element (click)</source>
-			<target state="final">Activează focalizarea pe elementul selectat (clic)</target></trans-unit>
-      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve" approved="yes">
-				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
-			<target state="final">Adaugă easing pentru animația jQuery. Utilizați cu biblioteci de easing sau cu metode de easing implicite</target></trans-unit>
-      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve" approved="yes">
-				<source>Resistance when swiping edges of non-infinite carousels</source>
-			<target state="final">Rezistență la glisarea marginilor caruselelor non-infinite</target></trans-unit>
-      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
-				<source>Infinite loop sliding</source>
-			<target state="final">Glisare în buclă infinită</target></trans-unit>
-      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
-				<source>Slide to start on</source>
-			<target state="final">Slide-ul de la care se pornește</target></trans-unit>
-      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
-				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
-			<target state="final">Setează tehnica de lazy loading. Acceptă „ondemand” sau „progressive”</target></trans-unit>
-      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve" approved="yes">
-				<source>Responsive slick.settings use mobile first calculation</source>
-			<target state="final">Setările responsive folosesc calculul Mobile First</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Focus</source>
-			<target state="final">Întrerupe Autoplay la focalizare</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Hover</source>
-			<target state="final">Întrerupe Autoplay la hover</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay when a dot is hovered</source>
-			<target state="final">Întrerupe Autoplay când cursorul este deasupra unui punct</target></trans-unit>
-      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve" approved="yes">
-				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
-			<target state="final">Lățimea la care răspunde obiectul responsive. Poate fi „window”, „slider” sau „min” (cea mai mică dintre cele două)</target></trans-unit>
-      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve" approved="yes">
-				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
-			<target state="final">Setarea la o valoare mai mare de 1 inițializează modul grilă. Folosiți slidesPerRow pentru a seta câte slide-uri să fie în fiecare rând.</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve" approved="yes">
-				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
-			<target state="final">Cu modul grilă inițializat prin opțiunea rows, acest lucru setează câte slide-uri sunt în fiecare rând al grilei.</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve" approved="yes">
-				<source># of slides to show</source>
-			<target state="final">Numărul de slide-uri afișate</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve" approved="yes">
-				<source># of slides to scroll</source>
-			<target state="final">Numărul de slide-uri derulate</target></trans-unit>
-      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
-				<source>Slide/Fade animation speed</source>
-			<target state="final">Viteza animației Slide/Fade</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
-				<source>Enable swiping</source>
-			<target state="final">Activează glisarea</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve" approved="yes">
-				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
-			<target state="final">Permite utilizatorilor să tragă sau să gliseze direct la un slide, indiferent de slidesToScroll</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve" approved="yes">
-				<source>Enable slide motion with touch</source>
-			<target state="final">Activează mișcarea slide-ului la atingere</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve" approved="yes">
-				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
-			<target state="final">Pentru a avansa slide-urile, utilizatorul trebuie să gliseze pe o lungime de (1/touchThreshold) * lățimea slider-ului</target></trans-unit>
-      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transitions</source>
-			<target state="final">Activează/Dezactivează tranzițiile CSS</target></trans-unit>
-      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transforms</source>
-			<target state="final">Activează/Dezactivează transformările CSS</target></trans-unit>
-      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve" approved="yes">
-				<source>Variable width slides</source>
-			<target state="final">Slide-uri cu lățime variabilă</target></trans-unit>
-      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
-				<source>Vertical slide mode</source>
-			<target state="final">Mod de glisare vertical</target></trans-unit>
-      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
-				<source>Vertical swipe mode</source>
-			<target state="final">Mod de glisare vertical (swipe)</target></trans-unit>
-      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve" approved="yes">
-				<source>Change the slider's direction to become right-to-left</source>
-			<target state="final">Schimbă direcția slider-ului pentru a deveni de la dreapta la stânga</target></trans-unit>
-      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve" approved="yes">
-				<source>Ignores requests to advance the slide while animating</source>
-			<target state="final">Ignoră cererile de avansare a slide-ului în timpul animării</target></trans-unit>
-      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve" approved="yes">
-				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
-			<target state="final">Setează valorile zIndex pentru slide-uri, util pentru IE9 și versiuni anterioare</target></trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+		</body>
   </file>
 </xliff>
