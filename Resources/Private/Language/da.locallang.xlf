@@ -3,17 +3,9 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="da">
     <header/>
     <body>
-      <trans-unit id="description" approved="yes">
-        <source>Universal Slider / Carousel</source>
-        <target state="final">Universal slider / karrusel</target>
-      </trans-unit>
       <trans-unit id="settings" approved="yes">
         <source>Settings</source>
         <target state="final">Indstillinger</target>
-      </trans-unit>
-      <trans-unit id="items" approved="yes">
-        <source>Items</source>
-        <target state="final">Elementer</target>
       </trans-unit>
       <trans-unit id="preset" approved="yes">
         <source>Preset</source>
@@ -31,14 +23,6 @@
         <source>No</source>
         <target state="final">Nej</target>
       </trans-unit>
-      <trans-unit id="horizontal" approved="yes">
-        <source>horizontal</source>
-        <target state="final">Vandret</target>
-      </trans-unit>
-      <trans-unit id="vertical" approved="yes">
-        <source>vertical</source>
-        <target state="final">Lodret</target>
-      </trans-unit>
       <trans-unit id="default" approved="yes">
         <source>Default</source>
         <target state="final">Standard</target>
@@ -53,10 +37,6 @@
         <target state="final">Forrige</target>
       </trans-unit>
       <!-- sheets -->
-      <trans-unit id="sheet.pagination" approved="yes">
-        <source>Pagination</source>
-        <target state="final">Paginering</target>
-      </trans-unit>
       <trans-unit id="sheet.freeMode" approved="yes">
         <source>Free Mode</source>
         <target state="final">Fri tilstand</target>
@@ -101,10 +81,6 @@
       <trans-unit id="options.common.vertical" approved="yes">
         <source>Vertical</source>
         <target state="final">Lodret</target>
-      </trans-unit>
-      <trans-unit id="options.common.horizontal" approved="yes">
-        <source>Horizontal</source>
-        <target state="final">Vandret</target>
       </trans-unit>
       <!-- Labels -->
       <trans-unit id="playText" approved="yes">
