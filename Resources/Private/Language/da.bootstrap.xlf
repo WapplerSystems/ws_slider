@@ -4,14 +4,6 @@
     <header/>
     <body>
       <!-- sheets -->
-      <trans-unit id="options.ride.option.carousel" approved="yes">
-        <source>Carousel</source>
-        <target state="final">Automatisk</target>
-      </trans-unit>
-      <trans-unit id="options.wrap" approved="yes">
-        <source>Wrap</source>
-        <target state="final">Loop</target>
-      </trans-unit>
       <trans-unit id="options.startAt" approved="yes">
         <source>Start at</source>
         <target state="final">Start ved</target>
