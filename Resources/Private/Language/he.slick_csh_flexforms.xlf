@@ -3,144 +3,54 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="he">
     <header/>
     <body>
-      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve" approved="yes">
-				<source>Enables tabbing and arrow key navigation</source>
-			<target state="final">מפעיל ניווט באמצעות מקש Tab ומקשי החצים</target></trans-unit>
-      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve" approved="yes">
-				<source>Enables adaptive height for single slide horizontal carousels.</source>
-			<target state="final">מפעיל גובה מותאם עבור קרוסלות אופקיות של שקופית אחת.</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve" approved="yes">
-				<source>Enables Autoplay</source>
-			<target state="final">מפעיל Autoplay</target></trans-unit>
-      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve" approved="yes">
-				<source>Autoplay Speed in milliseconds</source>
-			<target state="final">מהירות Autoplay באלפיות שנייה</target></trans-unit>
-      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve" approved="yes">
-				<source>Prev/Next Arrows</source>
-			<target state="final">חיצי "קודם/הבא"</target></trans-unit>
-      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve" approved="yes">
-				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
-			<target state="final">הגדר את הסליידר כניווט של סליידר אחר (שם מחלקה או ID)</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">שנה את מיקום הצמדת חיצי הניווט (Selector, htmlString, Array, Element, jQuery object)</target></trans-unit>
-      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve" approved="yes">
-				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
-			<target state="final">שנה את מיקום הצמדת נקודות הניווט (Selector, htmlString, Array, Element, jQuery object)</target></trans-unit>
-      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
-			<target state="final">מאפשר לבחור צומת או להתאים אישית את ה-HTML עבור חץ "הקודם".</target></trans-unit>
-      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve" approved="yes">
-				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
-			<target state="final">מאפשר לבחור צומת או להתאים אישית את ה-HTML עבור חץ "הבא".</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve" approved="yes">
-				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
-			<target state="final">מפעיל תצוגה ממורכזת עם שקופיות קודם/הבא חלקיות. יש להשתמש עם מספר אי-זוגי של שקופיות מוצגות.</target></trans-unit>
-      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve" approved="yes">
-				<source>Side padding when in center mode (px or %)</source>
-			<target state="final">ריפוד צד במצב ממורכז (px או %)</target></trans-unit>
-      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve" approved="yes">
-				<source>CSS3 Animation Easing</source>
-			<target state="final">Easing של אנימציית CSS3</target></trans-unit>
-      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve" approved="yes">
-				<source>Custom paging templates. See source for use example.</source>
-			<target state="final">תבניות עימוד מותאמות אישית. ראה דוגמה בקוד המקור.</target></trans-unit>
-      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve" approved="yes">
-				<source>Show dot indicators</source>
-			<target state="final">הצג מחווני נקודות</target></trans-unit>
-      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve" approved="yes">
-				<source>Class for slide indicator dots container</source>
-			<target state="final">מחלקה עבור מיכל נקודות מחוון השקופיות</target></trans-unit>
-      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve" approved="yes">
-				<source>Enable mouse dragging</source>
-			<target state="final">אפשר גרירה באמצעות העכבר</target></trans-unit>
-      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve" approved="yes">
-				<source>Enable fade</source>
-			<target state="final">אפשר דהייה (fade)</target></trans-unit>
-      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve" approved="yes">
-				<source>Enable focus on selected element (click)</source>
-			<target state="final">אפשר פוקוס על אלמנט נבחר (לחיצה)</target></trans-unit>
-      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve" approved="yes">
-				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
-			<target state="final">הוסף easing עבור jQuery animate. השתמש עם ספריות easing או שיטות easing ברירת מחדל</target></trans-unit>
-      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve" approved="yes">
-				<source>Resistance when swiping edges of non-infinite carousels</source>
-			<target state="final">התנגדות בעת החלקה בקצוות של קרוסלות לא-אינסופיות</target></trans-unit>
-      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve" approved="yes">
-				<source>Infinite loop sliding</source>
-			<target state="final">גלילה בלולאה אינסופית</target></trans-unit>
-      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve" approved="yes">
-				<source>Slide to start on</source>
-			<target state="final">השקופית שממנה מתחילים</target></trans-unit>
-      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve" approved="yes">
-				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
-			<target state="final">קבע שיטת טעינה עצלנית. מקבל 'ondemand' או 'progressive'</target></trans-unit>
-      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve" approved="yes">
-				<source>Responsive slick.settings use mobile first calculation</source>
-			<target state="final">הגדרות responsive משתמשות בחישוב Mobile First</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Focus</source>
-			<target state="final">השהה Autoplay בעת פוקוס</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay On Hover</source>
-			<target state="final">השהה Autoplay בעת ריחוף</target></trans-unit>
-      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve" approved="yes">
-				<source>Pause Autoplay when a dot is hovered</source>
-			<target state="final">השהה Autoplay בעת ריחוף מעל נקודה</target></trans-unit>
-      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve" approved="yes">
-				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
-			<target state="final">הרוחב אליו מגיב אובייקט ה-responsive. יכול להיות 'window', 'slider' או 'min' (הקטן מבין השניים)</target></trans-unit>
-      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve" approved="yes">
-				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
-			<target state="final">הגדרה של יותר מ-1 מפעילה מצב grid. השתמש ב-slidesPerRow כדי לקבוע כמה שקופיות בכל שורה.</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve" approved="yes">
-				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
-			<target state="final">עם מצב grid המופעל דרך אפשרות rows, זה קובע כמה שקופיות בכל שורת grid.</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve" approved="yes">
-				<source># of slides to show</source>
-			<target state="final">מספר השקופיות המוצגות</target></trans-unit>
-      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve" approved="yes">
-				<source># of slides to scroll</source>
-			<target state="final">מספר השקופיות לגלילה</target></trans-unit>
-      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve" approved="yes">
-				<source>Slide/Fade animation speed</source>
-			<target state="final">מהירות אנימציית Slide/Fade</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve" approved="yes">
-				<source>Enable swiping</source>
-			<target state="final">אפשר החלקה</target></trans-unit>
-      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve" approved="yes">
-				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
-			<target state="final">אפשר למשתמשים לגרור או להחליק ישירות לשקופית ללא תלות ב-slidesToScroll</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve" approved="yes">
-				<source>Enable slide motion with touch</source>
-			<target state="final">אפשר תנועת שקופיות באמצעות מגע</target></trans-unit>
-      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve" approved="yes">
-				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
-			<target state="final">כדי לקדם שקופיות, על המשתמש להחליק באורך של (1/touchThreshold) × רוחב הסליידר</target></trans-unit>
-      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transitions</source>
-			<target state="final">הפעל/השבת CSS Transitions</target></trans-unit>
-      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve" approved="yes">
-				<source>Enable/Disable CSS Transforms</source>
-			<target state="final">הפעל/השבת CSS Transforms</target></trans-unit>
-      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve" approved="yes">
-				<source>Variable width slides</source>
-			<target state="final">שקופיות ברוחב משתנה</target></trans-unit>
-      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve" approved="yes">
-				<source>Vertical slide mode</source>
-			<target state="final">מצב שקופיות אנכי</target></trans-unit>
-      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve" approved="yes">
-				<source>Vertical swipe mode</source>
-			<target state="final">מצב החלקה אנכי</target></trans-unit>
-      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve" approved="yes">
-				<source>Change the slider's direction to become right-to-left</source>
-			<target state="final">שנה את כיוון הסליידר לימין-לשמאל (right-to-left)</target></trans-unit>
-      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve" approved="yes">
-				<source>Ignores requests to advance the slide while animating</source>
-			<target state="final">מתעלם מבקשות לקדם את השקופית בזמן אנימציה</target></trans-unit>
-      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve" approved="yes">
-				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
-			<target state="final">קבע את ערכי z-index עבור השקופיות, שימושי עבור IE9 ומטה</target></trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+		</body>
   </file>
 </xliff>
