@@ -8,10 +8,6 @@
         <source>Usability</source>
         <target state="final">Brugervenlighed</target>
       </trans-unit>
-      <trans-unit id="sheet.primaryControls" approved="yes">
-        <source>Primary Controls</source>
-        <target state="final">Primære styringselementer</target>
-      </trans-unit>
       <trans-unit id="sheet.secondaryNavigation" approved="yes">
         <source>Secondary Navigation</source>
         <target state="final">Sekundær navigation</target>
