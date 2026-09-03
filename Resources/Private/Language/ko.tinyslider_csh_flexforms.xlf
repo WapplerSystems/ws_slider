@@ -3,209 +3,56 @@
   <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="ko">
     <header/>
     <body>
-      <trans-unit id="tinyslider.settings.js.mode.description" approved="yes">
-        <source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
-        <target state="final">애니메이션 동작을 제어합니다. 'carousel'에서는 모든 요소가 옆으로 슬라이드되고, 'gallery'에서는 페이드 애니메이션을 사용하여 모든 슬라이드를 한 번에 변경합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.axis.description" approved="yes">
-        <source>The axis of the slider.</source>
-        <target state="final">슬라이더의 축.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.items.description" approved="yes">
-        <source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
-        <target state="final">뷰포트에 표시되는 슬라이드 수. 슬라이드 수가 이 값보다 작거나 같으면 슬라이더가 초기화되지 않습니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.gutter.description" approved="yes">
-        <source>Space between slides (in “px”).</source>
-        <target state="final">슬라이드 사이의 간격(단위: px).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.edgePadding.description" approved="yes">
-        <source>Space on the outside (in “px”).</source>
-        <target state="final">바깥쪽 여백(단위: px).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.fixedWidth.description" approved="yes">
-        <source>Controls width attribute of the slides.</source>
-        <target state="final">슬라이드의 width 속성을 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoWidth.description" approved="yes">
-        <source>If true, the width of each slide will be its natural width as an inline-block box.</source>
-        <target state="final">활성화하면 각 슬라이드의 너비가 inline-block 상자로서의 자연스러운 너비가 됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.viewportMax.description" approved="yes">
-        <source>Maximum viewport width for fixedWidth/autoWidth.</source>
-        <target state="final">fixedWidth/autoWidth에 대한 최대 뷰포트 너비.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.slideBy.description" approved="yes">
-        <source>Number of slides going on one “click”.</source>
-        <target state="final">한 번의 클릭으로 이동하는 슬라이드 수.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.center.description" approved="yes">
-        <source>Center the active slide in the viewport.</source>
-        <target state="final">활성 슬라이드를 뷰포트 중앙에 배치합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controls.description" approved="yes">
-        <source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
-        <target state="final">컨트롤 컴포넌트(이전/다음 버튼)의 표시와 기능을 제어합니다. 활성화하면 컨트롤이 표시되고 모든 기능이 추가됩니다. 접근성 향상을 위해 이전/다음 버튼이 포커스되면 왼쪽/오른쪽 화살표 키로 슬라이더를 제어할 수 있습니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsPosition.description" approved="yes">
-        <source>Controls controls position.</source>
-        <target state="final">컨트롤의 위치를 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.controlsContainer.description" approved="yes">
-        <source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
-        <target state="final">이전/다음 버튼을 감싸는 컨테이너 요소/셀렉터. controlsContainer에는 최소 2개의 자식 요소가 있어야 합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.prevButton.description" approved="yes">
-        <source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">사용자 정의 이전 버튼. controlsContainer가 Node 요소 또는 CSS 셀렉터인 경우 이 옵션은 무시됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nextButton.description" approved="yes">
-        <source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
-        <target state="final">사용자 정의 다음 버튼. controlsContainer가 Node 요소 또는 CSS 셀렉터인 경우 이 옵션은 무시됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nav.description" approved="yes">
-        <source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
-        <target state="final">네비게이션 컴포넌트(도트)의 표시와 기능을 제어합니다. 활성화하면 네비게이션이 표시되고 모든 기능이 추가됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navPosition.description" approved="yes">
-        <source>Controls nav position.</source>
-        <target state="final">네비게이션의 위치를 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navContainer.description" approved="yes">
-        <source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
-        <target state="final">도트를 감싸는 컨테이너 요소/셀렉터. navContainer에는 슬라이드 수와 최소한 같은 수의 자식 요소가 있어야 합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" approved="yes">
-        <source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
-        <target state="final">도트를 썸네일로 사용할지 여부를 지정합니다. 활성화하면 뷰포트에 2개 이상의 슬라이드가 표시되는 경우에도 항상 표시됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.arrowKeys.description" approved="yes">
-        <source>Allows using arrow keys to switch slides.</source>
-        <target state="final">화살표 키로 슬라이드를 전환할 수 있게 합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.speed.description" approved="yes">
-        <source>Speed of the slide animation (in “ms”).</source>
-        <target state="final">슬라이드 애니메이션의 속도(단위: ms).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplay.description" approved="yes">
-        <source>Toggles the automatic change of slides.</source>
-        <target state="final">슬라이드 자동 전환을 켜거나 끕니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" approved="yes">
-        <source>Controls autoplay position.</source>
-        <target state="final">자동 재생 위치를 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" approved="yes">
-        <source>Time between 2 autoplay slides change (in “ms”).</source>
-        <target state="final">두 자동 재생 슬라이드 전환 사이의 시간(단위: ms).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" approved="yes">
-        <source>Direction of slide movement (ascending/descending the slide index).</source>
-        <target state="final">슬라이드 이동 방향(슬라이드 인덱스 오름차순/내림차순).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" approved="yes">
-        <source>Stops sliding on mouseover.</source>
-        <target state="final">마우스 오버 시 슬라이딩을 멈춥니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButton.description" approved="yes">
-        <source>The customized autoplay start/stop button or selector.</source>
-        <target state="final">사용자 정의 자동 재생 시작/중지 버튼 또는 셀렉터.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" approved="yes">
-        <source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-        <target state="final">자동 재생이 활성화되어 있지만 사용자 정의 autoplayButton이 제공되지 않은 경우 autoplayButton 마크업을 출력합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" approved="yes">
-        <source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
-        <target state="final">페이지가 보이지 않으면 슬라이딩을 일시 중지하고 다시 보이면 재개합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateIn.description" approved="yes">
-        <source>Name of intro animation class.</source>
-        <target state="final">인트로 애니메이션 클래스의 이름.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateOut.description" approved="yes">
-        <source>Name of outro animation class.</source>
-        <target state="final">아웃트로 애니메이션 클래스의 이름.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateNormal.description" approved="yes">
-        <source>Name of default animation class.</source>
-        <target state="final">기본 애니메이션 클래스의 이름.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.animateDelay.description" approved="yes">
-        <source>Time between each gallery animation (in “ms”).</source>
-        <target state="final">각 갤러리 애니메이션 사이의 시간(단위: ms).</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.loop.description" approved="yes">
-        <source>Moves throughout all the slides seamlessly.</source>
-        <target state="final">모든 슬라이드를 끊김 없이 순환합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.rewind.description" approved="yes">
-        <source>Moves to the opposite edge when reaching the first or last slide.</source>
-        <target state="final">첫 번째 또는 마지막 슬라이드에 도달하면 반대쪽 끝으로 이동합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoHeight.description" approved="yes">
-        <source>Height of slider container changes according to each slide’s height.</source>
-        <target state="final">슬라이더 컨테이너의 높이가 각 슬라이드의 높이에 따라 변경됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve" approved="yes">
-				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
-                        NOTE:
-                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
-                        + data-src attribute with its value of the real image src is required;
-                        + width attribute for every image is required for autoWidth slider.</source>
-			<target state="final">현재 표시되지 않는 이미지를 지연 로딩하여 대역폭을 절약합니다(데모 참조). 참고: + lazyloadSelector 옵션을 지정하지 않은 경우 지연 로딩할 모든 이미지에 .tns-lazy-img 클래스를 설정해야 합니다. + 실제 이미지 src 값을 가진 data-src 속성이 필요합니다. + autoWidth 슬라이더에는 모든 이미지에 width 속성이 필요합니다.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" approved="yes">
-        <source>The CSS selector for lazyload images.</source>
-        <target state="final">지연 로딩 이미지에 대한 CSS 셀렉터.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.touch.description" approved="yes">
-        <source>Activates input detection for touch devices.</source>
-        <target state="final">터치 장치에 대한 입력 감지를 활성화합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.mouseDrag.description" approved="yes">
-        <source>Changing slides by dragging them.</source>
-        <target state="final">드래그하여 슬라이드를 변경합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.swipeAngle.description" approved="yes">
-        <source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
-        <target state="final">설정 시 각도가 범위를 벗어나면 스와이프 또는 드래그가 트리거되지 않습니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" approved="yes">
-        <source>Prevent next transition while slider is transforming.</source>
-        <target state="final">슬라이더가 전환 중일 때 다음 전환을 방지합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" approved="yes">
-        <source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
-        <target state="final">touchmove 시 페이지 스크롤을 방지합니다. "auto"로 설정하면 터치 방향이 슬라이더 축과 일치하는지 먼저 확인한 후 페이지 스크롤을 방지할지 결정합니다. "force"로 설정하면 항상 페이지 스크롤을 방지합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nested.description" approved="yes">
-        <source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
-        <target state="final">중첩된 슬라이더 간의 관계를 정의합니다. 내부 슬라이더를 먼저 실행해야 합니다. 그렇지 않으면 내부 슬라이더 컨테이너의 높이가 잘못됩니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.freezable.description" approved="yes">
-        <source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
-        <target state="final">모든 슬라이드가 한 페이지에 표시될 수 있을 때 슬라이더를 고정할지(컨트롤, 네비게이션, 자동 재생 및 기타 기능이 중지됨) 여부를 지정합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.disable.description" approved="yes">
-        <source>Disable slider.</source>
-        <target state="final">슬라이더를 비활성화합니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.startIndex.description" approved="yes">
-        <source>The initial index of the slider.</source>
-        <target state="final">슬라이더의 초기 인덱스.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" approved="yes">
-        <source>Callback to be run on initialization.</source>
-        <target state="final">초기화 시 실행되는 콜백.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" approved="yes">
-        <source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-        <target state="final">활성화하면 브라우저 기능 변수를 localStorage에 저장하고 슬라이더가 실행될 때마다 다시 감지하지 않습니다.</target>
-      </trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" approved="yes">
-        <source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-        <target state="final">unsafe-inline Content Security Policy 소스 없이 슬라이더를 사용할 수 있도록 하는 인라인 스타일 태그용 선택적 Nonce 속성.</target>
-      </trans-unit>
-    </body>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</body>
   </file>
 </xliff>
