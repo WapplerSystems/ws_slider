@@ -90,7 +90,7 @@ class SliderProcessor implements DataProcessorInterface
             $options = self::removeDotsFromTS($options);
 
             $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($preset[$rendererKey] ?? '');
-            $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
+            $flexformOptions = $this->migrateFlexFormOptions($flexformOptions, $rendererKey);
             ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
 
             $this->convertStringOptionsToBoolean($options);
@@ -127,7 +127,7 @@ class SliderProcessor implements DataProcessorInterface
             if (is_string($flexformData)) {
                 try {
                     $flexformOptions = $this->flexFormService->convertFlexFormContentToArray($flexformData);
-                    $flexformOptions = $this->migrateFlexFormOptions($flexformOptions);
+                    $flexformOptions = $this->migrateFlexFormOptions($flexformOptions, $rendererKey);
                     ArrayUtility::mergeRecursiveWithOverrule($options, $flexformOptions, true, false);
                 } catch (\TypeError $ex) {
                     $processedData['error'] = $ex->getMessage();
@@ -230,12 +230,24 @@ class SliderProcessor implements DataProcessorInterface
      * JavaScript ended up with an inert "js: {...}" block while the flat defaults stayed in
      * effect (github issue #55, analysed in more detail in PR #68).
      *
-     * "js" values only fill gaps afterwards. For the js-based renderers nothing collides, so
-     * every option is applied; for Swiper the current values win and stale leftovers can no
-     * longer override them.
+     * For Swiper, "js" values only fill gaps afterwards: the current values win and stale
+     * leftovers can no longer override them.
+     *
+     * For the js-based renderers it is the other way round: "settings.js" is the only current
+     * container, everything else below "settings" is left over from an element that used to
+     * be a Swiper (the sheets of the old renderer stay in pi_flexform). Those leftovers share
+     * option names with the js renderers - Swiper's "settings.mousewheel.enabled" became
+     * mousewheel = ['enabled' => '', ...], blocked the real "js.mousewheel = false" and ended
+     * up as "mousewheel:{}" in the generated JavaScript, which Flexslider reads as "on"
+     * (github issue #78). The same applies to keyboard and autoplay. So only "js" is used.
      */
-    private function migrateFlexFormOptions(array $flexformOptions): array
+    private function migrateFlexFormOptions(array $flexformOptions, string $rendererKey): array
     {
+        if ($rendererKey !== 'swiper') {
+            $js = $flexformOptions['settings']['js'] ?? $flexformOptions['js'] ?? [];
+            return is_array($js) ? $js : [];
+        }
+
         if (isset($flexformOptions['settings']) && is_array($flexformOptions['settings'])) {
             foreach ($flexformOptions['settings'] as $key => $value) {
                 $flexformOptions[$key] = $value;
