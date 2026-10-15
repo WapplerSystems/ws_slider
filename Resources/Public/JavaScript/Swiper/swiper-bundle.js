@@ -1,5 +1,5 @@
 /**
- * Swiper 14.2.0
+ * Swiper 14.3.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: August 26, 2026
+ * Released on: September 28, 2026
  */
 
 var Swiper = (function () {
@@ -219,8 +219,9 @@ var Swiper = (function () {
         el.addEventListener('transitionend', function fireCallBack(e) {
             if (e.target !== el)
                 return;
+            el.removeEventListener('transitionend', fireCallBack);
             callback.call(el, e);
-        }, { once: true });
+        });
     }
     function elementOuterSize(el, size, includeMargins) {
         {
@@ -497,14 +498,16 @@ var Swiper = (function () {
         swiper.currentBreakpoint = breakpoint;
         swiper.emit('_beforeBreakpoint', breakpointParams);
         if (initialized) {
+            // Lay out with the new params before loopCreate(), so loopFix() sees current sizes and
+            // isLocked state (a slider locked by watchOverflow skips loop entirely, #8228)
             if (needsReLoop) {
                 swiper.loopDestroy();
-                swiper.loopCreate(realIndex);
                 swiper.updateSlides();
+                swiper.loopCreate(realIndex);
             }
             else if (!wasLoop && hasLoop) {
-                swiper.loopCreate(realIndex);
                 swiper.updateSlides();
+                swiper.loopCreate(realIndex);
             }
             else if (wasLoop && !hasLoop) {
                 swiper.loopDestroy();
@@ -860,7 +863,8 @@ var Swiper = (function () {
         if (swiper.destroyed)
             return;
         processLazyPreloader(swiper, e.target);
-        if (swiper.params.cssMode ||
+        if (e.type === 'error' ||
+            swiper.params.cssMode ||
             (swiper.params.slidesPerView !== 'auto' && !swiper.params.autoHeight)) {
             return;
         }
@@ -980,6 +984,8 @@ var Swiper = (function () {
         }
         data.pointerId = null;
         data.touchId = null;
+        data.startEventPath = undefined;
+        data.lastMoveEvent = undefined;
         const { params, touches, rtlTranslate: rtl, slidesGrid, enabled } = swiper;
         if (!enabled)
             return;
@@ -1170,6 +1176,24 @@ var Swiper = (function () {
                 swiper.emit('touchMoveOpposite', e);
             }
             return;
+        }
+        // Nested swipers listen on document in capture phase, so they run in registration order and
+        // an ancestor initialized first would move before its descendant can set
+        // preventedByNestedSwiper. Run touched nested descendants first, innermost to outermost.
+        if (data.lastMoveEvent === e)
+            return;
+        data.lastMoveEvent = e;
+        for (const node of data.startEventPath ?? []) {
+            if (node === swiper.el)
+                break;
+            const child = node.swiper;
+            if (child &&
+                child !== swiper &&
+                !child.destroyed &&
+                child.params.nested &&
+                child.touchEventsData.isTouched) {
+                child.onTouchMove(event);
+            }
         }
         const pageX = targetTouch.pageX;
         const pageY = targetTouch.pageY;
@@ -1588,6 +1612,7 @@ var Swiper = (function () {
         touches.startX = startX;
         touches.startY = startY;
         data.touchStartTime = now();
+        data.startEventPath = eventPath;
         swiper.allowClick = true;
         swiper.updateSize();
         swiper.swipeDirection = undefined;
@@ -1673,6 +1698,7 @@ var Swiper = (function () {
         // Images loader
         if (params.lazyPreload) {
             el[domMethod]('load', swiper.onLoad, { capture: true });
+            el[domMethod]('error', swiper.onLoad, { capture: true });
         }
     };
     function attachEvents() {
@@ -1838,6 +1864,10 @@ var Swiper = (function () {
         let activeSlideIndex = activeSlideIndexParam;
         const swiper = this;
         if (!swiper.params.loop)
+            return;
+        // A locked slider (watchOverflow, all slides fit) can't move, so there is nothing to loop:
+        // keep the original slide order and don't warn about too few slides (#8228)
+        if (swiper.params.watchOverflow && swiper.isLocked)
             return;
         swiper.emit('beforeLoopFix');
         // The compensating slideTo() teleports below change indexes/translate without any
@@ -2218,11 +2248,16 @@ var Swiper = (function () {
         const createObserver = () => {
             if (!swiper || swiper.destroyed || !swiper.initialized)
                 return;
+            // Entry sizes come from the layout before the rAF, while onResize() stores the live size in
+            // swiper.width/height. Comparing entries against swiper.width therefore skipped every other
+            // frame of a continuous resize, painting those frames with a stale translate (#8230), so
+            // compare against the last handled entry size instead.
+            let observedWidth = swiper.width;
+            let observedHeight = swiper.height;
             observer = new ResizeObserver((entries) => {
                 animationFrame = window.requestAnimationFrame(() => {
-                    const { width, height } = swiper;
-                    let newWidth = width;
-                    let newHeight = height;
+                    let newWidth = observedWidth;
+                    let newHeight = observedHeight;
                     entries.forEach(({ contentBoxSize, contentRect, target }) => {
                         if (target && target !== swiper.el)
                             return;
@@ -2233,7 +2268,9 @@ var Swiper = (function () {
                         newWidth = contentRect ? contentRect.width : box.inlineSize;
                         newHeight = contentRect ? contentRect.height : box.blockSize;
                     });
-                    if (newWidth !== width || newHeight !== height) {
+                    if (newWidth !== observedWidth || newHeight !== observedHeight) {
+                        observedWidth = newWidth;
+                        observedHeight = newHeight;
                         resizeHandler();
                     }
                 });
@@ -4327,14 +4364,9 @@ var Swiper = (function () {
                     lazyElements.push(...swiper.hostEl.querySelectorAll('[loading="lazy"]'));
                 }
                 lazyElements.forEach((imageEl) => {
-                    if (imageEl.complete) {
+                    // Not-yet-complete images are handled by the delegated `load`/`error` listener in attachEvents()
+                    if (imageEl.complete)
                         processLazyPreloader(swiper, imageEl);
-                    }
-                    else {
-                        imageEl.addEventListener('load', (e) => {
-                            processLazyPreloader(swiper, e.target);
-                        });
-                    }
                 });
             }
             // Init Flag
@@ -7800,6 +7832,37 @@ var Swiper = (function () {
         const onVisibilityChange = (_e) => {
             visibilityChangedTimestamp = new Date().getTime();
         };
+        // Loop keyboard trap (#8181): on Tab out of the last/first real slide, make other slides `inert` for the keypress so focus leaves the wrapper
+        let inertSlides = [];
+        const releaseInertSlides = () => {
+            inertSlides.forEach((slideEl) => slideEl.removeAttribute('inert'));
+            inertSlides = [];
+        };
+        const handleTabKey = (e) => {
+            if (e.key !== 'Tab' || !swiper.params.loop || swiper.destroyed)
+                return;
+            const target = e.target;
+            const slideEl = target?.closest?.(`.${swiper.params.slideClass}, swiper-slide`);
+            if (!slideEl || !swiper.slides.includes(slideEl))
+                return;
+            const realIndex = parseInt(slideEl.getAttribute('data-swiper-slide-index') || '', 10);
+            if (Number.isNaN(realIndex))
+                return;
+            const slidesLength = isVirtualEnabled$1(swiper)
+                ? swiper.virtual.slides.length
+                : swiper.slides.length;
+            const isEdge = e.shiftKey ? realIndex === 0 : realIndex === slidesLength - 1;
+            if (!isEdge)
+                return;
+            releaseInertSlides();
+            swiper.slides.forEach((el) => {
+                if (el === slideEl || el.hasAttribute('inert'))
+                    return;
+                el.setAttribute('inert', '');
+                inertSlides.push(el);
+            });
+            setTimeout(releaseInertSlides, 0);
+        };
         const handleFocus = (e) => {
             const params = getParams();
             if (swiper.a11y.clicked || !params.scrollOnFocus)
@@ -7914,6 +7977,7 @@ var Swiper = (function () {
             // Tab focus
             document.addEventListener('visibilitychange', onVisibilityChange);
             swiper.el.addEventListener('focus', handleFocus, true);
+            swiper.el.addEventListener('keydown', handleTabKey, true);
             swiper.el.addEventListener('pointerdown', handlePointerDown, true);
             swiper.el.addEventListener('pointerup', handlePointerUp, true);
         };
@@ -7942,9 +8006,11 @@ var Swiper = (function () {
             // Tab focus
             if (swiper.el && typeof swiper.el !== 'string') {
                 swiper.el.removeEventListener('focus', handleFocus, true);
+                swiper.el.removeEventListener('keydown', handleTabKey, true);
                 swiper.el.removeEventListener('pointerdown', handlePointerDown, true);
                 swiper.el.removeEventListener('pointerup', handlePointerUp, true);
             }
+            releaseInertSlides();
         }
         on('beforeInit', () => {
             liveRegion = createElement('span', getParams().notificationClass);
@@ -10271,7 +10337,7 @@ var Swiper = (function () {
     };
 
     /**
-     * Swiper 14.2.0
+     * Swiper 14.3.0
      * Most modern mobile touch slider and framework with hardware accelerated transitions
      * https://swiperjs.com
      *
@@ -10279,7 +10345,7 @@ var Swiper = (function () {
      *
      * Released under the MIT License
      *
-     * Released on: August 26, 2026
+     * Released on: September 28, 2026
      */
 
 
