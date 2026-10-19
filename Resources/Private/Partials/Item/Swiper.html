@@ -4,9 +4,24 @@
 
 <f:section name="Default">
 
-    <div class="swiper-slide" data-history="{iterator.index}">
+    <div class="swiper-slide ws-slider-item{f:if(condition: item.data.style_class, then: ' ws-slider-item--{item.data.style_class}')}" data-history="{iterator.index}">
         <f:if condition="{item.foregroundMedia.0}">
-            <f:image image="{item.foregroundMedia.0}" class="img-fluid"/>
+            <f:image image="{item.foregroundMedia.0}" class="img-fluid ws-slider-item__image"/>
+        </f:if>
+        <f:if condition="{item.data.title} || {item.data.description}">
+            <div class="ws-slider-item__caption ws-slider-item__caption--{f:if(condition: item.data.text_position, then: item.data.text_position, else: 'bottom')}">
+                <f:if condition="{item.data.title}">
+                    <p class="ws-slider-item__title">
+                        <f:if condition="{item.data.link}">
+                            <f:then><f:link.typolink parameter="{item.data.link}">{item.data.title}</f:link.typolink></f:then>
+                            <f:else>{item.data.title}</f:else>
+                        </f:if>
+                    </p>
+                </f:if>
+                <f:if condition="{item.data.description}">
+                    <div class="ws-slider-item__text"><f:format.html>{item.data.description}</f:format.html></div>
+                </f:if>
+            </div>
         </f:if>
     </div>
 
