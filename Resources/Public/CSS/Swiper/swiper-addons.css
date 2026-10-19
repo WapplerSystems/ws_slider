@@ -103,3 +103,14 @@
         font-size: 1rem;
     }
 }
+
+/* Pagination bullets sit on the caption band: light inactive bullets */
+.swiper:has(.ws-slider-item__caption) .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.6;
+}
+
+.swiper:has(.ws-slider-item__caption) .swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    opacity: 1;
+}
