@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="options.accessibility">
+        <source>Accessibility</source>
+        <target>crwdns413115:0crwdne413115:0</target>
+      </trans-unit>
+      <trans-unit id="options.arrows">
+        <source>Arrows</source>
+        <target>crwdns413117:0crwdne413117:0</target>
+      </trans-unit>
+      <trans-unit id="options.asNavFor">
+        <source>As Nav For</source>
+        <target>crwdns413119:0crwdne413119:0</target>
+      </trans-unit>
+      <trans-unit id="options.appendArrows">
+        <source>Append Arrows</source>
+        <target>crwdns413121:0crwdne413121:0</target>
+      </trans-unit>
+      <trans-unit id="options.appendDots">
+        <source>Append Dots</source>
+        <target>crwdns413123:0crwdne413123:0</target>
+      </trans-unit>
+      <trans-unit id="options.prevArrow">
+        <source>Prev Arrow</source>
+        <target>crwdns413125:0crwdne413125:0</target>
+      </trans-unit>
+      <trans-unit id="options.nextArrow">
+        <source>Next Arrow</source>
+        <target>crwdns413127:0crwdne413127:0</target>
+      </trans-unit>
+      <trans-unit id="options.centerMode">
+        <source>Center Mode</source>
+        <target>crwdns413129:0crwdne413129:0</target>
+      </trans-unit>
+      <trans-unit id="options.centerPadding">
+        <source>Center Padding</source>
+        <target>crwdns413131:0crwdne413131:0</target>
+      </trans-unit>
+      <trans-unit id="options.cssEase">
+        <source>CSS3 animation Easing</source>
+        <target>crwdns413133:0crwdne413133:0</target>
+      </trans-unit>
+      <trans-unit id="options.effect">
+        <source>Effect</source>
+        <target>crwdns413135:0crwdne413135:0</target>
+      </trans-unit>
+      <trans-unit id="options.setWrapperSize">
+        <source>setWrapperSize</source>
+        <target>crwdns413137:0crwdne413137:0</target>
+      </trans-unit>
+      <trans-unit id="options.height">
+        <source>Height</source>
+        <target>crwdns413139:0crwdne413139:0</target>
+      </trans-unit>
+      <trans-unit id="options.width">
+        <source>Width</source>
+        <target>crwdns413141:0crwdne413141:0</target>
+      </trans-unit>
+      <trans-unit id="options.direction">
+        <source>Direction</source>
+        <target>crwdns413143:0crwdne413143:0</target>
+      </trans-unit>
+      <trans-unit id="options.customClasses">
+        <source>Additional CSS classes</source>
+        <target>crwdns413145:0crwdne413145:0</target>
+      </trans-unit>
+      <trans-unit id="options.loop">
+        <source>Loop</source>
+        <target>crwdns413147:0crwdne413147:0</target>
+      </trans-unit>
+      <trans-unit id="options.loopAddBlankSlides">
+        <source>Add blank slides to loop</source>
+        <target>crwdns413149:0crwdne413149:0</target>
+      </trans-unit>
+      <trans-unit id="options.loopAdditionalSlides">
+        <source>Loop additional slides</source>
+        <target>crwdns413151:0crwdne413151:0</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerGroupAuto">
+        <source>Slides per group auto</source>
+        <target>crwdns413153:0crwdne413153:0</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerGroupSkip">
+        <source>Slides per group skip</source>
+        <target>crwdns413155:0crwdne413155:0</target>
+      </trans-unit>
+      <trans-unit id="options.loopPreventsSliding">
+        <source>Prevents sliding in loop</source>
+        <target>crwdns413157:0crwdne413157:0</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.nextSlideMessage">
+        <source>Next slide</source>
+        <target>crwdns413159:0crwdne413159:0</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.prevSlideMessage">
+        <source>Previous slide</source>
+        <target>crwdns413161:0crwdne413161:0</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.firstSlideMessage">
+        <source>This is the first slide</source>
+        <target>crwdns413163:0crwdne413163:0</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.lastSlideMessage">
+        <source>This is the last slide</source>
+        <target>crwdns413165:0crwdne413165:0</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.paginationBulletMessage">
+        <source>Go to slide {{index}}</source>
+        <target>crwdns413167:0{{index}}crwdne413167:0</target>
+      </trans-unit>
+      <trans-unit id="options.a11y.slideLabelMessage">
+        <source>{{index}} / {{slidesLength}}</source>
+        <target>crwdns413169:0{{index}}crwdnd413169:0{{slidesLength}}crwdne413169:0</target>
+      </trans-unit>
+      <trans-unit id="options.autoplay">
+        <source>Autoplay</source>
+        <target>crwdns413171:0crwdne413171:0</target>
+      </trans-unit>
+      <trans-unit id="options.autoplayProgress">
+        <source>Show autoplay progress indicator</source>
+        <target>crwdns413173:0crwdne413173:0</target>
+      </trans-unit>
+      <trans-unit id="options.autoplay.delay" xml:space="preserve">
+				<source>Delay between transitions (in ms)</source>
+			<target>crwdns413175:0crwdne413175:0</target></trans-unit>
+      <trans-unit id="options.autoplay.disableOnInteraction" xml:space="preserve">
+				<source>Disable autoplay on interaction</source>
+			<target>crwdns413177:0crwdne413177:0</target></trans-unit>
+      <trans-unit id="options.autoplay.pauseOnMouseEnter" xml:space="preserve">
+				<source>Pause autoplay on mouse enter</source>
+			<target>crwdns413179:0crwdne413179:0</target></trans-unit>
+      <trans-unit id="options.autoplay.reverseDirection" xml:space="preserve">
+				<source>Autoplay in reverse direction</source>
+			<target>crwdns413181:0crwdne413181:0</target></trans-unit>
+      <trans-unit id="options.autoplay.stopOnLastSlide" xml:space="preserve">
+				<source>Stop autoplay on last slide</source>
+			<target>crwdns413183:0crwdne413183:0</target></trans-unit>
+      <trans-unit id="options.autoplay.waitForTransition" xml:space="preserve">
+				<source>Wait for transition before next autoplay</source>
+			<target>crwdns413185:0crwdne413185:0</target></trans-unit>
+      <trans-unit id="options.autoHeight">
+        <source>Auto height</source>
+        <target>crwdns413187:0crwdne413187:0</target>
+      </trans-unit>
+      <trans-unit id="options.navigation.addIcons" xml:space="preserve">
+				<source>Add SVG icons to navigation buttons</source>
+			<target>crwdns413189:0crwdne413189:0</target></trans-unit>
+      <trans-unit id="options.navigation.disabledClass" xml:space="preserve">
+				<source>CSS class name added to navigation button when it becomes disabled</source>
+			<target>crwdns413191:0crwdne413191:0</target></trans-unit>
+      <trans-unit id="options.navigation.enabled" xml:space="preserve">
+				<source>Enable/disable navigation</source>
+			<target>crwdns413193:0crwdne413193:0</target></trans-unit>
+      <trans-unit id="options.navigation.hiddenClass" xml:space="preserve">
+				<source>CSS class name added to navigation button when it becomes hidden</source>
+			<target>crwdns413195:0crwdne413195:0</target></trans-unit>
+      <trans-unit id="options.navigation.hideOnClick" xml:space="preserve">
+				<source>Toggle navigation buttons visibility after click on slider container</source>
+			<target>crwdns413197:0crwdne413197:0</target></trans-unit>
+      <trans-unit id="options.navigation.lockClass" xml:space="preserve">
+				<source>CSS class name added to navigation button when it is disabled</source>
+			<target>crwdns413199:0crwdne413199:0</target></trans-unit>
+      <trans-unit id="options.navigation.navigationDisabledClass" xml:space="preserve">
+				<source>CSS class name added on swiper container when navigation is disabled by breakpoint</source>
+			<target>crwdns413201:0crwdne413201:0</target></trans-unit>
+      <trans-unit id="options.navigation.nextEl" xml:space="preserve">
+				<source>CSS selector or HTML element for the next button</source>
+			<target>crwdns413203:0crwdne413203:0</target></trans-unit>
+      <trans-unit id="options.navigation.prevEl" xml:space="preserve">
+				<source>CSS selector or HTML element for the previous button</source>
+			<target>crwdns413205:0crwdne413205:0</target></trans-unit>
+      <trans-unit id="options.pagination.bulletActiveClass" xml:space="preserve">
+				<source>CSS class name of currently active pagination bullet</source>
+			<target>crwdns413207:0crwdne413207:0</target></trans-unit>
+      <trans-unit id="options.pagination.bulletClass" xml:space="preserve">
+				<source>CSS class name of single pagination bullet</source>
+			<target>crwdns413209:0crwdne413209:0</target></trans-unit>
+      <trans-unit id="options.pagination.bulletElement" xml:space="preserve">
+				<source>HTML tag for single pagination bullet (only for bullets type)</source>
+			<target>crwdns413211:0crwdne413211:0</target></trans-unit>
+      <trans-unit id="options.pagination.clickable" xml:space="preserve">
+				<source>Clicking on pagination bullet causes slide transition (only for bullets type)</source>
+			<target>crwdns413213:0crwdne413213:0</target></trans-unit>
+      <trans-unit id="options.pagination.clickableClass" xml:space="preserve">
+				<source>CSS class name set to pagination when it is clickable</source>
+			<target>crwdns413215:0crwdne413215:0</target></trans-unit>
+      <trans-unit id="options.pagination.currentClass" xml:space="preserve">
+				<source>CSS class name of the element with currently active index in fraction pagination</source>
+			<target>crwdns413217:0crwdne413217:0</target></trans-unit>
+      <trans-unit id="options.pagination.dynamicBullets" xml:space="preserve">
+				<source>Show only a few bullets at the same time (for many slides)</source>
+			<target>crwdns413219:0crwdne413219:0</target></trans-unit>
+      <trans-unit id="options.pagination.dynamicMainBullets" xml:space="preserve">
+				<source>Number of main bullets visible when dynamicBullets enabled</source>
+			<target>crwdns413221:0crwdne413221:0</target></trans-unit>
+      <trans-unit id="options.pagination.el" xml:space="preserve">
+				<source>CSS selector or HTML element of the container with pagination</source>
+			<target>crwdns413223:0crwdne413223:0</target></trans-unit>
+      <trans-unit id="options.pagination.enabled" xml:space="preserve">
+				<source>Enable/disable pagination</source>
+			<target>crwdns413225:0crwdne413225:0</target></trans-unit>
+      <trans-unit id="options.pagination.formatFractionCurrent" xml:space="preserve">
+				<source>Format function for current number in fraction pagination</source>
+			<target>crwdns413227:0crwdne413227:0</target></trans-unit>
+      <trans-unit id="options.pagination.formatFractionTotal" xml:space="preserve">
+				<source>Format function for total number in fraction pagination</source>
+			<target>crwdns413229:0crwdne413229:0</target></trans-unit>
+      <trans-unit id="options.pagination.hiddenClass" xml:space="preserve">
+				<source>CSS class name of pagination when it becomes inactive</source>
+			<target>crwdns413231:0crwdne413231:0</target></trans-unit>
+      <trans-unit id="options.pagination.hideOnClick" xml:space="preserve">
+				<source>Toggle pagination container visibility after click on slider container</source>
+			<target>crwdns413233:0crwdne413233:0</target></trans-unit>
+      <trans-unit id="options.pagination.horizontalClass" xml:space="preserve">
+				<source>CSS class name set to pagination in horizontal Swiper</source>
+			<target>crwdns413235:0crwdne413235:0</target></trans-unit>
+      <trans-unit id="options.pagination.lockClass" xml:space="preserve">
+				<source>CSS class name set to pagination when it is disabled</source>
+			<target>crwdns413237:0crwdne413237:0</target></trans-unit>
+      <trans-unit id="options.pagination.modifierClass" xml:space="preserve">
+				<source>Prefix for modifier CSS class name for pagination</source>
+			<target>crwdns413239:0crwdne413239:0</target></trans-unit>
+      <trans-unit id="options.pagination.paginationDisabledClass" xml:space="preserve">
+				<source>CSS class name added on swiper container and pagination element when pagination is disabled by breakpoint</source>
+			<target>crwdns413241:0crwdne413241:0</target></trans-unit>
+      <trans-unit id="options.pagination.progressbarFillClass" xml:space="preserve">
+				<source>CSS class name of pagination progressbar fill element</source>
+			<target>crwdns413243:0crwdne413243:0</target></trans-unit>
+      <trans-unit id="options.pagination.progressbarOpposite" xml:space="preserve">
+				<source>Progressbar opposite to Swiper's direction</source>
+			<target>crwdns413245:0crwdne413245:0</target></trans-unit>
+      <trans-unit id="options.pagination.progressbarOppositeClass" xml:space="preserve">
+				<source>CSS class name of pagination progressbar opposite</source>
+			<target>crwdns413247:0crwdne413247:0</target></trans-unit>
+      <trans-unit id="options.pagination.renderBullet" xml:space="preserve">
+				<source>Custom function for pagination bullets (only for bullets type)</source>
+			<target>crwdns413249:0crwdne413249:0</target></trans-unit>
+      <trans-unit id="options.pagination.renderCustom" xml:space="preserve">
+				<source>Custom function for custom pagination type</source>
+			<target>crwdns413251:0crwdne413251:0</target></trans-unit>
+      <trans-unit id="options.pagination.renderFraction" xml:space="preserve">
+				<source>Custom function for fraction pagination type</source>
+			<target>crwdns413253:0crwdne413253:0</target></trans-unit>
+      <trans-unit id="options.pagination.renderProgressbar" xml:space="preserve">
+				<source>Custom function for progressbar pagination type</source>
+			<target>crwdns413255:0crwdne413255:0</target></trans-unit>
+      <trans-unit id="options.pagination.totalClass" xml:space="preserve">
+				<source>CSS class name of the element with total number in fraction pagination</source>
+			<target>crwdns413257:0crwdne413257:0</target></trans-unit>
+      <trans-unit id="options.pagination.type" xml:space="preserve">
+				<source>Type of pagination (bullets, fraction, progressbar, custom)</source>
+			<target>crwdns413259:0crwdne413259:0</target></trans-unit>
+      <trans-unit id="options.pagination.verticalClass" xml:space="preserve">
+				<source>CSS class name set to pagination in vertical Swiper</source>
+			<target>crwdns413261:0crwdne413261:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.dragClass" xml:space="preserve">
+				<source>Scrollbar draggable element CSS class</source>
+			<target>crwdns413263:0crwdne413263:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.dragSize" xml:space="preserve">
+				<source>Size of scrollbar draggable element in px</source>
+			<target>crwdns413265:0crwdne413265:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.draggable" xml:space="preserve">
+				<source>Enable draggable scrollbar</source>
+			<target>crwdns413267:0crwdne413267:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.el" xml:space="preserve">
+				<source>CSS selector or HTML element of the container with scrollbar</source>
+			<target>crwdns413269:0crwdne413269:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.enabled" xml:space="preserve">
+				<source>Enable/disable scrollbar</source>
+			<target>crwdns413271:0crwdne413271:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.hide" xml:space="preserve">
+				<source>Hide scrollbar automatically after user interaction</source>
+			<target>crwdns413273:0crwdne413273:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.horizontalClass" xml:space="preserve">
+				<source>CSS class name set to scrollbar in horizontal Swiper</source>
+			<target>crwdns413275:0crwdne413275:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.lockClass" xml:space="preserve">
+				<source>Scrollbar element additional CSS class when it is disabled</source>
+			<target>crwdns413277:0crwdne413277:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.scrollbarDisabledClass" xml:space="preserve">
+				<source>CSS class name added on swiper container and scrollbar element when scrollbar is disabled by breakpoint</source>
+			<target>crwdns413279:0crwdne413279:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.snapOnRelease" xml:space="preserve">
+				<source>Snap slider position to slides when you release scrollbar</source>
+			<target>crwdns413281:0crwdne413281:0</target></trans-unit>
+      <trans-unit id="options.scrollbar.verticalClass" xml:space="preserve">
+				<source>CSS class name set to scrollbar in vertical Swiper</source>
+			<target>crwdns413283:0crwdne413283:0</target></trans-unit>
+      <trans-unit id="options.freeMode.enabled" xml:space="preserve">
+				<source>Enable free mode</source>
+			<target>crwdns413285:0crwdne413285:0</target></trans-unit>
+      <trans-unit id="options.freeMode.minimumVelocity" xml:space="preserve">
+				<source>Minimum touchmove-velocity for free mode momentum</source>
+			<target>crwdns413287:0crwdne413287:0</target></trans-unit>
+      <trans-unit id="options.freeMode.momentum" xml:space="preserve">
+				<source>Enable momentum in free mode</source>
+			<target>crwdns413289:0crwdne413289:0</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumBounce" xml:space="preserve">
+				<source>Enable momentum bounce in free mode</source>
+			<target>crwdns413291:0crwdne413291:0</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumBounceRatio" xml:space="preserve">
+				<source>Momentum bounce ratio</source>
+			<target>crwdns413293:0crwdne413293:0</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumRatio" xml:space="preserve">
+				<source>Momentum ratio</source>
+			<target>crwdns413295:0crwdne413295:0</target></trans-unit>
+      <trans-unit id="options.freeMode.momentumVelocityRatio" xml:space="preserve">
+				<source>Momentum velocity ratio</source>
+			<target>crwdns413297:0crwdne413297:0</target></trans-unit>
+      <trans-unit id="options.freeMode.sticky" xml:space="preserve">
+				<source>Snap to slides in free mode</source>
+			<target>crwdns413299:0crwdne413299:0</target></trans-unit>
+      <trans-unit id="options.grid.fill" xml:space="preserve">
+				<source>How slides should fill rows (by column or by row)</source>
+			<target>crwdns413301:0crwdne413301:0</target></trans-unit>
+      <trans-unit id="options.grid.rows" xml:space="preserve">
+				<source>Number of slides rows (multirow layout)</source>
+			<target>crwdns413303:0crwdne413303:0</target></trans-unit>
+      <trans-unit id="options.parallax.enabled" xml:space="preserve">
+				<source>Enable parallaxed elements inside the slider</source>
+			<target>crwdns413305:0crwdne413305:0</target></trans-unit>
+      <trans-unit id="options.fadeEffect.crossFade" xml:space="preserve">
+				<source>Enables slides cross fade</source>
+			<target>crwdns413307:0crwdne413307:0</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.depth" xml:space="preserve">
+				<source>Depth offset in px (slides translate in Z axis)</source>
+			<target>crwdns413309:0crwdne413309:0</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.modifier" xml:space="preserve">
+				<source>Effect multiplier</source>
+			<target>crwdns413311:0crwdne413311:0</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.rotate" xml:space="preserve">
+				<source>Slide rotate in degrees</source>
+			<target>crwdns413313:0crwdne413313:0</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.scale" xml:space="preserve">
+				<source>Slide scale effect</source>
+			<target>crwdns413315:0crwdne413315:0</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			<target>crwdns413317:0crwdne413317:0</target></trans-unit>
+      <trans-unit id="options.coverflowEffect.stretch" xml:space="preserve">
+				<source>Stretch space between slides (px or %)</source>
+			<target>crwdns413319:0crwdne413319:0</target></trans-unit>
+      <trans-unit id="options.flipEffect.limitRotation" xml:space="preserve">
+				<source>Limit edge slides rotation</source>
+			<target>crwdns413321:0crwdne413321:0</target></trans-unit>
+      <trans-unit id="options.flipEffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			<target>crwdns413323:0crwdne413323:0</target></trans-unit>
+      <trans-unit id="options.cubeEffect.shadow" xml:space="preserve">
+				<source>Enables main slider shadow</source>
+			<target>crwdns413325:0crwdne413325:0</target></trans-unit>
+      <trans-unit id="options.cubeEffect.shadowOffset" xml:space="preserve">
+				<source>Main shadow offset in px</source>
+			<target>crwdns413327:0crwdne413327:0</target></trans-unit>
+      <trans-unit id="options.cubeEffect.shadowScale" xml:space="preserve">
+				<source>Main shadow scale ratio</source>
+			<target>crwdns413329:0crwdne413329:0</target></trans-unit>
+      <trans-unit id="options.cubeEffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			<target>crwdns413331:0crwdne413331:0</target></trans-unit>
+      <trans-unit id="options.cardsEffect.perSlideOffset" xml:space="preserve">
+				<source>Offset distance per slide (in px)</source>
+			<target>crwdns413333:0crwdne413333:0</target></trans-unit>
+      <trans-unit id="options.cardsEffect.perSlideRotate" xml:space="preserve">
+				<source>Rotate angle per slide (in degrees)</source>
+			<target>crwdns413335:0crwdne413335:0</target></trans-unit>
+      <trans-unit id="options.cardsEffect.rotate" xml:space="preserve">
+				<source>Enables cards rotation</source>
+			<target>crwdns413337:0crwdne413337:0</target></trans-unit>
+      <trans-unit id="options.cardsEffect.slideShadows" xml:space="preserve">
+				<source>Enables slides shadows</source>
+			<target>crwdns413339:0crwdne413339:0</target></trans-unit>
+      <trans-unit id="options.creativeEffect.limitProgress" xml:space="preserve">
+				<source>Limit progress/offset to amount of side slides</source>
+			<target>crwdns413341:0crwdne413341:0</target></trans-unit>
+      <trans-unit id="options.creativeEffect.next" xml:space="preserve">
+				<source>Next slide transformations</source>
+			<target>crwdns413343:0crwdne413343:0</target></trans-unit>
+      <trans-unit id="options.creativeEffect.perspective" xml:space="preserve">
+				<source>Enable 3D perspective for custom transforms</source>
+			<target>crwdns413345:0crwdne413345:0</target></trans-unit>
+      <trans-unit id="options.creativeEffect.prev" xml:space="preserve">
+				<source>Previous slide transformations</source>
+			<target>crwdns413347:0crwdne413347:0</target></trans-unit>
+      <trans-unit id="options.creativeEffect.progressMultiplier" xml:space="preserve">
+				<source>Multiply slide transformations and opacity</source>
+			<target>crwdns413349:0crwdne413349:0</target></trans-unit>
+      <trans-unit id="options.creativeEffect.shadowPerProgress" xml:space="preserve">
+				<source>Split shadow opacity per slide based on limitProgress</source>
+			<target>crwdns413351:0crwdne413351:0</target></trans-unit>
+      <trans-unit id="options.thumbs.autoScrollOffset" xml:space="preserve">
+				<source>Auto scroll offset for thumbs</source>
+			<target>crwdns413353:0crwdne413353:0</target></trans-unit>
+      <trans-unit id="options.thumbs.multipleActiveThumbs" xml:space="preserve">
+				<source>Enable multiple active thumbnail slides</source>
+			<target>crwdns413355:0crwdne413355:0</target></trans-unit>
+      <trans-unit id="options.thumbs.slideThumbActiveClass" xml:space="preserve">
+				<source>Additional class for activated thumbs swiper slide</source>
+			<target>crwdns413357:0crwdne413357:0</target></trans-unit>
+      <trans-unit id="options.thumbs.swiper" xml:space="preserve">
+				<source>Swiper instance or parameters for thumbs swiper</source>
+			<target>crwdns413359:0crwdne413359:0</target></trans-unit>
+      <trans-unit id="options.thumbs.thumbsContainerClass" xml:space="preserve">
+				<source>Additional class for thumbs swiper container</source>
+			<target>crwdns413361:0crwdne413361:0</target></trans-unit>
+      <trans-unit id="options.zoom.enabled" xml:space="preserve">
+				<source>Enable/disable zoom</source>
+			<target>crwdns413363:0crwdne413363:0</target></trans-unit>
+      <trans-unit id="options.zoom.containerClass" xml:space="preserve">
+				<source>CSS class name of zoom container</source>
+			<target>crwdns413365:0crwdne413365:0</target></trans-unit>
+      <trans-unit id="options.zoom.limitToOriginalSize" xml:space="preserve">
+				<source>Limit zoom to original image size</source>
+			<target>crwdns413367:0crwdne413367:0</target></trans-unit>
+      <trans-unit id="options.zoom.maxRatio" xml:space="preserve">
+				<source>Maximum image zoom multiplier</source>
+			<target>crwdns413369:0crwdne413369:0</target></trans-unit>
+      <trans-unit id="options.zoom.minRatio" xml:space="preserve">
+				<source>Minimal image zoom multiplier</source>
+			<target>crwdns413371:0crwdne413371:0</target></trans-unit>
+      <trans-unit id="options.zoom.panOnMouseMove" xml:space="preserve">
+				<source>Pan zoomed image on mouse move</source>
+			<target>crwdns413373:0crwdne413373:0</target></trans-unit>
+      <trans-unit id="options.zoom.toggle" xml:space="preserve">
+				<source>Enable/disable zoom-in by double tap</source>
+			<target>crwdns413375:0crwdne413375:0</target></trans-unit>
+      <trans-unit id="options.zoom.zoomedSlideClass" xml:space="preserve">
+				<source>CSS class name of zoomed in container</source>
+			<target>crwdns413377:0crwdne413377:0</target></trans-unit>
+      <trans-unit id="options.keyboard.enabled" xml:space="preserve">
+				<source>Enable keyboard control</source>
+			<target>crwdns413379:0crwdne413379:0</target></trans-unit>
+      <trans-unit id="options.keyboard.onlyInViewport" xml:space="preserve">
+				<source>Control sliders only in viewport</source>
+			<target>crwdns413381:0crwdne413381:0</target></trans-unit>
+      <trans-unit id="options.keyboard.pageUpDown" xml:space="preserve">
+				<source>Enable keyboard navigation by Page Up/Down keys</source>
+			<target>crwdns413383:0crwdne413383:0</target></trans-unit>
+      <trans-unit id="options.keyboard.speed" xml:space="preserve">
+				<source>Speed of keyboard navigation transitions (ms)</source>
+			<target>crwdns413385:0crwdne413385:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.enabled" xml:space="preserve">
+				<source>Enable mousewheel control</source>
+			<target>crwdns413387:0crwdne413387:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.eventsTarget" xml:space="preserve">
+				<source>CSS selector or HTML element for mousewheel events target</source>
+			<target>crwdns413389:0crwdne413389:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.forceToAxis" xml:space="preserve">
+				<source>Force mousewheel swipes to axis</source>
+			<target>crwdns413391:0crwdne413391:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.invert" xml:space="preserve">
+				<source>Invert sliding direction</source>
+			<target>crwdns413393:0crwdne413393:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.noMousewheelClass" xml:space="preserve">
+				<source>Class name to ignore mousewheel scrolling</source>
+			<target>crwdns413395:0crwdne413395:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.releaseOnEdges" xml:space="preserve">
+				<source>Release mousewheel event on edges</source>
+			<target>crwdns413397:0crwdne413397:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.sensitivity" xml:space="preserve">
+				<source>Mousewheel sensitivity multiplier</source>
+			<target>crwdns413399:0crwdne413399:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.thresholdDelta" xml:space="preserve">
+				<source>Minimum mousewheel scroll delta to trigger slide change</source>
+			<target>crwdns413401:0crwdne413401:0</target></trans-unit>
+      <trans-unit id="options.mousewheel.thresholdTime" xml:space="preserve">
+				<source>Minimum mousewheel scroll time delta (ms) to trigger slide change</source>
+			<target>crwdns413403:0crwdne413403:0</target></trans-unit>
+      <trans-unit id="options.virtualslides" xml:space="preserve">
+				<source>Virtual Slides</source>
+			<target>crwdns413405:0crwdne413405:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.addSlidesAfter" xml:space="preserve">
+				<source>Increase amount of pre-rendered slides after active slide</source>
+			<target>crwdns413407:0crwdne413407:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.addSlidesBefore" xml:space="preserve">
+				<source>Increase amount of pre-rendered slides before active slide</source>
+			<target>crwdns413409:0crwdne413409:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.cache" xml:space="preserve">
+				<source>Enable DOM cache of rendered slides</source>
+			<target>crwdns413411:0crwdne413411:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.enabled" xml:space="preserve">
+				<source>Enable virtual slides</source>
+			<target>crwdns413413:0crwdne413413:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.renderExternal" xml:space="preserve">
+				<source>Function for external rendering (e.g. React/Vue)</source>
+			<target>crwdns413415:0crwdne413415:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.renderExternalUpdate" xml:space="preserve">
+				<source>Update Swiper layout after renderExternal</source>
+			<target>crwdns413417:0crwdne413417:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.renderSlide" xml:space="preserve">
+				<source>Function to render slide</source>
+			<target>crwdns413419:0crwdne413419:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.slides" xml:space="preserve">
+				<source>Array with slides</source>
+			<target>crwdns413421:0crwdne413421:0</target></trans-unit>
+      <trans-unit id="options.virtualslides.slidesPerViewAutoSlideSize" xml:space="preserve">
+				<source>Slide size for slidesPerView: auto (in px)</source>
+			<target>crwdns413423:0crwdne413423:0</target></trans-unit>
+      <trans-unit id="options.hashNavigation" xml:space="preserve">
+				<source>Hash Navigation</source>
+			<target>crwdns413425:0crwdne413425:0</target></trans-unit>
+      <trans-unit id="options.hashNavigation.getSlideIndex" xml:space="preserve">
+				<source>Function to get slide index by hash (for virtual slides)</source>
+			<target>crwdns413427:0crwdne413427:0</target></trans-unit>
+      <trans-unit id="options.hashNavigation.replaceState" xml:space="preserve">
+				<source>Replace current URL state instead of adding to history</source>
+			<target>crwdns413429:0crwdne413429:0</target></trans-unit>
+      <trans-unit id="options.hashNavigation.watchState" xml:space="preserve">
+				<source>Enable navigation by browser history/hash</source>
+			<target>crwdns413431:0crwdne413431:0</target></trans-unit>
+      <trans-unit id="options.slidesPerView">
+        <source>Slides per view</source>
+        <target>crwdns413433:0crwdne413433:0</target>
+      </trans-unit>
+      <trans-unit id="options.spaceBetween">
+        <source>Space between slides (in px)</source>
+        <target>crwdns413435:0crwdne413435:0</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerGroup">
+        <source>Number of slides in group</source>
+        <target>crwdns413437:0crwdne413437:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
