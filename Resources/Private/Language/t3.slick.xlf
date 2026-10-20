@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- slick slider -->
+      <trans-unit id="options.accessibility">
+        <source>Accessibility</source>
+        <target>crwdns413833:0crwdne413833:0</target>
+      </trans-unit>
+      <trans-unit id="options.arrows">
+        <source>Arrows</source>
+        <target>crwdns413835:0crwdne413835:0</target>
+      </trans-unit>
+      <trans-unit id="options.asNavFor">
+        <source>As Nav For</source>
+        <target>crwdns413837:0crwdne413837:0</target>
+      </trans-unit>
+      <trans-unit id="options.appendArrows">
+        <source>Append Arrows</source>
+        <target>crwdns413839:0crwdne413839:0</target>
+      </trans-unit>
+      <trans-unit id="options.appendDots">
+        <source>Append Dots</source>
+        <target>crwdns413841:0crwdne413841:0</target>
+      </trans-unit>
+      <trans-unit id="options.prevArrow">
+        <source>Prev Arrow</source>
+        <target>crwdns413843:0crwdne413843:0</target>
+      </trans-unit>
+      <trans-unit id="options.nextArrow">
+        <source>Next Arrow</source>
+        <target>crwdns413845:0crwdne413845:0</target>
+      </trans-unit>
+      <trans-unit id="options.centerMode">
+        <source>Center Mode</source>
+        <target>crwdns413847:0crwdne413847:0</target>
+      </trans-unit>
+      <trans-unit id="options.centerPadding">
+        <source>Center Padding</source>
+        <target>crwdns413849:0crwdne413849:0</target>
+      </trans-unit>
+      <trans-unit id="options.cssEase">
+        <source>CSS3 animation Easing</source>
+        <target>crwdns413851:0crwdne413851:0</target>
+      </trans-unit>
+      <!-- <trans-unit id="options.customPaging">
+				<source>Custom Paging</source>
+			</trans-unit> -->
+      <trans-unit id="options.dots">
+        <source>Dots</source>
+        <target>crwdns413853:0crwdne413853:0</target>
+      </trans-unit>
+      <trans-unit id="options.dotsClass">
+        <source>Dots Class</source>
+        <target>crwdns413855:0crwdne413855:0</target>
+      </trans-unit>
+      <trans-unit id="options.draggable">
+        <source>Draggable</source>
+        <target>crwdns413857:0crwdne413857:0</target>
+      </trans-unit>
+      <trans-unit id="options.fade">
+        <source>Fade</source>
+        <target>crwdns413859:0crwdne413859:0</target>
+      </trans-unit>
+      <trans-unit id="options.focusOnSelect">
+        <source>Focus On Select</source>
+        <target>crwdns413861:0crwdne413861:0</target>
+      </trans-unit>
+      <trans-unit id="options.easing">
+        <source>Easing</source>
+        <target>crwdns413863:0crwdne413863:0</target>
+      </trans-unit>
+      <trans-unit id="options.edgeFriction">
+        <source>Edge Friction</source>
+        <target>crwdns413865:0crwdne413865:0</target>
+      </trans-unit>
+      <trans-unit id="options.infinite">
+        <source>Infinite</source>
+        <target>crwdns413867:0crwdne413867:0</target>
+      </trans-unit>
+      <trans-unit id="options.initialSlide">
+        <source>Initial Slide</source>
+        <target>crwdns413869:0crwdne413869:0</target>
+      </trans-unit>
+      <trans-unit id="options.mobileFirst">
+        <source>Mobile First</source>
+        <target>crwdns413871:0crwdne413871:0</target>
+      </trans-unit>
+      <trans-unit id="options.pauseOnFocus">
+        <source>Pause on focus</source>
+        <target>crwdns413873:0crwdne413873:0</target>
+      </trans-unit>
+      <trans-unit id="options.pauseOnHover">
+        <source>Pause on hover</source>
+        <target>crwdns413875:0crwdne413875:0</target>
+      </trans-unit>
+      <trans-unit id="options.pauseOnDotsHover">
+        <source>Pause on Dots hover</source>
+        <target>crwdns413877:0crwdne413877:0</target>
+      </trans-unit>
+      <trans-unit id="options.respondTo">
+        <source>Respond To</source>
+        <target>crwdns413879:0crwdne413879:0</target>
+      </trans-unit>
+      <trans-unit id="options.rows">
+        <source>Rows</source>
+        <target>crwdns413881:0crwdne413881:0</target>
+      </trans-unit>
+      <trans-unit id="options.slidesPerRow">
+        <source>Slides per row</source>
+        <target>crwdns413883:0crwdne413883:0</target>
+      </trans-unit>
+      <trans-unit id="options.slidesToShow">
+        <source>Slides to show</source>
+        <target>crwdns413885:0crwdne413885:0</target>
+      </trans-unit>
+      <trans-unit id="options.slidesToScroll">
+        <source>Slides to Scroll</source>
+        <target>crwdns413887:0crwdne413887:0</target>
+      </trans-unit>
+      <trans-unit id="options.speed">
+        <source>Slide/Fade animation speed</source>
+        <target>crwdns413889:0crwdne413889:0</target>
+      </trans-unit>
+      <trans-unit id="options.swipe">
+        <source>Enable swiping</source>
+        <target>crwdns413891:0crwdne413891:0</target>
+      </trans-unit>
+      <trans-unit id="options.swipeToSlide">
+        <source>Swipe to slide</source>
+        <target>crwdns413893:0crwdne413893:0</target>
+      </trans-unit>
+      <trans-unit id="options.touchMove">
+        <source>Touch Move</source>
+        <target>crwdns413895:0crwdne413895:0</target>
+      </trans-unit>
+      <trans-unit id="options.touchThreshold">
+        <source>Touch Threshold</source>
+        <target>crwdns413897:0crwdne413897:0</target>
+      </trans-unit>
+      <trans-unit id="options.useCSS">
+        <source>Enable CSS Transitions</source>
+        <target>crwdns413899:0crwdne413899:0</target>
+      </trans-unit>
+      <trans-unit id="options.useTransform">
+        <source>Enable CSS Transform</source>
+        <target>crwdns413901:0crwdne413901:0</target>
+      </trans-unit>
+      <trans-unit id="options.variableWidth">
+        <source>Variable Width</source>
+        <target>crwdns413903:0crwdne413903:0</target>
+      </trans-unit>
+      <trans-unit id="options.vertical">
+        <source>Vertical slide mode</source>
+        <target>crwdns413905:0crwdne413905:0</target>
+      </trans-unit>
+      <trans-unit id="options.verticalSwiping">
+        <source>Vertical swipe mode</source>
+        <target>crwdns413907:0crwdne413907:0</target>
+      </trans-unit>
+      <trans-unit id="options.rtl">
+        <source>Right-to-left slider</source>
+        <target>crwdns413909:0crwdne413909:0</target>
+      </trans-unit>
+      <trans-unit id="options.waitForAnimate">
+        <source>Wait for animate</source>
+        <target>crwdns413911:0crwdne413911:0</target>
+      </trans-unit>
+      <trans-unit id="options.zindex">
+        <source>Z-Index value for slides</source>
+        <target>crwdns413913:0crwdne413913:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
