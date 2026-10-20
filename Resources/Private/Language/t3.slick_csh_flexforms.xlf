@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="slick.settings.js.accessibility.description" xml:space="preserve">
+				<source>Enables tabbing and arrow key navigation</source>
+			<target>crwdns413915:0crwdne413915:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.adaptiveHeight.description" xml:space="preserve">
+				<source>Enables adaptive height for single slide horizontal carousels.</source>
+			<target>crwdns413917:0crwdne413917:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.autoplay.description" xml:space="preserve">
+				<source>Enables Autoplay</source>
+			<target>crwdns413919:0crwdne413919:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.autoplaySpeed.description" xml:space="preserve">
+				<source>Autoplay Speed in milliseconds</source>
+			<target>crwdns413921:0crwdne413921:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.arrows.description" xml:space="preserve">
+				<source>Prev/Next Arrows</source>
+			<target>crwdns413923:0crwdne413923:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.asNavFor.description" xml:space="preserve">
+				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
+			<target>crwdns413925:0crwdne413925:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.appendArrows.description" xml:space="preserve">
+				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			<target>crwdns413927:0crwdne413927:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.appendDots.description" xml:space="preserve">
+				<source>Change where the navigation dots are attached (Selector, htmlString, Array, Element, jQuery object)</source>
+			<target>crwdns413929:0crwdne413929:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.prevArrow.description" xml:space="preserve">
+				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
+			<target>crwdns413931:0crwdne413931:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.nextArrow.description" xml:space="preserve">
+				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
+			<target>crwdns413933:0crwdne413933:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.centerMode.description" xml:space="preserve">
+				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+			<target>crwdns413935:0crwdne413935:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.centerPadding.description" xml:space="preserve">
+				<source>Side padding when in center mode (px or %)</source>
+			<target>crwdns413937:0crwdne413937:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.cssEase.description" xml:space="preserve">
+				<source>CSS3 Animation Easing</source>
+			<target>crwdns413939:0crwdne413939:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.customPadding.description" xml:space="preserve">
+				<source>Custom paging templates. See source for use example.</source>
+			<target>crwdns413941:0crwdne413941:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.dots.description" xml:space="preserve">
+				<source>Show dot indicators</source>
+			<target>crwdns413943:0crwdne413943:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.dotsClass.description" xml:space="preserve">
+				<source>Class for slide indicator dots container</source>
+			<target>crwdns413945:0crwdne413945:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.draggable.description" xml:space="preserve">
+				<source>Enable mouse dragging</source>
+			<target>crwdns413947:0crwdne413947:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.fade.description" xml:space="preserve">
+				<source>Enable fade</source>
+			<target>crwdns413949:0crwdne413949:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.focusOnSelect.description" xml:space="preserve">
+				<source>Enable focus on selected element (click)</source>
+			<target>crwdns413951:0crwdne413951:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.easing.description" xml:space="preserve">
+				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
+			<target>crwdns413953:0crwdne413953:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.edgeFriction.description" xml:space="preserve">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+			<target>crwdns413955:0crwdne413955:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.infinite.description" xml:space="preserve">
+				<source>Infinite loop sliding</source>
+			<target>crwdns413957:0crwdne413957:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.initialSlide.description" xml:space="preserve">
+				<source>Slide to start on</source>
+			<target>crwdns413959:0crwdne413959:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.lazyLoad.description" xml:space="preserve">
+				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
+			<target>crwdns413961:0crwdne413961:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.mobileFirst.description" xml:space="preserve">
+				<source>Responsive slick.settings use mobile first calculation</source>
+			<target>crwdns413963:0crwdne413963:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnFocus.description" xml:space="preserve">
+				<source>Pause Autoplay On Focus</source>
+			<target>crwdns413965:0crwdne413965:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnHover.description" xml:space="preserve">
+				<source>Pause Autoplay On Hover</source>
+			<target>crwdns413967:0crwdne413967:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.pauseOnDotsHover.description" xml:space="preserve">
+				<source>Pause Autoplay when a dot is hovered</source>
+			<target>crwdns413969:0crwdne413969:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.respondTo.description" xml:space="preserve">
+				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
+			<target>crwdns413971:0crwdne413971:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.rows.description" xml:space="preserve">
+				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+			<target>crwdns413973:0crwdne413973:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesPerRow.description" xml:space="preserve">
+				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+			<target>crwdns413975:0crwdne413975:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesToShow.description" xml:space="preserve">
+				<source># of slides to show</source>
+			<target>crwdns413977:0crwdne413977:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.slidesToScroll.description" xml:space="preserve">
+				<source># of slides to scroll</source>
+			<target>crwdns413979:0crwdne413979:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.speed.description" xml:space="preserve">
+				<source>Slide/Fade animation speed</source>
+			<target>crwdns413981:0crwdne413981:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.swipe.description" xml:space="preserve">
+				<source>Enable swiping</source>
+			<target>crwdns413983:0crwdne413983:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.swipeToSlide.description" xml:space="preserve">
+				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
+			<target>crwdns413985:0crwdne413985:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.touchMove.description" xml:space="preserve">
+				<source>Enable slide motion with touch</source>
+			<target>crwdns413987:0crwdne413987:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.touchThreshold.description" xml:space="preserve">
+				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
+			<target>crwdns413989:0crwdne413989:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.useCSS.description" xml:space="preserve">
+				<source>Enable/Disable CSS Transitions</source>
+			<target>crwdns413991:0crwdne413991:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.useTransform.description" xml:space="preserve">
+				<source>Enable/Disable CSS Transforms</source>
+			<target>crwdns413993:0crwdne413993:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.variableWidth.description" xml:space="preserve">
+				<source>Variable width slides</source>
+			<target>crwdns413995:0crwdne413995:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.vertical.description" xml:space="preserve">
+				<source>Vertical slide mode</source>
+			<target>crwdns413997:0crwdne413997:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.verticalSwiping.description" xml:space="preserve">
+				<source>Vertical swipe mode</source>
+			<target>crwdns413999:0crwdne413999:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.rtl.description" xml:space="preserve">
+				<source>Change the slider's direction to become right-to-left</source>
+			<target>crwdns414001:0crwdne414001:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.waitForAnimate.description" xml:space="preserve">
+				<source>Ignores requests to advance the slide while animating</source>
+			<target>crwdns414003:0crwdne414003:0</target></trans-unit>
+      <trans-unit id="slick.settings.js.zindex.description" xml:space="preserve">
+				<source>Set the zIndex values for slides, useful for IE9 and lower</source>
+			<target>crwdns414005:0crwdne414005:0</target></trans-unit>
+    </body>
+  </file>
+</xliff>
