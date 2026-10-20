@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- general Flexslider options -->
+      <trans-unit id="flexslider.settings.js.selector.description">
+        <source>Must match a simple pattern. '{container} &gt; {slide}'.</source>
+        <target>crwdns391790:0{container}crwdnd391790:0{slide}crwdne391790:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.animation.description">
+        <source>Controls the animation type, "fade" or "slide".</source>
+        <target>crwdns391792:0crwdne391792:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.easing.description">
+        <source>Determines the easing method used in jQuery transitions.</source>
+        <target>crwdns391794:0crwdne391794:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.direction.description">
+        <source>Controls the animation direction, "horizontal" or "vertical"</source>
+        <target>crwdns391796:0crwdne391796:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.reverse.description">
+        <source>Reverse the animation direction.</source>
+        <target>crwdns391798:0crwdne391798:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.animationLoop.description">
+        <source>Gives the slider a seamless infinite loop.</source>
+        <target>crwdns391800:0crwdne391800:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.smoothHeight.description">
+        <source>Animate the height of the slider smoothly for slides of varying height.</source>
+        <target>crwdns391802:0crwdne391802:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.startAt.description">
+        <source>The starting slide for the slider, in array notation.</source>
+        <target>crwdns391804:0crwdne391804:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.slideshow.description">
+        <source>Setup a slideshow for the slider to animate automatically.</source>
+        <target>crwdns391806:0crwdne391806:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.slideshowSpeed.description">
+        <source>Set the speed of the slideshow cycling, in milliseconds.</source>
+        <target>crwdns391808:0crwdne391808:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.animationSpeed.description">
+        <source>Set the speed of animations, in milliseconds.</source>
+        <target>crwdns391810:0crwdne391810:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.initDelay.description">
+        <source>Set an initialization delay, in milliseconds.</source>
+        <target>crwdns391812:0crwdne391812:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.randomize.description">
+        <source>Randomize slide order, on load.</source>
+        <target>crwdns391814:0crwdne391814:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.fadeFirstSlide.description">
+        <source>Fade in animation on the first slide.</source>
+        <target>crwdns391816:0crwdne391816:0</target>
+      </trans-unit>
+      <!-- Usability Features -->
+      <trans-unit id="flexslider.settings.js.pauseOnAction.description">
+        <source>Pause the slideshow when interacting with control elements.</source>
+        <target>crwdns391818:0crwdne391818:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.pauseOnHover.description">
+        <source>Pause the slideshow when hovering over slider, then resume when no longer hovering.</source>
+        <target>crwdns391820:0crwdne391820:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.pauseInvisible.description">
+        <source>Pause Invisible</source>
+        <target>crwdns391822:0crwdne391822:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.useCSS.description">
+        <source>Slider will use CSS3 transitions, if available.</source>
+        <target>crwdns391824:0crwdne391824:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.touch.description">
+        <source>Allow touch swipe navigation of the slider on enabled devices.</source>
+        <target>crwdns391826:0crwdne391826:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.video.description">
+        <source>Will prevent use of CSS3 3D Transforms, avoiding graphical glitches when there is video in the
+					slider.
+				</source>
+        <target>crwdns391828:0crwdne391828:0</target>
+      </trans-unit>
+      <!-- Primary Controls -->
+      <trans-unit id="flexslider.settings.js.controlNav.description">
+        <source>Create navigation for paging control of each slide.</source>
+        <target>crwdns391830:0crwdne391830:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.directionNav.description">
+        <source>Create previous/next arrow navigation.</source>
+        <target>crwdns391832:0crwdne391832:0</target>
+      </trans-unit>
+      <!-- Secondary Navigation -->
+      <trans-unit id="flexslider.settings.js.keyboard.description">
+        <source>Allow slider navigating via keyboard left/right keys.</source>
+        <target>crwdns391834:0crwdne391834:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.multipleKeyboard.description">
+        <source>Allow keyboard navigation to affect multiple sliders.</source>
+        <target>crwdns391836:0crwdne391836:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.mousewheel.description">
+        <source>(Dependency) Allows slider navigating via mousewheel</source>
+        <target>crwdns391838:0crwdne391838:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.pausePlay.description">
+        <source>Create pause/play element to control slider slideshow.</source>
+        <target>crwdns391840:0crwdne391840:0</target>
+      </trans-unit>
+      <!-- Special Properties -->
+      <trans-unit id="flexslider.settings.js.controlsContainer.description">
+        <source>jQuery Object/Selector. Container the navigation elements should be appended to.</source>
+        <target>crwdns391842:0crwdne391842:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.manualControls.description">
+        <source>jQuery Object/Selector. Define element to be used in lieu of dynamic controlNav.</source>
+        <target>crwdns391844:0crwdne391844:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.customDirectionNav.description">
+        <source>jQuery Object/Selector. Container the custom navigation markup works with.</source>
+        <target>crwdns391846:0crwdne391846:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.sync.description">
+        <source>Selector. Mirror the actions performed on this slider with another slider.</source>
+        <target>crwdns391848:0crwdne391848:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.asNavFor.description">
+        <source>Selector. Turn the slider into a thumbnail navigation for another slider.</source>
+        <target>crwdns391850:0crwdne391850:0</target>
+      </trans-unit>
+      <!-- Carousel Options -->
+      <trans-unit id="flexslider.settings.js.itemWidth.description">
+        <source>Box-model width of individual carousel items, including horizontal borders and padding.</source>
+        <target>crwdns391852:0crwdne391852:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.itemMargin.description">
+        <source>Margin between carousel items.</source>
+        <target>crwdns391854:0crwdne391854:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.minItems.description">
+        <source>Minimum number of carousel items that should be visible.</source>
+        <target>crwdns391856:0crwdne391856:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.maxItems.description">
+        <source>Maximum number of carousel items that should be visible.</source>
+        <target>crwdns391858:0crwdne391858:0</target>
+      </trans-unit>
+      <trans-unit id="flexslider.settings.js.move.description">
+        <source>Number of carousel items that should move on animation.</source>
+        <target>crwdns391860:0crwdne391860:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
