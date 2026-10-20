@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- sheets -->
+      <trans-unit id="sheet.flexslider">
+        <source>Flex Slider</source>
+        <target>crwdns413671:0crwdne413671:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.usability">
+        <source>Usability</source>
+        <target>crwdns413673:0crwdne413673:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.primaryControls">
+        <source>Primary Controls</source>
+        <target>crwdns413675:0crwdne413675:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.secondaryNavigation">
+        <source>Secondary Navigation</source>
+        <target>crwdns413677:0crwdne413677:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.specialProperties">
+        <source>Special Properties</source>
+        <target>crwdns413679:0crwdne413679:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.carousel">
+        <source>Carousel</source>
+        <target>crwdns413681:0crwdne413681:0</target>
+      </trans-unit>
+      <!-- flexslider general settings -->
+      <trans-unit id="options.selector">
+        <source>Selector</source>
+        <target>crwdns413683:0crwdne413683:0</target>
+      </trans-unit>
+      <trans-unit id="options.animation">
+        <source>Animation</source>
+        <target>crwdns413685:0crwdne413685:0</target>
+      </trans-unit>
+      <trans-unit id="options.easing">
+        <source>Easing effect</source>
+        <target>crwdns413687:0crwdne413687:0</target>
+      </trans-unit>
+      <trans-unit id="options.direction">
+        <source>Direction</source>
+        <target>crwdns413689:0crwdne413689:0</target>
+      </trans-unit>
+      <trans-unit id="options.reverse">
+        <source>Reverse order</source>
+        <target>crwdns413691:0crwdne413691:0</target>
+      </trans-unit>
+      <trans-unit id="options.animationLoop">
+        <source>Animation loop</source>
+        <target>crwdns413693:0crwdne413693:0</target>
+      </trans-unit>
+      <trans-unit id="options.smoothHeight">
+        <source>Smooth height</source>
+        <target>crwdns413695:0crwdne413695:0</target>
+      </trans-unit>
+      <trans-unit id="options.startAt">
+        <source>Start at</source>
+        <target>crwdns413697:0crwdne413697:0</target>
+      </trans-unit>
+      <trans-unit id="options.slideshow">
+        <source>Slideshow mode</source>
+        <target>crwdns413699:0crwdne413699:0</target>
+      </trans-unit>
+      <trans-unit id="options.slideshowSpeed">
+        <source>Slideshow speed (in milliseconds)</source>
+        <target>crwdns413701:0crwdne413701:0</target>
+      </trans-unit>
+      <trans-unit id="options.animationSpeed">
+        <source>Animation speed (in milliseconds)</source>
+        <target>crwdns413703:0crwdne413703:0</target>
+      </trans-unit>
+      <trans-unit id="options.initDelay">
+        <source>Init delay in milliseconds</source>
+        <target>crwdns413705:0crwdne413705:0</target>
+      </trans-unit>
+      <trans-unit id="options.randomize">
+        <source>Random mode</source>
+        <target>crwdns413707:0crwdne413707:0</target>
+      </trans-unit>
+      <trans-unit id="options.fadeFirstSlide">
+        <source>Fade in first slide</source>
+        <target>crwdns413709:0crwdne413709:0</target>
+      </trans-unit>
+      <trans-unit id="options.fade">
+        <source>Fade</source>
+        <target>crwdns413711:0crwdne413711:0</target>
+      </trans-unit>
+      <trans-unit id="options.slide">
+        <source>Slide</source>
+        <target>crwdns413713:0crwdne413713:0</target>
+      </trans-unit>
+      <!-- Usability Features -->
+      <trans-unit id="options.pauseOnAction">
+        <source>Pause on action</source>
+        <target>crwdns413715:0crwdne413715:0</target>
+      </trans-unit>
+      <trans-unit id="options.pauseOnHover">
+        <source>Pause on hover</source>
+        <target>crwdns413717:0crwdne413717:0</target>
+      </trans-unit>
+      <trans-unit id="options.pauseInvisible">
+        <source>Pause Invisible</source>
+        <target>crwdns413719:0crwdne413719:0</target>
+      </trans-unit>
+      <trans-unit id="options.useCSS">
+        <source>User CSS</source>
+        <target>crwdns413721:0crwdne413721:0</target>
+      </trans-unit>
+      <trans-unit id="options.touch">
+        <source>Touch mode</source>
+        <target>crwdns413723:0crwdne413723:0</target>
+      </trans-unit>
+      <trans-unit id="options.video">
+        <source>Video mode</source>
+        <target>crwdns413725:0crwdne413725:0</target>
+      </trans-unit>
+      <!-- Primary Controls -->
+      <trans-unit id="options.controlNav">
+        <source>Navigation Dots</source>
+        <target>crwdns413727:0crwdne413727:0</target>
+      </trans-unit>
+      <trans-unit id="options.directionNav">
+        <source>Navigation Arrows</source>
+        <target>crwdns413729:0crwdne413729:0</target>
+      </trans-unit>
+      <!-- Secondary Navigation -->
+      <trans-unit id="options.keyboard">
+        <source>Keyboard support</source>
+        <target>crwdns413731:0crwdne413731:0</target>
+      </trans-unit>
+      <trans-unit id="options.multipleKeyboard">
+        <source>Allow keyboard navigation to affect multiple sliders</source>
+        <target>crwdns413733:0crwdne413733:0</target>
+      </trans-unit>
+      <trans-unit id="options.mousewheel">
+        <source>Mousewheel support (requires jquery.mousewheel.js)</source>
+        <target>crwdns413735:0crwdne413735:0</target>
+      </trans-unit>
+      <trans-unit id="options.pausePlay">
+        <source>Create pause/play dynamic element</source>
+        <target>crwdns413737:0crwdne413737:0</target>
+      </trans-unit>
+      <!-- Special Properties -->
+      <trans-unit id="options.controlsContainer">
+        <source>controlsContainer jQuery object/selector</source>
+        <target>crwdns413739:0crwdne413739:0</target>
+      </trans-unit>
+      <trans-unit id="options.manualControls">
+        <source>manualControls jQuery object/selector</source>
+        <target>crwdns413741:0crwdne413741:0</target>
+      </trans-unit>
+      <trans-unit id="options.customDirectionNav">
+        <source>customDirectionNav jQuery object/selector</source>
+        <target>crwdns413743:0crwdne413743:0</target>
+      </trans-unit>
+      <trans-unit id="options.sync">
+        <source>Sync selector: mirror the actions performed on this slider with another slider</source>
+        <target>crwdns413745:0crwdne413745:0</target>
+      </trans-unit>
+      <trans-unit id="options.asNavFor">
+        <source>asNavFor selector</source>
+        <target>crwdns413747:0crwdne413747:0</target>
+      </trans-unit>
+      <!-- Carousel-->
+      <trans-unit id="options.itemWidth">
+        <source>Element width in pixels</source>
+        <target>crwdns413749:0crwdne413749:0</target>
+      </trans-unit>
+      <trans-unit id="options.itemMargin">
+        <source>Element border (margin)</source>
+        <target>crwdns413751:0crwdne413751:0</target>
+      </trans-unit>
+      <trans-unit id="options.minItems">
+        <source>Min number of elements</source>
+        <target>crwdns413753:0crwdne413753:0</target>
+      </trans-unit>
+      <trans-unit id="options.maxItems">
+        <source>Max number of elements</source>
+        <target>crwdns413755:0crwdne413755:0</target>
+      </trans-unit>
+      <trans-unit id="options.move">
+        <source>Number of elements, which should be moved in animation</source>
+        <target>crwdns413757:0crwdne413757:0</target>
+      </trans-unit>
+      <trans-unit id="btn.more">
+        <source>More</source>
+        <target>crwdns413759:0crwdne413759:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
