@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- sheets -->
+      <trans-unit id="sheet.bootstrap">
+        <source>Bootstrap Slider</source>
+        <target>crwdns413083:0crwdne413083:0</target>
+      </trans-unit>
+      <trans-unit id="options.interval">
+        <source>Interval</source>
+        <target>crwdns413085:0crwdne413085:0</target>
+      </trans-unit>
+      <trans-unit id="options.keyboard">
+        <source>Keyboard</source>
+        <target>crwdns413087:0crwdne413087:0</target>
+      </trans-unit>
+      <trans-unit id="options.pause">
+        <source>Pause</source>
+        <target>crwdns413089:0crwdne413089:0</target>
+      </trans-unit>
+      <trans-unit id="options.ride">
+        <source>Ride</source>
+        <target>crwdns413091:0crwdne413091:0</target>
+      </trans-unit>
+      <trans-unit id="options.ride.option.carousel">
+        <source>Carousel</source>
+        <target>crwdns413093:0crwdne413093:0</target>
+      </trans-unit>
+      <trans-unit id="options.touch">
+        <source>Touch</source>
+        <target>crwdns413095:0crwdne413095:0</target>
+      </trans-unit>
+      <trans-unit id="options.wrap">
+        <source>Wrap</source>
+        <target>crwdns413097:0crwdne413097:0</target>
+      </trans-unit>
+      <trans-unit id="options.control">
+        <source>Show control</source>
+        <target>crwdns413099:0crwdne413099:0</target>
+      </trans-unit>
+      <trans-unit id="options.indicators">
+        <source>Show indicators</source>
+        <target>crwdns413101:0crwdne413101:0</target>
+      </trans-unit>
+      <trans-unit id="options.title">
+        <source>Show title</source>
+        <target>crwdns413103:0crwdne413103:0</target>
+      </trans-unit>
+      <trans-unit id="options.description">
+        <source>Show description</source>
+        <target>crwdns413105:0crwdne413105:0</target>
+      </trans-unit>
+      <trans-unit id="options.startAt">
+        <source>Start at</source>
+        <target>crwdns413107:0crwdne413107:0</target>
+      </trans-unit>
+      <trans-unit id="btn.previous">
+        <source>Previous</source>
+        <target>crwdns413109:0crwdne413109:0</target>
+      </trans-unit>
+      <trans-unit id="btn.next">
+        <source>Next</source>
+        <target>crwdns413111:0crwdne413111:0</target>
+      </trans-unit>
+      <trans-unit id="btn.more">
+        <source>More</source>
+        <target>crwdns413113:0crwdne413113:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
