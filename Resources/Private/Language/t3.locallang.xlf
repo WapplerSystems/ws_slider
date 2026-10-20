@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Slider</source>
+        <target>crwdns413439:0crwdne413439:0</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Universal Slider / Carousel</source>
+        <target>crwdns413441:0crwdne413441:0</target>
+      </trans-unit>
+      <trans-unit id="palette.wsslider">
+        <source>Slider</source>
+        <target>crwdns413443:0crwdne413443:0</target>
+      </trans-unit>
+      <trans-unit id="settings">
+        <source>Settings</source>
+        <target>crwdns413445:0crwdne413445:0</target>
+      </trans-unit>
+      <trans-unit id="renderer">
+        <source>Renderer</source>
+        <target>crwdns413447:0crwdne413447:0</target>
+      </trans-unit>
+      <trans-unit id="items">
+        <source>Items</source>
+        <target>crwdns413449:0crwdne413449:0</target>
+      </trans-unit>
+      <trans-unit id="preset">
+        <source>Preset</source>
+        <target>crwdns413451:0crwdne413451:0</target>
+      </trans-unit>
+      <trans-unit id="source">
+        <source>Source</source>
+        <target>crwdns413453:0crwdne413453:0</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source>Yes</source>
+        <target>crwdns413455:0crwdne413455:0</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source>No</source>
+        <target>crwdns413457:0crwdne413457:0</target>
+      </trans-unit>
+      <trans-unit id="force">
+        <source>Force</source>
+        <target>crwdns413459:0crwdne413459:0</target>
+      </trans-unit>
+      <trans-unit id="auto">
+        <source>Auto</source>
+        <target>crwdns413461:0crwdne413461:0</target>
+      </trans-unit>
+      <trans-unit id="inner">
+        <source>Inner</source>
+        <target>crwdns413463:0crwdne413463:0</target>
+      </trans-unit>
+      <trans-unit id="outer">
+        <source>Outer</source>
+        <target>crwdns413465:0crwdne413465:0</target>
+      </trans-unit>
+      <trans-unit id="hover">
+        <source>Hover</source>
+        <target>crwdns413467:0crwdne413467:0</target>
+      </trans-unit>
+      <trans-unit id="horizontal">
+        <source>horizontal</source>
+        <target>crwdns413469:0crwdne413469:0</target>
+      </trans-unit>
+      <trans-unit id="vertical">
+        <source>vertical</source>
+        <target>crwdns413471:0crwdne413471:0</target>
+      </trans-unit>
+      <trans-unit id="default">
+        <source>Default</source>
+        <target>crwdns413473:0crwdne413473:0</target>
+      </trans-unit>
+      <trans-unit id="preset_is_set">
+        <source>A preset has been selected</source>
+        <target>crwdns413475:0crwdne413475:0</target>
+      </trans-unit>
+      <!-- Buttons and labels -->
+      <trans-unit id="label.next">
+        <source>Next</source>
+        <target>crwdns413477:0crwdne413477:0</target>
+      </trans-unit>
+      <trans-unit id="label.previous">
+        <source>Previous</source>
+        <target>crwdns413479:0crwdne413479:0</target>
+      </trans-unit>
+      <trans-unit id="label.start">
+        <source>Start</source>
+        <target>crwdns413481:0crwdne413481:0</target>
+      </trans-unit>
+      <trans-unit id="label.stop">
+        <source>Stop</source>
+        <target>crwdns413483:0crwdne413483:0</target>
+      </trans-unit>
+      <trans-unit id="settings.typoscript">
+        <source>TypoScript</source>
+        <target>crwdns413485:0crwdne413485:0</target>
+      </trans-unit>
+      <!-- sheets -->
+      <trans-unit id="sheet.navigation">
+        <source>Navigation</source>
+        <target>crwdns413487:0crwdne413487:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.pagination">
+        <source>Pagination</source>
+        <target>crwdns413489:0crwdne413489:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.scrollbar">
+        <source>Scrollbar</source>
+        <target>crwdns413491:0crwdne413491:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.autoplay">
+        <source>Autoplay</source>
+        <target>crwdns413493:0crwdne413493:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.freeMode">
+        <source>Free Mode</source>
+        <target>crwdns413495:0crwdne413495:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.grid">
+        <source>Grid</source>
+        <target>crwdns413497:0crwdne413497:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.parallax">
+        <source>Parallax</source>
+        <target>crwdns413499:0crwdne413499:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.fadeEffect">
+        <source>Fade Effect</source>
+        <target>crwdns413501:0crwdne413501:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.coverflowEffect">
+        <source>CoverFlow Effect</source>
+        <target>crwdns413503:0crwdne413503:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.flipEffect">
+        <source>Flip Effect</source>
+        <target>crwdns413505:0crwdne413505:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.cubeEffect">
+        <source>Cube Effect</source>
+        <target>crwdns413507:0crwdne413507:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.cardsEffect">
+        <source>Cards Effect</source>
+        <target>crwdns413509:0crwdne413509:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.creativeEffect">
+        <source>Creative Effect</source>
+        <target>crwdns413511:0crwdne413511:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.thumbs">
+        <source>Thumbs</source>
+        <target>crwdns413513:0crwdne413513:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.zoom">
+        <source>Zoom</source>
+        <target>crwdns413515:0crwdne413515:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.keyboard">
+        <source>Keyboard</source>
+        <target>crwdns413517:0crwdne413517:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.mousewheel">
+        <source>Mousewheel</source>
+        <target>crwdns413519:0crwdne413519:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.virtualslides">
+        <source>Virtual Slides</source>
+        <target>crwdns413521:0crwdne413521:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.hashNavigation">
+        <source>Hash Navigation</source>
+        <target>crwdns413523:0crwdne413523:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.history">
+        <source>History Navigation</source>
+        <target>crwdns413525:0crwdne413525:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.layout">
+        <source>Layout</source>
+        <target>crwdns413527:0crwdne413527:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.dragNdrop">
+        <source>Swipe/Drag support</source>
+        <target>crwdns413529:0crwdne413529:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.animation">
+        <source>Animation</source>
+        <target>crwdns413531:0crwdne413531:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.advanced">
+        <source>Advanced</source>
+        <target>crwdns413533:0crwdne413533:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.general">
+        <source>General</source>
+        <target>crwdns413535:0crwdne413535:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.tinySlider">
+        <source>Tiny Slider</source>
+        <target>crwdns413537:0crwdne413537:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.slick">
+        <source>Slick Slider</source>
+        <target>crwdns413539:0crwdne413539:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.swiper">
+        <source>Swiper Slider</source>
+        <target>crwdns413541:0crwdne413541:0</target>
+      </trans-unit>
+      <!-- common setting labels -->
+      <trans-unit id="options.enabled">
+        <source>Enabled</source>
+        <target>crwdns413543:0crwdne413543:0</target>
+      </trans-unit>
+      <trans-unit id="options.carousel">
+        <source>Carousel</source>
+        <target>crwdns413545:0crwdne413545:0</target>
+      </trans-unit>
+      <trans-unit id="options.gallery">
+        <source>Gallery</source>
+        <target>crwdns413547:0crwdne413547:0</target>
+      </trans-unit>
+      <trans-unit id="options.horizontal">
+        <source>Horizontal</source>
+        <target>crwdns413549:0crwdne413549:0</target>
+      </trans-unit>
+      <trans-unit id="options.vertical">
+        <source>Vertical</source>
+        <target>crwdns413551:0crwdne413551:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.layout">
+        <source>Layout</source>
+        <target>crwdns413553:0crwdne413553:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoplay">
+        <source>Autoplay</source>
+        <target>crwdns413555:0crwdne413555:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.lazyLoad">
+        <source>Lazy load</source>
+        <target>crwdns413557:0crwdne413557:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.loop">
+        <source>Loop / Carousel</source>
+        <target>crwdns413559:0crwdne413559:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoplaySpeed">
+        <source>Autoplay speed</source>
+        <target>crwdns413561:0crwdne413561:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.top">
+        <source>Top</source>
+        <target>crwdns413563:0crwdne413563:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.bottom">
+        <source>Bottom</source>
+        <target>crwdns413565:0crwdne413565:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.forward">
+        <source>Forward</source>
+        <target>crwdns413567:0crwdne413567:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.backward">
+        <source>Backward</source>
+        <target>crwdns413569:0crwdne413569:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.vertical">
+        <source>Vertical</source>
+        <target>crwdns413571:0crwdne413571:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.horizontal">
+        <source>Horizontal</source>
+        <target>crwdns413573:0crwdne413573:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.animateOut">
+        <source>Outro Animation</source>
+        <target>crwdns413575:0crwdne413575:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.animateIn">
+        <source>Intro Animation</source>
+        <target>crwdns413577:0crwdne413577:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.autoHeight">
+        <source>Auto Height</source>
+        <target>crwdns413579:0crwdne413579:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.video">
+        <source>Enable Video</source>
+        <target>crwdns413581:0crwdne413581:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.touch">
+        <source>Enable Touch Support</source>
+        <target>crwdns413583:0crwdne413583:0</target>
+      </trans-unit>
+      <trans-unit id="options.common.animationSpeed">
+        <source>Animation Speed</source>
+        <target>crwdns413585:0crwdne413585:0</target>
+      </trans-unit>
+      <!-- Labels -->
+      <trans-unit id="pauseText">
+        <source>Pause</source>
+        <target>crwdns413587:0crwdne413587:0</target>
+      </trans-unit>
+      <trans-unit id="playText">
+        <source>Play</source>
+        <target>crwdns413589:0crwdne413589:0</target>
+      </trans-unit>
+      <!-- item labels -->
+      <trans-unit id="tx_wsslider_domain_model_item">
+        <source>Slider element</source>
+        <target>crwdns413591:0crwdne413591:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.title">
+        <source>Title</source>
+        <target>crwdns413593:0crwdne413593:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description">
+        <source>Description</source>
+        <target>crwdns413595:0crwdne413595:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia">
+        <source>Image or Video</source>
+        <target>crwdns413597:0crwdne413597:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition">
+        <source>Text position</source>
+        <target>crwdns413599:0crwdne413599:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link">
+        <source>Link</source>
+        <target>crwdns413601:0crwdne413601:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left">
+        <source>Left</source>
+        <target>crwdns413603:0crwdne413603:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right">
+        <source>Right</source>
+        <target>crwdns413605:0crwdne413605:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleClass">
+        <source>Text style class</source>
+        <target>crwdns413607:0crwdne413607:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1">
+        <source>Style 1</source>
+        <target>crwdns413609:0crwdne413609:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2">
+        <source>Style 2</source>
+        <target>crwdns413611:0crwdne413611:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3">
+        <source>Style 3</source>
+        <target>crwdns413613:0crwdne413613:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4">
+        <source>Style 4</source>
+        <target>crwdns413615:0crwdne413615:0</target>
+      </trans-unit>
+      <trans-unit id="addImage">
+        <source>Add image</source>
+        <target>crwdns413617:0crwdne413617:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset">
+        <source>WS slider preset</source>
+        <target>crwdns413619:0crwdne413619:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.name">
+        <source>Name</source>
+        <target>crwdns413621:0crwdne413621:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type">
+        <source>Type</source>
+        <target>crwdns413623:0crwdne413623:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.bootstrap">
+        <source>Bootstrap</source>
+        <target>crwdns413625:0crwdne413625:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.flexslider">
+        <source>Flexslider</source>
+        <target>crwdns413627:0crwdne413627:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.slick">
+        <source>Slick slider</source>
+        <target>crwdns413629:0crwdne413629:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.tinyslider">
+        <source>Tiny Slider</source>
+        <target>crwdns413631:0crwdne413631:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_preset.type.swiper">
+        <source>Swiper</source>
+        <target>crwdns413633:0crwdne413633:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
