@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="owl.settings.js.items.description" xml:space="preserve">
+				<source>The number of items you want to see on the screen.</source>
+			<target>crwdns311750:0crwdne311750:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.0.items.description" xml:space="preserve">
+				<source>Items below 576px display width</source>
+			<target>crwdns311752:0crwdne311752:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.576.items.description" xml:space="preserve">
+				<source>Items above 576px display width</source>
+			<target>crwdns311754:0crwdne311754:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.768.items.description" xml:space="preserve">
+				<source>Items above 768px display width</source>
+			<target>crwdns311756:0crwdne311756:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.992.items.description" xml:space="preserve">
+				<source>Items above 992px display width</source>
+			<target>crwdns311758:0crwdne311758:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.1200px.items.description" xml:space="preserve">
+				<source>Items above 1200px display width</source>
+			<target>crwdns311760:0crwdne311760:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsive.1400px.items.description" xml:space="preserve">
+				<source>Items above 1400px display width</source>
+			<target>crwdns311762:0crwdne311762:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.margin.description">
+        <source>margin-right(px) on item.</source>
+        <target>crwdns311764:0crwdne311764:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.loop.description" xml:space="preserve">
+				<source>Infinity loop. Duplicate last and first items to get loop illusion.</source>
+			<target>crwdns311766:0crwdne311766:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.center.description">
+        <source>Center item. Works well with even an odd number of items.</source>
+        <target>crwdns311768:0crwdne311768:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.mouseDrag.description" xml:space="preserve">
+				<source>Mouse drag enabled.</source>
+			<target>crwdns311770:0crwdne311770:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.touchDrag.description">
+        <source>Touch drag enabled.</source>
+        <target>crwdns311772:0crwdne311772:0</target>
+      </trans-unit>
+      <!-- <trans-unit id="owl.settings.js.pullDrag.description" xml:space="preserve">
+				<source>Stage pull to edge.</source>
+			</trans-unit> -->
+      <!-- <trans-unit id="owl.settings.js.freeDrag.description">
+                <source>Item pull to edge.</source>
+            </trans-unit> -->
+      <trans-unit id="owl.settings.js.stagePadding.description" xml:space="preserve">
+				<source>Padding left and right on stage (can see neighbours).</source>
+			<target>crwdns311774:0crwdne311774:0</target></trans-unit>
+      <!-- <trans-unit id="owl.settings.js.merge.description">
+                <source>Merge items. Looking for data-merge='{number}' inside item.</source>
+            </trans-unit>
+            <trans-unit id="owl.settings.js.mergeFit.description" xml:space="preserve">
+				<source>Fit merged items if screen is smaller than items value.</source>
+			</trans-unit> -->
+      <trans-unit id="owl.settings.js.autoWidth.description">
+        <source>Set non grid content. Try using width style on divs.</source>
+        <target>crwdns311776:0crwdne311776:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.startPosition.description" xml:space="preserve">
+				<source>Start position or URL Hash string like '#id'.</source>
+			<target>crwdns311778:0crwdne311778:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.URLhashListener.description">
+        <source>Listen to url hash changes. data-hash on items is required.</source>
+        <target>crwdns311780:0crwdne311780:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.nav.description" xml:space="preserve">
+				<source>Show next/prev buttons.</source>
+			<target>crwdns311782:0crwdne311782:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.rewind.description">
+        <source>Go backwards when the boundary has reached.</source>
+        <target>crwdns311784:0crwdne311784:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.navElement.description">
+        <source>DOM element type for a single directional navigation link.</source>
+        <target>crwdns311786:0crwdne311786:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.slideBy.description" xml:space="preserve">
+				<source>Navigation slide by x. 'page' string can be set to slide by page.</source>
+			<target>crwdns311788:0crwdne311788:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.slideTransition.description">
+        <source>You can define the transition for the stage you want to use eg. linear.</source>
+        <target>crwdns311790:0crwdne311790:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.dots.description" xml:space="preserve">
+				<source>Show dots navigation.</source>
+			<target>crwdns311792:0crwdne311792:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.dotsEach.description">
+        <source>Show dots each x item.</source>
+        <target>crwdns311794:0crwdne311794:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.lazyLoad.description" xml:space="preserve">
+				<source>Lazy load images. data-src and data-src-retina for highres. Also load images into background inline style if element is not &lt;img&gt;</source>
+			<target>crwdns311796:0crwdne311796:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.lazyLoadEager.description">
+        <source>Eagerly pre-loads images to the right (and left when loop is enabled) based on how many items you want to preload.</source>
+        <target>crwdns311798:0crwdne311798:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.autoplay.description" xml:space="preserve">
+				<source>Autoplay.</source>
+			<target>crwdns311800:0crwdne311800:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.autoplayTimeout.description">
+        <source>Autoplay interval timeout.</source>
+        <target>crwdns311802:0crwdne311802:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.autoplayHoverPause.description" xml:space="preserve">
+				<source>Pause on mouse hover.</source>
+			<target>crwdns311804:0crwdne311804:0</target></trans-unit>
+      <!-- <trans-unit id="owl.settings.js.smartSpeed.description">
+                <source>Speed Calculate. More info to come.</source>
+            </trans-unit>
+            <trans-unit id="owl.settings.js.fluidSpeed.description" xml:space="preserve">
+				<source>Speed Calculate. More info to come.</source>
+			</trans-unit> -->
+      <trans-unit id="owl.settings.js.autoplaySpeed.description">
+        <source>autoplay speed.</source>
+        <target>crwdns311806:0crwdne311806:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.navSpeed.description" xml:space="preserve">
+				<source>Navigation speed.</source>
+			<target>crwdns311808:0crwdne311808:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.dotsSpeed.description">
+        <source>Pagination speed.</source>
+        <target>crwdns311810:0crwdne311810:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.dragEndSpeed.description" xml:space="preserve">
+				<source>Drag end speed.</source>
+			<target>crwdns311812:0crwdne311812:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.responsiveRefreshRate.description" xml:space="preserve">
+				<source>Responsive refresh rate.</source>
+			<target>crwdns311814:0crwdne311814:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.video.description">
+        <source>Enable fetching YouTube/Vimeo/Vzaar videos.</source>
+        <target>crwdns311816:0crwdne311816:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.videoHeight.description" xml:space="preserve">
+				<source>Set height for videos.</source>
+			<target>crwdns311818:0crwdne311818:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.videoWidth.description">
+        <source>Set width for videos.</source>
+        <target>crwdns311820:0crwdne311820:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.animateOut.description" xml:space="preserve">
+				<source>Class for CSS3 animation out.</source>
+			<target>crwdns311822:0crwdne311822:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.animateIn.description">
+        <source>Class for CSS3 animation in.</source>
+        <target>crwdns311824:0crwdne311824:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.fallbackEasing.description" xml:space="preserve">
+				<source>Easing for CSS2 $.animate.</source>
+			<target>crwdns311826:0crwdne311826:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.nestedItemSelector.description">
+        <source>Use it if owl items are deep nested inside some generated content. E.g 'youritem'. Dont use dot before class name.</source>
+        <target>crwdns311828:0crwdne311828:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.itemElement.description" xml:space="preserve">
+				<source>DOM element type for owl-item.</source>
+			<target>crwdns311830:0crwdne311830:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.stageElement.description">
+        <source>DOM element type for owl-stage.</source>
+        <target>crwdns311832:0crwdne311832:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.navContainer.description">
+        <source>Set your own container for nav.</source>
+        <target>crwdns311834:0crwdne311834:0</target>
+      </trans-unit>
+      <trans-unit id="owl.settings.js.dotsContainer.description" xml:space="preserve">
+				<source>Set your own container for nav.</source>
+			<target>crwdns311836:0crwdne311836:0</target></trans-unit>
+      <trans-unit id="owl.settings.js.checkVisible.description">
+        <source>If you know the carousel will always be visible you can set `checkVisibility` to `false` to prevent the expensive browser layout forced reflow the $element.is(':visible') does.</source>
+        <target>crwdns311838:0$elementcrwdne311838:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

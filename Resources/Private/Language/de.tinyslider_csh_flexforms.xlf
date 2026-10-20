@@ -84,9 +84,6 @@
       <trans-unit id="tinyslider.settings.js.autoplayButton.description" xml:space="preserve" approved="yes">
 				<source>The customized autoplay start/stop button or selector.</source>
 			<target state="final">Benutzerdefinierter Autotoplay Start-/Stop-Button oder Selektor.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" xml:space="preserve">
-				<source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
-			<target state="needs-translation">Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</target></trans-unit>
       <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" xml:space="preserve" approved="yes">
 				<source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
 			<target state="final">Pausiert Autoplay wenn die Seite nicht sichtbar ist und führt es fort sobald die Seite wieder sichtbar ist.</target></trans-unit>
@@ -148,15 +145,6 @@
       <trans-unit id="tinyslider.settings.js.startIndex.description" xml:space="preserve" approved="yes">
 				<source>The initial index of the slider.</source>
 			<target state="final">Auf welchem Element soll der Slider starten?</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.onInit.description" xml:space="preserve">
-				<source>Callback to be run on initialization.</source>
-			<target state="needs-translation">Callback to be run on initialization.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" xml:space="preserve">
-				<source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
-			<target state="needs-translation">Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</target></trans-unit>
-      <trans-unit id="tinyslider.settings.js.nonce.description" xml:space="preserve">
-				<source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
-			<target state="needs-translation">Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</target></trans-unit>
     </body>
   </file>
 </xliff>

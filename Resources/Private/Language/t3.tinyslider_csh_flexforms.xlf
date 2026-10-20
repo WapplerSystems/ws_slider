@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="tinyslider.settings.js.mode.description" xml:space="preserve">
+				<source>Controls animation behaviour. With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</source>
+			<target>crwdns311346:0crwdne311346:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.axis.description" xml:space="preserve">
+				<source>The axis of the slider.</source>
+			<target>crwdns311348:0crwdne311348:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.items.description" xml:space="preserve">
+				<source>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized</source>
+			<target>crwdns311350:0crwdne311350:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.gutter.description" xml:space="preserve">
+				<source>Space between slides (in “px”).</source>
+			<target>crwdns311352:0crwdne311352:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.edgePadding.description" xml:space="preserve">
+				<source>Space on the outside (in “px”).</source>
+			<target>crwdns311354:0crwdne311354:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.fixedWidth.description" xml:space="preserve">
+				<source>Controls width attribute of the slides.</source>
+			<target>crwdns311356:0crwdne311356:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoWidth.description" xml:space="preserve">
+				<source>If true, the width of each slide will be its natural width as an inline-block box.</source>
+			<target>crwdns311358:0crwdne311358:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.viewportMax.description" xml:space="preserve">
+				<source>Maximum viewport width for fixedWidth/autoWidth.</source>
+			<target>crwdns311360:0crwdne311360:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.slideBy.description" xml:space="preserve">
+				<source>Number of slides going on one “click”.</source>
+			<target>crwdns311362:0crwdne311362:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.center.description" xml:space="preserve">
+				<source>Center the active slide in the viewport.</source>
+			<target>crwdns311364:0crwdne311364:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.controls.description" xml:space="preserve">
+				<source>Controls the display and functionalities of controls components (prev/next buttons). If true, display the controls and add all functionalities. For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</source>
+			<target>crwdns311366:0crwdne311366:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.controlsPosition.description" xml:space="preserve">
+				<source>Controls controls position.</source>
+			<target>crwdns311368:0crwdne311368:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.controlsContainer.description" xml:space="preserve">
+				<source>The container element/selector around the prev/next buttons. controlsContainer must have at least 2 child elements.</source>
+			<target>crwdns311370:0crwdne311370:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.prevButton.description" xml:space="preserve">
+				<source>Customized previous buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+			<target>crwdns311372:0crwdne311372:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.nextButton.description" xml:space="preserve">
+				<source>Customized next buttons. This option will be ignored if controlsContainer is a Node element or a CSS selector.</source>
+			<target>crwdns311374:0crwdne311374:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.nav.description" xml:space="preserve">
+				<source>Controls the display and functionalities of nav components (dots). If true, display the nav and add all functionalities.</source>
+			<target>crwdns311376:0crwdne311376:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.navPosition.description" xml:space="preserve">
+				<source>Controls nav position.</source>
+			<target>crwdns311378:0crwdne311378:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.navContainer.description" xml:space="preserve">
+				<source>The container element/selector around the dots. navContainer must have at least same number of children as the slides.</source>
+			<target>crwdns311380:0crwdne311380:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.navAsThumbnail.description" xml:space="preserve">
+				<source>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</source>
+			<target>crwdns311382:0crwdne311382:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.arrowKeys.description" xml:space="preserve">
+				<source>Allows using arrow keys to switch slides.</source>
+			<target>crwdns311384:0crwdne311384:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.speed.description" xml:space="preserve">
+				<source>Speed of the slide animation (in “ms”).</source>
+			<target>crwdns311386:0crwdne311386:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplay.description" xml:space="preserve">
+				<source>Toggles the automatic change of slides.</source>
+			<target>crwdns311388:0crwdne311388:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayPosition.description" xml:space="preserve">
+				<source>Controls autoplay position.</source>
+			<target>crwdns311390:0crwdne311390:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayTimeout.description" xml:space="preserve">
+				<source>Time between 2 autoplay slides change (in “ms”).</source>
+			<target>crwdns311392:0crwdne311392:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayDirection.description" xml:space="preserve">
+				<source>Direction of slide movement (ascending/descending the slide index).</source>
+			<target>crwdns311394:0crwdne311394:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayHoverPause.description" xml:space="preserve">
+				<source>Stops sliding on mouseover.</source>
+			<target>crwdns311396:0crwdne311396:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayButton.description" xml:space="preserve">
+				<source>The customized autoplay start/stop button or selector.</source>
+			<target>crwdns311398:0crwdne311398:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayButtonOutput.description" xml:space="preserve">
+				<source>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</source>
+			<target>crwdns311400:0crwdne311400:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoplayResetOnVisibility.description" xml:space="preserve">
+				<source>Pauses the sliding when the page is invisible and resumes it when the page become visiable again.</source>
+			<target>crwdns311402:0crwdne311402:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateIn.description" xml:space="preserve">
+				<source>Name of intro animation class.</source>
+			<target>crwdns311404:0crwdne311404:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateOut.description" xml:space="preserve">
+				<source>Name of outro animation class.</source>
+			<target>crwdns311406:0crwdne311406:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateNormal.description" xml:space="preserve">
+				<source>Name of default animation class.</source>
+			<target>crwdns311408:0crwdne311408:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.animateDelay.description" xml:space="preserve">
+				<source>Time between each gallery animation (in “ms”).</source>
+			<target>crwdns311410:0crwdne311410:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.loop.description" xml:space="preserve">
+				<source>Moves throughout all the slides seamlessly.</source>
+			<target>crwdns311412:0crwdne311412:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.rewind.description" xml:space="preserve">
+				<source>Moves to the opposite edge when reaching the first or last slide.</source>
+			<target>crwdns311414:0crwdne311414:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.autoHeight.description" xml:space="preserve">
+				<source>Height of slider container changes according to each slide’s height.</source>
+			<target>crwdns311416:0crwdne311416:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.lazyload.description" xml:space="preserve">
+				<source>Enables lazyloading images that are currently not viewed, thus saving bandwidth (see demo).
+                        NOTE:
+                        + Class .tns-lazy-img need to be set on every image you want to lazyload if option lazyloadSelector is not specified;
+                        + data-src attribute with its value of the real image src is required;
+                        + width attribute for every image is required for autoWidth slider.</source>
+			<target>crwdns311418:0crwdne311418:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.lazyloadSelector.description" xml:space="preserve">
+				<source>The CSS selector for lazyload images.</source>
+			<target>crwdns311420:0crwdne311420:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.touch.description" xml:space="preserve">
+				<source>Activates input detection for touch devices.</source>
+			<target>crwdns311422:0crwdne311422:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.mouseDrag.description" xml:space="preserve">
+				<source>Changing slides by dragging them.</source>
+			<target>crwdns311424:0crwdne311424:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.swipeAngle.description" xml:space="preserve">
+				<source>Swipe or drag will not be triggered if the angle is not inside the range when set.</source>
+			<target>crwdns311426:0crwdne311426:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.preventActionWhenRunning.description" xml:space="preserve">
+				<source>Prevent next transition while slider is transforming.</source>
+			<target>crwdns311428:0crwdne311428:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.preventScrollOnTouch.description" xml:space="preserve">
+				<source>Prevent page from scrolling on touchmove. If set to “auto”, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to “force”, the slider will always prevent the page scrolling.</source>
+			<target>crwdns311430:0crwdne311430:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.nested.description" xml:space="preserve">
+				<source>Define the relationship between nested sliders. Make sure you run the inner slider first, otherwise the height of the inner slider container will be wrong.</source>
+			<target>crwdns311432:0crwdne311432:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.freezable.description" xml:space="preserve">
+				<source>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</source>
+			<target>crwdns311434:0crwdne311434:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.disable.description" xml:space="preserve">
+				<source>Disable slider.</source>
+			<target>crwdns311436:0crwdne311436:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.startIndex.description" xml:space="preserve">
+				<source>The initial index of the slider.</source>
+			<target>crwdns311438:0crwdne311438:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.onInit.description" xml:space="preserve">
+				<source>Callback to be run on initialization.</source>
+			<target>crwdns311440:0crwdne311440:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.useLocalStorage.description" xml:space="preserve">
+				<source>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</source>
+			<target>crwdns311442:0crwdne311442:0</target></trans-unit>
+      <trans-unit id="tinyslider.settings.js.nonce.description" xml:space="preserve">
+				<source>Optional Nonce attribute for inline style tag to allow slider usage without unsafe-inline Content Security Policy source.</source>
+			<target>crwdns311444:0crwdne311444:0</target></trans-unit>
+    </body>
+  </file>
+</xliff>

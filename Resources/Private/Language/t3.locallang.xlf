@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="title" xml:space="preserve">
+				<source>Slider</source>
+			<target>crwdns311620:0crwdne311620:0</target></trans-unit>
+      <trans-unit id="description" xml:space="preserve">
+				<source>Universal Slider / Carousel</source>
+			<target>crwdns311622:0crwdne311622:0</target></trans-unit>
+      <trans-unit id="palette.wsslider">
+        <source>Slider</source>
+        <target>crwdns311624:0crwdne311624:0</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <source>WS Slider Settings</source>
+        <target>crwdns311620:0crwdne311620:0</target>
+      </trans-unit>
+      <trans-unit id="settings" xml:space="preserve">
+				<source>Settings</source>
+			<target>crwdns311628:0crwdne311628:0</target></trans-unit>
+      <trans-unit id="renderer" xml:space="preserve">
+				<source>Renderer</source>
+			<target>crwdns311630:0crwdne311630:0</target></trans-unit>
+      <trans-unit id="items" xml:space="preserve">
+				<source>Items</source>
+			<target>crwdns311632:0crwdne311632:0</target></trans-unit>
+      <trans-unit id="yes">
+        <source>Yes</source>
+        <target>crwdns311634:0crwdne311634:0</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source>No</source>
+        <target>crwdns311636:0crwdne311636:0</target>
+      </trans-unit>
+      <trans-unit id="force">
+        <source>Force</source>
+        <target>crwdns311638:0crwdne311638:0</target>
+      </trans-unit>
+      <trans-unit id="auto">
+        <source>Auto</source>
+        <target>crwdns311640:0crwdne311640:0</target>
+      </trans-unit>
+      <trans-unit id="inner">
+        <source>Inner</source>
+        <target>crwdns311642:0crwdne311642:0</target>
+      </trans-unit>
+      <trans-unit id="outer">
+        <source>Outer</source>
+        <target>crwdns311644:0crwdne311644:0</target>
+      </trans-unit>
+      <trans-unit id="default">
+        <source>Default</source>
+        <target>crwdns311646:0crwdne311646:0</target>
+      </trans-unit>
+      <!-- Buttons and labels -->
+      <trans-unit id="label.next">
+        <source>Next</source>
+        <target>crwdns311648:0crwdne311648:0</target>
+      </trans-unit>
+      <trans-unit id="label.previous">
+        <source>Previous</source>
+        <target>crwdns311650:0crwdne311650:0</target>
+      </trans-unit>
+      <trans-unit id="label.start">
+        <source>Start</source>
+        <target>crwdns311652:0crwdne311652:0</target>
+      </trans-unit>
+      <trans-unit id="label.stop">
+        <source>Stop</source>
+        <target>crwdns311654:0crwdne311654:0</target>
+      </trans-unit>
+      <trans-unit id="settings.typoscript" xml:space="preserve">
+            	<source>TypoScript</source>
+            <target>crwdns311656:0crwdne311656:0</target></trans-unit>
+      <!-- sheets -->
+      <trans-unit id="sheet.owl">
+        <source>Owl</source>
+        <target>crwdns311658:0crwdne311658:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.navigation">
+        <source>Navigation</source>
+        <target>crwdns311660:0crwdne311660:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.layout">
+        <source>Layout</source>
+        <target>crwdns311662:0crwdne311662:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.dragNdrop">
+        <source>Swipe/Drag support</source>
+        <target>crwdns311664:0crwdne311664:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.animation">
+        <source>Animation</source>
+        <target>crwdns311666:0crwdne311666:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.advanced">
+        <source>Advanced</source>
+        <target>crwdns311668:0crwdne311668:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.general">
+        <source>General</source>
+        <target>crwdns311670:0crwdne311670:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.tinySlider">
+        <source>Tiny Slider</source>
+        <target>crwdns311672:0crwdne311672:0</target>
+      </trans-unit>
+      <trans-unit id="sheet.slick">
+        <source>Slick Slider</source>
+        <target>crwdns311674:0crwdne311674:0</target>
+      </trans-unit>
+      <!-- common setting labels -->
+      <trans-unit id="settings.carousel">
+        <source>Carousel</source>
+        <target>crwdns311676:0crwdne311676:0</target>
+      </trans-unit>
+      <trans-unit id="settings.gallery">
+        <source>Gallery</source>
+        <target>crwdns311678:0crwdne311678:0</target>
+      </trans-unit>
+      <trans-unit id="settings.horizontal">
+        <source>Horizontal</source>
+        <target>crwdns311680:0crwdne311680:0</target>
+      </trans-unit>
+      <trans-unit id="settings.vertical">
+        <source>Vertical</source>
+        <target>crwdns311682:0crwdne311682:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.layout">
+        <source>Layout</source>
+        <target>crwdns311684:0crwdne311684:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoplay">
+        <source>Autoplay</source>
+        <target>crwdns311686:0crwdne311686:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.lazyLoad">
+        <source>Lazy load</source>
+        <target>crwdns311688:0crwdne311688:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.loop">
+        <source>Loop / Carousel</source>
+        <target>crwdns311690:0crwdne311690:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoplaySpeed">
+        <source>Autoplay speed</source>
+        <target>crwdns311692:0crwdne311692:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.top">
+        <source>Top</source>
+        <target>crwdns311694:0crwdne311694:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.bottom">
+        <source>Bottom</source>
+        <target>crwdns311696:0crwdne311696:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.forward">
+        <source>Forward</source>
+        <target>crwdns311698:0crwdne311698:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.backward">
+        <source>Backward</source>
+        <target>crwdns311700:0crwdne311700:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.vertical" xml:space="preserve">
+            	<source>Vertical</source>
+            <target>crwdns311702:0crwdne311702:0</target></trans-unit>
+      <trans-unit id="settings.common.horizontal" xml:space="preserve">
+            	<source>Horizontal</source>
+            <target>crwdns311704:0crwdne311704:0</target></trans-unit>
+      <trans-unit id="settings.common.animateOut">
+        <source>Outro Animation</source>
+        <target>crwdns311706:0crwdne311706:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.animateIn">
+        <source>Intro Animation</source>
+        <target>crwdns311708:0crwdne311708:0</target>
+      </trans-unit>
+      <trans-unit id="settings.common.autoHeight" xml:space="preserve">
+                <source>Auto Height</source>
+            <target>crwdns311710:0crwdne311710:0</target></trans-unit>
+      <trans-unit id="settings.common.video" xml:space="preserve">
+                <source>Enable Video</source>
+            <target>crwdns311712:0crwdne311712:0</target></trans-unit>
+      <trans-unit id="settings.common.touch" xml:space="preserve">
+                <source>Enable Touch Support</source>
+            <target>crwdns311714:0crwdne311714:0</target></trans-unit>
+      <trans-unit id="settings.common.animationSpeed" xml:space="preserve">
+                <source>Animation Speed</source>
+            <target>crwdns311716:0crwdne311716:0</target></trans-unit>
+      <!-- Labels -->
+      <trans-unit id="pauseText" xml:space="preserve">
+            	<source>Pause</source>
+            <target>crwdns311718:0crwdne311718:0</target></trans-unit>
+      <trans-unit id="playText" xml:space="preserve">
+            	<source>Play</source>
+            <target>crwdns311720:0crwdne311720:0</target></trans-unit>
+      <!-- item labels -->
+      <trans-unit id="tx_wsslider_domain_model_item" xml:space="preserve">
+				<source>Slider element</source>
+			<target>crwdns311722:0crwdne311722:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.title" xml:space="preserve">
+				<source>Title</source>
+			<target>crwdns311724:0crwdne311724:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.description" xml:space="preserve">
+				<source>Description</source>
+			<target>crwdns311726:0crwdne311726:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.foregroundMedia" xml:space="preserve">
+				<source>Image or Video</source>
+			<target>crwdns311728:0crwdne311728:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textPosition">
+        <source>Text position</source>
+        <target>crwdns311730:0crwdne311730:0</target>
+      </trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.link" xml:space="preserve">
+				<source>Link</source>
+			<target>crwdns311732:0crwdne311732:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_left" xml:space="preserve">
+				<source>Left</source>
+			<target>crwdns311734:0crwdne311734:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.textposition_right" xml:space="preserve">
+				<source>Right</source>
+			<target>crwdns311736:0crwdne311736:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleClass" xml:space="preserve">
+				<source>Text style class</source>
+			<target>crwdns311738:0crwdne311738:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style1" xml:space="preserve">
+				<source>Style 1</source>
+			<target>crwdns311740:0crwdne311740:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style2" xml:space="preserve">
+				<source>Style 2</source>
+			<target>crwdns311742:0crwdne311742:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style3" xml:space="preserve">
+				<source>Style 3</source>
+			<target>crwdns311744:0crwdne311744:0</target></trans-unit>
+      <trans-unit id="tx_wsslider_domain_model_item.styleclass_style4" xml:space="preserve">
+				<source>Style 4</source>
+			<target>crwdns311746:0crwdne311746:0</target></trans-unit>
+      <trans-unit id="addImage" xml:space="preserve">
+				<source>Add image</source>
+			<target>crwdns311748:0crwdne311748:0</target></trans-unit>
+    </body>
+  </file>
+</xliff>

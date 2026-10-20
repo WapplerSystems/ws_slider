@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- slick slider -->
+      <trans-unit id="settings.accessibility" xml:space="preserve">
+                <source>Accessibility</source>
+            <target>crwdns311446:0crwdne311446:0</target></trans-unit>
+      <trans-unit id="settings.arrows" xml:space="preserve">
+                <source>Arrows</source>
+            <target>crwdns311448:0crwdne311448:0</target></trans-unit>
+      <trans-unit id="settings.asNavFor" xml:space="preserve">
+                <source>As Nav For</source>
+            <target>crwdns311450:0crwdne311450:0</target></trans-unit>
+      <trans-unit id="settings.appendArrows" xml:space="preserve">
+                <source>Append Arrows</source>
+            <target>crwdns311452:0crwdne311452:0</target></trans-unit>
+      <trans-unit id="settings.appendDots" xml:space="preserve">
+                <source>Append Dots</source>
+            <target>crwdns311454:0crwdne311454:0</target></trans-unit>
+      <trans-unit id="settings.prevArrow" xml:space="preserve">
+                <source>Prev Arrow</source>
+            <target>crwdns311456:0crwdne311456:0</target></trans-unit>
+      <trans-unit id="settings.nextArrow" xml:space="preserve">
+                <source>Next Arrow</source>
+            <target>crwdns311458:0crwdne311458:0</target></trans-unit>
+      <trans-unit id="settings.centerMode" xml:space="preserve">
+                <source>Center Mode</source>
+            <target>crwdns311460:0crwdne311460:0</target></trans-unit>
+      <trans-unit id="settings.centerPadding" xml:space="preserve">
+                <source>Center Padding</source>
+            <target>crwdns311462:0crwdne311462:0</target></trans-unit>
+      <trans-unit id="settings.cssEase" xml:space="preserve">
+                <source>CSS3 animation Easing</source>
+            <target>crwdns311464:0crwdne311464:0</target></trans-unit>
+      <!-- <trans-unit id="settings.customPaging" xml:space="preserve">
+                <source>Custom Paging</source>
+            </trans-unit> -->
+      <trans-unit id="settings.dots" xml:space="preserve">
+                <source>Dots</source>
+            <target>crwdns311466:0crwdne311466:0</target></trans-unit>
+      <trans-unit id="settings.dotsClass" xml:space="preserve">
+                <source>Dots Class</source>
+            <target>crwdns311468:0crwdne311468:0</target></trans-unit>
+      <trans-unit id="settings.draggable" xml:space="preserve">
+                <source>Draggable</source>
+            <target>crwdns311470:0crwdne311470:0</target></trans-unit>
+      <trans-unit id="settings.fade" xml:space="preserve">
+                <source>Fade</source>
+            <target>crwdns311472:0crwdne311472:0</target></trans-unit>
+      <trans-unit id="settings.focusOnSelect" xml:space="preserve">
+                <source>Focus On Select</source>
+            <target>crwdns311474:0crwdne311474:0</target></trans-unit>
+      <trans-unit id="settings.easing" xml:space="preserve">
+                <source>Easing</source>
+            <target>crwdns311476:0crwdne311476:0</target></trans-unit>
+      <trans-unit id="settings.edgeFriction" xml:space="preserve">
+                <source>Edge Friction</source>
+            <target>crwdns311478:0crwdne311478:0</target></trans-unit>
+      <trans-unit id="settings.infinite" xml:space="preserve">
+                <source>Infinite</source>
+            <target>crwdns311480:0crwdne311480:0</target></trans-unit>
+      <trans-unit id="settings.initialSlide" xml:space="preserve">
+                <source>Initial Slide</source>
+            <target>crwdns311482:0crwdne311482:0</target></trans-unit>
+      <trans-unit id="settings.mobileFirst" xml:space="preserve">
+                <source>Mobile First</source>
+            <target>crwdns311484:0crwdne311484:0</target></trans-unit>
+      <trans-unit id="settings.pauseOnFocus" xml:space="preserve">
+                <source>Pause on focus</source>
+            <target>crwdns311486:0crwdne311486:0</target></trans-unit>
+      <trans-unit id="settings.pauseOnHover" xml:space="preserve">
+                <source>Pause on hover</source>
+            <target>crwdns311488:0crwdne311488:0</target></trans-unit>
+      <trans-unit id="settings.pauseOnDotsHover" xml:space="preserve">
+                <source>Pause on Dots hover</source>
+            <target>crwdns311490:0crwdne311490:0</target></trans-unit>
+      <trans-unit id="settings.respondTo" xml:space="preserve">
+                <source>Respond To</source>
+            <target>crwdns311492:0crwdne311492:0</target></trans-unit>
+      <trans-unit id="settings.rows" xml:space="preserve">
+                <source>Rows</source>
+            <target>crwdns311494:0crwdne311494:0</target></trans-unit>
+      <trans-unit id="settings.slidesPerRow" xml:space="preserve">
+                <source>Slides per row</source>
+            <target>crwdns311496:0crwdne311496:0</target></trans-unit>
+      <trans-unit id="settings.slidesToShow" xml:space="preserve">
+                <source>Slides to show</source>
+            <target>crwdns311498:0crwdne311498:0</target></trans-unit>
+      <trans-unit id="settings.slidesToScroll" xml:space="preserve">
+                <source>Slides to Scroll</source>
+            <target>crwdns311500:0crwdne311500:0</target></trans-unit>
+      <trans-unit id="settings.speed" xml:space="preserve">
+                <source>Slide/Fade animation speed</source>
+            <target>crwdns311502:0crwdne311502:0</target></trans-unit>
+      <trans-unit id="settings.swipe" xml:space="preserve">
+                <source>Enable swiping</source>
+            <target>crwdns311504:0crwdne311504:0</target></trans-unit>
+      <trans-unit id="settings.swipeToSlide" xml:space="preserve">
+                <source>Swipe to slide</source>
+            <target>crwdns311506:0crwdne311506:0</target></trans-unit>
+      <trans-unit id="settings.touchMove" xml:space="preserve">
+                <source>Touch Move</source>
+            <target>crwdns311508:0crwdne311508:0</target></trans-unit>
+      <trans-unit id="settings.touchThreshold" xml:space="preserve">
+                <source>Touch Threshold</source>
+            <target>crwdns311510:0crwdne311510:0</target></trans-unit>
+      <trans-unit id="settings.useCSS" xml:space="preserve">
+                <source>Enable CSS Transitions</source>
+            <target>crwdns311512:0crwdne311512:0</target></trans-unit>
+      <trans-unit id="settings.useTransform" xml:space="preserve">
+                <source>Enable CSS Transform</source>
+            <target>crwdns311514:0crwdne311514:0</target></trans-unit>
+      <trans-unit id="settings.variableWidth" xml:space="preserve">
+                <source>Variable Width</source>
+            <target>crwdns311516:0crwdne311516:0</target></trans-unit>
+      <trans-unit id="settings.vertical" xml:space="preserve">
+                <source>Vertical slide mode</source>
+            <target>crwdns311518:0crwdne311518:0</target></trans-unit>
+      <trans-unit id="settings.verticalSwiping" xml:space="preserve">
+                <source>Vertical swipe mode</source>
+            <target>crwdns311520:0crwdne311520:0</target></trans-unit>
+      <trans-unit id="settings.rtl" xml:space="preserve">
+                <source>Right-to-left slider</source>
+            <target>crwdns311522:0crwdne311522:0</target></trans-unit>
+      <trans-unit id="settings.waitForAnimate" xml:space="preserve">
+                <source>Wait for animate</source>
+            <target>crwdns311524:0crwdne311524:0</target></trans-unit>
+      <trans-unit id="settings.zindex" xml:space="preserve">
+                <source>Z-Index value for slides</source>
+            <target>crwdns311526:0crwdne311526:0</target></trans-unit>
+    </body>
+  </file>
+</xliff>
