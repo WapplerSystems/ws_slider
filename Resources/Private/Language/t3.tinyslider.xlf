@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- tinyslider specific settings -->
+      <trans-unit id="settings.mode">
+        <source>Mode</source>
+        <target>crwdns312076:0crwdne312076:0</target>
+      </trans-unit>
+      <trans-unit id="settings.axis">
+        <source>Axis</source>
+        <target>crwdns312078:0crwdne312078:0</target>
+      </trans-unit>
+      <trans-unit id="settings.items">
+        <source>Items</source>
+        <target>crwdns312080:0crwdne312080:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount0">
+        <source>Items below 576px display width</source>
+        <target>crwdns312082:0crwdne312082:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount576">
+        <source>Items above 576px display width</source>
+        <target>crwdns312084:0crwdne312084:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount768">
+        <source>Items above 768px display width</source>
+        <target>crwdns312086:0crwdne312086:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount992">
+        <source>Items above 992px display width</source>
+        <target>crwdns312088:0crwdne312088:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1200">
+        <source>Items above 1200px display width</source>
+        <target>crwdns312090:0crwdne312090:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1400">
+        <source>Items above 1400px display width</source>
+        <target>crwdns312092:0crwdne312092:0</target>
+      </trans-unit>
+      <trans-unit id="settings.gutter">
+        <source>Gutter</source>
+        <target>crwdns312094:0crwdne312094:0</target>
+      </trans-unit>
+      <trans-unit id="settings.edgePadding">
+        <source>Edge Padding</source>
+        <target>crwdns312096:0crwdne312096:0</target>
+      </trans-unit>
+      <trans-unit id="settings.fixedWidth">
+        <source>Fixed Width</source>
+        <target>crwdns312098:0crwdne312098:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoWidth">
+        <source>Auto Width</source>
+        <target>crwdns312100:0crwdne312100:0</target>
+      </trans-unit>
+      <trans-unit id="settings.viewportMax">
+        <source>Viewport Maximum</source>
+        <target>crwdns312102:0crwdne312102:0</target>
+      </trans-unit>
+      <trans-unit id="settings.slideBy">
+        <source>Slide By</source>
+        <target>crwdns312104:0crwdne312104:0</target>
+      </trans-unit>
+      <trans-unit id="settings.center">
+        <source>Center</source>
+        <target>crwdns312106:0crwdne312106:0</target>
+      </trans-unit>
+      <trans-unit id="settings.controls">
+        <source>Control Buttons</source>
+        <target>crwdns312108:0crwdne312108:0</target>
+      </trans-unit>
+      <trans-unit id="settings.controlsPosition">
+        <source>Control Buttons Position</source>
+        <target>crwdns312110:0crwdne312110:0</target>
+      </trans-unit>
+      <trans-unit id="settings.controlsContainer">
+        <source>Control Buttons Container</source>
+        <target>crwdns312112:0crwdne312112:0</target>
+      </trans-unit>
+      <trans-unit id="settings.customPrevButton">
+        <source>Custom Previous-Button</source>
+        <target>crwdns312114:0crwdne312114:0</target>
+      </trans-unit>
+      <trans-unit id="settings.customNextButton">
+        <source>Custom Next-Button</source>
+        <target>crwdns312116:0crwdne312116:0</target>
+      </trans-unit>
+      <trans-unit id="settings.nav">
+        <source>Nav Components</source>
+        <target>crwdns312118:0crwdne312118:0</target>
+      </trans-unit>
+      <trans-unit id="settings.navPosition">
+        <source>Nav Components Position</source>
+        <target>crwdns312120:0crwdne312120:0</target>
+      </trans-unit>
+      <trans-unit id="settings.navContainer">
+        <source>Nav Components Container</source>
+        <target>crwdns312122:0crwdne312122:0</target>
+      </trans-unit>
+      <trans-unit id="settings.navAsThumbnails">
+        <source>Nav As Thumbnails</source>
+        <target>crwdns312124:0crwdne312124:0</target>
+      </trans-unit>
+      <trans-unit id="settings.arrowKeys">
+        <source>Arrow Keys</source>
+        <target>crwdns312126:0crwdne312126:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayPosition">
+        <source>Autoplay Position</source>
+        <target>crwdns312128:0crwdne312128:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayTimeout">
+        <source>Autoplay time between slide changes</source>
+        <target>crwdns312130:0crwdne312130:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayDirection">
+        <source>Autoplay Direction</source>
+        <target>crwdns312132:0crwdne312132:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayHoverPause">
+        <source>Pause autoplay on hover</source>
+        <target>crwdns312134:0crwdne312134:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayButtonOutput">
+        <source>Autoplay Button Output</source>
+        <target>crwdns312136:0crwdne312136:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayResetOnVisibility">
+        <source>Pause autoplay when page is invisible</source>
+        <target>crwdns312138:0crwdne312138:0</target>
+      </trans-unit>
+      <trans-unit id="settings.animateNormal">
+        <source>Normal Animation</source>
+        <target>crwdns312140:0crwdne312140:0</target>
+      </trans-unit>
+      <trans-unit id="settings.animateDelay">
+        <source>Animation Delay</source>
+        <target>crwdns312142:0crwdne312142:0</target>
+      </trans-unit>
+      <trans-unit id="settings.rewind">
+        <source>Rewind</source>
+        <target>crwdns312144:0crwdne312144:0</target>
+      </trans-unit>
+      <trans-unit id="settings.lazyloadSelector">
+        <source>CSS selector for lazyload images</source>
+        <target>crwdns312146:0crwdne312146:0</target>
+      </trans-unit>
+      <trans-unit id="settings.mouseDrag">
+        <source>Mouse Drag</source>
+        <target>crwdns312148:0crwdne312148:0</target>
+      </trans-unit>
+      <trans-unit id="settings.swipeAngle">
+        <source>Swipe Angle</source>
+        <target>crwdns312150:0crwdne312150:0</target>
+      </trans-unit>
+      <trans-unit id="settings.preventActionWhenRunning">
+        <source>Prevent next transition while slider is transforming</source>
+        <target>crwdns312152:0crwdne312152:0</target>
+      </trans-unit>
+      <trans-unit id="settings.preventScrollOnTouch">
+        <source>Prevent page from scrolling on touch</source>
+        <target>crwdns312154:0crwdne312154:0</target>
+      </trans-unit>
+      <trans-unit id="settings.nested">
+        <source>Nested</source>
+        <target>crwdns312156:0crwdne312156:0</target>
+      </trans-unit>
+      <trans-unit id="settings.freezable">
+        <source>Freezable</source>
+        <target>crwdns312158:0crwdne312158:0</target>
+      </trans-unit>
+      <trans-unit id="settings.disable">
+        <source>Disable</source>
+        <target>crwdns312160:0crwdne312160:0</target>
+      </trans-unit>
+      <trans-unit id="settings.startIndex">
+        <source>Start Index</source>
+        <target>crwdns312162:0crwdne312162:0</target>
+      </trans-unit>
+      <trans-unit id="settings.onInit">
+        <source>Callback to be run on initialization</source>
+        <target>crwdns312164:0crwdne312164:0</target>
+      </trans-unit>
+      <trans-unit id="settings.useLocalStorage">
+        <source>Use Local Storage</source>
+        <target>crwdns312166:0crwdne312166:0</target>
+      </trans-unit>
+      <trans-unit id="settings.nonce">
+        <source>Nonce Attribute</source>
+        <target>crwdns312168:0crwdne312168:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
