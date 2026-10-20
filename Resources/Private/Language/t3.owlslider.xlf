@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="ws_slider" target-language="t3">
+    <header/>
+    <body>
+      <!-- Owl specific labels -->
+      <trans-unit id="owl">
+        <source>Owl</source>
+        <target>crwdns312000:0crwdne312000:0</target>
+      </trans-unit>
+      <trans-unit id="settings.items">
+        <source>Items</source>
+        <target>crwdns312002:0crwdne312002:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount0">
+        <source>Items below 576px display width</source>
+        <target>crwdns312004:0crwdne312004:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount576">
+        <source>Items above 576px display width</source>
+        <target>crwdns312006:0crwdne312006:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount768">
+        <source>Items above 768px display width</source>
+        <target>crwdns312008:0crwdne312008:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount992">
+        <source>Items above 992px display width</source>
+        <target>crwdns312010:0crwdne312010:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1200">
+        <source>Items above 1200px display width</source>
+        <target>crwdns312012:0crwdne312012:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveItemCount1400">
+        <source>Items above 1400px display width</source>
+        <target>crwdns312014:0crwdne312014:0</target>
+      </trans-unit>
+      <trans-unit id="settings.margin">
+        <source>Margin</source>
+        <target>crwdns312016:0crwdne312016:0</target>
+      </trans-unit>
+      <trans-unit id="settings.stagePadding">
+        <source>Stage Padding</source>
+        <target>crwdns312018:0crwdne312018:0</target>
+      </trans-unit>
+      <trans-unit id="settings.center">
+        <source>Center item</source>
+        <target>crwdns312020:0crwdne312020:0</target>
+      </trans-unit>
+      <trans-unit id="settings.mouseDrag">
+        <source>Mouse Drag</source>
+        <target>crwdns312022:0crwdne312022:0</target>
+      </trans-unit>
+      <trans-unit id="settings.touchDrag">
+        <source>Touch Drag</source>
+        <target>crwdns312024:0crwdne312024:0</target>
+      </trans-unit>
+      <!-- <trans-unit id="settings.pullDrag">
+				<source>Pull Drag</source>
+			</trans-unit>
+			<trans-unit id="settings.freeDrag">
+				<source>Free Drag</source>
+			</trans-unit> -->
+      <!-- <trans-unit id="settings.merge">
+				<source>Merge items</source>
+			</trans-unit>
+			<trans-unit id="settings.mergeFit">
+				<source>Merge Fit</source>
+			</trans-unit> -->
+      <trans-unit id="settings.autoWidth">
+        <source>Auto Width</source>
+        <target>crwdns312026:0crwdne312026:0</target>
+      </trans-unit>
+      <trans-unit id="settings.startPosition">
+        <source>Start position</source>
+        <target>crwdns312028:0crwdne312028:0</target>
+      </trans-unit>
+      <trans-unit id="settings.rewind">
+        <source>Rewind</source>
+        <target>crwdns312030:0crwdne312030:0</target>
+      </trans-unit>
+      <trans-unit id="settings.slideBy">
+        <source>Slide By</source>
+        <target>crwdns312032:0crwdne312032:0</target>
+      </trans-unit>
+      <trans-unit id="settings.slideTransition">
+        <source>Slide Transition</source>
+        <target>crwdns312034:0crwdne312034:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayTimeout">
+        <source>Autoplay interval timeout</source>
+        <target>crwdns312036:0crwdne312036:0</target>
+      </trans-unit>
+      <trans-unit id="settings.autoplayHoverPause">
+        <source>Autoplay pause on hover</source>
+        <target>crwdns312038:0crwdne312038:0</target>
+      </trans-unit>
+      <trans-unit id="settings.dragEndSpeed">
+        <source>Drag end speed</source>
+        <target>crwdns312040:0crwdne312040:0</target>
+      </trans-unit>
+      <trans-unit id="settings.lazyLoadEager">
+        <source>Eager Lazy Load</source>
+        <target>crwdns312042:0crwdne312042:0</target>
+      </trans-unit>
+      <!-- <trans-unit id="settings.smartSpeed">
+				<source>Smart Speed</source>
+			</trans-unit> -->
+      <trans-unit id="settings.videoHeight">
+        <source>Video Height</source>
+        <target>crwdns312044:0crwdne312044:0</target>
+      </trans-unit>
+      <trans-unit id="settings.videoWidth">
+        <source>Video Width</source>
+        <target>crwdns312046:0crwdne312046:0</target>
+      </trans-unit>
+      <trans-unit id="settings.fallbackEasing">
+        <source>Easing fallback animation for CSS2</source>
+        <target>crwdns312048:0crwdne312048:0</target>
+      </trans-unit>
+      <trans-unit id="settings.nestedItemSelector">
+        <source>Nested Item Selector</source>
+        <target>crwdns312050:0crwdne312050:0</target>
+      </trans-unit>
+      <trans-unit id="settings.itemElement">
+        <source>Item Element</source>
+        <target>crwdns312052:0crwdne312052:0</target>
+      </trans-unit>
+      <trans-unit id="settings.stageElement">
+        <source>Stage Element</source>
+        <target>crwdns312054:0crwdne312054:0</target>
+      </trans-unit>
+      <trans-unit id="settings.navContainer">
+        <source>Nav Container</source>
+        <target>crwdns312056:0crwdne312056:0</target>
+      </trans-unit>
+      <trans-unit id="settings.navSpeed">
+        <source>Nav Speed</source>
+        <target>crwdns312058:0crwdne312058:0</target>
+      </trans-unit>
+      <trans-unit id="settings.nav">
+        <source>Show Nav Buttons</source>
+        <target>crwdns312060:0crwdne312060:0</target>
+      </trans-unit>
+      <trans-unit id="settings.dotsContainer">
+        <source>Dots Container</source>
+        <target>crwdns312062:0crwdne312062:0</target>
+      </trans-unit>
+      <trans-unit id="settings.dots">
+        <source>Show navigation dots</source>
+        <target>crwdns312064:0crwdne312064:0</target>
+      </trans-unit>
+      <trans-unit id="settings.dotsEach">
+        <source>Show dots each x item</source>
+        <target>crwdns312066:0crwdne312066:0</target>
+      </trans-unit>
+      <trans-unit id="settings.dotsSpeed">
+        <source>Dots Speed</source>
+        <target>crwdns312068:0crwdne312068:0</target>
+      </trans-unit>
+      <trans-unit id="settings.checkVisible">
+        <source>Check Visible</source>
+        <target>crwdns312070:0crwdne312070:0</target>
+      </trans-unit>
+      <trans-unit id="settings.responsiveRefreshRate">
+        <source>Responsive Refresh Rate</source>
+        <target>crwdns312072:0crwdne312072:0</target>
+      </trans-unit>
+      <trans-unit id="settings.URLhashListener">
+        <source>Listen to url hash changes</source>
+        <target>crwdns312074:0crwdne312074:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
