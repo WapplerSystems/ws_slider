@@ -1,5 +1,5 @@
 /**
- * Swiper 14.3.0
+ * Swiper 14.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: September 28, 2026
+ * Released on: October 30, 2026
  */
 
 var Swiper = (function () {
@@ -61,6 +61,15 @@ var Swiper = (function () {
             o !== null &&
             !!o.constructor &&
             Object.prototype.toString.call(o).slice(8, -1) === 'Object');
+    }
+    function isHTMLElement(el) {
+        // A bare `instanceof HTMLElement` is false for an element from another window (same-origin
+        // iframe, e.g. the WordPress block editor canvas), so check against the element's own realm.
+        if (!el || typeof el !== 'object')
+            return false;
+        const view = el.ownerDocument?.defaultView;
+        const Ctor = view?.HTMLElement ?? (typeof HTMLElement !== 'undefined' ? HTMLElement : undefined);
+        return !!Ctor && el instanceof Ctor;
     }
     function isNode(node) {
         if (typeof HTMLElement !== 'undefined' && node instanceof HTMLElement)
@@ -876,6 +885,18 @@ var Swiper = (function () {
         const { params, el } = swiper;
         if (el && el.offsetWidth === 0)
             return;
+        // updateSlides() measures slides with their margins reset, and WebKit re-snaps the wrapper after
+        // that layout - applying it after the re-seat below, short of the slide by the margins before it.
+        // Keep snapping off until the next frame, as slideTo() does for virtual slides.
+        const { wrapperEl } = swiper;
+        const snapType = params.cssMode && wrapperEl ? wrapperEl.style.scrollSnapType : 'none';
+        if (snapType !== 'none') {
+            wrapperEl.style.scrollSnapType = 'none';
+            requestAnimationFrame(() => {
+                if (!swiper.destroyed)
+                    wrapperEl.style.scrollSnapType = snapType;
+            });
+        }
         // Breakpoints
         if (params.breakpoints) {
             swiper.setBreakpoint();
@@ -906,6 +927,10 @@ var Swiper = (function () {
                 swiper.slideTo(swiper.activeIndex, 0, false, true);
             }
         }
+        // In cssMode the re-seat only writes the scroll position, and where the browser had already put
+        // the wrapper there no scroll event follows to bring translate and progress up to date.
+        if (params.cssMode && swiper.onScroll)
+            swiper.onScroll();
         if (swiper.autoplay && swiper.autoplay.running && swiper.autoplay.paused) {
             const autoplay = swiper.autoplay;
             clearTimeout(autoplay.resizeTimeout);
@@ -923,12 +948,87 @@ var Swiper = (function () {
         }
     }
 
+    function measureSize(swiper) {
+        let width;
+        let height;
+        const el = swiper.el;
+        if (typeof swiper.params.width !== 'undefined' && swiper.params.width !== null) {
+            width = swiper.params.width;
+        }
+        else {
+            width = el.clientWidth;
+        }
+        if (typeof swiper.params.height !== 'undefined' && swiper.params.height !== null) {
+            height = swiper.params.height;
+        }
+        else {
+            height = el.clientHeight;
+        }
+        if ((width === 0 && swiper.isHorizontal()) || (height === 0 && swiper.isVertical())) {
+            return null;
+        }
+        // Subtract paddings
+        width =
+            width -
+                parseInt(elementStyle(el, 'padding-left') || '0', 10) -
+                parseInt(elementStyle(el, 'padding-right') || '0', 10);
+        height =
+            height -
+                parseInt(elementStyle(el, 'padding-top') || '0', 10) -
+                parseInt(elementStyle(el, 'padding-bottom') || '0', 10);
+        if (Number.isNaN(width))
+            width = 0;
+        if (Number.isNaN(height))
+            height = 0;
+        return { width, height };
+    }
+    // Whether the container changed size along the slider since updateSize(), with the ResizeObserver
+    // still to hand the change to onResize() on the next animation frame.
+    function isResizePending(swiper) {
+        const { params, el } = swiper;
+        if (!params.updateOnWindowResize ||
+            !params.resizeObserver ||
+            typeof window.ResizeObserver === 'undefined') {
+            return false;
+        }
+        const isH = swiper.isHorizontal();
+        const clientSize = isH ? el.clientWidth : el.clientHeight;
+        if (clientSize === swiper._clientSize)
+            return false;
+        // clientWidth includes the padding, the ResizeObserver only sees the content box: a padding
+        // change alone leaves the slide grid as it was, and no onResize() follows to measure it.
+        const measured = measureSize(swiper);
+        if (!measured || (isH ? measured.width : measured.height) !== swiper.size)
+            return true;
+        swiper._clientSize = clientSize;
+        return false;
+    }
+    function updateSize() {
+        const swiper = this;
+        const el = swiper.el;
+        const measured = measureSize(swiper);
+        if (!measured)
+            return;
+        const { width, height } = measured;
+        Object.assign(swiper, {
+            width,
+            height,
+            size: swiper.isHorizontal() ? width : height,
+            _clientSize: swiper.isHorizontal() ? el.clientWidth : el.clientHeight,
+        });
+    }
+
     function onScroll() {
         const swiper = this;
         if (swiper.destroyed)
             return;
         const { wrapperEl, rtlTranslate, enabled } = swiper;
         if (!enabled)
+            return;
+        // A resize moves the scroll position (re-snap, clamp) before onResize() measures the new layout;
+        // read against the old slide grid it names another slide. Leave it to onResize(), which keeps
+        // the slider on its slide. Browsers fire it before or after the ResizeObserver, so check the size.
+        if (isResizePending(swiper))
             return;
         swiper.previousTranslate = swiper.translate;
         if (swiper.isHorizontal()) {
@@ -1945,6 +2045,16 @@ var Swiper = (function () {
         const prependSlidesIndexes = [];
         const appendSlidesIndexes = [];
         const cols = gridEnabled ? Math.ceil(slides.length / params.grid.rows) : slides.length;
+        // The active slide must be able to sit between loopedSlides on each side; when there are
+        // too few slides for that (e.g. loopAdditionalSlides, which the cards effect sets to 2-3),
+        // every index falls into the prepend branch and nothing is ever appended, so forward
+        // navigation gets stuck (#8008). Shrink the buffer to what the slides can hold, keeping
+        // it a whole number of groups and leaving one slide to spare: with none, the forward
+        // loopFix in onTouchMove fires right at drag start and appends the active slide itself.
+        if (loopedSlides > (cols - slidesPerView) / 2) {
+            loopedSlides = Math.max(slidesPerGroup, Math.floor((cols - slidesPerView - 1) / 2 / slidesPerGroup) * slidesPerGroup);
+            swiper.loopedSlides = loopedSlides;
+        }
         const isInitialOverflow = initial && cols - initialSlide < slidesPerView && !bothDirections;
         let activeIndex = isInitialOverflow ? initialSlide : swiper.activeIndex;
         if (typeof activeSlideIndex === 'undefined') {
@@ -1967,7 +2077,8 @@ var Swiper = (function () {
         // prepend last slides before start
         if (activeColIndexWithShift < loopedSlides) {
             slidesPrepended = Math.max(loopedSlides - activeColIndexWithShift, slidesPerGroup);
-            for (let i = 0; i < loopedSlides - activeColIndexWithShift; i += 1) {
+            // prepend exactly what the compensating slideTo() below shifts by (like the append branch)
+            for (let i = 0; i < slidesPrepended; i += 1) {
                 const index = i - Math.floor(i / cols) * cols;
                 if (gridEnabled) {
                     const colIndexToPrepend = cols - index - 1;
@@ -1986,6 +2097,10 @@ var Swiper = (function () {
             if (isInitialOverflow) {
                 slidesAppended = Math.max(slidesAppended, slidesPerView - cols + initialSlide + 1);
             }
+            // The view must still fit inside the slides afterwards. With a forced activeSlideIndex far
+            // to the right (slideToLoop) and a buffer shrunk by the cap above, the formula above can
+            // come up short and leave the end of the view empty (#8253)
+            slidesAppended = Math.max(slidesAppended, Math.ceil(activeColIndexWithShift + slidesPerView - cols));
             for (let i = 0; i < slidesAppended; i += 1) {
                 const index = i - Math.floor(i / cols) * cols;
                 if (gridEnabled) {
@@ -2384,8 +2499,10 @@ var Swiper = (function () {
             if (params.slidesPerView === 'auto' &&
                 params.slidesPerGroup === 1 &&
                 params.slidesPerGroupAuto) {
-                prevIndex = prevIndex - swiper.slidesPerViewDynamic('previous', true) + 1;
-                prevIndex = Math.max(prevIndex, 0);
+                // slidesPerViewDynamic('previous') counts from activeIndex, so step from there (stepping
+                // from prevSnap's index overshoots by one); always move back at least one slide (#8235)
+                const prevSlidesInView = swiper.slidesPerViewDynamic('previous', true) - 1;
+                prevIndex = Math.max(swiper.activeIndex - Math.max(prevSlidesInView, 1), 0);
             }
         }
         if (params.rewind && swiper.isBeginning) {
@@ -2506,6 +2623,10 @@ var Swiper = (function () {
             return false;
         }
         if (params.cssMode) {
+            // onScroll() leaves the scroll this causes to onResize() while a resize is pending, and
+            // onResize() re-seats the slider onto activeIndex - so it has to name this slide already.
+            if (isResizePending(swiper))
+                swiper.updateActiveIndex(slideIndex);
             const isH = swiper.isHorizontal();
             const t = rtl ? translate : -translate;
             if (speed === 0) {
@@ -2687,7 +2808,14 @@ var Swiper = (function () {
                     }
                 }
                 let needLoopFix = cols - targetSlideIndex < slidesPerView;
-                if (bothDirections) {
+                if (centeredSlides) {
+                    // A centered target only needs half a view of slides on each side. Asking for a whole
+                    // view after it makes loopFix rearrange slides that already fit, which with only one
+                    // slide to spare moves a slide away from the target's side and leaves a gap (#8253)
+                    const halfView = Math.floor(slidesPerView / 2);
+                    needLoopFix = targetSlideIndex < halfView || cols - 1 - targetSlideIndex < halfView;
+                }
+                else if (bothDirections) {
                     needLoopFix = needLoopFix || targetSlideIndex < Math.ceil(slidesPerView / 2);
                 }
                 if (internal && bothDirections && swiper.params.slidesPerView !== 'auto' && !gridEnabled) {
@@ -3230,46 +3358,6 @@ var Swiper = (function () {
             swiper.emit('fromEdge');
         }
         swiper.emit('progress', progress);
-    }
-
-    function updateSize() {
-        const swiper = this;
-        let width;
-        let height;
-        const el = swiper.el;
-        if (typeof swiper.params.width !== 'undefined' && swiper.params.width !== null) {
-            width = swiper.params.width;
-        }
-        else {
-            width = el.clientWidth;
-        }
-        if (typeof swiper.params.height !== 'undefined' && swiper.params.height !== null) {
-            height = swiper.params.height;
-        }
-        else {
-            height = el.clientHeight;
-        }
-        if ((width === 0 && swiper.isHorizontal()) || (height === 0 && swiper.isVertical())) {
-            return;
-        }
-        // Subtract paddings
-        width =
-            width -
-                parseInt(elementStyle(el, 'padding-left') || '0', 10) -
-                parseInt(elementStyle(el, 'padding-right') || '0', 10);
-        height =
-            height -
-                parseInt(elementStyle(el, 'padding-top') || '0', 10) -
-                parseInt(elementStyle(el, 'padding-bottom') || '0', 10);
-        if (Number.isNaN(width))
-            width = 0;
-        if (Number.isNaN(height))
-            height = 0;
-        Object.assign(swiper, {
-            width,
-            height,
-            size: swiper.isHorizontal() ? width : height,
-        });
     }
 
     function updateSlides() {
@@ -4159,6 +4247,12 @@ var Swiper = (function () {
                 });
             }
             swiper.updateSize();
+            // A hidden container may not have a size yet. Defer layout and index updates
+            // until it can be measured (or an explicit width/height is supplied).
+            if (typeof swiper.size === 'undefined') {
+                swiper.emit('update');
+                return;
+            }
             swiper.updateSlides();
             swiper.updateProgress();
             swiper.updateSlidesClasses();
@@ -4267,7 +4361,7 @@ var Swiper = (function () {
             if (typeof initialEl === 'string') {
                 el = document.querySelector(initialEl);
             }
-            else if (initialEl instanceof HTMLElement) {
+            else if (isHTMLElement(initialEl)) {
                 el = initialEl;
             }
             if (!el) {
@@ -5404,7 +5498,7 @@ var Swiper = (function () {
         return target;
     }
 
-    const arrowSvg = `<svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"/></svg>`;
+    const arrowSvg = `<svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0.28 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"/></svg>`;
     const Navigation = ({ swiper, extendParams, on, emit }) => {
         extendParams({
             navigation: {
@@ -6191,12 +6285,10 @@ var Swiper = (function () {
         function getParams() {
             return swiper.params.scrollbar;
         }
-        function setTranslate() {
-            const params = getParams();
-            if (!params.el || !swiper.scrollbar.el)
-                return;
-            const { scrollbar, rtlTranslate: rtl } = swiper;
-            const { dragEl, el } = scrollbar;
+        // Positions the drag element from the current progress and track/drag sizes.
+        function updateDragPosition() {
+            const { rtlTranslate: rtl } = swiper;
+            const { dragEl } = swiper.scrollbar;
             const progress = swiper.params.loop ? (swiper.progressLoop ?? 0) : swiper.progress;
             let newSize = dragSize;
             let newPos = (trackSize - dragSize) * progress;
@@ -6225,6 +6317,13 @@ var Swiper = (function () {
                 dragEl.style.transform = `translate3d(0px, ${newPos}px, 0)`;
                 dragEl.style.height = `${newSize}px`;
             }
+        }
+        function setTranslate() {
+            const params = getParams();
+            if (!params.el || !swiper.scrollbar.el)
+                return;
+            const { el } = swiper.scrollbar;
+            updateDragPosition();
             if (params.hide) {
                 if (timeout)
                     clearTimeout(timeout);
@@ -6260,12 +6359,8 @@ var Swiper = (function () {
             else {
                 dragSize = parseInt(String(params.dragSize), 10);
             }
-            if (swiper.isHorizontal()) {
-                dragEl.style.width = `${dragSize}px`;
-            }
-            else {
-                dragEl.style.height = `${dragSize}px`;
-            }
+            // Size and position the drag for the new sizes without the show/hide side effects of setTranslate().
+            updateDragPosition();
             if (divider >= 1) {
                 el.style.display = 'none';
             }
@@ -7550,7 +7645,7 @@ var Swiper = (function () {
         on('beforeInit', () => {
             const controllerParam = getParams().control;
             if (typeof window !== 'undefined' &&
-                (typeof controllerParam === 'string' || controllerParam instanceof HTMLElement)) {
+                (typeof controllerParam === 'string' || isHTMLElement(controllerParam))) {
                 const controlElements = typeof controllerParam === 'string'
                     ? [...document.querySelectorAll(controllerParam)]
                     : [controllerParam];
@@ -8452,6 +8547,8 @@ var Swiper = (function () {
             return delay;
         };
         const start = () => {
+            if (swiper.destroyed)
+                return false;
             autoplayStartTime = new Date().getTime();
             swiper.autoplay.running = true;
             run();
@@ -8459,6 +8556,8 @@ var Swiper = (function () {
             return true;
         };
         const stop = () => {
+            if (swiper.destroyed)
+                return false;
             swiper.autoplay.running = false;
             if (timeout !== undefined)
                 clearTimeout(timeout);
@@ -8797,7 +8896,8 @@ var Swiper = (function () {
                 }
                 else {
                     newThumbsIndex = swiper.realIndex;
-                    direction = newThumbsIndex > swiper.previousIndex ? 'next' : 'prev';
+                    // previousIndex is a DOM index that loopFix shifts when main swiper is looped
+                    direction = newThumbsIndex > (swiper.previousRealIndex ?? 0) ? 'next' : 'prev';
                 }
                 if (useOffset) {
                     newThumbsIndex += direction === 'next' ? autoScrollOffset : -1 * autoScrollOffset;
@@ -8822,7 +8922,7 @@ var Swiper = (function () {
             const thumbs = swiper.params.thumbs;
             if (!thumbs || !thumbs.swiper)
                 return;
-            if (typeof thumbs.swiper === 'string' || thumbs.swiper instanceof HTMLElement) {
+            if (typeof thumbs.swiper === 'string' || isHTMLElement(thumbs.swiper)) {
                 const getThumbsElementAndInit = () => {
                     const thumbsElement = typeof thumbs.swiper === 'string'
                         ? document.querySelector(thumbs.swiper)
@@ -9551,7 +9651,7 @@ var Swiper = (function () {
                 // assume shadow root
                 return swiper.slides.find((slideEl) => slideEl.shadowRoot && slideEl.shadowRoot === el.parentNode);
             }
-            if (el.parentElement instanceof HTMLElement)
+            if (isHTMLElement(el.parentElement))
                 return el.parentElement;
             return undefined;
         };
@@ -10337,7 +10437,7 @@ var Swiper = (function () {
     };
 
     /**
-     * Swiper 14.3.0
+     * Swiper 14.4.0
      * Most modern mobile touch slider and framework with hardware accelerated transitions
      * https://swiperjs.com
      *
@@ -10345,7 +10445,7 @@ var Swiper = (function () {
      *
      * Released under the MIT License
      *
-     * Released on: September 28, 2026
+     * Released on: October 30, 2026
      */
 
 
