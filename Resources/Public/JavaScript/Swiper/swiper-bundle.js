@@ -1,5 +1,5 @@
 /**
- * Swiper 14.4.0
+ * Swiper 14.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 30, 2026
+ * Released on: November 27, 2026
  */
 
 var Swiper = (function () {
@@ -982,30 +982,39 @@ var Swiper = (function () {
             height = 0;
         return { width, height };
     }
-    // Whether the container changed size along the slider since updateSize(), with the ResizeObserver
-    // still to hand the change to onResize() on the next animation frame.
-    function isResizePending(swiper) {
-        const { params, el } = swiper;
-        if (!params.updateOnWindowResize ||
-            !params.resizeObserver ||
-            typeof window.ResizeObserver === 'undefined') {
-            return false;
+    // The container's content box along the slider - the only box the ResizeObserver watches - to the
+    // fraction of a pixel: clientWidth also counts the padding and rounds, and measureSize() drops the
+    // fractions of the paddings it subtracts.
+    function contentBoxSize(swiper) {
+        const style = getComputedStyle$1(swiper.el);
+        const [size, start, end] = swiper.isHorizontal()
+            ? ['width', 'left', 'right']
+            : ['height', 'top', 'bottom'];
+        let value = parseFloat(style.getPropertyValue(size));
+        if (style.getPropertyValue('box-sizing') === 'border-box') {
+            for (const side of [start, end]) {
+                value -=
+                    parseFloat(style.getPropertyValue(`padding-${side}`) || '0') +
+                        parseFloat(style.getPropertyValue(`border-${side}-width`) || '0');
+            }
         }
-        const isH = swiper.isHorizontal();
-        const clientSize = isH ? el.clientWidth : el.clientHeight;
-        if (clientSize === swiper._clientSize)
-            return false;
-        // clientWidth includes the padding, the ResizeObserver only sees the content box: a padding
-        // change alone leaves the slide grid as it was, and no onResize() follows to measure it.
-        const measured = measureSize(swiper);
-        if (!measured || (isH ? measured.width : measured.height) !== swiper.size)
-            return true;
-        swiper._clientSize = clientSize;
-        return false;
+        return Number.isNaN(value) ? 0 : value;
+    }
+    // Whether the container changed size along the slider since updateSize(), with the ResizeObserver
+    // still to hand the change to onResize() on the next animation frame. Only a change of the content
+    // box is handed on, so that is what is compared: a padding change alone is followed by no onResize().
+    // With a tolerance: the width less the paddings is float arithmetic (1055.36 - 20 - 20 is not
+    // 1015.36), and a mismatch while the content box stays would ignore every scroll until a touch.
+    // Still pending when nothing was stored yet: the difference is NaN.
+    function isResizePending(swiper) {
+        const { params } = swiper;
+        return (!!params.updateOnWindowResize &&
+            !!params.resizeObserver &&
+            typeof window.ResizeObserver !== 'undefined' &&
+            !(Math.abs(contentBoxSize(swiper) - swiper._contentBoxSize) < 0.01));
     }
     function updateSize() {
         const swiper = this;
-        const el = swiper.el;
         const measured = measureSize(swiper);
         if (!measured)
             return;
@@ -1014,7 +1023,7 @@ var Swiper = (function () {
             width,
             height,
             size: swiper.isHorizontal() ? width : height,
-            _clientSize: swiper.isHorizontal() ? el.clientWidth : el.clientHeight,
+            _contentBoxSize: contentBoxSize(swiper),
         });
     }
 
@@ -2118,7 +2127,8 @@ var Swiper = (function () {
         requestAnimationFrame(() => {
             swiper.__preventObserver__ = false;
         });
-        if (swiper.params.effect === 'cards' && slides.length < slidesPerView + loopedSlides * 2) {
+        const isCardsWithFewSlides = swiper.params.effect === 'cards' && slides.length < slidesPerView + loopedSlides * 2;
+        if (isCardsWithFewSlides) {
             if (appendSlidesIndexes.includes(activeSlideIndex)) {
                 appendSlidesIndexes.splice(appendSlidesIndexes.indexOf(activeSlideIndex), 1);
             }
@@ -2126,8 +2136,10 @@ var Swiper = (function () {
                 prependSlidesIndexes.splice(prependSlidesIndexes.indexOf(activeSlideIndex), 1);
             }
         }
+        // A whole round of moves leaves the order as it was: skip it, so the clicked slide stays put (#8095)
+        const wholeRounds = (indexes) => gridEnabled || isCardsWithFewSlides ? 0 : Math.floor(indexes.length / cols) * cols;
         if (isPrev) {
-            prependSlidesIndexes.forEach((index) => {
+            prependSlidesIndexes.slice(wholeRounds(prependSlidesIndexes)).forEach((index) => {
                 const slideEl = slides[index];
                 slideEl.swiperLoopMoveDOM = true;
                 slidesEl.prepend(slideEl);
@@ -2135,7 +2147,7 @@ var Swiper = (function () {
             });
         }
         if (isNext) {
-            appendSlidesIndexes.forEach((index) => {
+            appendSlidesIndexes.slice(wholeRounds(appendSlidesIndexes)).forEach((index) => {
                 const slideEl = slides[index];
                 slideEl.swiperLoopMoveDOM = true;
                 slidesEl.append(slideEl);
@@ -4581,6 +4593,7 @@ var Swiper = (function () {
             },
         });
         let cssModeTimeout;
+        let previousOffsetProp;
         // Methods (appendSlide/prependSlide/removeSlide/removeAllSlides/update) are
         // attached via Object.assign below once they're defined. Cast through
         // Partial<> so the initial state-only literal can be assigned without
@@ -4650,6 +4663,9 @@ var Swiper = (function () {
                 offsetProp = 'right';
             else
                 offsetProp = swiper.isHorizontal() ? 'left' : 'top';
+            // the offset property the slides still carry from before a direction change
+            const staleOffsetProp = previousOffsetProp !== offsetProp ? previousOffsetProp : undefined;
+            previousOffsetProp = offsetProp;
             let slidesPerViewNumeric;
             if (slidesPerView === 'auto') {
                 if (slidesPerViewAutoSlideSize) {
@@ -4704,6 +4720,17 @@ var Swiper = (function () {
                 slidesBefore,
                 slidesAfter,
             });
+            const virtualParams = getParams();
+            const clearStaleOffset = !!staleOffsetProp && !virtualParams.renderExternal;
+            if (clearStaleOffset) {
+                // cached slides too: one out of the DOM now would come back with the old offset
+                [...swiper.slides, ...Object.values(swiper.virtual.cache)].forEach((slideEl) => {
+                    slideEl.style.removeProperty(staleOffsetProp);
+                });
+            }
+            function setSlideOffset(slideEl) {
+                slideEl.style.setProperty(offsetProp, `${offset - Math.abs(swiper.cssOverflowAdjustment())}px`);
+            }
             function onRendered() {
                 swiper.updateSlides();
                 swiper.updateProgress();
@@ -4711,16 +4738,14 @@ var Swiper = (function () {
                 emit('virtualUpdate');
             }
             if (previousFrom === from && previousTo === to && !force) {
-                if (swiper.slidesGrid !== previousSlidesGrid && offset !== previousOffset) {
-                    swiper.slides.forEach((slideEl) => {
-                        slideEl.style.setProperty(offsetProp, `${offset - Math.abs(swiper.cssOverflowAdjustment())}px`);
-                    });
+                if (clearStaleOffset ||
+                    (swiper.slidesGrid !== previousSlidesGrid && offset !== previousOffset)) {
+                    swiper.slides.forEach(setSlideOffset);
                 }
                 swiper.updateProgress();
                 emit('virtualUpdate');
                 return;
             }
-            const virtualParams = getParams();
             if (virtualParams.renderExternal) {
                 const slidesToRender = [];
                 for (let i = from; i <= to; i += 1) {
@@ -4803,7 +4828,7 @@ var Swiper = (function () {
                 });
             }
             elementChildren(swiper.slidesEl, '.swiper-slide, swiper-slide').forEach((slideEl) => {
-                slideEl.style.setProperty(offsetProp, `${offset - Math.abs(swiper.cssOverflowAdjustment())}px`);
+                setSlideOffset(slideEl);
             });
             onRendered();
         }
@@ -4869,6 +4894,9 @@ var Swiper = (function () {
                 });
             };
             if (Array.isArray(slidesIndexes)) {
+                // ascending, for the reverse walk below to splice each slide at its original index, and once
+                // each: a repeated index would remove the slide after it too
+                slidesIndexes = [...new Set(slidesIndexes)].sort((a, b) => a - b);
                 for (let i = slidesIndexes.length - 1; i >= 0; i -= 1) {
                     if (getParams().cache) {
                         delete swiper.virtual.cache[slidesIndexes[i]];
@@ -7531,6 +7559,31 @@ var Swiper = (function () {
             return (((x2 - this.x[i1]) * (this.y[i3] - this.y[i1])) / (this.x[i3] - this.x[i1]) + this.y[i1]);
         }
     }
+    const translateCascade = {};
+    const transitionCascade = {};
+    function propagate(cascade, swiper, byController, deliver) {
+        const SwiperCtor = swiper.constructor;
+        const controlled = swiper.controller.control;
+        const targets = (Array.isArray(controlled) ? controlled : [controlled]).filter((c) => c instanceof SwiperCtor && c !== byController);
+        // Only a controller continues the update in progress; a call from anywhere else (the user,
+        // slideTo(), a listener) starts a new one.
+        const previous = cascade.reached;
+        const isStart = !previous || !(byController instanceof SwiperCtor);
+        if (isStart)
+            cascade.reached = new Set([swiper]);
+        const reached = cascade.reached;
+        // All targets are claimed before any is updated, so each gets the update straight from this
+        // slider rather than through a longer path back from another target.
+        const own = targets.filter((c) => !reached.has(c));
+        own.forEach((c) => reached.add(c));
+        try {
+            own.forEach(deliver);
+        }
+        finally {
+            if (isStart)
+                cascade.reached = previous;
+        }
+    }
     const Controller = ({ swiper, extendParams, on }) => {
         extendParams({
             controller: {
@@ -7551,10 +7604,8 @@ var Swiper = (function () {
                 : new LinearSpline(swiper.snapGrid, c.snapGrid);
         }
         function setTranslate(_t, byController) {
-            const controlled = swiper.controller.control;
             let multiplier;
             let controlledTranslate;
-            const SwiperCtor = swiper.constructor;
             function setControlledTranslate(c) {
                 if (c.destroyed)
                     return;
@@ -7589,20 +7640,9 @@ var Swiper = (function () {
                 c.updateActiveIndex();
                 c.updateSlidesClasses();
             }
-            if (Array.isArray(controlled)) {
-                for (let i = 0; i < controlled.length; i += 1) {
-                    const target = controlled[i];
-                    if (target && target !== byController && target instanceof SwiperCtor) {
-                        setControlledTranslate(target);
-                    }
-                }
-            }
-            else if (controlled instanceof SwiperCtor && byController !== controlled) {
-                setControlledTranslate(controlled);
-            }
+            propagate(translateCascade, swiper, byController, setControlledTranslate);
         }
         function setTransition(duration, byController) {
-            const SwiperCtor = swiper.constructor;
             const controlled = swiper.controller.control;
             function setControlledTransition(c) {
                 if (c.destroyed)
@@ -7622,17 +7662,7 @@ var Swiper = (function () {
                     });
                 }
             }
-            if (Array.isArray(controlled)) {
-                for (let i = 0; i < controlled.length; i += 1) {
-                    const target = controlled[i];
-                    if (target && target !== byController && target instanceof SwiperCtor) {
-                        setControlledTransition(target);
-                    }
-                }
-            }
-            else if (controlled instanceof SwiperCtor && byController !== controlled) {
-                setControlledTransition(controlled);
-            }
+            propagate(transitionCascade, swiper, byController, setControlledTransition);
         }
         function removeSpline() {
             if (!swiper.controller.control)
@@ -8154,14 +8184,25 @@ var Swiper = (function () {
         function getParams() {
             return swiper.params.history;
         }
-        const slugify = (text) => {
+        // legacy keeps only [A-Za-z0-9_-], as slugs were made before non-ASCII letters were kept: "café"
+        // was "caf", and links to those URLs still open their slide
+        const slugify = (text, legacy = false) => {
             return text
                 .toString()
                 .replace(/\s+/g, '-')
-                .replace(/[^\w-]+/g, '')
+                .replace(legacy ? /[^\w-]+/g : /[^\p{L}\p{M}\p{N}_-]+/gu, '')
                 .replace(/--+/g, '-')
                 .replace(/^-+/, '')
                 .replace(/-+$/, '');
+        };
+        // location.pathname percent-encodes non-ASCII characters, while slugify() keeps them as is
+        const decodePath = (path) => {
+            try {
+                return decodeURIComponent(path);
+            }
+            catch {
+                return path; // e.g. a "%" that isn't an escape sequence
+            }
         };
         const getPathValues = (urlOverride) => {
             let location;
@@ -8174,7 +8215,8 @@ var Swiper = (function () {
             const pathArray = location.pathname
                 .slice(1)
                 .split('/')
-                .filter((part) => part !== '');
+                .filter((part) => part !== '')
+                .map(decodePath);
             const total = pathArray.length;
             const key = pathArray[total - 2];
             const value = pathArray[total - 1];
@@ -8204,7 +8246,7 @@ var Swiper = (function () {
                 const trimmedRoot = root[root.length - 1] === '/' ? root.slice(0, root.length - 1) : root;
                 value = `${trimmedRoot}/${key ? `${key}/` : ''}${value}`;
             }
-            else if (!location.pathname.includes(key || '')) {
+            else if (!decodePath(location.pathname).includes(key || '')) {
                 value = `${key ? `${key}/` : ''}${value}`;
             }
             if (params.keepQuery) {
@@ -8223,13 +8265,20 @@ var Swiper = (function () {
         };
         const scrollToSlide = (speed, value, runCallbacks) => {
             if (value) {
-                for (let i = 0, length = swiper.slides.length; i < length; i += 1) {
-                    const slide = swiper.slides[i];
-                    const slideHistory = slugify(slide.getAttribute('data-history') || '');
-                    if (slideHistory === value) {
-                        const index = swiper.getSlideIndex(slide);
-                        swiper.slideTo(index, speed, runCallbacks);
+                // the legacy slug only when no slide has the current one, which "caf" may also be
+                for (const legacy of [false, true]) {
+                    let matched = false;
+                    for (let i = 0, length = swiper.slides.length; i < length; i += 1) {
+                        const slide = swiper.slides[i];
+                        const slideHistory = slugify(slide.getAttribute('data-history') || '', legacy);
+                        if (slideHistory === value) {
+                            matched = true;
+                            const index = swiper.getSlideIndex(slide);
+                            swiper.slideTo(index, speed, runCallbacks);
+                        }
                     }
+                    if (matched)
+                        break;
                 }
             }
             else {
@@ -8292,6 +8341,18 @@ var Swiper = (function () {
     };
 
     const isVirtualEnabled = (swiper) => !!swiper.virtual && !!swiper.params.virtual?.enabled;
+    // location.hash percent-encodes spaces and non-ASCII characters, while data-hash holds them as is
+    const decodeHash = (hash) => {
+        try {
+            return decodeURIComponent(hash);
+        }
+        catch {
+            return hash; // e.g. a "%" that isn't an escape sequence
+        }
+    };
+    // Handed to getSlideIndex as the browser has it, percent-encoded: a custom getSlideIndex may decode
+    // it itself, and decoding it twice would throw on a "%" of the slide name
+    const getLocationHash = () => document.location.hash.replace('#', '');
     const HashNavigation = ({ swiper, extendParams, emit, on }) => {
         let initialized = false;
         extendParams({
@@ -8300,14 +8361,19 @@ var Swiper = (function () {
                 replaceState: false,
                 watchState: false,
                 getSlideIndex(_s, hash) {
+                    const decodedHash = decodeHash(hash);
+                    const hasHash = (slideEl) => {
+                        const slideHash = slideEl.getAttribute('data-hash');
+                        return slideHash !== null && decodeHash(slideHash) === decodedHash;
+                    };
                     if (isVirtualEnabled(swiper)) {
-                        const slideWithHash = swiper.slides.find((slideEl) => slideEl.getAttribute('data-hash') === hash);
+                        const slideWithHash = swiper.slides.find(hasHash);
                         if (!slideWithHash)
                             return 0;
                         const index = parseInt(slideWithHash.getAttribute('data-swiper-slide-index') || '0', 10);
                         return index;
                     }
-                    const matched = elementChildren(swiper.slidesEl, `.${swiper.params.slideClass}[data-hash="${hash}"], swiper-slide[data-hash="${hash}"]`)[0];
+                    const matched = elementChildren(swiper.slidesEl, `.${swiper.params.slideClass}, swiper-slide`).find(hasHash);
                     return matched ? swiper.getSlideIndex(matched) : 0;
                 },
             },
@@ -8317,12 +8383,12 @@ var Swiper = (function () {
         }
         const onHashChange = () => {
             emit('hashChange');
-            const newHash = document.location.hash.replace('#', '');
+            const newHash = getLocationHash();
             const activeSlideEl = isVirtualEnabled(swiper)
                 ? swiper.slidesEl.querySelector(`[data-swiper-slide-index="${swiper.activeIndex}"]`)
                 : swiper.slides[swiper.activeIndex];
             const activeSlideHash = activeSlideEl ? activeSlideEl.getAttribute('data-hash') : '';
-            if (newHash !== activeSlideHash) {
+            if (activeSlideHash === null || decodeHash(newHash) !== decodeHash(activeSlideHash)) {
                 const newIndex = getParams().getSlideIndex(swiper, newHash);
                 if (typeof newIndex === 'undefined' || Number.isNaN(newIndex))
                     return;
@@ -8354,7 +8420,7 @@ var Swiper = (function () {
             if (!params.enabled || (historyParams && historyParams.enabled))
                 return;
             initialized = true;
-            const hash = document.location.hash.replace('#', '');
+            const hash = getLocationHash();
             if (hash) {
                 const speed = 0;
                 const index = params.getSlideIndex(swiper, hash);
@@ -8566,7 +8632,7 @@ var Swiper = (function () {
             emit('autoplayStop');
             return true;
         };
-        const pause = (internal, reset) => {
+        const pause = (internal, reset, instant) => {
             if (swiper.destroyed || !swiper.autoplay.running)
                 return;
             if (timeout !== undefined)
@@ -8576,7 +8642,8 @@ var Swiper = (function () {
             }
             const proceed = () => {
                 emit('autoplayPause');
-                if (getParams().waitForTransition) {
+                // A 0ms transition never fires transitionend, so waiting for one would stall autoplay.
+                if (getParams().waitForTransition && !instant) {
                     swiper.wrapperEl.addEventListener('transitionend', onTransitionEnd);
                 }
                 else {
@@ -8685,11 +8752,11 @@ var Swiper = (function () {
                 stop();
             }
         });
-        on('beforeTransitionStart', (_s, _speed, internal) => {
+        on('beforeTransitionStart', (_s, speed, internal) => {
             if (swiper.destroyed || !swiper.autoplay.running)
                 return;
             if (internal || !getParams().disableOnInteraction) {
-                pause(true, true);
+                pause(true, true, speed === 0);
             }
             else {
                 stop();
@@ -10437,7 +10504,7 @@ var Swiper = (function () {
     };
 
     /**
-     * Swiper 14.4.0
+     * Swiper 14.5.0
      * Most modern mobile touch slider and framework with hardware accelerated transitions
      * https://swiperjs.com
      *
@@ -10445,7 +10512,7 @@ var Swiper = (function () {
      *
      * Released under the MIT License
      *
-     * Released on: October 30, 2026
+     * Released on: November 27, 2026
      */
 
 
